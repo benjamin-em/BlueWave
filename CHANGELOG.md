@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.42] - 2026-10-10
+### Added
+- **Full Backup & Restore (ZIP)**: Added a complete backup and restore feature in Settings (`AMARadio_Backup.zip`). Preserves Favorites, Custom Stations, and local station icons (`$uuid.jpg`), restoring custom stations back to the Custom Tab with full editing capabilities intact.
+- **High-Performance GZIP Snapshot Database Sync**: Implemented a ultra-fast primary database sync engine fetching compressed CDN snapshots (`stations.json.gz`).
+- **Automated & Scheduled Background Updates**: Added WorkManager background scheduling for database updates (15s post-startup check when outdated and 24h periodic sync).
+
+### Changed
+- **Zero-RAM Stream Parsing & DB Throttling**: Stream-decodes 60,000+ stations directly from GZIP input streams without giant memory allocations, writing to Room DB in 5,000-item atomic transactions with a 200ms throttle delay between chunks to relieve CPU/eMMC load.
+- **Settings UI Refinement**: Streamlined Database settings with a single "Update Database" button and live status/error feedback.
+
+### Fixed
+- **API Sync Failover**: Added automatic failover mid-stream to backup mirrors (`radiobrowser.ounben.com`) and incremental `lastchange` fallback (last 1,000 stations) if the snapshot CDN is unreachable.
+- **Silent Notification Channels**: Fixed notification channel sound settings on Android 13+ to ensure playback state updates do not trigger system alert chimes.
+
 ## [1.41] - 2026-10-03
 ### Added
 - **Active Station Highlighting**: The currently playing radio station is now cleanly highlighted in amber (`AmaradioAmber`) across all station lists and reorderable grids.
