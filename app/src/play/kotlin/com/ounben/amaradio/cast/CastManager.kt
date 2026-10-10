@@ -2,28 +2,31 @@ package com.ounben.amaradio.cast
 
 import android.content.Context
 import android.util.Log
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.FragmentActivity
 import androidx.media3.cast.CastPlayer
 import androidx.media3.cast.DefaultMediaItemConverter
+import androidx.mediarouter.app.MediaRouteChooserDialogFragment
 import com.google.android.gms.cast.framework.CastContext
 import com.google.android.gms.cast.framework.CastSession
 import com.google.android.gms.cast.framework.SessionManagerListener
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.launch
+import java.util.concurrent.Executors
 
 class CastManager private constructor(context: Context) {
 
     private val appContext = context.applicationContext
-    private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
+    private val executor = Executors.newSingleThreadExecutor()
     
     private var _castPlayer: CastPlayer? = null
     val castPlayer: CastPlayer? get() = _castPlayer
 
     private val _isCasting = MutableStateFlow(false)
     val isCasting: StateFlow<Boolean> = _isCasting
+
+    @Volatile
+    private var castContext: CastContext? = null
 
     private val sessionManagerListener = object : SessionManagerListener<CastSession> {
         override fun onSessionStarting(session: CastSession) {}
@@ -52,16 +55,42 @@ class CastManager private constructor(context: Context) {
         }
     }
 
-    init {
-        // CastContext must be initialized on the main thread
-        scope.launch {
+    fun ensureInitializedAsync(context: Context, onInitialized: ((CastContext) -> Unit)? = null) {
+        val existingContext = castContext
+        if (existingContext != null) {
+            onInitialized?.invoke(existingContext)
+            return
+        }
+
+        val mainExecutor = ContextCompat.getMainExecutor(context)
+        CastContext.getSharedInstance(context, executor)
+            .addOnSuccessListener(mainExecutor) { contextInstance ->
+                try {
+                    castContext = contextInstance
+                    _castPlayer = CastPlayer(contextInstance, DefaultMediaItemConverter())
+                    contextInstance.sessionManager.addSessionManagerListener(sessionManagerListener, CastSession::class.java)
+                    _isCasting.value = contextInstance.sessionManager.currentCastSession?.isConnected == true
+                    onInitialized?.invoke(contextInstance)
+                } catch (e: Exception) {
+                    Log.e(TAG, "Failed to setup CastPlayer after sharedInstance success", e)
+                }
+            }
+            .addOnFailureListener(mainExecutor) { e ->
+                Log.e(TAG, "Failed to initialize CastContext asynchronously", e)
+            }
+    }
+
+    fun openCastDialog(activity: FragmentActivity) {
+        ensureInitializedAsync(activity) { ctx ->
             try {
-                val castContext = CastContext.getSharedInstance(appContext)
-                _castPlayer = CastPlayer(castContext, DefaultMediaItemConverter())
-                castContext.sessionManager.addSessionManagerListener(sessionManagerListener, CastSession::class.java)
-                _isCasting.value = castContext.sessionManager.currentCastSession?.isConnected == true
+                val selector = ctx.mergedSelector
+                if (selector != null) {
+                    val fragment = MediaRouteChooserDialogFragment()
+                    fragment.routeSelector = selector
+                    fragment.show(activity.supportFragmentManager, "MediaRouteChooserDialogFragment")
+                }
             } catch (e: Exception) {
-                Log.e(TAG, "Failed to initialize CastContext", e)
+                Log.e(TAG, "Error opening MediaRouteChooserDialogFragment", e)
             }
         }
     }
@@ -77,6 +106,15 @@ class CastManager private constructor(context: Context) {
             }
         }
 
-        fun getInstance(): CastManager? = instance
+        fun getInstance(context: Context? = null): CastManager? {
+            if (instance == null && context != null) {
+                synchronized(this) {
+                    if (instance == null) {
+                        instance = CastManager(context)
+                    }
+                }
+            }
+            return instance
+        }
     }
 }

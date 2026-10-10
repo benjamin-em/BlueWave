@@ -15,6 +15,6 @@ class CastManager private constructor(context: Context) {
 
     companion object {
         fun init(context: Context): CastManager = CastManager(context)
-        fun getInstance(): CastManager? = null
+        fun getInstance(context: Context? = null): CastManager? = null
     }
 }
