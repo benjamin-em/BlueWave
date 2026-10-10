@@ -163,7 +163,7 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
                     "user_data.db"
                 )
                 .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
-                .fallbackToDestructiveMigrationFrom(5) // Nur bei künftigen Fehlern ab v5 zerstörerisch
+                .fallbackToDestructiveMigrationFrom(true, 5) // Nur bei künftigen Fehlern ab v5 zerstörerisch
                 .addCallback(CALLBACK)
                 .build()
                 INSTANCE = instance
