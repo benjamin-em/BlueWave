@@ -99,9 +99,10 @@ class SyncWorker(context: Context, workerParams: WorkerParameters) : CoroutineWo
                 )
             }
 
-            // 2. Regular 24-hour periodic background sync
+            // 2. Regular 24-hour periodic background sync (Initial delay 24h to prevent WorkManager from running it immediately on launch)
             val periodicRequest = PeriodicWorkRequestBuilder<SyncWorker>(1, TimeUnit.DAYS)
                 .setConstraints(baseConstraints)
+                .setInitialDelay(24, TimeUnit.HOURS)
                 .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 30, TimeUnit.SECONDS)
                 .build()
 
