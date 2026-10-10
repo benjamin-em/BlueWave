@@ -26,11 +26,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.lifecycleScope
+import com.ounben.amaradio.database.AMARadioDatabase
+import com.ounben.amaradio.database.user.AMARadioUserDatabase
 import com.ounben.amaradio.ui.AMARadioTheme
 import com.ounben.amaradio.ui.AmaradioAmber
 import com.ounben.amaradio.utils.LocaleUtils
 import com.ounben.amaradio.utils.UiScaler
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import androidx.preference.PreferenceManager
 
 class SplashActivity : ComponentActivity() {
@@ -44,6 +49,28 @@ class SplashActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        // Asynchronous DB Unpacking & Initialization on Dispatchers.IO
+        lifecycleScope.launch {
+            withContext(Dispatchers.IO) {
+                try {
+                    // Pre-warm and unpack Asset SQLite databases off the Main Thread
+                    val catalogDb = AMARadioDatabase.getDatabase(applicationContext)
+                    catalogDb.stationDao().getStationCount()
+
+                    val userDb = AMARadioUserDatabase.getDatabase(applicationContext)
+                    userDb.favoriteDao().getAllFavorites()
+                } catch (e: Exception) {
+                    Log.e("SplashActivity", "Database pre-warm on Dispatchers.IO failed", e)
+                }
+            }
+
+            // Navigate to ActivityMain once I/O is finished
+            val intent = Intent(this@SplashActivity, ActivityMain::class.java)
+            getIntent()?.extras?.let { intent.putExtras(it) }
+            startActivity(intent)
+            finish()
+        }
 
         setContent {
             AMARadioTheme {
@@ -74,14 +101,6 @@ class SplashActivity : ComponentActivity() {
                             style = MaterialTheme.typography.bodyMedium
                         )
                     }
-                }
-
-                LaunchedEffect(Unit) {
-                    delay(1000)
-                    val intent = Intent(this@SplashActivity, ActivityMain::class.java)
-                    getIntent()?.extras?.let { intent.putExtras(it) }
-                    startActivity(intent)
-                    finish()
                 }
             }
         }
