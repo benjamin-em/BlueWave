@@ -19,10 +19,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
@@ -51,6 +54,7 @@ class DatabaseSync(private val context: Context) {
     private val numberFormat = DecimalFormat("#,###")
 
     companion object {
+        private val syncMutex = Mutex()
         private val _progressFlow = MutableStateFlow<DatabaseSyncState>(DatabaseSyncState.Idle)
         val progressFlow: StateFlow<DatabaseSyncState> = _progressFlow.asStateFlow()
     }
@@ -66,28 +70,57 @@ class DatabaseSync(private val context: Context) {
         mode: String = "full",
         onProgress: (current: Int, total: Int, formattedText: String) -> Unit = { _, _, _ -> }
     ): Boolean = withContext(Dispatchers.IO) {
-        if (!isNetworkAvailable()) {
-            val errorMsg = "No internet connection"
-            _progressFlow.value = DatabaseSyncState.Error(errorMsg)
-            return@withContext false
+        if (syncMutex.isLocked) {
+            Log.w("DatabaseSync", "A database sync is already in progress. Skipping duplicate execution.")
+            return@withContext true
         }
 
-        try {
-            if (mode == "incremental") {
-                performIncrementalSync(onProgress)
-            } else {
-                performFullSync(onProgress)
+        syncMutex.withLock {
+            if (!isNetworkAvailable()) {
+                val errorMsg = app.getString(com.ounben.amaradio.R.string.database_error_no_connection)
+                _progressFlow.value = DatabaseSyncState.Error(errorMsg)
+                return@withLock false
             }
-        } catch (e: SQLiteFullException) {
-            Log.e("DatabaseSync", "Disk full during sync", e)
-            _progressFlow.value = DatabaseSyncState.Error("Not enough disk space")
-            false
-        } catch (e: Exception) {
-            coroutineContext.ensureActive()
-            Log.e("DatabaseSync", "Sync failed: ${e.message}", e)
-            _progressFlow.value = DatabaseSyncState.Error(e.localizedMessage ?: "Sync failed")
-            false
+
+            try {
+                if (mode == "background") {
+                    performBackgroundSync(onProgress)
+                } else if (mode == "incremental") {
+                    performIncrementalSync(onProgress)
+                } else {
+                    performFullSync(onProgress)
+                }
+            } catch (e: SQLiteFullException) {
+                Log.e("DatabaseSync", "Disk full during sync", e)
+                val errorMsg = app.getString(com.ounben.amaradio.R.string.database_error_no_space)
+                _progressFlow.value = DatabaseSyncState.Error(errorMsg)
+                false
+            } catch (e: Exception) {
+                coroutineContext.ensureActive()
+                Log.e("DatabaseSync", "Sync failed: ${e.message}", e)
+                val errorMsg = e.localizedMessage ?: app.getString(com.ounben.amaradio.R.string.database_error_failed)
+                _progressFlow.value = DatabaseSyncState.Error(errorMsg)
+                false
+            }
         }
+    }
+
+    private suspend fun performBackgroundSync(
+        onProgress: (current: Int, total: Int, formattedText: String) -> Unit
+    ): Boolean = coroutineScope {
+        // 1. Primärversuch im Hintergrund: Snapshot CDN GZIP
+        try {
+            val snapshotSuccess = performSnapshotSync(onProgress)
+            if (snapshotSuccess) return@coroutineScope true
+            else Log.w("DatabaseSync", "Background snapshot import returned false. Fallback to last 1000 changes...")
+        } catch (t: Throwable) {
+            coroutineContext.ensureActive()
+            Log.w("DatabaseSync", "Background snapshot import failed: ${t.message}. Fallback to last 1000 changes...", t)
+        }
+
+        // 2. Fallback bei Fehler im Hintergrund: Die letzten 1000 geänderten Sender laden
+        Log.i("DatabaseSync", "Background snapshot failed -> Loading last 1,000 changed stations...")
+        performIncrementalSync(onProgress)
     }
 
     private suspend fun performFullSync(
@@ -97,15 +130,63 @@ class DatabaseSync(private val context: Context) {
         try {
             val snapshotSuccess = performSnapshotSync(onProgress)
             if (snapshotSuccess) return@coroutineScope true
-            else Log.w("DatabaseSync", "Snapshot import returned false. Fallback to lastchange (1,000 stations)...")
+            else Log.w("DatabaseSync", "Snapshot import returned false. Fallback to full API pagination...")
         } catch (t: Throwable) {
             coroutineContext.ensureActive()
-            Log.w("DatabaseSync", "Snapshot import failed: ${t.message}. Fallback to lastchange (1,000 stations)...", t)
+            Log.w("DatabaseSync", "Snapshot import failed: ${t.message}. Fallback to full API pagination...", t)
         }
 
-        // 2. Fallback bei Fehler: Inkrementeller Sync über lastchange (1.000 neueste Sender)
-        Log.i("DatabaseSync", "Snapshot failed -> Fallback to lastchange (1,000 stations) activated.")
-        performIncrementalSync(onProgress)
+        // 2. Fallback bei Fehler: Vollständige Paginierung aller ~48.000 Sender über die Radio-Browser API
+        Log.i("DatabaseSync", "Snapshot failed -> Starting full API paginated sync...")
+        performApiFullSync(onProgress)
+    }
+
+    private suspend fun performApiFullSync(
+        onProgress: (current: Int, total: Int, formattedText: String) -> Unit
+    ): Boolean = coroutineScope {
+        val totalCount = loader.getTotalStationCount() ?: 0
+        var currentLoaded = 0
+        val chunkSize = 1000 // 1.000 Sender pro Abfrage
+        val parallelBatches = 2 // 2x 1.000 = 2.000 Sender pro Zyklus
+
+        reportProgress(0, totalCount, mode = "full", onProgress = onProgress)
+
+        while (totalCount == 0 || currentLoaded < totalCount) {
+            coroutineContext.ensureActive()
+
+            val tasks = (0 until parallelBatches).map { batchIdx ->
+                val offset = currentLoaded + (batchIdx * chunkSize)
+                if (totalCount == 0 || offset < totalCount) {
+                    async(Dispatchers.IO) {
+                        loader.getStationsChunk(offset = offset, limit = chunkSize)
+                    }
+                } else null
+            }.filterNotNull()
+
+            val results = tasks.awaitAll()
+            var batchCount = 0
+
+            for (chunk in results) {
+                if (!chunk.isNullOrEmpty()) {
+                    val entities = chunk.map { it.toEntity() }
+                    database.stationDao().syncBatch(entities)
+                    batchCount += chunk.size
+                }
+            }
+
+            if (batchCount == 0) {
+                // No more stations returned from API
+                break
+            }
+
+            currentLoaded += batchCount
+            reportProgress(currentLoaded, totalCount, mode = "full", onProgress = onProgress)
+        }
+
+        saveLastSyncTimestamp()
+        val finalSyncTime = prefs.getString("last_db_sync_time", "Just now") ?: "Just now"
+        _progressFlow.value = DatabaseSyncState.Success("Full sync completed", finalSyncTime)
+        true
     }
 
     private suspend fun performSnapshotSync(
@@ -114,7 +195,7 @@ class DatabaseSync(private val context: Context) {
         val snapshotUrl = "https://radiobrowser-cdn.ounben.com/stations.json.gz"
         Log.i("DatabaseSync", "Starting snapshot download from $snapshotUrl...")
 
-        reportProgress(0, 50000, mode = "full", onProgress = onProgress)
+        reportProgress(0, 0, mode = "full", onProgress = onProgress)
 
         try {
             // 1. Request mit Accept-Encoding: gzip (ohne manuellen User-Agent Override)
@@ -140,41 +221,43 @@ class DatabaseSync(private val context: Context) {
 
             val decompressedStream: InputStream = if (isGzip) GZIPInputStream(rawStream) else rawStream
 
-            Log.i("DatabaseSync", "Decoding stations JSON directly from GZIP stream...")
-            val stations = decompressedStream.use { stream ->
-                DataRadioStation.DecodeJsonStream(stream)
+            Log.i("DatabaseSync", "Streaming and decoding stations JSON directly from GZIP stream in 5,000-item chunks...")
+            
+            var totalProcessed = 0
+            val chunkSize = 5000
+
+            // 3. Echte Sequence-Streaming & Chunked Room DB-Inserts mit 200ms Pause zwischen den Blöcken
+            decompressedStream.use { stream ->
+                val stationSequence = DataRadioStation.DecodeJsonSequence(stream)
+                
+                stationSequence.chunked(chunkSize).forEach { chunk ->
+                    coroutineContext.ensureActive()
+
+                    database.withTransaction {
+                        val entities = chunk.map { it.toEntity() }
+                        database.stationDao().insertAllInternal(entities)
+                    }
+
+                    totalProcessed += chunk.size
+                    reportProgress(totalProcessed, 0, mode = "full", onProgress = onProgress)
+
+                    // 200 ms Pause nach jedem 5.000er-Chunk: SQLite-Locks freigeben,
+                    // eMMC-Schreibpuffer entlasten und CPU-/GC-Spitzen vermeiden.
+                    delay(200)
+                }
             }
 
-            if (stations.isNullOrEmpty()) {
-                Log.e("DatabaseSync", "Failed to parse stations JSON or snapshot returned 0 stations")
+            if (totalProcessed == 0) {
+                Log.e("DatabaseSync", "Snapshot stream returned 0 stations")
                 return@withContext false
             }
 
-            val totalCount = stations.size
-            Log.i("DatabaseSync", "Decoded $totalCount stations from snapshot JSON")
-            reportProgress(totalCount / 2, totalCount, mode = "full", onProgress = onProgress)
-
-            coroutineContext.ensureActive()
-
-            // 3. Chunked Room DB inserts inside database.withTransaction to avoid OOM / GC thrashing
-            Log.i("DatabaseSync", "Inserting $totalCount stations into Room database in chunks of 5,000...")
-            database.withTransaction {
-                stations.asSequence()
-                    .map { it.toEntity() }
-                    .chunked(5000)
-                    .forEachIndexed { index, chunk ->
-                        database.stationDao().insertAllInternal(chunk)
-                        val insertedSoFar = minOf((index + 1) * 5000, totalCount)
-                        reportProgress(insertedSoFar, totalCount, mode = "full", onProgress = onProgress)
-                    }
-            }
-
-            reportProgress(totalCount, totalCount, mode = "full", onProgress = onProgress)
+            reportProgress(totalProcessed, totalProcessed, mode = "full", onProgress = onProgress)
             saveLastSyncTimestamp()
 
             val finalSyncTime = prefs.getString("last_db_sync_time", "Just now") ?: "Just now"
             _progressFlow.value = DatabaseSyncState.Success("Snapshot import completed successfully", finalSyncTime)
-            Log.i("DatabaseSync", "Snapshot import completed successfully with $totalCount stations.")
+            Log.i("DatabaseSync", "Snapshot import completed successfully with $totalProcessed stations.")
             true
         } catch (t: Throwable) {
             coroutineContext.ensureActive()
@@ -215,8 +298,14 @@ class DatabaseSync(private val context: Context) {
         onProgress: (current: Int, total: Int, formattedText: String) -> Unit
     ) {
         val formattedCurrent = numberFormat.format(current)
-        val formattedTotal = numberFormat.format(total)
-        val text = "$formattedCurrent / $formattedTotal"
+        val text = if (total > 0 && current > 0) {
+            val formattedTotal = numberFormat.format(total)
+            app.getString(com.ounben.amaradio.R.string.database_progress_format, formattedCurrent, formattedTotal)
+        } else if (current > 0) {
+            app.getString(com.ounben.amaradio.R.string.database_stations_loaded, formattedCurrent)
+        } else {
+            app.getString(com.ounben.amaradio.R.string.database_downloading)
+        }
 
         _progressFlow.value = DatabaseSyncState.Running(
             current = current,

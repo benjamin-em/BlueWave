@@ -108,6 +108,9 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun updateBoolean(key: String, value: Boolean) {
         sharedPref.edit { putBoolean(key, value) }
+        if (key == "settings_auto_db_update") {
+            com.ounben.amaradio.service.SyncWorker.enqueue(getApplication())
+        }
     }
 
     fun updateInt(key: String, value: Int) {
