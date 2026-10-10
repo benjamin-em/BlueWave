@@ -264,15 +264,20 @@
     <string name="tab_player_info">Info</string>
     <string name="tab_player_history">Track history</string>
 
-    <string name="database_summary_title" translatable="false">Local Database</string>
-    <string name="database_total_stations" translatable="false">Total Stations</string>
-    <string name="database_last_sync" translatable="false">Last Sync</string>
-    <string name="database_update_now" translatable="false">Update Database Now</string>
-    <string name="database_full_update" translatable="false">Full Update</string>
-    <string name="database_incremental_update" translatable="false">Last 1,000 Changes</string>
-    <string name="database_syncing" translatable="false">Syncing…</string>
-    <string name="database_sync_channel_name" translatable="false">Database Synchronization</string>
+    <string name="database_summary_title">Local Database</string>
+    <string name="database_total_stations">Total Stations</string>
+    <string name="database_last_sync">Last Sync</string>
+    <string name="database_update_now">Update Database Now</string>
+    <string name="database_full_update">Update Database</string>
+    <string name="database_syncing">Syncing…</string>
+    <string name="database_downloading">Downloading…</string>
+    <string name="database_stations_loaded">%1$s stations</string>
+    <string name="database_sync_channel_name">Database Synchronization</string>
     <string name="database_progress_format" translatable="false">%1$s / %2$s</string>
+    <string name="database_sync_success">Database update completed successfully</string>
+    <string name="database_error_no_connection">No internet connection</string>
+    <string name="database_error_no_space">Not enough disk space available</string>
+    <string name="database_error_failed">Database update failed</string>
 
     <string name="station_detail_bitrate">%1$1d kbps</string>
     <string name="station_detail_broken">BROKEN</string>

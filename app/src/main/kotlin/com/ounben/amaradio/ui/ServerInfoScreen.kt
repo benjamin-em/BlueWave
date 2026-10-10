@@ -161,27 +161,6 @@ fun LocalDbTab(
         }
 
         item {
-            Button(
-                onClick = onSync,
-                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
-                enabled = !uiState.isSyncing,
-                colors = ButtonDefaults.buttonColors(containerColor = AmaradioAmber)
-            ) {
-                if (uiState.isSyncing) {
-                    CircularProgressIndicator(
-                        modifier = Modifier.size(18.dp),
-                        color = Color.White,
-                        strokeWidth = 2.dp
-                    )
-                } else {
-                    Icon(Icons.Default.Refresh, contentDescription = null)
-                }
-                Spacer(Modifier.width(8.dp))
-                Text(if (uiState.isSyncing) "${stringResource(R.string.database_syncing)} ${uiState.syncProgressText}" else stringResource(R.string.database_update_now))
-            }
-        }
-
-        item {
             Text(
                 text = "Recent Updates (Local)", 
                 style = MaterialTheme.typography.titleSmall, 

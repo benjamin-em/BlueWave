@@ -22,7 +22,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.ounben.amaradio.AMARadioApp
 import com.ounben.amaradio.R
@@ -103,6 +102,15 @@ fun SettingsScreen(
                         )
                     }
 
+                    if (serverInfoUiState.error != null) {
+                        Text(
+                            text = serverInfoUiState.error!!,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.error,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+
                     Spacer(modifier = Modifier.height(4.dp))
 
                     SettingsSwitch(
@@ -115,51 +123,23 @@ fun SettingsScreen(
                     
                     Spacer(modifier = Modifier.height(8.dp))
                     
-                    Row(
+                    Button(
+                        onClick = { serverInfoViewModel.triggerFullUpdate() },
                         modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        enabled = !serverInfoUiState.isSyncing,
+                        colors = ButtonDefaults.buttonColors(containerColor = AmaradioAmber)
                     ) {
-                        Button(
-                            onClick = { serverInfoViewModel.triggerFullUpdate() },
-                            modifier = Modifier.weight(1f),
-                            enabled = !serverInfoUiState.isSyncing,
-                            contentPadding = PaddingValues(horizontal = 4.dp, vertical = 8.dp),
-                            colors = ButtonDefaults.buttonColors(containerColor = AmaradioAmber)
-                        ) {
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                horizontalArrangement = Arrangement.Center
-                            ) {
-                                Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
-                                Spacer(Modifier.width(4.dp))
-                                Text(
-                                    text = stringResource(R.string.database_full_update),
-                                    maxLines = 1,
-                                    textAlign = TextAlign.Center
-                                )
-                            }
+                        if (serverInfoUiState.isSyncing) {
+                            CircularProgressIndicator(
+                                modifier = Modifier.size(18.dp),
+                                color = Color.White,
+                                strokeWidth = 2.dp
+                            )
+                        } else {
+                            Icon(Icons.Default.Refresh, contentDescription = null)
                         }
-
-                        Button(
-                            onClick = { serverInfoViewModel.triggerIncrementalUpdate() },
-                            modifier = Modifier.weight(1f),
-                            enabled = !serverInfoUiState.isSyncing,
-                            contentPadding = PaddingValues(horizontal = 4.dp, vertical = 8.dp),
-                            colors = ButtonDefaults.buttonColors(containerColor = AmaradioAmber)
-                        ) {
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                horizontalArrangement = Arrangement.Center
-                            ) {
-                                Icon(Icons.Default.Sync, contentDescription = null, modifier = Modifier.size(16.dp))
-                                Spacer(Modifier.width(4.dp))
-                                Text(
-                                    text = stringResource(R.string.database_incremental_update),
-                                    maxLines = 1,
-                                    textAlign = TextAlign.Center
-                                )
-                            }
-                        }
+                        Spacer(Modifier.width(8.dp))
+                        Text(if (serverInfoUiState.isSyncing) stringResource(R.string.database_syncing) else stringResource(R.string.database_full_update))
                     }
                 }
             }

@@ -162,12 +162,36 @@ class ServerInfoViewModel(application: Application) : AndroidViewModel(applicati
 
     private fun startSyncWorker(mode: String) {
         viewModelScope.launch {
+            if (!Utils.hasAnyConnection(app)) {
+                val errorMsg = app.getString(R.string.database_error_no_connection)
+                _uiState.update { it.copy(isSyncing = false, error = errorMsg) }
+                return@launch
+            }
+
             _uiState.update { it.copy(isSyncing = true, currentSyncMode = mode, error = null) }
             
             val syncRequest = OneTimeWorkRequestBuilder<DatabaseUpdate>()
                 .setInputData(workDataOf(DatabaseUpdate.KEY_MODE to mode))
                 .build()
-            WorkManager.getInstance(app).enqueue(syncRequest)
+            
+            val workManager = WorkManager.getInstance(app)
+            workManager.enqueueUniqueWork(
+                "radio_database_sync_manual",
+                androidx.work.ExistingWorkPolicy.KEEP,
+                syncRequest
+            )
+
+            workManager.getWorkInfoByIdFlow(syncRequest.id).collect { workInfo ->
+                if (workInfo != null) {
+                    if (workInfo.state.isFinished) {
+                        if (workInfo.state == androidx.work.WorkInfo.State.FAILED) {
+                            val errorText = workInfo.outputData.getString("error") 
+                                ?: app.getString(R.string.database_error_failed)
+                            _uiState.update { it.copy(isSyncing = false, error = errorText) }
+                        }
+                    }
+                }
+            }
         }
     }
 }
