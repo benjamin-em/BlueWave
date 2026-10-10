@@ -43,3 +43,7 @@ build/*
 
 *.aab
 
+# Environment & Secret files
+*.env
+.env
+
