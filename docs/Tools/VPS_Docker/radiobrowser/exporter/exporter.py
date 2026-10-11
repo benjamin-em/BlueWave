@@ -53,7 +53,6 @@ SELECT
     GeoLong,
     ExtendedInfo
 FROM Station
-WHERE LastCheckOK = 1
 """
 
 
