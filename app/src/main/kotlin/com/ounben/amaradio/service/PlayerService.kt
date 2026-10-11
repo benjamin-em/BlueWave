@@ -362,12 +362,28 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
     }
 
     override fun onTaskRemoved(rootIntent: Intent?) {
+        val className = rootIntent?.component?.className ?: ""
+        if (Utils.isDebug) {
+            Log.d(tag, "onTaskRemoved called for component: $className")
+        }
+
+        // Ignore temporary Glance trampoline activities from AppWidget list item clicks
+        if (className.contains("InvisibleActionTrampolineActivity") ||
+            className.contains("ActionTrampolineActivity") ||
+            className.contains("glance", ignoreCase = true)
+        ) {
+            if (Utils.isDebug) {
+                Log.d(tag, "Ignoring onTaskRemoved for Glance trampoline activity: $className")
+            }
+            return
+        }
+
         val sharedPref = PreferenceManager.getDefaultSharedPreferences(this)
         val removeOnStop = sharedPref.getBoolean("settings_remove_notification_on_stop", true)
         
         if (removeOnStop || radioPlayer?.isPlaying() != true) {
             try {
-                if (Utils.isDebug) Log.d(tag, "onTaskRemoved: Stopping playback, releasing session and cancelling notification")
+                if (Utils.isDebug) Log.d(tag, "onTaskRemoved: Main task closed ($className). Stopping playback, releasing session and cancelling notification")
                 stop()
                 mediaSession?.run {
                     release()
@@ -431,13 +447,23 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
                     }
                     ACTION_PLAY_STATION -> {
                         val stationId = it.getStringExtra(EXTRA_STATION_ID)
-                        if (stationId != null) {
+                        if (!stationId.isNullOrEmpty()) {
+                            // Fast-Path: Instantly promote service to Foreground Service to satisfy Android 14+ FGS contract
+                            val placeholderStation = DataRadioStation(StationUuid = stationId, Name = "Connecting...")
+                            if (itsCurrentStation == null) {
+                                itsCurrentStation = placeholderStation
+                            }
+                            updateNotification(PlayState.PrePlaying)
+
                             serviceScope.launch {
                                 val station = amaradioBrowser.getStationById(stationId)
                                             ?: (application as AMARadioApp).favouriteManager.getById(stationId)
                                             ?: (application as AMARadioApp).historyManager.getById(stationId)
+                                            ?: placeholderStation
                                 
-                                station?.let { playWithoutWarnings(it) }
+                                withContext(Dispatchers.Main) {
+                                    playWithoutWarnings(station)
+                                }
                             }
                         }
                     }

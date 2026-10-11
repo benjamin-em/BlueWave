@@ -34,6 +34,19 @@
 -keep class androidx.media3.** { *; }
 -dontwarn androidx.media3.**
 
+# Jetpack Glance & AppWidget Keep Rules
+-keep class androidx.glance.** { *; }
+-dontwarn androidx.glance.**
+-keep class * implements androidx.glance.appwidget.action.ActionCallback { *; }
+-keepclassmembers class * implements androidx.glance.appwidget.action.ActionCallback { *; }
+
+# AMARadio Widget Components & Receivers
+-keep class com.ounben.amaradio.widget.** { *; }
+-keepclassmembers class com.ounben.amaradio.widget.** { *; }
+
+# DataStore & Glance State Definitions
+-keep class androidx.datastore.preferences.core.** { *; }
+
 # OkHttp and dependencies
 -dontwarn okhttp3.**
 -dontwarn okio.**

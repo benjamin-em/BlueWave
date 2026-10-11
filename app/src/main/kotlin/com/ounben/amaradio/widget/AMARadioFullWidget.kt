@@ -92,10 +92,10 @@ class AMARadioFullWidget : GlanceAppWidget() {
         activeTab: String,
         stations: List<DataRadioStation>
     ) {
-        val backgroundColor = ColorProvider(R.color.widget_bg)
-        val textColor = ColorProvider(R.color.widget_on_bg)
-        val secondaryColor = ColorProvider(R.color.widget_on_bg_secondary)
-        val surfaceVariantColor = ColorProvider(R.color.widget_surface_variant)
+        val backgroundColor = GlanceTheme.colors.background
+        val textColor = GlanceTheme.colors.onBackground
+        val secondaryColor = GlanceTheme.colors.onSurfaceVariant
+        val surfaceVariantColor = GlanceTheme.colors.surfaceVariant
         val amber = ColorProvider(WidgetTheme.Amber)
 
         Column(
@@ -233,10 +233,10 @@ class AMARadioFullWidget : GlanceAppWidget() {
                 .fillMaxWidth()
                 .padding(horizontal = 8.dp, vertical = 4.dp)
                 .clickable(
-                    actionStartService(Intent(context, PlayerService::class.java).apply {
-                        action = PlayerService.ACTION_PLAY_STATION
-                        putExtra(PlayerService.EXTRA_STATION_ID, station.StationUuid)
-                    }, isForegroundService = true)
+                    actionSendBroadcast(Intent(context, AMARadioWidgetActionReceiver::class.java).apply {
+                        action = AMARadioWidgetActionReceiver.ACTION_PLAY_STATION
+                        putExtra(AMARadioWidgetActionReceiver.EXTRA_STATION_UUID, station.StationUuid)
+                    })
                 ),
             verticalAlignment = Alignment.CenterVertically
         ) {
