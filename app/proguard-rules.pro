@@ -1,8 +1,6 @@
 # Add project specific ProGuard rules here.
 # By default, the flags in this file are appended to flags specified
-# in C:\Users\bou\AppData\Local\Android\Sdk/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the proguardFiles
-# directive in build.gradle.
+# in Android SDK/tools/proguard/proguard-android.txt
 
 # Keep AIDL interfaces
 -keep public interface com.ounben.amaradio.IPlayerService { *; }
@@ -30,22 +28,29 @@
 # kotlinx.serialization
 -keepattributes *Annotation*, InnerClasses, EnclosingMethod, Signature
 
-# Media3 / ExoPlayer
--keep class androidx.media3.** { *; }
+# Media3 / ExoPlayer (Rely on library consumer rules)
 -dontwarn androidx.media3.**
 
-# Jetpack Glance & AppWidget Keep Rules
--keep class androidx.glance.** { *; }
+# Jetpack Glance (Specific keep rules instead of broad wildcard)
 -dontwarn androidx.glance.**
--keep class * implements androidx.glance.appwidget.action.ActionCallback { *; }
--keepclassmembers class * implements androidx.glance.appwidget.action.ActionCallback { *; }
+-keep class * extends androidx.glance.appwidget.GlanceAppWidget { *; }
+-keep class * extends androidx.glance.appwidget.GlanceAppWidgetReceiver { *; }
+-keep class * implements androidx.glance.appwidget.action.ActionCallback {
+    public <init>();
+}
 
-# AMARadio Widget Components & Receivers
--keep class com.ounben.amaradio.widget.** { *; }
--keepclassmembers class com.ounben.amaradio.widget.** { *; }
+# AMARadio Widget Entry Points & Specific Classes
+-keep class com.ounben.amaradio.widget.AMARadioFullWidget { *; }
+-keep class com.ounben.amaradio.widget.AMARadioSmallWidget { *; }
+-keep class com.ounben.amaradio.widget.AMARadioFullWidgetReceiver { *; }
+-keep class com.ounben.amaradio.widget.AMARadioSmallWidgetReceiver { *; }
+-keep class com.ounben.amaradio.widget.AMARadioWidgetActionReceiver { *; }
+-keep class com.ounben.amaradio.widget.WidgetState { *; }
+-keep class com.ounben.amaradio.widget.WidgetUpdateHelper { *; }
+-keep class com.ounben.amaradio.widget.WidgetImageLoader { *; }
 
-# DataStore & Glance State Definitions
--keep class androidx.datastore.preferences.core.** { *; }
+# DataStore Preferences
+-keepclassmembers class androidx.datastore.preferences.core.** { *; }
 
 # OkHttp and dependencies
 -dontwarn okhttp3.**
