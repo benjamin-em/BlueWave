@@ -246,10 +246,13 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
 
     override fun onBind(intent: Intent?): IBinder {
         if (Utils.isDebug) {
-            Log.d(tag, "onBind: intent=$intent")
+            Log.d(tag, "onBind: intent action=${intent?.action}")
         }
-        val binder = super.onBind(intent)
-        return binder ?: itsBinder
+        val superBinder = super.onBind(intent)
+        if (superBinder != null) {
+            return superBinder
+        }
+        return itsBinder
     }
 
     override fun onCreate() {
