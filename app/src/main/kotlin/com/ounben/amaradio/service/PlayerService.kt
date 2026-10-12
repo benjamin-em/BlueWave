@@ -1057,6 +1057,14 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
                     }
                 }
             }
+
+            // Minimal Fix: Am Ende des MediaSession Updates die Notification löschen, wenn das Setting aktiv ist
+            val removeOnStop = sharedPref?.getBoolean("settings_remove_notification_on_stop", false) ?: false
+            if (removeOnStop && radioPlayer?.isPlaying() != true && !isTransitioning) {
+                stopForeground(STOP_FOREGROUND_REMOVE)
+                NotificationManagerCompat.from(this@PlayerService).cancel(NOTIFY_ID)
+                notificationIsActive = false
+            }
         }
     }
 
