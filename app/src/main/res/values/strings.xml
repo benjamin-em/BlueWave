@@ -303,9 +303,10 @@
     <string name="action_play_in_external">Play in external player</string>
     <string name="action_choose_external_player">Choose external player</string>
 
-    <string name="settings_disable_battery_optimization">Battery optimization</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Battery optimization is ignored, AMARadio should always be able to re-gain focus after focus loss.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Battery optimization is activated, AMARadio will not be able to re-gain focus after focus loss if in background.</string>
+    <string name="settings_disable_battery_optimization">Background playback</string>
+    <string name="settings_disable_battery_optimization_desc">To keep playback running with the screen off, set battery usage to \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Open settings</string>
+    <string name="battery_opt_later">Later</string>
     <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
     <string name="settings_other">Other</string>
     <string name="settings_rate_app">Rate AMARadio</string>

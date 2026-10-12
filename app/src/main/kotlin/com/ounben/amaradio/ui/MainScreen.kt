@@ -78,9 +78,22 @@ fun MainScreen(
     var showSleepTimerDialog by remember { mutableStateOf(false) }
     var showProxyDialog by remember { mutableStateOf(false) }
     var showPlayerSelectorDialog by remember { mutableStateOf<DataRadioStation?>(null) }
-    var showDeleteConfirmDialog by remember { mutableStateOf<Int?>(null) } 
-
+    var showDeleteConfirmDialog by remember { mutableStateOf<Int?>(null) }
+    var showBatteryOptDialog by remember { mutableStateOf(false) }
     var isPlayerExpanded by remember { mutableStateOf(false) }
+
+    LaunchedEffect(Unit) {
+        try {
+            val powerManager = context.getSystemService(Context.POWER_SERVICE) as? android.os.PowerManager
+            val isIgnoring = powerManager?.isIgnoringBatteryOptimizations(context.packageName) ?: true
+            val sharedPref = PreferenceManager.getDefaultSharedPreferences(context)
+            val alreadyShown = sharedPref.getBoolean("battery_opt_dialog_shown", false)
+
+            if (!isIgnoring && !alreadyShown) {
+                showBatteryOptDialog = true
+            }
+        } catch (_: Exception) {}
+    }
     
     val settingsViewModel: SettingsViewModel = viewModel()
     val settingsUiState by settingsViewModel.uiState.collectAsState()
@@ -316,8 +329,18 @@ fun MainScreen(
                                     try { context.startActivity(intent) } catch (_: Exception) {}
                                 },
                                 onBatteryOptimize = {
-                                    val intent = Intent("android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS")
-                                    try { context.startActivity(intent) } catch (_: Exception) {}
+                                    try {
+                                        val intent = Intent(
+                                            android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            android.net.Uri.parse("package:${context.packageName}")
+                                        )
+                                        context.startActivity(intent)
+                                    } catch (_: Exception) {
+                                        try {
+                                            val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
+                                            context.startActivity(intent)
+                                        } catch (_: Exception) {}
+                                    }
                                 },
                                 onRateApp = {
                                     (context as? android.app.Activity)?.let {
@@ -325,8 +348,7 @@ fun MainScreen(
                                     }
                                 },
                                 onExportBackup = onExportBackup,
-                                onImportBackup = onImportBackup,
-                                batterySummary = ""
+                                onImportBackup = onImportBackup
                             )
                         }
                         composable(Screen.About.route) { AboutScreen { navController.popBackStack() } }
@@ -433,6 +455,35 @@ fun MainScreen(
                     ),
                     shape = RoundedCornerShape(8.dp)
                 ) { Text(stringResource(R.string.no), fontWeight = FontWeight.Bold) }
+            }
+        )
+    }
+
+    if (showBatteryOptDialog) {
+        BatteryOptimizationDialog(
+            onDismiss = {
+                showBatteryOptDialog = false
+                PreferenceManager.getDefaultSharedPreferences(context).edit {
+                    putBoolean("battery_opt_dialog_shown", true)
+                }
+            },
+            onOpenSettings = {
+                showBatteryOptDialog = false
+                PreferenceManager.getDefaultSharedPreferences(context).edit {
+                    putBoolean("battery_opt_dialog_shown", true)
+                }
+                try {
+                    val intent = Intent(
+                        android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                        android.net.Uri.parse("package:${context.packageName}")
+                    )
+                    context.startActivity(intent)
+                } catch (_: Exception) {
+                    try {
+                        val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
+                        context.startActivity(intent)
+                    } catch (_: Exception) {}
+                }
             }
         )
     }

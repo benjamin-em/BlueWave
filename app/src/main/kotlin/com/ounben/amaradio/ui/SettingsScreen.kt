@@ -37,8 +37,7 @@ fun SettingsScreen(
     onBatteryOptimize: () -> Unit,
     onRateApp: () -> Unit,
     onExportBackup: () -> Unit,
-    onImportBackup: () -> Unit,
-    batterySummary: String
+    onImportBackup: () -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val serverInfoUiState by serverInfoViewModel.uiState.collectAsState()
@@ -254,7 +253,7 @@ fun SettingsScreen(
             SettingsCategory(title = stringResource(R.string.settings_other)) {
                 SettingsClickable(
                     title = stringResource(R.string.settings_disable_battery_optimization),
-                    summary = batterySummary,
+                    summary = stringResource(R.string.settings_disable_battery_optimization_desc),
                     icon = Icons.Default.BatteryChargingFull,
                     onClick = onBatteryOptimize
                 )
