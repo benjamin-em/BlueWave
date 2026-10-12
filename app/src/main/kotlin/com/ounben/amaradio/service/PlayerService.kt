@@ -381,30 +381,21 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             return
         }
 
-        val sharedPref = PreferenceManager.getDefaultSharedPreferences(this)
-        val removeOnStop = sharedPref.getBoolean("settings_remove_notification_on_stop", true)
-        
-        if (removeOnStop || radioPlayer?.isPlaying() != true) {
-            try {
-                if (Utils.isDebug) Log.d(tag, "onTaskRemoved: Main task closed ($className). Stopping playback, releasing session and cancelling notification")
-                stop()
-                mediaSession?.run {
-                    release()
-                    mediaSession = null
-                }
-                stopForeground(STOP_FOREGROUND_REMOVE)
-                val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-                manager.cancel(NOTIFY_ID)
-                stopSelf()
-            } catch (e: Exception) {
-                if (Utils.isDebug) Log.e(tag, "Error in onTaskRemoved", e)
+        // ALWAYS remove notification, stop playback, and stop service when main app task is closed/swiped away from Recents
+        try {
+            if (Utils.isDebug) Log.d(tag, "onTaskRemoved: Main task closed ($className). Stopping playback, releasing session and cancelling notification")
+            stop()
+            mediaSession?.run {
+                release()
+                mediaSession = null
             }
-        } else {
-            try {
-                super.onTaskRemoved(rootIntent)
-            } catch (e: Exception) {
-                if (Utils.isDebug) Log.e(tag, "Safely caught MediaSessionService.onTaskRemoved exception", e)
-            }
+            stopForeground(STOP_FOREGROUND_REMOVE)
+            val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            manager.cancel(NOTIFY_ID)
+            notificationIsActive = false
+            stopSelf()
+        } catch (e: Exception) {
+            if (Utils.isDebug) Log.e(tag, "Error in onTaskRemoved", e)
         }
     }
 
