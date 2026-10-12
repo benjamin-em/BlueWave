@@ -29,7 +29,11 @@ FOLDER_TO_GOOGLE_LANG = {
     'values-sw': 'sw', 'values-ta': 'ta', 'values-te': 'te', 'values-th': 'th',
     'values-tr': 'tr', 'values-uk': 'uk', 'values-ur': 'ur', 'values-uz': 'uz',
     'values-vi': 'vi', 'values-zh-rCN': 'zh-CN', 'values-zh-rHK': 'zh-TW',
-    'values-zh-rTW': 'zh-TW', 'values-zu': 'zu'
+    'values-zh-rTW': 'zh-TW', 'values-zu': 'zu',
+    'values-as': 'as', 'values-ha': 'ha', 'values-ig': 'ig', 'values-ji': 'yi',
+    'values-ky': 'ky', 'values-lo': 'lo', 'values-mn': 'mn', 'values-or': 'or',
+    'values-pa': 'pa', 'values-ps': 'ps', 'values-rm': 'rm', 'values-xh': 'xh',
+    'values-yi': 'yi', 'values-yo': 'yo'
 }
 
 GERMAN_MANUAL = {
