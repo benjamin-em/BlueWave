@@ -4,11 +4,13 @@ import glob
 import time
 import urllib.request
 import urllib.parse
+import urllib.error
 import json
 import xml.etree.ElementTree as ET
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 RES_DIR = r"C:/Users/bou/StudioProjects/AMARadio/app/src/main/res"
+
+REQUEST_DELAY = 0.35
 
 FOLDER_TO_GOOGLE_LANG = {
     'values-af': 'af', 'values-am': 'am', 'values-ar': 'ar', 'values-az': 'az',
@@ -36,28 +38,29 @@ FOLDER_TO_GOOGLE_LANG = {
     'values-yi': 'yi', 'values-yo': 'yo'
 }
 
-GERMAN_MANUAL = {
-    "widget_name_small": "AMARadio Kompakt",
-    "widget_name_full": "AMARadio Player",
-    "widget_description_small": "Schnelle Player-Steuerung",
-    "widget_description_full": "Player und Senderliste",
-    "error_no_file_manager": "Keine Dateimanager-App gefunden. Bitte stelle sicher, dass ein Datei-Explorer installiert und aktiviert ist.",
-    "error_no_browser": "Kein Webbrowser gefunden. Bitte installiere einen Browser, um diesen Link zu öffnen.",
-    "error_invalid_url": "Bitte gib eine gültige URL ein",
-    "detail_create_shortcut": "Zum Startbildschirm hinzufügen",
-    "context_menu_create_shortcut": "@string/detail_create_shortcut",
-    "settings_remove_notification_on_stop": "Benachrichtigung beim Schließen entfernen",
-    "settings_remove_notification_on_stop_desc": "Entfernt die Medien-Benachrichtigung automatisch, wenn die App aus den letzten Apps geschlossen wird",
-    "settings_auto_resume_audio_focus": "Wiedergabe nach Audio-Fokus-Verlust fortsetzen",
-    "settings_auto_resume_audio_focus_desc": "Setzt die Wiedergabe nach Telefonaten, Alarmen oder anderen Tönen automatisch fort"
+PROTECTED_VALUES = {
+    "AMARadio",
+    "AMARadio Player",
+    "AMARadio Compact",
+    "Radio-Browser",
+    "Radio-browser",
+    "radio-browser.info",
+    "Radio-Browser API",
+    "GitHub",
+    "Play Store",
+    "M3U",
+    "ZIP",
+    "Android Auto",
+    "GoogleCast",
+    "URL"
 }
 
-def translate_google(text, target_lang):
-    if not text or text.startswith("@string/"):
-        return text
+RATE_LIMIT_HIT = False
 
-    if text in ["AMARadio Player", "AMARadio Compact"]:
-        return text
+def translate_google(text, target_lang):
+    global RATE_LIMIT_HIT
+    if RATE_LIMIT_HIT or not text or text.startswith("@string/") or text in PROTECTED_VALUES:
+        return None if RATE_LIMIT_HIT else text
 
     placeholders = []
     def mask_match(match):
@@ -69,28 +72,39 @@ def translate_google(text, target_lang):
     masked_text = masked_text.replace("\\n", " XNEWLINEHANDLERX ")
 
     url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + target_lang + '&dt=t&q=' + urllib.parse.quote(masked_text)
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
+    req = urllib.request.Request(
+        url,
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': '*/*'
+        }
+    )
 
-    for attempt in range(3):
-        try:
-            res = urllib.request.urlopen(req, timeout=5)
+    try:
+        time.sleep(REQUEST_DELAY)
+        with urllib.request.urlopen(req, timeout=8) as res:
             data = json.loads(res.read().decode('utf-8'))
 
-            translated = ""
-            for chunk in data[0]:
-                if chunk[0]:
-                    translated += chunk[0]
+        translated = ""
+        for chunk in data[0]:
+            if chunk[0]:
+                translated += chunk[0]
 
-            for idx, original_ph in enumerate(placeholders):
-                ph_pattern = re.compile(rf'\s*XPLACEHOLDER{idx}X\s*', re.IGNORECASE)
-                translated = ph_pattern.sub(original_ph, translated)
+        for idx, original_ph in enumerate(placeholders):
+            ph_pattern = re.compile(rf'\s*XPLACEHOLDER{idx}X\s*', re.IGNORECASE)
+            translated = ph_pattern.sub(original_ph, translated)
 
-            translated = re.sub(r'\s*XNEWLINEHANDLERX\s*', '\\\\n', translated)
-            return translated.strip()
-        except Exception as e:
-            time.sleep(0.3)
+        translated = re.sub(r'\s*XNEWLINEHANDLERX\s*', '\\\\n', translated)
+        return translated.strip()
 
-    return text
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            RATE_LIMIT_HIT = True
+            print(f"\n[HTTP 429] Rate-Limit erreicht. Google Translate blockiert Anfragen von dieser IP.")
+            return None
+        return None
+    except Exception:
+        return None
 
 def parse_string_keys(file_path):
     keys = {}
@@ -115,70 +129,100 @@ def format_xml_value(text):
     val = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     val = val.replace("&amp;amp;", "&amp;")
     val = re.sub(r"(?<!\\)'", r"\'", val)
+    val = re.sub(r'(?<!\\)"', r'\"', val)
+    if val.startswith(('@', '?')):
+        val = '\\' + val
     return val
 
 def process_language(lang_dir, master_keys):
+    global RATE_LIMIT_HIT
+    if RATE_LIMIT_HIT:
+        return
+
     folder_name = os.path.basename(lang_dir)
     file_path = os.path.join(lang_dir, "strings.xml")
     if not os.path.exists(file_path):
         return
 
-    existing_keys = parse_string_keys(file_path)
-    missing_keys = [k for k in master_keys if k not in existing_keys]
-
-    if not missing_keys:
+    target_lang = FOLDER_TO_GOOGLE_LANG.get(folder_name)
+    if not target_lang:
         return
 
-    target_lang = FOLDER_TO_GOOGLE_LANG.get(folder_name, 'en')
-    print(f"Processing {folder_name} ({target_lang}) - {len(missing_keys)} missing keys...")
+    existing_keys = parse_string_keys(file_path)
 
-    raw_content = open(file_path, "r", encoding="utf-8").read()
-    new_lines = []
+    missing_keys = []
+    replace_keys = []
 
-    for k in missing_keys:
+    for k, eng_text in master_keys.items():
+        if k not in existing_keys:
+            missing_keys.append(k)
+        elif existing_keys[k].strip() == eng_text.strip() and eng_text.strip() not in PROTECTED_VALUES:
+            replace_keys.append(k)
+
+    if not missing_keys and not replace_keys:
+        return
+
+    print(f"Processing {folder_name} ({target_lang}) - {len(missing_keys)} missing, {len(replace_keys)} untranslated English...", flush=True)
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    replaced_count = 0
+    for k in replace_keys:
+        if RATE_LIMIT_HIT:
+            return
         eng_text = master_keys[k]
+        if eng_text.startswith("@string/"):
+            continue
 
-        if folder_name == "values-de" and k in GERMAN_MANUAL:
-            translated_text = GERMAN_MANUAL[k]
-        elif eng_text.startswith("@string/"):
-            translated_text = eng_text
+        translated = translate_google(eng_text, target_lang)
+        if translated:
+            xml_val = format_xml_value(translated)
+            pattern = re.compile(rf'(<string\s+name="{re.escape(k)}"[^>]*>)(.*?)(</string>)', re.DOTALL)
+            content = pattern.sub(rf'\g<1>{xml_val}\g<3>', content)
+            replaced_count += 1
+
+    new_lines = []
+    for k in missing_keys:
+        if RATE_LIMIT_HIT:
+            return
+        eng_text = master_keys[k]
+        if eng_text.startswith("@string/"):
+            translated = eng_text
         else:
-            translated_text = translate_google(eng_text, target_lang)
+            translated = translate_google(eng_text, target_lang)
 
-        xml_val = format_xml_value(translated_text)
-        new_lines.append(f'    <string name="{k}">{xml_val}</string>')
+        if translated:
+            xml_val = format_xml_value(translated)
+            new_lines.append(f'    <string name="{k}">{xml_val}</string>')
 
-    insert_block = "\n" + "\n".join(new_lines) + "\n</resources>"
-    updated_content = raw_content.replace("</resources>", insert_block)
+    if new_lines:
+        last_index = content.rfind("</resources>")
+        if last_index != -1:
+            insert_block = "\n" + "\n".join(new_lines) + "\n"
+            content = content[:last_index] + insert_block + content[last_index:]
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(updated_content)
-
-    print(f"--> Finished {folder_name}!")
+    if (replaced_count > 0 or new_lines) and not RATE_LIMIT_HIT:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"--> Finished {folder_name}! Updated: {replaced_count}, Added: {len(new_lines)}", flush=True)
 
 def main():
     default_path = os.path.join(RES_DIR, "values", "strings.xml")
-    default_content = open(default_path, "r", encoding="utf-8").read()
-
-    if 'name="detail_create_shortcut"' not in default_content:
-        new_keys = '''    <string name="detail_create_shortcut">Add to home screen</string>
-    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
-</resources>'''
-        default_content = default_content.replace("</resources>", new_keys)
-        with open(default_path, "w", encoding="utf-8") as f:
-            f.write(default_content)
-
     master_keys = parse_string_keys(default_path)
-    print(f"Master translatable keys count: {len(master_keys)}")
+    print(f"Master translatable keys: {len(master_keys)}", flush=True)
 
     all_lang_dirs = sorted(glob.glob(os.path.join(RES_DIR, "values-*")))
+    lang_dirs = [d for d in all_lang_dirs if os.path.basename(d) in FOLDER_TO_GOOGLE_LANG]
 
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        futures = [executor.submit(process_language, lang_dir, master_keys) for lang_dir in all_lang_dirs]
-        for future in as_completed(futures):
-            future.result()
+    for lang_dir in lang_dirs:
+        if RATE_LIMIT_HIT:
+            print("\n[Abbruch] Vorgang abgebrochen wegen Rate-Limit (HTTP 429).")
+            break
+        process_language(lang_dir, master_keys)
 
-    print("ALL LANGUAGES COMPLETED SUCCESSFULLY!")
+    if not RATE_LIMIT_HIT:
+        print("ALL LANGUAGES COMPLETED SUCCESSFULLY!", flush=True)
 
 if __name__ == "__main__":
     main()
