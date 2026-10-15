@@ -52,19 +52,19 @@
     <string name="filter_empty_title">أنشئ تغذية محطات الراديو الخاصة بك</string>
     <string name="filter_empty_desc">قم بإنشاء عرض مخصص من خلال دمج معايير متعددة. يمكنك تضييق نطاق البحث باستخدام:</string>
     <string name="filter_empty_filter_by">تصفية حسب</string>
-    <string name="filter_empty_filter_desc">البلد، اسم المحطة، الوسوم، أو اللغة</string>
+    <string name="filter_empty_filter_desc">البلد، اسم محطة الراديو، الوسوم، أو اللغة</string>
     <string name="filter_empty_sort_by">فرز حسب</string>
     <string name="filter_empty_sort_desc">النقرات، الترتيب الأبجدي، التصويتات، أو آخر تغيير</string>
     <string name="filter_empty_hint">اكتب اسماً في الحقل أعلاه لحفظ هذا العرض المخصص!</string>
-    <string name="error_station_load">تعذر الاتصال بالمحطة</string>
+    <string name="error_station_load">تعذر الاتصال بمحطة الراديو</string>
     <string name="error_list_update">تعذر الاتصال بخادم دليل الراديو</string>
 
     <string name="error_no_connection">لا يتوفر اتصال بالإنترنت</string>
     <string name="warning_volume_zero">مستوى الصوت صفر. قد لا تتمكن من سماع أي شيء.</string>
 
-    <string name="share_action">مشاركة رابط المحطة مع..</string>
+    <string name="share_action">مشاركة رابط محطة الراديو مع..</string>
 
-    <string name="nav_item_stations">المحطات</string>
+    <string name="nav_item_stations">محطات الراديو</string>
     <string name="nav_item_starred">المفضلة</string>
     <string name="nav_item_history">السجل</string>
     <string name="nav_item_settings">الإعدادات</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">داكن</string>
     <string name="theme_system">تلقائي حسب النظام</string>
     <string name="settings_compact_style">الوضع المدمج</string>
-    <string name="settings_compact_style_desc_off">أيقونة كبيرة مع تفاصيل المحطة</string>
-    <string name="settings_compact_style_desc_on">أيقونة صغيرة بدون تفاصيل المحطة</string>
+    <string name="settings_compact_style_desc_off">أيقونة كبيرة مع تفاصيل محطة الراديو</string>
+    <string name="settings_compact_style_desc_on">أيقونة صغيرة بدون تفاصيل محطة الراديو</string>
     <string name="settings_bottom_navigation">شريط التنقل السفلي</string>
     <string name="settings_ui_scale">تحجيم واجهة المستخدم</string>
     <string name="settings_language">اللغة</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">لن يتم إظهار الوسوم نادرة الاستخدام</string>
     <string name="settings_single_use_tags_desc_on">سيتم إظهار الوسوم نادرة الاستخدام</string>
 
-    <string name="settings_show_broken">المحطات المعطلة</string>
-    <string name="settings_show_broken_on">إظهار المحطات المعطلة في القوائم</string>
-    <string name="settings_show_broken_off">عدم إظهار المحطات المعطلة في القوائم</string>
+    <string name="settings_show_broken">محطات الراديو المعطلة</string>
+    <string name="settings_show_broken_on">إظهار محطات الراديو المعطلة في القوائم</string>
+    <string name="settings_show_broken_off">عدم إظهار محطات الراديو المعطلة في القوائم</string>
 
     <string name="settings_startup_behaviour">سلوك البدء</string>
     <string name="action_grid_view">عرض الشبكة</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">إجراء البدء</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">إظهار جميع المحطات</string>
+    <string name="startup_show_all_stations">إظهار جميع محطات الراديو</string>
     <string name="startup_show_favorites">إظهار المفضلة</string>
     <string name="startup_show_history">إظهار السجل</string>
     <string name="startup_show_last_view">العرض الأخير</string>
 
-    <string name="settings_load_icons">إظهار أيقونات المحطات</string>
+    <string name="settings_load_icons">إظهار أيقونات محطات الراديو</string>
     <string name="settings_load_icons_on">سيتم تحميل الأيقونات</string>
     <string name="settings_load_icons_off">لن يتم تحميل الأيقونات</string>
 
     <string name="settings_auto_favorite">المفضلة التلقائية</string>
-    <string name="settings_auto_favorite_on">إضافة المحطات تلقائياً إلى المفضلة عند التشغيل</string>
-    <string name="settings_auto_favorite_off">عدم إضافة المحطات تلقائياً إلى المفضلة عند التشغيل</string>
+    <string name="settings_auto_favorite_on">إضافة محطات الراديو تلقائياً إلى المفضلة عند التشغيل</string>
+    <string name="settings_auto_favorite_off">عدم إضافة محطات الراديو تلقائياً إلى المفضلة عند التشغيل</string>
 
     <string name="settings_play">المشغل</string>
     <string name="settings_auto_play_on_startup">التشغيل التلقائي</string>
-    <string name="settings_auto_play_on_startup_on">تشغيل المحطة الأخيرة عند بدء التطبيق</string>
-    <string name="settings_auto_play_on_startup_off">عدم تشغيل المحطة الأخيرة عند بدء التطبيق</string>
+    <string name="settings_auto_play_on_startup_on">تشغيل محطة الراديو الأخيرة عند بدء التطبيق</string>
+    <string name="settings_auto_play_on_startup_off">عدم تشغيل محطة الراديو الأخيرة عند بدء التطبيق</string>
     <string name="settings_auto_off_on_startup">الإيقاف التلقائي</string>
     <string name="settings_auto_off_on_startup_on">استخدام مؤقت الإيقاف التلقائي مع التشغيل التلقائي</string>
     <string name="settings_auto_off_on_startup_off">عدم استخدام مؤقت الإيقاف التلقائي مع التشغيل التلقائي</string>
     <string name="settings_auto_off_sleep_timer">مؤقت الإيقاف التلقائي</string>
     <string name="settings_auto_off_sleep_timer_desc">إيقاف التشغيل بعد %1$s دقيقة</string>
     <string name="settings_play_external">تمكين المشغل الخارجي</string>
-    <string name="settings_play_external_desc_on">تشغيل المحطات باستخدام مشغل خارجي</string>
-    <string name="settings_play_external_desc_off">تشغيل المحطات باستخدام AMARadio</string>
+    <string name="settings_play_external_desc_on">تشغيل محطات الراديو باستخدام مشغل خارجي</string>
+    <string name="settings_play_external_desc_off">تشغيل محطات الراديو باستخدام AMARadio</string>
     <string name="settings_equalizer">معدل الصوت (Equalizer)</string>
 
     <string name="settings_connectivity">الاتصال</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">موقوف مؤقتاً</string>
     <string name="notify_metered_connection">اتصال محدود (بيانات الهاتف)</string>
 
-    <string name="notify_starred">تم إضافة المحطة إلى المفضلة</string>
-    <string name="notify_autostarred">تم إضافة المحطة تلقائياً إلى المفضلة</string>
-    <string name="notify_unstarred">تم إزالة المحطة من المفضلة</string>
+    <string name="notify_starred">تم إضافة محطة الراديو إلى المفضلة</string>
+    <string name="notify_autostarred">تم إضافة محطة الراديو تلقائياً إلى المفضلة</string>
+    <string name="notify_unstarred">تم إزالة محطة الراديو من المفضلة</string>
     <string name="notify_deleted_favorites">تم حذف المفضلة</string>
     <string name="notify_deleted_history">تم مسح السجل</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">يرجى اختيار مشغل</string>
     <string name="alert_select_player_name">الاسم</string>
-    <string name="hostname">اسم المضيف (Hostname)</string>
-    <string name="port">المنفذ (Port)</string>
+    <string name="hostname">عنوان الخادم</string>
+    <string name="port">منفذ الشبكة</string>
 
     <string name="alert_press_back_to_exit">اضغط على زر الرجوع مرة أخرى للخروج</string>
 
@@ -264,10 +264,9 @@
     <string name="action_play_in_external">التشغيل في مشغل خارجي</string>
     <string name="action_choose_external_player">اختر مشغلاً خارجياً</string>
 
-    <string name="settings_disable_battery_optimization">تحسين البطارية</string>
     <string name="settings_ignore_battery_optimization_summary_on">يتم تجاهل تحسين البطارية، يجب أن يكون AMARadio قادراً دائماً على استعادة التركيز بعد فقدانه.</string>
     <string name="settings_ignore_battery_optimization_summary_off">تم تفعيل تحسين البطارية، لن يتمكن AMARadio من استعادة التركيز بعد فقدانه إذا كان في الخلفية.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">أخرى</string>
     <string name="settings_rate_app">قيم AMARadio</string>
     <string name="settings_rate_app_summary">إذا أعجبك التطبيق، يرجى ترك مراجعة على متجر Play!</string>
@@ -324,7 +323,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">شعار المحطة</string>
+    <string name="accessibility_station_logo">شعار محطة الراديو</string>
     <string name="accessibility_favorite_selected">المفضلة، تم التحديد</string>
     <string name="accessibility_favorite_not_selected">المفضلة، لم يتم التحديد</string>
     <string name="accessibility_category_icon">أيقونة الفئة</string>
@@ -337,7 +336,7 @@
     <string name="accessibility_configure">تهيئة</string>
     <string name="accessibility_close">إغلاق</string>
     <string name="accessibility_add_filter">إضافة مرشح</string>
-    <string name="accessibility_station_options">خيارات المحطة</string>
+    <string name="accessibility_station_options">خيارات محطة الراديو</string>
     <string name="not_applicable">غير متاح</string>
     <string name="accessibility_station_description">المحطة: %1$s، اللغة: %2$s، الوسوم: %3$s</string>
 
@@ -345,27 +344,56 @@
     <string name="error_no_browser">تعذر العثور على متصفح الويب. الرجاء تثبيت متصفح لفتح هذا الرابط.</string>
     <string name="error_no_homepage">لا توجد صفحة رئيسية متاحة لهذه المحطة</string>
     <string name="tab_custom_stations">مخصص</string>
-    <string name="action_add_custom">إضافة محطة مخصصة</string>
-    <string name="station_name">اسم المحطة</string>
+    <string name="action_add_custom">إضافة محطة راديو مخصصة</string>
+    <string name="station_name">اسم محطة الراديو</string>
     <string name="stream_url">عنوان URL للدفق</string>
-    <string name="favicon_url">عنوان URL للرمز المفضل (اختياري)</string>
+    <string name="favicon_url">عنوان URL لأيقونة المحطة (Favicon)</string>
     <string name="select_image">حدد الصورة</string>
     <string name="error_invalid_url">الرجاء إدخال عنوان URL صالح</string>
-    <string name="action_save">يحفظ</string>
+    <string name="action_save">حفظ</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">ضوابط لاعب سريعة</string>
-    <string name="widget_description_full">قائمة اللاعبين والمحطات</string>
+    <string name="widget_description_small">عناصر تحكم المشغل السريعة</string>
+    <string name="widget_description_full">المشغل وقائمة محطات الراديو</string>
 
     <string name="settings_auto_db_update">مزامنة بيانات الخلفية</string>
-    <string name="settings_auto_db_update_desc">التحديث التلقائي لقاعدة بيانات المحطة عبر Radio-Browser API (مستحسن).</string>
-    <string name="settings_station_click_counter">محطة انقر فوق العداد</string>
-    <string name="settings_station_click_counter_desc">دعم إحصائيات متصفح الراديو من خلال مشاركة أحداث اللعب بشكل مجهول.</string>
+    <string name="settings_auto_db_update_desc">التحديث التلقائي لقاعدة بيانات محطة الراديو عبر Radio-Browser API (مستحسن).</string>
+    <string name="settings_station_click_counter">عداد نقرات محطة الراديو</string>
+    <string name="settings_station_click_counter_desc">دعم إحصائيات متصفح الراديو من خلال مشاركة أحداث التشغيل بشكل مجهول.</string>
     <string name="settings_rate_app_github">تتمتع AMARadio؟</string>
-    <string name="settings_rate_app_github_summary">اترك نجمة على جيثب! يساعد الآخرين على اكتشاف التطبيق ويدعم التطوير المستقبلي.</string>
+    <string name="settings_rate_app_github_summary">اترك نجمة على GitHub! يساعد الآخرين على اكتشاف التطبيق ويدعم التطوير المستقبلي.</string>
 
     <string name="settings_remove_notification_on_stop">إزالة الإشعارات عند إغلاق التطبيق</string>
     <string name="settings_remove_notification_on_stop_desc">تجاهل إشعارات الوسائط تلقائيًا عند إغلاق التطبيق من التطبيقات الحديثة</string>
     <string name="settings_auto_resume_audio_focus">استئناف بعد فقدان التركيز الصوتي</string>
     <string name="settings_auto_resume_audio_focus_desc">استئناف التشغيل تلقائيًا بعد المكالمات الهاتفية أو الإنذارات أو توقف الصوت الآخر</string>
+
+    <string name="settings_backup_restore">النسخ الاحتياطي والاستعادة</string>
+    <string name="settings_export_backup">إنشاء نسخة احتياطية كاملة (ZIP)</string>
+    <string name="settings_export_backup_desc">يحفظ جميع المفضلة والمحطات المخصصة والأيقونات المحلية في ملف ZIP واحد</string>
+    <string name="settings_import_backup">استعادة النسخة الاحتياطية (ZIP)</string>
+    <string name="settings_import_backup_desc">يستعيد المفضلة والمحطات المخصصة والأيقونات المحلية من ملف ZIP احتياطي</string>
+    <string name="backup_export_success">تم حفظ النسخة الاحتياطية بنجاح</string>
+    <string name="backup_export_error">فشل حفظ النسخة الاحتياطية</string>
+    <string name="backup_import_success">تمت استعادة النسخة الاحتياطية بنجاح</string>
+    <string name="backup_import_error">فشلت استعادة النسخة الاحتياطية</string>
+
+    <string name="database_summary_title">قاعدة البيانات المحلية</string>
+    <string name="database_total_stations">إجمالي محطات الراديو</string>
+    <string name="database_last_sync">آخر تحديث</string>
+    <string name="database_update_now">تحديث قاعدة بيانات المحطة الآن</string>
+    <string name="database_full_update">تحديث قاعدة بيانات المحطة</string>
+    <string name="database_syncing">جاري المزامنة…</string>
+    <string name="database_downloading">جاري التحميل…</string>
+    <string name="database_stations_loaded">%1$s محطة راديو</string>
+    <string name="database_sync_channel_name">مزامنة قاعدة بيانات محطة الراديو</string>
+    <string name="database_sync_success">اكتمل تحديث قاعدة بيانات المحطة بنجاح</string>
+    <string name="database_error_no_connection">لا يوجد اتصال بالإنترنت</string>
+    <string name="database_error_no_space">لا توجد مساحة كافية على القرص</string>
+    <string name="database_error_failed">فشل تحديث قاعدة البيانات</string>
+
+    <string name="settings_disable_battery_optimization">التشغيل في الخلفية</string>
+    <string name="settings_disable_battery_optimization_desc">للحفاظ على استمرار التشغيل عند إيقاف الشاشة، اضبط استخدام البطارية على \'غير مقيد\'.</string>
+    <string name="battery_opt_open_settings">فتح الإعدادات</string>
+    <string name="battery_opt_later">لاحقاً</string>
 </resources>

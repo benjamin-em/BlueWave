@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">Suna</string>
+    <string name="detail_tags">Alamomi</string>
+    <string name="detail_country">Ƙasa</string>
+    <string name="detail_create_shortcut">Ƙara zuwa allo na gida</string>
+    <string name="detail_language">Harshe</string>
+    <string name="detail_weblink">Hanyar yanar gizo</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">Kunna</string>
+    <string name="detail_pause">Aiki tsaikawu</string>
+    <string name="detail_stop">Atsayar</string>
+    <string name="detail_share">Raba</string>
+    <string name="detail_play_in_AMARadio">Kunna a AMARadio</string>
+
+    <string name="action_links">Hanyoyi</string>
+    <string name="action_homepage">Shafin gida</string>
+    <string name="action_favorite">Rai da kuka fi so</string>
+    <string name="action_starred_add">Ƙara zuwa abubuwan da aka fi so</string>
+    <string name="action_starred_remove">Cire daga abubuwan da aka fi so</string>
+
+    <string name="action_station_visit_website">Jayi ziyarar gidan yanar gizo</string>
+    <string name="action_station_copy_stream_url">Kwali haɗin sauti (Stream URL)</string>
+    <string name="action_station_share">Raba</string>
+
+    <string name="action_local">Na gida</string>
+    <string name="action_skip_to_next">Na gaba</string>
+    <string name="action_pause">Tsaikawu</string>
+    <string name="action_skip_to_previous">Na baya</string>
+    <string name="action_resume">Ci gaba</string>
+    <string name="action_stop">Atsayar</string>
+    <string name="action_search">Nema</string>
+    <string name="action_delete">Goge</string>
+    <string name="action_delete_history">Goge tarihin kasancewa</string>
+    <string name="action_delete_favorites">Goge duk abubuwan da aka fi so</string>
+    <string name="action_delete_stream_history">Goge tarihin waƙoƙi</string>
+    <string name="action_ok">To</string>
+    <string name="action_cancel">Soke</string>
+    <string name="action_top_click">Mafi yawan danna</string>
+    <string name="action_toggle_view">Sauya salon kallo</string>
+    <string name="action_top_vote">Mafi yawan ƙuri\'a</string>
+    <string name="action_changed_lately">Wanda aka sauya kwanan nan</string>
+    <string name="action_currently_playing">Yana kunne yanzu</string>
+    <string name="action_tags">Alamomi</string>
+    <string name="action_countries">Ƙasashe/Yankuna</string>
+    <string name="action_languages">Harsuna</string>
+    <string name="action_edit">Gyara</string>
+    <string name="action_copy_info">Kwafi bayani</string>
+    <string name="action_rename_tab">Manta sunan shafin</string>
+
+    <string name="error_filter_name_required">Da fatan za ku fara shigar da suna don wannan shafin scagewa</string>
+    <string name="confirm_delete_filter_tab">Shin kun tabbata kuna son goge \"%1$s\"?</string>
+    <string name="filter_empty_title">Gina kansa jerin gidajen rediyo</string>
+    <string name="filter_empty_desc">Ƙirƙiri salon ra\'ayi na kanku ta hanyar haɗa ka\'idoji daban-daban. Kuna iya rage bincikenku ta:</string>
+    <string name="filter_empty_filter_by">Tace ta hanyar:</string>
+    <string name="filter_empty_filter_desc">Ƙasa, Sunan gidan rediyo, Alamomi ko Harshe</string>
+    <string name="filter_empty_sort_by">Saita ta hanyar:</string>
+    <string name="filter_empty_sort_desc">Dannawa, Harafi, Ƙuri\'a ko Sauye-sauyen kwanan nan</string>
+    <string name="filter_empty_hint">Rubuta suna a akwatin da ke sama don adana wannan kallo!</string>
+
+    <string name="error_station_load">An kasa haɗawa da gidan rediyon</string>
+    <string name="error_list_update">An kasa haɗawa da uwar garken Radio-Browser</string>
+
+    <string name="error_no_connection">Babu haɗin intanet na kusa</string>
+    <string name="warning_volume_zero">Sautin yana nialas. Za ku iya rashin jin komai.</string>
+
+    <string name="share_action">Raba hanyar gidan rediyo da…</string>
+
+    <string name="nav_item_stations">Gidajen Rediyo</string>
+    <string name="nav_item_starred">Mafi so</string>
+    <string name="nav_item_history">Tarihi</string>
+    <string name="nav_item_settings">Saituna</string>
+
+    <string name="about_text">AMARadio 100% kyauta ne daga tallace-tallace kuma yana kiyaye sirri.\n\nA da na haɓaka wannan manhaja ne don mahaifiyata domin in ba ta damar sauraron rediyo cikin sauƙi ba tare da tallace-tallace masu ban haushi ba. Shiyasa AMARadio zai kasance kyauta daga tallace-tallace koyaushe – wannan alkawari ne gare ta, da na raba muku duka.\n\nWannan aikin gundarin shafi ne (fork) daga aikace-aikacen RadioDroid. An dauke dukkan lambobin zuwa Kotlin domin tabbatar da manhajar tana gudanar da kyau akan sabbin leagan na Android.\n\nKwasan intanet na samuwa a: https://github.com/ounben/AMARadio\n\nWannan manhaja tana amfani da ebo na gidajen rediyo kyauta a https://www.radio-browser.info .\nKo wanene zai iya ƙara gidajen rediyo. Yana aiki kamar wiki na rediyon intanet.\n\nTuntuba: ben@ounben.com\n\nAbun matsaloli: https://github.com/ounben/AMARadio/issues\n\nIdan kuna son manhajar kuma kuna son taimakawa, ku turo mini ríomhphost.\nAna maraba da ra\'ayoyi don sabbin ayyuka koyaushe!\n\nWannan manhaja kyauta ce a ƙarƙashin GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">Sigar: %1$s</string>
+    <string name="detail_star">Ƙara zuwa abubuwan da aka fi so</string>
+    <string name="detail_unstar">Cire daga abubuwan da aka fi so</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">Yana lodi…</string>
+
+    <string name="sleep_timer" formatted="true">Agogon barci: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">Atsayar da kunne bayan minti na zabin</string>
+    <string name="sleep_timer_apply">Aiwatar</string>
+    <string name="sleep_timer_clear">Goge</string>
+    <string name="nav_item_add_sleep">Agogon barci</string>
+
+    <string name="nav_item_save_playlist">Fitar da mafi so zuwa jerin waƙoƙi</string>
+    <string name="nav_item_load_playlist">Shigar da mafi so daga jerin waƙoƙi</string>
+    <string name="nav_item_save_history_playlist">Fitar da tarihi zuwa jerin waƙoƙi</string>
+    <string name="confirm_overwrite_file">A sake rubuta akan faifan?</string>
+    <string name="dialog_hint_file_name">Shigar da sunan faifan</string>
+    <string name="error_empty_field">Wannan wajen yana da mahimmanci</string>
+    <string name="error_invalid_file_name">Sunan faifan bai dace ba</string>
+    <string name="label_button_cancel">Soke</string>
+    <string name="label_button_overwrite">Sake rubutawa</string>
+    <string name="notify_load_playlist_nok">Ba a iya shigarwa daga %1$s&#47;%2$s ba</string>
+    <string name="notify_load_playlist_now">Yana shigarwa daga %1$s&#47;%2$s, da fatan za a jira.</string>
+    <string name="notify_load_playlist_ok">An shigar da gidajen rediyo %1$d daga %2$s&#47;%3$s</string>
+    <string name="notify_save_playlist_nok">Ba a iya fitarwa zuwa %1$s&#47;%2$s ba</string>
+    <string name="notify_save_playlist_now">Yana fitarwa zuwa %1$s&#47;%2$s, da fatan za a jira.</string>
+    <string name="notify_save_playlist_ok">An fitar zuwa %1$s&#47;%2$s cikin nasara</string>
+    <string name="notify_sync_list_deleted_entries">%1$d daga gidan rediyo %2$d na kusa a cikin jerin ba sa cikin uwar garken</string>
+
+    <string name="searchpreference_clear_history">Goge tarihi</string>
+    <string name="searchpreference_no_results">Babu sakamako</string>
+    <string name="searchpreference_search">Nema…</string>
+    <string name="settings_appearance">Salo</string>
+    <string name="settings_theme_selection_title">Lalla</string>
+    <string name="theme_light">Fari</string>
+    <string name="theme_dark">Baki</string>
+    <string name="theme_system">Sallamar tsarin na\'ura</string>
+    <string name="settings_compact_style">Mafi ƙarancin girma</string>
+    <string name="settings_compact_style_desc_off">Alama mai girma tare da bayanai</string>
+    <string name="settings_compact_style_desc_on">Alama ƙarama ba tare da bayanai ba</string>
+    <string name="settings_bottom_navigation">Kewayawa a ƙasa</string>
+    <string name="settings_ui_scale">Girman kewayawa</string>
+    <string name="settings_language">Harshe</string>
+    <string name="ui_scale_compact">Ƙarami</string>
+    <string name="ui_scale_standard">Sada aminci</string>
+    <string name="ui_scale_large">Babba</string>
+    <string name="ui_scale_extra_large">Mafi girma</string>
+
+    <string name="settings_interaction">Ayyuka</string>
+    <string name="settings_single_use_tags">Nuna alamomi marasa amfani da yawa</string>
+    <string name="settings_single_use_tags_desc_off">Alamomi marasa amfani da yawa ba za a nuna su ba</string>
+    <string name="settings_single_use_tags_desc_on">Alamomi marasa amfani da yawa za a nuna su</string>
+
+    <string name="settings_show_broken">Gidajen rediyo marasa aiki</string>
+    <string name="settings_show_broken_on">Nuna gidajen rediyo marasa aiki a cikin jerin</string>
+    <string name="settings_show_broken_off">Kada a nuna gidajen rediyo marasa aiki a cikin jerin</string>
+
+    <string name="settings_startup_behaviour">Aiki a farkon buɗewa</string>
+    <string name="action_grid_view">Kallon ma\'auni (Grid)</string>
+    <string name="action_list_view">Kallon jeri (List)</string>
+
+    <string name="startup_action_title">Aiki a farkon fara</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">Nuna duk gidajen rediyo</string>
+    <string name="startup_show_favorites">Nuna mafi so</string>
+    <string name="startup_show_history">Nuna tarihi</string>
+    <string name="startup_show_last_view">Kallo na ƙarshe</string>
+
+    <string name="settings_load_icons">Nuna alamun gidan rediyo</string>
+    <string name="settings_load_icons_on">Za a saukar da alamun gidan rediyo</string>
+    <string name="settings_load_icons_off">Ba za a saukar da alamun gidan rediyo ba</string>
+
+    <string name="settings_auto_favorite">Auto-mafi so</string>
+    <string name="settings_auto_favorite_on">Ƙara gidan rediyo zuwa mafi so yayin kunne</string>
+    <string name="settings_auto_favorite_off">Kada a ƙara gidan rediyo zuwa mafi so yayin kunne</string>
+
+    <string name="settings_play">Na\'urar kunne</string>
+    <string name="settings_auto_play_on_startup">Auto-play</string>
+    <string name="settings_auto_play_on_startup_on">Kunna gidan rediyon ƙarshe a farkon farawa</string>
+    <string name="settings_auto_play_on_startup_off">Kada a kunna gidan rediyon ƙarshe a farkon farawa</string>
+    <string name="settings_auto_off_on_startup">Auto-stop</string>
+    <string name="settings_auto_off_on_startup_on">Amfani da agogon auto-stop tare da auto-play</string>
+    <string name="settings_auto_off_on_startup_off">Kada a yi amfani da agogon auto-stop tare da auto-play</string>
+    <string name="settings_auto_off_sleep_timer">Agogon auto-stop</string>
+    <string name="settings_auto_off_sleep_timer_desc">Atsayar da kunne bayan minti %1$s</string>
+    <string name="settings_play_external">Kunna na\'urar waje</string>
+    <string name="settings_play_external_desc_on">Kunna rediyo da na\'urar waje</string>
+    <string name="settings_play_external_desc_off">Kunna rediyo da AMARadio</string>
+    <string name="settings_equalizer">Equalizer</string>
+
+    <string name="settings_connectivity">Harkokin haɗi</string>
+    <string name="settings_connect_timeout">Lokacin haɗi ya ƙare</string>
+    <string name="settings_read_timeout">Lokacin karatun sauti ya ƙare</string>
+    <string name="settings_resume_timeout">Lokacin komawa aiki ya ƙare</string>
+    <string name="settings_retry_timeout">Lokacin sake gwadawa ya ƙare</string>
+    <string name="settings_retry_delay">Jinkirin sake haɗawa</string>
+    <string name="settings_proxy">Proxy</string>
+    <string name="settings_proxy_login">Sunan mai amfani</string>
+    <string name="settings_proxy_password">Lambar sirri</string>
+    <string name="settings_proxy_action_test">Gwada</string>
+    <string name="settings_proxy_working">An haɗa da %s cikin nasara</string>
+    <string name="settings_proxy_not_working">Kasa haɗawa da %1$s\n%2$s</string>
+    <string name="settings_proxy_invalid">Bayanan proxy ɗin da kuka shigar ba su da kyau</string>
+    <string name="ignore_proxy_settings_invalid">An watsar da bayanan proxy marasa kyau</string>
+    <string name="settings_seconds_format">Sakan %d</string>
+    <string name="settings_milliseconds_format">Milisakan %d</string>
+
+    <string name="settings_pause_when_noisy">Tsaikawu lokacin da aka cire hular kunne</string>
+
+    <string name="settings_auto_resume_do_not_resume">Kada a ci gaba</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">Ci gaba a haɗin igiya</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">Ci gaba da kunne lokacin da aka haɗa hular kunne na igiya</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Ci gaba a haɗin Bluetooth</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Ci gaba da kunne lokacin da aka haɗa na\'urar Bluetooth A2DP</string>
+
+    <string name="settings_auto_resume_on_any_connected">Ci gaba a duka haɗe-haɗe</string>
+
+    <string name="settings_warn_no_wifi">Gargadi na rashin Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">Bayar da gargadi yayin kunna sauti ba tare da Wi-Fi ba</string>
+    <string name="settings_warn_no_wifi_off">Kada a bayar da gargadi lokacin da babu Wi-Fi</string>
+
+    <string name="notify_pre_play">Yana haɗawa</string>
+    <string name="notify_play">Yana kunne</string>
+    <string name="notify_paused">An tsaikatar</string>
+    <string name="notify_metered_connection">Haɗin intanet na kuɗi (Metered)</string>
+
+    <string name="notify_starred">An ƙara gidan rediyon zuwa mafi so</string>
+    <string name="notify_autostarred">An ƙara gidan rediyon zuwa mafi so ta atomatik</string>
+    <string name="notify_unstarred">An cire gidan rediyon daga mafi so</string>
+    <string name="notify_deleted_favorites">An goge duk mafi so</string>
+    <string name="notify_deleted_history">An goge tarihi</string>
+
+    <string name="notify_open_link_failure">Babu wata manhaja da aka samu don buɗe haɗin</string>
+
+    <string name="notify_station_removed_from_list">An cire 1</string>
+    <string name="action_station_removed_from_list_undo">SOKE</string>
+
+    <string name="alert_delete_history">Shin da gaske kuna son goge tarihi?</string>
+    <string name="alert_delete_favorites">Shin da gaske kuna son goge duka abubuwan da aka fi so?</string>
+    <string name="yes">E</string>
+    <string name="no">A\'a</string>
+
+    <string name="alert_select_player">Da fatan za ku zaɓi na\'urar kunne</string>
+    <string name="alert_select_player_name">Suna</string>
+    <string name="hostname">Ireshin uwar garke (Hostname)</string>
+    <string name="port">Network Port</string>
+
+    <string name="alert_press_back_to_exit">Danna maɓallin baya sake guda ɗaya don fita</string>
+
+    <string name="error_stream_url">Matsalar haɗin sauti (Stream URL)</string>
+    <string name="error_caching_stream">Matsalar adana haɗin sauti</string>
+    <string name="error_play_stream">Ba za a iya kunna sautin ba</string>
+    <string name="error_stream_reconnect_timeout">Kasa sake haɗawa da sautin: lokaci ya ƙare</string>
+    <string name="warning_no_network_trying_resume">Babu haɗin hanyar sadarwa. Yana ƙoƙarin komawa da zarar haɗin ya dawo.</string>
+    <string name="giving_up_resume">An soke ƙoƙarin komawa kunne</string>
+
+    <string name="error_grant_audiofocus">Tsarin na\'urar bai ba da damar sauti ba</string>
+
+    <string name="error_no_equalizer_found">Babu manhajar equalizer da aka samu</string>
+
+    <string name="player_info_status">Matsayi:&#160;</string>
+    <string name="player_info_status_stopped">an atsayar</string>
+    <string name="player_info_status_playing">yana kunne</string>
+    <string name="player_info_transferred">Bayanai da aka tura: %1$s</string>
+
+    <string name="tab_player_art">Hoto na waƙa</string>
+    <string name="tab_player_info">Bayanai</string>
+    <string name="tab_player_history">Tarihin waƙoƙi</string>
+
+    <string name="station_detail_bitrate">%1$1d kbps</string>
+    <string name="station_detail_broken">MARAS AIKI</string>
+    <string name="station_detail_deleted_on_server">AN GOGE</string>
+
+    <string name="station_details_clicks">Dannawa %1$d</string>
+    <string name="station_details_votes">Ƙuri\'a %1$d</string>
+
+    <string name="image_button_disable">Kashe</string>
+    <string name="image_button_delete">Goge</string>
+    <string name="image_button_more">Mafi yawa</string>
+    <string name="image_button_less">Mafi ƙaranta</string>
+    <string name="image_button_repeat">Sake maimaitawa</string>
+    <string name="image_button_dont_repeat">Kada a maimaita</string>
+    <string name="icon_click_trend_decreasing">Mabuɗin shahara yana raguwa</string>
+    <string name="icon_click_trend_increasing">Mabuɗin shahara yana ƙaruwa</string>
+    <string name="icon_click_trend_stable">Mabuɗin shahara yana da kyau</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% Kyauta daga Tallace-tallace &amp; Sirri</string>
+
+    <string name="action_play_in_external">Kunna da na\'urar waje</string>
+    <string name="action_choose_external_player">Zaɓi na\'urar waje</string>
+
+    <string name="settings_disable_battery_optimization">Cigaba da kunne a baya</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">Sauran</string>
+    <string name="settings_rate_app">Ba AMARadio maki</string>
+    <string name="settings_rate_app_summary">Idan kuna son manhajar, da fatan za ku bar ma\'auni a Play Store!</string>
+    <string name="settings_rate_app_github">Kuna jin dadin AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Bada tauraro a GitHub! Yana taimakawa sauran mutane su gano manhajar.</string>
+    <string name="settings_statistics">Kididdiga</string>
+    <string name="settings_about">Game da AMARadio</string>
+
+    <string name="description_btn_skip_to_next">Tsallake zuwa na gaba</string>
+    <string name="description_btn_skip_to_previous">Tsallake zuwa na baya</string>
+
+    <string-array name="weekdays">
+        <item>L</item>
+        <item>L</item>
+        <item>T</item>
+        <item>L</item>
+        <item>A</item>
+        <item>J</item>
+        <item>A</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">An kwafi URL ɗin sauti cikin nasara</string>
+    <string name="notify_track_info_copied">An kwafi bayanin waƙa cikin nasara</string>
+
+    <string-array name="actions_station_link">
+        <item>Ziyarci gidan yanar gizo</item>
+        <item>Kwafi URL ɗin sauti</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">An gano haɗin intanet na kuɗi</string>
+    <string name="alert_metered_connection_message">Haɗin intanet na kuɗi na iya kawo ƙarin kuɗi, danna \'To\' don ci gaba.</string>
+    <string name="nav_item_statistics">Kididdiga</string>
+    <string name="nav_item_about">Game da</string>
+    <string name="refresh">Sabunta</string>
+    <string name="action_filter">Scagewa</string>
+    <string name="filter_country">Ƙasa</string>
+    <string name="filter_tag">Alama</string>
+    <string name="filter_language">Harshe</string>
+    <string name="filter_sort_by">Saita ta hanyar</string>
+    <string name="filter_reverse">Maimaita jeri</string>
+    <string name="filter_apply">Aiwatar da scagewa</string>
+    <string name="sort_name">Suna</string>
+    <string name="sort_votes">Ƙuri\'a</string>
+    <string name="sort_clicks">Dannawa</string>
+    <string name="sort_lastchange">Sauye-sauyen kwanan nan</string>
+    <string name="filter_select_country">Zaɓi ƙasa</string>
+    <string name="filter_select_language">Zaɓi harshe</string>
+    <string name="filter_type_tag">Rubuta alama…</string>
+    <string name="filter_tap_to_configure">Danna don saita</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">Alamar gidan rediyo</string>
+    <string name="accessibility_favorite_selected">Mafi so, an zaɓa</string>
+    <string name="accessibility_favorite_not_selected">Mafi so, ba a zaɓa ba</string>
+    <string name="accessibility_category_icon">Alamar rukuni</string>
+    <string name="accessibility_playing">Yana kunne yanzu</string>
+    <string name="accessibility_menu">Buɗe jerin ayyuka</string>
+    <string name="accessibility_search_back">Rufe bincike</string>
+    <string name="accessibility_filter_reverse">Sauya tsarin jerin</string>
+    <string name="accessibility_clear_text">Goge rubutu</string>
+    <string name="accessibility_back">Koma baya</string>
+    <string name="accessibility_configure">Saita</string>
+    <string name="accessibility_close">Rufe</string>
+    <string name="accessibility_add_filter">Ƙara scagewa</string>
+    <string name="accessibility_station_options">Zabin gidan rediyo</string>
+    <string name="not_applicable">Babu</string>
+    <string name="accessibility_station_description">Gidan rediyo: %1$s, Harshe: %2$s, Alamomi: %3$s</string>
+
+    <string name="error_no_file_manager">Ba a samu manhajar sarrafa fayiloli na na\'ura ba. Tabbatar cewa an girka ma\'adana.</string>
+    <string name="error_no_browser">Ba a samu mai binciken yanar gizo ba. Da fatan za ku girka mai bincike don buɗe wannan haɗin.</string>
+    <string name="error_no_homepage">Babu shafin gida don wannan gidan rediyon</string>
+    <string name="tab_custom_stations">Na kanku</string>
+    <string name="action_add_custom">Ƙara gidan rediyo na kanku</string>
+    <string name="station_name">Sunan gidan rediyo</string>
+    <string name="stream_url">Hanyar haɗin sauti (Stream URL)</string>
+    <string name="favicon_url">Hanyar alamar gidan rediyo (Favicon)</string>
+    <string name="select_image">Zaɓi hoto</string>
+    <string name="error_invalid_url">Da fatan za ku shigar da hanyar sadarwa mai kyau</string>
+    <string name="action_save">Adana</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">Mafi saurin sarrafa na\'urar kunne</string>
+    <string name="widget_description_full">Na\'urar kunne da jerin gidajen rediyo</string>
+
+    <string name="settings_auto_db_update">Sabunta rikodin bayanai a baya</string>
+    <string name="settings_auto_db_update_desc">Sabunta rikodin bayanai na gidan rediyo ta hanyar Radio-Browser API (ana ba da shawarar).</string>
+    <string name="settings_station_click_counter">Mabuɗin danna gidan rediyo</string>
+    <string name="settings_station_click_counter_desc">Taimaka wa kididdigar Radio-Browser ta hanyar raba ayyukan kunne a asirce.</string>
+
+    <string name="settings_remove_notification_on_stop">Cire sanarwa lokacin atsayarwa</string>
+    <string name="settings_remove_notification_on_stop_desc">Cire sanarwar sauti ta atomatik lokacin da aka atsayar da kunne</string>
+    <string name="settings_auto_resume_audio_focus">Ci gaba bayan asarar sarrafa sauti</string>
+    <string name="settings_auto_resume_audio_focus_desc">Ci gaba da kunne ta atomatik bayan kiran waya, ƙararrawa ko sauran dakatarwar sauti</string>
+
+    <string name="settings_backup_restore">Ajiya da maido da bayanai</string>
+    <string name="settings_export_backup">Ajiye dukkan bayanai (ZIP)</string>
+    <string name="settings_export_backup_desc">Yana adana duk abubuwan da aka fi so, gidajen rediyo na kanku da alamomi a cikin faifai ZIP</string>
+    <string name="settings_import_backup">Maido da bayanai daga ajiya (ZIP)</string>
+    <string name="settings_import_backup_desc">Yana maido da abubuwan da aka fi so da gidajen rediyo daga faifan ZIP</string>
+    <string name="backup_export_success">An adana ajiyar bayanai cikin nasara</string>
+    <string name="backup_export_error">An kasa adana ajiyar bayanai</string>
+    <string name="backup_import_success">An maido da ajiyar bayanai cikin nasara</string>
+    <string name="backup_import_error">An kasa maido da ajiyar bayanai</string>
+
+    <string name="database_summary_title">Rikodin bayanai na na\'ura</string>
+    <string name="database_total_stations">Jimlar gidajen rediyo</string>
+    <string name="database_last_sync">Sabuntawa na ƙarshe</string>
+    <string name="database_update_now">Sabunta rikodin bayanai yanzu</string>
+    <string name="database_full_update">Sabunta rikodin bayanai</string>
+    <string name="database_syncing">Yana sabuntawa…</string>
+    <string name="database_downloading">Yana saukarwa…</string>
+    <string name="database_stations_loaded">Gidajen rediyo %1$s</string>
+    <string name="database_sync_channel_name">Sabunta rikodin bayanai na gidajen rediyo</string>
+    <string name="database_sync_success">An kammala sabunta rikodin bayanai cikin nasara</string>
+    <string name="database_error_no_connection">Babu haɗin intanet</string>
+    <string name="database_error_no_space">Babu isasshen sarari a ma\'adana</string>
+    <string name="database_error_failed">An kasa sabunta rikodin bayanai</string>
+
+    <string name="settings_disable_battery_optimization_desc">Domin ci gaba da kunna sauti yayin da allon ke kashe, saita amfani da batir zuwa \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Buɗe saituna</string>
+    <string name="battery_opt_later">Daga baya</string>
 </resources>

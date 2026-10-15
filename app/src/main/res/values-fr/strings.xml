@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Renommer l\'onglet</string>
     <string name="error_filter_name_required">Veuillez d\'abord saisir un nom pour cet onglet de filtre</string>
     <string name="confirm_delete_filter_tab">Êtes-vous sûr de vouloir supprimer le filtre \"%1$s\" ?</string>
-    <string name="filter_empty_title">Créez votre propre flux de stations</string>
+    <string name="filter_empty_title">Créez votre propre flux de stations de radio</string>
     <string name="filter_empty_desc">Créez une vue personnalisée en combinant plusieurs critères. Vous pouvez affiner votre recherche à l\'aide de :</string>
     <string name="filter_empty_filter_by">Filtrer par</string>
-    <string name="filter_empty_filter_desc">Pays, nom de la station, étiquettes ou langue</string>
+    <string name="filter_empty_filter_desc">Pays, nom de la station de radio, étiquettes ou langue</string>
     <string name="filter_empty_sort_by">Trier par</string>
-    <string name="filter_empty_sort_desc">Clics, Alphabet, Votes oder Dernier changement</string>
+    <string name="filter_empty_sort_desc">Clics, Alphabet, Votes ou Dernier changement</string>
     <string name="filter_empty_hint">Tapez un nom dans le champ ci-dessus pour enregistrer cette vue personnalisée !</string>
-    <string name="error_station_load">Impossible de se connecter à la station</string>
-    <string name="error_list_update">Impossible de se connecter au navigateur du serveur radio</string>
+    <string name="error_station_load">Impossible de se connecter à la station de radio</string>
+    <string name="error_list_update">Impossible de se connecter au serveur Radio-Browser</string>
 
     <string name="error_no_connection">Pas de connexion Internet disponible</string>
     <string name="warning_volume_zero">Le volume est à zéro. Vous risquez de ne rien entendre.</string>
 
-    <string name="share_action">Partager le lien de la station avec&#8230;</string>
+    <string name="share_action">Partager le lien de la station de radio avec&#8230;</string>
 
-    <string name="nav_item_stations">Stations</string>
+    <string name="nav_item_stations">Stations de radio</string>
     <string name="nav_item_starred">Favoris</string>
     <string name="nav_item_history">Historique</string>
     <string name="nav_item_settings">Réglages</string>
@@ -76,7 +76,7 @@
     <string name="detail_play_in_external_player">@string/action_play_in_external</string>
     <string name="progress_loading">Chargement&#8230;</string>
 
-    <string name="sleep_timer" formatted="true">Temps de sommeil : %1$02d:%2$02d</string>
+    <string name="sleep_timer" formatted="true">Minuterie de sommeil : %1$02d:%2$02d</string>
     <string name="sleep_timer_title">Combien de minutes avant l\'arrêt?</string>
     <string name="sleep_timer_apply">Appliquer</string>
     <string name="sleep_timer_clear">Effacer</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Noir</string>
     <string name="theme_system">Suivre le système</string>
     <string name="settings_compact_style">Mode compact</string>
-    <string name="settings_compact_style_desc_off">Grande icône adoptée avec les détails de la station</string>
-    <string name="settings_compact_style_desc_on">Petite icône adoptée sans les détails de la station</string>
+    <string name="settings_compact_style_desc_off">Grande icône adoptée avec les détails de la station de radio</string>
+    <string name="settings_compact_style_desc_on">Petite icône adoptée sans les détails de la station de radio</string>
     <string name="settings_bottom_navigation">Navigation inférieure</string>
     <string name="settings_ui_scale">Échelle de l\'interface</string>
     <string name="settings_language">Langue</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Les tags uniques ne seront pas affichés</string>
     <string name="settings_single_use_tags_desc_on">Les tags uniques seront affichés</string>
 
-    <string name="settings_show_broken">Stations défectueuses</string>
-    <string name="settings_show_broken_on">Afficher les stations défectueuses dans les listes de stations</string>
-    <string name="settings_show_broken_off">Ne pas afficher les stations défectueuses dans les listes de stations</string>
+    <string name="settings_show_broken">Stations de radio défectueuses</string>
+    <string name="settings_show_broken_on">Afficher les stations de radio défectueuses dans les listes</string>
+    <string name="settings_show_broken_off">Ne pas afficher les stations de radio défectueuses dans les listes</string>
 
     <string name="settings_startup_behaviour">Comportament au démarrage</string>
     <string name="action_grid_view">Vue en grille</string>
@@ -133,12 +133,12 @@
 
     <string name="startup_action_title">Commencer l\'action</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Afficher toutes les stations</string>
+    <string name="startup_show_all_stations">Afficher toutes les stations de radio</string>
     <string name="startup_show_favorites">Afficher les favoris</string>
     <string name="startup_show_history">Afficher l\'historique</string>
     <string name="startup_show_last_view">Dernière vue</string>
 
-    <string name="settings_load_icons">Afficher les icônes des stations</string>
+    <string name="settings_load_icons">Afficher les icônes des stations de radio</string>
     <string name="settings_load_icons_on">Les icônes seront téléchargées</string>
     <string name="settings_load_icons_off">Les icônes ne seront pas téléchargées</string>
 
@@ -148,16 +148,16 @@
 
     <string name="settings_play">Lecteur</string>
     <string name="settings_auto_play_on_startup">Lecture automatique</string>
-    <string name="settings_auto_play_on_startup_on">Lire la dernière station au démarrage</string>
-    <string name="settings_auto_play_on_startup_off">Ne pas lire la dernière station au démarrage</string>
+    <string name="settings_auto_play_on_startup_on">Lire la dernière station de radio au démarrage</string>
+    <string name="settings_auto_play_on_startup_off">Ne pas lire la dernière station de radio au démarrage</string>
     <string name="settings_auto_off_on_startup">Arrêt automatique</string>
     <string name="settings_auto_off_on_startup_on">Utiliser la minuterie d\'arrêt automatique avec la lecture automatique</string>
     <string name="settings_auto_off_on_startup_off">Ne pas utiliser la minuterie d\'arrêt automatique avec la lecture automatique</string>
     <string name="settings_auto_off_sleep_timer">Minuterie d\'arrêt automatique</string>
     <string name="settings_auto_off_sleep_timer_desc">Stopper la lecture après %1$s minutes</string>
     <string name="settings_play_external">Ouverture avec une application externe</string>
-    <string name="settings_play_external_desc_on">Lire les stations avec un lecteur externe</string>
-    <string name="settings_play_external_desc_off">Lire les stations avec AMARadio</string>
+    <string name="settings_play_external_desc_on">Lire les stations de radio avec un lecteur externe</string>
+    <string name="settings_play_external_desc_off">Lire les stations de radio avec AMARadio</string>
     <string name="settings_equalizer">Égaliseur</string>
 
     <string name="settings_connectivity">Connectivité</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">En pause</string>
     <string name="notify_metered_connection">Connexion monitorée</string>
 
-    <string name="notify_starred">La station a été mise en favoris</string>
-    <string name="notify_autostarred">La station a été automatiquement mise en favoris</string>
-    <string name="notify_unstarred">La station a été supprimée de la liste des favoris</string>
+    <string name="notify_starred">La station de radio a été mise en favoris</string>
+    <string name="notify_autostarred">La station de radio a été automatiquement mise en favoris</string>
+    <string name="notify_unstarred">La station de radio a été supprimée de la liste des favoris</string>
     <string name="notify_deleted_favorites">Les favoris ont été supprimés</string>
     <string name="notify_deleted_history">L\'historique a été supprimé</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Veuillez sélectionner un lecteur</string>
     <string name="alert_select_player_name">Nom</string>
-    <string name="hostname">Nom d\'hôte</string>
-    <string name="port">Port</string>
+    <string name="hostname">Adresse du serveur</string>
+    <string name="port">Port réseau</string>
 
     <string name="alert_press_back_to_exit">Appuyer une fois de plus sur retour pour quitter</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Lire dans un lecteur externe</string>
     <string name="action_choose_external_player">Choisir un lecteur externe</string>
 
-    <string name="settings_disable_battery_optimization">Optimisation de la batterie</string>
-    <string name="settings_ignore_battery_optimization_summary_on">L\'optimisation de la batterie est ignorée, AMARadio devrait toujours pouvoir récupérer le focus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">L\'optimisation de la batterie est activée, AMARadio peut ne pas récupérer le focus en arrière-plan.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Lecture en arrière-plan</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Autre</string>
     <string name="settings_rate_app">Évaluer AMARadio</string>
     <string name="settings_rate_app_summary">Si vous aimez l\'application, n\'hésitez pas à laisser un avis sur le Play Store !</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logo de la station</string>
+    <string name="accessibility_station_logo">Logo de la station de radio</string>
     <string name="accessibility_favorite_selected">Favori, sélectionné</string>
     <string name="accessibility_favorite_not_selected">Favori, non sélectionné</string>
     <string name="accessibility_category_icon">Icône de catégorie</string>
@@ -337,35 +335,63 @@
     <string name="accessibility_configure">Configurer</string>
     <string name="accessibility_close">Fermer</string>
     <string name="accessibility_add_filter">Ajouter un filtre</string>
-    <string name="accessibility_station_options">Options de la station</string>
+    <string name="accessibility_station_options">Options de la station de radio</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Station : %1$s, Langue : %2$s, Tags : %3$s</string>
 
     <string name="error_no_file_manager">Impossible de trouver un gestionnaire de fichiers système. Veuillez vous assurer qu\'un explorateur de fichiers est installé et activé.</string>
     <string name="error_no_browser">Impossible de trouver un navigateur Web. Veuillez installer un navigateur pour ouvrir ce lien.</string>
-    <string name="error_no_homepage">Aucune page d\'accueil disponible pour cette station</string>
-    <string name="tab_custom_stations">Coutume</string>
-    <string name="action_add_custom">Ajouter une station personnalisée</string>
-    <string name="station_name">Nom de la station</string>
+    <string name="error_no_homepage">Aucune page d\'accueil disponible pour cette station de radio</string>
+    <string name="tab_custom_stations">Personnalisées</string>
+    <string name="action_add_custom">Ajouter une station de radio personnalisée</string>
+    <string name="station_name">Nom de la station de radio</string>
     <string name="stream_url">URL du flux</string>
-    <string name="favicon_url">URL de la favicon (facultatif)</string>
+    <string name="favicon_url">URL du logo de la station (Favicon)</string>
     <string name="select_image">Sélectionnez une image</string>
     <string name="error_invalid_url">Veuillez saisir une URL valide</string>
     <string name="action_save">Sauvegarder</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Commandes rapides du lecteur</string>
-    <string name="widget_description_full">Liste des lecteurs et des stations</string>
+    <string name="widget_description_full">Lecteur et liste des stations de radio</string>
 
     <string name="settings_auto_db_update">Synchronisation des données en arrière-plan</string>
-    <string name="settings_auto_db_update_desc">Base de données de station de mise à jour automatique via l\'API Radio-Browser (recommandé).</string>
-    <string name="settings_station_click_counter">Compteur de clics de station</string>
-    <string name="settings_station_click_counter_desc">Prend en charge les statistiques de Radio-Browser en partageant de manière anonyme les événements de lecture.</string>
+    <string name="settings_auto_db_update_desc">Mise à jour automatique de la base de données de stations via l\'API Radio-Browser (recommandé).</string>
+    <string name="settings_station_click_counter">Compteur de clics de station de radio</string>
+    <string name="settings_station_click_counter_desc">Soutenez les statistiques de Radio-Browser en partageant de manière anonyme les événements de lecture.</string>
     <string name="settings_rate_app_github">Vous appréciez AMARadio ?</string>
     <string name="settings_rate_app_github_summary">Laissez une étoile sur GitHub ! Cela aide les autres à découvrir l’application et prend en charge le développement futur.</string>
 
-    <string name="settings_remove_notification_on_stop">Supprimer la notification lorsque l\'application est fermée</string>
-    <string name="settings_remove_notification_on_stop_desc">Ignorer automatiquement la notification multimédia lorsque l\'application est fermée des applications récentes</string>
+    <string name="settings_remove_notification_on_stop">Supprimer la notification lors de l\'arrêt</string>
+    <string name="settings_remove_notification_on_stop_desc">Effacer automatiquement la notification multimédia lorsque la lecture est arrêtée</string>
     <string name="settings_auto_resume_audio_focus">Reprendre après une perte de focus audio</string>
     <string name="settings_auto_resume_audio_focus_desc">Reprendre automatiquement la lecture après des appels téléphoniques, des alarmes ou d\'autres arrêts audio</string>
+
+    <string name="settings_backup_restore">Sauvegarde et restauration</string>
+    <string name="settings_export_backup">Créer une sauvegarde complète (ZIP)</string>
+    <string name="settings_export_backup_desc">Enregistre tous les favoris, les stations personnalisées et les icônes dans un fichier ZIP</string>
+    <string name="settings_import_backup">Restaurer la sauvegarde (ZIP)</string>
+    <string name="settings_import_backup_desc">Restaure les favoris et les stations personnalisées à partir d\'un fichier ZIP</string>
+    <string name="backup_export_success">Sauvegarde enregistrée avec succès</string>
+    <string name="backup_export_error">Échec de l\'enregistrement de la sauvegarde</string>
+    <string name="backup_import_success">Sauvegarde restaurée avec succès</string>
+    <string name="backup_import_error">Échec de la restauration de la sauvegarde</string>
+
+    <string name="database_summary_title">Base de données locale</string>
+    <string name="database_total_stations">Total des stations de radio</string>
+    <string name="database_last_sync">Dernière mise à jour</string>
+    <string name="database_update_now">Mettre à jour la base de données maintenant</string>
+    <string name="database_full_update">Mettre à jour la base de données</string>
+    <string name="database_syncing">Synchronisation…</string>
+    <string name="database_downloading">Téléchargement…</string>
+    <string name="database_stations_loaded">%1$s stations de radio</string>
+    <string name="database_sync_channel_name">Synchronisation de la base de données de radio</string>
+    <string name="database_sync_success">Mise à jour de la base de données terminée avec succès</string>
+    <string name="database_error_no_connection">Pas de connexion Internet</string>
+    <string name="database_error_no_space">Espace disque insuffisant</string>
+    <string name="database_error_failed">Échec de la mise à jour de la base de données</string>
+
+    <string name="settings_disable_battery_optimization_desc">Pour maintenir la lecture avec l\'écran éteint, réglez l\'utilisation de la batterie sur \'Non restreinte\'.</string>
+    <string name="battery_opt_open_settings">Ouvrir les paramètres</string>
+    <string name="battery_opt_later">Plus tard</string>
 </resources>

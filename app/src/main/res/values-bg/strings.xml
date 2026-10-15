@@ -52,19 +52,19 @@
     <string name="filter_empty_title">Създайте своя персонализирана емисия от радиостанции</string>
     <string name="filter_empty_desc">Създайте персонализиран изглед чрез комбиниране на няколко критерия. Можете да стесните търсенето си чрез:</string>
     <string name="filter_empty_filter_by">Филтрирай по</string>
-    <string name="filter_empty_filter_desc">Държава, Име на станция, Тагове или Език</string>
+    <string name="filter_empty_filter_desc">Държава, Име на радиостанция, Тагове или Език</string>
     <string name="filter_empty_sort_by">Сортирай по</string>
     <string name="filter_empty_sort_desc">Кликвания, Азбучен ред, Гласове или Последна промяна</string>
     <string name="filter_empty_hint">Въведете име в полето по-горе, за да запазите този изглед!</string>
-    <string name="error_station_load">Неуспешно свързване със станцията</string>
-    <string name="error_list_update">Неуспешно свързване със сървъра на radio browser</string>
+    <string name="error_station_load">Неуспешно свързване с радиостанцията</string>
+    <string name="error_list_update">Неуспешно свързване със сървъра на Radio-Browser</string>
 
     <string name="error_no_connection">Няма налична интернет връзка</string>
     <string name="warning_volume_zero">Силата на звука е на нула. Може да не чуете нищо.</string>
 
-    <string name="share_action">Сподели връзката към станцията чрез…</string>
+    <string name="share_action">Сподели връзката към радиостанцията чрез…</string>
 
-    <string name="nav_item_stations">Станции</string>
+    <string name="nav_item_stations">Радиостанции</string>
     <string name="nav_item_starred">Любими</string>
     <string name="nav_item_history">История</string>
     <string name="nav_item_settings">Настройки</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Тъмна</string>
     <string name="theme_system">Следвай системата</string>
     <string name="settings_compact_style">Компактен режим</string>
-    <string name="settings_compact_style_desc_off">Голяма икона с подробности за станцията</string>
-    <string name="settings_compact_style_desc_on">Малка икона без подробности за станцията</string>
+    <string name="settings_compact_style_desc_off">Голяма икона с подробности за радиостанцията</string>
+    <string name="settings_compact_style_desc_on">Малка икона без подробности за радиостанцията</string>
     <string name="settings_bottom_navigation">Долна навигация</string>
     <string name="settings_ui_scale">UI мащабиране</string>
     <string name="settings_language">Език</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Рядко използваните тагове няма да се показват</string>
     <string name="settings_single_use_tags_desc_on">Рядко използваните тагове ще се показват</string>
 
-    <string name="settings_show_broken">Неработещи станции</string>
-    <string name="settings_show_broken_on">Покажи неработещите станции в списъците</string>
-    <string name="settings_show_broken_off">Не показвай неработещите станции в списъците</string>
+    <string name="settings_show_broken">Неработещи радиостанции</string>
+    <string name="settings_show_broken_on">Покажи неработещите радиостанции в списъците</string>
+    <string name="settings_show_broken_off">Не показвай неработещите радиостанции в списъците</string>
 
     <string name="settings_startup_behaviour">Поведение при стартиране</string>
     <string name="action_grid_view">Изглед решетка</string>
@@ -133,12 +133,12 @@
 
     <string name="startup_action_title">Действие при стартиране</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Покажи всички станции</string>
+    <string name="startup_show_all_stations">Покажи всички радиостанции</string>
     <string name="startup_show_favorites">Покажи любимите</string>
     <string name="startup_show_history">Покажи историята</string>
     <string name="startup_show_last_view">Последен изглед</string>
 
-    <string name="settings_load_icons">Покажи икони на станциите</string>
+    <string name="settings_load_icons">Покажи икони на радиостанциите</string>
     <string name="settings_load_icons_on">Иконите ще бъдат изтеглени</string>
     <string name="settings_load_icons_off">Иконите няма да бъдат изтеглени</string>
 
@@ -148,16 +148,16 @@
 
     <string name="settings_play">Плеър</string>
     <string name="settings_auto_play_on_startup">Авто-пускане</string>
-    <string name="settings_auto_play_on_startup_on">Пусни последната станция при стартиране</string>
-    <string name="settings_auto_play_on_startup_off">Не пускай последната станция при стартиране</string>
+    <string name="settings_auto_play_on_startup_on">Пусни последната радиостанция при стартиране</string>
+    <string name="settings_auto_play_on_startup_off">Не пускай последната радиостанция при стартиране</string>
     <string name="settings_auto_off_on_startup">Авто-спиране</string>
     <string name="settings_auto_off_on_startup_on">Използвай таймер за авто-спиране с авто-пускане</string>
     <string name="settings_auto_off_on_startup_off">Не използвай таймер за авто-спиране с авто-пускане</string>
     <string name="settings_auto_off_sleep_timer">Таймер за авто-спиране</string>
     <string name="settings_auto_off_sleep_timer_desc">Спри възпроизвеждането след %1$s минути</string>
     <string name="settings_play_external">Включи външен плеър</string>
-    <string name="settings_play_external_desc_on">Пускай станциите с външен плеър</string>
-    <string name="settings_play_external_desc_off">Пускай станциите с AMARadio</string>
+    <string name="settings_play_external_desc_on">Пускай радиостанциите с външен плеър</string>
+    <string name="settings_play_external_desc_off">Пускай радиостанциите с AMARadio</string>
     <string name="settings_equalizer">Еквалайзер</string>
 
     <string name="settings_connectivity">Свързаност</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">На пауза</string>
     <string name="notify_metered_connection">Връзка с ограничен трафик</string>
 
-    <string name="notify_starred">Станцията беше добавена в любими</string>
-    <string name="notify_autostarred">Станцията беше добавена автоматично в любими</string>
-    <string name="notify_unstarred">Станцията беше премахната от любими</string>
+    <string name="notify_starred">Радиостанцията беше добавена в любими</string>
+    <string name="notify_autostarred">Радиостанцията беше добавена автоматично в любими</string>
+    <string name="notify_unstarred">Радиостанцията беше премахната от любими</string>
     <string name="notify_deleted_favorites">Любимите бяха изтрити</string>
     <string name="notify_deleted_history">Историята беше изтрита</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Моля, изберете плеър</string>
     <string name="alert_select_player_name">Име</string>
-    <string name="hostname">Хост</string>
-    <string name="port">Порт</string>
+    <string name="hostname">Адрес на сървъра</string>
+    <string name="port">Мрежов порт</string>
 
     <string name="alert_press_back_to_exit">Натиснете назад още веднъж за изход</string>
 
@@ -264,10 +264,10 @@
     <string name="action_play_in_external">Пусни във външен плеър</string>
     <string name="action_choose_external_player">Избери външен плеър</string>
 
-    <string name="settings_disable_battery_optimization">Оптимизация на батерията</string>
+    <string name="settings_disable_battery_optimization">Фоново възпроизвеждане</string>
     <string name="settings_ignore_battery_optimization_summary_on">Оптимизацията на батерията е пренебрегната, AMARadio винаги трябва да може да си върне фокуса.</string>
     <string name="settings_ignore_battery_optimization_summary_off">Оптимизацията на батерията е активирана, AMARadio няма да може да си върне фокуса във фонов режим.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Други</string>
     <string name="settings_rate_app">Оценете AMARadio</string>
     <string name="settings_rate_app_summary">Ако харесвате приложението, моля, оставете отзив в Play Store!</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Лого на станцията</string>
+    <string name="accessibility_station_logo">Лого на радиостанцията</string>
     <string name="accessibility_favorite_selected">Любими, избрано</string>
     <string name="accessibility_favorite_not_selected">Любими, неизбрано</string>
     <string name="accessibility_category_icon">Икона на категорията</string>
@@ -337,7 +337,7 @@
     <string name="accessibility_configure">Конфигуриране</string>
     <string name="accessibility_close">Затвори</string>
     <string name="accessibility_add_filter">Добавяне на филтър</string>
-    <string name="accessibility_station_options">Опции на станцията</string>
+    <string name="accessibility_station_options">Опции на радиостанцията</string>
     <string name="not_applicable">н/п</string>
     <string name="accessibility_station_description">Станция: %1$s, Език: %2$s, Тагове: %3$s</string>
 
@@ -345,27 +345,51 @@
     <string name="error_no_browser">Не можах да намеря уеб браузър. Моля, инсталирайте браузър, за да отворите тази връзка.</string>
     <string name="error_no_homepage">Няма налична начална страница за тази станция</string>
     <string name="tab_custom_stations">По поръчка</string>
-    <string name="action_add_custom">Добавете персонализирана станция</string>
-    <string name="station_name">Име на станцията</string>
+    <string name="action_add_custom">Добавете персонализирана радиостанция</string>
+    <string name="station_name">Име на радиостанцията</string>
     <string name="stream_url">URL адрес на потока</string>
-    <string name="favicon_url">URL адрес на фавикона (по избор)</string>
+    <string name="favicon_url">URL адрес на иконата (Favicon)</string>
     <string name="select_image">Изберете Изображение</string>
     <string name="error_invalid_url">Моля, въведете валиден URL</string>
     <string name="action_save">Запазване</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Бързи контроли на играча</string>
-    <string name="widget_description_full">Списък на плейъри и станции</string>
+    <string name="widget_description_small">Бързи контроли на плеъра</string>
+    <string name="widget_description_full">Плеър и списък с радиостанции</string>
 
     <string name="settings_auto_db_update">Фоново синхронизиране на данни</string>
-    <string name="settings_auto_db_update_desc">Автоматично актуализиране на базата данни на станциите чрез API на Radio-Browser (препоръчва се).</string>
-    <string name="settings_station_click_counter">Брояч на кликвания на станция</string>
-    <string name="settings_station_click_counter_desc">Поддържайте статистиките на Radio-Browser чрез анонимно споделяне на събития за игра.</string>
+    <string name="settings_auto_db_update_desc">Автоматично актуализиране на базата данни на радиостанциите чрез Radio-Browser API (препоръчва се).</string>
+    <string name="settings_station_click_counter">Брояч на кликвания на радиостанция</string>
+    <string name="settings_station_click_counter_desc">Поддържайте статистиките на Radio-Browser чрез анонимно споделяне на събития за възпроизвеждане.</string>
     <string name="settings_rate_app_github">Харесвате ли AMARadio?</string>
     <string name="settings_rate_app_github_summary">Оставете звезда в GitHub! Помага на другите да открият приложението и поддържа бъдещо развитие.</string>
 
-    <string name="settings_remove_notification_on_stop">Премахнете известието, когато приложението е затворено</string>
-    <string name="settings_remove_notification_on_stop_desc">Автоматично отхвърляне на медийното известие, когато приложението е затворено от последните приложения</string>
+    <string name="settings_remove_notification_on_stop">Премахнете известието при спиране</string>
+    <string name="settings_remove_notification_on_stop_desc">Автоматично отхвърляне на медийното известие при спиране на възпроизвеждането</string>
     <string name="settings_auto_resume_audio_focus">Възобновяване след загуба на аудио фокус</string>
     <string name="settings_auto_resume_audio_focus_desc">Автоматично възобновяване на възпроизвеждането след спиране на телефонни обаждания, аларми или друго аудио</string>
+
+    <string name="settings_backup_restore">Резервно копие и възстановяване</string>
+    <string name="settings_export_backup">Създаване на пълно резервно копие (ZIP)</string>
+    <string name="settings_export_backup_desc">Запазва всички любими, персонализирани станции и локални икони в ZIP файл</string>
+    <string name="settings_import_backup">Възстановяване от резервно копие (ZIP)</string>
+    <string name="settings_import_backup_desc">Възстановява любими, персонализирани станции и икони от ZIP файл</string>
+    <string name="backup_export_success">Резервното копие е запазено успешно</string>
+    <string name="backup_export_error">Неуспешно запазване на резервното копие</string>
+    <string name="backup_import_success">Резервното копие е възстановено успешно</string>
+    <string name="backup_import_error">Неуспешно възстановяване на резервното копие</string>
+
+    <string name="database_summary_title">Локална база данни</string>
+    <string name="database_total_stations">Общо радиостанции</string>
+    <string name="database_last_sync">Последна синхронизация</string>
+    <string name="database_update_now">Актуализирай базата данни сега</string>
+    <string name="database_full_update">Актуализирай базата данни</string>
+    <string name="database_syncing">Синхронизиране…</string>
+    <string name="database_downloading">Изтегляне…</string>
+    <string name="database_stations_loaded">%1$s радиостанции</string>
+    <string name="database_sync_channel_name">Синхронизиране на базата данни с радиостанции</string>
+    <string name="database_sync_success">Актуализацията на базата данни завърши успешно</string>
+    <string name="database_error_no_connection">Няма интернет връзка</string>
+    <string name="database_error_no_space">Няма достатъчно свободно място на диска</string>
+    <string name="database_error_failed">Неуспешна актуализация на базата данни</string>
 </resources>

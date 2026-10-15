@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Ndërtoni furnizimin tuaj të personalizuar të stacioneve radiofonike</string>
     <string name="filter_empty_desc">Krijoni një pamje të personalizuar duke kombinuar disa kritere. Ju mund të ngushtoni kërkimin tuaj duke përdorur:</string>
     <string name="filter_empty_filter_by">Filtro sipas</string>
-    <string name="filter_empty_filter_desc">Shtetit, Emrit të Stacionit, Etiketave ose Gjuhës</string>
+    <string name="filter_empty_filter_desc">Shtetit, Emrit të stacionit radiofonik, Etiketave ose Gjuhës</string>
     <string name="filter_empty_sort_by">Rendit sipas</string>
-    <string name="filter_empty_sort_desc">Klikimeve, Alfabetit, Votave ose Ndryshimit të Fundit</string>
+    <string name="filter_empty_sort_desc">Klikimeve, Alfabetit, Votave ose Ndryshimit të fundit</string>
     <string name="filter_empty_hint">Shkruani një emër në fushën më sipër për të ruajtur këtë pamje!</string>
-    <string name="error_station_load">Nuk mund të lidhej me stacionin</string>
-    <string name="error_list_update">Nuk mund të lidhej me serverin e radio browser</string>
+    <string name="error_station_load">Nuk mund të lidhej me stacionin radiofonik</string>
+    <string name="error_list_update">Nuk mund të lidhej me serverin e Radio-Browser</string>
 
     <string name="error_no_connection">Nuk ka lidhje interneti të disponueshme.</string>
     <string name="warning_volume_zero">Vëllimi është në zero. Mund të mos dëgjoni asgjë.</string>
 
-    <string name="share_action">Shpërndaj linkun e stacionit me…</string>
+    <string name="share_action">Shpërndaj linkun e stacionit radiofonik me…</string>
 
-    <string name="nav_item_stations">Stacionet</string>
+    <string name="nav_item_stations">Stacionet Radiofonike</string>
     <string name="nav_item_starred">Të preferuarat</string>
     <string name="nav_item_history">Historia</string>
     <string name="nav_item_settings">Cilësimet</string>
 
-    <string name="about_text">AMARadio është 100% pa reklama dhe i fokusuar te privatësia.\n\nFillimisht e zhvillova këtë aplikacion për nënën time për t\'i ofruar asaj një përvojë radioje të thjeshtë dhe të ndershme pa reklama apo gjurmim të bezdisshëm. Kjo është arsyeja pse AMARadio do të mbetet gjithmonë pa reklama – është një premtim ndaj saj, i ndarë me të gjithë ju.\n\nKy projekt është një fork i shkëlqyer të https://github.com/segler-alex/RadioDroid . I gjithë kodi është migruar nga Java në Kotlin për të siguruar që aplikacioni të mbetet modern dhe i pajtueshëm me versionet e ardhshme të Android.\n\nKodi burim është i disponueshëm në: https://github.com/ounben/AMARadio\n\nKy aplikacion përdor direktorinë falas të stacioneve radio në https://www.radio-browser.info .\nÇdokush mund të shtojë stacione në të. Funksionon si një wiki për stacionet radio online.\n\nKontakt: ben@ounben.com\n\nGjurmuesi i gabimeve: https://github.com/ounben/AMARadio/issues\n\nNëse ju pëlqen softueri dhe dëshironi të ndihmoni, mos ngurroni të më dërgoni një email.\nGjithashtu idetë për funksione të reja janë gjithmonë të mirëseardhura!\n\nKy aplikacion është softuer i lirë, i licencuar sipas GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio është 100% pa reklama dhe i fokusuar te privatësia.\n\nFillimisht e zhvillova këtë aplikacion për nënën time për t\'i ofruar asaj një përvojë radioje të thjeshtë dhe të ndershme pa reklama apo gjurmim të bezdisshëm. Kjo është arsyeja pse AMARadio do të mbetet gjithmonë pa reklama – është një premtim ndaj saj, i ndarë me të gjithë ju.\n\nKy projekt është një fork i RadioDroid. I gjithë kodi është migruar nga Java në Kotlin për të siguruar që aplikacioni të mbetet modern dhe i pajtueshëm me versionet e ardhshme të Android.\n\nKodi burim është i disponueshëm në: https://github.com/ounben/AMARadio\n\nKy aplikacion përdor direktorinë falas të stacioneve radio në https://www.radio-browser.info .\nÇdokush mund të shtojë stacione në të. Funksionon si një wiki për stacionet radio online.\n\nKontakt: ben@ounben.com\n\nGjurmuesi i gabimeve: https://github.com/ounben/AMARadio/issues\n\nNëse ju pëlqen softueri dhe dëshironi të ndihmoni, mos ngurroni të më dërgoni një email.\nGjithashtu idetë për funksione të reja janë gjithmonë të mirëseardhura!\n\nKy aplikacion është softuer i lirë, i licencuar sipas GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versioni: %1$s</string>
     <string name="detail_star">Shto te të preferuarat</string>
     <string name="detail_unstar">Hiq nga të preferuarat</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">E errët</string>
     <string name="theme_system">Sipas sistemit</string>
     <string name="settings_compact_style">Mënyra kompakte</string>
-    <string name="settings_compact_style_desc_off">Ikonë e madhe me detajet e stacionit</string>
-    <string name="settings_compact_style_desc_on">Ikonë e vogël pa detajet e stacionit</string>
+    <string name="settings_compact_style_desc_off">Ikonë e madhe me detajet e stacionit radiofonik</string>
+    <string name="settings_compact_style_desc_on">Ikonë e vogël pa detajet e stacionit radiofonik</string>
     <string name="settings_bottom_navigation">Navigimi në fund</string>
     <string name="settings_ui_scale">Shkallëzimi i UI</string>
     <string name="settings_language">Gjuha</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Etiketat e përdorura rrallë nuk do të shfaqen</string>
     <string name="settings_single_use_tags_desc_on">Etiketat e përdorura rrallë do të shfaqen</string>
 
-    <string name="settings_show_broken">Stacionet e prishura</string>
-    <string name="settings_show_broken_on">Shfaq stacionet e prishura në lista</string>
-    <string name="settings_show_broken_off">Mos shfaq stacionet e prishura në lista</string>
+    <string name="settings_show_broken">Stacionet radiofonike të prishura</string>
+    <string name="settings_show_broken_on">Shfaq stacionet radiofonike të prishura në lista</string>
+    <string name="settings_show_broken_off">Mos shfaq stacionet radiofonike të prishura në lista</string>
 
     <string name="settings_startup_behaviour">Sjellja në Fillim</string>
     <string name="action_grid_view">Pamja me rrjetë</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Veprimi në fillim</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Shfaq të gjitha stacionet</string>
+    <string name="startup_show_all_stations">Shfaq të gjitha stacionet radiofonike</string>
     <string name="startup_show_favorites">Shfaq të preferuarat</string>
     <string name="startup_show_history">Shfaq historinë</string>
     <string name="startup_show_last_view">Pamja e fundit</string>
 
-    <string name="settings_load_icons">Shfaq ikonat e stacioneve</string>
+    <string name="settings_load_icons">Shfaq ikonat e stacioneve radiofonike</string>
     <string name="settings_load_icons_on">Ikonat do të shkarkohen</string>
     <string name="settings_load_icons_off">Ikonat nuk do të shkarkohen</string>
 
     <string name="settings_auto_favorite">Auto-preferuarat</string>
-    <string name="settings_auto_favorite_on">Shto stacionet automatikisht te të preferuarat kur luhen</string>
-    <string name="settings_auto_favorite_off">Mos shto stacionet automatikisht te të preferuarat kur luhen</string>
+    <string name="settings_auto_favorite_on">Shto stacionet radiofonike automatikisht te të preferuarat kur luhen</string>
+    <string name="settings_auto_favorite_off">Mos shto stacionet radiofonike automatikisht te të preferuarat kur luhen</string>
 
     <string name="settings_play">Luajtësi</string>
     <string name="settings_auto_play_on_startup">Auto-luaj</string>
-    <string name="settings_auto_play_on_startup_on">Luaj stacionin e fundit në fillim</string>
-    <string name="settings_auto_play_on_startup_off">Mos luaj stacionin e fundit në fillim</string>
+    <string name="settings_auto_play_on_startup_on">Luaj stacionin radiofonik të fundit në fillim</string>
+    <string name="settings_auto_play_on_startup_off">Mos luaj stacionin radiofonik të fundit në fillim</string>
     <string name="settings_auto_off_on_startup">Auto-ndalo</string>
     <string name="settings_auto_off_on_startup_on">Përdor kohëmatësin e auto-ndalimit me auto-luajtjen</string>
     <string name="settings_auto_off_on_startup_off">Mos përdor kohëmatësin e auto-ndalimit me auto-luajtjen</string>
     <string name="settings_auto_off_sleep_timer">Kohëmatësi i auto-ndalimit</string>
     <string name="settings_auto_off_sleep_timer_desc">Ndalo luajtjen pas %1$s minutash</string>
     <string name="settings_play_external">Aktivizo luajtësin e jashtëm</string>
-    <string name="settings_play_external_desc_on">Luaj stacionet me luajtës të jashtëm</string>
-    <string name="settings_play_external_desc_off">Luaj stacionet me AMARadio</string>
+    <string name="settings_play_external_desc_on">Luaj stacionet radiofonike me luajtës të jashtëm</string>
+    <string name="settings_play_external_desc_off">Luaj stacionet radiofonike me AMARadio</string>
     <string name="settings_equalizer">Ekualizuesi</string>
 
     <string name="settings_connectivity">Lidhshmëria</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Në pauzë</string>
     <string name="notify_metered_connection">Lidhje me matje</string>
 
-    <string name="notify_starred">Stacioni u shtua te të preferuarat</string>
-    <string name="notify_autostarred">Stacioni u shtua automatikisht te të preferuarat</string>
-    <string name="notify_unstarred">Stacioni u hoq nga të preferuarat</string>
+    <string name="notify_starred">Stacioni radiofonik u shtua te të preferuarat</string>
+    <string name="notify_autostarred">Stacioni radiofonik u shtua automatikisht te të preferuarat</string>
+    <string name="notify_unstarred">Stacioni radiofonik u hoq nga të preferuarat</string>
     <string name="notify_deleted_favorites">Të preferuarat u fshinë</string>
     <string name="notify_deleted_history">Historia u fshi</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Ju lutemi zgjidhni një luajtës</string>
     <string name="alert_select_player_name">Emri</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Porta</string>
+    <string name="hostname">Adresa e serverit</string>
+    <string name="port">Porta e rrjetit</string>
 
     <string name="alert_press_back_to_exit">Shtypni mbrapa edhe një herë për të dalë</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Luaj në luajtës të jashtëm</string>
     <string name="action_choose_external_player">Zgjidh luajtësin e jashtëm</string>
 
-    <string name="settings_disable_battery_optimization">Optimizimi i baterisë</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Optimizimi i baterisë shpërfillet, AMARadio duhet të jetë gjithmonë në gjendje të rifitojë fokusin.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Optimizimi i baterisë është aktivizuar, AMARadio nuk do të jetë në gjendje të rifitojë fokusin nëse është në sfond.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Luajtja në sfond</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Të tjera</string>
     <string name="settings_rate_app">Vlerëso AMARadio</string>
     <string name="settings_rate_app_summary">Nëse ju pëlqen aplikacioni, ju lutemi lini një rishikim në Play Store!</string>
+    <string name="settings_rate_app_github">Të pëlqen AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Lini një yll në GitHub! Ai i ndihmon të tjerët të zbulojnë aplikacionin dhe mbështet zhvillimin e ardhshëm.</string>
     <string name="settings_statistics">Statistikat</string>
     <string name="settings_about">Rreth AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logotipa e stacionit</string>
+    <string name="accessibility_station_logo">Logotipa e stacionit radiofonik</string>
     <string name="accessibility_favorite_selected">E preferuar, e zgjedhur</string>
     <string name="accessibility_favorite_not_selected">E preferuar, e pazgjedhur</string>
     <string name="accessibility_category_icon">Ikona e kategorisë</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Konfiguro</string>
     <string name="accessibility_close">Mbyll</string>
     <string name="accessibility_add_filter">Shto filtër</string>
-    <string name="accessibility_station_options">Opsionet e stacionit</string>
+    <string name="accessibility_station_options">Opsionet e stacionit radiofonik</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Stacioni: %1$s, Gjuha: %2$s, Etiketat: %3$s</string>
 
     <string name="error_no_file_manager">Nuk mund të gjente një menaxher skedari të sistemit. Sigurohuni që një eksplorues skedari të jetë i instaluar dhe aktivizuar.</string>
     <string name="error_no_browser">Nuk mund të gjente një shfletues uebi. Ju lutemi instaloni një shfletues për të hapur këtë lidhje.</string>
-    <string name="error_no_homepage">Nuk ka faqe kryesore të disponueshme për këtë stacion</string>
-    <string name="tab_custom_stations">Me porosi</string>
-    <string name="action_add_custom">Shto Stacionin e personalizuar</string>
-    <string name="station_name">Emri i stacionit</string>
+    <string name="error_no_homepage">Nuk ka faqe kryesore të disponueshme për këtë stacion radiofonik</string>
+    <string name="tab_custom_stations">Të personalizuara</string>
+    <string name="action_add_custom">Shto stacion radiofonik të personalizuar</string>
+    <string name="station_name">Emri i stacionit radiofonik</string>
     <string name="stream_url">URL-ja e transmetimit</string>
-    <string name="favicon_url">URL e faviconit (opsionale)</string>
+    <string name="favicon_url">URL e logos së stacionit (Favicon)</string>
     <string name="select_image">Zgjidhni Imazhi</string>
     <string name="error_invalid_url">Ju lutemi shkruani një URL të vlefshme</string>
     <string name="action_save">Ruaj</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Kontrolle të shpejta të luajtësit</string>
-    <string name="widget_description_full">Lista e lojtarëve dhe stacioneve</string>
+    <string name="widget_description_full">Lexuesi dhe lista e stacioneve radiofonike</string>
 
     <string name="settings_auto_db_update">Sinkronizimi i të dhënave në sfond</string>
-    <string name="settings_auto_db_update_desc">Përditëso automatikisht bazën e të dhënave të stacionit nëpërmjet API-së së shfletuesit të radios (rekomandohet).</string>
-    <string name="settings_station_click_counter">Numëruesi i klikimeve të stacionit</string>
-    <string name="settings_station_click_counter_desc">Mbështetni statistikat e Shfletuesit të Radios duke ndarë në mënyrë anonime ngjarjet e luajtjes.</string>
-    <string name="settings_rate_app_github">Të pëlqen AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Lini një yll në GitHub! Ai i ndihmon të tjerët të zbulojnë aplikacionin dhe mbështet zhvillimin e ardhshëm.</string>
+    <string name="settings_auto_db_update_desc">Përditëso automatikisht bazën e të dhënave të stacionit nëpërmjet API-së së Radio-Browser (rekomandohet).</string>
+    <string name="settings_station_click_counter">Numëruesi i klikimeve të stacionit radiofonik</string>
+    <string name="settings_station_click_counter_desc">Mbështetni statistikat e Radio-Browser duke ndarë në mënyrë anonime ngjarjet e dëgjimit.</string>
 
-    <string name="settings_remove_notification_on_stop">Hiq njoftimin kur aplikacioni është i mbyllur</string>
-    <string name="settings_remove_notification_on_stop_desc">Hiq automatikisht njoftimin e medias kur aplikacioni mbyllet nga aplikacionet e fundit</string>
+    <string name="settings_remove_notification_on_stop">Hiq njoftimin kur ndalohet</string>
+    <string name="settings_remove_notification_on_stop_desc">Hiq automatikisht njoftimin e medias kur dëgjimi ndalohet</string>
     <string name="settings_auto_resume_audio_focus">Rifilloni pas humbjes së fokusit audio</string>
     <string name="settings_auto_resume_audio_focus_desc">Rifilloni automatikisht riprodhimin pas telefonatave, alarmeve ose ndalimeve të tjera audio</string>
+
+    <string name="settings_backup_restore">Ruajtja dhe rikthimi</string>
+    <string name="settings_export_backup">Krijo kopje të plotë ruajtjeje (ZIP)</string>
+    <string name="settings_export_backup_desc">Ruan të gjitha të preferuarat, stacionet e personalizuara dhe ikonat në një skedar ZIP</string>
+    <string name="settings_import_backup">Rikthe kopjen e ruajtur (ZIP)</string>
+    <string name="settings_import_backup_desc">Rikthen të preferuarat dhe stacionet e personalizuara nga një skedar ZIP</string>
+    <string name="backup_export_success">Kopja e ruajtur u ruajt me sukses</string>
+    <string name="backup_export_error">Ruajtja e kopjes dështoi</string>
+    <string name="backup_import_success">Rikthimi i kopjes u krye me sukses</string>
+    <string name="backup_import_error">Rikthimi i kopjes dështoi</string>
+
+    <string name="database_summary_title">Baza e të dhënave lokale</string>
+    <string name="database_total_stations">Gjithsej stacione radiofonike</string>
+    <string name="database_last_sync">Përditësimi i fundit</string>
+    <string name="database_update_now">Përditëso bazën e të dhënave tani</string>
+    <string name="database_full_update">Përditëso bazën e të dhënave</string>
+    <string name="database_syncing">Duke u sinkronizuar…</string>
+    <string name="database_downloading">Duke u shkarkuar…</string>
+    <string name="database_stations_loaded">%1$s stacione radiofonike</string>
+    <string name="database_sync_channel_name">Sinkronizimi i bazës së të dhënave të stacioneve radiofonike</string>
+    <string name="database_sync_success">Përditësimi i bazës së të dhënave të stacioneve u përfundua me sukses</string>
+    <string name="database_error_no_connection">Nuk ka lidhje interneti</string>
+    <string name="database_error_no_space">Hapësirë e pamjaftueshme në disk</string>
+    <string name="database_error_failed">Përditësimi i bazës së të dhënave dështoi</string>
+
+    <string name="settings_disable_battery_optimization_desc">Për të vazhduar dëgjimin kur ekrani është i fikur, vendosni përdorimin e baterisë në \'Pa kufizime\'.</string>
+    <string name="battery_opt_open_settings">Hap cilësimet</string>
+    <string name="battery_opt_later">Më vonë</string>
 </resources>

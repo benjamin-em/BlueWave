@@ -52,19 +52,19 @@
     <string name="filter_empty_title">カスタムラジオ局フィードを作成</string>
     <string name="filter_empty_desc">複数の条件を組み合わせて、自分専用の表示を作成できます。以下の項目で検索を絞り込めます：</string>
     <string name="filter_empty_filter_by">フィルター条件</string>
-    <string name="filter_empty_filter_desc">国、局名、タグ、または言語</string>
+    <string name="filter_empty_filter_desc">国、ラジオ局名、タグ、または言語</string>
     <string name="filter_empty_sort_by">並べ替え</string>
     <string name="filter_empty_sort_desc">クリック数、アルファベット順、投票数、または最終更新日</string>
     <string name="filter_empty_hint">上のフィールドに名前を入力して、このカスタム表示を保存しましょう！</string>
-    <string name="error_station_load">局に接続できませんでした</string>
-    <string name="error_list_update">ラジオブラウザサーバーに接続できませんでした</string>
+    <string name="error_station_load">ラジオ局に接続できませんでした</string>
+    <string name="error_list_update">Radio-Browserサーバーに接続できませんでした</string>
 
     <string name="error_no_connection">インターネット接続がありません。</string>
     <string name="warning_volume_zero">音量がゼロです。何も聞こえない可能性があります。</string>
 
-    <string name="share_action">局のリンクを共有&#8230;</string>
+    <string name="share_action">ラジオ局のリンクを共有&#8230;</string>
 
-    <string name="nav_item_stations">放送局</string>
+    <string name="nav_item_stations">ラジオ局</string>
     <string name="nav_item_starred">お気に入り</string>
     <string name="nav_item_history">履歴</string>
     <string name="nav_item_settings">設定</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">ダーク</string>
     <string name="theme_system">システムの設定に従う</string>
     <string name="settings_compact_style">コンパクトモード</string>
-    <string name="settings_compact_style_desc_off">大きなアイコンと局の詳細を表示</string>
+    <string name="settings_compact_style_desc_off">大きなアイコンとラジオ局の詳細を表示</string>
     <string name="settings_compact_style_desc_on">小さなアイコンのみ表示</string>
     <string name="settings_bottom_navigation">ボトムナビゲーション</string>
     <string name="settings_ui_scale">UIのスケーリング</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">使用頻度の低いタグは表示されません</string>
     <string name="settings_single_use_tags_desc_on">使用頻度の低いタグも表示されます</string>
 
-    <string name="settings_show_broken">動作しない局</string>
-    <string name="settings_show_broken_on">リストに動作しない局を表示する</string>
-    <string name="settings_show_broken_off">リストに動作しない局を表示しない</string>
+    <string name="settings_show_broken">動作しないラジオ局</string>
+    <string name="settings_show_broken_on">リストに動作しないラジオ局を表示する</string>
+    <string name="settings_show_broken_off">リストに動作しないラジオ局を表示しない</string>
 
     <string name="settings_startup_behaviour">起動時の動作</string>
     <string name="action_grid_view">グリッド表示</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">起動時のアクション</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">すべての局を表示</string>
+    <string name="startup_show_all_stations">すべてのラジオ局を表示</string>
     <string name="startup_show_favorites">お気に入りを表示</string>
     <string name="startup_show_history">履歴を表示</string>
     <string name="startup_show_last_view">前回の画面を表示</string>
 
-    <string name="settings_load_icons">局のアイコンを表示</string>
+    <string name="settings_load_icons">ラジオ局のアイコンを表示</string>
     <string name="settings_load_icons_on">アイコンをダウンロードします</string>
     <string name="settings_load_icons_off">アイコンをダウンロードしません</string>
 
     <string name="settings_auto_favorite">自動お気に入り</string>
-    <string name="settings_auto_favorite_on">再生時に局を自動的にお気に入りに追加する</string>
-    <string name="settings_auto_favorite_off">再生時に局を自動的にお気に入りに追加しない</string>
+    <string name="settings_auto_favorite_on">再生時にラジオ局を自動的にお気に入りに追加する</string>
+    <string name="settings_auto_favorite_off">再生時にラジオ局を自動的にお気に入りに追加しない</string>
 
     <string name="settings_play">プレイヤー</string>
     <string name="settings_auto_play_on_startup">自動再生</string>
-    <string name="settings_auto_play_on_startup_on">起動時に最後に聴いた局を再生する</string>
-    <string name="settings_auto_play_on_startup_off">起動時に最後に聴いた局を再生しない</string>
+    <string name="settings_auto_play_on_startup_on">起動時に最後に聴いたラジオ局を再生する</string>
+    <string name="settings_auto_play_on_startup_off">起動時に最後に聴いたラジオ局を再生しない</string>
     <string name="settings_auto_off_on_startup">自動停止</string>
     <string name="settings_auto_off_on_startup_on">自動再生時に自動停止タイマーを使用する</string>
     <string name="settings_auto_off_on_startup_off">自動再生時に自動停止タイマーを使用しない</string>
     <string name="settings_auto_off_sleep_timer">自動停止タイマー</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s 分後に再生を停止</string>
     <string name="settings_play_external">外部プレイヤーを有効にする</string>
-    <string name="settings_play_external_desc_on">外部プレイヤーで再生する</string>
-    <string name="settings_play_external_desc_off">AMARadioで再生する</string>
+    <string name="settings_play_external_desc_on">ラジオ局を外部プレイヤーで再生する</string>
+    <string name="settings_play_external_desc_off">ラジオ局をAMARadioで再生する</string>
     <string name="settings_equalizer">イコライザー</string>
 
     <string name="settings_connectivity">接続</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">一時停止中</string>
     <string name="notify_metered_connection">従量制接続</string>
 
-    <string name="notify_starred">局をお気に入りに追加しました</string>
-    <string name="notify_autostarred">局を自動的にお気に入りに追加しました</string>
-    <string name="notify_unstarred">局をお気に入りから削除しました</string>
+    <string name="notify_starred">ラジオ局をお気に入りに追加しました</string>
+    <string name="notify_autostarred">ラジオ局を自動的にお気に入りに追加しました</string>
+    <string name="notify_unstarred">ラジオ局をお気に入りから削除しました</string>
     <string name="notify_deleted_favorites">お気に入りを削除しました</string>
     <string name="notify_deleted_history">履歴を削除しました</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">プレイヤーを選択してください</string>
     <string name="alert_select_player_name">名前</string>
-    <string name="hostname">ホスト名</string>
-    <string name="port">ポート</string>
+    <string name="hostname">サーバーアドレス</string>
+    <string name="port">ネットワークポート</string>
 
     <string name="alert_press_back_to_exit">終了するにはもう一度「戻る」を押してください</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">外部プレイヤーで再生</string>
     <string name="action_choose_external_player">外部プレイヤーを選択</string>
 
-    <string name="settings_disable_battery_optimization">バッテリーの最適化</string>
-    <string name="settings_ignore_battery_optimization_summary_on">バッテリーの最適化は無視されます。AMARadioはフォーカスを失った後でも常に復帰できるはずです。</string>
-    <string name="settings_ignore_battery_optimization_summary_off">バッテリーの最適化が有効です。AMARadioがバックグラウンドにある場合、復帰できない可能性があります。</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">バックグラウンド再生</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">その他</string>
     <string name="settings_rate_app">AMARadioを評価</string>
     <string name="settings_rate_app_summary">アプリが気に入ったら、Play ストアでレビューをお願いします！</string>
+    <string name="settings_rate_app_github">AMARadioをお楽しみですか?</string>
+    <string name="settings_rate_app_github_summary">GitHub にスターを残してください!他の人がアプリを発見するのに役立ち、将来の開発をサポートします。</string>
     <string name="settings_statistics">統計</string>
     <string name="settings_about">AMARadioについて</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">放送局のロゴ</string>
+    <string name="accessibility_station_logo">ラジオ局のロゴ</string>
     <string name="accessibility_favorite_selected">お気に入り、選択済み</string>
     <string name="accessibility_favorite_not_selected">お気に入り、未選択</string>
     <string name="accessibility_category_icon">カテゴリーアイコン</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">設定</string>
     <string name="accessibility_close">閉じる</string>
     <string name="accessibility_add_filter">フィルターを追加</string>
-    <string name="accessibility_station_options">放送局のオプション</string>
+    <string name="accessibility_station_options">ラジオ局のオプション</string>
     <string name="not_applicable">該当なし</string>
     <string name="accessibility_station_description">放送局：%1$s、言語：%2$s、タグ：%3$s</string>
 
     <string name="error_no_file_manager">システム ファイル マネージャーが見つかりませんでした。ファイル エクスプローラーがインストールされ、有効になっていることを確認してください。</string>
     <string name="error_no_browser">Web ブラウザが見つかりませんでした。このリンクを開くにはブラウザをインストールしてください。</string>
-    <string name="error_no_homepage">この駅にはホームページがありません</string>
+    <string name="error_no_homepage">このラジオ局にはホームページがありません</string>
     <string name="tab_custom_stations">カスタム</string>
-    <string name="action_add_custom">カスタムステーションの追加</string>
-    <string name="station_name">駅名</string>
+    <string name="action_add_custom">カスタムラジオ局の追加</string>
+    <string name="station_name">ラジオ局名</string>
     <string name="stream_url">ストリームURL</string>
-    <string name="favicon_url">ファビコン URL (オプション)</string>
+    <string name="favicon_url">ラジオ局のロゴURL (Favicon)</string>
     <string name="select_image">画像の選択</string>
     <string name="error_invalid_url">有効な URL を入力してください</string>
     <string name="action_save">保存</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">プレーヤーのクイックコントロール</string>
-    <string name="widget_description_full">プレーヤーとステーションのリスト</string>
+    <string name="widget_description_full">ラジオプレーヤーとラジオ局リスト</string>
 
     <string name="settings_auto_db_update">バックグラウンドデータ同期</string>
-    <string name="settings_auto_db_update_desc">Radio-Browser API 経由でステーション データベースを自動更新します (推奨)。</string>
-    <string name="settings_station_click_counter">ステーションクリックカウンター</string>
-    <string name="settings_station_click_counter_desc">プレイ イベントを匿名で共有することで、Radio-Browser 統計をサポートします。</string>
-    <string name="settings_rate_app_github">AMARadioをお楽しみですか?</string>
-    <string name="settings_rate_app_github_summary">GitHub にスターを残してください!他の人がアプリを発見するのに役立ち、将来の開発をサポートします。</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API 経由でラジオ局データベースを自動更新します (推奨)。</string>
+    <string name="settings_station_click_counter">ラジオ局クリックカウンター</string>
+    <string name="settings_station_click_counter_desc">再生イベントを匿名で共有することで、Radio-Browser 統計をサポートします。</string>
 
-    <string name="settings_remove_notification_on_stop">アプリを閉じたときに通知を削除する</string>
-    <string name="settings_remove_notification_on_stop_desc">最近使用したアプリからアプリを閉じるとメディア通知を自動的に閉じる</string>
+    <string name="settings_remove_notification_on_stop">停止時に通知を削除する</string>
+    <string name="settings_remove_notification_on_stop_desc">再生が停止したときにメディア通知を自動的に削除します</string>
     <string name="settings_auto_resume_audio_focus">音声フォーカスが失われた後に再開する</string>
     <string name="settings_auto_resume_audio_focus_desc">電話、アラーム、その他の音声が停止した後、自動的に再生を再開します</string>
+
+    <string name="settings_backup_restore">バックアップと復元</string>
+    <string name="settings_export_backup">完全なバックアップを作成 (ZIP)</string>
+    <string name="settings_export_backup_desc">すべてのお気に入り、カスタム局、アイコンをZIPファイルに保存します</string>
+    <string name="settings_import_backup">バックアップを復元 (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIPバックアップファイルからお気に入りとカスタム局を復元します</string>
+    <string name="backup_export_success">バックアップが正常に保存されました</string>
+    <string name="backup_export_error">バックアップの保存に失敗しました</string>
+    <string name="backup_import_success">バックアップが正常に復元されました</string>
+    <string name="backup_import_error">バックアップの復元に失敗しました</string>
+
+    <string name="database_summary_title">ローカルデータベース</string>
+    <string name="database_total_stations">ラジオ局の合計数</string>
+    <string name="database_last_sync">最終更新</string>
+    <string name="database_update_now">データベースを今すぐ更新</string>
+    <string name="database_full_update">データベースを更新</string>
+    <string name="database_syncing">同期中…</string>
+    <string name="database_downloading">ダウンロード中…</string>
+    <string name="database_stations_loaded">%1$s 局</string>
+    <string name="database_sync_channel_name">ラジオ局データベースの同期</string>
+    <string name="database_sync_success">ラジオ局データベースの更新が正常に完了しました</string>
+    <string name="database_error_no_connection">インターネット接続がありません</string>
+    <string name="database_error_no_space">ストレージの空き容量が不足しています</string>
+    <string name="database_error_failed">データベースの更新に失敗しました</string>
+
+    <string name="settings_disable_battery_optimization_desc">画面がオフの状態でも再生を継続するには、バッテリー使用量を「制限なし」に設定してください。</string>
+    <string name="battery_opt_open_settings">設定を開く</string>
+    <string name="battery_opt_later">後で</string>
 </resources>

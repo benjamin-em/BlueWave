@@ -52,24 +52,24 @@
     <string name="filter_empty_title">உங்கள் தனிப்பயன் வானொலி நிலைய ஊட்டத்தை உருவாக்கவும்</string>
     <string name="filter_empty_desc">பல அளவுகோல்களை இணைப்பதன் மூலம் தனிப்பயனாக்கப்பட்ட காட்சியை உருவாக்கவும். இதைப் பயன்படுத்தி உங்கள் தேடலைச் சுருக்கலாம்:</string>
     <string name="filter_empty_filter_by">இதன் மூலம் வடிகட்டவும்:</string>
-    <string name="filter_empty_filter_desc">நாடு, நிலையத்தின் பெயர், குறிச்சொற்கள் அல்லது மொழி</string>
+    <string name="filter_empty_filter_desc">நாடு, வானொலி நிலையத்தின் பெயர், குறிச்சொற்கள் அல்லது மொழி</string>
     <string name="filter_empty_sort_by">இதன் படி வரிசைப்படுத்தவும்:</string>
     <string name="filter_empty_sort_desc">கிளிக்குகள், அகரவரிசை, வாக்குகள் அல்லது கடைசியாக மாறியது</string>
     <string name="filter_empty_hint">இந்தக் காட்சியைச் சேமிக்க மேலே உள்ள புலத்தில் ஒரு பெயரைத் தட்டச்சு செய்யவும்!</string>
-    <string name="error_station_load">நிலையத்துடன் இணைக்க முடியவில்லை</string>
-    <string name="error_list_update">வானொலி உலாவி சேவையகத்துடன் இணைக்க முடியவில்லை</string>
+    <string name="error_station_load">வானொலி நிலையத்துடன் இணைக்க முடியவில்லை</string>
+    <string name="error_list_update">Radio-Browser சேவையகத்துடன் இணைக்க முடியவில்லை</string>
 
     <string name="error_no_connection">இணைய இணைப்பு இல்லை.</string>
     <string name="warning_volume_zero">ஒலி அளவு பூஜ்ஜியத்தில் உள்ளது. உங்களால் எதையும் கேட்க முடியாது.</string>
 
-    <string name="share_action">நிலைய இணைப்பை இதனுடன் பகிரவும்…</string>
+    <string name="share_action">வானொலி நிலைய இணைப்பை இதனுடன் பகிரவும்…</string>
 
-    <string name="nav_item_stations">நிலையங்கள்</string>
+    <string name="nav_item_stations">வானொலி நிலையங்கள்</string>
     <string name="nav_item_starred">விருப்பமானவை</string>
     <string name="nav_item_history">வரலாறு</string>
     <string name="nav_item_settings">அமைப்புகள்</string>
 
-    <string name="about_text">AMARadio 100% விளம்பரங்கள் இல்லாதது மற்றும் தனியுரிமையில் கவனம் செலுத்துகிறது.\n\nதொந்தரவான விளம்பரங்கள் அல்லது கண்காணிப்பு இல்லாத எளிய, நேர்மையான வானொலி அனுபவத்தை வழங்க எனது தாயாருக்காக முதலில் இந்தப் பயன்பாட்டை உருவாக்கினேன். இதனால்தான் AMARadio எப்போதும் விளம்பரங்கள் இல்லாமல் இருக்கும் - இது அவருக்கு நான் அளித்த வாக்குறுதி, உங்கள் அனைவருடனும் பகிர்ந்து கொள்ளப்படுகிறது.\n\nஇந்தத் திட்டம் சிறந்த https://github.com/segler-alex/RadioDroid இன் ஃபோர்க் (fork) ஆகும். பயன்பாடு நவீனமாகவும் எதிர்கால ஆண்ட்ராய்டு பதிப்புகளுடன் இணக்கமாகவும் இருப்பதை உறுதிசெய்ய முழு மூலக் குறியீடும் ஜாவாவிலிருந்து கோட்லினுக்கு மாற்றப்பட்டுள்ளது.\n\nமூலக் குறியீடு இங்கே கிடைக்கிறது: https://github.com/ounben/AMARadio\n\nஇந்தப் பயன்பாடு https://www.radio-browser.info-இல் உள்ள இலவச வானொலி நிலைய கோப்பகத்தைப் பயன்படுத்துகிறது. எவரும் இதில் நிலையங்களைச் சேர்க்கலாம். இது ஆன்லைன் வானொலி நிலையங்களுக்கான விக்கி போன்றது.\n\nதொடர்பு: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nஉங்களுக்கு மென்பொருள் பிடித்திருந்தால் உதவ விரும்பினால், எனக்கு மின்னஞ்சல் அனுப்பவும். புதிய அம்சங்களுக்கான யோசனைகளும் எப்போதும் வரவேற்கப்படுகின்றன!\n\nஇந்தப் பயன்பாடு GPLv3 உரிமத்தின் கீழ் உள்ள இலவச மென்பொருளாகும். https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% விளம்பரங்கள் இல்லாதது மற்றும் தனியுரிமையில் கவனம் செலுத்துகிறது.\n\nதொந்தரவான விளம்பரங்கள் அல்லது கண்காணிப்பு இல்லாத எளிய, நேர்மையான வானொலி அனுபவத்தை வழங்க எனது தாயாருக்காக முதலில் இந்தப் பயன்பாட்டை உருவாக்கினேன். இதனால்தான் AMARadio எப்போதும் விளம்பரங்கள் இல்லாமல் இருக்கும் - இது அவருக்கு நான் அளித்த வாக்குறுதி, உங்கள் அனைவருடனும் பகிர்ந்து கொள்ளப்படுகிறது.\n\nஇந்தத் திட்டம் RadioDroid இன் ஃபோர்க் (fork) ஆகும். பயன்பாடு நவீனமாகவும் எதிர்கால ஆண்ட்ராய்டு பதிப்புகளுடன் இணக்கமாகவும் இருப்பதை உறுதிசெய்ய முழு மூலக் குறியீடும் ஜாவாவிலிருந்து கோட்லினுக்கு மாற்றப்பட்டுள்ளது.\n\nமூலக் குறியீடு இங்கே கிடைக்கிறது: https://github.com/ounben/AMARadio\n\nஇந்தப் பயன்பாடு https://www.radio-browser.info-இல் உள்ள இலவச வானொலி நிலைய கோப்பகத்தைப் பயன்படுத்துகிறது. எவரும் இதில் நிலையங்களைச் சேர்க்கலாம். இது ஆன்லைன் வானொலி நிலையங்களுக்கான விக்கி போன்றது.\n\nதொடர்பு: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nஉங்களுக்கு மென்பொருள் பிடித்திருந்தால் உதவ விரும்பினால், எனக்கு மின்னஞ்சல் அனுப்பவும். புதிய அம்சங்களுக்கான யோசனைகளும் எப்போதும் வரவேற்கப்படுகின்றன!\n\nஇந்தப் பயன்பாடு GPLv3 உரிமத்தின் கீழ் உள்ள இலவச மென்பொருளாகும். https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">பதிப்பு: %1$s</string>
     <string name="detail_star">விருப்பமானவற்றில் சேர்க்கவும்</string>
     <string name="detail_unstar">விருப்பமானவற்றிலிருந்து நீக்கவும்</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">இருள்</string>
     <string name="theme_system">சிஸ்டத்தைப் பின்தொடரவும்</string>
     <string name="settings_compact_style">சிறிய பயன்முறை</string>
-    <string name="settings_compact_style_desc_off">நிலைய விவரங்களுடன் பெரிய ஐகான்</string>
-    <string name="settings_compact_style_desc_on">நிலைய விவரங்கள் இல்லாமல் சிறிய ஐகான்</string>
+    <string name="settings_compact_style_desc_off">வானொலி நிலைய விவரங்களுடன் பெரிய ஐகான்</string>
+    <string name="settings_compact_style_desc_on">வானொலி நிலைய விவரங்கள் இல்லாமல் சிறிய ஐகான்</string>
     <string name="settings_bottom_navigation">கீழ் வழிசெலுத்தல்</string>
     <string name="settings_ui_scale">UI அளவு</string>
     <string name="settings_language">மொழி</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">அரிதாகப் பயன்படுத்தப்படும் குறிச்சொற்கள் காட்டப்படாது</string>
     <string name="settings_single_use_tags_desc_on">அரிதாகப் பயன்படுத்தப்படும் குறிச்சொற்கள் காட்டப்படும்</string>
 
-    <string name="settings_show_broken">இயங்காத நிலையங்கள்</string>
-    <string name="settings_show_broken_on">பட்டியலில் இயங்காத நிலையங்களைக் காட்டு</string>
-    <string name="settings_show_broken_off">பட்டியலில் இயங்காத நிலையங்களைக் காட்டாதே</string>
+    <string name="settings_show_broken">இயங்காத வானொலி நிலையங்கள்</string>
+    <string name="settings_show_broken_on">பட்டியலில் இயங்காத வானொலி நிலையங்களைக் காட்டு</string>
+    <string name="settings_show_broken_off">பட்டியலில் இயங்காத வானொலி நிலையங்களைக் காட்டாதே</string>
 
     <string name="settings_startup_behaviour">தொடக்க நடத்தை</string>
     <string name="action_grid_view">கட்டம் காட்சி</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">தொடக்க செயல்</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">அனைத்து நிலையங்களையும் காட்டு</string>
+    <string name="startup_show_all_stations">அனைத்து வானொலி நிலையங்களையும் காட்டு</string>
     <string name="startup_show_favorites">விருப்பங்களைக் காட்டு</string>
     <string name="startup_show_history">வரலாற்றைக் காட்டு</string>
     <string name="startup_show_last_view">கடைசி காட்சி</string>
 
-    <string name="settings_load_icons">நிலைய ஐகான்களைக் காட்டு</string>
+    <string name="settings_load_icons">வானொலி நிலைய ஐகான்களைக் காட்டு</string>
     <string name="settings_load_icons_on">ஐகான்கள் தரவிறக்கம் செய்யப்படும்</string>
     <string name="settings_load_icons_off">ஐகான்கள் தரவிறக்கம் செய்யப்படாது</string>
 
     <string name="settings_auto_favorite">தானியங்கி விருப்பங்கள்</string>
-    <string name="settings_auto_favorite_on">இயக்கும்போது நிலையங்களைத் தானாகவே விருப்பங்களில் சேர்க்கவும்</string>
-    <string name="settings_auto_favorite_off">இயக்கும்போது நிலையங்களைத் தானாகவே விருப்பங்களில் சேர்க்காதே</string>
+    <string name="settings_auto_favorite_on">இயக்கும்போது வானொலி நிலையங்களைத் தானாகவே விருப்பங்களில் சேர்க்கவும்</string>
+    <string name="settings_auto_favorite_off">இயக்கும்போது வானொலி நிலையங்களைத் தானாகவே விருப்பங்களில் சேர்க்காதே</string>
 
     <string name="settings_play">பிளேயர்</string>
     <string name="settings_auto_play_on_startup">தானியங்கி இயக்கம்</string>
-    <string name="settings_auto_play_on_startup_on">தொடங்கும் போது கடைசி நிலையத்தை இயக்கு</string>
-    <string name="settings_auto_play_on_startup_off">தொடங்கும் போது கடைசி நிலையத்தை இயக்காதே</string>
+    <string name="settings_auto_play_on_startup_on">தொடங்கும் போது கடைசி வானொலி நிலையத்தை இயக்கு</string>
+    <string name="settings_auto_play_on_startup_off">தொடங்கும் போது கடைசி வானொலி நிலையத்தை இயக்காதே</string>
     <string name="settings_auto_off_on_startup">தானியங்கி நிறுத்தம்</string>
     <string name="settings_auto_off_on_startup_on">தானியங்கி இயக்கத்துடன் தானியங்கி நிறுத்த டைமரைப் பயன்படுத்து</string>
     <string name="settings_auto_off_on_startup_off">தானியங்கி இயக்கத்துடன் தானியங்கி நிறுத்த டைமரைப் பயன்படுத்தாதே</string>
     <string name="settings_auto_off_sleep_timer">தானியங்கி நிறுத்த டைமர்</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s நிமிடங்களுக்குப் பிறகு இயக்கத்தை நிறுத்தவும்</string>
     <string name="settings_play_external">வெளிப்புற பிளேயரை அனுமதி</string>
-    <string name="settings_play_external_desc_on">வெளிப்புற பிளேயர் மூலம் நிலையங்களை இயக்கு</string>
-    <string name="settings_play_external_desc_off">AMARadio மூலம் நிலையங்களை இயக்கு</string>
+    <string name="settings_play_external_desc_on">வெளிப்புற பிளேயர் மூலம் வானொலி நிலையங்களை இயக்கு</string>
+    <string name="settings_play_external_desc_off">AMARadio மூலம் வானொலி நிலையங்களை இயக்கு</string>
     <string name="settings_equalizer">ஈக்வலைசர்</string>
 
     <string name="settings_connectivity">இணைப்பு</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">இடைநிறுத்தப்பட்டது</string>
     <string name="notify_metered_connection">கட்டண இணைப்பு</string>
 
-    <string name="notify_starred">நிலையம் விருப்பங்களில் சேர்க்கப்பட்டது</string>
-    <string name="notify_autostarred">நிலையம் தானாகவே விருப்பங்களில் சேர்க்கப்பட்டது</string>
-    <string name="notify_unstarred">நிலையம் விருப்பங்களிலிருந்து நீக்கப்பட்டது</string>
+    <string name="notify_starred">வானொலி நிலையம் விருப்பங்களில் சேர்க்கப்பட்டது</string>
+    <string name="notify_autostarred">வானொலி நிலையம் தானாகவே விருப்பங்களில் சேர்க்கப்பட்டது</string>
+    <string name="notify_unstarred">வானொலி நிலையம் விருப்பங்களிலிருந்து நீக்கப்பட்டது</string>
     <string name="notify_deleted_favorites">விருப்பங்கள் நீக்கப்பட்டன</string>
     <string name="notify_deleted_history">வரலாறு நீக்கப்பட்டது</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">தயவுசெய்து ஒரு பிளேயரைத் தேர்ந்தெடுக்கவும்</string>
     <string name="alert_select_player_name">பெயர்</string>
-    <string name="hostname">புரவலன் பெயர்</string>
-    <string name="port">போர்ட்</string>
+    <string name="hostname">சேவையக முகவரி</string>
+    <string name="port">பிணைய போர்ட்</string>
 
     <string name="alert_press_back_to_exit">வெளியேற மீண்டும் ஒருமுறை \'Back\' அழுத்தவும்</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">வெளிப்புற பிளேயரில் இயக்கு</string>
     <string name="action_choose_external_player">வெளிப்புற பிளேயரைத் தேர்வு செய்யவும்</string>
 
-    <string name="settings_disable_battery_optimization">பேட்டரி மேம்படுத்தல்</string>
-    <string name="settings_ignore_battery_optimization_summary_on">பேட்டரி மேம்படுத்தல் புறக்கணிக்கப்படுகிறது, AMARadio எப்போதும் ஃபோகஸைப் பெற முடியும்.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">பேட்டரி மேம்படுத்தல் செயல்படுத்தப்பட்டது, பின்னணியில் இருந்தால் AMARadio-வால் ஃபோகஸைப் பெற முடியாமல் போகலாம்.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">பின்னணி இயக்கம்</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">மற்றவை</string>
     <string name="settings_rate_app">AMARadio-வை மதிப்பிடவும்</string>
     <string name="settings_rate_app_summary">உங்களுக்கு ஆப் பிடித்திருந்தால், ப்ளே ஸ்டோரில் மதிப்பாய்வை வழங்கவும்!</string>
+    <string name="settings_rate_app_github">AMARadioவை அனுபவிக்கிறீர்களா?</string>
+    <string name="settings_rate_app_github_summary">GitHub இல் ஒரு நட்சத்திரத்தை விடுங்கள்! இது மற்றவர்கள் பயன்பாட்டைக் கண்டறிய உதவுகிறது மற்றும் எதிர்கால மேம்பாட்டை ஆதரிக்கிறது.</string>
     <string name="settings_statistics">புள்ளிவிவரங்கள்</string>
     <string name="settings_about">AMARadio பற்றி</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">நிலைய சின்னம்</string>
+    <string name="accessibility_station_logo">வானொலி நிலைய சின்னம்</string>
     <string name="accessibility_favorite_selected">விருப்பமானது, தேர்ந்தெடுக்கப்பட்டது</string>
     <string name="accessibility_favorite_not_selected">விருப்பமானது, தேர்ந்தெடுக்கப்படவில்லை</string>
     <string name="accessibility_category_icon">வகை ஐகான்</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">கட்டமைக்க</string>
     <string name="accessibility_close">மூடவும்</string>
     <string name="accessibility_add_filter">வடிகட்டியைச் சேர்க்கவும்</string>
-    <string name="accessibility_station_options">நிலைய விருப்பங்கள்</string>
+    <string name="accessibility_station_options">வானொலி நிலைய விருப்பங்கள்</string>
     <string name="not_applicable">பொருந்தாது</string>
     <string name="accessibility_station_description">நிலையம்: %1$s, மொழி: %2$s, குறிச்சொற்கள்: %3$s</string>
 
     <string name="error_no_file_manager">கணினி கோப்பு மேலாளரைக் கண்டுபிடிக்க முடியவில்லை. கோப்பு எக்ஸ்ப்ளோரர் நிறுவப்பட்டு இயக்கப்பட்டிருப்பதை உறுதி செய்யவும்.</string>
     <string name="error_no_browser">இணைய உலாவியைக் கண்டுபிடிக்க முடியவில்லை. இந்த இணைப்பைத் திறக்க உலாவியை நிறுவவும்.</string>
-    <string name="error_no_homepage">இந்த நிலையத்திற்கான முகப்புப்பக்கம் இல்லை</string>
+    <string name="error_no_homepage">இந்த வானொலி நிலையத்திற்கான முகப்புப்பக்கம் இல்லை</string>
     <string name="tab_custom_stations">தனிப்பயன்</string>
-    <string name="action_add_custom">தனிப்பயன் நிலையத்தைச் சேர்க்கவும்</string>
-    <string name="station_name">நிலையத்தின் பெயர்</string>
+    <string name="action_add_custom">தனிப்பயன் வானொலி நிலையத்தைச் சேர்க்கவும்</string>
+    <string name="station_name">வானொலி நிலையத்தின் பெயர்</string>
     <string name="stream_url">ஸ்ட்ரீம் URL</string>
-    <string name="favicon_url">ஃபேவிகான் URL (விரும்பினால்)</string>
+    <string name="favicon_url">நிலைய லோகோ URL (Favicon)</string>
     <string name="select_image">படத்தைத் தேர்ந்தெடுக்கவும்</string>
     <string name="error_invalid_url">சரியான URL ஐ உள்ளிடவும்</string>
     <string name="action_save">சேமிக்கவும்</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">விரைவான பிளேயர் கட்டுப்பாடுகள்</string>
-    <string name="widget_description_full">பிளேயர் மற்றும் ஸ்டேஷன் பட்டியல்</string>
+    <string name="widget_description_full">பிளேயர் மற்றும் வானொலி நிலையப் பட்டியல்</string>
 
     <string name="settings_auto_db_update">பின்னணி தரவு ஒத்திசைவு</string>
-    <string name="settings_auto_db_update_desc">ரேடியோ-உலாவி API வழியாக நிலைய தரவுத்தளத்தை தானாகப் புதுப்பிக்கவும் (பரிந்துரைக்கப்படுகிறது).</string>
-    <string name="settings_station_click_counter">ஸ்டேஷன் கிளிக் கவுண்டர்</string>
-    <string name="settings_station_click_counter_desc">விளையாட்டு நிகழ்வுகளை அநாமதேயமாகப் பகிர்வதன் மூலம் ரேடியோ-உலாவி புள்ளிவிவரங்களை ஆதரிக்கவும்.</string>
-    <string name="settings_rate_app_github">AMARadioவை அனுபவிக்கிறீர்களா?</string>
-    <string name="settings_rate_app_github_summary">GitHub இல் ஒரு நட்சத்திரத்தை விடுங்கள்! இது மற்றவர்கள் பயன்பாட்டைக் கண்டறிய உதவுகிறது மற்றும் எதிர்கால மேம்பாட்டை ஆதரிக்கிறது.</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API வழியாக நிலைய தரவுத்தளத்தை தானாகப் புதுப்பிக்கவும் (பரிந்துரைக்கப்படுகிறது).</string>
+    <string name="settings_station_click_counter">வானொலி நிலைய கிளிக் கவுண்டர்</string>
+    <string name="settings_station_click_counter_desc">இயக்க நிகழ்வுகளை அநாமதேயமாகப் பகிர்வதன் மூலம் Radio-Browser புள்ளிவிவரங்களை ஆதரிக்கவும்.</string>
 
-    <string name="settings_remove_notification_on_stop">பயன்பாடு மூடப்பட்டவுடன் அறிவிப்பை அகற்றவும்</string>
-    <string name="settings_remove_notification_on_stop_desc">சமீபத்திய ஆப்ஸிலிருந்து ஆப்ஸ் மூடப்படும் போது மீடியா அறிவிப்பை தானாகவே நிராகரிக்கும்</string>
+    <string name="settings_remove_notification_on_stop">நிறுத்தும்போது அறிவிப்பை அகற்றவும்</string>
+    <string name="settings_remove_notification_on_stop_desc">இயக்கம் நிறுத்தப்படும் போது மீடியா அறிவிப்பை தானாகவே நிராகரிக்கும்</string>
     <string name="settings_auto_resume_audio_focus">ஆடியோ ஃபோகஸ் இழந்த பிறகு மீண்டும் தொடங்கவும்</string>
     <string name="settings_auto_resume_audio_focus_desc">தொலைபேசி அழைப்புகள், அலாரங்கள் அல்லது பிற ஆடியோ நிறுத்தங்களுக்குப் பிறகு தானாகவே பிளேபேக்கைத் தொடங்கும்</string>
+
+    <string name="settings_backup_restore">காப்புப்பிரதி மற்றும் மீட்டமைப்பு</string>
+    <string name="settings_export_backup">முழு காப்புப்பிரதியை உருவாக்கவும் (ZIP)</string>
+    <string name="settings_export_backup_desc">அனைத்து விருப்பங்களையும், தனிப்பயன் நிலையங்களையும் ஐகான்களையும் ஒரு ZIP கோப்பில் சேமிக்கிறது</string>
+    <string name="settings_import_backup">காப்புப்பிரதியை மீட்டமைக்கவும் (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP கோப்பிலிருந்து விருப்பங்களையும் தனிப்பயன் நிலையங்களையும் மீட்டமைக்கிறது</string>
+    <string name="backup_export_success">காப்புப்பிரதி வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="backup_export_error">காப்புப்பிரதியை சேமிக்க முடியவில்லை</string>
+    <string name="backup_import_success">காப்புப்பிரதி வெற்றிகரமாக மீட்டமைக்கப்பட்டது</string>
+    <string name="backup_import_error">காப்புப்பிரதியை மீட்டமைக்க முடியவில்லை</string>
+
+    <string name="database_summary_title">உள்ளூர் தரவுத்தளம்</string>
+    <string name="database_total_stations">மொத்த வானொலி நிலையங்கள்</string>
+    <string name="database_last_sync">கடைசி புதுப்பிப்பு</string>
+    <string name="database_update_now">தரவுத்தளத்தை இப்போது புதுப்பிக்கவும்</string>
+    <string name="database_full_update">தரவுத்தளத்தைப் புதுப்பிக்கவும்</string>
+    <string name="database_syncing">ஒத்திசைக்கப்படுகிறது…</string>
+    <string name="database_downloading">பதிவிறக்கப்படுகிறது…</string>
+    <string name="database_stations_loaded">%1$s வானொலி நிலையங்கள்</string>
+    <string name="database_sync_channel_name">வானொலி நிலையத் தரவுத்தள ஒத்திசைவு</string>
+    <string name="database_sync_success">நிலையத் தரவுத்தளப் புதுப்பிப்பு வெற்றிகரமாக முடிந்தது</string>
+    <string name="database_error_no_connection">இணைய இணைப்பு இல்லை</string>
+    <string name="database_error_no_space">போதுமான நினைவக இடம் இல்லை</string>
+    <string name="database_error_failed">தரவுத்தளப் புதுப்பிப்பு தோல்வியடைந்தது</string>
+
+    <string name="settings_disable_battery_optimization_desc">திரை அணைக்கப்படும்போதும் இயக்கத்தைத் தொடர, பேட்டரி பயன்பாட்டை \'Unrestricted\' ஆக அமைக்கவும்.</string>
+    <string name="battery_opt_open_settings">அமைப்புகளைத் திறக்கவும்</string>
+    <string name="battery_opt_later">பிறகு</string>
 </resources>

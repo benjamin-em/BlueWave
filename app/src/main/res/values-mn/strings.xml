@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">Нэр</string>
+    <string name="detail_tags">Шошго</string>
+    <string name="detail_country">Улс</string>
+    <string name="detail_create_shortcut">Үндсэн дэлгэцэнд нэмэх</string>
+    <string name="detail_language">Хэл</string>
+    <string name="detail_weblink">Веб холбоос</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">Тоглуулах</string>
+    <string name="detail_pause">Түр зогсоох</string>
+    <string name="detail_stop">Зогсоох</string>
+    <string name="detail_share">Хуваалцах</string>
+    <string name="detail_play_in_AMARadio">AMARadio-р тоглуулах</string>
+
+    <string name="action_links">Холбоосууд</string>
+    <string name="action_homepage">Нүүр хуудас</string>
+    <string name="action_favorite">Дуртай</string>
+    <string name="action_starred_add">Дуртайд нэмэх</string>
+    <string name="action_starred_remove">Дуртайхаас хасах</string>
+
+    <string name="action_station_visit_website">Веб сайтад зочлох</string>
+    <string name="action_station_copy_stream_url">Урсгалын URL хуулах</string>
+    <string name="action_station_share">Хуваалцах</string>
+
+    <string name="action_local">Локал</string>
+    <string name="action_skip_to_next">Дараах</string>
+    <string name="action_pause">Түр зогсоох</string>
+    <string name="action_skip_to_previous">Өмнөх</string>
+    <string name="action_resume">Үргэлжлүүлэх</string>
+    <string name="action_stop">Зогсоох</string>
+    <string name="action_search">Хайх</string>
+    <string name="action_delete">Устгах</string>
+    <string name="action_delete_history">Түүхийг устгах</string>
+    <string name="action_delete_favorites">Бүх дуртайг устгах</string>
+    <string name="action_delete_stream_history">Дууны түүхийг цэвэрлэх</string>
+    <string name="action_ok">За</string>
+    <string name="action_cancel">Цуцлах</string>
+    <string name="action_top_click">Хамгийн их дарсан</string>
+    <string name="action_toggle_view">Харагдацыг солих</string>
+    <string name="action_top_vote">Хамгийн их санал авсан</string>
+    <string name="action_changed_lately">Сүүлд өөрчлөгдсөн</string>
+    <string name="action_currently_playing">Одоо тоглож байна</string>
+    <string name="action_tags">Шошго</string>
+    <string name="action_countries">Улс/Бүс нутаг</string>
+    <string name="action_languages">Хэлнүүд</string>
+    <string name="action_edit">Засах</string>
+    <string name="action_copy_info">Мэдээллийг хуулах</string>
+    <string name="action_rename_tab">Цонхны нэрийг өөрчлөх</string>
+
+    <string name="error_filter_name_required">Эхлээд энэ шүүлтүүрийн цонхны нэрийг оруулна уу</string>
+    <string name="confirm_delete_filter_tab">\"%1$s\" шүүлтүүрийг устгахдаа итгэлтэй байна уу?</string>
+    <string name="filter_empty_title">Өөрийн радио сувгийн жагсаалтыг үүсгээрэй</string>
+    <string name="filter_empty_desc">Олон шалгуурыг хослуулан өөрийн харагдацыг үүсгээрэй. Хайлтыг дараах байдлаар хураангуйлж болно:</string>
+    <string name="filter_empty_filter_by">Шүүх:</string>
+    <string name="filter_empty_filter_desc">Улс, Радио станцын нэр, Шошго эсвэл Хэл</string>
+    <string name="filter_empty_sort_by">Эрэмбэлэх:</string>
+    <string name="filter_empty_sort_desc">Даралт, Цагаан толгой, Санал эсвэл Сүүлчийн өөрчлөлт</string>
+    <string name="filter_empty_hint">Энэ харагдацыг хадгалахын тулд дээд талын талбарт нэр бичээрэй!</string>
+
+    <string name="error_station_load">Радио станцад холбогдож чадсангүй</string>
+    <string name="error_list_update">Radio-Browser серверт холбогдож чадсангүй</string>
+
+    <string name="error_no_connection">Интернет холболт алга.</string>
+    <string name="warning_volume_zero">Дууны хэмжээ тэглэгдсэн байна. Та юу ч сонсохгүй байж магадгүй.</string>
+
+    <string name="share_action">Радио станцын холбоосыг хуваалцах…</string>
+
+    <string name="nav_item_stations">Радио станцууд</string>
+    <string name="nav_item_starred">Дуртай</string>
+    <string name="nav_item_history">Түүх</string>
+    <string name="nav_item_settings">Тохиргоо</string>
+
+    <string name="about_text">AMARadio нь 100% сурталчилгаагүй ба хувийн нууцыг хамгаалахад чиглэсэн.\n\nБи энэхүү аппликейшнийг ээждээ зориулж, төвөгтэй сурталчилгаа ба мөрдлөггүйгээр радио сонсох хялбар боломжийг олгохын тулд бүтээсэн. Тиймээс AMARadio нь үргэлж сурталчилгаагүй байх болно – энэ бол та бүхэнтэй хуваалцаж буй амлалт юм.\n\nЭнэхүү төсөл нь RadioDroid төслийн са салаа (fork) юм. Кодыг бүхэлд нь Java-с Kotlin руу шилжүүлсэн.\n\nБастапқы код: https://github.com/ounben/AMARadio\n\nЭнэхүү апп нь https://www.radio-browser.info дээрх үнэгүй радио станцын лавлахыг ашигладаг.\n\nХолбоо барих: ben@ounben.com\n\nАлдааны мэдээлэл: https://github.com/ounben/AMARadio/issues\n\nЭнэхүү апп нь GPLv3 лицензтэй үнэгүй программ юм. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">Хувилбар: %1$s</string>
+    <string name="detail_star">Дуртайд нэмэх</string>
+    <string name="detail_unstar">Дуртайхаас хасах</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">Уншиж байна…</string>
+
+    <string name="sleep_timer" formatted="true">Унтах таймер: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">Сонгосон хугацааны дараа тоглуулахыг зогсоох</string>
+    <string name="sleep_timer_apply">Ашиглах</string>
+    <string name="sleep_timer_clear">Цэвэрлэх</string>
+    <string name="nav_item_add_sleep">Унтах таймер</string>
+
+    <string name="nav_item_save_playlist">Дуртайнуудыг жагсаалт болгон экспортлох</string>
+    <string name="nav_item_load_playlist">Жагсаалтаас дуртайг импортлох</string>
+    <string name="nav_item_save_history_playlist">Түүхийг жагсаалт болгон экспортлох</string>
+    <string name="confirm_overwrite_file">Файлыг дахин бичих үү?</string>
+    <string name="dialog_hint_file_name">Файлын нэрийг оруулна уу</string>
+    <string name="error_empty_field">Энэ талбарыг заавал бөглөнө үү</string>
+    <string name="error_invalid_file_name">Буруу файлын нэр</string>
+    <string name="label_button_cancel">Цуцлах</string>
+    <string name="label_button_overwrite">Дахин бичих</string>
+    <string name="notify_load_playlist_nok">%1$s&#47;%2$s-с импортлох боломжгүй</string>
+    <string name="notify_load_playlist_now">%1$s&#47;%2$s-с импортлож байна, түр хүлээнэ үү.</string>
+    <string name="notify_load_playlist_ok">%2$s&#47;%3$s-с %1$d радио станц импортлогдлоо</string>
+    <string name="notify_save_playlist_nok">%1$s&#47;%2$s руу экспортлох боломжгүй</string>
+    <string name="notify_save_playlist_now">%1$s&#47;%2$s руу экспортлож байна, түр хүлээнэ үү.</string>
+    <string name="notify_save_playlist_ok">%1$s&#47;%2$s руу амжилттай экспортлогдлоо</string>
+    <string name="notify_sync_list_deleted_entries">Жагсаалт дахь %2$d дотоод станцаас %1$d нь серверт байхгүй гэж тэмдэглэгдсэн</string>
+
+    <string name="searchpreference_clear_history">Түүхийг цэвэрлэх</string>
+    <string name="searchpreference_no_results">Илэрц олдсонгүй</string>
+    <string name="searchpreference_search">Хайх…</string>
+    <string name="settings_appearance">Харагдац</string>
+    <string name="settings_theme_selection_title">Загвар</string>
+    <string name="theme_light">Гэгээн</string>
+    <string name="theme_dark">Харанхуй</string>
+    <string name="theme_system">Системийг дагах</string>
+    <string name="settings_compact_style">Авсаархан горим</string>
+    <string name="settings_compact_style_desc_off">Станцын мэдээлэл бүхий том дүрс</string>
+    <string name="settings_compact_style_desc_on">Мэдээлэлгүй жижиг дүрс</string>
+    <string name="settings_bottom_navigation">Доод навигаци</string>
+    <string name="settings_ui_scale">UI хэмжээс</string>
+    <string name="settings_language">Хэл</string>
+    <string name="ui_scale_compact">Авсаархан</string>
+    <string name="ui_scale_standard">Системийн стандарт</string>
+    <string name="ui_scale_large">Том</string>
+    <string name="ui_scale_extra_large">Маш том</string>
+
+    <string name="settings_interaction">Харьцах</string>
+    <string name="settings_single_use_tags">Ховор ашиглагддаг шошго харуулах</string>
+    <string name="settings_single_use_tags_desc_off">Ховор ашиглагддаг шошго харагдахгүй</string>
+    <string name="settings_single_use_tags_desc_on">Ховор ашиглагддаг шошго харагдана</string>
+
+    <string name="settings_show_broken">Ажиллахгүй байгаа радио станцууд</string>
+    <string name="settings_show_broken_on">Жагсаалтад ажиллахгүй байгаа радио станцуудыг харуулах</string>
+    <string name="settings_show_broken_off">Жагсаалтад ажиллахгүй байгаа радио станцуудыг харуулахгүй</string>
+
+    <string name="settings_startup_behaviour">Эхлүүлэх үеийн үйлдэл</string>
+    <string name="action_grid_view">Торон харагдац</string>
+    <string name="action_list_view">Жагсаалтан харагдац</string>
+
+    <string name="startup_action_title">Эхлүүлэх үеийн үйлдэл</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">Бүх радио станцыг харуулах</string>
+    <string name="startup_show_favorites">Дуртай зүйлсийг харуулах</string>
+    <string name="startup_show_history">Түүхийг харуулах</string>
+    <string name="startup_show_last_view">Сүүлчийн харагдац</string>
+
+    <string name="settings_load_icons">Радио станцын дүрсийг харуулах</string>
+    <string name="settings_load_icons_on">Дүрсүүд татагдана</string>
+    <string name="settings_load_icons_off">Дүрсүүд татагдахгүй</string>
+
+    <string name="settings_auto_favorite">Автоматаар дуртайд нэмэх</string>
+    <string name="settings_auto_favorite_on">Тоглуулах үед радио станцыг автоматаар дуртайд нэмэх</string>
+    <string name="settings_auto_favorite_off">Тоглуулах үед радио станцыг автоматаар дуртайд нэмэхгүй</string>
+
+    <string name="settings_play">Тоглуулагч</string>
+    <string name="settings_auto_play_on_startup">Автоматаар тоглуулах</string>
+    <string name="settings_auto_play_on_startup_on">Апп эхлэхэд сүүлчийн радио станцыг тоглуулах</string>
+    <string name="settings_auto_play_on_startup_off">Апп эхлэхэд сүүлчийн радио станцыг тоглуулахгүй</string>
+    <string name="settings_auto_off_on_startup">Автоматаар зогсоох</string>
+    <string name="settings_auto_off_on_startup_on">Автомат тоглуулалттай хамт авто зогсоох таймерыг ашиглах</string>
+    <string name="settings_auto_off_on_startup_off">Автомат тоглуулалттай хамт авто зогсоох таймерыг ашиглахгүй</string>
+    <string name="settings_auto_off_sleep_timer">Авто зогсоох таймер</string>
+    <string name="settings_auto_off_sleep_timer_desc">%1$s минутын дараа тоглуулахыг зогсоох</string>
+    <string name="settings_play_external">Гадаад тоглуулагч ашиглах</string>
+    <string name="settings_play_external_desc_on">Радио станцуудыг гадаад тоглуулагчаар тоглуулах</string>
+    <string name="settings_play_external_desc_off">Радио станцуудыг AMARadio-р тоглуулах</string>
+    <string name="settings_equalizer">Эквалайзер</string>
+
+    <string name="settings_connectivity">Холболт</string>
+    <string name="settings_connect_timeout">Холболтын хугацаа дуусах</string>
+    <string name="settings_read_timeout">Унших хугацаа дуусах</string>
+    <string name="settings_resume_timeout">Үргэлжлүүлэх хугацаа дуусах</string>
+    <string name="settings_retry_timeout">Дахин оролдох хугацаа дуусах</string>
+    <string name="settings_retry_delay">Дахин холбогдох саатал</string>
+    <string name="settings_proxy">Прокси</string>
+    <string name="settings_proxy_login">Хэрэглэгчийн нэр</string>
+    <string name="settings_proxy_password">Нууц үг</string>
+    <string name="settings_proxy_action_test">Шалгах</string>
+    <string name="settings_proxy_working">%s руу амжилттай холбогдлоо</string>
+    <string name="settings_proxy_not_working">%1$s руу холбогдож чадсангүй\n%2$s</string>
+    <string name="settings_proxy_invalid">Проксид оруулсан утгууд буруу байна</string>
+    <string name="ignore_proxy_settings_invalid">Буруу прокси тохиргоог хэрэгсэхгүй болголоо</string>
+    <string name="settings_seconds_format">%d секунд</string>
+    <string name="settings_milliseconds_format">%d миллисекунд</string>
+
+    <string name="settings_pause_when_noisy">Чихэвч салгахад түр зогсоох</string>
+
+    <string name="settings_auto_resume_do_not_resume">Үргэлжлүүлэхгүй</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">Утастай холболтод үргэлжлүүлэх</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">Утастай чихэвч залгахад тоглуулахыг үргэлжлүүлэх</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Bluetooth холболтод үргэлжлүүлэх</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Bluetooth A2DP төхөөрөмж холбогдоход тоглуулахыг үргэлжлүүлэх</string>
+
+    <string name="settings_auto_resume_on_any_connected">Аливаа холболтод үргэлжлүүлэх</string>
+
+    <string name="settings_warn_no_wifi">Wi-Fi холболтгүй үеийн анхааруулга</string>
+    <string name="settings_warn_no_wifi_on">Wi-Fi холболтгүй тоглуулах үед анхааруулах</string>
+    <string name="settings_warn_no_wifi_off">Wi-Fi холболтгүй байсан ч анхааруулахгүй</string>
+
+    <string name="notify_pre_play">Холбогдож байна</string>
+    <string name="notify_play">Тоглож байна</string>
+    <string name="notify_paused">Түр зогссон</string>
+    <string name="notify_metered_connection">Төлбөртэй холболт</string>
+
+    <string name="notify_starred">Радио станц дуртайд нэмэгдлээ</string>
+    <string name="notify_autostarred">Радио станц автоматаар дуртайд нэмэгдлээ</string>
+    <string name="notify_unstarred">Радио станц дуртайхаас хасагдлаа</string>
+    <string name="notify_deleted_favorites">Дуртай зүйлс устгагдлаа</string>
+    <string name="notify_deleted_history">Түүх устгагдлаа</string>
+
+    <string name="notify_open_link_failure">Холбоосыг нээх аппликейшн олдсонгүй</string>
+
+    <string name="notify_station_removed_from_list">1 радио станц хасагдлаа</string>
+    <string name="action_station_removed_from_list_undo">БУЦААХ</string>
+
+    <string name="alert_delete_history">Түүхийг устгахдаа итгэлтэй байна уу?</string>
+    <string name="alert_delete_favorites">Бүх дуртайг устгахдаа итгэлтэй байна уу?</string>
+    <string name="yes">Тийм</string>
+    <string name="no">Үгүй</string>
+
+    <string name="alert_select_player">Тоглуулагчийг сонгоно уу</string>
+    <string name="alert_select_player_name">Нэр</string>
+    <string name="hostname">Серверийн хаяг</string>
+    <string name="port">Сүлжээний порт</string>
+
+    <string name="alert_press_back_to_exit">Гарахын тулд \"Буцах\" товчийг дахин нэг дарна уу</string>
+
+    <string name="error_stream_url">Урсгалын URL асуудалтай байна</string>
+    <string name="error_caching_stream">Урсгал кэшлэхэд асуудал гарлаа</string>
+    <string name="error_play_stream">Урсгалыг тоглуулах боломжгүй байна</string>
+    <string name="error_stream_reconnect_timeout">Урсгалд дахин холбогдож чадсангүй: хугацаа дууссан</string>
+    <string name="warning_no_network_trying_resume">Сүлжээний холболт алга. Холболт сэргэхэд үргэлжлүүлнэ.</string>
+    <string name="giving_up_resume">Тоглуулахыг үргэлжлүүлэх оролдлогыг зогсоолоо</string>
+
+    <string name="error_grant_audiofocus">Систем аудио фокусын зөвшөөрөл өгсөнгүй</string>
+
+    <string name="error_no_equalizer_found">Эквалайзер апп олдсонгүй</string>
+
+    <string name="player_info_status">Төлөв:&#160;</string>
+    <string name="player_info_status_stopped">зогссон</string>
+    <string name="player_info_status_playing">тоглож байна</string>
+    <string name="player_info_transferred">Дамжуулсан дата: %1$s</string>
+
+    <string name="tab_player_art">Альбомын зураг</string>
+    <string name="tab_player_info">Мэдээлэл</string>
+    <string name="tab_player_history">Дууны түүх</string>
+
+    <string name="station_detail_bitrate">%1$d kbps</string>
+    <string name="station_detail_broken">АЖИЛЛАХГҮЙ</string>
+    <string name="station_detail_deleted_on_server">УСТГАГДСАН</string>
+
+    <string name="station_details_clicks">%1$d даралт</string>
+    <string name="station_details_votes">%1$d санал</string>
+
+    <string name="image_button_disable">Идэвхгүй болгох</string>
+    <string name="image_button_delete">Устгах</string>
+    <string name="image_button_more">Илүү</string>
+    <string name="image_button_less">Бага</string>
+    <string name="image_button_repeat">Дахин давтах</string>
+    <string name="image_button_dont_repeat">Давтахгүй</string>
+    <string name="icon_click_trend_decreasing">Нэр хүнд буурч байна</string>
+    <string name="icon_click_trend_increasing">Нэр хүнд өсч байна</string>
+    <string name="icon_click_trend_stable">Нэр хүнд тогтвортой</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% сурталчилгаагүй ба хувийн нууц</string>
+
+    <string name="action_play_in_external">Гадаад тоглуулагчаар тоглуулах</string>
+    <string name="action_choose_external_player">Гадаад тоглуулагчийг сонгох</string>
+
+    <string name="settings_disable_battery_optimization">Дараах горимд тоглуулах</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">Бусад</string>
+    <string name="settings_rate_app">AMARadio-г үнэлэх</string>
+    <string name="settings_rate_app_summary">Хэрэв апп танд таалагдсан бол Play Store дээр сэтгэгдэл үлдээнэ үү!</string>
+    <string name="settings_rate_app_github">AMARadio таалагдаж байна уу?</string>
+    <string name="settings_rate_app_github_summary">GitHub дээр одон тэмдэг үлдээнэ үү! Энэ нь бусдад апп-ыг олоход тусалдаг.</string>
+    <string name="settings_statistics">Статистик</string>
+    <string name="settings_about">AMARadio-н тухай</string>
+
+    <string name="description_btn_skip_to_next">Дараагийн руу шилжих</string>
+    <string name="description_btn_skip_to_previous">Өмнөх рүү шилжих</string>
+
+    <string-array name="weekdays">
+        <item>Ня</item>
+        <item>Да</item>
+        <item>Мя</item>
+        <item>Лх</item>
+        <item>Пү</item>
+        <item>Ба</item>
+        <item>Бям</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">Урсгалын URL амжилттай хуулагдлаа</string>
+    <string name="notify_track_info_copied">Дууны мэдээлэл амжилттай хуулагдлаа</string>
+
+    <string-array name="actions_station_link">
+        <item>Веб сайтад зочлох</item>
+        <item>Урсгалын URL хуулах</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">Төлбөртэй холболт илэрлээ</string>
+    <string name="alert_metered_connection_message">Төлбөртэй холболт нь нэмэлт зардал үүсгэж болзошгүй тул үргэлжлүүлэхийн тулд \'За\' гэж дарна уу.</string>
+    <string name="nav_item_statistics">Статистик</string>
+    <string name="nav_item_about">Тухай</string>
+    <string name="refresh">Шинэчлэх</string>
+    <string name="action_filter">Шүүлтүүр</string>
+    <string name="filter_country">Улс</string>
+    <string name="filter_tag">Шошго</string>
+    <string name="filter_language">Хэл</string>
+    <string name="filter_sort_by">Эрэмбэлэх</string>
+    <string name="filter_reverse">Үзүүлэлтийг эргүүлэх</string>
+    <string name="filter_apply">Шүүлтүүрийг ашиглах</string>
+    <string name="sort_name">Нэр</string>
+    <string name="sort_votes">Санал</string>
+    <string name="sort_clicks">Даралт</string>
+    <string name="sort_lastchange">Сүүлчийн өөрчлөлт</string>
+    <string name="filter_select_country">Улсыг сонгоно уу</string>
+    <string name="filter_select_language">Хэлийг сонгоно уу</string>
+    <string name="filter_type_tag">Шошго бичнэ үү…</string>
+    <string name="filter_tap_to_configure">Тохируулахын тулд дарна уу</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">Радио станцын лого</string>
+    <string name="accessibility_favorite_selected">Дуртай, сонгогдсон</string>
+    <string name="accessibility_favorite_not_selected">Дуртай, сонгогдоогүй</string>
+    <string name="accessibility_category_icon">Ангиллын дүрс</string>
+    <string name="accessibility_playing">Одоо тоглож байна</string>
+    <string name="accessibility_menu">Цэсийг нээх</string>
+    <string name="accessibility_search_back">Хайлтыг хаах</string>
+    <string name="accessibility_filter_reverse">Эрэмбэлэх дарааллыг эргүүлэх</string>
+    <string name="accessibility_clear_text">Текстийг цэвэрлэх</string>
+    <string name="accessibility_back">Буцах</string>
+    <string name="accessibility_configure">Тохируулах</string>
+    <string name="accessibility_close">Хаах</string>
+    <string name="accessibility_add_filter">Шүүлтүүр нэмэх</string>
+    <string name="accessibility_station_options">Радио станцын сонголтууд</string>
+    <string name="not_applicable">Н/А</string>
+    <string name="accessibility_station_description">Радио станц: %1$s, Хэл: %2$s, Шошго: %3$s</string>
+
+    <string name="error_no_file_manager">Системийн файл менежер олдсонгүй. Файл браузер суулгаж, идэвхжүүлсэн эсэхээ шалгана уу.</string>
+    <string name="error_no_browser">Веб браузер олдсонгүй. Энэ холбоосыг нээхийн тулд браузер суулгана уу.</string>
+    <string name="error_no_homepage">Энэ радио станцад зориулсан нүүр хуудас байхгүй байна</string>
+    <string name="tab_custom_stations">Өөрийн</string>
+    <string name="action_add_custom">Өөрийн радио станц нэмэх</string>
+    <string name="station_name">Радио станцын нэр</string>
+    <string name="stream_url">Урсгалын URL</string>
+    <string name="favicon_url">Станцын логоны URL (Favicon)</string>
+    <string name="select_image">Зураг сонгох</string>
+    <string name="error_invalid_url">Зөв URL оруулна уу</string>
+    <string name="action_save">Хадгалах</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">Түргэн тоглуулагчийн удирдлага</string>
+    <string name="widget_description_full">Тоглуулагч болон радио станцын жагсаалт</string>
+
+    <string name="settings_auto_db_update">Дэвсгэр дата синхрончлол</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API-аар дамжуулан радио станцын мэдээллийн санг автоматаар шинэчлэх (зөвлөмж болгож байна).</string>
+    <string name="settings_station_click_counter">Радио станцын даралтын тоолуур</string>
+    <string name="settings_station_click_counter_desc">Тоглуулах үйлдлийг үл мэдэгдэх байдлаар хуваалцаж Radio-Browser-н статистикийг дэмжинэ үү.</string>
+
+    <string name="settings_remove_notification_on_stop">Зогсоох үед мэдэгдлийг хасах</string>
+    <string name="settings_remove_notification_on_stop_desc">Тоглуулахыг зогсоох үед медиа мэдэгдлийг автоматаар арилгах</string>
+    <string name="settings_auto_resume_audio_focus">Аудио фокусыг алдсаны дараа үргэлжлүүлэх</string>
+    <string name="settings_auto_resume_audio_focus_desc">Утасны дуудлага, сэрүүлэг дууссаны дараа тоглуулахыг автоматаар үргэлжлүүлнэ</string>
+
+    <string name="settings_backup_restore">Нөөцлөх ба сэргээх</string>
+    <string name="settings_export_backup">Бүрэн нөөцлөлт үүсгэх (ZIP)</string>
+    <string name="settings_export_backup_desc">Бүх дуртай зүйлс, өөрийн станцууд болон дүрсүүдийг ZIP файлд хадгална</string>
+    <string name="settings_import_backup">Нөөцлөлтийг сэргээх (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP нөөц файлуудаас дуртай зүйлс болон өөрийн станцуудыг сэргээнэ</string>
+    <string name="backup_export_success">Нөөцлөлт амжилттай хадгалагдлаа</string>
+    <string name="backup_export_error">Нөөцлөлтийг хадгалж чадсангүй</string>
+    <string name="backup_import_success">Нөөцлөлт амжилттай сэргээгдлээ</string>
+    <string name="backup_import_error">Нөөцлөлтийг сэргээж чадсангүй</string>
+
+    <string name="database_summary_title">Локал мэдээллийн сан</string>
+    <string name="database_total_stations">Нийт радио станцууд</string>
+    <string name="database_last_sync">Сүүлчийн шинэчлэлт</string>
+    <string name="database_update_now">Мэдээллийн санг одоо шинэчлэх</string>
+    <string name="database_full_update">Мэдээллийн санг шинэчлэх</string>
+    <string name="database_syncing">Синхрончилж байна…</string>
+    <string name="database_downloading">Татаж байна…</string>
+    <string name="database_stations_loaded">%1$s радио станц</string>
+    <string name="database_sync_channel_name">Радио станцын мэдээллийн санг синхрончлох</string>
+    <string name="database_sync_success">Радио станцын мэдээллийн санг шинэчилж дууслаа</string>
+    <string name="database_error_no_connection">Интернет холболт алга</string>
+    <string name="database_error_no_space">Дискэнд хангалттай зай байхгүй байна</string>
+    <string name="database_error_failed">Мэдээллийн санг шинэчилж чадсангүй</string>
+
+    <string name="settings_disable_battery_optimization_desc">Дэлгэц унтарсан үед тоглуулахыг үргэлжлүүлэхийн тулд батерейны ашиглалтыг \'Unrestricted\' болгож тохируулна уу.</string>
+    <string name="battery_opt_open_settings">Тохиргоог нээх</string>
+    <string name="battery_opt_later">Дараа</string>
 </resources>

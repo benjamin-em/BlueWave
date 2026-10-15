@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Xây dựng danh sách đài radio của riêng bạn</string>
     <string name="filter_empty_desc">Tạo chế độ xem cá nhân bằng cách kết hợp nhiều tiêu chí. Bạn có thể thu hẹp tìm kiếm bằng:</string>
     <string name="filter_empty_filter_by">Lọc theo</string>
-    <string name="filter_empty_filter_desc">Quốc gia, Tên đài, Thẻ hoặc Ngôn ngữ</string>
+    <string name="filter_empty_filter_desc">Quốc gia, Tên đài radio, Thẻ hoặc Ngôn ngữ</string>
     <string name="filter_empty_sort_by">Sắp xếp theo</string>
     <string name="filter_empty_sort_desc">Lượt click, Chữ cái, Bình chọn hoặc Thay đổi cuối</string>
     <string name="filter_empty_hint">Nhập tên vào ô trên để lưu chế độ xem này!</string>
-    <string name="error_station_load">Không thể kết nối đến đài</string>
-    <string name="error_list_update">Không thể kết nối đến máy chủ radio browser</string>
+    <string name="error_station_load">Không thể kết nối đến đài radio</string>
+    <string name="error_list_update">Không thể kết nối đến máy chủ Radio-Browser</string>
 
     <string name="error_no_connection">Không có kết nối internet.</string>
     <string name="warning_volume_zero">Âm lượng đang ở mức 0. Bạn có thể không nghe thấy gì.</string>
 
-    <string name="share_action">Chia sẻ liên kết đài với…</string>
+    <string name="share_action">Chia sẻ liên kết đài radio với…</string>
 
-    <string name="nav_item_stations">Đài</string>
+    <string name="nav_item_stations">Đài radio</string>
     <string name="nav_item_starred">Yêu thích</string>
     <string name="nav_item_history">Lịch sử</string>
     <string name="nav_item_settings">Cài đặt</string>
 
-    <string name="about_text">AMARadio 100% không quảng cáo và tập trung vào quyền riêng tư.\n\nBan đầu tôi phát triển ứng dụng này cho mẹ mình để mang đến cho bà một trải nghiệm radio đơn giản, trung thực mà không có quảng cáo phiền phức hay theo dõi. Đó là lý do tại sao AMARadio sẽ luôn miễn phí quảng cáo – đó là lời hứa với bà, được chia sẻ với tất cả các bạn.\n\nDự án này là một nhánh của https://github.com/segler-alex/RadioDroid tuyệt vời. Toàn bộ mã nguồn đã được chuyển từ Java sang Kotlin để đảm bảo ứng dụng luôn hiện đại và tương thích với các phiên bản Android trong tương lai.\n\nMã nguồn có tại: https://github.com/ounben/AMARadio\n\nỨng dụng này sử dụng danh mục đài phát thanh miễn phí tại https://www.radio-browser.info .\nMọi người đều có thể thêm đài vào đó. Nó hoạt động như một wiki cho các đài phát thanh trực tuyến.\n\nLiên hệ: ben@ounben.com\n\nTheo dõi lỗi: https://github.com/ounben/AMARadio/issues\n\nNếu bạn thích phần mềm này và muốn giúp đỡ, đừng ngần ngại gửi email cho tôi.\nCác ý tưởng cho tính năng mới cũng luôn được trân trọng!\n\nỨng dụng này là phần mềm tự do, được cấp phép theo GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% không quảng cáo và tập trung vào quyền riêng tư.\n\nBan đầu tôi phát triển ứng dụng này cho mẹ mình để mang đến cho bà một trải nghiệm radio đơn giản, trung thực mà không có quảng cáo phiền phức hay theo dõi. Đó là lý do tại sao AMARadio sẽ luôn miễn phí quảng cáo – đó là lời hứa với bà, được chia sẻ với tất cả các bạn.\n\nDự án này là một nhánh của RadioDroid. Toàn bộ mã nguồn đã được chuyển từ Java sang Kotlin để đảm bảo ứng dụng luôn hiện đại và tương thích với các phiên bản Android trong tương lai.\n\nMã nguồn có tại: https://github.com/ounben/AMARadio\n\nỨng dụng này sử dụng danh mục đài phát thanh miễn phí tại https://www.radio-browser.info .\nMọi người đều có thể thêm đài vào đó. Nó hoạt động như một wiki cho các đài phát thanh trực tuyến.\n\nLiên hệ: ben@ounben.com\n\nTheo dõi lỗi: https://github.com/ounben/AMARadio/issues\n\nNếu bạn thích phần mềm này và muốn giúp đỡ, đừng ngần ngại gửi email cho tôi.\nCác ý tưởng cho tính năng mới cũng luôn được trân trọng!\n\nỨng dụng này là phần mềm tự do, được cấp phép theo GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Phiên bản: %1$s</string>
     <string name="detail_star">Thêm vào yêu thích</string>
     <string name="detail_unstar">Xóa khỏi yêu thích</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Tối</string>
     <string name="theme_system">Theo hệ thống</string>
     <string name="settings_compact_style">Chế độ thu gọn</string>
-    <string name="settings_compact_style_desc_off">Sử dụng biểu tượng lớn với thông tin chi tiết</string>
-    <string name="settings_compact_style_desc_on">Sử dụng biểu tượng nhỏ không có thông tin chi tiết</string>
+    <string name="settings_compact_style_desc_off">Sử dụng biểu tượng lớn với thông tin chi tiết đài radio</string>
+    <string name="settings_compact_style_desc_on">Sử dụng biểu tượng nhỏ không có thông tin chi tiết đài radio</string>
     <string name="settings_bottom_navigation">Thanh điều hướng dưới</string>
     <string name="settings_ui_scale">Tỷ lệ giao diện</string>
     <string name="settings_language">Ngôn ngữ</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Các thẻ hiếm khi được sử dụng sẽ không được hiển thị</string>
     <string name="settings_single_use_tags_desc_on">Các thẻ hiếm khi được sử dụng sẽ được hiển thị</string>
 
-    <string name="settings_show_broken">Đài bị lỗi</string>
-    <string name="settings_show_broken_on">Hiện đài bị lỗi trong danh sách</string>
-    <string name="settings_show_broken_off">Không hiện đài bị lỗi trong danh sách</string>
+    <string name="settings_show_broken">Đài radio bị lỗi</string>
+    <string name="settings_show_broken_on">Hiện đài radio bị lỗi trong danh sách</string>
+    <string name="settings_show_broken_off">Không hiện đài radio bị lỗi trong danh sách</string>
 
     <string name="settings_startup_behaviour">Hành vi khi khởi động</string>
     <string name="action_grid_view">Xem dạng lưới</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Hành động khi khởi động</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Hiện tất cả đài</string>
+    <string name="startup_show_all_stations">Hiện tất cả đài radio</string>
     <string name="startup_show_favorites">Hiện yêu thích</string>
     <string name="startup_show_history">Hiện lịch sử</string>
     <string name="startup_show_last_view">Xem lần cuối</string>
 
-    <string name="settings_load_icons">Hiện biểu tượng đài</string>
+    <string name="settings_load_icons">Hiện biểu tượng đài radio</string>
     <string name="settings_load_icons_on">Biểu tượng sẽ được tải xuống</string>
     <string name="settings_load_icons_off">Biểu tượng sẽ không được tải xuống</string>
 
     <string name="settings_auto_favorite">Tự động yêu thích</string>
-    <string name="settings_auto_favorite_on">Tự động thêm đài vào yêu thích khi phát</string>
-    <string name="settings_auto_favorite_off">Không tự động thêm đài vào yêu thích khi phát</string>
+    <string name="settings_auto_favorite_on">Tự động thêm đài radio vào yêu thích khi phát</string>
+    <string name="settings_auto_favorite_off">Không tự động thêm đài radio vào yêu thích khi phát</string>
 
     <string name="settings_play">Trình phát</string>
     <string name="settings_auto_play_on_startup">Tự động phát</string>
-    <string name="settings_auto_play_on_startup_on">Phát đài cuối cùng khi khởi động</string>
-    <string name="settings_auto_play_on_startup_off">Không phát đài cuối cùng khi khởi động</string>
+    <string name="settings_auto_play_on_startup_on">Phát đài radio cuối cùng khi khởi động</string>
+    <string name="settings_auto_play_on_startup_off">Không phát đài radio cuối cùng khi khởi động</string>
     <string name="settings_auto_off_on_startup">Tự động dừng</string>
     <string name="settings_auto_off_on_startup_on">Dùng hẹn giờ tự dừng với tự động phát</string>
     <string name="settings_auto_off_on_startup_off">Không dùng hẹn giờ tự dừng với tự động phát</string>
     <string name="settings_auto_off_sleep_timer">Hẹn giờ tự động dừng</string>
     <string name="settings_auto_off_sleep_timer_desc">Dừng phát sau %1$s phút</string>
     <string name="settings_play_external">Bật trình phát ngoài</string>
-    <string name="settings_play_external_desc_on">Phát đài bằng trình phát bên ngoài</string>
-    <string name="settings_play_external_desc_off">Phát đài bằng AMARadio</string>
+    <string name="settings_play_external_desc_on">Phát đài radio bằng trình phát bên ngoài</string>
+    <string name="settings_play_external_desc_off">Phát đài radio bằng AMARadio</string>
     <string name="settings_equalizer">Bộ cân bằng (Equalizer)</string>
 
     <string name="settings_connectivity">Kết nối</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Đã tạm dừng</string>
     <string name="notify_metered_connection">Kết nối có tính phí</string>
 
-    <string name="notify_starred">Đài đã được thêm vào yêu thích</string>
-    <string name="notify_autostarred">Đài đã được tự động thêm vào yêu thích</string>
-    <string name="notify_unstarred">Đài đã được xóa khỏi yêu thích</string>
+    <string name="notify_starred">Đài radio đã được thêm vào yêu thích</string>
+    <string name="notify_autostarred">Đài radio đã được tự động thêm vào yêu thích</string>
+    <string name="notify_unstarred">Đài radio đã được xóa khỏi yêu thích</string>
     <string name="notify_deleted_favorites">Yêu thích đã bị xóa</string>
     <string name="notify_deleted_history">Lịch sử đã bị xóa</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Vui lòng chọn một trình phát</string>
     <string name="alert_select_player_name">Tên</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Cổng</string>
+    <string name="hostname">Địa chỉ máy chủ</string>
+    <string name="port">Cổng mạng</string>
 
     <string name="alert_press_back_to_exit">Nhấn quay lại lần nữa để thoát</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Phát bằng trình phát ngoài</string>
     <string name="action_choose_external_player">Chọn trình phát bên ngoài</string>
 
-    <string name="settings_disable_battery_optimization">Tối ưu hóa pin</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Bỏ qua tối ưu hóa pin, AMARadio sẽ luôn có thể lấy lại quyền ưu tiên âm thanh.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Đã bật tối ưu hóa pin, AMARadio có thể không lấy lại được quyền ưu tiên khi chạy nền.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Phát trong nền</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Khác</string>
     <string name="settings_rate_app">Đánh giá AMARadio</string>
     <string name="settings_rate_app_summary">Nếu bạn thích ứng dụng này, vui lòng để lại đánh giá trên Play Store!</string>
+    <string name="settings_rate_app_github">Bạn thích AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Tặng một ngôi sao trên GitHub! Điều này giúp người khác khám phá ứng dụng và hỗ trợ phát triển sau này.</string>
     <string name="settings_statistics">Thống kê</string>
     <string name="settings_about">Về AMARadio</string>
 
@@ -278,13 +278,13 @@
     <string name="description_btn_skip_to_previous">Quay lại</string>
 
     <string-array name="weekdays">
-        <item>CN</item>
-        <item>T2</item>
-        <item>T3</item>
-        <item>T4</item>
-        <item>T5</item>
-        <item>T6</item>
-        <item>T7</item>
+        <item>C</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
 
     <string name="notify_stream_url_copied">Đã sao chép URL luồng thành công</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logo đài</string>
+    <string name="accessibility_station_logo">Logo đài radio</string>
     <string name="accessibility_favorite_selected">Yêu thích, đã chọn</string>
     <string name="accessibility_favorite_not_selected">Yêu thích, chưa chọn</string>
     <string name="accessibility_category_icon">Biểu tượng danh mục</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Cấu hình</string>
     <string name="accessibility_close">Đóng</string>
     <string name="accessibility_add_filter">Thêm bộ lọc</string>
-    <string name="accessibility_station_options">Tùy chọn đài</string>
+    <string name="accessibility_station_options">Tùy chọn đài radio</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Đài: %1$s, Ngôn ngữ: %2$s, Thẻ: %3$s</string>
 
     <string name="error_no_file_manager">Không thể tìm thấy trình quản lý tập tin hệ thống. Hãy đảm bảo rằng trình khám phá tệp đã được cài đặt và kích hoạt.</string>
     <string name="error_no_browser">Không thể tìm thấy trình duyệt web. Vui lòng cài đặt trình duyệt để mở liên kết này.</string>
-    <string name="error_no_homepage">Không có trang chủ nào cho đài này</string>
-    <string name="tab_custom_stations">Phong tục</string>
-    <string name="action_add_custom">Thêm trạm tùy chỉnh</string>
-    <string name="station_name">Tên trạm</string>
+    <string name="error_no_homepage">Không có trang chủ nào cho đài radio này</string>
+    <string name="tab_custom_stations">Tùy chỉnh</string>
+    <string name="action_add_custom">Thêm đài radio tùy chỉnh</string>
+    <string name="station_name">Tên đài radio</string>
     <string name="stream_url">URL luồng</string>
-    <string name="favicon_url">URL biểu tượng yêu thích (tùy chọn)</string>
+    <string name="favicon_url">URL logo đài (Favicon)</string>
     <string name="select_image">Chọn hình ảnh</string>
     <string name="error_invalid_url">Vui lòng nhập một URL hợp lệ</string>
-    <string name="action_save">Cứu</string>
+    <string name="action_save">Lưu</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Điều khiển trình phát nhanh</string>
-    <string name="widget_description_full">Danh sách người chơi và trạm</string>
+    <string name="widget_description_full">Trình phát và danh sách đài radio</string>
 
     <string name="settings_auto_db_update">Đồng bộ hóa dữ liệu nền</string>
-    <string name="settings_auto_db_update_desc">Tự động cập nhật cơ sở dữ liệu trạm thông qua API Trình duyệt Radio (được khuyến nghị).</string>
-    <string name="settings_station_click_counter">Bộ đếm nhấp chuột trạm</string>
-    <string name="settings_station_click_counter_desc">Hỗ trợ số liệu thống kê của Trình duyệt Radio bằng cách chia sẻ ẩn danh các sự kiện chơi.</string>
-    <string name="settings_rate_app_github">Bạn đang thưởng thức AMRadio?</string>
-    <string name="settings_rate_app_github_summary">Để lại một ngôi sao trên GitHub! Nó giúp người khác khám phá ứng dụng và hỗ trợ sự phát triển trong tương lai.</string>
+    <string name="settings_auto_db_update_desc">Tự động cập nhật cơ sở dữ liệu đài radio thông qua API Radio-Browser (được khuyến nghị).</string>
+    <string name="settings_station_click_counter">Bộ đếm nhấp chuột đài radio</string>
+    <string name="settings_station_click_counter_desc">Hỗ trợ số liệu thống kê của Radio-Browser bằng cách chia sẻ ẩn danh các sự kiện phát.</string>
 
-    <string name="settings_remove_notification_on_stop">Xóa thông báo khi đóng ứng dụng</string>
-    <string name="settings_remove_notification_on_stop_desc">Tự động loại bỏ thông báo phương tiện khi đóng ứng dụng khỏi các ứng dụng gần đây</string>
+    <string name="settings_remove_notification_on_stop">Xóa thông báo khi dừng phát</string>
+    <string name="settings_remove_notification_on_stop_desc">Tự động loại bỏ thông báo phương tiện khi dừng phát</string>
     <string name="settings_auto_resume_audio_focus">Tiếp tục sau khi mất tiêu điểm âm thanh</string>
     <string name="settings_auto_resume_audio_focus_desc">Tự động tiếp tục phát lại sau khi gọi điện thoại, báo thức hoặc dừng âm thanh khác</string>
+
+    <string name="settings_backup_restore">Sao lưu và khôi phục</string>
+    <string name="settings_export_backup">Tạo bản sao lưu đầy đủ (ZIP)</string>
+    <string name="settings_export_backup_desc">Lưu tất cả đài yêu thích, đài tùy chỉnh và biểu tượng vào tệp ZIP</string>
+    <string name="settings_import_backup">Khôi phục bản sao lưu (ZIP)</string>
+    <string name="settings_import_backup_desc">Khôi phục đài yêu thích và đài tùy chỉnh từ tệp sao lưu ZIP</string>
+    <string name="backup_export_success">Đã lưu bản sao lưu thành công</string>
+    <string name="backup_export_error">Lưu bản sao lưu thất bại</string>
+    <string name="backup_import_success">Đã khôi phục bản sao lưu thành công</string>
+    <string name="backup_import_error">Khôi phục bản sao lưu thất bại</string>
+
+    <string name="database_summary_title">Cơ sở dữ liệu cục bộ</string>
+    <string name="database_total_stations">Tổng số đài radio</string>
+    <string name="database_last_sync">Cập nhật lần cuối</string>
+    <string name="database_update_now">Cập nhật cơ sở dữ liệu ngay</string>
+    <string name="database_full_update">Cập nhật cơ sở dữ liệu</string>
+    <string name="database_syncing">Đang đồng bộ hóa…</string>
+    <string name="database_downloading">Đang tải xuống…</string>
+    <string name="database_stations_loaded">%1$s đài radio</string>
+    <string name="database_sync_channel_name">Đồng bộ hóa cơ sở dữ liệu đài radio</string>
+    <string name="database_sync_success">Đã cập nhật cơ sở dữ liệu đài radio thành công</string>
+    <string name="database_error_no_connection">Không có kết nối internet</string>
+    <string name="database_error_no_space">Không đủ dung lượng đĩa</string>
+    <string name="database_error_failed">Cập nhật cơ sở dữ liệu thất bại</string>
+
+    <string name="settings_disable_battery_optimization_desc">Để tiếp tục phát khi tắt màn hình, hãy đặt mức sử dụng pin thành \'Unrestricted\' (Không hạn chế).</string>
+    <string name="battery_opt_open_settings">Mở cài đặt</string>
+    <string name="battery_opt_later">Để sau</string>
 </resources>

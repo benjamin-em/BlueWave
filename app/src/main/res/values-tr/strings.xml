@@ -49,27 +49,27 @@
     <string name="action_rename_tab">Sekmeyi yeniden adlandır</string>
     <string name="error_filter_name_required">Lütfen önce bu filtre sekmesi için bir isim girin</string>
     <string name="confirm_delete_filter_tab">\"%1$s\" filtresini silmek istediğinizden emin misiniz?</string>
-    <string name="filter_empty_title">Kendi özel istasyon akışınızı oluşturun</string>
+    <string name="filter_empty_title">Kendi özel radyo istasyonu akışınızı oluşturun</string>
     <string name="filter_empty_desc">Birden fazla kriteri birleştirerek kişiselleştirilmiş bir görünüm oluşturun. Aramanızı şunlarla daraltabilirsiniz:</string>
     <string name="filter_empty_filter_by">Filtreleme kriteri</string>
-    <string name="filter_empty_filter_desc">Ülke, İstasyon Adı, Etiketler veya Dil</string>
+    <string name="filter_empty_filter_desc">Ülke, Radyo İstasyonu Adı, Etiketler veya Dil</string>
     <string name="filter_empty_sort_by">Sıralama ölçütü</string>
-    <string name="filter_empty_sort_desc">Tıklamalar, Alfabe, Oylar oder Son Değişiklik</string>
+    <string name="filter_empty_sort_desc">Tıklamalar, Alfabe, Oylar veya Son Değişiklik</string>
     <string name="filter_empty_hint">Bu özel görünümü kaydetmek için yukarıdaki alana bir isim yazın!</string>
-    <string name="error_station_load">İstasyona bağlanılamadı</string>
-    <string name="error_list_update">Radio browser sunucusuna bağlanılamadı</string>
+    <string name="error_station_load">Radyo istasyonuna bağlanılamadı</string>
+    <string name="error_list_update">Radio-Browser sunucusuna bağlanılamadı</string>
 
     <string name="error_no_connection">İnternet bağlantısı yok</string>
     <string name="warning_volume_zero">Ses sıfırda. Hiçbir şey duyamayabilirsiniz.</string>
 
-    <string name="share_action">İstasyon bağlantısını paylaş&#8230;</string>
+    <string name="share_action">Radyo istasyonu bağlantısını paylaş&#8230;</string>
 
-    <string name="nav_item_stations">İstasyonlar</string>
+    <string name="nav_item_stations">Radyo İstasyonları</string>
     <string name="nav_item_starred">Favoriler</string>
     <string name="nav_item_history">Geçmiş</string>
     <string name="nav_item_settings">Ayarlar</string>
 
-    <string name="about_text">AMARadio %100 reklamsızdır ve gizlilik odaklıdır.\n\nBu uygulamayı başlangıçta annem için, ona sinir bozucu reklamlar veya takip mekanizmaları olmadan basit ve dürüst bir radyo deneyimi sunmak için geliştirdim. Bu nedenle AMARadio her zaman reklamsız kalacaktır – bu ona verdiğim ve hepinizle paylaştığım bir sözdür.\n\nBu proje, mükemmel RadioDroid. Tüm kod tabanı, uygulamanın modern kalmasını ve gelecekteki Android sürümleriyle uyumlu olmasını sağlamak için Java\'dan Kotlin\'e taşınmıştır.\n\nBu uygulama https://www.radio-browser.info adresindeki ücretsiz radyo istasyon dizinini kullanır.\nHerkes istasyon ekleyebilir. Çevrimiçi radyo istasyonları için bir viki gibi çalışır.\n\nİletişim: ben@ounben.com\n\nHata izleyici: https://github.com/ounben/AMARadio/issues\n\nBu yazılımı beğendiyseniz ve yardım etmek isterseniz, bana bir e-posta göndermekten çekinmeyin.\nYeni özellikler için fikirler de her zaman memnuniyetle karşılanır!\n\nBu uygulama GPLv3 altında lisanslanmış özgür yazılımdır. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio %100 reklamsızdır ve gizlilik odaklıdır.\n\nBu uygulamayı başlangıçta annem için, ona sinir bozucu reklamlar veya takip mekanizmaları olmadan basit ve dürüst bir radyo deneyimi sunmak için geliştirdim. Bu nedenle AMARadio her zaman reklamsız kalacaktır – bu ona verdiğim ve hepinizle paylaştığım bir sözdür.\n\nBu proje, RadioDroid\'in bir fork\'udur. Tüm kod tabanı, uygulamanın modern kalmasını ve gelecekteki Android sürümleriyle uyumlu olmasını sağlamak için Java\'dan Kotlin\'e taşınmıştır.\n\nBu uygulama https://www.radio-browser.info adresindeki ücretsiz radyo istasyon dizinini kullanır.\nHerkes istasyon ekleyebilir. Çevrimiçi radyo istasyonları için bir viki gibi çalışır.\n\nİletişim: ben@ounben.com\n\nHata izleyici: https://github.com/ounben/AMARadio/issues\n\nBu yazılımı beğendiyseniz ve yardım etmek isterseniz, bana bir e-posta göndermekten çekinmeyin.\nYeni özellikler için fikirler de her zaman memnuniyetle karşılanır!\n\nBu uygulama GPLv3 altında lisanslanmış özgür yazılımdır. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Sürüm: %1$s</string>
     <string name="detail_star">Favorilere ekle</string>
     <string name="detail_unstar">Favorilerden çıkar</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Karanlık</string>
     <string name="theme_system">Sistemi takip et</string>
     <string name="settings_compact_style">Sıkışık düzen</string>
-    <string name="settings_compact_style_desc_off">İstasyon detaylarıyla birlikte büyük simge</string>
-    <string name="settings_compact_style_desc_on">İstasyon detayları olmadan küçük simge</string>
+    <string name="settings_compact_style_desc_off">Radyo istasyonu detaylarıyla birlikte büyük simge</string>
+    <string name="settings_compact_style_desc_on">Radyo istasyonu detayları olmadan küçük simge</string>
     <string name="settings_bottom_navigation">Alt gezinme</string>
     <string name="settings_ui_scale">UI Ölçeklendirme</string>
     <string name="settings_language">Dil</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Nadir kullanılan etiketler gösterilmeyecek</string>
     <string name="settings_single_use_tags_desc_on">Nadir kullanılan etiketler gösterilecek</string>
 
-    <string name="settings_show_broken">Bozuk istasyonlar</string>
-    <string name="settings_show_broken_on">Bozuk istasyonları listelerde göster</string>
-    <string name="settings_show_broken_off">Bozuk istasyonları listelerde gizle</string>
+    <string name="settings_show_broken">Bozuk radyo istasyonları</string>
+    <string name="settings_show_broken_on">Bozuk radyo istasyonlarını listelerde göster</string>
+    <string name="settings_show_broken_off">Bozuk radyo istasyonlarını listelerde gizle</string>
 
     <string name="settings_startup_behaviour">Başlangıç Davranışı</string>
     <string name="action_grid_view">Izgara görünümü</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Başlangıç eylemi</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Tüm istasyonları göster</string>
+    <string name="startup_show_all_stations">Tüm radyo istasyonlarını göster</string>
     <string name="startup_show_favorites">Favorileri göster</string>
     <string name="startup_show_history">Geçmişi göster</string>
     <string name="startup_show_last_view">Son görünüm</string>
 
-    <string name="settings_load_icons">İstasyon simgelerini göster</string>
+    <string name="settings_load_icons">Radyo istasyonu simgelerini göster</string>
     <string name="settings_load_icons_on">Simgeler indirilecek</string>
     <string name="settings_load_icons_off">Simgeler indirilmeyecek</string>
 
     <string name="settings_auto_favorite">Otomatik favori</string>
-    <string name="settings_auto_favorite_on">Oynatılırken istasyonu otomatik olarak favorilere ekle</string>
-    <string name="settings_auto_favorite_off">Oynatılırken istasyonu otomatik olarak favorilere ekleme</string>
+    <string name="settings_auto_favorite_on">Oynatılırken radyo istasyonunu otomatik olarak favorilere ekle</string>
+    <string name="settings_auto_favorite_off">Oynatılırken radyo istasyonunu otomatik olarak favorilere ekleme</string>
 
     <string name="settings_play">Oynatıcı</string>
     <string name="settings_auto_play_on_startup">Otomatik oynat</string>
-    <string name="settings_auto_play_on_startup_on">Başlangıçta son istasyonu oynat</string>
-    <string name="settings_auto_play_on_startup_off">Başlangıçta son istasyonu oynatma</string>
+    <string name="settings_auto_play_on_startup_on">Başlangıçta son radyo istasyonunu oynat</string>
+    <string name="settings_auto_play_on_startup_off">Başlangıçta son radyo istasyonunu oynatma</string>
     <string name="settings_auto_off_on_startup">Otomatik durdurma</string>
     <string name="settings_auto_off_on_startup_on">Otomatik oynatma ile otomatik durdurma zamanlayıcısını kullan</string>
     <string name="settings_auto_off_on_startup_off">Otomatik oynatma ile otomatik durdurma zamanlayıcısını kullanma</string>
     <string name="settings_auto_off_sleep_timer">Otomatik durdurma zamanlayıcısı</string>
     <string name="settings_auto_off_sleep_timer_desc">Oynatmayı %1$s dakika sonra durdur</string>
     <string name="settings_play_external">Harici oynatıcı kullan</string>
-    <string name="settings_play_external_desc_on">İstasyonları harici bir oynatıcı ile oynat</string>
-    <string name="settings_play_external_desc_off">İstasyonları AMARadio ile oynat</string>
+    <string name="settings_play_external_desc_on">Radyo istasyonlarını harici bir oynatıcı ile oynat</string>
+    <string name="settings_play_external_desc_off">Radyo istasyonlarını AMARadio ile oynat</string>
     <string name="settings_equalizer">Ekolayzır</string>
 
     <string name="settings_connectivity">Bağlanılabilirlik</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Duraklatıldı</string>
     <string name="notify_metered_connection">Ücretli bağlantı</string>
 
-    <string name="notify_starred">İstasyon favorilere eklendi</string>
-    <string name="notify_autostarred">İstasyon otomatik olarak favorilere eklendi</string>
-    <string name="notify_unstarred">İstasyon favorilerden çıkarıldı</string>
+    <string name="notify_starred">Radyo istasyonu favorilere eklendi</string>
+    <string name="notify_autostarred">Radyo istasyonu otomatik olarak favorilere eklendi</string>
+    <string name="notify_unstarred">Radyo istasyonu favorilerden çıkarıldı</string>
     <string name="notify_deleted_favorites">Favoriler silindi</string>
     <string name="notify_deleted_history">Geçmiş temizlendi</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Lütfen bir oynatıcı seçin</string>
     <string name="alert_select_player_name">Ad</string>
-    <string name="hostname">Ana makine adı</string>
-    <string name="port">Bağlantı noktası</string>
+    <string name="hostname">Sunucu adresi</string>
+    <string name="port">Ağ bağlantı noktası</string>
 
     <string name="alert_press_back_to_exit">Çıkmak için geri tuşuna bir kez daha basın</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Harici oynatıcıda oynat</string>
     <string name="action_choose_external_player">Harici oynatıcı seçin</string>
 
-    <string name="settings_disable_battery_optimization">Pil optimizasyonu</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Pil optimizasyonu yoksayılıyor, AMARadio odağı her zaman geri alabilmelidir.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Pil optimizasyonu etkin, AMARadio arka planda odağı geri alamayabilir.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Arka Planda Oynatma</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Diğer</string>
     <string name="settings_rate_app">AMARadio\'yu Puanla</string>
     <string name="settings_rate_app_summary">Uygulamayı beğendiyseniz, lütfen Play Store\'da bir yorum bırakın!</string>
+    <string name="settings_rate_app_github">AMARadio\'yu beğeniyor musunuz?</string>
+    <string name="settings_rate_app_github_summary">GitHub\'a bir yıldız bırakın! Başkalarının uygulamayı keşfetmesine yardımcı olur ve gelecekteki gelişimi destekler.</string>
     <string name="settings_statistics">İstatistikler</string>
     <string name="settings_about">AMARadio Hakkında</string>
 
@@ -278,13 +278,13 @@
     <string name="description_btn_skip_to_previous">Öncekine atla</string>
 
     <string-array name="weekdays">
-        <item>Pz</item>
-        <item>Pt</item>
-        <item>Sa</item>
-        <item>Ça</item>
-        <item>Pe</item>
-        <item>Cu</item>
-        <item>Ct</item>
+        <item>P</item>
+        <item>P</item>
+        <item>S</item>
+        <item>Ç</item>
+        <item>P</item>
+        <item>C</item>
+        <item>C</item>
     </string-array>
 
     <string name="notify_stream_url_copied">Yayın URL\'si başarıyla kopyalandı</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">İstasyon logosu</string>
+    <string name="accessibility_station_logo">Radyo istasyonu logosu</string>
     <string name="accessibility_favorite_selected">Favori, seçildi</string>
     <string name="accessibility_favorite_not_selected">Favori, seçilmedi</string>
     <string name="accessibility_category_icon">Kategori simgesi</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Yapılandır</string>
     <string name="accessibility_close">Kapat</string>
     <string name="accessibility_add_filter">Filtre ekle</string>
-    <string name="accessibility_station_options">İstasyon seçenekleri</string>
+    <string name="accessibility_station_options">Radyo istasyonu seçenekleri</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">İstasyon: %1$s, Dil: %2$s, Etiketler: %3$s</string>
 
     <string name="error_no_file_manager">Sistem dosya yöneticisi bulunamadı. Lütfen bir dosya gezgininin kurulu ve etkin olduğundan emin olun.</string>
     <string name="error_no_browser">Bir web tarayıcısı bulunamadı. Bu bağlantıyı açmak için lütfen bir tarayıcı yükleyin.</string>
-    <string name="error_no_homepage">Bu istasyon için ana sayfa mevcut değil</string>
-    <string name="tab_custom_stations">Gelenek</string>
-    <string name="action_add_custom">Özel İstasyon Ekle</string>
-    <string name="station_name">İstasyon Adı</string>
+    <string name="error_no_homepage">Bu radyo istasyonu için ana sayfa mevcut değil</string>
+    <string name="tab_custom_stations">Özel</string>
+    <string name="action_add_custom">Özel radyo istasyonu ekle</string>
+    <string name="station_name">Radyo istasyonu adı</string>
     <string name="stream_url">Akış URL\'si</string>
-    <string name="favicon_url">Site simgesi URL\'si (isteğe bağlı)</string>
+    <string name="favicon_url">İstasyon logosu URL\'si (Favicon)</string>
     <string name="select_image">Resim Seç</string>
     <string name="error_invalid_url">Lütfen geçerli bir URL girin</string>
-    <string name="action_save">Kaydetmek</string>
+    <string name="action_save">Kaydet</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Hızlı oynatıcı kontrolleri</string>
-    <string name="widget_description_full">Oyuncu ve istasyon listesi</string>
+    <string name="widget_description_full">Oynatıcı ve radyo istasyonu listesi</string>
 
     <string name="settings_auto_db_update">Arka Plan Veri Senkronizasyonu</string>
-    <string name="settings_auto_db_update_desc">Radyo Tarayıcı API\'si aracılığıyla istasyon veritabanını otomatik olarak güncelleyin (önerilir).</string>
-    <string name="settings_station_click_counter">İstasyon tıklama sayacı</string>
-    <string name="settings_station_click_counter_desc">Oyun etkinliklerini anonim olarak paylaşarak Radyo Tarayıcı istatistiklerini destekleyin.</string>
-    <string name="settings_rate_app_github">AMRadio\'yu beğeniyor musunuz?</string>
-    <string name="settings_rate_app_github_summary">GitHub\'a bir yıldız bırakın! Başkalarının uygulamayı keşfetmesine yardımcı olur ve gelecekteki gelişimi destekler.</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API\'si aracılığıyla istasyon veritabanını otomatik olarak güncelleyin (önerilir).</string>
+    <string name="settings_station_click_counter">Radyo istasyonu tıklama sayacı</string>
+    <string name="settings_station_click_counter_desc">Oynatma etkinliklerini anonim olarak paylaşarak Radio-Browser istatistiklerini destekleyin.</string>
 
-    <string name="settings_remove_notification_on_stop">Uygulama kapatıldığında bildirimi kaldır</string>
-    <string name="settings_remove_notification_on_stop_desc">Uygulama son uygulamalardan kapatıldığında medya bildirimini otomatik olarak kapat</string>
+    <string name="settings_remove_notification_on_stop">Durdurulduğunda bildirimi kaldır</string>
+    <string name="settings_remove_notification_on_stop_desc">Oynatma durdurulduğunda medya bildirimini otomatik olarak kaldır</string>
     <string name="settings_auto_resume_audio_focus">Ses odağı kaybından sonra devam et</string>
     <string name="settings_auto_resume_audio_focus_desc">Telefon çağrıları, alarmlar veya diğer ses kesintilerinden sonra oynatmayı otomatik olarak devam ettirin</string>
+
+    <string name="settings_backup_restore">Yedekleme ve Geri Yükleme</string>
+    <string name="settings_export_backup">Tam Yedek Oluştur (ZIP)</string>
+    <string name="settings_export_backup_desc">Tüm favorileri, özel istasyonları ve simgeleri bir ZIP dosyasına kaydeder</string>
+    <string name="settings_import_backup">Yedeği Geri Yükle (ZIP)</string>
+    <string name="settings_import_backup_desc">Favorileri ve özel istasyonları bir ZIP yedek dosyasından geri yükler</string>
+    <string name="backup_export_success">Yedek başarıyla kaydedildi</string>
+    <string name="backup_export_error">Yedek kaydedilemedi</string>
+    <string name="backup_import_success">Yedek başarıyla geri yüklendi</string>
+    <string name="backup_import_error">Yedek geri yüklenemedi</string>
+
+    <string name="database_summary_title">Yerel Veritabanı</string>
+    <string name="database_total_stations">Toplam Radyo İstasyonu</string>
+    <string name="database_last_sync">Son Güncelleme</string>
+    <string name="database_update_now">Veritabanını Şimdi Güncelle</string>
+    <string name="database_full_update">Veritabanını Güncelle</string>
+    <string name="database_syncing">Eşitleniyor…</string>
+    <string name="database_downloading">İndiriliyor…</string>
+    <string name="database_stations_loaded">%1$s radyo istasyonu</string>
+    <string name="database_sync_channel_name">Radyo İstasyonu Veritabanı Eşitlemesi</string>
+    <string name="database_sync_success">İstasyon veritabanı güncellemesi başarıyla tamamlandı</string>
+    <string name="database_error_no_connection">İnternet bağlantısı yok</string>
+    <string name="database_error_no_space">Yetersiz disk alanı</string>
+    <string name="database_error_failed">Veritabanı güncellemesi başarısız oldu</string>
+
+    <string name="settings_disable_battery_optimization_desc">Ekran kapalıyken oynatmaya devam etmek için pil kullanımını \'Kısıtlamasız\' olarak ayarlayın.</string>
+    <string name="battery_opt_open_settings">Ayarları Aç</string>
+    <string name="battery_opt_later">Daha Sonra</string>
 </resources>

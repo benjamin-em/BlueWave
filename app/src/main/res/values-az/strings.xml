@@ -52,16 +52,16 @@
     <string name="filter_empty_title">Öz xüsusi radio kanalınızı yaradın</string>
     <string name="filter_empty_desc">Bir neçə kriteriyanı birləşdirərək fərdiləşdirilmiş görünüş yaradın. Axtarışınızı aşağıdakılarla daralda bilərsiniz:</string>
     <string name="filter_empty_filter_by">Filtrlə:</string>
-    <string name="filter_empty_filter_desc">Ölkə, Stansiya adı, Teqlər və ya Dil</string>
+    <string name="filter_empty_filter_desc">Ölkə, Radio stansiyası adı, Teqlər və ya Dil</string>
     <string name="filter_empty_sort_by">Sırala:</string>
     <string name="filter_empty_sort_desc">Kliklər, Əlifba sırası, Səslər və ya Son dəyişiklik</string>
     <string name="filter_empty_hint">Bu görünüşü yadda saxlamaq üçün yuxarıdakı sahəyə ad yazın!</string>
-    <string name="error_station_load">Stansiyaya qoşulmaq mümkün olmadı</string>
-    <string name="error_list_update">Radio brauzer serverinə qoşulmaq mümkün olmadı</string>
+    <string name="error_station_load">Radio stansiyasına qoşulmaq mümkün olmadı</string>
+    <string name="error_list_update">Radio-Browser serverinə qoşulmaq mümkün olmadı</string>
 
-    <string name="share_action">Stansiya linkini paylaş…</string>
+    <string name="share_action">Radio stansiyası linkini paylaş…</string>
 
-    <string name="nav_item_stations">Stansiyalar</string>
+    <string name="nav_item_stations">Radio stansiyaları</string>
     <string name="nav_item_starred">Sevimlilər</string>
     <string name="nav_item_history">Tarixçə</string>
     <string name="nav_item_settings">Parametrlər</string>
@@ -105,7 +105,7 @@
     <string name="theme_dark">Tünd</string>
     <string name="theme_system">Sistemi izlə</string>
     <string name="settings_compact_style">Yığcam rejim</string>
-    <string name="settings_compact_style_desc_off">Stansiya detalları ilə böyük nişan</string>
+    <string name="settings_compact_style_desc_off">Radio stansiyası detalları ilə böyük nişan</string>
     <string name="settings_compact_style_desc_on">Detallar olmadan kiçik nişan</string>
     <string name="settings_bottom_navigation">Aşağı naviqasiya</string>
     <string name="settings_ui_scale">UI Ölçüsü</string>
@@ -120,9 +120,9 @@
     <string name="settings_single_use_tags_desc_off">Nadir istifadə olunan teqlər göstərilməyəcək</string>
     <string name="settings_single_use_tags_desc_on">Nadir istifadə olunan teqlər göstəriləcək</string>
 
-    <string name="settings_show_broken">İşləməyən stansiyalar</string>
-    <string name="settings_show_broken_on">İşləməyən stansiyaları siyahılarda göstər</string>
-    <string name="settings_show_broken_off">İşləməyən stansiyaları siyahılarda göstərmə</string>
+    <string name="settings_show_broken">İşləməyən radio stansiyaları</string>
+    <string name="settings_show_broken_on">İşləməyən radio stansiyalarını siyahılarda göstər</string>
+    <string name="settings_show_broken_off">İşləməyən radio stansiyalarını siyahılarda göstərmə</string>
 
     <string name="settings_startup_behaviour">Başlanğıc Davranışı</string>
     <string name="action_grid_view">Tor Görünüşü</string>
@@ -130,12 +130,12 @@
 
     <string name="startup_action_title">Başlanğıc hərəkəti</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Bütün stansiyaları göstər</string>
+    <string name="startup_show_all_stations">Bütün radio stansiyalarını göstər</string>
     <string name="startup_show_favorites">Sevimliləri göstər</string>
     <string name="startup_show_history">Tarixçəni göstər</string>
     <string name="startup_show_last_view">Son görünüş</string>
 
-    <string name="settings_load_icons">Stansiya nişanlarını göstər</string>
+    <string name="settings_load_icons">Radio stansiyası nişanlarını göstər</string>
     <string name="settings_load_icons_on">Nişanlar yüklənəcək</string>
     <string name="settings_load_icons_off">Nişanlar yüklənməyəcək</string>
 
@@ -145,16 +145,16 @@
 
     <string name="settings_play">Pleyer</string>
     <string name="settings_auto_play_on_startup">Avto-oynat</string>
-    <string name="settings_auto_play_on_startup_on">Başladıqda son stansiyanı oynat</string>
-    <string name="settings_auto_play_on_startup_off">Başladıqda son stansiyanı oynatma</string>
+    <string name="settings_auto_play_on_startup_on">Başladıqda son radio stansiyasını oynat</string>
+    <string name="settings_auto_play_on_startup_off">Başladıqda son radio stansiyasını oynatma</string>
     <string name="settings_auto_off_on_startup">Avto-dayandır</string>
     <string name="settings_auto_off_on_startup_on">Avto-oynatma ilə avto-dayandırma taymerini istifadə et</string>
     <string name="settings_auto_off_on_startup_off">Avto-oynatma ilə avto-dayandırma taymerini istifadə etmə</string>
     <string name="settings_auto_off_sleep_timer">Avto-dayandırma taymeri</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s dəqiqədən sonra oynatmağı dayandır</string>
     <string name="settings_play_external">Xarici pleyeri aktivləşdir</string>
-    <string name="settings_play_external_desc_on">Stansiyaları xarici pleyerlə oynat</string>
-    <string name="settings_play_external_desc_off">Stansiyaları AMARadio ilə oynat</string>
+    <string name="settings_play_external_desc_on">Radio stansiyalarını xarici pleyerlə oynat</string>
+    <string name="settings_play_external_desc_off">Radio stansiyalarını AMARadio ilə oynat</string>
     <string name="settings_equalizer">Ekvalayzer</string>
 
     <string name="settings_connectivity">Bağlantı</string>
@@ -195,9 +195,9 @@
     <string name="notify_paused">Pauzadadır</string>
     <string name="notify_metered_connection">Ödənişli bağlantı</string>
 
-    <string name="notify_starred">Stansiya sevimlilərə əlavə edildi</string>
-    <string name="notify_autostarred">Stansiya avtomatik sevimlilərə əlavə edildi</string>
-    <string name="notify_unstarred">Stansiya sevimlilərdən silindi</string>
+    <string name="notify_starred">Radio stansiyası sevimlilərə əlavə edildi</string>
+    <string name="notify_autostarred">Radio stansiyası avtomatik sevimlilərə əlavə edildi</string>
+    <string name="notify_unstarred">Radio stansiyası sevimlilərdən silindi</string>
     <string name="notify_deleted_favorites">Sevimlilər silindi</string>
     <string name="notify_deleted_history">Tarixçə silindi</string>
 
@@ -213,8 +213,8 @@
 
     <string name="alert_select_player">Zəhmət olmasa pleyer seçin</string>
     <string name="alert_select_player_name">Ad</string>
-    <string name="hostname">Host adı</string>
-    <string name="port">Port</string>
+    <string name="hostname">Server ünvanı</string>
+    <string name="port">Şəbəkə portu</string>
 
     <string name="alert_press_back_to_exit">Çıxmaq üçün geri düyməsini bir daha sıxın</string>
 
@@ -261,10 +261,9 @@
     <string name="action_play_in_external">Xarici pleyerdə oynat</string>
     <string name="action_choose_external_player">Xarici pleyer seç</string>
 
-    <string name="settings_disable_battery_optimization">Batareya optimallaşdırılması</string>
     <string name="settings_ignore_battery_optimization_summary_on">Batareya optimallaşdırılmasına məhəl qoyulmur, AMARadio həmişə fokusu geri ala bilməlidir.</string>
     <string name="settings_ignore_battery_optimization_summary_off">Batareya optimallaşdırılması aktivdir, AMARadio arxa fonda olduqda fokusu geri ala bilməyə bilər.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Digər</string>
     <string name="settings_rate_app">AMARadio-nu qiymətləndirin</string>
     <string name="settings_rate_app_summary">Tətbiqi bəyənirsinizsə, lütfən Play Store-da rəy bildirin!</string>
@@ -321,7 +320,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stansiya loqosu</string>
+    <string name="accessibility_station_logo">Radio stansiyası loqosu</string>
     <string name="accessibility_favorite_selected">Sevimli, seçilib</string>
     <string name="accessibility_favorite_not_selected">Sevimli, seçilməyib</string>
     <string name="accessibility_category_icon">Kateqoriya ikonu</string>
@@ -334,32 +333,30 @@
     <string name="accessibility_configure">Qurmaq</string>
     <string name="accessibility_close">Bağla</string>
     <string name="accessibility_add_filter">Filtr əlavə et</string>
-    <string name="accessibility_station_options">Stansiya seçimləri</string>
+    <string name="accessibility_station_options">Radio stansiyası seçimləri</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Stansiya: %1$s, Dil: %2$s, Teqlər: %3$s</string>
 
-    <string name="error_no_connection">İnternet bağlantısı yoxdur</string>
-    <string name="warning_volume_zero">Həcmi sıfırdır. Ola bilər ki, heç nə eşitməyəcəksiniz.</string>
     <string name="error_no_file_manager">Sistem fayl menecerini tapmaq mümkün olmadı. Lütfən, fayl tədqiqatçısının quraşdırıldığına və işə salındığına əmin olun.</string>
     <string name="error_no_browser">Veb brauzeri tapmaq mümkün olmadı. Bu linki açmaq üçün brauzer quraşdırın.</string>
     <string name="error_no_homepage">Bu stansiya üçün əsas səhifə yoxdur</string>
     <string name="tab_custom_stations">Xüsusi</string>
-    <string name="action_add_custom">Fərdi Stansiya əlavə edin</string>
-    <string name="station_name">Stansiya Adı</string>
+    <string name="action_add_custom">Fərdi radio stansiyası əlavə edin</string>
+    <string name="station_name">Radio stansiyasının adı</string>
     <string name="stream_url">Yayım URL</string>
-    <string name="favicon_url">Favikon URL (isteğe bağlı)</string>
+    <string name="favicon_url">Favicon URL (istəyə bağlı)</string>
     <string name="select_image">Şəkil seçin</string>
     <string name="error_invalid_url">Lütfən, etibarlı URL daxil edin</string>
     <string name="action_save">Saxla</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Sürətli oyunçu nəzarəti</string>
-    <string name="widget_description_full">Oyunçu və stansiya siyahısı</string>
+    <string name="widget_description_small">Sürətli pleyer idarəetməsi</string>
+    <string name="widget_description_full">Pleyer və radio stansiyaları siyahısı</string>
 
     <string name="settings_auto_db_update">Background Data Sync</string>
     <string name="settings_auto_db_update_desc">Radio-Browser API vasitəsilə stansiya verilənlər bazasını avtomatik yeniləyin (tövsiyə olunur).</string>
-    <string name="settings_station_click_counter">Stansiya klik sayğacı</string>
-    <string name="settings_station_click_counter_desc">Oyun hadisələrini anonim şəkildə paylaşaraq Radio-Brauzer statistikasını dəstəkləyin.</string>
+    <string name="settings_station_click_counter">Radio stansiyası klik sayğacı</string>
+    <string name="settings_station_click_counter_desc">Səs yayımı hadisələrini anonim şəkildə paylaşaraq Radio-Browser statistikasını dəstəkləyin.</string>
     <string name="settings_rate_app_github">AMARadio-dan zövq alırsınız?</string>
     <string name="settings_rate_app_github_summary">GitHub-da ulduz buraxın! Bu, başqalarına proqramı kəşf etməyə kömək edir və gələcək inkişafı dəstəkləyir.</string>
 
@@ -367,4 +364,33 @@
     <string name="settings_remove_notification_on_stop_desc">Tətbiq son tətbiqlərdən bağlandıqda media bildirişini avtomatik rədd edin</string>
     <string name="settings_auto_resume_audio_focus">Audio fokus itkisindən sonra davam edin</string>
     <string name="settings_auto_resume_audio_focus_desc">Telefon zəngləri, həyəcan siqnalları və ya digər audio dayanacaqlardan sonra oxutmanı avtomatik davam etdirin</string>
+
+    <string name="settings_backup_restore">Ehtiyat nüsxə və bərpa</string>
+    <string name="settings_export_backup">Tam ehtiyat nüsxə yarat (ZIP)</string>
+    <string name="settings_export_backup_desc">Bütün sevimliləri, fərdi stansiyaları və yerli ikonları tək bir ZIP faylında saxlayır</string>
+    <string name="settings_import_backup">Ehtiyat nüsxəni bərpa et (ZIP)</string>
+    <string name="settings_import_backup_desc">Sevimliləri, fərdi stansiyaları və ikonları ZIP ehtiyat nüsxə faylından bərpa edir</string>
+    <string name="backup_export_success">Ehtiyat nüsxə uğurla saxlanıldı</string>
+    <string name="backup_export_error">Ehtiyat nüsxəni saxlamaq mümkün olmadı</string>
+    <string name="backup_import_success">Ehtiyat nüsxə uğurla bərpa olundu</string>
+    <string name="backup_import_error">Ehtiyat nüsxəni bərpa etmək mümkün olmadı</string>
+
+    <string name="database_summary_title">Yerli verilənlər bazası</string>
+    <string name="database_total_stations">Ümumi radio stansiyaları</string>
+    <string name="database_last_sync">Son yenilənmə</string>
+    <string name="database_update_now">Verilənlər bazasını indi yenilə</string>
+    <string name="database_full_update">Verilənlər bazasını yenilə</string>
+    <string name="database_syncing">Yenilənir…</string>
+    <string name="database_downloading">Endirilir…</string>
+    <string name="database_stations_loaded">%1$s radio stansiyası</string>
+    <string name="database_sync_channel_name">Radio stansiyaları bazasının sinxronizasiyası</string>
+    <string name="database_sync_success">Verilənlər bazası yenilənməsi uğurla tamamlandı</string>
+    <string name="database_error_no_connection">İnternet bağlantısı yoxdur</string>
+    <string name="database_error_no_space">Kifayət qədər disk sahəsi yoxdur</string>
+    <string name="database_error_failed">Verilənlər bazasının yenilənməsi uğursuz oldu</string>
+
+    <string name="settings_disable_battery_optimization">Arxa fonda oxutma</string>
+    <string name="settings_disable_battery_optimization_desc">Ekran sönük olduqda oxutmanı davam etdirmək üçün batareya istifadəsini \'Məhdudiyyətsiz\' olaraq təyin edin.</string>
+    <string name="battery_opt_open_settings">Tənzimləmələri aç</string>
+    <string name="battery_opt_later">Sonra</string>
 </resources>

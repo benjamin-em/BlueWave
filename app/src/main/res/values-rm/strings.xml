@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">Num</string>
+    <string name="detail_tags">Tags</string>
+    <string name="detail_country">Launder</string>
+    <string name="detail_create_shortcut">Agiuntar al maletg da partenza</string>
+    <string name="detail_language">Linguatg</string>
+    <string name="detail_weblink">Link da la nettada</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">Ludar</string>
+    <string name="detail_pause">Pausa</string>
+    <string name="detail_stop">Pulsar</string>
+    <string name="detail_share">Partgir</string>
+    <string name="detail_play_in_AMARadio">Ludar en AMARadio</string>
+
+    <string name="action_links">Links</string>
+    <string name="action_homepage">Pagina principala</string>
+    <string name="action_favorite">Favorits</string>
+    <string name="action_starred_add">Agiuntar als favorits</string>
+    <string name="action_starred_remove">Galar dals favorits</string>
+
+    <string name="action_station_visit_website">Visitar la pagina web</string>
+    <string name="action_station_copy_stream_url">Kopiar l\'URL dal stream</string>
+    <string name="action_station_share">Partgir</string>
+
+    <string name="action_local">Local</string>
+    <string name="action_skip_to_next">Proxim</string>
+    <string name="action_pause">Pausa</string>
+    <string name="action_skip_to_previous">Precedent</string>
+    <string name="action_resume">Cuntinuar</string>
+    <string name="action_stop">Pulsar</string>
+    <string name="action_search">Tschertgar</string>
+    <string name="action_delete">Stizzar</string>
+    <string name="action_delete_history">Stizzar la cronologia</string>
+    <string name="action_delete_favorites">Stizzar tut ils favorits</string>
+    <string name="action_delete_stream_history">Mundar la cronologia da las chanzuns</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Interrumper</string>
+    <string name="action_top_click">Pli blers klicks</string>
+    <string name="action_toggle_view">Mudar la vista</string>
+    <string name="action_top_vote">Pli bleras votas</string>
+    <string name="action_changed_lately">Mudà dacurt</string>
+    <string name="action_currently_playing">Sonda gist</string>
+    <string name="action_tags">Tags</string>
+    <string name="action_countries">Launders/Regiuns</string>
+    <string name="action_languages">Linguatgs</string>
+    <string name="action_edit">Prubchar</string>
+    <string name="action_copy_info">Kopiar las infurmaziuns</string>
+    <string name="action_rename_tab">Mudar il num dal tab</string>
+
+    <string name="error_filter_name_required">Endatesch p.s.v. l\'emprim in num per questa fana dal filter</string>
+    <string name="confirm_delete_filter_tab">Eis ti segir da vulair stizzar il filter \"%1$s\"?</string>
+    <string name="filter_empty_title">Creescha tieu agen canal da staziuns da radio</string>
+    <string name="filter_empty_desc">Kreescha ina vista personalisada combinond plirs criteris. Ti pos restrenger la tschertga entras:</string>
+    <string name="filter_empty_filter_by">Filtrar tenor:</string>
+    <string name="filter_empty_filter_desc">Launder, num da la staziun, tags u linguatg</string>
+    <string name="filter_empty_sort_by">Zortar tenor:</string>
+    <string name="filter_empty_sort_desc">Klicks, alfabet, votas u l\'ultima modificaziun</string>
+    <string name="filter_empty_hint">Limesch in num en il champ sura per salvar questa vista personalisada!</string>
+
+    <string name="error_station_load">Betg pussaivel da collia al staziun da radio</string>
+    <string name="error_list_update">Betg pussaivel da collia al server da Radio-Browser</string>
+
+    <string name="error_no_connection">Mancanza da connexiun d\'internet.</string>
+    <string name="warning_volume_zero">Il volum sa chatta sin nulla. Ti na vegns probabel da udir nagut.</string>
+
+    <string name="share_action">Partgir il link da la staziun da radio cun…</string>
+
+    <string name="nav_item_stations">Staziuns da radio</string>
+    <string name="nav_item_starred">Favorits</string>
+    <string name="nav_item_history">Cronologia</string>
+    <string name="nav_item_settings">Prestellaziuns</string>
+
+    <string name="about_text">AMARadio è 100% liber da reclamas e personalisà sin la protecziun da datas.\n\nJau hai sviluppà quest app per mia mamma per la dar in\'experienza da radio simpla e honesta senza reclamas perturbantas u tracking. Perquai restà AMARadio per adina liber da reclamas – quai è in empermischun per ella, spartid cun vus tuts.\n\nQuest proget è in fork dal famus RadioDroid. Tut il code fontg è vegni translatà da Java a Kotlin.\n\nCode fontg: https://github.com/ounben/AMARadio\n\nQuesta app utilisescha il directori da staziuns da radio gratuit sin https://www.radio-browser.info .\n\nContact: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nLicenza GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">Versiun: %1$s</string>
+    <string name="detail_star">Agiuntar als favorits</string>
+    <string name="detail_unstar">Galar dals favorits</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">Chargiar…</string>
+
+    <string name="sleep_timer" formatted="true">Timer dal somn: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">Pulsar la sunada suenter las minutas tschernidas</string>
+    <string name="sleep_timer_apply">Applitgar</string>
+    <string name="sleep_timer_clear">Mundar</string>
+    <string name="nav_item_add_sleep">Timer dal somn</string>
+
+    <string name="nav_item_save_playlist">Exportar ils favorits sco playlist</string>
+    <string name="nav_item_load_playlist">Importar ils favorits nani in playlist</string>
+    <string name="nav_item_save_history_playlist">Exportar la cronologia sco playlist</string>
+    <string name="confirm_overwrite_file">Substituir il file?</string>
+    <string name="dialog_hint_file_name">Endatesch il num dal file</string>
+    <string name="error_empty_field">Quest champ è necessari</string>
+    <string name="error_invalid_file_name">Num da file nunvalid</string>
+    <string name="label_button_cancel">Interrumper</string>
+    <string name="label_button_overwrite">Substituir</string>
+    <string name="notify_load_playlist_nok">Betg pussaivel da importar nani %1$s&#47;%2$s</string>
+    <string name="notify_load_playlist_now">Importar nani %1$s&#47;%2$s, p.s.v. spetgar.</string>
+    <string name="notify_load_playlist_ok">Importà %1$d staziuns nani %2$s&#47;%3$s</string>
+    <string name="notify_save_playlist_nok">Betg pussaivel da exportar sin %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_now">Exportar sin %1$s&#47;%2$s, p.s.v. spetgar.</string>
+    <string name="notify_save_playlist_ok">Exportà cun success sin %1$s&#47;%2$s</string>
+    <string name="notify_sync_list_deleted_entries">%1$d da %2$d staziuns localas en la glista èn merfadas sco betg existentas sin il server</string>
+
+    <string name="searchpreference_clear_history">Mundar la cronologia</string>
+    <string name="searchpreference_no_results">Cugn d\'illustraziuns</string>
+    <string name="searchpreference_search">Tschertgar…</string>
+    <string name="settings_appearance">Smarunada</string>
+    <string name="settings_theme_selection_title">Design</string>
+    <string name="theme_light">Lumos</string>
+    <string name="theme_dark">Scur</string>
+    <string name="theme_system">Suandar il sistem</string>
+    <string name="settings_compact_style">Modus compact</string>
+    <string name="settings_compact_style_desc_off">Simbol grond cun detagls da la staziun da radio</string>
+    <string name="settings_compact_style_desc_on">Simbol pitschen senza detagls da la staziun da radio</string>
+    <string name="settings_bottom_navigation">Navigaziun sut</string>
+    <string name="settings_ui_scale">Scalada da la UI</string>
+    <string name="settings_language">Linguatg</string>
+    <string name="ui_scale_compact">Compact</string>
+    <string name="ui_scale_standard">Standard dal sistem</string>
+    <string name="ui_scale_large">Grond</string>
+    <string name="ui_scale_extra_large">Fitg grond</string>
+
+    <string name="settings_interaction">Interacziun</string>
+    <string name="settings_single_use_tags">Mussar tags rars</string>
+    <string name="settings_single_use_tags_desc_off">Tags rars na vegnegn betg mussads</string>
+    <string name="settings_single_use_tags_desc_on">Tags rars vegnegn mussads</string>
+
+    <string name="settings_show_broken">Staziuns da radio inactivas</string>
+    <string name="settings_show_broken_on">Mussar staziuns da radio inactivas en las glistas</string>
+    <string name="settings_show_broken_off">Betg mussar staziuns da radio inactivas en las glistas</string>
+
+    <string name="settings_startup_behaviour">Comportament tar l\'start</string>
+    <string name="action_grid_view">Vista da rait</string>
+    <string name="action_list_view">Vista da glista</string>
+
+    <string name="startup_action_title">Acziun tar l\'start</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">Mussar tut las staziuns da radio</string>
+    <string name="startup_show_favorites">Mussar ils favorits</string>
+    <string name="startup_show_history">Mussar la cronologia</string>
+    <string name="startup_show_last_view">L\'ultima vista</string>
+
+    <string name="settings_load_icons">Mussar ils simbols da las staziuns da radio</string>
+    <string name="settings_load_icons_on">Els simbols vegnegn chargiads galar</string>
+    <string name="settings_load_icons_off">Els simbols na vegnegn betg chargiads galar</string>
+
+    <string name="settings_auto_favorite">Auto-favorit</string>
+    <string name="settings_auto_favorite_on">Agiuntar automaticamain las staziuns da radio als favorits mumentan dal ludar</string>
+    <string name="settings_auto_favorite_off">Betg agiuntar automaticamain las staziuns da radio als favorits mumentan dal ludar</string>
+
+    <string name="settings_play">Reproductur</string>
+    <string name="settings_auto_play_on_startup">Auto-ludar</string>
+    <string name="settings_auto_play_on_startup_on">Ludar l\'ultima staziun da radio tar l\'start</string>
+    <string name="settings_auto_play_on_startup_off">Betg ludar l\'ultima staziun da radio tar l\'start</string>
+    <string name="settings_auto_off_on_startup">Auto-pulsar</string>
+    <string name="settings_auto_off_on_startup_on">Utilisar il timer d\'auto-pulsar cun l\'auto-ludar</string>
+    <string name="settings_auto_off_on_startup_off">Betg utilisar il timer d\'auto-pulsar cun l\'auto-ludar</string>
+    <string name="settings_auto_off_sleep_timer">Timer d\'auto-pulsar</string>
+    <string name="settings_auto_off_sleep_timer_desc">Pulsar la sunada suenter %1$s minutas</string>
+    <string name="settings_play_external">Activar in reproductur extern</string>
+    <string name="settings_play_external_desc_on">Ludar las staziuns da radio cun in reproductur extern</string>
+    <string name="settings_play_external_desc_off">Ludar las staziuns da radio cun AMARadio</string>
+    <string name="settings_equalizer">Equalisatur</string>
+
+    <string name="settings_connectivity">Connexiun</string>
+    <string name="settings_connect_timeout">Temps da spetga per la connexiun</string>
+    <string name="settings_read_timeout">Temps da spetga per leger</string>
+    <string name="settings_resume_timeout">Temps da spetga per cuntinuar</string>
+    <string name="settings_retry_timeout">Temps da spetga per il nov emprim</string>
+    <string name="settings_retry_delay">Procrastinaziun dal nov connexiun</string>
+    <string name="settings_proxy">Proxy</string>
+    <string name="settings_proxy_login">Num d\'utilisader</string>
+    <string name="settings_proxy_password">Pled da dador</string>
+    <string name="settings_proxy_action_test">Testar</string>
+    <string name="settings_proxy_working">Cun success connex cun %s</string>
+    <string name="settings_proxy_not_working">Mancanza da connexiun cun %1$s\n%2$s</string>
+    <string name="settings_proxy_invalid">Valors dal proxy nunvalidas</string>
+    <string name="ignore_proxy_settings_invalid">Injorà prestellaziuns dal proxy nunvalidas</string>
+    <string name="settings_seconds_format">%d secundas</string>
+    <string name="settings_milliseconds_format">%d millisecundas</string>
+
+    <string name="settings_pause_when_noisy">Pausa sche las auscultaturas vegnegn tiradas via</string>
+
+    <string name="settings_auto_resume_do_not_resume">Betg cuntinuar</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">Cuntinuar cun connexiun per kabel</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">Cuntinuar il ludar sche auscultaturas per kabel vegnegn collagadas</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Cuntinuar cun connexiun Bluetooth</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Cuntinuar il ludar sche in apparat Bluetooth A2DP vegn collagà</string>
+
+    <string name="settings_auto_resume_on_any_connected">Cuntinuar cun mintga connexiun</string>
+
+    <string name="settings_warn_no_wifi">Avis senza Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">Avisar dal ludar senza connexiun Wi-Fi</string>
+    <string name="settings_warn_no_wifi_off">Mancanza d\'avis dal ludar senza Wi-Fi</string>
+
+    <string name="notify_pre_play">Connectond</string>
+    <string name="notify_play">Luda</string>
+    <string name="notify_paused">En pausa</string>
+    <string name="notify_metered_connection">Connexiun mesurada</string>
+
+    <string name="notify_starred">Staziun da radio agiuntada als favorits</string>
+    <string name="notify_autostarred">Staziun da radio agiuntada automaticamain als favorits</string>
+    <string name="notify_unstarred">Staziun da radio galar dals favorits</string>
+    <string name="notify_deleted_favorites">Favorits stizzads</string>
+    <string name="notify_deleted_history">Cronologia stizzada</string>
+
+    <string name="notify_open_link_failure">Cugn d\'app per perver il link</string>
+
+    <string name="notify_station_removed_from_list">1 stizzà</string>
+    <string name="action_station_removed_from_list_undo">ANNULLAR</string>
+
+    <string name="alert_delete_history">Vuls ti vertat stizzar la cronologia?</string>
+    <string name="alert_delete_favorites">Vuls ti vertat stizzar tut ils favorits?</string>
+    <string name="yes">Gea</string>
+    <string name="no">Na</string>
+
+    <string name="alert_select_player">Tscherna in reproductur p.s.v.</string>
+    <string name="alert_select_player_name">Num</string>
+    <string name="hostname">Adressa dal server</string>
+    <string name="port">Port da la rait</string>
+
+    <string name="alert_press_back_to_exit">Limesch in\'attera giada «Inapras» per exir</string>
+
+    <string name="error_stream_url">Problema cun l\'URL dal stream</string>
+    <string name="error_caching_stream">Problema cun la memoria temporana dal stream</string>
+    <string name="error_play_stream">Betg pussaivel da ludar il stream</string>
+    <string name="error_stream_reconnect_timeout">Betg pussaivel da reconnectar al stream: tempus finil</string>
+    <string name="warning_no_network_trying_resume">Mancanza da rait. Emprova da cuntinuar cura che la connexiun torna.</string>
+    <string name="giving_up_resume">Abandonà l\'emprim da cuntinuar la sunada</string>
+
+    <string name="error_grant_audiofocus">Il focus d\'audio na vegni betg acceptà dal sistem</string>
+
+    <string name="error_no_equalizer_found">Cugn d\'app d\'equalisatur</string>
+
+    <string name="player_info_status">Stadi:&#160;</string>
+    <string name="player_info_status_stopped">pulsà</string>
+    <string name="player_info_status_playing">luda</string>
+    <string name="player_info_transferred">Datas transferidas: %1$s</string>
+
+    <string name="tab_player_art">Cofta dal album</string>
+    <string name="tab_player_info">Info</string>
+    <string name="tab_player_history">Cronologia da las chanzuns</string>
+
+    <string name="station_detail_bitrate">%1$d kbps</string>
+    <string name="station_detail_broken">INACTIV</string>
+    <string name="station_detail_deleted_on_server">STIZZÀ</string>
+
+    <string name="station_details_clicks">%1$d klicks</string>
+    <string name="station_details_votes">%1$d votas</string>
+
+    <string name="image_button_disable">Deactivar</string>
+    <string name="image_button_delete">Stizzar</string>
+    <string name="image_button_more">Pli bler</string>
+    <string name="image_button_less">Manner</string>
+    <string name="image_button_repeat">Repeter</string>
+    <string name="image_button_dont_repeat">Betg repeter</string>
+    <string name="icon_click_trend_decreasing">Popularitad sa diminuascha</string>
+    <string name="icon_click_trend_increasing">Popularitad sa augmentascha</string>
+    <string name="icon_click_trend_stable">Popularitad stabila</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% Liber da reclamas &amp; Privà</string>
+
+    <string name="action_play_in_external">Ludar en in reproductur extern</string>
+    <string name="action_choose_external_player">Tscherni in reproductur extern</string>
+
+    <string name="settings_disable_battery_optimization">Ludar en il fundament</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">Atras</string>
+    <string name="settings_rate_app">Evaluar AMARadio</string>
+    <string name="settings_rate_app_summary">Sche ti has gugent l\'app, p.s.v. scriva in\'evaluaziun sin Play Store!</string>
+    <string name="settings_rate_app_github">Te plascha AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Lassa in stela sin GitHub! Quai gida atters a chattar l\'app.</string>
+    <string name="settings_statistics">Statistica</string>
+    <string name="settings_about">Sur AMARadio</string>
+
+    <string name="description_btn_skip_to_next">Sautar al proxim</string>
+    <string name="description_btn_skip_to_previous">Sautar al precedent</string>
+
+    <string-array name="weekdays">
+        <item>D</item>
+        <item>M</item>
+        <item>M</item>
+        <item>D</item>
+        <item>V</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">URL dal stream kopià cun success</string>
+    <string name="notify_track_info_copied">Infurmaziun da la chanzun kopiada cun success</string>
+
+    <string-array name="actions_station_link">
+        <item>Visitar la pagina web</item>
+        <item>Kopiar l\'URL dal stream</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">Connexiun mesurada chattada</string>
+    <string name="alert_metered_connection_message">Ina connexiun mesurada po chaschunar custs supplementars, liquesch \'OK\' per cuntinuar.</string>
+    <string name="nav_item_statistics">Statistica</string>
+    <string name="nav_item_about">Sur</string>
+    <string name="refresh">Actualisar</string>
+    <string name="action_filter">Filter</string>
+    <string name="filter_country">Launder</string>
+    <string name="filter_tag">Tag</string>
+    <string name="filter_language">Linguatg</string>
+    <string name="filter_sort_by">Zortar tenor</string>
+    <string name="filter_reverse">Urdren il contrait</string>
+    <string name="filter_apply">Applitgar il filter</string>
+    <string name="sort_name">Num</string>
+    <string name="sort_votes">Votas</string>
+    <string name="sort_clicks">Klicks</string>
+    <string name="sort_lastchange">L\'ultima modificaziun</string>
+    <string name="filter_select_country">Tscherni il launder</string>
+    <string name="filter_select_language">Tscherni il linguatg</string>
+    <string name="filter_type_tag">Scriva in tag…</string>
+    <string name="filter_tap_to_configure">Liquesch per configurar</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">Logo da la staziun da radio</string>
+    <string name="accessibility_favorite_selected">Favorit, tschernì</string>
+    <string name="accessibility_favorite_not_selected">Favorit, betg tschernì</string>
+    <string name="accessibility_category_icon">Simbol da la kategoria</string>
+    <string name="accessibility_playing">Sonda gist</string>
+    <string name="accessibility_menu">Perver il menu</string>
+    <string name="accessibility_search_back">Serrar la tschertga</string>
+    <string name="accessibility_filter_reverse">Urdren da zortar il contrait</string>
+    <string name="accessibility_clear_text">Mundar il text</string>
+    <string name="accessibility_back">Inapras</string>
+    <string name="accessibility_configure">Configurar</string>
+    <string name="accessibility_close">Serrar</string>
+    <string name="accessibility_add_filter">Agiuntar in filter</string>
+    <string name="accessibility_station_options">Opziuns da la staziun da radio</string>
+    <string name="not_applicable">N/A</string>
+    <string name="accessibility_station_description">Staziun: %1$s, Linguatg: %2$s, Tags: %3$s</string>
+
+    <string name="error_no_file_manager">Betg pussaivel da chattar in manager da files dal sistem.</string>
+    <string name="error_no_browser">Betg pussaivel da chattar in browser web.</string>
+    <string name="error_no_homepage">Mancanza da pagina principala per questa staziun da radio</string>
+    <string name="tab_custom_stations">Personalisads</string>
+    <string name="action_add_custom">Agiuntar ina staziun da radio personalisada</string>
+    <string name="station_name">Num da la staziun da radio</string>
+    <string name="stream_url">URL dal stream</string>
+    <string name="favicon_url">URL dal logo da la staziun (Favicon)</string>
+    <string name="select_image">Tscherni in imatge</string>
+    <string name="error_invalid_url">Endatesch p.s.v. in URL valid</string>
+    <string name="action_save">Salvar</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">Controllas spertas dal reproductur</string>
+    <string name="widget_description_full">Reproductur e glista da staziuns da radio</string>
+
+    <string name="settings_auto_db_update">Sincronisaziun da datas en il fundament</string>
+    <string name="settings_auto_db_update_desc">Actualisar automaticamain la banca da datas da las staziuns per via da l\'API da Radio-Browser.</string>
+    <string name="settings_station_click_counter">Contadur da klicks da la staziun da radio</string>
+    <string name="settings_station_click_counter_desc">Mussar sustentaziun a la statistica da Radio-Browser cun partgir anonimamain activitads da ludar.</string>
+
+    <string name="settings_remove_notification_on_stop">Galar la notificaziun sch\'i vegn pulsà</string>
+    <string name="settings_remove_notification_on_stop_desc">Galar automaticamain la notificaziun da media sch\'ina sunada vegn pulsada</string>
+    <string name="settings_auto_resume_audio_focus">Cuntinuar suenter avair perdi il focus d\'audio</string>
+    <string name="settings_auto_resume_audio_focus_desc">Cuntinuar automaticamain il ludar suenter telefonadas u alarmas</string>
+
+    <string name="settings_backup_restore">Copia da segirtad e restituziun</string>
+    <string name="settings_export_backup">Krear ina copia da segirtad cumpletta (ZIP)</string>
+    <string name="settings_export_backup_desc">Salva tut ils favorits, staziuns personalisadas e simbols en in file ZIP</string>
+    <string name="settings_import_backup">Restituir la copia da segirtad (ZIP)</string>
+    <string name="settings_import_backup_desc">Restituescha ils favorits e staziuns personalisadas nani in file ZIP</string>
+    <string name="backup_export_success">Copia da segirtad salvada cun success</string>
+    <string name="backup_export_error">Betg pussaivel da salvar la copia da segirtad</string>
+    <string name="backup_import_success">Copia da segirtad restituida cun success</string>
+    <string name="backup_import_error">Betg pussaivel da restituir la copia da segirtad</string>
+
+    <string name="database_summary_title">Banca da datas locala</string>
+    <string name="database_total_stations">Total staziuns da radio</string>
+    <string name="database_last_sync">L\'ultima actualisaziun</string>
+    <string name="database_update_now">Actualisar la banca da datas uossa</string>
+    <string name="database_full_update">Actualisar la banca da datas</string>
+    <string name="database_syncing">Sincronisar…</string>
+    <string name="database_downloading">Chargiar galar…</string>
+    <string name="database_stations_loaded">%1$s staziuns da radio</string>
+    <string name="database_sync_channel_name">Sincronisaziun da la banca da datas da staziuns da radio</string>
+    <string name="database_sync_success">Actualisaziun da la banca da datas finida cun success</string>
+    <string name="database_error_no_connection">Mancanza da connexiun d\'internet</string>
+    <string name="database_error_no_space">Mancanza da spazi sin il disc</string>
+    <string name="database_error_failed">Actualisaziun da la banca da datas falada</string>
+
+    <string name="settings_disable_battery_optimization_desc">Per cuntinuar da ludar cun il visur stizzà, posets il us da la batteria sin \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Perver las prestellaziuns</string>
+    <string name="battery_opt_later">Pli tard</string>
 </resources>

@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">Igama</string>
+    <string name="detail_tags">Iithegi</string>
+    <string name="detail_country">Ilizwe</string>
+    <string name="detail_create_shortcut">Faka kwisikrini sasekhaya</string>
+    <string name="detail_language">Ulwimi</string>
+    <string name="detail_weblink">Ilinki yewebhu</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">Dlalisa</string>
+    <string name="detail_pause">Nqumama</string>
+    <string name="detail_stop">Misa</string>
+    <string name="detail_share">Yabelana</string>
+    <string name="detail_play_in_AMARadio">Dlalisa kwi-AMARadio</string>
+
+    <string name="action_links">Iilinki</string>
+    <string name="action_homepage">Ikhasi lasekhaya</string>
+    <string name="action_favorite">Izinto ozithandayo</string>
+    <string name="action_starred_add">Faka kwizinto ozithandayo</string>
+    <string name="action_starred_remove">Susa kwizinto ozithandayo</string>
+
+    <string name="action_station_visit_website">Tyelela iwebhusayithi</string>
+    <string name="action_station_copy_stream_url">Kopa i-URL yokusasaza</string>
+    <string name="action_station_share">Yabelana</string>
+
+    <string name="action_local">Eyaselokishini</string>
+    <string name="action_skip_to_next">Elandelayo</string>
+    <string name="action_pause">Nqumama</string>
+    <string name="action_skip_to_previous">Ede yadlula</string>
+    <string name="action_resume">Qhubeka</string>
+    <string name="action_stop">Misa</string>
+    <string name="action_search">Khangela</string>
+    <string name="action_delete">Cima</string>
+    <string name="action_delete_history">Cima imbali</string>
+    <string name="action_delete_favorites">Cima zonke ezithandwayo</string>
+    <string name="action_delete_stream_history">Cima imbali yeengoma</string>
+    <string name="action_ok">Kulungile</string>
+    <string name="action_cancel">Cima/Khansela</string>
+    <string name="action_top_click">Ezona zibekwe kakhulu</string>
+    <string name="action_toggle_view">Tshintsha imbonakalo</string>
+    <string name="action_top_vote">Ezona zivotelwe kakhulu</string>
+    <string name="action_changed_lately">Ezitshitshiswe mva nje</string>
+    <string name="action_currently_playing">Ebadlalwayo ngoku</string>
+    <string name="action_tags">Iithegi</string>
+    <string name="action_countries">Abalawuli/Amazwe</string>
+    <string name="action_languages">Iilwimi</string>
+    <string name="action_edit">Lungisa</string>
+    <string name="action_copy_info">Kopa ulwazi</string>
+    <string name="action_rename_tab">Tshintsha igama lethebhu</string>
+
+    <string name="error_filter_name_required">Nceda ufake igama lale thebhu yokucoca kuqala</string>
+    <string name="confirm_delete_filter_tab">Uqinisekile ufuna ukucima icebo lokucoca \"%1$s\"?</string>
+    <string name="filter_empty_title">Yakha uluhlu lwakho lwezikhululo meradiyo</string>
+    <string name="filter_empty_desc">Yakha imbonakalo yakho ngokudibanisa iikhraytheriya ezininzi. Unokunciphisa ukukhangela kwakho ngokusebenzisa:</string>
+    <string name="filter_empty_filter_by">Coca ngokutsho:</string>
+    <string name="filter_empty_filter_desc">Ilizwe, Igama lezikhululo, Iithegi okanye Ulwimi</string>
+    <string name="filter_empty_sort_by">Oda ngokutsho:</string>
+    <string name="filter_empty_sort_desc">Izihlandlo zomnxeba, I-alfabethi, Iivoti okanye Utshintsho lwamva nje</string>
+    <string name="filter_empty_hint">Faka igama kule ngxowankulu ngentla ukugcina le mbonakalo!</string>
+
+    <string name="error_station_load">Akwenzekanga ukuxhuma kwisikhululo seradiyo</string>
+    <string name="error_list_update">Akwenzekanga ukuxhuma kwi-server ye-Radio-Browser</string>
+
+    <string name="error_no_connection">Akukho xhumano lwe-intanethi lufumanekayo.</string>
+    <string name="warning_volume_zero">Inqlevel yomsindo inguziro. Usenokungaiva into.</string>
+
+    <string name="share_action">Yabelana ngekhonkco lesikhululo seradiyo nge…</string>
+
+    <string name="nav_item_stations">Izikhululo zeRadiyo</string>
+    <string name="nav_item_starred">Izinto ozithandayo</string>
+    <string name="nav_item_history">Imbali</string>
+    <string name="nav_item_settings">Izicwangciso</string>
+
+    <string name="about_text">I-AMARadio simahla 100% kwizibhengezo kwaye igxile kwimfihlo yakho.\n\nNdiqale ndayenza le app kumama wam ukumupha amava alula, anyanisileyo eradiyo ngaphandle kwezibhengezo ezoicaphukisayo okanye ukulandelwa. Kungenxa yoko le nto i-AMARadio iyakuhlala ingenasibhengezo – sisithembiso kuye, esabelwana nani nonke.\n\nLe phrojekthi yi-fork ye-RadioDroid. Yonke ikhowudi isuswe kwi-Java yasiwa kwi-Kotlin.\n\nIkhowudi yomthombo ifumaneka kwi: https://github.com/ounben/AMARadio\n\nLe appisebenzisa uvimba wezikhululo zeradiyo wasimahla kwi https://www.radio-browser.info .\n\nImiro eya kuxhumana: ben@ounben.com\n\nIingxaki: https://github.com/ounben/AMARadio/issues\n\nLe app yihardware ekhululekileyo phantsi kwe-GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">Iuvelaphi: %1$s</string>
+    <string name="detail_star">Faka kwizinto ozithandayo</string>
+    <string name="detail_unstar">Susa kwizinto ozithandayo</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">Iyalayisha…</string>
+
+    <string name="sleep_timer" formatted="true">Isibali-xesha sokulala: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">Misa ukudlalisa emva kwemizuzu eyalelweyo</string>
+    <string name="sleep_timer_apply">Faka</string>
+    <string name="sleep_timer_clear">Cima</string>
+    <string name="nav_item_add_sleep">Isibali-xesha sokulala</string>
+
+    <string name="nav_item_save_playlist">Thumela ezithandwayo njengeplaylisti</string>
+    <string name="nav_item_load_playlist">Thatha ezithandwayo kwiplaylisti</string>
+    <string name="nav_item_save_history_playlist">Thumela imbali njengeplaylisti</string>
+    <string name="confirm_overwrite_file">Tshintshanisa le fayile?</string>
+    <string name="dialog_hint_file_name">Faka igama lefayile</string>
+    <string name="error_empty_field">Le ndawo iyadingeka</string>
+    <string name="error_invalid_file_name">Igama lefayile alilunganga</string>
+    <string name="label_button_cancel">Khansela</string>
+    <string name="label_button_overwrite">Tshintshanisa</string>
+    <string name="notify_load_playlist_nok">Akwenzekanga ukuthatha kwi %1$s&#47;%2$s</string>
+    <string name="notify_load_playlist_now">Ithatha kwi %1$s&#47;%2$s, nceda ulinde.</string>
+    <string name="notify_load_playlist_ok">Kuthathwe izikhululo ezi-%1$d kwi %2$s&#47;%3$s</string>
+    <string name="notify_save_playlist_nok">Akwenzekanga ukuthumela kwi %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_now">Ithumela kwi %1$s&#47;%2$s, nceda ulinde.</string>
+    <string name="notify_save_playlist_ok">Ithunyelwe kwi %1$s&#47;%2$s ngempumelelo</string>
+    <string name="notify_sync_list_deleted_entries">%1$d kwi-%2$d yezikhululo zalapha kuluhlu zibalwe njengezingekhoyo kwi-server</string>
+
+    <string name="searchpreference_clear_history">Cima imbali</string>
+    <string name="searchpreference_no_results">Akukho ziphumo</string>
+    <string name="searchpreference_search">Khangela…</string>
+    <string name="settings_appearance">Imbonakalo</string>
+    <string name="settings_theme_selection_title">Ithim</string>
+    <string name="theme_light">Iukhanya</string>
+    <string name="theme_dark">Ebumnyama</string>
+    <string name="theme_system">Landela isisystem</string>
+    <string name="settings_compact_style">Imowudi ecomphaktini</string>
+    <string name="settings_compact_style_desc_off">Akayikhoni enkulu eneenkcukacha zesikhululo meradiyo</string>
+    <string name="settings_compact_style_desc_on">Akayikhoni encinci ngaphandle kweencukacha</string>
+    <string name="settings_bottom_navigation">Ulawulo lwangaphantsi</string>
+    <string name="settings_ui_scale">Ubungakanani be-UI</string>
+    <string name="settings_language">Ulwimi</string>
+    <string name="ui_scale_compact">Encinci</string>
+    <string name="ui_scale_standard">Ithembekileyo yasesisystemini</string>
+    <string name="ui_scale_large">Enkulu</string>
+    <string name="ui_scale_extra_large">Enkulu kakhulu</string>
+
+    <string name="settings_interaction">Unxibelelwano</string>
+    <string name="settings_single_use_tags">Bonisa iithegi ezingafane zisetyenziswe</string>
+    <string name="settings_single_use_tags_desc_off">Iithegi ezingafane zisetyenziswe aziyi kuboniswa</string>
+    <string name="settings_single_use_tags_desc_on">Iithegi ezingafane zisetyenziswe ziya kuboniswa</string>
+
+    <string name="settings_show_broken">Izikhululo ze-radiyo ezingasebenziyo</string>
+    <string name="settings_show_broken_on">Bonisa izikhululo ezingasebenziyo kuluhlu</string>
+    <string name="settings_show_broken_off">Fihla izikhululo ezingasebenziyo kuluhlu</string>
+
+    <string name="settings_startup_behaviour">Ukuziphatha kwasekuqaleni</string>
+    <string name="action_grid_view">Imbonakalo ye-grid</string>
+    <string name="action_list_view">Imbonakalo yoluhlu</string>
+
+    <string name="startup_action_title">Inyathelo lokuqala</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">Bonisa zonke izikhululo ze-radiyo</string>
+    <string name="startup_show_favorites">Bonisa ezithandwayo</string>
+    <string name="startup_show_history">Bonisa imbali</string>
+    <string name="startup_show_last_view">Imbonakalo yokugqibela</string>
+
+    <string name="settings_load_icons">Bonisa iikhoni ezikwisikhululo ze-radiyo</string>
+    <string name="settings_load_icons_on">Iikhoni ziya kulayishwa</string>
+    <string name="settings_load_icons_off">Iikhoni aziyi kulayishwa</string>
+
+    <string name="settings_auto_favorite">Ezithandwa ngokuzenzekelayo</string>
+    <string name="settings_auto_favorite_on">Faka ngokuzenzekelayo ezithandwayo xa udlalisa</string>
+    <string name="settings_auto_favorite_off">Musa ukufaka ngokuzenzekelayo ezithandwayo xa udlalisa</string>
+
+    <string name="settings_play">Umdlali wamajelo</string>
+    <string name="settings_auto_play_on_startup">Ukudlalisa ngokuzenzekelayo</string>
+    <string name="settings_auto_play_on_startup_on">Dlalisa isikhululo samva nje xa uqala</string>
+    <string name="settings_auto_play_on_startup_off">Musa ukudlalisa isikhululo samva nje xa uqala</string>
+    <string name="settings_auto_off_on_startup">Ukususa/Ukuvala ngokuzenzekelayo</string>
+    <string name="settings_auto_off_on_startup_on">Sebenzisa isibali-xesha sokumisa kunye nokudlalisa ngokuzenzekelayo</string>
+    <string name="settings_auto_off_on_startup_off">Musa ukusebenzisa isibali-xesha sokumisa kunye nokudlalisa ngokuzenzekelayo</string>
+    <string name="settings_auto_off_sleep_timer">Isibali-xesha sokumisa ngokuzenzekelayo</string>
+    <string name="settings_auto_off_sleep_timer_desc">Misa ukudlalisa emva kwemizuzu e-%1$s</string>
+    <string name="settings_play_external">Vumela umdlali wangaphandle</string>
+    <string name="settings_play_external_desc_on">Dlalisa izikhululo ngomdlali wangaphandle</string>
+    <string name="settings_play_external_desc_off">Dlalisa izikhululo nge-AMARadio</string>
+    <string name="settings_equalizer">I-Equalizer</string>
+
+    <string name="settings_connectivity">Uxhumano</string>
+    <string name="settings_connect_timeout">Ixesha lokuxhuma lidlulile</string>
+    <string name="settings_read_timeout">Ixesha lokufunda lidlulile</string>
+    <string name="settings_resume_timeout">Ixesha lokuqhubeka lidlulile</string>
+    <string name="settings_retry_timeout">Ixesha lokuzama kabusha lidlulile</string>
+    <string name="settings_retry_delay">Ukulinda phambi kokuphinda uxhume</string>
+    <string name="settings_proxy">I-Proxy</string>
+    <string name="settings_proxy_login">Igama lomsebenzisi</string>
+    <string name="settings_proxy_password">Iphasiwedi</string>
+    <string name="settings_proxy_action_test">Vavanya</string>
+    <string name="settings_proxy_working">Kuxhumeke ngempumelelo kwi-%s</string>
+    <string name="settings_proxy_not_working">Akwenzekanga ukuxhuma kwi-%1$s\n%2$s</string>
+    <string name="settings_proxy_invalid">Ixabiso le-proxy alilunganga</string>
+    <string name="ignore_proxy_settings_invalid">Izicwangciso ze-proxy ezingalunganga azihoywanga</string>
+    <string name="settings_seconds_format">%d iisekondi</string>
+    <string name="settings_milliseconds_format">%d iimillisekondi</string>
+
+    <string name="settings_pause_when_noisy">Nqumama xa kukhutshwa ii-headphones</string>
+
+    <string name="settings_auto_resume_do_not_resume">Musa ukuqhubeka</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">Qhubeka xa kuxhunywe ngocingo</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">Qhubeka ukudlalisa xa kufakwe ii-headphones za ngocingo</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Qhubeka xa kuxhunywe nge-Bluetooth</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Qhubeka ukudlalisa xa kuxhunywe isixhobo se-Bluetooth A2DP</string>
+
+    <string name="settings_auto_resume_on_any_connected">Qhubeka nakuluphi na uxhumano</string>
+
+    <string name="settings_warn_no_wifi">Ilesiye xa kungekho Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">Lumkisa xa udlalisa ngaphandle kwe-Wi-Fi</string>
+    <string name="settings_warn_no_wifi_off">Musa ukulumkisa xa kungekho Wi-Fi</string>
+
+    <string name="notify_pre_play">Iyaxhuma</string>
+    <string name="notify_play">Iyadlalisa</string>
+    <string name="notify_paused">Inqunyiwe</string>
+    <string name="notify_metered_connection">Uxhumano oluhlawulelwayo</string>
+
+    <string name="notify_starred">Isikhululo sifakwe kwizinto ozithandayo</string>
+    <string name="notify_autostarred">Isikhululo sifakwe ngokuzenzekelayo kwizinto ozithandayo</string>
+    <string name="notify_unstarred">Isikhululo sisusiwe kwizinto ozithandayo</string>
+    <string name="notify_deleted_favorites">Izinto ezithandwayo zicinyiwe</string>
+    <string name="notify_deleted_history">Imbali icinyiwe</string>
+
+    <string name="notify_open_link_failure">Akukho app ifumanekileyo ukuvula le ilinki</string>
+
+    <string name="notify_station_removed_from_list">1 isusiwe</string>
+    <string name="action_station_removed_from_list_undo">BUYISELA</string>
+
+    <string name="alert_delete_history">Uqinisekile ufuna ukucima imbali?</string>
+    <string name="alert_delete_favorites">Uqinisekile ufuna ukucima zonke ezithandwayo?</string>
+    <string name="yes">Ewe</string>
+    <string name="no">Hayi</string>
+
+    <string name="alert_select_player">Nceda ukhethe umdlali wamajelo</string>
+    <string name="alert_select_player_name">Igama</string>
+    <string name="hostname">I-IP ye-server/Anwani</string>
+    <string name="port">Isixhobo somsebenzi wasenetwekhi</string>
+
+    <string name="alert_press_back_to_exit">Cofa emva kwakhona ukuze uphume</string>
+
+    <string name="error_stream_url">Ingxaki nge-URL yokusasaza</string>
+    <string name="error_caching_stream">Ingxaki yokugcina i-stream kwi-cache</string>
+    <string name="error_play_stream">Akwenzekanga ukudlalisa le stream</string>
+    <string name="error_stream_reconnect_timeout">Akwenzekanga ukuphinda uxhume kwi-stream: ixesha lifikile</string>
+    <string name="warning_no_network_trying_resume">Akukho netweki. Uzama ukuqhubeka xa inethiweki ibuya.</string>
+    <string name="giving_up_resume">Kuyekwe ukuzama ukuqhubeka nokudlalisa</string>
+
+    <string name="error_grant_audiofocus">Isisystem asamkelanga isicelo sokudlala msindo</string>
+
+    <string name="error_no_equalizer_found">Akukho app ye-equalizer ifumanekileyo</string>
+
+    <string name="player_info_status">Ubume:&#160;</string>
+    <string name="player_info_status_stopped">imisiwe</string>
+    <string name="player_info_status_playing">iyadlalisa</string>
+    <string name="player_info_transferred">Idatha ethunyelweyo: %1$s</string>
+
+    <string name="tab_player_art">Ikhava ye-albhamu</string>
+    <string name="tab_player_info">Ulwazi</string>
+    <string name="tab_player_history">Imbali yeengoma</string>
+
+    <string name="station_detail_bitrate">%1$d kbps</string>
+    <string name="station_detail_broken">AYISEBENZI</string>
+    <string name="station_detail_deleted_on_server">ECINYIWEYO</string>
+
+    <string name="station_details_clicks">%1$d izihlandlo ezifakiweyo</string>
+    <string name="station_details_votes">%1$d iivoti</string>
+
+    <string name="image_button_disable">Cima/Khubaza</string>
+    <string name="image_button_delete">Cima</string>
+    <string name="image_button_more">Zinye</string>
+    <string name="image_button_less">Gqitha</string>
+    <string name="image_button_repeat">Phinda</string>
+    <string name="image_button_dont_repeat">Musa ukuphinda</string>
+    <string name="icon_click_trend_decreasing">Ipopulariti iyehla</string>
+    <string name="icon_click_trend_increasing">Ipopulariti iyenyuka</string>
+    <string name="icon_click_trend_stable">Ipopulariti ayitshintshi</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">Simahla 100% kwizibhengezo kwaye ingeyakho</string>
+
+    <string name="action_play_in_external">Dlalisa ngomdlali wangaphandle</string>
+    <string name="action_choose_external_player">Khetha umdlali wangaphandle</string>
+
+    <string name="settings_disable_battery_optimization">Ukudlalisa ngasemva</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">Ezinye</string>
+    <string name="settings_rate_app">Vavanya i-AMARadio</string>
+    <string name="settings_rate_app_summary">Ukuba uyayithanda le app, nceda ushiye uphononongo kwi-Play Store!</string>
+    <string name="settings_rate_app_github">Uyayonwabela i-AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Shiya inkwenkwezi kwi-GitHub! Inceda abanye bafumane le app.</string>
+    <string name="settings_statistics">Iitshati/Izibalo</string>
+    <string name="settings_about">Mabapi ne-AMARadio</string>
+
+    <string name="description_btn_skip_to_next">Gqithela kwi elandelayo</string>
+    <string name="description_btn_skip_to_previous">Buyela kwi eyadlula</string>
+
+    <string-array name="weekdays">
+        <item>C</item>
+        <item>V</item>
+        <item>S</item>
+        <item>T</item>
+        <item>S</item>
+        <item>L</item>
+        <item>M</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">I-URL yokusasaza ikopishwe ngempumelelo</string>
+    <string name="notify_track_info_copied">Ulwazi lwengoma lukopishwe ngempumelelo</string>
+
+    <string-array name="actions_station_link">
+        <item>Tyelela iwebhusayithi</item>
+        <item>Kopa i-URL yokusasaza</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">Kufunyaniswe uxhumano oluhlawulelwayo</string>
+    <string name="alert_metered_connection_message">Uxhumano oluhlawulelwayo lunokubiza imali eyoziweyo, cofa \'Kulungile\' ukuze uqhubeke.</string>
+    <string name="nav_item_statistics">Izibalo</string>
+    <string name="nav_item_about">Mabapi</string>
+    <string name="refresh">Hlaziya</string>
+    <string name="action_filter">Isefa/Filter</string>
+    <string name="filter_country">Ilizwe</string>
+    <string name="filter_tag">Ithegi</string>
+    <string name="filter_language">Ulwimi</string>
+    <string name="filter_sort_by">Oda ngokutsho</string>
+    <string name="filter_reverse">Oda ngobujikelezo</string>
+    <string name="filter_apply">Sebenzisa isefa</string>
+    <string name="sort_name">Igama</string>
+    <string name="sort_votes">Iivoti</string>
+    <string name="sort_clicks">Izihlandlo zomnxeba</string>
+    <string name="sort_lastchange">Utshintsho lwamva nje</string>
+    <string name="filter_select_country">Khetha ilizwe</string>
+    <string name="filter_select_language">Khetha ulwimi</string>
+    <string name="filter_type_tag">Faka ithegi…</string>
+    <string name="filter_tap_to_configure">Cofa ukuze usete</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">Ilogo yesikhululo meradiyo</string>
+    <string name="accessibility_favorite_selected">Ezithandwayo, ikhethiwe</string>
+    <string name="accessibility_favorite_not_selected">Ezithandwayo, ayikhethwanga</string>
+    <string name="accessibility_category_icon">Ikhoni yokhetho</string>
+    <string name="accessibility_playing">Ebadlalwayo ngoku</string>
+    <string name="accessibility_menu">Vula imenyu</string>
+    <string name="accessibility_search_back">Vala ukukhangela</string>
+    <string name="accessibility_filter_reverse">Tshintsha i-oda yokuhlela</string>
+    <string name="accessibility_clear_text">Cima amagama</string>
+    <string name="accessibility_back">Ngemva</string>
+    <string name="accessibility_configure">Seta</string>
+    <string name="accessibility_close">Vala</string>
+    <string name="accessibility_add_filter">Faka isefa</string>
+    <string name="accessibility_station_options">Izinhlobo zesikhululo</string>
+    <string name="not_applicable">haipatikani</string>
+    <string name="accessibility_station_description">Isikhululo: %1$s, Ulwimi: %2$s, Iithegi: %3$s</string>
+
+    <string name="error_no_file_manager">Akufunyanwanga mmenejali wefayile ye-system.</string>
+    <string name="error_no_browser">Akufunyanwanga bhrawuza yewebhu.</string>
+    <string name="error_no_homepage">Akukho khasi lasekhaya lifumanekayo kulesi sikhululo</string>
+    <string name="tab_custom_stations">Ezinye</string>
+    <string name="action_add_custom">Faka isikhululo esitsha</string>
+    <string name="station_name">Igama lesikhululo meradiyo</string>
+    <string name="stream_url">I-URL yokusasaza</string>
+    <string name="favicon_url">I-URL yelogo yesikhululo (Favicon)</string>
+    <string name="select_image">Khetha umfanekiso</string>
+    <string name="error_invalid_url">Nceda ufake i-URL echanekileyo</string>
+    <string name="action_save">Gcina</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">Iminxeba yokudlala elula</string>
+    <string name="widget_description_full">Umdlali kunye noluhlu lwezikhululo ze-radiyo</string>
+
+    <string name="settings_auto_db_update">Ingqesho yokungqelanisa idatha ngasemva</string>
+    <string name="settings_auto_db_update_desc">Hlaziya i-database yesikhululo ngokuzenzekelayo nge-Radio-Browser API.</string>
+    <string name="settings_station_click_counter">Ibala lezihlandlo zokudlala</string>
+    <string name="settings_station_click_counter_desc">Ncedisa izibalo ze-Radio-Browser ngokuxhasa idatha yengoma ngokungaziwa.</string>
+
+    <string name="settings_remove_notification_on_stop">Susa isaziso xa ukudlala kumisiwe</string>
+    <string name="settings_remove_notification_on_stop_desc">Susa isaziso sovelelo ngokuzenzekelayo xa ukudlalisa kumisiwe</string>
+    <string name="settings_auto_resume_audio_focus">Qhubeka emva kokuba umsindo umisiwe</string>
+    <string name="settings_auto_resume_audio_focus_desc">Qhubeka ukudlalisa ngokuzenzekelayo emva kweminxeba, ialam okanye ezinye izithintelo</string>
+
+    <string name="settings_backup_restore">Ikhophi yasemva kunye nokuyibuyisela</string>
+    <string name="settings_export_backup">Yakha ikhophi yasemva ezeleyo (ZIP)</string>
+    <string name="settings_export_backup_desc">Igcina zonke ezithandwayo, izikhululo ezitsha kunye neekhoni kwifayile ye-ZIP</string>
+    <string name="settings_import_backup">Buyisela ikhophi yasemva (ZIP)</string>
+    <string name="settings_import_backup_desc">Ibuyisela ezithandwayo kunye nezikhululo ezitsha kwifayile ye-ZIP</string>
+    <string name="backup_export_success">Ikhophi yasemva igciniwe ngempumelelo</string>
+    <string name="backup_export_error">Akwenzekanga ukugcina ikhophi yasemva</string>
+    <string name="backup_import_success">Ikhophi yasemva ibuyiselwe ngempumelelo</string>
+    <string name="backup_import_error">Akwenzekanga ukubuyisela ikhophi yasemva</string>
+
+    <string name="database_summary_title">I-database yendawo</string>
+    <string name="database_total_stations">Zonke izikhululo ze-radiyo</string>
+    <string name="database_last_sync">Uhlaziyo lwamva nje</string>
+    <string name="database_update_now">Hlaziya i-database ngoku</string>
+    <string name="database_full_update">Hlaziya i-database</string>
+    <string name="database_syncing">Iyangqelanisa…</string>
+    <string name="database_downloading">Iyalayisha…</string>
+    <string name="database_stations_loaded">%1$s izikhululo ze-radiyo</string>
+    <string name="database_sync_channel_name">Ungqelaniso lwe-database yezikhululo ze-radiyo</string>
+    <string name="database_sync_success">Uhlaziyo lwe-database lwezikhululo lugqitywe ngempumelelo</string>
+    <string name="database_error_no_connection">Akukho xhumano lwe-intanethi</string>
+    <string name="database_error_no_space">Inkxaso yediski ayinegama</string>
+    <string name="database_error_failed">Uhlaziyo lwe-database lwalehluleka</string>
+
+    <string name="settings_disable_battery_optimization_desc">Ukuba ufuna ukuqhubeka nokudlala xa isikrini sicinyiwe, seta ukusetyenziswa kwebhetri kwi-\'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Vula izicwangciso</string>
+    <string name="battery_opt_later">Ngexesha elizayo</string>
 </resources>

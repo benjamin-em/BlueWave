@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Unda Milisho Yako ya Vituo vya Redio</string>
     <string name="filter_empty_desc">Unda mtazamo wa kibinafsi kwa kuchanganya vigezo vingi. Unaweza kupunguza utafutaji wako kwa kutumia:</string>
     <string name="filter_empty_filter_by">Chuja kwa:</string>
-    <string name="filter_empty_filter_desc">Nchi, Jina la Kituo, Lebo, au Lugha</string>
+    <string name="filter_empty_filter_desc">Nchi, Jina la Kituo cha Redio, Lebo, au Lugha</string>
     <string name="filter_empty_sort_by">Panga kwa:</string>
     <string name="filter_empty_sort_desc">Mibofyo, Alfabeti, Kura, au Mabadiliko ya Mwisho</string>
     <string name="filter_empty_hint">Andika jina kwenye uwanja hapo juu ili kuhifadhi mtazamo huu!</string>
-    <string name="error_station_load">Haikuweza kuunganishwa na kituo</string>
-    <string name="error_list_update">Haikuweza kuunganishwa na seva ya redio browser</string>
+    <string name="error_station_load">Haikuweza kuunganishwa na kituo cha redio</string>
+    <string name="error_list_update">Haikuweza kuunganishwa na seva ya Radio-Browser</string>
 
     <string name="error_no_connection">Hakuna muunganisho wa intaneti unaopatikana.</string>
     <string name="warning_volume_zero">Ivolumu ikuziro. Ungase ungezwa lutho.</string>
 
-    <string name="share_action">Shiriki kiungo cha kituo na…</string>
+    <string name="share_action">Shiriki kiungo cha kituo cha redio na…</string>
 
-    <string name="nav_item_stations">Vituo</string>
+    <string name="nav_item_stations">Vituo vya Redio</string>
     <string name="nav_item_starred">Vipendwa</string>
     <string name="nav_item_history">Historia</string>
     <string name="nav_item_settings">Mipangilio</string>
 
-    <string name="about_text">AMARadio haina matangazo 100% na imezingatia faragha.\n\nMimi awali nilitengeneza programu hii kwa ajili ya mama yangu ili kumpa uzoefu rahisi na wa kweli wa redio bila matangazo ya kero au ufuatiliaji. Hii ndiyo sababu AMARadio itabaki bila matangazo daima – ni ahadi kwake, iliyoshirikiwa nanyi nyote.\n\nMradi huu ni fork ya https://github.com/segler-alex/RadioDroid bora. Kanuni nzima imehama kutoka Java hadi Kotlin ili kuhakikisha programu inabaki ya kisasa na inaendana na matoleo ya baadaye ya Android.\n\nSource code inapatikana katika: https://github.com/ounben/AMARadio\n\nProgramu hii inatumia saraka ya kituo cha redio cha bure katika https://www.radio-browser.info .\nKila mtu anaweza kuongeza vituo kwake. Inafanya kazi kama wiki kwa vituo vya redio mtandaoni.\n\nWasiliana: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nIkiwa unapenda programu na unataka kusaidia, jisikie huru kunitumia barua pepe.\nPia mawazo kwa vipengele vipya yanathaminiwa daima!\n\nProgramu hii ni programu huru, iliyopewa leseni chini ya GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio haina matangazo 100% na imezingatia faragha.\n\nMimi awali nilitengeneza programu hii kwa ajili ya mama yangu ili kumpa uzoefu rahisi na wa kweli wa redio bila matangazo ya kero au ufuatiliaji. Hii ndiyo sababu AMARadio itabaki bila matangazo daima – ni ahadi kwake, iliyoshirikiwa nanyi nyote.\n\nMradi huu ni fork ya RadioDroid. Kanuni nzima imehama kutoka Java hadi Kotlin ili kuhakikisha programu inabaki ya kisasa na inaendana na matoleo ya baadaye ya Android.\n\nSource code inapatikana katika: https://github.com/ounben/AMARadio\n\nProgramu hii inatumia saraka ya kituo cha redio cha bure katika https://www.radio-browser.info .\nKila mtu anaweza kuongeza vituo kwake. Inafanya kazi kama wiki kwa vituo vya redio mtandaoni.\n\nWasiliana: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nIkiwa unapenda programu na unataka kusaidia, jisikie huru kunitumia barua pepe.\nPia mawazo kwa vipengele vipya yanathaminiwa daima!\n\nProgramu hii ni programu huru, iliyopewa leseni chini ya GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Toleo: %1$s</string>
     <string name="detail_star">Ongeza kwenye vipendwa</string>
     <string name="detail_unstar">Futa kwenye vipendwa</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Giza</string>
     <string name="theme_system">Fuata mfumo</string>
     <string name="settings_compact_style">Njia ya mkato</string>
-    <string name="settings_compact_style_desc_off">Ikon kubwa iliyochukuliwa na maelezo ya kituo</string>
-    <string name="settings_compact_style_desc_on">Ikon ndogo iliyochukuliwa bila maelezo ya kituo</string>
+    <string name="settings_compact_style_desc_off">Ikon kubwa iliyochukuliwa na maelezo ya kituo cha redio</string>
+    <string name="settings_compact_style_desc_on">Ikon ndogo iliyochukuliwa bila maelezo ya kituo cha redio</string>
     <string name="settings_bottom_navigation">Urambazaji wa chini</string>
     <string name="settings_ui_scale">Kiwango cha UI</string>
     <string name="settings_language">Lugha</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Lebo zinazotumiwa mara chache hazitaonyeshwa</string>
     <string name="settings_single_use_tags_desc_on">Lebo zinazotumiwa mara chache zitaonyeshwa</string>
 
-    <string name="settings_show_broken">Vituo vilivyoharibika</string>
-    <string name="settings_show_broken_on">Onyesha vituo vilivyoharibika kwenye orodha</string>
-    <string name="settings_show_broken_off">Usionyeshe vituo vilivyoharibika kwenye orodha</string>
+    <string name="settings_show_broken">Vituo vya redio vilivyoharibika</string>
+    <string name="settings_show_broken_on">Onyesha vituo vya redio vilivyoharibika kwenye orodha</string>
+    <string name="settings_show_broken_off">Usionyeshe vituo vya redio vilivyoharibika kwenye orodha</string>
 
     <string name="settings_startup_behaviour">Tabia ya Kuanza</string>
     <string name="action_grid_view">Mwonekano wa Gridi</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Hatua ya kuanza</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Onyesha vituo vyote</string>
+    <string name="startup_show_all_stations">Onyesha vituo vyote vya redio</string>
     <string name="startup_show_favorites">Onyesha vipendwa</string>
     <string name="startup_show_history">Onyesha historia</string>
     <string name="startup_show_last_view">Mtazamo wa mwisho</string>
 
-    <string name="settings_load_icons">Onyesha ikon za kituo</string>
+    <string name="settings_load_icons">Onyesha ikon za kituo cha redio</string>
     <string name="settings_load_icons_on">Ikon zitapakuliwa</string>
     <string name="settings_load_icons_off">Ikon hazitapakuliwa</string>
 
     <string name="settings_auto_favorite">Vipendwa vya kiotomatiki</string>
-    <string name="settings_auto_favorite_on">Ongeza vituo kiotomatiki kwenye vipendwa wakati unacheza</string>
-    <string name="settings_auto_favorite_off">Usiongeze vituo kiotomatiki kwenye vipendwa wakati unacheza</string>
+    <string name="settings_auto_favorite_on">Ongeza vituo vya redio kiotomatiki kwenye vipendwa wakati unacheza</string>
+    <string name="settings_auto_favorite_off">Usiongeze vituo vya redio kiotomatiki kwenye vipendwa wakati unacheza</string>
 
     <string name="settings_play">Mchezaji</string>
     <string name="settings_auto_play_on_startup">Cheza kiotomatiki</string>
-    <string name="settings_auto_play_on_startup_on">Cheza kituo cha mwisho unapoanza</string>
-    <string name="settings_auto_play_on_startup_off">Usicheze kituo cha mwisho unapoanza</string>
+    <string name="settings_auto_play_on_startup_on">Cheza kituo cha redio cha mwisho unapoanza</string>
+    <string name="settings_auto_play_on_startup_off">Usicheze kituo cha redio cha mwisho unapoanza</string>
     <string name="settings_auto_off_on_startup">Acha kiotomatiki</string>
     <string name="settings_auto_off_on_startup_on">Tumia kipima muda cha kuacha kiotomatiki na uchezaji wa kiotomatiki</string>
     <string name="settings_auto_off_on_startup_off">Usitumie kipima muda cha kuacha kiotomatiki na uchezaji wa kiotomatiki</string>
     <string name="settings_auto_off_sleep_timer">Kipima muda cha kuacha kiotomatiki</string>
     <string name="settings_auto_off_sleep_timer_desc">Acha kucheza baada ya dakika %1$s</string>
     <string name="settings_play_external">Washa mchezaji wa nje</string>
-    <string name="settings_play_external_desc_on">Cheza vituo na mchezaji wa nje</string>
-    <string name="settings_play_external_desc_off">Cheza vituo na AMARadio</string>
+    <string name="settings_play_external_desc_on">Cheza vituo vya redio na mchezaji wa nje</string>
+    <string name="settings_play_external_desc_off">Cheza vituo vya redio na AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Uunganishaji</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Imesitishwa</string>
     <string name="notify_metered_connection">Muunganisho uliopimwa</string>
 
-    <string name="notify_starred">Kituo kimeongezwa kwenye vipendwa</string>
-    <string name="notify_autostarred">Kituo kimeongezwa kiotomatiki kwenye vipendwa</string>
-    <string name="notify_unstarred">Kituo kimeondolewa kwenye vipendwa</string>
+    <string name="notify_starred">Kituo cha redio kimeongezwa kwenye vipendwa</string>
+    <string name="notify_autostarred">Kituo cha redio kimeongezwa kiotomatiki kwenye vipendwa</string>
+    <string name="notify_unstarred">Kituo cha redio kimeondolewa kwenye vipendwa</string>
     <string name="notify_deleted_favorites">Vipendwa vimefutwa</string>
     <string name="notify_deleted_history">Historia imefutwa</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Tafadhali chagua mchezaji</string>
     <string name="alert_select_player_name">Jina</string>
-    <string name="hostname">Jina la mwenyeji</string>
-    <string name="port">Mlango</string>
+    <string name="hostname">Anwani ya seva</string>
+    <string name="port">Lango la mtandao</string>
 
     <string name="alert_press_back_to_exit">Bonyeza nyuma mara moja zaidi ili kutoka</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Cheza katika mchezaji wa nje</string>
     <string name="action_choose_external_player">Chagua mchezaji wa nje</string>
 
-    <string name="settings_disable_battery_optimization">Uboreshaji wa betri</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Uboreshaji wa betri umepuuzwa, AMARadio inapaswa kuwa na uwezo wa kupata tena umakini kila wakati.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Uboreshaji wa betri umeamilishwa, AMARadio haitaweza kupata tena umakini ikiwa iko nyuma.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Uchezaji wa Chini Chini</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Nyingine</string>
     <string name="settings_rate_app">Kadiria AMARadio</string>
     <string name="settings_rate_app_summary">Ikiwa unapenda programu, tafadhali acha ukaguzi kwenye Play Store!</string>
+    <string name="settings_rate_app_github">Je, unafurahia AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Acha nyota kwenye GitHub! Husaidia wengine kugundua programu na kusaidia usanidi wa siku zijazo.</string>
     <string name="settings_statistics">Takwimu</string>
     <string name="settings_about">Kuhusu AMARadio</string>
 
@@ -278,13 +278,13 @@
     <string name="description_btn_skip_to_previous">Ruka hadi iliyopita</string>
 
     <string-array name="weekdays">
-        <item>Jp</item>
-        <item>Jt</item>
-        <item>Jn</item>
-        <item>Jt</item>
-        <item>Al</item>
-        <item>Ij</item>
-        <item>Jm</item>
+        <item>P</item>
+        <item>J</item>
+        <item>J</item>
+        <item>J</item>
+        <item>A</item>
+        <item>I</item>
+        <item>J</item>
     </string-array>
 
     <string name="notify_stream_url_copied">URL ya mtiririko imenakiliwa kwa mafanikio</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Nembo ya kituo</string>
+    <string name="accessibility_station_logo">Nembo ya kituo cha redio</string>
     <string name="accessibility_favorite_selected">Kipendwa, kimechaguliwa</string>
     <string name="accessibility_favorite_not_selected">Kipendwa, hakijachaguliwa</string>
     <string name="accessibility_category_icon">Aikoni ya kategoria</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Sanidi</string>
     <string name="accessibility_close">Funga</string>
     <string name="accessibility_add_filter">Ongeza kichujio</string>
-    <string name="accessibility_station_options">Chaguo za kituo</string>
+    <string name="accessibility_station_options">Chaguo za kituo cha redio</string>
     <string name="not_applicable">haipatikani</string>
     <string name="accessibility_station_description">Kituo: %1$s, Lugha: %2$s, Lebo: %3$s</string>
 
     <string name="error_no_file_manager">Haikuweza kupata kidhibiti faili cha mfumo. Tafadhali hakikisha kuwa kichunguzi cha faili kimesakinishwa na kuwezeshwa.</string>
     <string name="error_no_browser">Haikuweza kupata kivinjari. Tafadhali sakinisha kivinjari ili kufungua kiungo hiki.</string>
-    <string name="error_no_homepage">Hakuna ukurasa wa nyumbani unaopatikana kwa kituo hiki</string>
-    <string name="tab_custom_stations">Desturi</string>
-    <string name="action_add_custom">Ongeza Kituo Maalum</string>
-    <string name="station_name">Jina la Kituo</string>
-    <string name="stream_url">Tiririsha URL</string>
-    <string name="favicon_url">URL ya Favicon (hiari)</string>
+    <string name="error_no_homepage">Hakuna ukurasa wa nyumbani unaopatikana kwa kituo hiki cha redio</string>
+    <string name="tab_custom_stations">Maalum</string>
+    <string name="action_add_custom">Ongeza kituo cha redio maalum</string>
+    <string name="station_name">Jina la kituo cha redio</string>
+    <string name="stream_url">URL ya mtiririko</string>
+    <string name="favicon_url">URL ya Nembo ya Kituo (Favicon)</string>
     <string name="select_image">Chagua Picha</string>
     <string name="error_invalid_url">Tafadhali weka URL halali</string>
     <string name="action_save">Hifadhi</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Vidhibiti vya haraka vya mchezaji</string>
-    <string name="widget_description_full">Mchezaji na orodha ya kituo</string>
+    <string name="widget_description_small">Vidhibiti vya haraka vya kicheza sauti</string>
+    <string name="widget_description_full">Kicheza sauti na orodha ya vituo vya redio</string>
 
     <string name="settings_auto_db_update">Usawazishaji wa Data ya Mandharinyuma</string>
-    <string name="settings_auto_db_update_desc">Sasisha hifadhidata ya kituo kiotomatiki kupitia API ya Kivinjari-Radio (inapendekezwa).</string>
-    <string name="settings_station_click_counter">Kaunta ya kubofya kituo</string>
-    <string name="settings_station_click_counter_desc">Tumia takwimu za Kivinjari-Redio kwa kushiriki matukio ya kucheza bila kujulikana.</string>
-    <string name="settings_rate_app_github">Je, unafurahia AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Acha nyota kwenye GitHub! Husaidia wengine kugundua programu na kusaidia usanidi wa siku zijazo.</string>
+    <string name="settings_auto_db_update_desc">Sasisha hifadhidata ya kituo kiotomatiki kupitia API ya Radio-Browser (inapendekezwa).</string>
+    <string name="settings_station_click_counter">Kaunta ya kubofya kituo cha redio</string>
+    <string name="settings_station_click_counter_desc">Tumia takwimu za Radio-Browser kwa kushiriki matukio ya uchezaji sauti bila kujulikana.</string>
 
-    <string name="settings_remove_notification_on_stop">Ondoa arifa programu imefungwa</string>
-    <string name="settings_remove_notification_on_stop_desc">Ondoa arifa ya media kiotomatiki wakati programu imefungwa kutoka kwa programu za hivi majuzi</string>
+    <string name="settings_remove_notification_on_stop">Ondoa arifa inapowekwa kando</string>
+    <string name="settings_remove_notification_on_stop_desc">Ondoa arifa ya media kiotomatiki wakati uchezaji unaposimama</string>
     <string name="settings_auto_resume_audio_focus">Endelea baada ya kupoteza umakini wa sauti</string>
     <string name="settings_auto_resume_audio_focus_desc">Rejesha uchezaji kiotomatiki baada ya simu, kengele au sauti zingine kusimama</string>
+
+    <string name="settings_backup_restore">Hifadhi na Rejesha</string>
+    <string name="settings_export_backup">Unda Hifadhi Kamili (ZIP)</string>
+    <string name="settings_export_backup_desc">Inahifadhi vipendwa vyote, vituo maalum na aikoni kwenye faili ya ZIP</string>
+    <string name="settings_import_backup">Rejesha Hifadhi (ZIP)</string>
+    <string name="settings_import_backup_desc">Inarejesha vipendwa na vituo maalum kutoka kwa faili ya hifadhi ya ZIP</string>
+    <string name="backup_export_success">Hifadhi imehifadhiwa kwa mafanikio</string>
+    <string name="backup_export_error">Imeshindwa kuhifadhi hifadhi</string>
+    <string name="backup_import_success">Hifadhi imerejeshwa kwa mafanikio</string>
+    <string name="backup_import_error">Imeshindwa kurejesha hifadhi</string>
+
+    <string name="database_summary_title">Hifadhidata ya Ndani</string>
+    <string name="database_total_stations">Jumla ya Vituo vya Redio</string>
+    <string name="database_last_sync">Masasisho ya Mwisho</string>
+    <string name="database_update_now">Sasisha Hifadhidata Sasa</string>
+    <string name="database_full_update">Sasisha Hifadhidata</string>
+    <string name="database_syncing">Inasawazisha…</string>
+    <string name="database_downloading">Inapakua…</string>
+    <string name="database_stations_loaded">%1$s vituo vya redio</string>
+    <string name="database_sync_channel_name">Usawazishaji wa Hifadhidata ya Vituo vya Redio</string>
+    <string name="database_sync_success">Usasisho wa hifadhidata ya vituo ukamilika kwa mafanikio</string>
+    <string name="database_error_no_connection">Hakuna muunganisho wa intaneti</string>
+    <string name="database_error_no_space">Nafasi haitoshi kwenye diski</string>
+    <string name="database_error_failed">Usasisho wa hifadhidata umeshindwa</string>
+
+    <string name="settings_disable_battery_optimization_desc">Ili kuendelea kucheza skrini ikiwa imezimwa, weka matumizi ya betri kuwa \'Bila Vikwazo\'.</string>
+    <string name="battery_opt_open_settings">Fungua Mipangilio</string>
+    <string name="battery_opt_later">Baadaye</string>
 </resources>

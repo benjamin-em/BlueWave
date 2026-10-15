@@ -52,24 +52,24 @@
     <string name="filter_empty_title">فهرست رادیویی سفارشی خود را بسازید</string>
     <string name="filter_empty_desc">با ترکیب چندین معیار، یک نمای شخصی‌سازی شده ایجاد کنید. می‌توانید جستجوی خود را محدود کنید با:</string>
     <string name="filter_empty_filter_by">فیلتر بر اساس:</string>
-    <string name="filter_empty_filter_desc">کشور، نام ایستگاه، برچسب‌ها یا زبان</string>
+    <string name="filter_empty_filter_desc">کشور، نام ایستگاه رادیویی، برچسب‌ها یا زبان</string>
     <string name="filter_empty_sort_by">مرتب‌سازی بر اساس:</string>
     <string name="filter_empty_sort_desc">کلیک‌ها، الفبا، رای‌ها یا آخرین تغییر</string>
     <string name="filter_empty_hint">برای ذخیره این نما، یک نام در فیلد بالا تایپ کنید!</string>
-    <string name="error_station_load">اتصال به ایستگاه برقرار نشد</string>
-    <string name="error_list_update">اتصال به سرور radio browser برقرار نشد</string>
+    <string name="error_station_load">اتصال به ایستگاه رادیویی برقرار نشد</string>
+    <string name="error_list_update">اتصال به سرور Radio-Browser برقرار نشد</string>
 
     <string name="error_no_connection">اتصال به اینترنت در دسترس نیست</string>
     <string name="warning_volume_zero">صدا روی صفر است. ممکن است چیزی نشنوید.</string>
 
-    <string name="share_action">اشتراک‌گذاری لینک ایستگاه با…</string>
+    <string name="share_action">اشتراک‌گذاری لینک ایستگاه رادیویی با…</string>
 
-    <string name="nav_item_stations">ایستگاه‌ها</string>
+    <string name="nav_item_stations">ایستگاه‌های رادیویی</string>
     <string name="nav_item_starred">علاقه‌مندی‌ها</string>
     <string name="nav_item_history">تاریخچه</string>
     <string name="nav_item_settings">تنظیمات</string>
 
-    <string name="about_text">برنامه AMARadio ۱۰۰٪ بدون تبلیغات و متمرکز بر حریم خصوصی است.\n\nمن این برنامه را در ابتدا برای مادرم توسعه دادم تا تجربه رادیویی ساده و صادقانه‌ای بدون تبلیغات آزاردهنده یا ردیابی داشته باشد. به همین دلیل AMARadio همیشه بدون تبلیغات باقی خواهد ماند – این قولی است به او که با همه شما به اشتراک گذاشته شده است.\n\nاین پروژه انشعابی (fork) از برنامه عالی https://github.com/segler-alex/RadioDroid است. کل کدها از جاوا به کاتلین منتقل شده است تا برنامه مدرن و با نسخه‌های آینده اندروید سازگار بماند.\n\nسورس کد در این آدرس در دسترس است: https://github.com/ounben/AMARadio\n\nاین برنامه از فهرست رایگان ایستگاه‌های رادیویی در https://www.radio-browser.info استفاده می‌کند. هر کسی می‌تواند به آن ایستگاه اضافه کند. این سایت مانند ویکی‌پدیا برای ایستگاه‌های رادیویی آنلاین عمل می‌کند.\n\nتماس: ben@ounben.com\n\nگزارش مشکلات: https://github.com/ounben/AMARadio/issues\n\nاگر از این نرم‌افزار خوشتان می‌آید و می‌خواهید کمک کنید، در ارسال ایمیل به من تردید نکنید. همچنین ایده‌ها برای ویژگی‌های جدید همیشه مورد استقبال قرار می‌گیرند!\n\nاین برنامه یک نرم‌افزار آزاد است که تحت لایسنس GPLv3 منتشر شده است. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">برنامه AMARadio ۱۰۰٪ بدون تبلیغات و متمرکز بر حریم خصوصی است.\n\nمن این برنامه را در ابتدا برای مادرم توسعه دادم تا تجربه رادیویی ساده و صادقانه‌ای بدون تبلیغات آزاردهنده یا ردیابی داشته باشد. به همین دلیل AMARadio همیشه بدون تبلیغات باقی خواهد ماند – این قولی است به او که با همه شما به اشتراک گذاشته شده است.\n\nاین پروژه انشعابی (fork) از برنامه عالی RadioDroid است. کل کدها از جاوا به کاتلین منتقل شده است تا برنامه مدرن و با نسخه‌های آینده اندروید سازگار بماند.\n\nسورس کد در این آدرس در دسترس است: https://github.com/ounben/AMARadio\n\nاین برنامه از فهرست رایگان ایستگاه‌های رادیویی در https://www.radio-browser.info استفاده می‌کند. هر کسی می‌تواند به آن ایستگاه اضافه کند. این سایت مانند ویکی‌پدیا برای ایستگاه‌های رادیویی آنلاین عمل می‌کند.\n\nتماس: ben@ounben.com\n\nگزارش مشکلات: https://github.com/ounben/AMARadio/issues\n\nاگر از این نرم‌افزار خوشتان می‌آید و می‌خواهید کمک کنید، در ارسال ایمیل به من تردید نکنید. همچنین ایده‌ها برای ویژگی‌های جدید همیشه مورد استقبال قرار می‌گیرند!\n\nاین برنامه یک نرم‌افزار آزاد است که تحت لایسنس GPLv3 منتشر شده است. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">نسخه: %1$s</string>
     <string name="detail_star">افزودن به علاقه‌مندی‌ها</string>
     <string name="detail_unstar">حذف از علاقه‌مندی‌ها</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">تاریک</string>
     <string name="theme_system">مطابق سیستم</string>
     <string name="settings_compact_style">حالت فشرده</string>
-    <string name="settings_compact_style_desc_off">آیکون بزرگ به همراه جزئیات ایستگاه</string>
-    <string name="settings_compact_style_desc_on">آیکون کوچک بدون جزئیات ایستگاه</string>
+    <string name="settings_compact_style_desc_off">آیکون بزرگ به همراه جزئیات ایستگاه رادیویی</string>
+    <string name="settings_compact_style_desc_on">آیکون کوچک بدون جزئیات ایستگاه رادیویی</string>
     <string name="settings_bottom_navigation">ناوبری پایین</string>
     <string name="settings_ui_scale">مقیاس رابط کاربری</string>
     <string name="settings_language">زبان</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">برچسب‌های کم‌کاربرد نشان داده نمی‌شوند</string>
     <string name="settings_single_use_tags_desc_on">برچسب‌های کم‌کاربرد نشان داده می‌شوند</string>
 
-    <string name="settings_show_broken">ایستگاه‌های خراب</string>
-    <string name="settings_show_broken_on">نمایش ایستگاه‌های خراب در لیست‌ها</string>
-    <string name="settings_show_broken_off">عدم نمایش ایستگاه‌های خراب در لیست‌ها</string>
+    <string name="settings_show_broken">ایستگاه‌های رادیویی خراب</string>
+    <string name="settings_show_broken_on">نمایش ایستگاه‌های رادیویی خراب در لیست‌ها</string>
+    <string name="settings_show_broken_off">عدم نمایش ایستگاه‌های رادیویی خراب در لیست‌ها</string>
 
     <string name="settings_startup_behaviour">رفتار هنگام شروع</string>
     <string name="action_grid_view">نمای شبکه‌ای</string>
@@ -133,12 +133,12 @@
 
     <string name="startup_action_title">عملیات شروع</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">نمایش همه ایستگاه‌ها</string>
+    <string name="startup_show_all_stations">نمایش همه ایستگاه‌های رادیویی</string>
     <string name="startup_show_favorites">نمایش علاقه‌مندی‌ها</string>
     <string name="startup_show_history">نمایش تاریخچه</string>
     <string name="startup_show_last_view">آخرین نما</string>
 
-    <string name="settings_load_icons">نمایش آیکون ایستگاه‌ها</string>
+    <string name="settings_load_icons">نمایش آیکون ایستگاه‌های رادیویی</string>
     <string name="settings_load_icons_on">آیکون‌ها دانلود خواهند شد</string>
     <string name="settings_load_icons_off">آیکون‌ها دانلود نخواهند شد</string>
 
@@ -148,16 +148,16 @@
 
     <string name="settings_play">پخش‌کننده</string>
     <string name="settings_auto_play_on_startup">پخش خودکار</string>
-    <string name="settings_auto_play_on_startup_on">پخش آخرین ایستگاه هنگام شروع برنامه</string>
-    <string name="settings_auto_play_on_startup_off">عدم پخش آخرین ایستگاه هنگام شروع برنامه</string>
+    <string name="settings_auto_play_on_startup_on">پخش آخرین ایستگاه رادیویی هنگام شروع برنامه</string>
+    <string name="settings_auto_play_on_startup_off">عدم پخش آخرین ایستگاه رادیویی هنگام شروع برنامه</string>
     <string name="settings_auto_off_on_startup">توقف خودکار</string>
     <string name="settings_auto_off_on_startup_on">استفاده از تایمر توقف با پخش خودکار</string>
     <string name="settings_auto_off_on_startup_off">عدم استفاده از تایمر توقف با پخش خودکار</string>
     <string name="settings_auto_off_sleep_timer">تایمر توقف خودکار</string>
     <string name="settings_auto_off_sleep_timer_desc">توقف پخش بعد از %1$s دقیقه</string>
     <string name="settings_play_external">فعال‌سازی پخش‌کننده خارجی</string>
-    <string name="settings_play_external_desc_on">پخش ایستگاه‌ها با پخش‌کننده خارجی</string>
-    <string name="settings_play_external_desc_off">پخش ایستگاه‌ها با AMARadio</string>
+    <string name="settings_play_external_desc_on">پخش ایستگاه‌های رادیویی با پخش‌کننده خارجی</string>
+    <string name="settings_play_external_desc_off">پخش ایستگاه‌های رادیویی با AMARadio</string>
     <string name="settings_equalizer">اکولایزر</string>
 
     <string name="settings_connectivity">اتصال</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">متوقف شده</string>
     <string name="notify_metered_connection">اتصال با هزینه داده</string>
 
-    <string name="notify_starred">ایستگاه به علاقه‌مندی‌ها اضافه شد</string>
-    <string name="notify_autostarred">ایستگاه به طور خودکار به علاقه‌مندی‌ها اضافه شد</string>
-    <string name="notify_unstarred">ایستگاه از علاقه‌مندی‌ها حذف شد</string>
+    <string name="notify_starred">ایستگاه رادیویی به علاقه‌مندی‌ها اضافه شد</string>
+    <string name="notify_autostarred">ایستگاه رادیویی به طور خودکار به علاقه‌مندی‌ها اضافه شد</string>
+    <string name="notify_unstarred">ایستگاه رادیویی از علاقه‌مندی‌ها حذف شد</string>
     <string name="notify_deleted_favorites">علاقه‌مندی‌ها حذف شدند</string>
     <string name="notify_deleted_history">تاریخچه حذف شد</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">لطفاً یک پخش‌کننده انتخاب کنید</string>
     <string name="alert_select_player_name">نام</string>
-    <string name="hostname">نام میزبان (Hostname)</string>
-    <string name="port">پورت</string>
+    <string name="hostname">آدرس سرور</string>
+    <string name="port">پورت شبکه</string>
 
     <string name="alert_press_back_to_exit">برای خروج، یک بار دیگر دکمه بازگشت را بزنید</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">پخش در پخش‌کننده خارجی</string>
     <string name="action_choose_external_player">انتخاب پخش‌کننده خارجی</string>
 
-    <string name="settings_disable_battery_optimization">بهینه‌سازی باتری</string>
-    <string name="settings_ignore_battery_optimization_summary_on">بهینه‌سازی باتری نادیده گرفته می‌شود، برنامه باید همیشه بتواند صدا را پخش کند.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">بهینه‌سازی باتری فعال است، ممکن است برنامه در پس‌زمینه متوقف شود.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">پخش در پس‌زمینه</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">سایر</string>
     <string name="settings_rate_app">امتیاز به AMARadio</string>
     <string name="settings_rate_app_summary">اگر برنامه را دوست دارید، لطفاً در فروشگاه Play نظر بدهید!</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">لوگوی ایستگاه</string>
+    <string name="accessibility_station_logo">لوگوی ایستگاه رادیویی</string>
     <string name="accessibility_favorite_selected">برگزیده، انتخاب شده</string>
     <string name="accessibility_favorite_not_selected">برگزیده، انتخاب نشده</string>
     <string name="accessibility_category_icon">آیکون دسته</string>
@@ -337,7 +335,7 @@
     <string name="accessibility_configure">پیکربندی</string>
     <string name="accessibility_close">بستن</string>
     <string name="accessibility_add_filter">افزودن فیلتر</string>
-    <string name="accessibility_station_options">گزینه‌های ایستگاه</string>
+    <string name="accessibility_station_options">گزینه‌های ایستگاه رادیویی</string>
     <string name="not_applicable">نامربوط</string>
     <string name="accessibility_station_description">ایستگاه: %1$s، زبان: %2$s، برچسب‌ها: %3$s</string>
 
@@ -345,27 +343,55 @@
     <string name="error_no_browser">مرورگر وب پیدا نشد. لطفا یک مرورگر برای باز کردن این لینک نصب کنید.</string>
     <string name="error_no_homepage">هیچ صفحه اصلی برای این ایستگاه موجود نیست</string>
     <string name="tab_custom_stations">سفارشی</string>
-    <string name="action_add_custom">اضافه کردن ایستگاه سفارشی</string>
-    <string name="station_name">نام ایستگاه</string>
-    <string name="stream_url">URL جریان</string>
-    <string name="favicon_url">URL فاویکون (اختیاری)</string>
-    <string name="select_image">Image را انتخاب کنید</string>
-    <string name="error_invalid_url">لطفاً یک URL معتبر وارد کنید</string>
-    <string name="action_save">ذخیره کنید</string>
+    <string name="action_add_custom">اضافه کردن ایستگاه رادیویی سفارشی</string>
+    <string name="station_name">نام ایستگاه رادیویی</string>
+    <string name="stream_url">آدرس پخش زنده</string>
+    <string name="favicon_url">آدرس لوگوی ایستگاه (Favicon)</string>
+    <string name="select_image">انتخاب تصویر</string>
+    <string name="error_invalid_url">لطفاً یک آدرس معتبر وارد کنید</string>
+    <string name="action_save">ذخیره</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">کنترل سریع پخش کننده</string>
-    <string name="widget_description_full">لیست پخش و ایستگاه</string>
+    <string name="widget_description_small">کنترل سریع پخش‌کننده</string>
+    <string name="widget_description_full">پخش‌کننده و لیست ایستگاه‌های رادیویی</string>
 
-    <string name="settings_auto_db_update">همگام سازی داده های پس زمینه</string>
-    <string name="settings_auto_db_update_desc">به‌روزرسانی خودکار پایگاه داده ایستگاه از طریق Radio-Browser API (توصیه می‌شود).</string>
-    <string name="settings_station_click_counter">شمارنده کلیک ایستگاه</string>
-    <string name="settings_station_click_counter_desc">با به اشتراک گذاری ناشناس رویدادهای پخش، از آمار رادیو مرورگر پشتیبانی کنید.</string>
-    <string name="settings_rate_app_github">از AMARadio لذت می برید؟</string>
-    <string name="settings_rate_app_github_summary">یک ستاره در GitHub بگذارید! این به دیگران کمک می کند تا برنامه را کشف کنند و از توسعه آینده پشتیبانی می کند.</string>
+    <string name="settings_auto_db_update">همگام‌سازی داده‌های پس‌زمینه</string>
+    <string name="settings_auto_db_update_desc">به‌روزرسانی خودکار پایگاه داده ایستگاه‌ها از طریق Radio-Browser API (توصیه می‌شود).</string>
+    <string name="settings_station_click_counter">شمارنده کلیک ایستگاه رادیویی</string>
+    <string name="settings_station_click_counter_desc">با به اشتراک‌گذاری ناشناس رویدادهای پخش، از آمار Radio-Browser پشتیبانی کنید.</string>
+    <string name="settings_rate_app_github">از AMARadio لذت می‌برید؟</string>
+    <string name="settings_rate_app_github_summary">یک ستاره در GitHub بگذارید! این به دیگران کمک می‌کند تا برنامه را کشف کنند و از توسعه آینده پشتیبانی می‌کند.</string>
 
-    <string name="settings_remove_notification_on_stop">وقتی برنامه بسته است، اعلان را حذف کنید</string>
-    <string name="settings_remove_notification_on_stop_desc">وقتی برنامه از برنامه‌های اخیر بسته می‌شود، به‌طور خودکار اعلان رسانه را رد کنید</string>
-    <string name="settings_auto_resume_audio_focus">پس از از دست دادن فوکوس صوتی از سر بگیرید</string>
-    <string name="settings_auto_resume_audio_focus_desc">پخش خودکار پس از تماس های تلفنی، آلارم ها یا سایر توقف های صوتی را از سر بگیرید</string>
+    <string name="settings_remove_notification_on_stop">حذف اعلان هنگام متوقف شدن</string>
+    <string name="settings_remove_notification_on_stop_desc">هنگام متوقف شدن پخش، اعلان رسانه را به طور خودکار حذف کنید</string>
+    <string name="settings_auto_resume_audio_focus">ادامه پخش پس از از دست دادن تمرکز صوتی</string>
+    <string name="settings_auto_resume_audio_focus_desc">ادامه خودکار پخش پس از تماس‌های تلفنی، هشدارها یا سایر توقف‌های صوتی</string>
+
+    <string name="settings_backup_restore">پشتیبان‌گیری و بازیابی</string>
+    <string name="settings_export_backup">ایجاد پشتیبان کامل (ZIP)</string>
+    <string name="settings_export_backup_desc">تمام علاقه‌مندی‌ها، ایستگاه‌های سفارشی و آیکون‌ها را در یک فایل ZIP ذخیره می‌کند</string>
+    <string name="settings_import_backup">بازیابی پشتیبان (ZIP)</string>
+    <string name="settings_import_backup_desc">علاقه‌مندی‌ها و ایستگاه‌های سفارشی را از فایل پشتیبان ZIP بازیابی می‌کند</string>
+    <string name="backup_export_success">پشتیبان‌گیری با موفقیت ذخیره شد</string>
+    <string name="backup_export_error">ذخیره پشتیبان انجام نشد</string>
+    <string name="backup_import_success">بازیابی پشتیبان با موفقیت انجام شد</string>
+    <string name="backup_import_error">بازیابی پشتیبان انجام نشد</string>
+
+    <string name="database_summary_title">پایگاه داده محلی</string>
+    <string name="database_total_stations">مجموع ایستگاه‌های رادیویی</string>
+    <string name="database_last_sync">آخرین بروزرسانی</string>
+    <string name="database_update_now">بروزرسانی پایگاه داده</string>
+    <string name="database_full_update">بروزرسانی کامل پایگاه داده</string>
+    <string name="database_syncing">در حال همگام‌سازی…</string>
+    <string name="database_downloading">در حال دانلود…</string>
+    <string name="database_stations_loaded">%1$s ایستگاه رادیویی</string>
+    <string name="database_sync_channel_name">همگام‌سازی پایگاه داده ایستگاه‌ها</string>
+    <string name="database_sync_success">بروزرسانی پایگاه داده با موفقیت انجام شد</string>
+    <string name="database_error_no_connection">اتصال اینترنت وجود ندارد</string>
+    <string name="database_error_no_space">فضای کافی در حافظه وجود ندارد</string>
+    <string name="database_error_failed">بروزرسانی پایگاه داده با خطا مواجه شد</string>
+
+    <string name="settings_disable_battery_optimization_desc">برای ادامه پخش هنگام خاموش بودن صفحه، مصرف باتری را روی \'بدون محدودیت\' قرار دهید.</string>
+    <string name="battery_opt_open_settings">باز کردن تنظیمات</string>
+    <string name="battery_opt_later">بعداً</string>
 </resources>

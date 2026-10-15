@@ -31,7 +31,7 @@
     <string name="action_stop">ఆపు</string>
     <string name="action_search">వెతుకు</string>
     <string name="action_delete">తొలగించు</string>
-    <string name="action_delete_history">చరిత్రను తొొలగించు</string>
+    <string name="action_delete_history">చరిత్రను తొలగించు</string>
     <string name="action_delete_favorites">అన్ని ఇష్టమైన వాటిని తొలగించు</string>
     <string name="action_delete_stream_history">ట్రాక్ చరిత్రను క్లియర్ చేయి</string>
     <string name="action_ok">సరే</string>
@@ -52,24 +52,24 @@
     <string name="filter_empty_title">మీ స్వంత రేడియో స్టేషన్ ఫీడ్‌ను రూపొందించుకోండి</string>
     <string name="filter_empty_desc">బహుళ ప్రమాణాలను కలపడం ద్వారా వ్యక్తిగతీకరించిన వ్యూని సృష్టించండి. మీరు వీటిని ఉపయోగించి మీ శోధనను తగ్గించవచ్చు:</string>
     <string name="filter_empty_filter_by">వీటి ద్వారా ఫిల్టర్ చేయండి:</string>
-    <string name="filter_empty_filter_desc">దేశం, స్టేషన్ పేరు, ట్యాగ్‌లు లేదా భాష</string>
+    <string name="filter_empty_filter_desc">దేశం, రేడియో స్టేషన్ పేరు, ట్యాగ్‌లు లేదా భాష</string>
     <string name="filter_empty_sort_by">వీటి ద్వారా క్రమబద్ధీకరించండి:</string>
     <string name="filter_empty_sort_desc">క్లిక్‌లు, వర్ణమాల, ఓట్లు లేదా చివరి మార్పు</string>
     <string name="filter_empty_hint">ఈ వ్యూని సేవ్ చేయడానికి పై ఫీల్డ్‌లో ఒక పేరును టైప్ చేయండి!</string>
-    <string name="error_station_load">స్టేషన్‌కి కనెక్ట్ కాలేదు</string>
-    <string name="error_list_update">రేడియో బ్రౌజర్ సర్వర్‌కు కనెక్ట్ కాలేదు</string>
+    <string name="error_station_load">రేడియో స్టేషన్‌కి కనెక్ట్ కాలేదు</string>
+    <string name="error_list_update">Radio-Browser సర్వర్‌కు కనెక్ట్ కాలేదు</string>
 
     <string name="error_no_connection">ఇంటర్నెట్ కనెక్షన్ లేదు.</string>
     <string name="warning_volume_zero">వాల్యూమ్ సున్నా వద్ద ఉంది. మీకు ఏమీ వినిపించకపోవచ్చు.</string>
 
-    <string name="share_action">స్టేషన్ లింక్‌ను వీటితో షేర్ చేయండి…</string>
+    <string name="share_action">రేడియో స్టేషన్ లింక్‌ను వీటితో షేర్ చేయండి…</string>
 
-    <string name="nav_item_stations">స్టేషన్లు</string>
+    <string name="nav_item_stations">రేడియో స్టేషన్లు</string>
     <string name="nav_item_starred">ఇష్టమైనవి</string>
     <string name="nav_item_history">చరిత్ర</string>
     <string name="nav_item_settings">సెట్టింగ్‌లు</string>
 
-    <string name="about_text">AMARadio 100% ప్రకటనలు లేనిది మరియు గోప్యతపై దృష్టి పెడుతుంది.\n\nనేను మొదట మా అమ్మగారి కోసం బాధించే ప్రకటనలు లేదా ట్రాకింగ్ లేకుండా సరళమైన, నిజాయితీ గల రేడియో అనుభవాన్ని అందించడానికి ఈ యాప్‌ను అభివృద్ధి చేసాను. అందుకే AMARadio ఎల్లప్పుడూ ప్రకటనలు లేకుండానే ఉంటుంది – ఇది ఆవిడకు నేను ఇచ్చిన వాగ్దానం, మీ అందరితో పంచుకుంటున్నాను.\n\nఈ ప్రాజెక్ట్ అద్భుతమైన https://github.com/segler-alex/RadioDroid యొక్క ఫోర్క్ (fork). యాప్ ఆధునికంగా ఉండటానికి మరియు భవిష్యత్ ఆండ్రాయిడ్ వెర్షన్‌లతో అనుకూలంగా ఉండటానికి మొత్తం సోర్స్ కోడ్‌ను జావా నుండి కోట్లిన్‌కు మార్చడం జరిగింది.\n\nసోర్స్ కోడ్ ఇక్కడ అందుబాటులో ఉంది: https://github.com/ounben/AMARadio\n\nఈ యాప్ https://www.radio-browser.info లోని ఉచిత రేడియో స్టేషన్ డైరెక్టరీని ఉపయోగిస్తుంది. ఎవరైనా ఇందులో స్టేషన్లను జోడించవచ్చు. ఇది ఆన్‌లైన్ రేడియో స్టేషన్ల కోసం వికీలా పనిచేస్తుంది.\n\nసంప్రదించండి: ben@ounben.com\n\nబగ్ ట్రాకర్: https://github.com/ounben/AMARadio/issues\n\nమీకు ఈ సాఫ్ట్‌వేర్ నచ్చితే మరియు సహాయం చేయాలనుకుంటే, నాకు ఇమెయిల్ పంపడానికి సంకోచించకండి. కొత్త ఫీచర్ల కోసం ఆలోచనలు కూడా ఎల్లప్పుడూ ఆహ్వానించబడతాయి!\n\nఈ యాప్ ఉచిత సాఫ్ట్‌వేర్, GPLv3 కింద లైసెన్స్ పొందింది. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% ప్రకటనలు లేనిది మరియు గోప్యతపై దృష్టి పెడుతుంది.\n\nనేను మొదట మా అమ్మగారి కోసం బాధించే ప్రకటనలు లేదా ట్రాకింగ్ లేకుండా సరళమైన, నిజాయితీ గల రేడియో అనుభవాన్ని అందించడానికి ఈ యాప్‌ను అభివృద్ధి చేసాను. అందుకే AMARadio ఎల్లప్పుడూ ప్రకటనలు లేకుండానే ఉంటుంది – ఇది ఆవిడకు నేను ఇచ్చిన వాగ్దానం, మీ అందరితో పంచుకుంటున్నాను.\n\nఈ ప్రాజెక్ట్ RadioDroid యొక్క ఫోర్క్ (fork). యాప్ ఆధునికంగా ఉండటానికి మరియు భవిష్యత్ ఆండ్రాయిడ్ వెర్షన్‌లతో అనుకూలంగా ఉండటానికి మొత్తం సోర్స్ కోడ్‌ను జావా నుండి కోట్లిన్‌కు మార్చడం జరిగింది.\n\nసోర్స్ కోడ్ ఇక్కడ అందుబాటులో ఉంది: https://github.com/ounben/AMARadio\n\nఈ యాప్ https://www.radio-browser.info లోని ఉచిత రేడియో స్టేషన్ డైరెక్టరీని ఉపయోగిస్తుంది. ఎవరైనా ఇందులో స్టేషన్లను జోడించవచ్చు. ఇది ఆన్‌లైన్ రేడియో స్టేషన్ల కోసం వికీలా పనిచేస్తుంది.\n\nసంప్రదించండి: ben@ounben.com\n\nబగ్ ట్రాకర్: https://github.com/ounben/AMARadio/issues\n\nమీకు ఈ సాఫ్ట్‌వేర్ నచ్చితే మరియు సహాయం చేయాలనుకుంటే, నాకు ఇమెయిల్ పంపడానికి సంకోచించకండి. కొత్త ఫీచర్ల కోసం ఆలోచనలు కూడా ఎల్లప్పుడూ ఆహ్వానించబడతాయి!\n\nఈ యాప్ ఉచిత సాఫ్ట్‌వేర్, GPLv3 కింద లైసెన్స్ పొందింది. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">వెర్షన్: %1$s</string>
     <string name="detail_star">ఇష్టమైన వాటికి జోడించు</string>
     <string name="detail_unstar">ఇష్టమైన వాటి నుండి తొలగించు</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">డార్క్</string>
     <string name="theme_system">సిస్టమ్‌ని అనుసరించు</string>
     <string name="settings_compact_style">కాంపాక్ట్ మోడ్</string>
-    <string name="settings_compact_style_desc_off">స్టేషన్ వివరాలతో పెద్ద ఐకాన్</string>
+    <string name="settings_compact_style_desc_off">రేడియో స్టేషన్ వివరాలతో పెద్ద ఐకాన్</string>
     <string name="settings_compact_style_desc_on">వివరాలు లేకుండా చిన్న ఐకాన్</string>
     <string name="settings_bottom_navigation">దిగువ నావిగేషన్</string>
     <string name="settings_ui_scale">UI స్కేలింగ్</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">అరుదుగా ఉపయోగించే ట్యాగ్‌లు చూపబడవు</string>
     <string name="settings_single_use_tags_desc_on">అరుదుగా ఉపయోగించే ట్యాగ్‌లు చూపబడతాయి</string>
 
-    <string name="settings_show_broken">పనిచేయని స్టేషన్లు</string>
-    <string name="settings_show_broken_on">జాబితాలలో పనిచేయని స్టేషన్లను చూపించు</string>
-    <string name="settings_show_broken_off">జాబితాలలో పనిచేయని స్టేషన్లను చూపించవద్దు</string>
+    <string name="settings_show_broken">పనిచేయని రేడియో స్టేషన్లు</string>
+    <string name="settings_show_broken_on">జాబితాలలో పనిచేయని రేడియో స్టేషన్లను చూపించు</string>
+    <string name="settings_show_broken_off">జాబితాలలో పనిచేయని రేడియో స్టేషన్లను చూపించవద్దు</string>
 
     <string name="settings_startup_behaviour">ప్రారంభ ప్రవర్తన</string>
     <string name="action_grid_view">గ్రిడ్ వ్యూ</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">ప్రారంభ చర్య</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">అన్ని స్టేషన్లను చూపించు</string>
+    <string name="startup_show_all_stations">అన్ని రేడియో స్టేషన్లను చూపించు</string>
     <string name="startup_show_favorites">ఇష్టమైన వాటిని చూపించు</string>
     <string name="startup_show_history">చరిత్రను చూపించు</string>
     <string name="startup_show_last_view">చివరి వ్యూ</string>
 
-    <string name="settings_load_icons">స్టేషన్ ఐకాన్లను చూపించు</string>
+    <string name="settings_load_icons">రేడియో స్టేషన్ ఐకాన్లను చూపించు</string>
     <string name="settings_load_icons_on">ఐకాన్లు డౌన్‌లోడ్ చేయబడతాయి</string>
     <string name="settings_load_icons_off">ఐకాన్లు డౌన్‌లోడ్ చేయబడవు</string>
 
     <string name="settings_auto_favorite">ఆటో-ఫేవరెట్</string>
-    <string name="settings_auto_favorite_on">ప్లే చేస్తున్నప్పుడు స్టేషన్లను స్వయంచాలకంగా ఇష్టమైన వాటికి జోడించు</string>
-    <string name="settings_auto_favorite_off">ప్లే చేస్తున్నప్పుడు స్టేషన్లను స్వయంచాలకంగా ఇష్టమైన వాటికి జోడించవద్దు</string>
+    <string name="settings_auto_favorite_on">ప్లే చేస్తున్నప్పుడు రేడియో స్టేషన్లను స్వయంచాలకంగా ఇష్టమైన వాటికి జోడించు</string>
+    <string name="settings_auto_favorite_off">ప్లే చేస్తున్నప్పుడు రేడియో స్టేషన్లను స్వయంచాలకంగా ఇష్టమైన వాటికి జోడించవద్దు</string>
 
     <string name="settings_play">ప్లేయర్</string>
     <string name="settings_auto_play_on_startup">ఆటో-ప్లే</string>
-    <string name="settings_auto_play_on_startup_on">ప్రారంభించినప్పుడు చివరి స్టేషన్‌ను ప్లే చేయి</string>
-    <string name="settings_auto_play_on_startup_off">ప్రారంభించినప్పుడు చివరి స్టేషన్‌ను ప్లే చేయవద్దు</string>
+    <string name="settings_auto_play_on_startup_on">ప్రారంభించినప్పుడు చివరి రేడియో స్టేషన్‌ను ప్లే చేయి</string>
+    <string name="settings_auto_play_on_startup_off">ప్రారంభించినప్పుడు చివరి రేడియో స్టేషన్‌ను ప్లే చేయవద్దు</string>
     <string name="settings_auto_off_on_startup">ఆటో-స్టాప్</string>
     <string name="settings_auto_off_on_startup_on">ఆటో-ప్లేతో పాటు ఆటో-స్టాప్ టైమర్‌ను ఉపయోగించు</string>
     <string name="settings_auto_off_on_startup_off">ఆటో-ప్లేతో పాటు ఆటో-స్టాప్ టైమర్‌ను ఉపయోగించవద్దు</string>
     <string name="settings_auto_off_sleep_timer">ఆటో-స్టాప్ టైమర్</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s నిమిషాల తర్వాత ప్లే చేయడం ఆపండి</string>
     <string name="settings_play_external">బాహ్య ప్లేయర్‌ని ప్రారంభించు</string>
-    <string name="settings_play_external_desc_on">బాహ్య ప్లేయర్‌తో స్టేషన్లను ప్లే చేయి</string>
-    <string name="settings_play_external_desc_off">AMARadio తో స్టేషన్లను ప్లే చేయి</string>
+    <string name="settings_play_external_desc_on">బాహ్య ప్లేయర్‌తో రేడియో స్టేషన్లను ప్లే చేయి</string>
+    <string name="settings_play_external_desc_off">AMARadio తో రేడియో స్టేషన్లను ప్లే చేయి</string>
     <string name="settings_equalizer">ఈక్వలైజర్</string>
 
     <string name="settings_connectivity">కనెక్టివిటీ</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">పాజ్ చేయబడింది</string>
     <string name="notify_metered_connection">మీటర్డ్ కనెక్షన్</string>
 
-    <string name="notify_starred">స్టేషన్ ఇష్టమైన వాటికి జోడించబడింది</string>
-    <string name="notify_autostarred">స్టేషన్ స్వయంచాలకంగా ఇష్టమైన వాటికి జోడించబడింది</string>
-    <string name="notify_unstarred">స్టేషన్ ఇష్టమైన వాటి నుండి తొలగించబడింది</string>
+    <string name="notify_starred">రేడియో స్టేషన్ ఇష్టమైన వాటికి జోడించబడింది</string>
+    <string name="notify_autostarred">రేడియో స్టేషన్ స్వయంచాలకంగా ఇష్టమైన వాటికి జోడించబడింది</string>
+    <string name="notify_unstarred">రేడియో స్టేషన్ ఇష్టమైన వాటి నుండి తొలగించబడింది</string>
     <string name="notify_deleted_favorites">ఇష్టమైనవి తొలగించబడ్డాయి</string>
     <string name="notify_deleted_history">చరిత్ర తొలగించబడింది</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">దయచేసి ఒక ప్లేయర్‌ని ఎంచుకోండి</string>
     <string name="alert_select_player_name">పేరు</string>
-    <string name="hostname">హోస్ట్ నేమ్</string>
-    <string name="port">పోర్ట్</string>
+    <string name="hostname">సర్వర్ చిరునామా</string>
+    <string name="port">నెట్‌వర్క్ పోర్ట్</string>
 
     <string name="alert_press_back_to_exit">నిష్క్రమించడానికి మరోసారి బ్యాక్ నొక్కండి</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">బాహ్య ప్లేయర్‌లో ప్లే చేయి</string>
     <string name="action_choose_external_player">బాహ్య ప్లేయర్‌ని ఎంచుకోండి</string>
 
-    <string name="settings_disable_battery_optimization">బ్యాటరీ ఆప్టిమైజేషన్</string>
-    <string name="settings_ignore_battery_optimization_summary_on">బ్యాటరీ ఆప్టిమైజేషన్ విస్మరించబడింది, AMARadio ఎల్లప్పుడూ ఫోకస్‌ని మళ్ళీ పొందగలగాలి.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">బ్యాటరీ ఆప్టిమైజేషన్ యాక్టివేట్ చేయబడింది, బ్యాక్‌గ్రౌండ్‌లో ఉన్నప్పుడు AMARadio ఫోకస్‌ని మళ్ళీ పొందలేకపోవచ్చు.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">నేపథ్య ప్లేబ్యాక్</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">ఇతరాలు</string>
     <string name="settings_rate_app">AMARadioని రేట్ చేయండి</string>
     <string name="settings_rate_app_summary">మీకు యాప్ నచ్చితే, దయచేసి ప్లే స్టోర్‌లో రివ్యూ ఇవ్వండి!</string>
+    <string name="settings_rate_app_github">AMARadioని ఆస్వాదిస్తున్నారా?</string>
+    <string name="settings_rate_app_github_summary">GitHubలో నక్షత్రాన్ని వదిలివేయండి! ఇది ఇతరులకు యాప్‌ని కనుగొనడంలో సహాయపడుతుంది మరియు భవిష్యత్తు అభివృద్ధికి మద్దతు ఇస్తుంది.</string>
     <string name="settings_statistics">గణాంకాలు</string>
     <string name="settings_about">AMARadio గురించి</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">స్టేషన్ లోగో</string>
+    <string name="accessibility_station_logo">రేడియో స్టేషన్ లోగో</string>
     <string name="accessibility_favorite_selected">ఇష్టమైనవి, ఎంపిక చేయబడింది</string>
     <string name="accessibility_favorite_not_selected">ఇష్టమైనవి, ఎంపిక చేయబడలేదు</string>
     <string name="accessibility_category_icon">వర్గం చిహ్నం</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">కాన్ఫిగర్ చేయండి</string>
     <string name="accessibility_close">మూసివేయి</string>
     <string name="accessibility_add_filter">ఫిల్టర్‌ని జోడించండి</string>
-    <string name="accessibility_station_options">స్టేషన్ ఎంపికలు</string>
+    <string name="accessibility_station_options">రేడియో స్టేషన్ ఎంపికలు</string>
     <string name="not_applicable">వర్తించదు</string>
     <string name="accessibility_station_description">స్టేషన్: %1$s, భాష: %2$s, ట్యాగ్‌లు: %3$s</string>
 
     <string name="error_no_file_manager">సిస్టమ్ ఫైల్ మేనేజర్‌ని కనుగొనడం సాధ్యపడలేదు. దయచేసి ఫైల్ ఎక్స్‌ప్లోరర్ ఇన్‌స్టాల్ చేయబడిందని మరియు ప్రారంభించబడిందని నిర్ధారించుకోండి.</string>
     <string name="error_no_browser">వెబ్ బ్రౌజర్‌ని కనుగొనడం సాధ్యపడలేదు. దయచేసి ఈ లింక్‌ను తెరవడానికి బ్రౌజర్‌ను ఇన్‌స్టాల్ చేయండి.</string>
-    <string name="error_no_homepage">ఈ స్టేషన్ కోసం హోమ్‌పేజీ అందుబాటులో లేదు</string>
+    <string name="error_no_homepage">ఈ రేడియో స్టేషన్ కోసం హోమ్‌పేజీ అందుబాటులో లేదు</string>
     <string name="tab_custom_stations">కస్టమ్</string>
-    <string name="action_add_custom">కస్టమ్ స్టేషన్‌ని జోడించండి</string>
-    <string name="station_name">స్టేషన్ పేరు</string>
+    <string name="action_add_custom">కస్టమ్ రేడియో స్టేషన్‌ని జోడించండి</string>
+    <string name="station_name">రేడియో స్టేషన్ పేరు</string>
     <string name="stream_url">స్ట్రీమ్ URL</string>
-    <string name="favicon_url">ఫేవికాన్ URL (ఐచ్ఛికం)</string>
+    <string name="favicon_url">స్టేషన్ లోగో URL (Favicon)</string>
     <string name="select_image">చిత్రాన్ని ఎంచుకోండి</string>
     <string name="error_invalid_url">దయచేసి చెల్లుబాటు అయ్యే URLని నమోదు చేయండి</string>
     <string name="action_save">సేవ్ చేయండి</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">త్వరిత ప్లేయర్ నియంత్రణలు</string>
-    <string name="widget_description_full">ప్లేయర్ మరియు స్టేషన్ జాబితా</string>
+    <string name="widget_description_full">ప్లేయర్ మరియు రేడియో స్టేషన్ల జాబితా</string>
 
     <string name="settings_auto_db_update">నేపథ్య డేటా సమకాలీకరణ</string>
-    <string name="settings_auto_db_update_desc">రేడియో-బ్రౌజర్ API ద్వారా స్టేషన్ డేటాబేస్ ఆటో-నవీకరణ (సిఫార్సు చేయబడింది).</string>
-    <string name="settings_station_click_counter">స్టేషన్ క్లిక్ కౌంటర్</string>
-    <string name="settings_station_click_counter_desc">ప్లే ఈవెంట్‌లను అనామకంగా భాగస్వామ్యం చేయడం ద్వారా రేడియో-బ్రౌజర్ గణాంకాలకు మద్దతు ఇవ్వండి.</string>
-    <string name="settings_rate_app_github">AMARadioని ఆస్వాదిస్తున్నారా?</string>
-    <string name="settings_rate_app_github_summary">GitHubలో నక్షత్రాన్ని వదిలివేయండి! ఇది ఇతరులకు యాప్‌ని కనుగొనడంలో సహాయపడుతుంది మరియు భవిష్యత్తు అభివృద్ధికి మద్దతు ఇస్తుంది.</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API ద్వారా స్టేషన్ డేటాబేస్ ఆటో-నవీకరణ (సిఫార్సు చేయబడింది).</string>
+    <string name="settings_station_click_counter">రేడియో స్టేషన్ క్లిక్ కౌంటర్</string>
+    <string name="settings_station_click_counter_desc">ప్లేబ్యాక్ ఈవెంట్‌లను అనామకంగా భాగస్వామ్యం చేయడం ద్వారా Radio-Browser గణాంకాలకు మద్దతు ఇవ్వండి.</string>
 
-    <string name="settings_remove_notification_on_stop">యాప్ మూసివేయబడినప్పుడు నోటిఫికేషన్‌ను తీసివేయండి</string>
-    <string name="settings_remove_notification_on_stop_desc">ఇటీవలి యాప్‌ల నుండి యాప్ మూసివేయబడినప్పుడు మీడియా నోటిఫికేషన్‌ను స్వయంచాలకంగా తీసివేయండి</string>
+    <string name="settings_remove_notification_on_stop">ఆపివేసినప్పుడు నోటిఫికేషన్‌ను తీసివేయండి</string>
+    <string name="settings_remove_notification_on_stop_desc">ప్లేబ్యాక్ ఆపివేసినప్పుడు మీడియా నోటిఫికేషన్‌ను స్వయంచాలకంగా తీసివేయండి</string>
     <string name="settings_auto_resume_audio_focus">ఆడియో ఫోకస్ కోల్పోయిన తర్వాత పునఃప్రారంభించండి</string>
     <string name="settings_auto_resume_audio_focus_desc">ఫోన్ కాల్‌లు, అలారాలు లేదా ఇతర ఆడియో ఆపివేసిన తర్వాత స్వయంచాలకంగా ప్లేబ్యాక్‌ను పునఃప్రారంభించండి</string>
+
+    <string name="settings_backup_restore">బ్యాకప్ మరియు పునరుద్ధరణ</string>
+    <string name="settings_export_backup">పూర్తి బ్యాకప్‌ను సృష్టించండి (ZIP)</string>
+    <string name="settings_export_backup_desc">అన్ని ఇష్టమైనవి, కస్టమ్ స్టేషన్లు మరియు ఐకాన్‌లను ఒక ZIP ఫైల్‌లో సేవ్ చేస్తుంది</string>
+    <string name="settings_import_backup">బ్యాకప్‌ను పునరుద్ధరించండి (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP ఫైల్ నుండి ఇష్టమైనవి మరియు కస్టమ్ స్టేషన్‌లను పునరుద్ధరిస్తుంది</string>
+    <string name="backup_export_success">బ్యాకప్ విజయవంతంగా సేవ్ చేయబడింది</string>
+    <string name="backup_export_error">బ్యాకప్ సేవ్ చేయడం విఫలమైంది</string>
+    <string name="backup_import_success">బ్యాకప్ విజయవంతంగా పునరుద్ధరించబడింది</string>
+    <string name="backup_import_error">బ్యాకప్ పునరుద్ధరించడం విఫలమైంది</string>
+
+    <string name="database_summary_title">స్థానిక డేటాబేస్</string>
+    <string name="database_total_stations">మొత్తం రేడియో స్టేషన్లు</string>
+    <string name="database_last_sync">చివరి నవీకరణ</string>
+    <string name="database_update_now">డేటాబేస్‌ను ఇప్పుడు నవీకరించండి</string>
+    <string name="database_full_update">డేటాబేస్‌ను నవీకరించండి</string>
+    <string name="database_syncing">సమకాలీకరిస్తోంది…</string>
+    <string name="database_downloading">డౌన్‌లోడ్ అవుతోంది…</string>
+    <string name="database_stations_loaded">%1$s రేడియో స్టేషన్లు</string>
+    <string name="database_sync_channel_name">రేడియో స్టేషన్ డేటాబేస్ సమకాలీకరణ</string>
+    <string name="database_sync_success">స్టేషన్ డేటాబేస్ నవీకరణ విజయవంతంగా పూర్తయింది</string>
+    <string name="database_error_no_connection">ఇంటర్నెట్ కనెక్షన్ లేదు</string>
+    <string name="database_error_no_space">తగినంత డిస్క్ స్థలం లేదు</string>
+    <string name="database_error_failed">డేటాబేస్ నవీకరణ విఫలమైంది</string>
+
+    <string name="settings_disable_battery_optimization_desc">స్క్రీన్ ఆఫ్ అయినప్పుడు కూడా ప్లే చేయడం కొనసాగించడానికి, బ్యాటరీ వినియోగాన్ని \'Unrestricted\' కి సెట్ చేయండి.</string>
+    <string name="battery_opt_open_settings">సెట్టింగ్‌లను తెరవండి</string>
+    <string name="battery_opt_later">తర్వాత</string>
 </resources>

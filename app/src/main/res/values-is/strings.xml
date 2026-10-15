@@ -49,27 +49,27 @@
     <string name="action_rename_tab">Endurnefna flipa</string>
     <string name="error_filter_name_required">Vinsamlegast sláðu fyrst inn heiti á þennan síuflipa</string>
     <string name="confirm_delete_filter_tab">Ertu viss um að þú viljir eyða síunni \"%1$s\"?</string>
-    <string name="filter_empty_title">Búðu til þitt eigið útvarpsstreymi</string>
+    <string name="filter_empty_title">Búðu til þitt eigið útvarpsstöðvastreymi</string>
     <string name="filter_empty_desc">Búðu til sérsniðið yfirlit með því að sameina mörg skilyrði. Þú getur þrengt leitina með:</string>
     <string name="filter_empty_filter_by">Sía eftir</string>
-    <string name="filter_empty_filter_desc">Landi, heiti stöðvar, merkjum eða tungumáli</string>
+    <string name="filter_empty_filter_desc">Landi, heiti útvarpsstöðvar, merkjum eða tungumáli</string>
     <string name="filter_empty_sort_by">Raða eftir</string>
     <string name="filter_empty_sort_desc">Smellum, stafrófsröð, atkvæðum eða síðustu breytingu</string>
     <string name="filter_empty_hint">Sláðu inn heiti í reitinn hér að ofan til að vista þetta yfirlit!</string>
-    <string name="error_station_load">Gat ekki tengst stöðinni</string>
-    <string name="error_list_update">Gat ekki tengst radio browser þjóni</string>
+    <string name="error_station_load">Gat ekki tengst útvarpsstöðinni</string>
+    <string name="error_list_update">Gat ekki tengst Radio-Browser þjóni</string>
 
     <string name="error_no_connection">Engin nettenging í boði.</string>
     <string name="warning_volume_zero">Hljóðstyrkur er á núlli. Þú heyrir kannski ekki neitt.</string>
 
-    <string name="share_action">Deila stöðvartengli með…</string>
+    <string name="share_action">Deila tengli á útvarpsstöð með…</string>
 
-    <string name="nav_item_stations">Stöðvar</string>
+    <string name="nav_item_stations">Útvarpsstöðvar</string>
     <string name="nav_item_starred">Í uppáhaldi</string>
     <string name="nav_item_history">Ferill</string>
     <string name="nav_item_settings">Stillingar</string>
 
-    <string name="about_text">AMARadio er 100% án auglýsinga og leggur áherslu á friðhelgi.\n\nÉg hannaði þetta forrit upphaflega fyrir móður mína til að gefa henni einfalda og heiðarlega útvarpsupplifun án pirrandi auglýsinga eða rakningar. Þess vegna verður AMARadio alltaf laust við auglýsingar – það er loforð til hennar, sem ég deili með ykkur öllum.\n\nÞetta verkefni er afleiða (fork) af hinu frábæra https://github.com/segler-alex/RadioDroid . Allur kóðinn hefur verið færður úr Java yfir í Kotlin til að tryggja að forritið haldist nútímalegt og samhæft við framtíðarútgáfur af Android.\n\nUpprunakóðinn er aðgengilegur á: https://github.com/ounben/AMARadio\n\nÞetta forrit notar ókeypis útvarpsstöðvaskrána á https://www.radio-browser.info .\nAllir geta bætt stöðvum þar inn. Þetta virkar eins og wiki fyrir útvarpsstöðvar á netinu.\n\nSamskipti: ben@ounben.com\n\nVilluskráning: https://github.com/ounben/AMARadio/issues\n\nEf þér líkar hugbúnaðurinn og vilt hjálpa til, ekki hika við að senda mér tölvupóst.\nEinnig eru hugmyndir að nýjum eiginleikum alltaf vel þegnar!\n\nÞetta forrit er frjáls hugbúnaður, gefið út undir GPLv3 leyfi. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio er 100% án auglýsinga og leggur áherslu á friðhelgi.\n\nÉg hannaði þetta forrit upphaflega fyrir móður mína til að gefa henni einfalda og heiðarlega útvarpsupplifun án pirrandi auglýsinga eða rakningar. Þess vegna verður AMARadio alltaf laust við auglýsingar – það er loforð til hennar, sem ég deili með ykkur öllum.\n\nÞetta verkefni er afleiða (fork) af RadioDroid. Allur kóðinn hefur verið færður úr Java yfir í Kotlin til að tryggja að forritið haldist nútímalegt og samhæft við framtíðarútgáfur af Android.\n\nUpprunakóðinn er aðgengilegur á: https://github.com/ounben/AMARadio\n\nÞetta forrit notar ókeypis útvarpsstöðvaskrána á https://www.radio-browser.info .\nAllir geta bætt stöðvum þar inn. Þetta virkar eins og wiki fyrir útvarpsstöðvar á netinu.\n\nSamskipti: ben@ounben.com\n\nVilluskráning: https://github.com/ounben/AMARadio/issues\n\nEf þér líkar hugbúnaðurinn og vilt hjálpa til, ekki hika við að senda mér tölvupóst.\nEinnig eru hugmyndir að nýjum eiginleikum alltaf vel þegnar!\n\nÞetta forrit er frjáls hugbúnaður, gefið út undir GPLv3 leyfi. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Útgáfa: %1$s</string>
     <string name="detail_star">Bæta í uppáhald</string>
     <string name="detail_unstar">Fjarlægja úr uppáhaldi</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Dökkt</string>
     <string name="theme_system">Fylgja kerfi</string>
     <string name="settings_compact_style">Þjappað útlit</string>
-    <string name="settings_compact_style_desc_off">Stórt tákn með upplýsingum um stöð</string>
-    <string name="settings_compact_style_desc_on">Lítið tákn án upplýsinga um stöð</string>
+    <string name="settings_compact_style_desc_off">Stórt tákn með upplýsingum um útvarpsstöð</string>
+    <string name="settings_compact_style_desc_on">Lítið tákn án upplýsinga um útvarpsstöð</string>
     <string name="settings_bottom_navigation">Neðri leiðsögn</string>
     <string name="settings_ui_scale">Skölun viðmóts</string>
     <string name="settings_language">Tungumál</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Sjaldgæf merki verða ekki sýnd</string>
     <string name="settings_single_use_tags_desc_on">Sjaldgæf merki verða sýnd</string>
 
-    <string name="settings_show_broken">Óvirkar stöðvar</string>
-    <string name="settings_show_broken_on">Sýna óvirkar stöðvar á listum</string>
-    <string name="settings_show_broken_off">Ekki sýna óvirkar stöðvar á listum</string>
+    <string name="settings_show_broken">Óvirkar útvarpsstöðvar</string>
+    <string name="settings_show_broken_on">Sýna óvirkar útvarpsstöðvar á listum</string>
+    <string name="settings_show_broken_off">Ekki sýna óvirkar útvarpsstöðvar á listum</string>
 
     <string name="settings_startup_behaviour">Ræsing</string>
     <string name="action_grid_view">Reitayfirlit</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Aðgerð við ræsingu</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Sýna allar stöðvar</string>
+    <string name="startup_show_all_stations">Sýna allar útvarpsstöðvar</string>
     <string name="startup_show_favorites">Sýna í uppáhaldi</string>
     <string name="startup_show_history">Sýna feril</string>
     <string name="startup_show_last_view">Síðasta yfirlit</string>
 
-    <string name="settings_load_icons">Sýna tákn stöðva</string>
+    <string name="settings_load_icons">Sýna tákn útvarpsstöðva</string>
     <string name="settings_load_icons_on">Tákn verða sótt</string>
     <string name="settings_load_icons_off">Tákn verða ekki sótt</string>
 
     <string name="settings_auto_favorite">Sjálfvirkt í uppáhald</string>
-    <string name="settings_auto_favorite_on">Bæta stöðvum sjálfkrafa í uppáhald við spilun</string>
-    <string name="settings_auto_favorite_off">Ekki bæta stöðvum sjálfkrafa í uppáhald við spilun</string>
+    <string name="settings_auto_favorite_on">Bæta útvarpsstöðvum sjálfkrafa í uppáhald við spilun</string>
+    <string name="settings_auto_favorite_off">Ekki bæta útvarpsstöðvum sjálfkrafa í uppáhald við spilun</string>
 
     <string name="settings_play">Spilari</string>
     <string name="settings_auto_play_on_startup">Sjálfvirk spilun</string>
-    <string name="settings_auto_play_on_startup_on">Spila síðustu stöð við ræsingu</string>
-    <string name="settings_auto_play_on_startup_off">Ekki spila síðustu stöð við ræsingu</string>
+    <string name="settings_auto_play_on_startup_on">Spila síðustu útvarpsstöð við ræsingu</string>
+    <string name="settings_auto_play_on_startup_off">Ekki spila síðustu útvarpsstöð við ræsingu</string>
     <string name="settings_auto_off_on_startup">Sjálfvirk stöðvun</string>
     <string name="settings_auto_off_on_startup_on">Nota stöðvunartíma með sjálfvirkri spilun</string>
     <string name="settings_auto_off_on_startup_off">Ekki nota stöðvunartíma með sjálfvirkri spilun</string>
     <string name="settings_auto_off_sleep_timer">Sjálfvirkur stöðvunartími</string>
     <string name="settings_auto_off_sleep_timer_desc">Stöðva spilun eftir %1$s mínútur</string>
     <string name="settings_play_external">Nota ytri spilara</string>
-    <string name="settings_play_external_desc_on">Spila stöðvar með ytri spilara</string>
-    <string name="settings_play_external_desc_off">Spila stöðvar með AMARadio</string>
+    <string name="settings_play_external_desc_on">Spila útvarpsstöðvar með ytri spilara</string>
+    <string name="settings_play_external_desc_off">Spila útvarpsstöðvar með AMARadio</string>
     <string name="settings_equalizer">Tónjafnari</string>
 
     <string name="settings_connectivity">Tenging</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Á hléi</string>
     <string name="notify_metered_connection">Tenging með gagnamælingu</string>
 
-    <string name="notify_starred">Stöð hefur verið bætt í uppáhald</string>
-    <string name="notify_autostarred">Stöð hefur verið bætt sjálfkrafa í uppáhald</string>
-    <string name="notify_unstarred">Stöð hefur verið fjarlægð úr uppáhaldi</string>
+    <string name="notify_starred">Útvarpsstöð hefur verið bætt í uppáhald</string>
+    <string name="notify_autostarred">Útvarpsstöð hefur verið bætt sjálfkrafa í uppáhald</string>
+    <string name="notify_unstarred">Útvarpsstöð hefur verið fjarlægð úr uppáhaldi</string>
     <string name="notify_deleted_favorites">Uppáhaldi hefur verið eytt</string>
     <string name="notify_deleted_history">Ferli hefur verið eytt</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Vinsamlegast veldu spilara</string>
     <string name="alert_select_player_name">Heiti</string>
-    <string name="hostname">Vélarheiti</string>
-    <string name="port">Gátt</string>
+    <string name="hostname">Veffang þjóns</string>
+    <string name="port">Netsengi</string>
 
     <string name="alert_press_back_to_exit">Ýttu aftur á til baka til að loka</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Spila í ytri spilara</string>
     <string name="action_choose_external_player">Velja ytri spilara</string>
 
-    <string name="settings_disable_battery_optimization">Rafhlöðuhámörkun</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Rauhlöðuhámörkun er hunsuð, AMARadio ætti alltaf að geta náð fókus aftur.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Rafhlöðuhámörkun er virk, AMARadio gæti átt erfitt með að ná fókus í bakgrunni.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Bakgrunnsspilun</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Annað</string>
     <string name="settings_rate_app">Gefa AMARadio einkunn</string>
     <string name="settings_rate_app_summary">Ef þér líkar vel við appið, vinsamlegast gefðu því umsögn í Play Store!</string>
+    <string name="settings_rate_app_github">Hefurðu gaman af AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Skildu eftir stjörnu á GitHub! Það hjálpar öðrum að uppgötva appið og styður framtíðarþróun.</string>
     <string name="settings_statistics">Tölfræði</string>
     <string name="settings_about">Um AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Kennimerki stöðvar</string>
+    <string name="accessibility_station_logo">Merki útvarpsstöðvar</string>
     <string name="accessibility_favorite_selected">Í uppáhaldi, valið</string>
     <string name="accessibility_favorite_not_selected">Í uppáhaldi, ekki valið</string>
     <string name="accessibility_category_icon">Flokkstákn</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Stilla</string>
     <string name="accessibility_close">Loka</string>
     <string name="accessibility_add_filter">Bæta við síu</string>
-    <string name="accessibility_station_options">Valkostir stöðvar</string>
+    <string name="accessibility_station_options">Valkostir útvarpsstöðvar</string>
     <string name="not_applicable">á ekki við</string>
     <string name="accessibility_station_description">Stöð: %1$s, Tungumál: %2$s, Merki: %3$s</string>
 
     <string name="error_no_file_manager">Gat ekki fundið kerfisskráastjóra. Gakktu úr skugga um að skráarkönnuður sé uppsettur og virkur.</string>
     <string name="error_no_browser">Gat ekki fundið vafra. Vinsamlegast settu upp vafra til að opna þennan tengil.</string>
-    <string name="error_no_homepage">Engin heimasíða í boði fyrir þessa stöð</string>
+    <string name="error_no_homepage">Engin heimasíða í boði fyrir þessa útvarpsstöð</string>
     <string name="tab_custom_stations">Sérsniðin</string>
-    <string name="action_add_custom">Bættu við sérsniðinni stöð</string>
-    <string name="station_name">Stöðvarheiti</string>
+    <string name="action_add_custom">Bættu við sérsniðinni útvarpsstöð</string>
+    <string name="station_name">Útvarpsstöðvarheiti</string>
     <string name="stream_url">Slóð á streymi</string>
-    <string name="favicon_url">Favicon URL (valfrjálst)</string>
+    <string name="favicon_url">Logo-slóð stöðvar (Favicon)</string>
     <string name="select_image">Veldu Mynd</string>
     <string name="error_invalid_url">Vinsamlegast sláðu inn gilda vefslóð</string>
     <string name="action_save">Vista</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Fljótleg stjórntæki leikmanna</string>
-    <string name="widget_description_full">Leikmanna- og stöðvarlisti</string>
+    <string name="widget_description_small">Fljótlegar spilarastýringar</string>
+    <string name="widget_description_full">Spilari og listi yfir útvarpsstöðvar</string>
 
     <string name="settings_auto_db_update">Bakgrunnsgagnasamstilling</string>
-    <string name="settings_auto_db_update_desc">Uppfærðu gagnagrunn stöðvar sjálfkrafa með Radio-Browser API (mælt með).</string>
-    <string name="settings_station_click_counter">Stöðvar smelliteljari</string>
-    <string name="settings_station_click_counter_desc">Styðjið tölfræði útvarpsvafra með því að deila leikviðburðum nafnlaust.</string>
-    <string name="settings_rate_app_github">Hefurðu gaman af AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Skildu eftir stjörnu á GitHub! Það hjálpar öðrum að uppgötva appið og styður framtíðarþróun.</string>
+    <string name="settings_auto_db_update_desc">Uppfærðu gagnagrunn útvarpsstöðva sjálfkrafa með Radio-Browser API (mælt með).</string>
+    <string name="settings_station_click_counter">Smelliteljari útvarpsstöðvar</string>
+    <string name="settings_station_click_counter_desc">Styðjið tölfræði Radio-Browser með því að deila spilunarviðburðum nafnlaust.</string>
 
-    <string name="settings_remove_notification_on_stop">Fjarlægðu tilkynningu þegar app er lokað</string>
-    <string name="settings_remove_notification_on_stop_desc">Hunsaðu fjölmiðlatilkynninguna sjálfkrafa þegar forritinu er lokað frá nýlegum forritum</string>
+    <string name="settings_remove_notification_on_stop">Fjarlægja tilkynningu við stöðvun</string>
+    <string name="settings_remove_notification_on_stop_desc">Gleyma spilunartilkynningu sjálfkrafa þegar spilun er stöðvuð</string>
     <string name="settings_auto_resume_audio_focus">Haltu áfram eftir að hljóðfókus hefur tapast</string>
     <string name="settings_auto_resume_audio_focus_desc">Haltu spilun sjálfkrafa áfram eftir að símtöl, vekjara eða annað hljóð hættir</string>
+
+    <string name="settings_backup_restore">Öryggisafritun og endurheimt</string>
+    <string name="settings_export_backup">Búa til fullkomið öryggisafrit (ZIP)</string>
+    <string name="settings_export_backup_desc">Vistar allt í uppáhaldi, sérsniðnar stöðvar og tákn í ZIP-skrá</string>
+    <string name="settings_import_backup">Endurheimta öryggisafrit (ZIP)</string>
+    <string name="settings_import_backup_desc">Endurheimtir allt í uppáhaldi og sérsniðnar stöðvar úr ZIP-öryggisafritsskrá</string>
+    <string name="backup_export_success">Öryggisafrit vistað</string>
+    <string name="backup_export_error">Ekki tókst að vista öryggisafrit</string>
+    <string name="backup_import_success">Öryggisafrit endurheimt</string>
+    <string name="backup_import_error">Ekki tókst að endurheimta öryggisafrit</string>
+
+    <string name="database_summary_title">Staðbundinn gagnagrunnur</string>
+    <string name="database_total_stations">Útvarpsstöðvar samtals</string>
+    <string name="database_last_sync">Síðasta uppfærsla</string>
+    <string name="database_update_now">Uppfæra gagnagrunn núna</string>
+    <string name="database_full_update">Uppfæra gagnagrunn</string>
+    <string name="database_syncing">Samstillir…</string>
+    <string name="database_downloading">Sækir…</string>
+    <string name="database_stations_loaded">%1$s útvarpsstöðvar</string>
+    <string name="database_sync_channel_name">Samstilling gagnagrunns útvarpsstöðva</string>
+    <string name="database_sync_success">Uppfærslu gagnagrunns stöðva lokið</string>
+    <string name="database_error_no_connection">Engin nettenging</string>
+    <string name="database_error_no_space">Ekki nægilegt diskpláss</string>
+    <string name="database_error_failed">Uppfærsla gagnagrunns mistókst</string>
+
+    <string name="settings_disable_battery_optimization_desc">Til að halda spilun áfram þegar slökkt er á skjánum skal stilla rafhlöðunotkun á \'Ótakmarkað\'.</string>
+    <string name="battery_opt_open_settings">Opna stillingar</string>
+    <string name="battery_opt_later">Síðar</string>
 </resources>

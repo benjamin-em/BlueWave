@@ -53,17 +53,17 @@
     <string name="filter_empty_title">Build Your Custom Radio Station Feed</string>
     <string name="filter_empty_desc">Create a personalized view by combining multiple criteria. You can narrow down your search using:</string>
     <string name="filter_empty_filter_by">Filter by</string>
-    <string name="filter_empty_filter_desc">Country, Station Name, Tags, or Language</string>
+    <string name="filter_empty_filter_desc">Country, Radio Station Name, Tags, or Language</string>
     <string name="filter_empty_sort_by">Sort by</string>
     <string name="filter_empty_sort_desc">Clicks, Alphabet, Votes, or Last Change</string>
     <string name="filter_empty_hint">Type a name in the field above to save this custom view!</string>
-    <string name="error_station_load">Could not connect to station</string>
+    <string name="error_station_load">Could not connect to radio station</string>
     <string name="error_list_update">Could not connect to radio browser server</string>
 
     <string name="error_no_connection">No internet connection available</string>
     <string name="warning_volume_zero">Volume is at zero. You might not hear anything.</string>
 
-    <string name="share_action">Share station link with…</string>
+    <string name="share_action">Share radio station link with…</string>
 
     <string name="nav_item_stations">Stations</string>
     <string name="nav_item_starred">Favorites</string>
@@ -112,8 +112,8 @@
     <string name="theme_dark">Dark</string>
     <string name="theme_system">Follow system</string>
     <string name="settings_compact_style">Compact mode</string>
-    <string name="settings_compact_style_desc_off">Large icon adopted with station details</string>
-    <string name="settings_compact_style_desc_on">Small icon adopted without station details</string>
+    <string name="settings_compact_style_desc_off">Large icon adopted with radio station details</string>
+    <string name="settings_compact_style_desc_on">Small icon adopted without radio station details</string>
     <string name="settings_bottom_navigation">Bottom navigation</string>
     <string name="settings_ui_scale">UI Scaling</string>
     <string name="settings_language">Language</string>
@@ -127,9 +127,9 @@
     <string name="settings_single_use_tags_desc_off">Rarely-used tags will not be shown</string>
     <string name="settings_single_use_tags_desc_on">Rarely-used tags will be shown</string>
 
-    <string name="settings_show_broken">Broken stations</string>
-    <string name="settings_show_broken_on">Show broken stations in lists</string>
-    <string name="settings_show_broken_off">Do not show broken stations in lists</string>
+    <string name="settings_show_broken">Broken radio stations</string>
+    <string name="settings_show_broken_on">Show broken radio stations in lists</string>
+    <string name="settings_show_broken_off">Do not show broken radio stations in lists</string>
 
     <string name="settings_startup_behaviour">Start Behavior</string>
     <string name="action_grid_view">Grid View</string>
@@ -137,31 +137,31 @@
 
     <string name="startup_action_title">Start action</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Show all stations</string>
+    <string name="startup_show_all_stations">Show all radio stations</string>
     <string name="startup_show_favorites">Show favorites</string>
     <string name="startup_show_history">Show history</string>
     <string name="startup_show_last_view">Last view</string>
 
-    <string name="settings_load_icons">Show station icons</string>
+    <string name="settings_load_icons">Show radio station icons</string>
     <string name="settings_load_icons_on">Icons will be downloaded</string>
     <string name="settings_load_icons_off">Icons will not be downloaded</string>
 
     <string name="settings_auto_favorite">Auto-favorites</string>
-    <string name="settings_auto_favorite_on">Add stations automatically to favorites when playing</string>
-    <string name="settings_auto_favorite_off">Do not add stations automatically to favorites when playing</string>
+    <string name="settings_auto_favorite_on">Add radio stations automatically to favorites when playing</string>
+    <string name="settings_auto_favorite_off">Do not add radio stations automatically to favorites when playing</string>
 
     <string name="settings_play">Player</string>
     <string name="settings_auto_play_on_startup">Auto-play</string>
-    <string name="settings_auto_play_on_startup_on">Play last station on startup</string>
-    <string name="settings_auto_play_on_startup_off">Do not play last station on startup</string>
+    <string name="settings_auto_play_on_startup_on">Play last radio station on startup</string>
+    <string name="settings_auto_play_on_startup_off">Do not play last radio station on startup</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Use auto-stop timer with auto-play</string>
     <string name="settings_auto_off_on_startup_off">Do not use auto-stop timer with auto-play</string>
     <string name="settings_auto_off_sleep_timer">Auto-stop timer</string>
     <string name="settings_auto_off_sleep_timer_desc">Stop playing after %1$s minutes</string>
     <string name="settings_play_external">Enable external player</string>
-    <string name="settings_play_external_desc_on">Play stations with external player</string>
-    <string name="settings_play_external_desc_off">Play stations with AMARadio</string>
+    <string name="settings_play_external_desc_on">Play radio stations with external player</string>
+    <string name="settings_play_external_desc_off">Play radio stations with AMARadio</string>
     <string name="settings_remove_notification_on_stop">Dismiss notification on stop</string>
     <string name="settings_remove_notification_on_stop_desc">Automatically dismiss media notification when playback is stopped</string>
     <string name="settings_auto_resume_audio_focus">Resume after audio focus loss</string>
@@ -195,9 +195,9 @@
     <string name="settings_milliseconds_format">%d milliseconds</string>
 
     <string name="settings_auto_db_update">Background Data Sync</string>
-    <string name="settings_auto_db_update_desc">Auto-update station database via Radio-Browser API (recommended).</string>
+    <string name="settings_auto_db_update_desc">Auto-update radio station database via Radio-Browser API (recommended).</string>
 
-    <string name="settings_station_click_counter">Station click counter</string>
+    <string name="settings_station_click_counter">Radio station click counter</string>
     <string name="settings_station_click_counter_desc">Support Radio-Browser statistics by anonymously sharing play events.</string>
 
     <string name="settings_pause_when_noisy">Pause on headset disconnect</string>
@@ -221,9 +221,9 @@
     <string name="notify_paused">Paused</string>
     <string name="notify_metered_connection">Metered connection</string>
 
-    <string name="notify_starred">Station has been added to favorites</string>
-    <string name="notify_autostarred">Station has been automatically added to favorites</string>
-    <string name="notify_unstarred">Station has been removed from favorites</string>
+    <string name="notify_starred">Radio station has been added to favorites</string>
+    <string name="notify_autostarred">Radio station has been automatically added to favorites</string>
+    <string name="notify_unstarred">Radio station has been removed from favorites</string>
     <string name="notify_deleted_favorites">The favorites have been deleted</string>
     <string name="notify_deleted_history">The history has been deleted</string>
 
@@ -265,16 +265,16 @@
     <string name="tab_player_history">Track history</string>
 
     <string name="database_summary_title">Local Database</string>
-    <string name="database_total_stations">Total Stations</string>
+    <string name="database_total_stations">Total Radio Stations</string>
     <string name="database_last_sync">Last Sync</string>
     <string name="database_update_now">Update Database Now</string>
     <string name="database_full_update">Update Database</string>
     <string name="database_syncing">Syncing…</string>
     <string name="database_downloading">Downloading…</string>
-    <string name="database_stations_loaded">%1$s stations</string>
-    <string name="database_sync_channel_name">Database Synchronization</string>
+    <string name="database_stations_loaded">%1$s radio stations</string>
+    <string name="database_sync_channel_name">Station Database Synchronization</string>
     <string name="database_progress_format" translatable="false">%1$s / %2$s</string>
-    <string name="database_sync_success">Database update completed successfully</string>
+    <string name="database_sync_success">Station database update completed successfully</string>
     <string name="database_error_no_connection">No internet connection</string>
     <string name="database_error_no_space">Not enough disk space available</string>
     <string name="database_error_failed">Database update failed</string>
@@ -366,8 +366,8 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <string name="tab_custom_stations">Custom</string>
-    <string name="action_add_custom">Add Custom Station</string>
-    <string name="station_name">Station Name</string>
+    <string name="action_add_custom">Add Custom Radio Station</string>
+    <string name="station_name">Radio Station Name</string>
     <string name="stream_url">Stream URL</string>
     <string name="favicon_url">Favicon URL (optional)</string>
     <string name="select_image">Select Image</string>
@@ -375,7 +375,7 @@
     <string name="action_save">Save</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Station logo</string>
+    <string name="accessibility_station_logo">Radio station logo</string>
     <string name="accessibility_favorite_selected">Favorite, selected</string>
     <string name="accessibility_favorite_not_selected">Favorite, not selected</string>
     <string name="accessibility_category_icon">Category icon</string>

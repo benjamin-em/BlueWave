@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Omdøb fane</string>
     <string name="error_filter_name_required">Indtast venligst et navn til denne filterfane først</string>
     <string name="confirm_delete_filter_tab">Er du sikker på, at du vil slette filteret \"%1$s\"?</string>
-    <string name="filter_empty_title">Byg dit eget station-feed</string>
+    <string name="filter_empty_title">Byg dit eget radiostationsfeed</string>
     <string name="filter_empty_desc">Opret en personlig visning ved at kombinere flere kriterier. Du kan indsnævre din søgning ved hjælp af:</string>
     <string name="filter_empty_filter_by">Filtrer efter</string>
-    <string name="filter_empty_filter_desc">Land, stationsnavn, mærker eller sprog</string>
+    <string name="filter_empty_filter_desc">Land, Radiostationsnavn, mærker eller sprog</string>
     <string name="filter_empty_sort_by">Sorter efter</string>
     <string name="filter_empty_sort_desc">Klik, Alfabet, Stemmer oder Sidste ændring</string>
     <string name="filter_empty_hint">Skriv et navn i feltet ovenfor for at gemme denne brugerdefinerede visning!</string>
-    <string name="error_station_load">Kunne ikke forbinde til station</string>
-    <string name="error_list_update">Kunne ikke forbinde til radio browser server</string>
+    <string name="error_station_load">Kunne ikke forbinde til radiostationen</string>
+    <string name="error_list_update">Kunne ikke forbinde til Radio-Browser-serveren</string>
 
     <string name="error_no_connection">Ingen internetforbindelse tilgængelig</string>
     <string name="warning_volume_zero">Lydstyrken er på nul. Du hører muligvis ikke noget.</string>
 
-    <string name="share_action">Del station henvisning med&#8230;</string>
+    <string name="share_action">Del radiostationshenvisning med&#8230;</string>
 
-    <string name="nav_item_stations">Stationer</string>
+    <string name="nav_item_stations">Radiostationer</string>
     <string name="nav_item_starred">Favoritter</string>
     <string name="nav_item_history">Historik</string>
     <string name="nav_item_settings">Opsætning</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Mørk</string>
     <string name="theme_system">Følg systemet</string>
     <string name="settings_compact_style">Tæt tilstand</string>
-    <string name="settings_compact_style_desc_off">Stort ikon tilføjet med station detaljer</string>
-    <string name="settings_compact_style_desc_on">Lille ikon tilføjet uden station detaljer</string>
+    <string name="settings_compact_style_desc_off">Stort ikon tilføjet med radiostationsdetaljer</string>
+    <string name="settings_compact_style_desc_on">Lille ikon tilføjet uden radiostationsdetaljer</string>
     <string name="settings_bottom_navigation">Bundnavigation</string>
     <string name="settings_ui_scale">UI-skalering</string>
     <string name="settings_language">Sprog</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Sjældne brugte mærker vises ikke</string>
     <string name="settings_single_use_tags_desc_on">Sjældne brugte mærker vises</string>
 
-    <string name="settings_show_broken">Ugyldige stationer</string>
-    <string name="settings_show_broken_on">Vis ugyldige stationer i lister</string>
-    <string name="settings_show_broken_off">Vis ikke ugyldige stationer i lister</string>
+    <string name="settings_show_broken">Defekte radiostationer</string>
+    <string name="settings_show_broken_on">Vis defekte radiostationer i lister</string>
+    <string name="settings_show_broken_off">Vis ikke defekte radiostationer i lister</string>
 
     <string name="settings_startup_behaviour">Start opførsel</string>
     <string name="action_grid_view">Gittervisning</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Start håndtering</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Vis alle stationer</string>
+    <string name="startup_show_all_stations">Vis alle radiostationer</string>
     <string name="startup_show_favorites">Vis favoritter</string>
     <string name="startup_show_history">Vis historik</string>
     <string name="startup_show_last_view">Seneste visning</string>
 
-    <string name="settings_load_icons">Vis station ikoner</string>
+    <string name="settings_load_icons">Vis radiostationsikoner</string>
     <string name="settings_load_icons_on">Ikoner bliver hentet</string>
     <string name="settings_load_icons_off">Ikoner bliver ikke hentet</string>
 
     <string name="settings_auto_favorite">Automatisk favoritter</string>
-    <string name="settings_auto_favorite_on">Tilføj stationer automatisk til favoritter når der afspilles</string>
-    <string name="settings_auto_favorite_off">Tilføj ikke stationer automatisk til favoritter når der afspilles</string>
+    <string name="settings_auto_favorite_on">Tilføj radiostationer automatisk til favoritter når der afspilles</string>
+    <string name="settings_auto_favorite_off">Tilføj ikke radiostationer automatisk til favoritter når der afspilles</string>
 
     <string name="settings_play">Afspiller</string>
     <string name="settings_auto_play_on_startup">Automatisk afspilning</string>
-    <string name="settings_auto_play_on_startup_on">Afspil seneste station ved opstart</string>
-    <string name="settings_auto_play_on_startup_off">Afspil ikke seneste station ved opstart</string>
+    <string name="settings_auto_play_on_startup_on">Afspil seneste radiostation ved opstart</string>
+    <string name="settings_auto_play_on_startup_off">Afspil ikke seneste radiostation ved opstart</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Brug auto-stop timer med auto-play</string>
     <string name="settings_auto_off_on_startup_off">Brug ikke auto-stop timer mit auto-play</string>
     <string name="settings_auto_off_sleep_timer">Auto-stop timer</string>
     <string name="settings_auto_off_sleep_timer_desc">Stop afspilning efter %1$s minutter</string>
     <string name="settings_play_external">Aktivere ekstern afspiller</string>
-    <string name="settings_play_external_desc_on">Afspil stationer med ekstern afspiller</string>
-    <string name="settings_play_external_desc_off">Afspil stationer med AMARadio</string>
+    <string name="settings_play_external_desc_on">Afspil radiostationer med ekstern afspiller</string>
+    <string name="settings_play_external_desc_off">Afspil radiostationer med AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Tilslutningsmuligheder</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Pauset</string>
     <string name="notify_metered_connection">Afmålt forbindelse</string>
 
-    <string name="notify_starred">Station tilføjet til favoritter</string>
-    <string name="notify_autostarred">Station tilføjet automatisk til favoritter</string>
-    <string name="notify_unstarred">Station fjernet fra favoritter</string>
+    <string name="notify_starred">Radiostation tilføjet til favoritter</string>
+    <string name="notify_autostarred">Radiostation tilføjet automatisk til favoritter</string>
+    <string name="notify_unstarred">Radiostation fjernet fra favoritter</string>
     <string name="notify_deleted_favorites">Favoritter blev slettet</string>
     <string name="notify_deleted_history">Historikken blev slettet</string>
 
@@ -214,10 +214,10 @@
     <string name="yes">Ja</string>
     <string name="no">Nej</string>
 
-    <string name="alert_select_player">Vælg server</string>
+    <string name="alert_select_player">Vælg afspiller</string>
     <string name="alert_select_player_name">Navn</string>
-    <string name="hostname">Værtsnavn</string>
-    <string name="port">Port</string>
+    <string name="hostname">Serveradresse</string>
+    <string name="port">Netværksport</string>
 
     <string name="alert_press_back_to_exit">Tryk tilbage én gang mere for at afslutte</string>
 
@@ -251,7 +251,7 @@
     <string name="image_button_disable">Deaktivere</string>
     <string name="image_button_delete">Slette</string>
     <string name="image_button_more">Mere</string>
-    <string name="image_button_less">Mindre</string>
+    <string name="image_button_less">Minder</string>
     <string name="image_button_repeat">Gentag</string>
     <string name="image_button_dont_repeat">Gentag ikke</string>
     <string name="icon_click_trend_decreasing">Popularitet faldende</string>
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Afspil i ekstern afspiller</string>
     <string name="action_choose_external_player">Vælg ekstern afspiller</string>
 
-    <string name="settings_disable_battery_optimization">Batterioptimering</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Batterioptimierung ignoreres, AMARadio bør altid kunne genvinde fokus efter tab af fokus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Batterioptimering er aktiveret, AMARadio kan muligvis ikke genvinde fokus efter tab af fokus, hvis den er i baggrunden.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Baggrundsafspilning</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Andet</string>
     <string name="settings_rate_app">Bedøm AMARadio</string>
     <string name="settings_rate_app_summary">Hvis du kan lide appen, bedes du efterlade en anmeldelse i Play Store!</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stationslogo</string>
+    <string name="accessibility_station_logo">Radiostationslogo</string>
     <string name="accessibility_favorite_selected">Favorit, valgt</string>
     <string name="accessibility_favorite_not_selected">Favorit, ikke valgt</string>
     <string name="accessibility_category_icon">Kategori-ikon</string>
@@ -337,35 +335,63 @@
     <string name="accessibility_configure">Konfigurer</string>
     <string name="accessibility_close">Luk</string>
     <string name="accessibility_add_filter">Tilføj filter</string>
-    <string name="accessibility_station_options">Stationsindstillinger</string>
+    <string name="accessibility_station_options">Radiostationsindstillinger</string>
     <string name="not_applicable">n/v</string>
     <string name="accessibility_station_description">Station: %1$s, Sprog: %2$s, Tags: %3$s</string>
 
     <string name="error_no_file_manager">Kunne ikke finde en systemfilhåndtering. Sørg for, at en filstifinder er installeret og aktiveret.</string>
     <string name="error_no_browser">Kunne ikke finde en webbrowser. Installer venligst en browser for at åbne dette link.</string>
     <string name="error_no_homepage">Ingen hjemmeside tilgængelig for denne station</string>
-    <string name="tab_custom_stations">Skik</string>
-    <string name="action_add_custom">Tilføj Custom Station</string>
-    <string name="station_name">Stations navn</string>
+    <string name="tab_custom_stations">Brugerdefineret</string>
+    <string name="action_add_custom">Tilføj brugerdefineret radiostation</string>
+    <string name="station_name">Radiostationsnavn</string>
     <string name="stream_url">Stream URL</string>
-    <string name="favicon_url">Favicon URL (valgfrit)</string>
+    <string name="favicon_url">Stationslogo-URL (Favicon)</string>
     <string name="select_image">Vælg Billede</string>
     <string name="error_invalid_url">Indtast venligst en gyldig URL</string>
-    <string name="action_save">Spare</string>
+    <string name="action_save">Gem</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Hurtig spillerkontrol</string>
-    <string name="widget_description_full">Spiller og stationsliste</string>
+    <string name="widget_description_small">Hurtig afspillerbetjening</string>
+    <string name="widget_description_full">Afspiller og radiostationsliste</string>
 
     <string name="settings_auto_db_update">Baggrundsdatasynkronisering</string>
     <string name="settings_auto_db_update_desc">Automatisk opdatering af stationsdatabase via Radio-Browser API (anbefales).</string>
-    <string name="settings_station_click_counter">Stations kliktæller</string>
+    <string name="settings_station_click_counter">Radiostationskliktæller</string>
     <string name="settings_station_click_counter_desc">Støt Radio-Browser-statistikker ved anonymt at dele afspilningsbegivenheder.</string>
     <string name="settings_rate_app_github">Nyder du AMARadio?</string>
     <string name="settings_rate_app_github_summary">Efterlad en stjerne på GitHub! Det hjælper andre med at opdage appen og understøtter fremtidig udvikling.</string>
 
-    <string name="settings_remove_notification_on_stop">Fjern notifikation, når appen er lukket</string>
-    <string name="settings_remove_notification_on_stop_desc">Afvis automatisk mediemeddelelsen, når appen lukkes fra de seneste apps</string>
+    <string name="settings_remove_notification_on_stop">Fjern notifikation ved stop</string>
+    <string name="settings_remove_notification_on_stop_desc">Afvis automatisk mediemeddelelsen, når afspilning stoppes</string>
     <string name="settings_auto_resume_audio_focus">Genoptag efter tab af lydfokus</string>
     <string name="settings_auto_resume_audio_focus_desc">Genoptag automatisk afspilning efter telefonopkald, alarmer eller anden lydstop</string>
+
+    <string name="settings_backup_restore">Sikkerhedskopiering og gendannelse</string>
+    <string name="settings_export_backup">Opret fuld sikkerhedskopi (ZIP)</string>
+    <string name="settings_export_backup_desc">Gemmer alle favoritter, brugerdefinerede stationer og ikoner i en ZIP-fil</string>
+    <string name="settings_import_backup">Gendan sikkerhedskopi (ZIP)</string>
+    <string name="settings_import_backup_desc">Gendanner favoritter og brugerdefinerede stationer fra en ZIP-fil</string>
+    <string name="backup_export_success">Sikkerhedskopi gemt</string>
+    <string name="backup_export_error">Kunne ikke gemme sikkerhedskopi</string>
+    <string name="backup_import_success">Sikkerhedskopi gendannet</string>
+    <string name="backup_import_error">Kunne ikke gendanne sikkerhedskopi</string>
+
+    <string name="database_summary_title">Lokal database</string>
+    <string name="database_total_stations">Samlet antal radiostationer</string>
+    <string name="database_last_sync">Seneste opdatering</string>
+    <string name="database_update_now">Opdater database nu</string>
+    <string name="database_full_update">Opdater database</string>
+    <string name="database_syncing">Synkroniserer…</string>
+    <string name="database_downloading">Henter…</string>
+    <string name="database_stations_loaded">%1$s radiostationer</string>
+    <string name="database_sync_channel_name">Radiostationsdatabase-synkronisering</string>
+    <string name="database_sync_success">Opdatering af stationsdatabase gennemført</string>
+    <string name="database_error_no_connection">Ingen internetforbindelse</string>
+    <string name="database_error_no_space">Ikke nok diskplads</string>
+    <string name="database_error_failed">Opdatering af database mislykkedes</string>
+
+    <string name="settings_disable_battery_optimization_desc">For at fortsætte afspilningen med slukket skærm skal du indstille batteribrug til \'Ubegrænset\'.</string>
+    <string name="battery_opt_open_settings">Åbn indstillinger</string>
+    <string name="battery_opt_later">Senere</string>
 </resources>

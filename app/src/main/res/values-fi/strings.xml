@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Nimeä välilehti uudelleen</string>
     <string name="error_filter_name_required">Anna ensin nimi tälle suodatinnäkymälle</string>
     <string name="confirm_delete_filter_tab">Haluatko varmasti poistaa suodattimen \"%1$s\"?</string>
-    <string name="filter_empty_title">Luo oma radioasemanäkymäsi</string>
-    <string name="filter_empty_desc">Luo henkilökohtainen näkymä yhdistämällä useita kriteerejä. Voit rajata hakuasi seuraavilla:</string>
+    <string name="filter_empty_title">Loo oma radioasemanäkymäsi</string>
+    <string name="filter_empty_desc">Loo henkilökohtainen näkymä yhdistämällä useita kriteerejä. Voit rajata hakuasi seuraavilla:</string>
     <string name="filter_empty_filter_by">Suodata haun mukaan</string>
-    <string name="filter_empty_filter_desc">Maa, aseman nimi, tunnisteet tai kieli</string>
+    <string name="filter_empty_filter_desc">Maa, radioaseman nimi, tunnisteet tai kieli</string>
     <string name="filter_empty_sort_by">Järjestä</string>
     <string name="filter_empty_sort_desc">Klikkaukset, aakkosjärjestys, äänet tai viimeisin muutos</string>
     <string name="filter_empty_hint">Kirjoita nimi yllä olevaan kenttään tallentaaksesi tämän näkymän!</string>
-    <string name="error_station_load">Ei voitu yhdistää asemaan</string>
-    <string name="error_list_update">Ei voitu yhdistää radio browser -palvelimeen</string>
+    <string name="error_station_load">Ei voitu yhdistää radioasemaan</string>
+    <string name="error_list_update">Ei voitu yhdistää Radio-Browser-palvelimeen</string>
 
     <string name="error_no_connection">Internet-yhteyttä ei ole käytettävissä</string>
     <string name="warning_volume_zero">Äänenvoimakkuus on nollassa. Et ehkä kuule mitään.</string>
 
-    <string name="share_action">Jaa aseman osoite sovelluksella&#8230;</string>
+    <string name="share_action">Jaga radioaseman osoite sovelluksella&#8230;</string>
 
-    <string name="nav_item_stations">Asemat</string>
+    <string name="nav_item_stations">Radioasemat</string>
     <string name="nav_item_starred">Suosikit</string>
     <string name="nav_item_history">Historia</string>
     <string name="nav_item_settings">Asetukset</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Tumma</string>
     <string name="theme_system">Seuraa järjestelmää</string>
     <string name="settings_compact_style">Tiivis tila</string>
-    <string name="settings_compact_style_desc_off">Suuri kuvake aseman tiedoilla</string>
-    <string name="settings_compact_style_desc_on">Pieni kuvake ilman aseman tietoja</string>
+    <string name="settings_compact_style_desc_off">Suuri kuvake radioaseman tiedoilla</string>
+    <string name="settings_compact_style_desc_on">Pieni kuvake ilman radioaseman tietoja</string>
     <string name="settings_bottom_navigation">Alapalkki</string>
     <string name="settings_ui_scale">Käyttöliittymän skaalaus</string>
     <string name="settings_language">Kieli</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Harvoin käytettyjä tunnisteita ei näytetä</string>
     <string name="settings_single_use_tags_desc_on">Harvoin käytetyt tunnisteet näytetään</string>
 
-    <string name="settings_show_broken">Rikkinäiset asemat</string>
-    <string name="settings_show_broken_on">Näytä rikkinäiset asemat luetteloissa</string>
-    <string name="settings_show_broken_off">Piilota rikkinäiset asemat luetteloissa</string>
+    <string name="settings_show_broken">Rikkinäiset radioasemat</string>
+    <string name="settings_show_broken_on">Näytä rikkinäiset radioasemat luetteloissa</string>
+    <string name="settings_show_broken_off">Piilota rikkinäiset radioasemat luetteloissa</string>
 
     <string name="settings_startup_behaviour">Käynnistyskäyttäytyminen</string>
     <string name="action_grid_view">Ruudukkonäkymä</string>
@@ -133,12 +133,12 @@
 
     <string name="startup_action_title">Käynnistystoiminto</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Näytä kaikki asemat</string>
+    <string name="startup_show_all_stations">Näytä kaikki radioasemat</string>
     <string name="startup_show_favorites">Näytä suosikit</string>
     <string name="startup_show_history">Näytä historia</string>
     <string name="startup_show_last_view">Viimeisin näkymä</string>
 
-    <string name="settings_load_icons">Näytä asemien kuvakkeet</string>
+    <string name="settings_load_icons">Näytä radioasemien kuvakkeet</string>
     <string name="settings_load_icons_on">Kuvakkeet ladataan</string>
     <string name="settings_load_icons_off">Kuvakkeita ei ladata</string>
 
@@ -148,16 +148,16 @@
 
     <string name="settings_play">Soitin</string>
     <string name="settings_auto_play_on_startup">Automaattinen toisto</string>
-    <string name="settings_auto_play_on_startup_on">Toista viimeisin asema käynnistettäessä</string>
-    <string name="settings_auto_play_on_startup_off">Älä toista viimeisintä asemaa käynnistettäessä</string>
+    <string name="settings_auto_play_on_startup_on">Toista viimeisin radioasema käynnistettäessä</string>
+    <string name="settings_auto_play_on_startup_off">Älä toista viimeisintä radioasemaa käynnistettäessä</string>
     <string name="settings_auto_off_on_startup">Automaattinen pysäytys</string>
     <string name="settings_auto_off_on_startup_on">Käytä automaattista pysäytysajastinta automaattisen toiston kanssa</string>
     <string name="settings_auto_off_on_startup_off">Älä käytä automaattista pysäytysajastinta automaattisen toiston kanssa</string>
     <string name="settings_auto_off_sleep_timer">Automaattinen pysäytysajastin</string>
     <string name="settings_auto_off_sleep_timer_desc">Pysäytä toisto %1$s minuutin jälkeen</string>
     <string name="settings_play_external">Käytä ulkoista soitinta</string>
-    <string name="settings_play_external_desc_on">Toista asemia ulkoisella soittimella</string>
-    <string name="settings_play_external_desc_off">Toista asemia AMARadiolla</string>
+    <string name="settings_play_external_desc_on">Toista radioasemia ulkoisella soittimella</string>
+    <string name="settings_play_external_desc_off">Toista radioasemia AMARadiolla</string>
     <string name="settings_equalizer">Taajuuskorjain</string>
 
     <string name="settings_connectivity">Yhteydet</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Tauko</string>
     <string name="notify_metered_connection">Maksullinen yhteys</string>
 
-    <string name="notify_starred">Asema lisätty suosikkeihin</string>
-    <string name="notify_autostarred">Asema lisättiin automaattisesti suosikkeihin</string>
-    <string name="notify_unstarred">Asema poistettu suosikeista</string>
+    <string name="notify_starred">Radioasema lisätty suosikkeihin</string>
+    <string name="notify_autostarred">Radioasema lisättiin automaattisesti suosikkeihin</string>
+    <string name="notify_unstarred">Radioasema poistettu suosikeista</string>
     <string name="notify_deleted_favorites">Suosikit tyhjennetty</string>
     <string name="notify_deleted_history">Historia tyhjennetty</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Valitse ohjelma</string>
     <string name="alert_select_player_name">Nimi</string>
-    <string name="hostname">Isäntänimi</string>
-    <string name="port">Portti</string>
+    <string name="hostname">Palvelimen osoite</string>
+    <string name="port">Verkkoportti</string>
 
     <string name="alert_press_back_to_exit">Paina takaisin vielä kerran poistuaksesi</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Toista ulkoisella soittimella</string>
     <string name="action_choose_external_player">Valitse ulkoinen soitin</string>
 
-    <string name="settings_disable_battery_optimization">Akun optimointi</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Akun optimointi sivuutetaan, AMARadion pitäisi aina pystyä saamaan kohdennus takaisin.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Akun optimointi on käytössä, AMARadio ei ehkä pysty saamaan kohdennusta takaisin taustalla.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Taustatoisto</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Muuta</string>
     <string name="settings_rate_app">Arvostele AMARadio</string>
     <string name="settings_rate_app_summary">Jos pidät sovelluksesta, jätä arvostelu Play Kauppaan!</string>
@@ -323,12 +321,8 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Varahälytys</string>
-    <string name="alarm_fallback_info">Käytetään järjestelmän hälytystä, koska valittua radioasemaa ei voitu ladata</string>
-    <string name="alarm_back_desc">Järjestelmän varahälytys, kun radioasema ei lataudu</string>
-
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Aseman logo</string>
+    <string name="accessibility_station_logo">Radioaseman logo</string>
     <string name="accessibility_favorite_selected">Suosikki, valittu</string>
     <string name="accessibility_favorite_not_selected">Suosikki, ei valittu</string>
     <string name="accessibility_category_icon">Luokan kuvake</string>
@@ -341,35 +335,63 @@
     <string name="accessibility_configure">Määritä</string>
     <string name="accessibility_close">Sulje</string>
     <string name="accessibility_add_filter">Lisää suodatin</string>
-    <string name="accessibility_station_options">Aseman asetukset</string>
+    <string name="accessibility_station_options">Radioaseman asetukset</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Asema: %1$s, Kieli: %2$s, Tunnisteet: %3$s</string>
 
     <string name="error_no_file_manager">Järjestelmän tiedostonhallintaa ei löytynyt. Varmista, että tiedostojen hallintaohjelma on asennettu ja käytössä.</string>
     <string name="error_no_browser">Verkkoselainta ei löytynyt. Asenna selain avataksesi tämän linkin.</string>
-    <string name="error_no_homepage">Tälle asemalle ei ole saatavilla kotisivua</string>
+    <string name="error_no_homepage">Tälle radioasemalle ei ole saatavilla kotisivua</string>
     <string name="tab_custom_stations">Mukautettu</string>
-    <string name="action_add_custom">Lisää mukautettu asema</string>
-    <string name="station_name">Aseman nimi</string>
+    <string name="action_add_custom">Lisää mukautettu radioasema</string>
+    <string name="station_name">Radioaseman nimi</string>
     <string name="stream_url">Striimin URL-osoite</string>
-    <string name="favicon_url">Favicon URL (valinnainen)</string>
+    <string name="favicon_url">Aseman logon URL (Favicon)</string>
     <string name="select_image">Valitse Kuva</string>
     <string name="error_invalid_url">Anna kelvollinen URL-osoite</string>
-    <string name="action_save">Tallentaa</string>
+    <string name="action_save">Tallenna</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Soittimen nopeat ohjaimet</string>
-    <string name="widget_description_full">Soitin- ja asemaluettelo</string>
+    <string name="widget_description_full">Soitin ja radioasemaluettelo</string>
 
     <string name="settings_auto_db_update">Taustatietojen synkronointi</string>
-    <string name="settings_auto_db_update_desc">Päivitä asematietokanta automaattisesti Radio-Browser API:n kautta (suositus).</string>
-    <string name="settings_station_click_counter">Aseman napsautuslaskuri</string>
-    <string name="settings_station_click_counter_desc">Tue Radio-Browser-tilastoja jakamalla soittotapahtumia nimettömästi.</string>
+    <string name="settings_auto_db_update_desc">Päivitä radioasematietokanta automaattisesti Radio-Browser API:n kautta (suositus).</string>
+    <string name="settings_station_click_counter">Radioaseman napsautuslaskuri</string>
+    <string name="settings_station_click_counter_desc">Tue Radio-Browser-tilastoja jakamalla taustatoistotapahtumia nimettömästi.</string>
     <string name="settings_rate_app_github">Nautitko AMARadosta?</string>
     <string name="settings_rate_app_github_summary">Jätä tähti GitHubiin! Se auttaa muita löytämään sovelluksen ja tukee tulevaa kehitystä.</string>
 
-    <string name="settings_remove_notification_on_stop">Poista ilmoitus, kun sovellus suljetaan</string>
-    <string name="settings_remove_notification_on_stop_desc">Ohita media-ilmoitus automaattisesti, kun sovellus suljetaan viimeaikaisista sovelluksista</string>
+    <string name="settings_remove_notification_on_stop">Poista ilmoitus pysäytettäessä</string>
+    <string name="settings_remove_notification_on_stop_desc">Hylkää mediailmoitus automaattisesti, kun toisto pysäytetään</string>
     <string name="settings_auto_resume_audio_focus">Jatka äänen tarkennuksen häviämisen jälkeen</string>
     <string name="settings_auto_resume_audio_focus_desc">Jatka toistoa automaattisesti puhelun, hälytyksen tai muun äänen pysähtymisen jälkeen</string>
+
+    <string name="settings_backup_restore">Varmuuskopiointi ja palautus</string>
+    <string name="settings_export_backup">Luo täydellinen varmuuskopio (ZIP)</string>
+    <string name="settings_export_backup_desc">Tallentaa kaikki suosikit, mukautetut asemat ja kuvakkeet ZIP-tiedostoon</string>
+    <string name="settings_import_backup">Palauta varmuuskopio (ZIP)</string>
+    <string name="settings_import_backup_desc">Palauttaa suosikit ja mukautetut asemat ZIP-varmuuskopiointitiedostosta</string>
+    <string name="backup_export_success">Varmuuskopio tallennettu onnistuneesti</string>
+    <string name="backup_export_error">Varmuuskopion tallennus epäonnistui</string>
+    <string name="backup_import_success">Varmuuskopio palautettu onnistuneesti</string>
+    <string name="backup_import_error">Varmuuskopion palautus epäonnistui</string>
+
+    <string name="database_summary_title">Paikallinen tietokanta</string>
+    <string name="database_total_stations">Radioasemia yhteensä</string>
+    <string name="database_last_sync">Viimeisin päivitys</string>
+    <string name="database_update_now">Päivitä tietokanta nyt</string>
+    <string name="database_full_update">Päivitä tietokanta</string>
+    <string name="database_syncing">Synkronoidaan…</string>
+    <string name="database_downloading">Ladataan…</string>
+    <string name="database_stations_loaded">%1$s radioasemaa</string>
+    <string name="database_sync_channel_name">Radioasematietokannan synkronointi</string>
+    <string name="database_sync_success">Asematietokannan päivitys valmistui onnistuneesti</string>
+    <string name="database_error_no_connection">Ei internet-yhteyttä</string>
+    <string name="database_error_no_space">Ei riittävästi levytilaa</string>
+    <string name="database_error_failed">Tietokannan päivitys epäonnistui</string>
+
+    <string name="settings_disable_battery_optimization_desc">Jotta toisto jatkuu näytön ollessa sammutettuna, aseta akun käyttöarvoksi \'Rajoittamaton\'.</string>
+    <string name="battery_opt_open_settings">Avaa asetukset</string>
+    <string name="battery_opt_later">Myöhemmin</string>
 </resources>

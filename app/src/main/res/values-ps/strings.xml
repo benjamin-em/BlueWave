@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">نوم</string>
+    <string name="detail_tags">ټاګونه</string>
+    <string name="detail_country">هېواد</string>
+    <string name="detail_create_shortcut">اصلي سکرین ته یې ورزیات کړئ</string>
+    <string name="detail_language">ژبه</string>
+    <string name="detail_weblink">د ویب پاڼې لینک</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">ਚلول (Play)</string>
+    <string name="detail_pause">ځنډول (Pause)</string>
+    <string name="detail_stop">נעول (Stop)</string>
+    <string name="detail_share">شریکول</string>
+    <string name="detail_play_in_AMARadio">په AMARadio کې یې وږغوئ</string>
+
+    <string name="action_links">لینکونه</string>
+    <string name="action_homepage">اصلي پاڼه</string>
+    <string name="action_favorite">خوښ شوي</string>
+    <string name="action_starred_add">په خوښ شویو کې ورزیاتول</string>
+    <string name="action_starred_remove">له خوښ شویو څخه لیرې کول</string>
+
+    <string name="action_station_visit_website">ویب پاڼه وګورئ</string>
+    <string name="action_station_copy_stream_url">د سټریم URL کاپي کړئ</string>
+    <string name="action_station_share">شریکول</string>
+
+    <string name="action_local">ځايي</string>
+    <string name="action_skip_to_next">بل</string>
+    <string name="action_pause">ځنډول (Pause)</string>
+    <string name="action_skip_to_previous">مخکینی</string>
+    <string name="action_resume">بیا پیل کول</string>
+    <string name="action_stop">נעول (Stop)</string>
+    <string name="action_search">חיټل (Search)</string>
+    <string name="action_delete">پاکول</string>
+    <string name="action_delete_history">تاریخچه پاکول</string>
+    <string name="action_delete_favorites">ټول خوښ شوي پاکول</string>
+    <string name="action_delete_stream_history">د سندرو تاریخچه پاکول</string>
+    <string name="action_ok">ਸਮား (OK)</string>
+    <string name="action_cancel">بنسول (Cancel)</string>
+    <string name="action_top_click">ډېر کلیک شوي</string>
+    <string name="action_toggle_view">د ښودلو بڼه بدلول</string>
+    <string name="action_top_vote">ډېرې رایې اخیستې</string>
+    <string name="action_changed_lately">پدې وروستیو کې بدل شوي</string>
+    <string name="action_currently_playing">اوس ږغول کېږي</string>
+    <string name="action_tags">ټاګونه</string>
+    <string name="action_countries">هېوادونه/سیمې</string>
+    <string name="action_languages">ژبې</string>
+    <string name="action_edit">سمول</string>
+    <string name="action_copy_info">معلومات کاپي کول</string>
+    <string name="action_rename_tab">د ټاب نوم بدلول</string>
+
+    <string name="error_filter_name_required">مهرباني وکړئ لومړی ددې فلټر ټاب لپاره نوم داخل کړئ</string>
+    <string name="confirm_delete_filter_tab">ایا تاسو ډاډه یاست چې غواړئ د \"%1$s\" فلټر پاک کړئ؟</string>
+    <string name="filter_empty_title">د خپلې خوښې راډیو سټېشنونو لسټ جوړ کړئ</string>
+    <string name="filter_empty_desc">د څو معیارونو په یوځای کولو سره خپل راډیو سټېشنونه وټاکئ. تاسو کولی شئ خپله لټون په لاندې ډول محدود کړئ:</string>
+    <string name="filter_empty_filter_by">فلټر پر اساس:</string>
+    <string name="filter_empty_filter_desc">هېواد، د راډیو سټېشن نوم، ټاګونه يا ژبه</string>
+    <string name="filter_empty_sort_by">ترتیب پر اساس:</string>
+    <string name="filter_empty_sort_desc">کلیکونه، الفبا، رایې يا وروستي بدلونونه</string>
+    <string name="filter_empty_hint">د سينګار خوندي کولو لپاره پورتنۍ بکس کې نوم ولیکئ!</string>
+
+    <string name="error_station_load">له راډیو سټېشن سره نښلول ناممکن شول</string>
+    <string name="error_list_update">له Radio-Browser سرور سره نښلول ناممکن شول</string>
+
+    <string name="error_no_connection">د انټرنیټ اړیکه نشته.</string>
+    <string name="warning_volume_zero">د غږ کچه صفر ده. تاسو ښایی هېڅ وانه ورئ.</string>
+
+    <string name="share_action">د راډیو سټېشن لینک شریک کړئ له…</string>
+
+    <string name="nav_item_stations">راډیو سټېشنونه</string>
+    <string name="nav_item_starred">خوښ شوي</string>
+    <string name="nav_item_history">تاریخچه</string>
+    <string name="nav_item_settings">ترتیبات</string>
+
+    <string name="about_text">AMARadio سل په سلو کې له اعلاناتو پاک او د محرمیت ساتونکی دی.\n\nما دا اپلیکیشن په اصل کې د خپلې مور لپاره جوړ کړی و ترڅو هغې ته بې له کوم اعلاناتو یا تعقیب څخه د راډیو ساده او رښتینی تجروبه چمتو کړم. له همدې امله AMARadio به تل له اعلاناتو پاک وي – دا له هغې سره ژمنه ده چې له تاسو ټولو سره شریکه شوې ده.\n\nدا پروژه د RadioDroid پر بنسټ جوړه شوې ده. ټول کوډ له Java څخه Kotlin ته اړول شوی دی.\n\nکوډ په شتون کې دی: https://github.com/ounben/AMARadio\n\nدا اپلیکیشن د https://www.radio-browser.info مراجع وړیا کاروي.\n\nاړیکه: ben@ounben.com\n\nستونزې: https://github.com/ounben/AMARadio/issues\n\nدا اپلیکیشن وړیا دی او تر GPLv3 لاندې لایسنس شوی. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">نسخه: %1$s</string>
+    <string name="detail_star">په خوښ شویو کې ورزیاتول</string>
+    <string name="detail_unstar">له خوښ شویو څخه لیرې کول</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">بارېږي…</string>
+
+    <string name="sleep_timer" formatted="true">د خوب ټایمر: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">له ټاکل شوي وخت وروسته ږغول ودروئ</string>
+    <string name="sleep_timer_apply">تطبيق کول</string>
+    <string name="sleep_timer_clear">پاکول</string>
+    <string name="nav_item_add_sleep">د خوب ټایمر</string>
+
+    <string name="nav_item_save_playlist">خوښ شوي د پلی لسټ په توګه خوندي کول</string>
+    <string name="nav_item_load_playlist">له پلی لسټ څخه خوښ شوي داخلول</string>
+    <string name="nav_item_save_history_playlist">تاریخچه د پلی لسټ په توګه خوندي کول</string>
+    <string name="confirm_overwrite_file">ایا دغه فایل د نوي په واسطه بدلول غواړئ؟</string>
+    <string name="dialog_hint_file_name">د فایل نوم داخل کړئ</string>
+    <string name="error_empty_field">دا برخه حتمي ده</string>
+    <string name="error_invalid_file_name">د فایل نوم ناسم دی</string>
+    <string name="label_button_cancel">بنسول</string>
+    <string name="label_button_overwrite">بدلول</string>
+    <string name="notify_load_playlist_nok">له %1$s&#47;%2$s څخه داخلول ناکام شول</string>
+    <string name="notify_load_playlist_now">له %1$s&#47;%2$s څخه داخلېږي، مهرباني وکړئ انتظار وکړئ.</string>
+    <string name="notify_load_playlist_ok">له %2$s&#47;%3$s څخه %1$d سټېشنونه داخل شول</string>
+    <string name="notify_save_playlist_nok">په %1$s&#47;%2$s کې خوندي کول ناکام شول</string>
+    <string name="notify_save_playlist_now">په %1$s&#47;%2$s کې خوندي کېږي، مهرباني وکړئ انتظار وکړئ.</string>
+    <string name="notify_save_playlist_ok">په %1$s&#47;%2$s کې په بریالیتوب سره خوندي شول</string>
+    <string name="notify_sync_list_deleted_entries">د لېست له %2$d ځايي سټېشنونو څخه %1$d په سرور کې نشتون په توګه په نښه شول</string>
+
+    <string name="searchpreference_clear_history">تاریخچه پاکول</string>
+    <string name="searchpreference_no_results">هیڅ پایله ونه موندل شوه</string>
+    <string name="searchpreference_search">חיټل (Search)…</string>
+    <string name="settings_appearance">بڼه</string>
+    <string name="settings_theme_selection_title">تيم</string>
+    <string name="theme_light">روښانه</string>
+    <string name="theme_dark">تیاره</string>
+    <string name="theme_system">د سیسټم مطابق</string>
+    <string name="settings_compact_style">تنګ او وړوکی حالت</string>
+    <string name="settings_compact_style_desc_off">د راډیو سټېشن جزیاتو سره لوی انځورن</string>
+    <string name="settings_compact_style_desc_on">له جزیاتو پرته وړوکی انځورن</string>
+    <string name="settings_bottom_navigation">لاندینۍ بار</string>
+    <string name="settings_ui_scale">د اندازه کولو شمیره</string>
+    <string name="settings_language">ژبه</string>
+    <string name="ui_scale_compact">وړوکی</string>
+    <string name="ui_scale_standard">سیسټم معیار</string>
+    <string name="ui_scale_large">لوی</string>
+    <string name="ui_scale_extra_large">خورا لوی</string>
+
+    <string name="settings_interaction">ارتباط</string>
+    <string name="settings_single_use_tags">کمه کارېدونکي ټاګونه ښودل</string>
+    <string name="settings_single_use_tags_desc_off">کمه کارېدونکي ټاګونه نه ښودل کېږي</string>
+    <string name="settings_single_use_tags_desc_on">کمه کارېدونکي ټاګونه ښودل کېږي</string>
+
+    <string name="settings_show_broken">غیر فعال راډیو سټېشنونه</string>
+    <string name="settings_show_broken_on">په لېستونو کې غیر فعال سټېشنونه ښودل</string>
+    <string name="settings_show_broken_off">په لېستونو کې غیر فعال سټېشنونه نه ښودل</string>
+
+    <string name="settings_startup_behaviour">د پیل بڼه</string>
+    <string name="action_grid_view">د جالۍ بڼه</string>
+    <string name="action_list_view">د لېست بڼه</string>
+
+    <string name="startup_action_title">د پیل عمل</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">ټول راډیو سټېشنونه ښودل</string>
+    <string name="startup_show_favorites">خوښ شوي ښودل</string>
+    <string name="startup_show_history">تاریخچه ښودل</string>
+    <string name="startup_show_last_view">وروستی حالت</string>
+
+    <string name="settings_load_icons">د سټېشن لوګوګانې ښودل</string>
+    <string name="settings_load_icons_on">لوګوګانې به ډاونلوډ شي</string>
+    <string name="settings_load_icons_off">لوګوګانې به نه ډاونلوډ کېږي</string>
+
+    <string name="settings_auto_favorite">خپلکارې خوښول</string>
+    <string name="settings_auto_favorite_on">د ږغولو پر مهال سټېشنونه په خپلکاري ډول په خوښ شویو کې ورزیاتول</string>
+    <string name="settings_auto_favorite_off">د ږغولو پر مهال سټېشنونه په خپلکاري ډول په خوښ شویو کې نه ورزیاتول</string>
+
+    <string name="settings_play">پلیر</string>
+    <string name="settings_auto_play_on_startup">خپلکارې ږغول</string>
+    <string name="settings_auto_play_on_startup_on">د پیل پر مهال وروستی راډیو سټېشن ږغول</string>
+    <string name="settings_auto_play_on_startup_off">د پیل پر مهال وروستی راډیو سټېشن نه ږغول</string>
+    <string name="settings_auto_off_on_startup">خپلکارې ودریدل</string>
+    <string name="settings_auto_off_on_startup_on">له خپلکارې ږغولو سره د ټایمر کارول</string>
+    <string name="settings_auto_off_on_startup_off">له خپلکارې ږغولو سره د ټایمر نه کارول</string>
+    <string name="settings_auto_off_sleep_timer">د خوب ټایمر</string>
+    <string name="settings_auto_off_sleep_timer_desc">له %1$s دقیقو وروسته ږغول ودروئ</string>
+    <string name="settings_play_external">بهرنی پلیر فعالول</string>
+    <string name="settings_play_external_desc_on">راډیو سټېشنونه له بهرني پلیر سره ږغول</string>
+    <string name="settings_play_external_desc_off">راډیو سټېشنونه په AMARadio کې ږغول</string>
+    <string name="settings_equalizer">ایکوالایزر</string>
+
+    <string name="settings_connectivity">اړیکه</string>
+    <string name="settings_connect_timeout">د نښلولو پورې محدوده موده</string>
+    <string name="settings_read_timeout">د لوستلو موده</string>
+    <string name="settings_resume_timeout">د بیا پیل موده</string>
+    <string name="settings_retry_timeout">د بیا هڅې موده</string>
+    <string name="settings_retry_delay">د بیا نښلولو ځنډ</string>
+    <string name="settings_proxy">پراکسی</string>
+    <string name="settings_proxy_login">کارن نوم</string>
+    <string name="settings_proxy_password">پټنوم</string>
+    <string name="settings_proxy_action_test">ازموینه</string>
+    <string name="settings_proxy_working">په بریالیتوب له %s سره وصل شو</string>
+    <string name="settings_proxy_not_working">له %1$s سره نښلول ناکام شول\n%2$s</string>
+    <string name="settings_proxy_invalid">د پراکسی شمیرې ناسمی دی</string>
+    <string name="ignore_proxy_settings_invalid">ناسم پراکسی تنظیمات نه دي منل شوي</string>
+    <string name="settings_seconds_format">%d ثانیې</string>
+    <string name="settings_milliseconds_format">%d ملی ثانیې</string>
+
+    <string name="settings_pause_when_noisy">کله چې غوږۍ لرې شي ږغول ځنډول</string>
+
+    <string name="settings_auto_resume_do_not_resume">بیا مه پیلوئ</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">په سیمدارو غوږیو بیا پیل کول</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">د سیمدارو غوږیو په نښلولو ږغول بیا پیلول</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">په بلوټوت بیا پیل کول</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">د بلوټوت A2DP آلې په نښلولو ږغول بیا پیلول</string>
+
+    <string name="settings_auto_resume_on_any_connected">په هرې اړیکې بیا پیل کول</string>
+
+    <string name="settings_warn_no_wifi">د Wi-Fi د نشتون خبرداری</string>
+    <string name="settings_warn_no_wifi_on">له Wi-Fi پرته د ږغولو پر مهال خبرداری ورکول</string>
+    <string name="settings_warn_no_wifi_off">له Wi-Fi پرته خبرداری نه ورکول</string>
+
+    <string name="notify_pre_play">نښلېږي</string>
+    <string name="notify_play">ږغول کېږي</string>
+    <string name="notify_paused">ځنډول شوی</string>
+    <string name="notify_metered_connection">محدوده انټرنیټي اړیکه</string>
+
+    <string name="notify_starred">راډیو سټېشن په خوښ شویو کې ورزیات شو</string>
+    <string name="notify_autostarred">راډیو سټېشن په خپلکاري ډول په خوښ شویو کې ورزیات شو</string>
+    <string name="notify_unstarred">راډیو سټېشن له خوښ شویو لیرې شو</string>
+    <string name="notify_deleted_favorites">خوښ شوي پاک شول</string>
+    <string name="notify_deleted_history">تاریخچه پاکه شوه</string>
+
+    <string name="notify_open_link_failure">د لینک پرانیستلو لپاره هیچا افلیکیشن ونه موندل شو</string>
+
+    <string name="notify_station_removed_from_list">1 پاک شو</string>
+    <string name="action_station_removed_from_list_undo">بېرته راوستل</string>
+
+    <string name="alert_delete_history">ایا واقعا غواړئ تاريخچه پاکه کړئ؟</string>
+    <string name="alert_delete_favorites">ایا واقعا غواړئ ټول خوښ شوي پاک کړئ؟</string>
+    <string name="yes">هو</string>
+    <string name="no">نه</string>
+
+    <string name="alert_select_player">مهرباني وکړئ پلیر وټاکئ</string>
+    <string name="alert_select_player_name">نوم</string>
+    <string name="hostname">د سرور ادرس</string>
+    <string name="port">د شبکې پورټ</string>
+
+    <string name="alert_press_back_to_exit">د وتلو لپاره یو ځل بیا \"Aft\" کلیک کړئ</string>
+
+    <string name="error_stream_url">د سټریم URL ستونزه</string>
+    <string name="error_caching_stream">د سټریم ذخیره کولو ستونزه</string>
+    <string name="error_play_stream">سټریم نشي ږغول کیدی</string>
+    <string name="error_stream_reconnect_timeout">له سټریم سره بیرته نښلول ناکام شول: وخت پای ته ورسېد</string>
+    <string name="warning_no_network_trying_resume">انټرنیټ نشته. کله چې اړیکه بیرته راشي نو بیا پیل کېږي.</string>
+    <string name="giving_up_resume">د بیا پیل هڅه لغوه شوه</string>
+
+    <string name="error_grant_audiofocus">د آډیو فوکس زښت د سیسټم لخوا نه دی منل شوی</string>
+
+    <string name="error_no_equalizer_found">د ایکوالایزر اپلیکیشن ونه موندل شو</string>
+
+    <string name="player_info_status">حالت:&#160;</string>
+    <string name="player_info_status_stopped">ودرید</string>
+    <string name="player_info_status_playing">ږغول کېږي</string>
+    <string name="player_info_transferred">انتقال شوي ډاټا: %1$s</string>
+
+    <string name="tab_player_art">د البوم انځور</string>
+    <string name="tab_player_info">معلومات</string>
+    <string name="tab_player_history">د سندرو تاریخچه</string>
+
+    <string name="station_detail_bitrate">%1$d kbps</string>
+    <string name="station_detail_broken">غیر فعال</string>
+    <string name="station_detail_deleted_on_server">پاک شوی</string>
+
+    <string name="station_details_clicks">%1$d کلیکونه</string>
+    <string name="station_details_votes">%1$d رایې</string>
+
+    <string name="image_button_disable">غیر فعالول</string>
+    <string name="image_button_delete">پاکول</string>
+    <string name="image_button_more">ډېر</string>
+    <string name="image_button_less">لږ</string>
+    <string name="image_button_repeat">تکرارول</string>
+    <string name="image_button_dont_repeat">نه تکرارول</string>
+    <string name="icon_click_trend_decreasing">محبوبیت کمېږي</string>
+    <string name="icon_click_trend_increasing">محبوبیت زیاتېږي</string>
+    <string name="icon_click_trend_stable">محبوبیت ثابت دی</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% له اعلاناتو پاک او محرم</string>
+
+    <string name="action_play_in_external">په بهرني پلیر کې ږغول</string>
+    <string name="action_choose_external_player">بهرنی پلیر ټاکل</string>
+
+    <string name="settings_disable_battery_optimization">په پس منظر کې ږغول</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">نور</string>
+    <string name="settings_rate_app">د AMARadio ارزونه وکړئ</string>
+    <string name="settings_rate_app_summary">که اپلیکیشن ستاسو خوښ شو، هیله ده په Play Store کې نظر شریک کړئ!</string>
+    <string name="settings_rate_app_github">له AMARadio څخه خوند اخلئ؟</string>
+    <string name="settings_rate_app_github_summary">په GitHub کې یو سټار ورکړئ! دا نورو ته د اپ په موندلو کې مرسته کوي.</string>
+    <string name="settings_statistics">احصائیه</string>
+    <string name="settings_about">د AMARadio په اړه</string>
+
+    <string name="description_btn_skip_to_next">بل ته تلل</string>
+    <string name="description_btn_skip_to_previous">مخکیني ته تلل</string>
+
+    <string-array name="weekdays">
+        <item>ی</item>
+        <item>د</item>
+        <item>د</item>
+        <item>چ</item>
+        <item>پ</item>
+        <item>ج</item>
+        <item>ښ</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">د سټریم URL په بریالیتوب کاپي شو</string>
+    <string name="notify_track_info_copied">د سندرې معلومات په بریالیتوب کاپي شول</string>
+
+    <string-array name="actions_station_link">
+        <item>ویب پاڼه وګورئ</item>
+        <item>د سټریم URL کاپي کړئ</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">محدوده اړیکه وپېژندل شوه</string>
+    <string name="alert_metered_connection_message">محدوده انټرنیټي اړیکه ښايي اضافي لګښت ولري، د دوام لپاره \'OK\' ټک وکړئ.</string>
+    <string name="nav_item_statistics">احصائیه</string>
+    <string name="nav_item_about">په اړه</string>
+    <string name="refresh">تازه کول</string>
+    <string name="action_filter">فلټر</string>
+    <string name="filter_country">هېواد</string>
+    <string name="filter_tag">ټاګ</string>
+    <string name="filter_language">ژبه</string>
+    <string name="filter_sort_by">ترتیب پر اساس</string>
+    <string name="filter_reverse">معکوس ترتیب</string>
+    <string name="filter_apply">فلټر تطبیقول</string>
+    <string name="sort_name">نوم</string>
+    <string name="sort_votes">رایې</string>
+    <string name="sort_clicks">کلیکونه</string>
+    <string name="sort_lastchange">وروستی بدلون</string>
+    <string name="filter_select_country">هېواد وټاکئ</string>
+    <string name="filter_select_language">ژبه وټاکئ</string>
+    <string name="filter_type_tag">ټاګ ولیکئ…</string>
+    <string name="filter_tap_to_configure">د تنظیم لپاره کښېکاږئ</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">د راډیو سټېشن لوګو</string>
+    <string name="accessibility_favorite_selected">خوښ شوی، ټاکل شوی</string>
+    <string name="accessibility_favorite_not_selected">خوښ شوی، نه دی ټاکل شوی</string>
+    <string name="accessibility_category_icon">د وېشنيزې نښه</string>
+    <string name="accessibility_playing">اوس ږغول کېږي</string>
+    <string name="accessibility_menu">مینو پرانیستل</string>
+    <string name="accessibility_search_back">لټون بندول</string>
+    <string name="accessibility_filter_reverse">د ترتیب بڼه بدلول</string>
+    <string name="accessibility_clear_text">لیکنه پاکول</string>
+    <string name="accessibility_back">بېرته</string>
+    <string name="accessibility_configure">تنظيمول</string>
+    <string name="accessibility_close">بندول</string>
+    <string name="accessibility_add_filter">فلټر ورزیاتول</string>
+    <string name="accessibility_station_options">د راډیو سټېشن اختیارونه</string>
+    <string name="not_applicable">ن/ا</string>
+    <string name="accessibility_station_description">سټېشن: %1$s, ژبه: %2$s, ټاګونه: %3$s</string>
+
+    <string name="error_no_file_manager">د فایل مینیجر ونه موندل شو.</string>
+    <string name="error_no_browser">ویب برائوزر ونه موندل شو.</string>
+    <string name="error_no_homepage">د دې راډیو سټېشن لپاره هیڅ اصلي پاڼه شتون نلري</string>
+    <string name="tab_custom_stations">ځانګړي</string>
+    <string name="action_add_custom">ځانګړی راډیو سټېشن ورزیاتول</string>
+    <string name="station_name">د راډیو سټېشن نوم</string>
+    <string name="stream_url">د سټریم URL</string>
+    <string name="favicon_url">د سټېشن لوګو URL (Favicon)</string>
+    <string name="select_image">انځور وټاکئ</string>
+    <string name="error_invalid_url">مهرباني وکړئ سم URL داخل کړئ</string>
+    <string name="action_save">خوندي کول</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">د چټک پلیر کنټرول</string>
+    <string name="widget_description_full">پلیر او د راډیو سټېشنونو لېست</string>
+
+    <string name="settings_auto_db_update">د شاليد ډېټا هممهالول</string>
+    <string name="settings_auto_db_update_desc">د Radio-Browser API له لارې د سټېشنونو ډېټابېس سمدستي تازه کول.</string>
+    <string name="settings_station_click_counter">د سټېشن د کلیکونو شمیرونکی</string>
+    <string name="settings_station_click_counter_desc">د ږغولو معلوماتو شریکولو له لارې د Radio-Browser بڼه پياوړې کړئ.</string>
+
+    <string name="settings_remove_notification_on_stop">د بندیدو پر مهال لېږل شوی پیغام پاکول</string>
+    <string name="settings_remove_notification_on_stop_desc">کله چې ږغول ودرېږي نو خبرتیا سمدستي لیرې کول</string>
+    <string name="settings_auto_resume_audio_focus">د غږ مرکزیت له لاسه ورکولو وروسته بیرته پیلول</string>
+    <string name="settings_auto_resume_audio_focus_desc">له زنګ وهلو یا خبرتیاوو وروسته په اتوماتیک ډول ږغول بیرته پیلول</string>
+
+    <string name="settings_backup_restore">بیک اپ او بیا راوستل</string>
+    <string name="settings_export_backup">بشپړ بیک اپ جوړول (ZIP)</string>
+    <string name="settings_export_backup_desc">ټول خوښ شوي، ځانګړي سټېشنونه او انځورونه په ZIP فایل کې خوندي کوي</string>
+    <string name="settings_import_backup">بیک اپ بېرته راوستل (ZIP)</string>
+    <string name="settings_import_backup_desc">له ZIP فایل څخه خوښ شوي او ځانګړي سټېشنونه بېرته راولي</string>
+    <string name="backup_export_success">بیک اپ په بریالیتوب خوندي شو</string>
+    <string name="backup_export_error">د بیک اپ خوندي کول ناکام شول</string>
+    <string name="backup_import_success">بیک اپ په بریالیتوب بېرته راوستل شو</string>
+    <string name="backup_import_error">د بیک اپ بېرته راوستل ناکام شول</string>
+
+    <string name="database_summary_title">ځايي ډېټابېس</string>
+    <string name="database_total_stations">ټول راډیو سټېشنونه</string>
+    <string name="database_last_sync">وروستی تازه کول</string>
+    <string name="database_update_now">ډېټابېس اوس تازه کړئ</string>
+    <string name="database_full_update">ډېټابېس تازه کول</string>
+    <string name="database_syncing">ہممهالېږي…</string>
+    <string name="database_downloading">ډاونلوډ کېږي…</string>
+    <string name="database_stations_loaded">%1$s راډیو سټېشنونه</string>
+    <string name="database_sync_channel_name">د راډیو سټېشنونو ډېټابېس هممهالول</string>
+    <string name="database_sync_success">د سټېشنونو ډېټابېس تازه کول په بریالیتوب پای ته ورسېدل</string>
+    <string name="database_error_no_connection">د انټرنیټ اړیکه نشته</string>
+    <string name="database_error_no_space">په ਡਿਸਕ کې پرېمانه ځای نشته</string>
+    <string name="database_error_failed">د ډېټابېس تازه کول ناکام شول</string>
+
+    <string name="settings_disable_battery_optimization_desc">د سکرین له مړ کېدو وروسته د ږغولو جاري ساتلو لپاره د بیٹری ترتیبات \'Unrestricted\' ته وټاکئ.</string>
+    <string name="battery_opt_open_settings">ترتیبات پرانیستل</string>
+    <string name="battery_opt_later">وروسته</string>
 </resources>

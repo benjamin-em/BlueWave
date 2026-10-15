@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Reanomenar pestanya</string>
     <string name="error_filter_name_required">Introduïu primer un nom per a aquesta pestanya de filtre</string>
     <string name="confirm_delete_filter_tab">Esteu segur que voleu suprimir el filtre \"%1$s\"?</string>
-    <string name="filter_empty_title">Construeix el teu propi feed d\'emissores</string>
+    <string name="filter_empty_title">Construeix el teu propi feed d\'emissores de ràdio</string>
     <string name="filter_empty_desc">Creeu una vista personalitzada combinant diversos criteris. Podeu restringir la cerca mitjançant:</string>
     <string name="filter_empty_filter_by">Filtra per</string>
-    <string name="filter_empty_filter_desc">País, Nom de l\'emissora, Etiquetes o Idioma</string>
+    <string name="filter_empty_filter_desc">País, Nom de l\'emissora de ràdio, Etiquetes o Idioma</string>
     <string name="filter_empty_sort_by">Ordena per</string>
     <string name="filter_empty_sort_desc">Clics, Alfabet, Vots o Últim canvi</string>
     <string name="filter_empty_hint">Escriviu un nom al camp anterior per desar aquesta vista personalitzada!</string>
-    <string name="error_station_load">No s\'ha pogut connectar a l\'emissora</string>
-    <string name="error_list_update">No s\'ha pogut connectar al servidor</string>
+    <string name="error_station_load">No s\'ha pogut connectar a l\'emissora de ràdio</string>
+    <string name="error_list_update">No s\'ha pogut connectar al servidor Radio-Browser</string>
 
     <string name="error_no_connection">No hi ha connexió a Internet disponible</string>
     <string name="warning_volume_zero">El volum està a zero. Pot ser que no sentis res.</string>
 
-    <string name="share_action">Compartir emissora amb&#8230;</string>
+    <string name="share_action">Compartir emissora de ràdio amb&#8230;</string>
 
-    <string name="nav_item_stations">Emissores</string>
+    <string name="nav_item_stations">Emissores de ràdio</string>
     <string name="nav_item_starred">Preferides</string>
     <string name="nav_item_history">Historial</string>
     <string name="nav_item_settings">Configuració</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Fosc</string>
     <string name="theme_system">Seguir el sistema</string>
     <string name="settings_compact_style">Mode compacte</string>
-    <string name="settings_compact_style_desc_off">Icona gran adoptada amb els detalls de l\'emissora</string>
-    <string name="settings_compact_style_desc_on">Icona petita adoptada sense detalls d\'emissora</string>
+    <string name="settings_compact_style_desc_off">Icona gran adoptada amb els detalls de l\'emissora de ràdio</string>
+    <string name="settings_compact_style_desc_on">Icona petita adoptada sense detalls d\'emissora de ràdio</string>
     <string name="settings_bottom_navigation">Navegació inferior</string>
     <string name="settings_ui_scale">Escala d\'UI</string>
     <string name="settings_language">Idioma</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Les etiquetes poc usades no es mostraran</string>
     <string name="settings_single_use_tags_desc_on">Es mostraran etiquetes poc usades</string>
 
-    <string name="settings_show_broken">Emissores espatllades</string>
-    <string name="settings_show_broken_on">Mostra les emissores espatllades a les llistes</string>
-    <string name="settings_show_broken_off">No mostris les emissores espatllades a les llistes</string>
+    <string name="settings_show_broken">Emissores de ràdio espatllades</string>
+    <string name="settings_show_broken_on">Mostra les emissores de ràdio espatllades a les llistes</string>
+    <string name="settings_show_broken_off">No mostris les emissores de ràdio espatllades a les llistes</string>
 
     <string name="settings_startup_behaviour">Comportament inicial</string>
     <string name="action_grid_view">Vista en graella</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Acció inicial</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Mostra totes les emissores</string>
+    <string name="startup_show_all_stations">Mostra totes les emissores de ràdio</string>
     <string name="startup_show_favorites">Mostra les preferides</string>
     <string name="startup_show_history">Mostra l\'historial</string>
     <string name="startup_show_last_view">Darrera visualització</string>
 
-    <string name="settings_load_icons">Mostra les icones de les emissores</string>
+    <string name="settings_load_icons">Mostra les icones de les emissores de ràdio</string>
     <string name="settings_load_icons_on">Es descarregaran les icones</string>
     <string name="settings_load_icons_off">No es descarregaran les icones</string>
 
     <string name="settings_auto_favorite">Auto-favorits</string>
-    <string name="settings_auto_favorite_on">Afegir emissores automàticament a les preferides quan s\'estan reproduint</string>
-    <string name="settings_auto_favorite_off">No afegir emissores automàticament a les preferides quan s\'estan reproduint</string>
+    <string name="settings_auto_favorite_on">Afegir emissores de ràdio automàticament a les preferides quan s\'estan reproduint</string>
+    <string name="settings_auto_favorite_off">No afegir emissores de ràdio automàticament a les preferides quan s\'estan reproduint</string>
 
     <string name="settings_play">Reproducció</string>
     <string name="settings_auto_play_on_startup">Auto-reproducció</string>
-    <string name="settings_auto_play_on_startup_on">Reproduir la darrera emissora a l\'inici</string>
-    <string name="settings_auto_play_on_startup_off">No reproduir la darrera emissora a l\'inici</string>
+    <string name="settings_auto_play_on_startup_on">Reproduir la darrera emissora de ràdio a l\'inici</string>
+    <string name="settings_auto_play_on_startup_off">No reproduir la darrera emissora de ràdio a l\'inici</string>
     <string name="settings_auto_off_on_startup">Auto-aturada</string>
     <string name="settings_auto_off_on_startup_on">Utilitzar el temporitzador d\'auto-aturada amb l\'auto-reproducció</string>
     <string name="settings_auto_off_on_startup_off">No utilitzar el temporitzador d\'auto-aturada amb l\'auto-reproducció</string>
     <string name="settings_auto_off_sleep_timer">Temporitzador d\'auto-aturada</string>
     <string name="settings_auto_off_sleep_timer_desc">Atura la reproducció després de %1$s minuts</string>
     <string name="settings_play_external">Activa el reproductor extern</string>
-    <string name="settings_play_external_desc_on">Reprodueix emissores amb reproductor extern</string>
-    <string name="settings_play_external_desc_off">Reprodueix les emissores amb AMARadio</string>
+    <string name="settings_play_external_desc_on">Reprodueix emissores de ràdio amb reproductor extern</string>
+    <string name="settings_play_external_desc_off">Reprodueix les emissores de ràdio amb AMARadio</string>
     <string name="settings_equalizer">Equalitzador</string>
 
     <string name="settings_connectivity">Connectivitat</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">En pausa</string>
     <string name="notify_metered_connection">Connexió mesurada</string>
 
-    <string name="notify_starred">S\'ha afegit l\'emissora a les preferides</string>
-    <string name="notify_autostarred">L\'emissora s\'ha afegit automàticament a les preferides</string>
-    <string name="notify_unstarred">L\'emissora s\'ha eliminat de les preferides</string>
+    <string name="notify_starred">S\'ha afegit l\'emissora de ràdio a les preferides</string>
+    <string name="notify_autostarred">L\'emissora de ràdio s\'ha afegit automàticament a les preferides</string>
+    <string name="notify_unstarred">L\'emissora de ràdio s\'ha eliminat de les preferides</string>
     <string name="notify_deleted_favorites">S\'han suprimit de les preferides</string>
     <string name="notify_deleted_history">S\'ha suprimit l\'historial</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Seleccioneu un reproductor</string>
     <string name="alert_select_player_name">Nom</string>
-    <string name="hostname">Nom d\'amfitrió</string>
-    <string name="port">Port</string>
+    <string name="hostname">Adreça del servidor</string>
+    <string name="port">Port de xarxa</string>
 
     <string name="alert_press_back_to_exit">Torneu a prémer enrere per sortir</string>
 
@@ -264,10 +264,10 @@
     <string name="action_play_in_external">Reprodueix en un reproductor extern</string>
     <string name="action_choose_external_player">Tria un reproductor extern</string>
 
-    <string name="settings_disable_battery_optimization">Optimització de la bateria</string>
+    <string name="settings_disable_battery_optimization">Reproducció en segon pla</string>
     <string name="settings_ignore_battery_optimization_summary_on">S\'ignora l\'optimització de la bateria, AMARadio sempre hauria de poder tornar a centrar-se després de la pèrdua de focus.</string>
     <string name="settings_ignore_battery_optimization_summary_off">S\'activa l\'optimització de la bateria, és possible que AMARadio no pugui recuperar el focus després de la pèrdua de focus si es troba en segon pla.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Altres</string>
     <string name="settings_rate_app">Valora AMARadio</string>
     <string name="settings_rate_app_summary">Si t\'agrada l\'aplicació, deixa una ressenya a la Play Store!</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logotip de l\'emissora</string>
+    <string name="accessibility_station_logo">Logotip de l\'emissora de ràdio</string>
     <string name="accessibility_favorite_selected">Preferit, seleccionat</string>
     <string name="accessibility_favorite_not_selected">Preferit, no seleccionat</string>
     <string name="accessibility_category_icon">Icona de categoria</string>
@@ -337,7 +337,7 @@
     <string name="accessibility_configure">Configura</string>
     <string name="accessibility_close">Tanca</string>
     <string name="accessibility_add_filter">Afegeix filtre</string>
-    <string name="accessibility_station_options">Opcions de l\'emissora</string>
+    <string name="accessibility_station_options">Opcions de l\'emissora de ràdio</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Emissora: %1$s, Idioma: %2$s, Etiquetes: %3$s</string>
 
@@ -345,27 +345,55 @@
     <string name="error_no_browser">No s\'ha pogut trobar un navegador web. Instal·leu un navegador per obrir aquest enllaç.</string>
     <string name="error_no_homepage">No hi ha cap pàgina d\'inici disponible per a aquesta estació</string>
     <string name="tab_custom_stations">Personalitzat</string>
-    <string name="action_add_custom">Afegeix una estació personalitzada</string>
-    <string name="station_name">Nom de l\'estació</string>
+    <string name="action_add_custom">Afegeix una emissora de ràdio personalitzada</string>
+    <string name="station_name">Nom de l\'emissora de ràdio</string>
     <string name="stream_url">URL del flux</string>
-    <string name="favicon_url">URL del favicon (opcional)</string>
+    <string name="favicon_url">URL de la icona (Favicon)</string>
     <string name="select_image">Seleccioneu Imatge</string>
     <string name="error_invalid_url">Introduïu un URL vàlid</string>
     <string name="action_save">Desa</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Controls ràpids del jugador</string>
-    <string name="widget_description_full">Llista de reproductors i emissores</string>
+    <string name="widget_description_small">Controls ràpids del reproductor</string>
+    <string name="widget_description_full">Reproductor i llista d\'emissores de ràdio</string>
 
     <string name="settings_auto_db_update">Sincronització de dades de fons</string>
     <string name="settings_auto_db_update_desc">Actualització automàtica de la base de dades de l\'estació mitjançant l\'API Radio-Browser (recomanat).</string>
     <string name="settings_station_click_counter">Comptador de clics de l\'estació</string>
-    <string name="settings_station_click_counter_desc">Admet les estadístiques del navegador de ràdio compartint esdeveniments de joc de manera anònima.</string>
+    <string name="settings_station_click_counter_desc">Admet les estadístiques del navegador de ràdio compartint esdeveniments de reproducció de manera anònima.</string>
     <string name="settings_rate_app_github">Gaudeix d\'AMARadio?</string>
     <string name="settings_rate_app_github_summary">Deixa una estrella a GitHub! Ajuda a altres a descobrir l\'aplicació i dóna suport al desenvolupament futur.</string>
 
-    <string name="settings_remove_notification_on_stop">Suprimeix la notificació quan es tanqui l\'aplicació</string>
-    <string name="settings_remove_notification_on_stop_desc">Descarta automàticament la notificació multimèdia quan es tanqui l\'aplicació d\'aplicacions recents</string>
+    <string name="settings_remove_notification_on_stop">Suprimeix la notificació en aturar</string>
+    <string name="settings_remove_notification_on_stop_desc">Descarta automàticament la notificació multimèdia quan s\'atura la reproducció</string>
     <string name="settings_auto_resume_audio_focus">Reprèn després de la pèrdua del focus d\'àudio</string>
     <string name="settings_auto_resume_audio_focus_desc">Reprèn automàticament la reproducció després de trucades telefòniques, alarmes o altres aturades d\'àudio</string>
+
+    <string name="settings_backup_restore">Còpia de seguretat i restauració</string>
+    <string name="settings_export_backup">Crea una còpia de seguretat completa (ZIP)</string>
+    <string name="settings_export_backup_desc">Desa totes les emissores preferides, personalitzades i icones en un fitxer ZIP</string>
+    <string name="settings_import_backup">Restaura la còpia de seguretat (ZIP)</string>
+    <string name="settings_import_backup_desc">Restaura les preferides i les emissores personalitzades des d\'un fitxer ZIP</string>
+    <string name="backup_export_success">S\'ha desat la còpia de seguretat correctament</string>
+    <string name="backup_export_error">No s\'ha pogut desar la còpia de seguretat</string>
+    <string name="backup_import_success">S\'ha restaurat la còpia de seguretat correctament</string>
+    <string name="backup_import_error">No s\'ha pogut restaurar la còpia de seguretat</string>
+
+    <string name="database_summary_title">Base de dades local</string>
+    <string name="database_total_stations">Total d\'emissores de ràdio</string>
+    <string name="database_last_sync">Última actualització</string>
+    <string name="database_update_now">Actualitza la base de dades ara</string>
+    <string name="database_full_update">Actualitza la base de dades</string>
+    <string name="database_syncing">S\'està sincronitzant…</string>
+    <string name="database_downloading">S\'està descarregant…</string>
+    <string name="database_stations_loaded">%1$s emissores de ràdio</string>
+    <string name="database_sync_channel_name">Sincronització de la base de dades d\'emissores</string>
+    <string name="database_sync_success">S\'ha completat l\'actualització de la base de dades correctament</string>
+    <string name="database_error_no_connection">Sense connexió a Internet</string>
+    <string name="database_error_no_space">No hi ha prou espai al disc</string>
+    <string name="database_error_failed">Ha fallat l\'actualització de la base de dades</string>
+
+    <string name="settings_disable_battery_optimization_desc">Per mantenir la reproducció amb la pantalla apagada, establiu l\'ús de la bateria a \'Sense restriccions\'.</string>
+    <string name="battery_opt_open_settings">Obre la configuració</string>
+    <string name="battery_opt_later">Més tard</string>
 </resources>

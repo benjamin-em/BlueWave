@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Tab umbenennen</string>
     <string name="error_filter_name_required">Bitte gib zuerst einen Namen für diesen Filter-Tab ein</string>
     <string name="confirm_delete_filter_tab">Bist du sicher, dass du den Filter \"%1$s\" löschen möchtest?</string>
-    <string name="filter_empty_title">Erstelle deinen eigenen Sender-Feed</string>
+    <string name="filter_empty_title">Erstelle deinen eigenen Radiosender-Feed</string>
     <string name="filter_empty_desc">Kombiniere mehrere Kriterien für deine persönliche Ansicht. Du kannst filtern nach:</string>
     <string name="filter_empty_filter_by">Filtern nach</string>
-    <string name="filter_empty_filter_desc">Land, Sendername, Tags oder Sprache</string>
+    <string name="filter_empty_filter_desc">Land, Radiosendername, Tags oder Sprache</string>
     <string name="filter_empty_sort_by">Sortieren nach</string>
     <string name="filter_empty_sort_desc">Klicks, Alphabet, Bewertungen oder letzte Änderung</string>
     <string name="filter_empty_hint">Gib oben einen Namen ein, um diese Ansicht zu speichern!</string>
-    <string name="error_station_load">Verbindung zum Sender fehlgeschlagen</string>
+    <string name="error_station_load">Verbindung zum Radiosender fehlgeschlagen</string>
     <string name="error_list_update">Verbindung zum Radio-Browser-Server fehlgeschlagen</string>
 
     <string name="error_no_connection">Keine Internetverbindung verfügbar</string>
     <string name="warning_volume_zero">Die Lautstärke ist auf Null gestellt.</string>
 
-    <string name="share_action">Sender-Link teilen mit…</string>
+    <string name="share_action">Radiosender-Link teilen mit…</string>
 
-    <string name="nav_item_stations">Sender</string>
+    <string name="nav_item_stations">Radiosender</string>
     <string name="nav_item_starred">Favoriten</string>
     <string name="nav_item_history">Verlauf</string>
     <string name="nav_item_settings">Einstellungen</string>
@@ -90,7 +90,7 @@
     <string name="error_empty_field">Dieses Feld ist erforderlich</string>
     <string name="error_invalid_file_name">Ungültiger Dateiname</string>
     <string name="label_button_cancel">Abbrechen</string>
-    <string name="error_no_homepage">Keine Webseite für diesen Sender verfügbar</string>
+    <string name="error_no_homepage">Keine Webseite für diesen Radiosender verfügbar</string>
     <string name="label_button_overwrite">Überschreiben</string>
     <string name="notify_load_playlist_nok">Import von %1$s&#47;%2$s fehlgeschlagen</string>
     <string name="notify_load_playlist_now">Import von %1$s&#47;%2$s läuft, bitte warten.</string>
@@ -109,8 +109,8 @@
     <string name="theme_dark">Dunkel</string>
     <string name="theme_system">System folgen</string>
     <string name="settings_compact_style">Kompakter Modus</string>
-    <string name="settings_compact_style_desc_off">Großes Icon mit Senderdetails</string>
-    <string name="settings_compact_style_desc_on">Kleines Icon ohne Senderdetails</string>
+    <string name="settings_compact_style_desc_off">Großes Icon mit Radiosenderdetails</string>
+    <string name="settings_compact_style_desc_on">Kleines Icon ohne Radiosenderdetails</string>
     <string name="settings_bottom_navigation">Navigation unten</string>
     <string name="settings_ui_scale">UI Skalierung</string>
     <string name="settings_language">Sprache</string>
@@ -124,9 +124,9 @@
     <string name="settings_single_use_tags_desc_off">Selten verwendete Tags werden ausgeblendet</string>
     <string name="settings_single_use_tags_desc_on">Selten verwendete Tags werden angezeigt</string>
 
-    <string name="settings_show_broken">Defekte Sender</string>
-    <string name="settings_show_broken_on">Defekte Sender in Listen anzeigen</string>
-    <string name="settings_show_broken_off">Defekte Sender in Listen ausblenden</string>
+    <string name="settings_show_broken">Defekte Radiosender</string>
+    <string name="settings_show_broken_on">Defekte Radiosender in Listen anzeigen</string>
+    <string name="settings_show_broken_off">Defekte Radiosender in Listen ausblenden</string>
 
     <string name="settings_startup_behaviour">Startverhalten</string>
     <string name="action_grid_view">Rasteransicht</string>
@@ -134,31 +134,31 @@
 
     <string name="startup_action_title">Start-Aktion</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Alle Sender anzeigen</string>
+    <string name="startup_show_all_stations">Alle Radiosender anzeigen</string>
     <string name="startup_show_favorites">Favoriten anzeigen</string>
     <string name="startup_show_history">Verlauf anzeigen</string>
     <string name="startup_show_last_view">Letzte Ansicht</string>
 
-    <string name="settings_load_icons">Senderlogos anzeigen</string>
+    <string name="settings_load_icons">Radiosenderlogos anzeigen</string>
     <string name="settings_load_icons_on">Logos werden heruntergeladen</string>
     <string name="settings_load_icons_off">Logos werden nicht heruntergeladen</string>
 
     <string name="settings_auto_favorite">Auto-Favoriten</string>
-    <string name="settings_auto_favorite_on">Sender beim Abspielen automatisch zu Favoriten hinzufügen</string>
-    <string name="settings_auto_favorite_off">Sender beim Abspielen nicht automatisch zu Favoriten hinzufügen</string>
+    <string name="settings_auto_favorite_on">Radiosender beim Abspielen automatisch zu Favoriten hinzufügen</string>
+    <string name="settings_auto_favorite_off">Radiosender beim Abspielen nicht automatisch zu Favoriten hinzufügen</string>
 
     <string name="settings_play">Player</string>
     <string name="settings_auto_play_on_startup">Auto-Play</string>
-    <string name="settings_auto_play_on_startup_on">Letzten Sender beim Start abspielen</string>
-    <string name="settings_auto_play_on_startup_off">Letzten Sender beim Start nicht abspielen</string>
+    <string name="settings_auto_play_on_startup_on">Letzten Radiosender beim Start abspielen</string>
+    <string name="settings_auto_play_on_startup_off">Letzten Radiosender beim Start nicht abspielen</string>
     <string name="settings_auto_off_on_startup">Auto-Stopp</string>
     <string name="settings_auto_off_on_startup_on">Auto-Stopp-Timer bei Auto-Play verwenden</string>
     <string name="settings_auto_off_on_startup_off">Auto-Stopp-Timer bei Auto-Play nicht verwenden</string>
     <string name="settings_auto_off_sleep_timer">Auto-Stopp-Timer</string>
     <string name="settings_auto_off_sleep_timer_desc">Wiedergabe nach %1$s Minuten stoppen</string>
     <string name="settings_play_external">Externen Player verwenden</string>
-    <string name="settings_play_external_desc_on">Sender mit externem Player abspielen</string>
-    <string name="settings_play_external_desc_off">Sender mit AMARadio abspielen</string>
+    <string name="settings_play_external_desc_on">Radiosender mit externem Player abspielen</string>
+    <string name="settings_play_external_desc_off">Radiosender mit AMARadio abspielen</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Konnektivität</string>
@@ -179,9 +179,9 @@
     <string name="settings_milliseconds_format">%d Millisekunden</string>
 
     <string name="settings_auto_db_update">Hintergrund-Datenabgleich</string>
-    <string name="settings_auto_db_update_desc">Sender-Datenbank automatisch über die Radio-Browser API aktualisieren (empfohlen).</string>
+    <string name="settings_auto_db_update_desc">Radiosender-Datenbank automatisch über die Radio-Browser API aktualisieren (empfohlen).</string>
 
-    <string name="settings_station_click_counter">Sender-Klickzähler</string>
+    <string name="settings_station_click_counter">Radiosender-Klickzähler</string>
     <string name="settings_station_click_counter_desc">Unterstütze die Statistiken von Radio-Browser, indem du Wiedergabe-Ereignisse anonym teilst.</string>
 
     <string name="settings_pause_when_noisy">Pause bei Kopfhörertrennung</string>
@@ -205,9 +205,9 @@
     <string name="notify_paused">Pause</string>
     <string name="notify_metered_connection">Getaktete Verbindung</string>
 
-    <string name="notify_starred">Sender zu Favoriten hinzugefügt</string>
-    <string name="notify_autostarred">Sender wurde automatisch zu Favoriten hinzugefügt</string>
-    <string name="notify_unstarred">Sender aus Favoriten entfernt</string>
+    <string name="notify_starred">Radiosender zu Favoriten hinzugefügt</string>
+    <string name="notify_autostarred">Radiosender wurde automatisch zu Favoriten hinzugefügt</string>
+    <string name="notify_unstarred">Radiosender aus Favoriten entfernt</string>
     <string name="notify_deleted_favorites">Favoriten wurden gelöscht</string>
     <string name="notify_deleted_history">Verlauf wurde gelöscht</string>
 
@@ -224,16 +224,9 @@
     <string name="alert_select_player">Bitte wähle einen Player aus</string>
     <string name="alert_select_player_name">Name</string>
 
-    <string name="alert_select_mpd_server">Bitte wähle einen Server aus</string>
-    <string name="alert_select_mpd_server_name">Servername</string>
-    <string name="alert_select_mpd_server_password">Serverpasswort</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Port</string>
+    <string name="hostname">Serveradresse</string>
+    <string name="port">Netzwerk-Port</string>
 
-    <string name="alert_select_mpd_server_add">Hinzufügen</string>
-    <string name="alert_select_mpd_server_save">Speichern</string>
-    <string name="alert_select_mpd_server_remove">Entfernen</string>
-    <string name="alert_add_or_edit_mpd_server">Serverdetails eingeben</string>
     <string name="alert_press_back_to_exit">Noch einmal zurück zum Beenden</string>
 
     <string name="error_stream_url">Stream-URL Problem</string>
@@ -256,12 +249,6 @@
     <string name="tab_player_info">Info</string>
     <string name="tab_player_history">Titelverlauf</string>
 
-    <string name="database_summary_title">Lokale Datenbank</string>
-    <string name="database_total_stations">Sender gesamt</string>
-    <string name="database_last_sync">Letzte Synchronisierung</string>
-    <string name="database_update_now">Datenbank jetzt aktualisieren</string>
-    <string name="database_syncing">Synchronisierung läuft…</string>
-
     <string name="station_detail_bitrate">%1$1d kbps</string>
     <string name="station_detail_broken">DEFEKT</string>
     <string name="station_detail_deleted_on_server">GELÖSCHT</string>
@@ -279,18 +266,17 @@
     <string name="icon_click_trend_increasing">Beliebtheit steigt</string>
     <string name="icon_click_trend_stable">Beliebtheit stabil</string>
 
-    <string name="media_route_menu_title">GoogleCast</string>
-    <string name="app_id">5A97BAE4</string>
     <string name="app_name">AMARadio</string>
     <string name="ad_free_promise">100% werbefrei &amp; privat</string>
 
     <string name="action_play_in_external">Mit externem Player abspielen</string>
     <string name="action_choose_external_player">Externen Player wählen</string>
 
-    <string name="settings_disable_battery_optimization">Akku-Optimierung</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Akku-Optimierung wird ignoriert, AMARadio sollte den Fokus immer wiedererlangen können.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Akku-Optimierung ist aktiviert, AMARadio kann den Fokus im Hintergrund eventuell nicht wiedererlangen.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Hintergrund-Wiedergabe</string>
+    <string name="settings_disable_battery_optimization_desc">Um die Wiedergabe bei ausgeschaltetem Bildschirm aufrechtzuerhalten, stelle die Akku-Nutzung auf \'Uneingeschränkt\'.</string>
+    <string name="battery_opt_open_settings">Einstellungen öffnen</string>
+    <string name="battery_opt_later">Später</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Anderes</string>
     <string name="settings_rate_app">AMARadio bewerten</string>
     <string name="settings_rate_app_summary">Wenn dir die App gefällt, hinterlasse bitte eine Bewertung im Play Store!</string>
@@ -349,15 +335,15 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <string name="tab_custom_stations">Eigene</string>
-    <string name="action_add_custom">Eigenen Sender hinzufügen</string>
-    <string name="station_name">Sendername</string>
+    <string name="action_add_custom">Eigenen Radiosender hinzufügen</string>
+    <string name="station_name">Radiosendername</string>
     <string name="stream_url">Stream-URL</string>
     <string name="favicon_url">Favicon-URL (optional)</string>
     <string name="select_image">Bild auswählen</string>
     <string name="action_save">Speichern</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Sender-Logo</string>
+    <string name="accessibility_station_logo">Radiosender-Logo</string>
     <string name="accessibility_favorite_selected">Favorit, ausgewählt</string>
     <string name="accessibility_favorite_not_selected">Favorit, nicht ausgewählt</string>
     <string name="accessibility_category_icon">Kategorie-Symbol</string>
@@ -370,7 +356,7 @@
     <string name="accessibility_configure">Konfigurieren</string>
     <string name="accessibility_close">Schließen</string>
     <string name="accessibility_add_filter">Filter hinzufügen</string>
-    <string name="accessibility_station_options">Sender-Optionen</string>
+    <string name="accessibility_station_options">Radiosender-Optionen</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Sender: %1$s, Sprache: %2$s, Tags: %3$s</string>
 
@@ -380,10 +366,34 @@
     <string name="widget_name_small">AMARadio Kompakt</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Schnelle Player-Steuerung</string>
-    <string name="widget_description_full">Player und Senderliste</string>
+    <string name="widget_description_full">Player und Radiosenderliste</string>
 
-    <string name="settings_remove_notification_on_stop">Benachrichtigung beim Schließen entfernen</string>
-    <string name="settings_remove_notification_on_stop_desc">Entfernt die Medien-Benachrichtigung automatisch, wenn die App aus den letzten Apps geschlossen wird</string>
+    <string name="settings_remove_notification_on_stop">Benachrichtigung beim Stoppen entfernen</string>
+    <string name="settings_remove_notification_on_stop_desc">Entfernt die Medien-Benachrichtigung automatisch, wenn die Wiedergabe gestoppt wird</string>
     <string name="settings_auto_resume_audio_focus">Wiedergabe nach Audio-Fokus-Verlust fortsetzen</string>
     <string name="settings_auto_resume_audio_focus_desc">Setzt die Wiedergabe nach Telefonaten, Alarmen oder anderen Tönen automatisch fort</string>
+
+    <string name="settings_backup_restore">Sicherung und Wiederherstellung</string>
+    <string name="settings_export_backup">Vollständige Sicherung erstellen (ZIP)</string>
+    <string name="settings_export_backup_desc">Speichert alle Favoriten, eigenen Sender und lokalen Logos in einer ZIP-Datei</string>
+    <string name="settings_import_backup">Sicherung wiederherstellen (ZIP)</string>
+    <string name="settings_import_backup_desc">Stellt Favoriten, eigene Sender und Logos aus einer ZIP-Sicherungsdatei wieder her</string>
+    <string name="backup_export_success">Sicherung erfolgreich gespeichert</string>
+    <string name="backup_export_error">Sicherung konnte nicht gespeichert werden</string>
+    <string name="backup_import_success">Sicherung erfolgreich wiederhergestellt</string>
+    <string name="backup_import_error">Sicherung konnte nicht wiederhergestellt werden</string>
+
+    <string name="database_summary_title">Lokale Datenbank</string>
+    <string name="database_total_stations">Radiosender gesamt</string>
+    <string name="database_last_sync">Letzte Synchronisierung</string>
+    <string name="database_update_now">Datenbank jetzt aktualisieren</string>
+    <string name="database_full_update">Datenbank aktualisieren</string>
+    <string name="database_syncing">Synchronisierung läuft…</string>
+    <string name="database_downloading">Wird heruntergeladen…</string>
+    <string name="database_stations_loaded">%1$s Radiosender</string>
+    <string name="database_sync_channel_name">Radiosender-Datenbank-Synchronisierung</string>
+    <string name="database_sync_success">Sender-Datenbank-Aktualisierung erfolgreich abgeschlossen</string>
+    <string name="database_error_no_connection">Keine Internetverbindung</string>
+    <string name="database_error_no_space">Nicht genügend Speicherplatz frei</string>
+    <string name="database_error_failed">Datenbank-Aktualisierung fehlgeschlagen</string>
 </resources>

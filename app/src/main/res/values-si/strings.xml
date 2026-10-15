@@ -33,7 +33,7 @@
     <string name="action_delete">මකන්න</string>
     <string name="action_delete_history">ඉතිහාසය මකන්න</string>
     <string name="action_delete_favorites">සියලුම ප්‍රියතමයන් මකන්න</string>
-    <string name="action_delete_stream_history">ගීත ඉතිහාසය මකන්න</string>
+    <string name="action_delete_stream_history">ဂီත ඉතිහාසය මකන්න</string>
     <string name="action_ok">හරි</string>
     <string name="action_cancel">අවලංගු කරන්න</string>
     <string name="action_top_click">වැඩිපුරම නැරඹූ</string>
@@ -52,24 +52,24 @@
     <string name="filter_empty_title">ඔබේම ගුවන් විදුලි නාලිකා ලැයිස්තුවක් සාදාගන්න</string>
     <string name="filter_empty_desc">විවිධ නිර්ණායක ඒකාබද්ධ කිරීමෙන් පුද්ගලීකරණය කළ දසුනක් සාදන්න. ඔබට පහත දෑ භාවිතයෙන් සෙවීම පටු කළ හැකිය:</string>
     <string name="filter_empty_filter_by">පෙරහන් කරන්න:</string>
-    <string name="filter_empty_filter_desc">රට, නාලිකා නම, ටැග් හෝ භාෂාව</string>
+    <string name="filter_empty_filter_desc">රට, ගුවන් විදුලි නාලිකාවේ නම, ටැග් හෝ භාෂාව</string>
     <string name="filter_empty_sort_by">පිළිවෙළ කරන්න:</string>
     <string name="filter_empty_sort_desc">ක්ලික් කිරීම්, අකාරාදී පිළිවෙළ, මනාප හෝ අවසාන වෙනස් කිරීම</string>
     <string name="filter_empty_hint">මෙම දසුන සුරැකීමට ඉහත කොටුවේ නමක් ටයිප් කරන්න!</string>
-    <string name="error_station_load">නාලිකාවට සම්බන්ධ වීමට නොහැකි විය</string>
-    <string name="error_list_update">Radio Browser සේවාදායකයට සම්බන්ධ වීමට නොහැකි විය</string>
+    <string name="error_station_load">ගුවන් විදුලි නාලිකාවට සම්බන්ධ වීමට නොහැකි විය</string>
+    <string name="error_list_update">Radio-Browser සේවාදායකයට සම්බන්ධ වීමට නොහැකි විය</string>
 
     <string name="error_no_connection">අන්තර්ජාල සම්බන්ධතාවක් නොමැත</string>
     <string name="warning_volume_zero">ශබ්දය ශුන්‍ය මට්ටමේ පවතී. ඔබට කිසිවක් ඇසෙන්නේ නැති විය හැක.</string>
 
-    <string name="share_action">නාලිකා සබැඳිය බෙදාගන්න…</string>
+    <string name="share_action">ගුවන් විදුලි නාලිකා සබැඳිය බෙදාගන්න…</string>
 
-    <string name="nav_item_stations">නාලිකා</string>
+    <string name="nav_item_stations">ගුවන් විදුලි නාලිකා</string>
     <string name="nav_item_starred">ප්‍රියතම</string>
     <string name="nav_item_history">ඉතිහාසය</string>
     <string name="nav_item_settings">සැකසුම්</string>
 
-    <string name="about_text">AMARadio යනු 100% ක් වෙළඳ දැන්වීම් රහිත සහ පෞද්ගලිකත්වය කෙරෙහි අවධානය යොමු කරන යෙදුමකි.\n\nකරදරකාරී වෙළඳ දැන්වීම් හෝ ලුහුබැඳීම් නොමැතිව මගේ මවට සරල, අවංක ගුවන් විදුලි අත්දැකීමක් ලබා දීම සඳහා මම මුලින්ම මෙම යෙදුම නිපදවූවෙමි. AMARadio සැමවිටම වෙළඳ දැන්වීම් වලින් තොරව පවතින්නේ එබැවිනි – එය ඇයට දුන් පොරොන්දුවක් වන අතර එය ඔබ සැමටද පොදු වේ.\n\nමෙම ව්‍යාපෘතිය විශිෂ්ට https://github.com/segler-alex/RadioDroid හි අනුශාඛාවකි. යෙදුම නවීනව තබා ගැනීමට සහ අනාගත ඇන්ඩ්‍රොයිඩ් සංස්කරණ සමඟ ගැළපෙන පරිදි සම්පූර්ණ කේතය Java සිට Kotlin දක්වා මාරු කර ඇත.\n\nමූල කේතය මෙහි ඇත: https://github.com/ounben/AMARadio\n\nමෙම යෙදුම https://www.radio-browser.info හි නොමිලේ ලබා දෙන ගුවන් විදුලි නාලිකා නාමාවලිය භාවිතා කරයි. ඕනෑම අයෙකුට මෙයට නාලිකා එක් කළ හැකිය. එය ඔන්ලයින් ගුවන් විදුලි නාලිකා සඳහා විකියක් මෙන් ක්‍රියා කරයි.\n\nසම්බන්ධ වීමට: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nඔබ මෙම මෘදුකාංගයට කැමති නම් සහ උදව් කිරීමට අවශ්‍ය නම්, මට විද්‍යුත් තැපෑලක් එවීමට පසුබට නොවන්න. නව විශේෂාංග සඳහා අදහස් ද සැමවිටම අගය කරනු ලැබේ!\n\nමෙම යෙදුම GPLv3 යටතේ බලපත්‍ර ලබා ඇති නිදහස් මෘදුකාංගයකි. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio යනු 100% ක් වෙළඳ දැන්වීම් රහිත සහ පෞද්ගලිකත්වය කෙරෙහි අවධානය යොමු කරන යෙදුමකි.\n\nකරදරකාරී වෙළඳ දැන්වීම් හෝ ලුහුබැඳීම් නොමැතිව මගේ මවට සරල, අවංක ගුවන් විදුලි අත්දැකීමක් ලබා දීම සඳහා මම මුලින්ම මෙම යෙදුම නිපදවූවෙමි. AMARadio සැමවිටම වෙළඳ දැන්වීම් වලින් තොරව පවතින්නේ එබැවිනි – එය ඇයට දුන් පොරොන්දුවක් වන අතර එය ඔබ සැමටද පොදු වේ.\n\nමෙම ව්‍යාපෘතිය RadioDroid හි අනුශාඛාවකි. යෙදුම නවීනව තබා ගැනීමට සහ අනාගත ඇන්ඩ්‍රොයිඩ් සංස්කරණ සමඟ ගැළපෙන පරිදි සම්පූර්ණ කේතය Java සිට Kotlin දක්වා මාරු කර ඇත.\n\nමූල කේතය මෙහි ඇත: https://github.com/ounben/AMARadio\n\nමෙම යෙදුම https://www.radio-browser.info හි නොමිලේ ලබා දෙන ගුවන් විදුලි නාලිකා නාමාවලිය භාවිතා කරයි. ඕනෑම අයෙකුට මෙයට නාලිකා එක් කළ හැකිය. එය ඔන්ලයින් ගුවන් විදුලි නාලිකා සඳහා විකියක් මෙන් ක්‍රියා කරයි.\n\nසම්බන්ධ වීමට: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nඔබ මෙම මෘදුකාංගයට කැමති නම් සහ උදව් කිරීමට අවශ්‍ය නම්, මට විද්‍යුත් තැපෑලක් එවීමට පසුබට නොවන්න. නව විශේෂාංග සඳහා අදහස් ද සැමවිටම අගය කරනු ලැබේ!\n\nමෙම යෙදුම GPLv3 යටතේ බලපත්‍ර ලබා ඇති නිදහස් මෘදුකාංගයකි. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">සංස්කරණය: %1$s</string>
     <string name="detail_star">ප්‍රියතම ලැයිස්තුවට එක් කරන්න</string>
     <string name="detail_unstar">ප්‍රියතම ලැයිස්තුවෙන් ඉවත් කරන්න</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">අඳුරු</string>
     <string name="theme_system">පද්ධතිය අනුගමනය කරන්න</string>
     <string name="settings_compact_style">සංයුක්ත ප්‍රකාරය (Compact mode)</string>
-    <string name="settings_compact_style_desc_off">නාලිකා විස්තර සහිත විශාල අයිකන</string>
-    <string name="settings_compact_style_desc_on">විස්තර රහිත කුඩා අයිකන</string>
+    <string name="settings_compact_style_desc_off">ගුවන් විදුලි නාලිකා විස්තර සහිත විශාල අයිකන</string>
+    <string name="settings_compact_style_desc_on">විස්තර ରහිත කුඩා අයිකන</string>
     <string name="settings_bottom_navigation">පහළ සංචලනය</string>
     <string name="settings_ui_scale">අතුරුමුහුණත් විශාලත්වය</string>
     <string name="settings_language">භාෂාව</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">කලාතුරකින් භාවිතා වන ටැග් පෙන්වනු නොලැබේ</string>
     <string name="settings_single_use_tags_desc_on">කලාතුරකින් භාවිතා වන ටැග් පෙන්වනු ලැබේ</string>
 
-    <string name="settings_show_broken">අක්‍රිය නාලිකා</string>
-    <string name="settings_show_broken_on">ලැයිස්තුවල අක්‍රිය නාලිකා පෙන්වන්න</string>
-    <string name="settings_show_broken_off">ලැයිස්තුවල අක්‍රිය නාලිකා පෙන්වන්න එපා</string>
+    <string name="settings_show_broken">අක්‍රිය ගුවන් විදුලි නාලිකා</string>
+    <string name="settings_show_broken_on">ලැයිස්තුවල අක්‍රිය ගුවන් විදුලි නාලිකා පෙන්වන්න</string>
+    <string name="settings_show_broken_off">ලැයිස්තුවල අක්‍රිය ගුවන් විදුලි නාලිකා පෙන්වන්න එපා</string>
 
     <string name="settings_startup_behaviour">ආරම්භක හැසිරීම</string>
     <string name="action_grid_view">Grid දසුන</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">ආරම්භක ක්‍රියාව</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">සියලුම නාලිකා පෙන්වන්න</string>
+    <string name="startup_show_all_stations">සියලුම ගුවන් විදුලි නාලිකා පෙන්වන්න</string>
     <string name="startup_show_favorites">ප්‍රියතමයන් පෙන්වන්න</string>
     <string name="startup_show_history">ඉතිහාසය පෙන්වන්න</string>
     <string name="startup_show_last_view">අවසාන දසුන</string>
 
-    <string name="settings_load_icons">නාලිකා අයිකන පෙන්වන්න</string>
+    <string name="settings_load_icons">ගුවන් විදුලි නාලිකා අයිකන පෙන්වන්න</string>
     <string name="settings_load_icons_on">අයිකන බාගත කරනු ඇත</string>
     <string name="settings_load_icons_off">අයිකන බාගත නොකරනු ඇත</string>
 
     <string name="settings_auto_favorite">ස්වයංක්‍රීය ප්‍රියතම</string>
-    <string name="settings_auto_favorite_on">ධාවනය වන විට නාලිකා ස්වයංක්‍රීයව ප්‍රියතම ලැයිස්තුවට එක් කරන්න</string>
-    <string name="settings_auto_favorite_off">ධාවනය වන විට නාලිකා ස්වයංක්‍රීයව ප්‍රියතම ලැයිස්තුවට එක් කරන්න එපා</string>
+    <string name="settings_auto_favorite_on">ධාවනය වන විට ගුවන් විදුලි නාලිකා ස්වයංක්‍රීයව ප්‍රියතම ලැයිස්තුවට එක් කරන්න</string>
+    <string name="settings_auto_favorite_off">ධාවනය වන විට ගුවන් විදුලි නාලිකා ස්වයංක්‍රීයව ප්‍රියතම ලැයිස්තුවට එක් කරන්න එපා</string>
 
     <string name="settings_play">ධාවකය (Player)</string>
     <string name="settings_auto_play_on_startup">ස්වයංක්‍රීය ධාවනය</string>
-    <string name="settings_auto_play_on_startup_on">යෙදුම අරඹන විට අවසන් වරට ධාවනය වූ නාලිකාව ධාවනය කරන්න</string>
-    <string name="settings_auto_play_on_startup_off">යෙදුම අරඹන විට අවසන් වරට ධාවනය වූ නාලිකාව ධාවනය කරන්න එපා</string>
+    <string name="settings_auto_play_on_startup_on">ယေදුම අරඹන විට අවසන් වරට ධාවනය වූ ගුවන් විදුලි නාලිකාව ධාවනය කරන්න</string>
+    <string name="settings_auto_play_on_startup_off">ယေදුම අරඹන විට අවසන් වරට ධාවනය වූ ගුවන් විදුලි නාලිකාව ධාවනය කරන්න එපා</string>
     <string name="settings_auto_off_on_startup">ස්වයංක්‍රීයව නැවතීම</string>
     <string name="settings_auto_off_on_startup_on">ස්වයංක්‍රීය ධාවනය සමඟ ස්වයංක්‍රීයව නැවතීමේ ටයිමරය භාවිතා කරන්න</string>
     <string name="settings_auto_off_on_startup_off">ස්වයංක්‍රීය ධාවනය සමඟ ස්වයංක්‍රීයව නැවතීමේ ටයිමරය භාවිතා කරන්න එපා</string>
     <string name="settings_auto_off_sleep_timer">ස්වයංක්‍රීයව නැවතීමේ ටයිමරය</string>
     <string name="settings_auto_off_sleep_timer_desc">මිනිත්තු %1$s කට පසු ධාවනය නවත්වන්න</string>
     <string name="settings_play_external">බාහිර ධාවකය සබල කරන්න</string>
-    <string name="settings_play_external_desc_on">බාහිර ධාවකයකින් නාලිකා ධාවනය කරන්න</string>
-    <string name="settings_play_external_desc_off">AMARadio වෙතින් නාලිකා ධාවනය කරන්න</string>
+    <string name="settings_play_external_desc_on">බාහිර ධාවකයකින් ගුවන් විදුලි නාලිකා ධාවනය කරන්න</string>
+    <string name="settings_play_external_desc_off">AMARadio වෙතින් ගුවන් විදුලි නාලිකා ධාවනය කරන්න</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">සම්බන්ධතාවය</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">නවත්වා ඇත</string>
     <string name="notify_metered_connection">මනින ලද සම්බන්ධතාවය (Metered connection)</string>
 
-    <string name="notify_starred">නාලිකාව ප්‍රියතම ලැයිස්තුවට එක් කරන ලදී</string>
-    <string name="notify_autostarred">නාලිකාව ස්වයංක්‍රීයව ප්‍රියතම ලැයිස්තුවට එක් කරන ලදී</string>
-    <string name="notify_unstarred">නාලිකාව ප්‍රියතම ලැයිස්තුවෙන් ඉවත් කරන ලදී</string>
+    <string name="notify_starred">ගුවන් විදුලි නාලිකාව ප්‍රියතම ලැයිස්තුවට එක් කරන ලදී</string>
+    <string name="notify_autostarred">ගුවන් විදුලි නාලිකාව ස්වයංක්‍රීයව ප්‍රියතම ලැයිස්තුවට එක් කරන ලදී</string>
+    <string name="notify_unstarred">ගුවන් විදුලි නාලිකාව ප්‍රියතම ලැයිස්තුවෙන් ඉවත් කරන ලදී</string>
     <string name="notify_deleted_favorites">ප්‍රියතමයන් මකා දමන ලදී</string>
     <string name="notify_deleted_history">ඉතිහාසය මකා දමන ලදී</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">කරුණාකර ධාවකයක් තෝරන්න</string>
     <string name="alert_select_player_name">නම</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">පෝට් එක</string>
+    <string name="hostname">සේවාදායක ලිපිනය</string>
+    <string name="port">ජාල පෝට් එක</string>
 
     <string name="alert_press_back_to_exit">පිටවීමට නැවත වරක් \'Back\' ඔබන්න</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">බාහිර ධාවකයකින් ධාවනය කරන්න</string>
     <string name="action_choose_external_player">බාහිර ධාවකයක් තෝරන්න</string>
 
-    <string name="settings_disable_battery_optimization">බැටරි ප්‍රශස්තකරණය</string>
-    <string name="settings_ignore_battery_optimization_summary_on">බැටරි ප්‍රශස්තකරණය නොසලකා හැර ඇත, AMARadio හට සැමවිටම අවධානය ලබාගත හැක.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">බැටරි ප්‍රශස්තකරණය සක්‍රියයි, පසුබිමේ ඇති විට AMARadio හට අවධානය ලබාගැනීමට නොහැකි වනු ඇත.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">පසුබිම් ධාවනය</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">වෙනත්</string>
     <string name="settings_rate_app">AMARadio ශ්‍රේණිගත කරන්න</string>
     <string name="settings_rate_app_summary">ඔබ යෙදුමට කැමති නම්, කරුණාකර Play Store හි සමාලෝචනයක් තබන්න!</string>
+    <string name="settings_rate_app_github">AMARadio භුක්ති විඳිනවාද?</string>
+    <string name="settings_rate_app_github_summary">GitHub මත තරුවක් තබන්න! එය අන් අයට යෙදුම සොයා ගැනීමට සහ අනාගත සංවර්ධනයට සහාය වේ.</string>
     <string name="settings_statistics">සංඛ්‍යාලේඛන</string>
     <string name="settings_about">AMARadio ගැන</string>
 
@@ -279,9 +279,9 @@
 
     <string-array name="weekdays">
         <item>ඉ</item>
-        <item>සඳු</item>
+        <item>ස</item>
         <item>අ</item>
-        <item>බු</item>
+        <item>බု</item>
         <item>බ්‍ර</item>
         <item>සි</item>
         <item>සෙ</item>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">ගුවන්විදුලි ලාංඡනය</string>
+    <string name="accessibility_station_logo">ගුවන් විදුලි ලාංඡනය</string>
     <string name="accessibility_favorite_selected">ප්‍රියතම, තෝරාගෙන ඇත</string>
     <string name="accessibility_favorite_not_selected">ප්‍රියතම, තෝරාගෙන නැත</string>
     <string name="accessibility_category_icon">ප්‍රවර්ග නිරූපකය</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">වින්‍යාස කරන්න</string>
     <string name="accessibility_close">වසා දමන්න</string>
     <string name="accessibility_add_filter">පෙරහන එක් කරන්න</string>
-    <string name="accessibility_station_options">ගුවන්විදුලි විකල්ප</string>
+    <string name="accessibility_station_options">ගුවන් විදුලි විකල්ප</string>
     <string name="not_applicable">අදාළ නොවේ</string>
-    <string name="accessibility_station_description">ගුවන්විදුලිය: %1$s, භාෂාව: %2$s, ටැග්: %3$s</string>
+    <string name="accessibility_station_description">ගුවන් විදුලි: %1$s, භාෂාව: %2$s, ටැග්: %3$s</string>
 
     <string name="error_no_file_manager">පද්ධති ගොනු කළමනාකරු සොයා ගැනීමට නොහැකි විය. කරුණාකර ගොනු ගවේෂකයක් ස්ථාපනය කර සබල කර ඇති බව සහතික කර ගන්න.</string>
     <string name="error_no_browser">වෙබ් බ්‍රවුසරයක් සොයා ගැනීමට නොහැකි විය. මෙම සබැඳිය විවෘත කිරීමට කරුණාකර බ්‍රවුසරයක් ස්ථාපනය කරන්න.</string>
-    <string name="error_no_homepage">මෙම ස්ථානය සඳහා මුල් පිටුවක් නොමැත</string>
+    <string name="error_no_homepage">මෙම ගුවන් විදුලි නාලිකාව සඳහා මුල් පිටුවක් නොමැත</string>
     <string name="tab_custom_stations">අභිරුචි</string>
-    <string name="action_add_custom">අභිරුචි ස්ථානය එක් කරන්න</string>
-    <string name="station_name">දුම්රිය ස්ථානයේ නම</string>
+    <string name="action_add_custom">අභිරුචි ගුවන් විදුලි නාලිකාවක් එක් කරන්න</string>
+    <string name="station_name">ගුවන් විදුලි නාලිකාවේ නම</string>
     <string name="stream_url">ප්‍රවාහ URL</string>
-    <string name="favicon_url">Favicon URL (විකල්ප)</string>
+    <string name="favicon_url">නාලිකා ලාංඡන URL (Favicon)</string>
     <string name="select_image">රූපය තෝරන්න</string>
     <string name="error_invalid_url">කරුණාකර වලංගු URL එකක් ඇතුළු කරන්න</string>
     <string name="action_save">සුරකින්න</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">ඉක්මන් ක්‍රීඩක පාලනය</string>
-    <string name="widget_description_full">ක්රීඩකයා සහ ස්ථාන ලැයිස්තුව</string>
+    <string name="widget_description_small">ඉක්මන් ධාවක පාලනය</string>
+    <string name="widget_description_full">ධාවකය සහ ගුවන් විදුලි නාලිකා ලැයිස්තුව</string>
 
     <string name="settings_auto_db_update">පසුබිම් දත්ත සමමුහුර්ත කිරීම</string>
     <string name="settings_auto_db_update_desc">Radio-Browser API හරහා ස්ථාන දත්ත සමුදාය ස්වයංක්‍රීයව යාවත්කාලීන කරන්න (නිර්දේශිතයි).</string>
-    <string name="settings_station_click_counter">ස්ටේෂන් ක්ලික් කවුන්ටරය</string>
-    <string name="settings_station_click_counter_desc">ක්‍රීඩා සිදුවීම් නිර්නාමිකව බෙදාගැනීමෙන් රේඩියෝ-බ්‍රවුසර සංඛ්‍යාලේඛනවලට සහාය වන්න.</string>
-    <string name="settings_rate_app_github">AMARadio භුක්ති විඳිනවාද?</string>
-    <string name="settings_rate_app_github_summary">GitHub මත තරුවක් තබන්න! එය අන් අයට යෙදුම සොයා ගැනීමට සහ අනාගත සංවර්ධනයට සහාය වේ.</string>
+    <string name="settings_station_click_counter">ගුවන් විදුලි නාලිකා ක්ලික් කවුන්ටරය</string>
+    <string name="settings_station_click_counter_desc">ධාවන සිදුවීම් නිර්නාමිකව බෙදාගැනීමෙන් Radio-Browser සංඛ්‍යාලේඛනවලට සහාය වන්න.</string>
 
-    <string name="settings_remove_notification_on_stop">යෙදුම වසා ඇති විට දැනුම්දීම ඉවත් කරන්න</string>
-    <string name="settings_remove_notification_on_stop_desc">මෑත යෙදුම් වලින් යෙදුම වසා ඇති විට මාධ්‍ය දැනුම්දීම ස්වයංක්‍රීයව ඉවත ලන්න</string>
+    <string name="settings_remove_notification_on_stop">නැවැත්වූ විට දැනුම්දීම ඉවත් කරන්න</string>
+    <string name="settings_remove_notification_on_stop_desc">ධාවනය නැවැත්වූ විට මාධ්‍ය දැනුම්දීම ස්වයංක්‍රීයව ඉවත් කරන්න</string>
     <string name="settings_auto_resume_audio_focus">ශ්‍රව්‍ය නාභිගත වීම නැතිවීමෙන් පසු නැවත ආරම්භ කරන්න</string>
     <string name="settings_auto_resume_audio_focus_desc">දුරකථන ඇමතුම්, එලාම් හෝ වෙනත් ශ්‍රව්‍ය නැවතුම්වලින් පසු ස්වයංක්‍රීයව නැවත ධාවනය ආරම්භ කරන්න</string>
+
+    <string name="settings_backup_restore">බැකප් කිරීම සහ යථා තත්ත්වයට පත් කිරීම</string>
+    <string name="settings_export_backup">සම්පූර්ණ බැකප් එකක් සාදන්න (ZIP)</string>
+    <string name="settings_export_backup_desc">සියලුම ප්‍රියතමයන්, අභිරුචි නාලිකා සහ අයිකන ZIP ගොනුවකට සුරකියි</string>
+    <string name="settings_import_backup">බැකප් එක යථා තත්ත්වයට පත් කරන්න (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP බැකප් ගොනුවෙන් ප්‍රියතමයන් සහ අභිරුචි නාලිකා යථා තත්ත්වයට පත් කරයි</string>
+    <string name="backup_export_success">බැකප් එක සාර්ථකව සුරකින ලදී</string>
+    <string name="backup_export_error">බැකප් එක සුරැකීමට නොහැකි විය</string>
+    <string name="backup_import_success">බැකප් එක සාර්ථකව යථා තත්ත්වයට පත් කරන ලදී</string>
+    <string name="backup_import_error">බැකප් එක යථා තත්ත්වයට පත් කිරීමට නොහැකි විය</string>
+
+    <string name="database_summary_title">ස්ථානීය දත්ත සමුදාය</string>
+    <string name="database_total_stations">මුළු ගුවන් විදුලි නාලිකා ගණන</string>
+    <string name="database_last_sync">අවසාන යාවත්කාලීන කිරීම</string>
+    <string name="database_update_now">දත්ත සමුදාය දැන් යාවත්කාලීන කරන්න</string>
+    <string name="database_full_update">දත්ත සමුදාය යාවත්කාලීන කරන්න</string>
+    <string name="database_syncing">සමමුහුර්ත වෙමින් පවතී…</string>
+    <string name="database_downloading">බාගත වෙමින් පවතී…</string>
+    <string name="database_stations_loaded">%1$s ගුවන් විදුලි නාලිකා</string>
+    <string name="database_sync_channel_name">ගුවන් විදුලි නාලිකා දත්ත සමුදාය සමමුහුර්තකරණය</string>
+    <string name="database_sync_success">නාලිකා දත්ත සමුදාය යාවත්කාලීන කිරීම සාර්ථකව අවසන් විය</string>
+    <string name="database_error_no_connection">අන්තර්ජාල සම්බන්ධතාවයක් නොමැත</string>
+    <string name="database_error_no_space">තැටියේ ප්‍රමාණවත් ඉඩක් නොමැත</string>
+    <string name="database_error_failed">දත්ත සමුදාය යාවත්කාලීන කිරීම අසාර්ථක විය</string>
+
+    <string name="settings_disable_battery_optimization_desc">තිරය අක්‍රිය වූ විටත් ධාවනය සක්‍රියව තබා ගැනීමට බැටරි භාවිතය \'Unrestricted\' ලෙස සකසන්න.</string>
+    <string name="battery_opt_open_settings">සැකසුම් විවෘත කරන්න</string>
+    <string name="battery_opt_later">පසුව</string>
 </resources>

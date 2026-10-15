@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
     <string name="detail_name">Izena</string>
     <string name="detail_tags">Etiketak</string>
@@ -21,7 +20,7 @@
     <string name="action_starred_remove">Kendu gogokoetatik</string>
 
     <string name="action_station_visit_website">Bisitatu webgunea</string>
-    <string name="action_station_copy_stream_url">Kopiatu transmisioaren URLa</string>
+    <string name="action_station_copy_stream_url">Kopiatu igorpenaren URLa</string>
     <string name="action_station_share">Partekatu</string>
 
     <string name="action_local">Lokala</string>
@@ -58,19 +57,19 @@
     <string name="filter_empty_sort_desc">Klikak, Alfabetoa, Botoak edo Azken aldaketa</string>
     <string name="filter_empty_hint">Idatzi izen bat goiko eremuan ikuspegi pertsonalizatu hau gordetzeko!</string>
     <string name="error_station_load">Ezin da irrati-etxearekin konektatu</string>
-    <string name="error_list_update">Ezin izan da irrati browser zerbitzariarekin konektatu</string>
+    <string name="error_list_update">Ezin izan da Radio-Browser zerbitzariarekin konektatu</string>
 
     <string name="error_no_connection">Ez dago Interneteko konexiorik erabilgarri</string>
     <string name="warning_volume_zero">Bolumena zeroan dago. Baliteke ezer ez entzutea.</string>
 
     <string name="share_action">Partekatu irrati-etxearen esteka honekin&#8230;</string>
 
-    <string name="nav_item_stations">Irratiak</string>
+    <string name="nav_item_stations">Irrati-etxeak</string>
     <string name="nav_item_starred">Gogokoak</string>
     <string name="nav_item_history">Historiala</string>
     <string name="nav_item_settings">Ezarpenak</string>
 
-    <string name="about_text">AMARadio %%100 iragarkirik gabea da eta pribatutasunean zentratua.\n\nAplikazio hau jatorriz nire amarentzat garatu nuen, iragarki gogaikarririk edo jarraipenik gabeko irrati-esperientzia sinple eta zintzoa eskaintzeko. Horregatik, AMARadio beti iragarkirik gabe geratuko da – berari emandako hitza da, eta zuekin guztiekin partekatzen dut.\n\nProiektu hau RadioDroid aplikazio bikainaren sardexka (fork) bat da. Kode-base osoa Javatik Kotlinera migratu da aplikazioa modernoa izaten jarrai dezan eta etorkizuneko Android bertsioekin bateragarria izan dadin.\n\nAplikazio honek irratien direktorio libre hau erabiltzen du: https://www.radio-browser.info .\nEdozeinek gehitu ditzake irrati-etxeak. Internet bidez igortzen duten irrati-etxeen wiki gisa funtzionatzen du.\n\nKontaktua: ben@ounben.com\n\nIntzidentzien kudeaketa: https://github.com/ounben/AMARadio/issues\n\nSoftware hau gustuko baduzu eta lagundu nahi baduzu, bidali e-posta bat.\nFuntzionalitate berrientzako ideiak ere ongi etorriak dira beti!\n\nAplikazio hau software librea da GPLv3 lizentziapean. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio %100 iragarkirik gabea da eta pribatutasunean zentratua.\n\nAplikazio hau jatorriz nire amarentzat garatu nuen, iragarki gogaikarririk edo jarraipenik gabeko irrati-esperientzia sinple eta zintzoa eskaintzeko. Horregatik, AMARadio beti iragarkirik gabe geratuko da – berari emandako hitza da, eta zuekin guztiekin partekatzen dut.\n\nProiektu hau RadioDroid aplikazio bikainaren sardexka (fork) bat da. Kode-base osoa Javatik Kotlinera migratu da aplikazioa modernoa izaten jarrai dezan eta etorkizuneko Android bertsioekin bateragarria izan dadin.\n\nAplikazio honek irratien direktorio libre hau erabiltzen du: https://www.radio-browser.info .\nEdozeinek gehitu ditzake irrati-etxeak. Internet bidez igortzen duten irrati-etxeen wiki gisa funtzionatzen du.\n\nKontaktua: ben@ounben.com\n\nIntzidentzien kudeaketa: https://github.com/ounben/AMARadio/issues\n\nSoftware hau gustuko baduzu eta lagundu nahi baduzu, bidali e-posta bat.\nFuntzionalitate berrientzako ideiak ere ongi etorriak dira beti!\n\nAplikazio hau software librea da GPLv3 lizentziapean. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Bertsioa: %1$s</string>
     <string name="detail_star">Gehitu gogokoetan</string>
     <string name="detail_unstar">Kendu gogokoetatik</string>
@@ -217,8 +216,8 @@
 
     <string name="alert_select_player">Mesedez, hautatu erreproduzigailu bat</string>
     <string name="alert_select_player_name">Izena</string>
-    <string name="hostname">Ostalaria</string>
-    <string name="port">Ataka</string>
+    <string name="hostname">Zerbitzariaren helbidea</string>
+    <string name="port">Sareko ataka</string>
 
     <string name="alert_press_back_to_exit">Sakatu atzera berriro ateratzeko</string>
 
@@ -260,15 +259,13 @@
     <string name="icon_click_trend_stable">Ospe egonkorra</string>
 
     <string name="app_name">AMARadio</string>
-    <string name="ad_free_promise">%%100 iragarkirik gabea eta pribatua</string>
+    <string name="ad_free_promise">%100 iragarkirik gabea eta pribatua</string>
 
     <string name="action_play_in_external">Erreproduzitu kanpoko erreproduzigailuan</string>
     <string name="action_choose_external_player">Aukeratu kanpoko erreproduzigailua</string>
 
-    <string name="settings_disable_battery_optimization">Bateriaren optimizazioa</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Bateriaren optimizazioari ez zaio jaramonik egiten, AMARadiok beti berreskuratu beharko luke fokua.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Bateriaren optimizazioa aktibatuta dago, AMARadiok agian ezingo du fokua berreskuratu atzealdean.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Atzeko planoko erreprodukzioa</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Bestelakoak</string>
     <string name="settings_rate_app">Baloratu AMARadio</string>
     <string name="settings_rate_app_summary">Aplikazioa gustatzen bazaizu, utzi iritzi bat Play Store-n!</string>
@@ -344,29 +341,57 @@
 
     <string name="error_no_file_manager">Ezin izan da sistemako fitxategi-kudeatzailerik aurkitu. Mesedez, ziurtatu fitxategi-esploratzailea instalatuta eta gaituta dagoela.</string>
     <string name="error_no_browser">Ezin izan da web arakatzailerik aurkitu. Mesedez, instalatu arakatzaile bat esteka hau irekitzeko.</string>
-    <string name="error_no_homepage">Ez dago hasierako orririk geltoki honetarako</string>
+    <string name="error_no_homepage">Ez dago hasierako orririk irrati-etxe honetarako</string>
     <string name="tab_custom_stations">Pertsonalizatua</string>
-    <string name="action_add_custom">Gehitu geltoki pertsonalizatua</string>
-    <string name="station_name">Geltokiaren izena</string>
-    <string name="stream_url">Korrontearen URLa</string>
-    <string name="favicon_url">Favicon URLa (aukerakoa)</string>
+    <string name="action_add_custom">Gehitu irrati pertsonalizatua</string>
+    <string name="station_name">Irrati-etxearen izena</string>
+    <string name="stream_url">Igorpenaren URLa</string>
+    <string name="favicon_url">Irrati-etxearen ikonoaren URLa (Favicon)</string>
     <string name="select_image">Hautatu Irudia</string>
     <string name="error_invalid_url">Mesedez, sartu baliozko URL bat</string>
     <string name="action_save">Gorde</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Jokalari-kontrol azkarrak</string>
-    <string name="widget_description_full">Jokalari eta geltokien zerrenda</string>
+    <string name="widget_description_small">Erreproduzitzailearen kontrol azkarrak</string>
+    <string name="widget_description_full">Erreproduzitzailea eta irrati-etxeen zerrenda</string>
 
     <string name="settings_auto_db_update">Atzeko planoko datuen sinkronizazioa</string>
-    <string name="settings_auto_db_update_desc">Eguneratu automatikoki estazioen datu-basea Radio-Browser API bidez (gomendatua).</string>
-    <string name="settings_station_click_counter">Geltokiko klik-kontagailua</string>
-    <string name="settings_station_click_counter_desc">Onartu Radio-Browser-en estatistikak jolas-gertaerak modu anonimoan partekatuz.</string>
-    <string name="settings_rate_app_github">AMRadioz gozatzen?</string>
+    <string name="settings_auto_db_update_desc">Eguneratu automatikoki irrati-etxeen datu-basea Radio-Browser API bidez (gomendatua).</string>
+    <string name="settings_station_click_counter">Irrati-etxearen klik-kontagailua</string>
+    <string name="settings_station_click_counter_desc">Lagundu Radio-Browser-en estatistikei erreprodukzio-gertaerak modu anonimoan partekatuz.</string>
+    <string name="settings_rate_app_github">AMARadioz gozatzen?</string>
     <string name="settings_rate_app_github_summary">Utzi izar bat GitHub-en! Besteei aplikazioa aurkitzen laguntzen die eta etorkizuneko garapena onartzen du.</string>
 
-    <string name="settings_remove_notification_on_stop">Kendu jakinarazpena aplikazioa itxita dagoenean</string>
-    <string name="settings_remove_notification_on_stop_desc">Baztertu automatikoki multimedia-jakinarazpena azken aplikazioetatik aplikazioa ixten denean</string>
+    <string name="settings_remove_notification_on_stop">Kendu jakinarazpena gelditzean</string>
+    <string name="settings_remove_notification_on_stop_desc">Baztertu automatikoki multimedia-jakinarazpena erreprodukzioa gelditzen denean</string>
     <string name="settings_auto_resume_audio_focus">Berrekizu audio fokua galdu ondoren</string>
     <string name="settings_auto_resume_audio_focus_desc">Berrekin automatikoki erreprodukzioari telefono-deiak, alarmak edo beste audio batzuk gelditu ondoren</string>
+
+    <string name="settings_backup_restore">Babes-kopia eta lehengoratzea</string>
+    <string name="settings_export_backup">Sortu babes-kopia osoa (ZIP)</string>
+    <string name="settings_export_backup_desc">Gorde gogoko guztiak, irrati pertsonalizatuak eta ikonoak ZIP fitxategi batean</string>
+    <string name="settings_import_backup">Lehengoratu babes-kopia (ZIP)</string>
+    <string name="settings_import_backup_desc">Lehengoratu gogokoak eta irrati pertsonalizatuak ZIP fitxategi batetik</string>
+    <string name="backup_export_success">Babes-kopia ondo gorde da</string>
+    <string name="backup_export_error">Ezin izan da babes-kopia gorde</string>
+    <string name="backup_import_success">Babes-kopia ondo lehengoratu da</string>
+    <string name="backup_import_error">Ezin izan da babes-kopia lehengoratu</string>
+
+    <string name="database_summary_title">Tokiko datu-basea</string>
+    <string name="database_total_stations">Irrati-etxeak guztira</string>
+    <string name="database_last_sync">Azken eguneratzea</string>
+    <string name="database_update_now">Eguneratu datu-basea orain</string>
+    <string name="database_full_update">Eguneratu datu-basea</string>
+    <string name="database_syncing">Sinkronizatzen…</string>
+    <string name="database_downloading">Deskargatzen…</string>
+    <string name="database_stations_loaded">%1$s irrati-etxe</string>
+    <string name="database_sync_channel_name">Irrati-etxeen datu-basearen sinkronizazioa</string>
+    <string name="database_sync_success">Datu-basearen eguneratzea ondo osatu da</string>
+    <string name="database_error_no_connection">Ez dago Interneteko konexiorik</string>
+    <string name="database_error_no_space">Ez dago nahikoa lekurik diskoan</string>
+    <string name="database_error_failed">Datu-basearen eguneratzeak huts egin du</string>
+
+    <string name="settings_disable_battery_optimization_desc">Erreprodukzioa pantaila itzalita mantentzeko, ezarri bateriaren erabilera \'Mugarik gabe\' moduan.</string>
+    <string name="battery_opt_open_settings">Ireki ezarpenak</string>
+    <string name="battery_opt_later">Geroago</string>
 </resources>

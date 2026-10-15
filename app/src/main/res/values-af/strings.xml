@@ -8,7 +8,7 @@
     <string name="detail_weblink">Webskakel</string>
     <string name="detail_visit_website">@string/action_station_visit_website</string>
     <string name="detail_play">Speel</string>
-    <string name="detail_pause">Pouse</string>
+    <string name="detail_pause">Pouseer</string>
     <string name="detail_stop">Stop</string>
     <string name="detail_share">Deel</string>
     <string name="detail_play_in_AMARadio">Speel in AMARadio</string>
@@ -25,7 +25,7 @@
 
     <string name="action_local">Plaaslik</string>
     <string name="action_skip_to_next">Volgende</string>
-    <string name="action_pause">Pouse</string>
+    <string name="action_pause">Pouseer</string>
     <string name="action_skip_to_previous">Vorige</string>
     <string name="action_resume">Hervat</string>
     <string name="action_stop">Stop</string>
@@ -36,10 +36,10 @@
     <string name="action_delete_stream_history">Maak snitgeskiedenis skoon</string>
     <string name="action_ok">OK</string>
     <string name="action_cancel">Kanselleer</string>
-    <string name="action_top_click">Gewildste klieks</string>
-    <string name="action_toggle_view">Verander aansig</string>
-    <string name="action_top_vote">Gewildste stemme</string>
-    <string name="action_changed_lately">Onlangs verander</string>
+    <string name="action_top_click">Gewildste kliks</string>
+    <string name="action_toggle_view">Wissel aansig</string>
+    <string name="action_top_vote">Meeste stemme</string>
+    <string name="action_changed_lately">Onlangs gewysig</string>
     <string name="action_currently_playing">Speel tans</string>
     <string name="action_tags">Etikette</string>
     <string name="action_countries">Lande/Streke</string>
@@ -47,32 +47,34 @@
     <string name="action_edit">Wysig</string>
     <string name="action_copy_info">Kopieer inligting</string>
     <string name="action_rename_tab">Hernoem oortjie</string>
+
     <string name="error_filter_name_required">Voer asseblief eers \'n naam vir hierdie filteroortjie in</string>
     <string name="confirm_delete_filter_tab">Is jy seker jy wil die filter \"%1$s\" uitvee?</string>
-    <string name="filter_empty_title">Bou jou eie radiostasie-voer</string>
+    <string name="filter_empty_title">Bou jou eie radiostasiestroom</string>
     <string name="filter_empty_desc">Skep \'n persoonlike aansig deur verskeie kriteria te kombineer. Jy kan jou soektog beperk deur:</string>
     <string name="filter_empty_filter_by">Filter volgens:</string>
-    <string name="filter_empty_filter_desc">Land, Stasienaam, Etikette of Taal</string>
+    <string name="filter_empty_filter_desc">Land, Radiostasienaam, Etikette of Taal</string>
     <string name="filter_empty_sort_by">Sorteer volgens:</string>
     <string name="filter_empty_sort_desc">Klieks, Alfabet, Stemme of Laaste verandering</string>
     <string name="filter_empty_hint">Tik \'n naam in die veld hierbo om hierdie aansig te stoor!</string>
-    <string name="error_station_load">Kon nie aan stasie koppel nie</string>
-    <string name="error_list_update">Kon nie aan radiobrowser-bediener koppel nie</string>
+
+    <string name="error_station_load">Kon nie aan radiostasie koppel nie</string>
+    <string name="error_list_update">Kon nie aan Radio-Browser-bediener koppel nie</string>
 
     <string name="error_no_connection">Geen internetverbinding beskikbaar nie</string>
     <string name="warning_volume_zero">Volume is op nul. Jy sal dalk niks hoor nie.</string>
 
-    <string name="share_action">Deel stasieskakel met…</string>
+    <string name="share_action">Deel radiostasieskakel met…</string>
 
-    <string name="nav_item_stations">Stasies</string>
+    <string name="nav_item_stations">Radiostasies</string>
     <string name="nav_item_starred">Gunstelinge</string>
     <string name="nav_item_history">Geskiedenis</string>
     <string name="nav_item_settings">Instellings</string>
 
-    <string name="about_text">AMARadio is 100% advertensievry en gefokus op privaatheid.\n\nEk het hierdie toepassing oorspronklik vir my ma ontwikkel om haar \'n eenvoudige, eerlike radio-ervaring te gee sonder irriterende advertensies of nasporing. Dit is hoekom AMARadio altyd vry van advertensies sal bly – dit is \'n belofte aan haar, wat met julle almal gedeel word.\n\nHierdie projek is \'n vurk van die uitstekende https://github.com/segler-alex/RadioDroid . Die hele kodebasis is van Java na Kotlin migreer om te verseker dat die toepassing modern bly en versoenbaar is met toekomstige Android-weergawes.\n\nDie bronkode is beskikbaar by: https://github.com/ounben/AMARadio\n\nHierdie toepassing gebruik die gratis radiostasiegids by https://www.radio-browser.info .\nEnigeen kan stasies daarby voeg. Dit werk soos \'n wiki vir aanlyn radiostasies.\n\nKontak: ben@ounben.com\n\nFoutspoorder: https://github.com/ounben/AMARadio/issues\n\nas jy van die sagteware hou en wil help, stuur gerus vir my \'n e-pos.\nIdees vir nuwe kenmerke word ook altyd waardeer!\n\nHierdie toepassing is vrye sagteware, gelisensieer onder die GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio is 100% advertensievry en gefokus op privaatheid.\n\nEk het hierdie toepassing oorspronklik vir my ma ontwikkel om haar \'n eenvoudige, eerlike radio-ervaring te gee sonder irriterende advertensies of nasporing. Dit is hoekom AMARadio altyd vry van advertensies sal bly – dit is \'n belofte aan haar, wat met julle almal gedeel word.\n\nHierdie projek is gebaseer op https://github.com/segler-alex/RadioDroid . Die hele kodebasis is van Java na Kotlin migreer om te verseker dat die toepassing modern bly en versoenbaar is met toekomstige Android-weergawes.\n\nDie bronkode is beskikbaar by: https://github.com/ounben/AMARadio\n\nHierdie toepassing gebruik die gratis radiostasiegids by https://www.radio-browser.info .\nEnigeen kan stasies daarby voeg. Dit werk soos \'n wiki vir aanlyn radiostasies.\n\nKontak: ben@ounben.com\n\nFoutspoorder: https://github.com/ounben/AMARadio/issues\n\nAs jy van die sagteware hou en wil help, stuur gerus vir my \'n e-pos.\nIdees vir nuwe kenmerke word ook altyd waardeer!\n\nHierdie toepassing is vrye sagteware, gelisensieer onder die GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Weergawe: %1$s</string>
     <string name="detail_star">Voeg by gunstelinge</string>
-    <string name="detail_unstar">Vee uit gunstelinge uit</string>
+    <string name="detail_unstar">Verwyder uit gunstelinge</string>
     <string name="detail_play_in_external_player">@string/action_play_in_external</string>
     <string name="progress_loading">Laai tans…</string>
 
@@ -108,8 +110,8 @@
     <string name="theme_dark">Donker</string>
     <string name="theme_system">Volg stelsel</string>
     <string name="settings_compact_style">Kompakte modus</string>
-    <string name="settings_compact_style_desc_off">Groot ikoon met stasiedetails</string>
-    <string name="settings_compact_style_desc_on">Klein ikoon sonder stasiedetails</string>
+    <string name="settings_compact_style_desc_off">Groot ikoon met radiostasie-besonderhede</string>
+    <string name="settings_compact_style_desc_on">Klein ikoon sonder radiostasie-besonderhede</string>
     <string name="settings_bottom_navigation">Onderste navigasie</string>
     <string name="settings_ui_scale">UI-skalering</string>
     <string name="settings_language">Taal</string>
@@ -123,9 +125,9 @@
     <string name="settings_single_use_tags_desc_off">Etikette wat min gebruik word, sal nie gewys word nie</string>
     <string name="settings_single_use_tags_desc_on">Etikette wat min gebruik word, sal gewys word</string>
 
-    <string name="settings_show_broken">Gebreekte stasies</string>
-    <string name="settings_show_broken_on">Wys gebreekte stasies in lyste</string>
-    <string name="settings_show_broken_off">Moenie gebreekte stasies in lyste wys nie</string>
+    <string name="settings_show_broken">Defekte stasies</string>
+    <string name="settings_show_broken_on">Wys defekte radiostasies in lyste</string>
+    <string name="settings_show_broken_off">Moenie defekte radiostasies in lyste wys nie</string>
 
     <string name="settings_startup_behaviour">Begin-gedrag</string>
     <string name="action_grid_view">Rooster-aansig</string>
@@ -133,12 +135,12 @@
 
     <string name="startup_action_title">Begin-aksie</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Wys alle stasies</string>
+    <string name="startup_show_all_stations">Wys alle radiostasies</string>
     <string name="startup_show_favorites">Wys gunstelinge</string>
     <string name="startup_show_history">Wys geskiedenis</string>
     <string name="startup_show_last_view">Laaste aansig</string>
 
-    <string name="settings_load_icons">Wys stasie-ikone</string>
+    <string name="settings_load_icons">Wys radiostasie-ikone</string>
     <string name="settings_load_icons_on">Ikone sal afgelaai word</string>
     <string name="settings_load_icons_off">Ikone sal nie afgelaai word nie</string>
 
@@ -148,16 +150,16 @@
 
     <string name="settings_play">Speler</string>
     <string name="settings_auto_play_on_startup">Outo-speel</string>
-    <string name="settings_auto_play_on_startup_on">Speel laaste stasie by begin</string>
-    <string name="settings_auto_play_on_startup_off">Moenie laaste stasie by begin speel nie</string>
+    <string name="settings_auto_play_on_startup_on">Speel laaste radiostasie by begin</string>
+    <string name="settings_auto_play_on_startup_off">Moenie laaste radiostasie by begin speel nie</string>
     <string name="settings_auto_off_on_startup">Outo-stop</string>
     <string name="settings_auto_off_on_startup_on">Gebruik outo-stop-afteller met outo-speel</string>
     <string name="settings_auto_off_on_startup_off">Moenie outo-stop-afteller met outo-speel gebruik nie</string>
     <string name="settings_auto_off_sleep_timer">Outo-stop-afteller</string>
     <string name="settings_auto_off_sleep_timer_desc">Stop speel na %1$s minute</string>
     <string name="settings_play_external">Aktiveer eksterne speler</string>
-    <string name="settings_play_external_desc_on">Speel stasies met eksterne speler</string>
-    <string name="settings_play_external_desc_off">Speel stasies met AMARadio</string>
+    <string name="settings_play_external_desc_on">Speel radiostasies met eksterne speler</string>
+    <string name="settings_play_external_desc_off">Speel radiostasies met AMARadio</string>
     <string name="settings_equalizer">Toonbeheer (Equalizer)</string>
 
     <string name="settings_connectivity">Konnektiwiteit</string>
@@ -171,7 +173,7 @@
     <string name="settings_proxy_password">Wagwoord</string>
     <string name="settings_proxy_action_test">Toets</string>
     <string name="settings_proxy_working">Suksesvol verbind met %s</string>
-    <string name="settings_proxy_not_working">Kon nie verbind met %1$s\n%2$s</string>
+    <string name="settings_proxy_not_working">Kon nie verbind met %1$s nie\n%2$s</string>
     <string name="settings_proxy_invalid">Die waardes wat jy verskaf het vir die instaanbediener is ongeldig</string>
     <string name="ignore_proxy_settings_invalid">Ongeldige instaanbediener-instellings is geïgnoreer</string>
     <string name="settings_seconds_format">%d sekondes</string>
@@ -198,9 +200,9 @@
     <string name="notify_paused">Gepouseer</string>
     <string name="notify_metered_connection">Gemonitorde verbinding</string>
 
-    <string name="notify_starred">Stasie is by gunstelinge gevoeg</string>
-    <string name="notify_autostarred">Stasie is outomaties by gunstelinge gevoeg</string>
-    <string name="notify_unstarred">Stasie is uit gunstelinge verwyder</string>
+    <string name="notify_starred">Radiostasie by gunstelinge gevoeg</string>
+    <string name="notify_autostarred">Radiostasie outomaties by gunstelinge gevoeg</string>
+    <string name="notify_unstarred">Radiostasie uit gunstelinge verwyder</string>
     <string name="notify_deleted_favorites">Die gunstelinge is uitgevee</string>
     <string name="notify_deleted_history">Die geskiedenis is uitgevee</string>
 
@@ -216,8 +218,8 @@
 
     <string name="alert_select_player">Kies asseblief \'n speler</string>
     <string name="alert_select_player_name">Naam</string>
-    <string name="hostname">Gasheernaam</string>
-    <string name="port">Poort</string>
+    <string name="hostname">Bedieneradres</string>
+    <string name="port">Netwerkpoort</string>
 
     <string name="alert_press_back_to_exit">Druk weer terug om af te sluit</string>
 
@@ -243,7 +245,7 @@
 
     <string name="station_detail_bitrate">%1$1d kbps</string>
     <string name="station_detail_broken">GEBREEK</string>
-    <string name="station_detail_deleted_on_server">GEVEE</string>
+    <string name="station_detail_deleted_on_server">GESKRAP</string>
 
     <string name="station_details_clicks">%1$d klieks</string>
     <string name="station_details_votes">%1$d stemme</string>
@@ -264,10 +266,10 @@
     <string name="action_play_in_external">Speel in eksterne speler</string>
     <string name="action_choose_external_player">Kies eksterne speler</string>
 
-    <string name="settings_disable_battery_optimization">Battery-optimering</string>
+    <string name="settings_disable_battery_optimization">Agtergrondspeel</string>
     <string name="settings_ignore_battery_optimization_summary_on">Battery-optimering word geïgnoreer, AMARadio behoort altyd fokus te kan herwin.</string>
     <string name="settings_ignore_battery_optimization_summary_off">Battery-optimering is geaktiveer, AMARadio sal dalk nie fokus kan herwin as dit in die agtergrond is nie.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Ander</string>
     <string name="settings_rate_app">Gradeer AMARadio</string>
     <string name="settings_rate_app_summary">As jy van die toepassing hou, laat asseblief \'n resensie op die Play Store!</string>
@@ -324,7 +326,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stasie-logo</string>
+    <string name="accessibility_station_logo">Radiostasie-logo</string>
     <string name="accessibility_favorite_selected">Gunsteling, gekies</string>
     <string name="accessibility_favorite_not_selected">Gunsteling, nie gekies nie</string>
     <string name="accessibility_category_icon">Kategorie-ikoon</string>
@@ -337,7 +339,7 @@
     <string name="accessibility_configure">Stel op</string>
     <string name="accessibility_close">Sluit</string>
     <string name="accessibility_add_filter">Voeg filter by</string>
-    <string name="accessibility_station_options">Stasie-opsies</string>
+    <string name="accessibility_station_options">Radiostasie-opsies</string>
     <string name="not_applicable">n.v.t.</string>
     <string name="accessibility_station_description">Stasie: %1$s, Taal: %2$s, Etikette: %3$s</string>
 
@@ -345,27 +347,55 @@
     <string name="error_no_browser">Kon nie \'n webblaaier vind nie. Installeer asseblief \'n blaaier om hierdie skakel oop te maak.</string>
     <string name="error_no_homepage">Geen tuisblad beskikbaar vir hierdie stasie nie</string>
     <string name="tab_custom_stations">Pasgemaak</string>
-    <string name="action_add_custom">Voeg pasgemaakte stasie by</string>
-    <string name="station_name">Stasie Naam</string>
+    <string name="action_add_custom">Voeg pasgemaakte radiostasie by</string>
+    <string name="station_name">Radiostasienaam</string>
     <string name="stream_url">Stroom URL</string>
-    <string name="favicon_url">Gunsteling-URL (opsioneel)</string>
+    <string name="favicon_url">Favicon-URL (opsioneel)</string>
     <string name="select_image">Kies Beeld</string>
     <string name="error_invalid_url">Voer asseblief \'n geldige URL in</string>
     <string name="action_save">Stoor</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Vinnige spelerkontroles</string>
-    <string name="widget_description_full">Speler en stasie lys</string>
+    <string name="widget_description_full">Speler en stasielys</string>
 
-    <string name="settings_auto_db_update">Agtergrond Data Sync</string>
+    <string name="settings_auto_db_update">Agtergrondsinkronisasie</string>
     <string name="settings_auto_db_update_desc">Werk stasiedatabasis outomaties op via Radio-Browser API (aanbeveel).</string>
-    <string name="settings_station_click_counter">Stasie klik teller</string>
-    <string name="settings_station_click_counter_desc">Ondersteun Radio-blaaier-statistieke deur speelgeleenthede anoniem te deel.</string>
+    <string name="settings_station_click_counter">Stasie-kliekteller</string>
+    <string name="settings_station_click_counter_desc">Ondersteun Radio-Browser-statistieke deur terugspeel-gebeurtenisse anoniem te deel.</string>
     <string name="settings_rate_app_github">Geniet jy AMARadio?</string>
     <string name="settings_rate_app_github_summary">Los \'n ster op GitHub! Dit help ander om die toepassing te ontdek en ondersteun toekomstige ontwikkeling.</string>
 
-    <string name="settings_remove_notification_on_stop">Verwyder kennisgewing wanneer app gesluit is</string>
-    <string name="settings_remove_notification_on_stop_desc">Maak die mediakennisgewing outomaties toe wanneer die toepassing van onlangse toepassings gesluit is</string>
+    <string name="settings_remove_notification_on_stop">Verwyder kennisgewing by stop</string>
+    <string name="settings_remove_notification_on_stop_desc">Maak die mediakennisgewing outomaties toe wanneer speel gestop word</string>
     <string name="settings_auto_resume_audio_focus">Hervat na klankfokusverlies</string>
     <string name="settings_auto_resume_audio_focus_desc">Hervat speel outomaties nadat telefoonoproepe, alarms of ander oudio gestop het</string>
+
+    <string name="settings_backup_restore">Rugsteun en herstel</string>
+    <string name="settings_export_backup">Skep volledige rugsteun (ZIP)</string>
+    <string name="settings_export_backup_desc">Stoor alle gunstelinge, eie stasies en plaaslike ikone in \'n ZIP-lêer</string>
+    <string name="settings_import_backup">Herstel rugsteun (ZIP)</string>
+    <string name="settings_import_backup_desc">Herstel gunstelinge, eie stasies en ikone uit \'n ZIP-rugsteunlêer</string>
+    <string name="backup_export_success">Rugsteun suksesvol gestoor</string>
+    <string name="backup_export_error">Kon nie rugsteun stoor nie</string>
+    <string name="backup_import_success">Rugsteun suksesvol herstel</string>
+    <string name="backup_import_error">Kon nie rugsteun herstel nie</string>
+
+    <string name="database_summary_title">Plaaslike databasis</string>
+    <string name="database_total_stations">Totale radiostasies</string>
+    <string name="database_last_sync">Laaste sinkronisasie</string>
+    <string name="database_update_now">Dateer databasis nou op</string>
+    <string name="database_full_update">Dateer databasis op</string>
+    <string name="database_syncing">Sinkroniseer tans…</string>
+    <string name="database_downloading">Laai tans af…</string>
+    <string name="database_stations_loaded">%1$s radiostasies</string>
+    <string name="database_sync_channel_name">Radiostasiedatabasis-sinkronisasie</string>
+    <string name="database_sync_success">Stasiedatabasisopdatering suksesvol voltooi</string>
+    <string name="database_error_no_connection">Geen internetverbinding nie</string>
+    <string name="database_error_no_space">Nie genoeg skyfspasie beskikbaar nie</string>
+    <string name="database_error_failed">Databasisopdatering het misluk</string>
+
+    <string name="settings_disable_battery_optimization_desc">Stel batterygebruik op \'Onbeperk\' om aan te hou speel met die skerm af.</string>
+    <string name="battery_opt_open_settings">Maak instellings oop</string>
+    <string name="battery_opt_later">Later</string>
 </resources>

@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">Orúkọ</string>
+    <string name="detail_tags">Àwọn Àmì</string>
+    <string name="detail_country">Orílẹ̀-èdè</string>
+    <string name="detail_create_shortcut">Fi sori ojú-iwe ilé</string>
+    <string name="detail_language">Èdè</string>
+    <string name="detail_weblink">Ìhon yẹ́bù</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">Agbára Ọ̀rọ̀ (Play)</string>
+    <string name="detail_pause">Gbé Dúró (Pause)</string>
+    <string name="detail_stop">Mú Dúró (Stop)</string>
+    <string name="detail_share">Pín</string>
+    <string name="detail_play_in_AMARadio">Gbé ránṣẹ́ ní AMARadio</string>
+
+    <string name="action_links">Àwọn Ìhon</string>
+    <string name="action_homepage">Ojú-ewé Ilé</string>
+    <string name="action_favorite">Àwọn Ààyò</string>
+    <string name="action_starred_add">Fi kún àwọn ààyò</string>
+    <string name="action_starred_remove">Yọ kúrò ní àwọn ààyò</string>
+
+    <string name="action_station_visit_website">Rí ojú-ewé yẹ́bù</string>
+    <string name="action_station_copy_stream_url">Ṣe àdàkọ URL streamu</string>
+    <string name="action_station_share">Pín</string>
+
+    <string name="action_local">Ti agbègbè</string>
+    <string name="action_skip_to_next">Eleyi to tẹ̀lé e</string>
+    <string name="action_pause">Gbé Dúró (Pause)</string>
+    <string name="action_skip_to_previous">Tẹ́lẹ̀ ri</string>
+    <string name="action_resume">Tẹ̀síwájú</string>
+    <string name="action_stop">Mú Dúró (Stop)</string>
+    <string name="action_search">Ṣàwárí</string>
+    <string name="action_delete">Parẹ́</string>
+    <string name="action_delete_history">Parẹ́ ìtàn</string>
+    <string name="action_delete_favorites">Parẹ́ gbogbo àwọn ààyò</string>
+    <string name="action_delete_stream_history">Rẹ́ ìtàn àwọn orin</string>
+    <string name="action_ok">Ó dára (OK)</string>
+    <string name="action_cancel">Mú kúrò (Cancel)</string>
+    <string name="action_top_click">Àwọn ti a tẹ̀ jù lọ</string>
+    <string name="action_toggle_view">Pààrọ̀ ojú-àwòrán</string>
+    <string name="action_top_vote">Àwọn ti a dibò fún jù lọ</string>
+    <string name="action_changed_lately">Àwọn ti a túnṣe ní àìpẹ́</string>
+    <string name="action_currently_playing">Ń gbé jáde nísinsìnyí</string>
+    <string name="action_tags">Àwọn àmì</string>
+    <string name="action_countries">Àwọn Orílẹ̀-èdè/Agbègbè</string>
+    <string name="action_languages">Àwọn Èdè</string>
+    <string name="action_edit">Tún ṣe</string>
+    <string name="action_copy_info">Ṣe àdàkọ ìròyìn</string>
+    <string name="action_rename_tab">Pààrọ̀ orúkọ tabu</string>
+
+    <string name="error_filter_name_required">Jọ̀wọ́ fi orúkọ fún tabu ajẹ̀mọ́-asẹ́ yìí kọ́kọ́</string>
+    <string name="confirm_delete_filter_tab">Ṣé o dá ẹ lójú pé o fẹ́ parẹ́ asẹ́ \"%1$s\" yìí?</string>
+    <string name="filter_empty_title">Ṣẹ̀dá àtòjọ ilé-iṣẹ́ rédíò tìrẹ</string>
+    <string name="filter_empty_desc">Ṣẹ̀dá àwòrán ti ara rẹ nípa papọ̀ àwọn ohun elò wọ̀nyí. O le dín àwárí rẹ kù nípa lílo:</string>
+    <string name="filter_empty_filter_by">Asẹ́ nípa:</string>
+    <string name="filter_empty_filter_desc">Orílẹ̀-èdè, Orúkọ ilé-iṣẹ́ rédíò, Àwọn àmì tabi Èdè</string>
+    <string name="filter_empty_sort_by">Tò nípa:</string>
+    <string name="filter_empty_sort_desc">Látẹ̀tẹ̀, Aábídí, Ìbò tabi Àtúnṣe ìgbẹ̀yìn</string>
+    <string name="filter_empty_hint">Kọ orúkọ kan sí àpótí oke yìí láti tọ́jú àwòrán yìí!</string>
+
+    <string name="error_station_load">Kò le so pọ̀ mọ́ ilé-iṣẹ́ rédíò yìí</string>
+    <string name="error_list_update">Kò le so pọ̀ mọ́ sáfà Radio-Browser</string>
+
+    <string name="error_no_connection">Kò sí ìsopọ̀ intanẹ́ẹ̀tì gidi.</string>
+    <string name="warning_volume_zero">Sísọ fún ohùn wà ní eéwo (zero). O le má gbọ́ nkankan.</string>
+
+    <string name="share_action">Pín ìhon ilé-iṣẹ́ rédíò pẹ̀lú…</string>
+
+    <string name="nav_item_stations">Àwọn Ilé-iṣẹ́ Rédíò</string>
+    <string name="nav_item_starred">Àwọn Ààyò</string>
+    <string name="nav_item_history">Ìtàn</string>
+    <string name="nav_item_settings">Àwọn Àtúnṣe</string>
+
+    <string name="about_text">AMARadio jẹ́ 100% láláìsí ìpolówó kankan ati pé o dára fún àṣírí rẹ.\n\nMo ṣe áńpù yìí fún ìyá mi láti fún un ní ìrírí rédíò ti o rọrùn, láláìsí ìpolówó ti ń bínú tàbí ìtọpa. Idi niyẹn ti AMARadio yóò ṣe wà ní free ìpolówó gẹ́gẹ́ bí ádéhùn sí i.\n\nIṣẹ́ yìí jẹ́ fork ti RadioDroid ti o dára. Gbogbo koodu ni a ti fi kúrò ní Java sí Kotlin.\n\nKoodu ará wà ní: https://github.com/ounben/AMARadio\n\nÁńpù yìí ń lo àtòjọ ilé-iṣẹ́ rédíò ní https://www.radio-browser.info .\n\nÀkáǹtì: ben@ounben.com\n\nÀwọn ìṣòro: https://github.com/ounben/AMARadio/issues\n\nÁńpù yìí jẹ́ softwware free labẹ GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">Agbara áńpù: %1$s</string>
+    <string name="detail_star">Fi kún àwọn ààyò</string>
+    <string name="detail_unstar">Yọ kúrò ní àwọn ààyò</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">Ń layisha…</string>
+
+    <string name="sleep_timer" formatted="true">Pẹpẹ àsìkò oorun: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">Mú gbéjáde dúró lẹ́yìn àwọn ìṣẹ́jú ti a yàn</string>
+    <string name="sleep_timer_apply">Lò ó</string>
+    <string name="sleep_timer_clear">Rẹ́ ẹ</string>
+    <string name="nav_item_add_sleep">Pẹpẹ àsìkò oorun</string>
+
+    <string name="nav_item_save_playlist">Fi àwọn ààyò ránṣẹ́ gẹ́gẹ́ bí àtòjọ orin</string>
+    <string name="nav_item_load_playlist">Mú àwọn ààyò wọ̀ láti àtòjọ orin</string>
+    <string name="nav_item_save_history_playlist">Fi ìtàn ránṣẹ́ gẹ́gẹ́ bí àtòjọ orin</string>
+    <string name="confirm_overwrite_file">Pààrọ̀ fayìlì yìí?</string>
+    <string name="dialog_hint_file_name">Fi orúkọ fayìlì kọ́</string>
+    <string name="error_empty_field">Fusing yìí ṣe pàtàkì gidi</string>
+    <string name="error_invalid_file_name">Orúkọ fayìlì kò tọ́</string>
+    <string name="label_button_cancel">Mú kúrò</string>
+    <string name="label_button_overwrite">Pààrọ̀</string>
+    <string name="notify_load_playlist_nok">Kò le mú wọ̀ láti %1$s&#47;%2$s</string>
+    <string name="notify_load_playlist_now">Ń mú wọ̀ láti %1$s&#47;%2$s, jọ̀wọ́ dúró díẹ̀.</string>
+    <string name="notify_load_playlist_ok">Mú wọ̀ %1$d àwọn ilé-iṣẹ́ láti %2$s&#47;%3$s</string>
+    <string name="notify_save_playlist_nok">Kò le fi ránṣẹ́ sí %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_now">Ń fi ránṣẹ́ sí %1$s&#47;%2$s, jọ̀wọ́ dúró díẹ̀.</string>
+    <string name="notify_save_playlist_ok">Fi ránṣẹ́ sí %1$s&#47;%2$s ní àseyọrí</string>
+    <string name="notify_sync_list_deleted_entries">%1$d nínú %2$d àwọn ilé-iṣẹ́ ti agbègbè ní a fi àmì pé kò sí nínú sáfà</string>
+
+    <string name="searchpreference_clear_history">Rẹ́ ìtàn kúrò</string>
+    <string name="searchpreference_no_results">Kò sí àwọn èsì</string>
+    <string name="searchpreference_search">Ṣàwárí…</string>
+    <string name="settings_appearance">Àwòrán</string>
+    <string name="settings_theme_selection_title">Aṣọ áńpù (Theme)</string>
+    <string name="theme_light">Aṣọ mọ́lẹ̀</string>
+    <string name="theme_dark">Aṣọ òkùnkùn</string>
+    <string name="theme_system">Tẹ̀lé e-sistẹ́mù</string>
+    <string name="settings_compact_style">Àwòrán kekere</string>
+    <string name="settings_compact_style_desc_off">Àwòrán ńlá pẹ̀lú àwọn ìròyìn ilé-iṣẹ́ rédíò</string>
+    <string name="settings_compact_style_desc_on">Àwòrán kekere láláìsí àwọn ìròyìn</string>
+    <string name="settings_bottom_navigation">Àtẹ ìyípadà ìṣàlẹ̀</string>
+    <string name="settings_ui_scale">Ubunla UI</string>
+    <string name="settings_language">Èdè</string>
+    <string name="ui_scale_compact">Keferé</string>
+    <string name="ui_scale_standard">Gẹ́gẹ́ bí sistẹ́mù</string>
+    <string name="ui_scale_large">Ńlá</string>
+    <string name="ui_scale_extra_large">Ńlá gidi</string>
+
+    <string name="settings_interaction">Ìbáṣepọ̀</string>
+    <string name="settings_single_use_tags">Aṣe àwọn àmì ti a kò lọ̀ nígbà gbogbo</string>
+    <string name="settings_single_use_tags_desc_off">Àwọn àmì ti a kò lọ̀ nígbà gbogbo kò ní fi hàn</string>
+    <string name="settings_single_use_tags_desc_on">Àwọn àmì ti a kò lọ̀ nígbà gbogbo yóò fi hàn</string>
+
+    <string name="settings_show_broken">Àwọn ilé-iṣẹ́ rédíò ti o bàjẹ́</string>
+    <string name="settings_show_broken_on">Aṣe àwọn ilé-iṣẹ́ ti o bàjẹ́ ní àtòjọ</string>
+    <string name="settings_show_broken_off">Fi àwọn ilé-iṣẹ́ ti o bàjẹ́ pamọ́ ní àtòjọ</string>
+
+    <string name="settings_startup_behaviour">Ìṣe ní ìbẹ̀rẹ̀</string>
+    <string name="action_grid_view">Àwòrán gríìdì</string>
+    <string name="action_list_view">Àwòrán àtòjọ</string>
+
+    <string name="startup_action_title">Ìgbésẹ̀ ìbẹ̀rẹ̀</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">Aṣe gbogbo àwọn ilé-iṣẹ́ rédíò</string>
+    <string name="startup_show_favorites">Aṣe àwọn ààyò</string>
+    <string name="startup_show_history">Aṣe ìtàn</string>
+    <string name="startup_show_last_view">Àwòrán ìgbẹ̀yìn</string>
+
+    <string name="settings_load_icons">Aṣe àwọn àwòrán ilé-iṣẹ́ rédíò</string>
+    <string name="settings_load_icons_on">Àwọn àwòrán yóò wa ni layisha</string>
+    <string name="settings_load_icons_off">Àwọn àwòrán kò ní wa ni layisha</string>
+
+    <string name="settings_auto_favorite">Àwọn ààyò ti ara ẹni</string>
+    <string name="settings_auto_favorite_on">Fi ilé-iṣẹ́ rédíò kún àwọn ààyò lọ́gán nígbà ti o ba ń gbé jáde</string>
+    <string name="settings_auto_favorite_off">Mā fi ilé-iṣẹ́ rédíò kún àwọn ààyò lọ́gán nígbà ti o ba ń gbé jáde</string>
+
+    <string name="settings_play">Mọ̀ṣín gbéjáde (Player)</string>
+    <string name="settings_auto_play_on_startup">Gbé jáde ní ara ẹni</string>
+    <string name="settings_auto_play_on_startup_on">Gbé ilé-iṣẹ́ rédíò ti o gbéjàde kẹhin jáde ní ìbẹ̀rẹ̀</string>
+    <string name="settings_auto_play_on_startup_off">Mā gbé ilé-iṣẹ́ rédíò ti o gbéjàde kẹhin jáde ní ìbẹ̀rẹ̀</string>
+    <string name="settings_auto_off_on_startup">Mú dúró ní ara ẹni</string>
+    <string name="settings_auto_off_on_startup_on">Lò pẹpẹ àsìkò mú dúró ní ara ẹni pẹ̀lú gbéjáde ní ara ẹni</string>
+    <string name="settings_auto_off_on_startup_off">Mā lò pẹpẹ àsìkò mú dúró ní ara ẹni pẹ̀lú gbéjáde ní ara ẹni</string>
+    <string name="settings_auto_off_sleep_timer">Pẹpẹ àsìkò mú dúró ní ara ẹni</string>
+    <string name="settings_auto_off_sleep_timer_desc">Mú gbéjáde dúró lẹ́yìn àwọn ìṣẹ́jú %1$s</string>
+    <string name="settings_play_external">Lò mọ̀ṣín gbéjáde ti ode</string>
+    <string name="settings_play_external_desc_on">Gbé àwọn ilé-iṣẹ́ rédíò jáde pẹ̀lú mọ̀ṣín ode</string>
+    <string name="settings_play_external_desc_off">Gbé àwọn ilé-iṣẹ́ rédíò jáde pẹ̀lú AMARadio</string>
+    <string name="settings_equalizer">Equalizer</string>
+
+    <string name="settings_connectivity">Ìsopọ̀</string>
+    <string name="settings_connect_timeout">Àsìkò ìsopọ̀ ti kọjá</string>
+    <string name="settings_read_timeout">Àsìkò ìkàsí ti kọjá</string>
+    <string name="settings_resume_timeout">Àsìkò tẹ̀síwájú ti kọjá</string>
+    <string name="settings_retry_timeout">Àsìkò àtúnṣe ti kọjá</string>
+    <string name="settings_retry_delay">Ìdádó fún àtúnṣe ìsopọ̀</string>
+    <string name="settings_proxy">Proxy</string>
+    <string name="settings_proxy_login">Orúkọ oníṣe</string>
+    <string name="settings_proxy_password">Ọ̀rọ̀ aṣírí</string>
+    <string name="settings_proxy_action_test">Dán an wò</string>
+    <string name="settings_proxy_working">So pọ̀ ní àseyọrí sí %s</string>
+    <string name="settings_proxy_not_working">Kò le so pọ̀ sí %1$s\n%2$s</string>
+    <string name="settings_proxy_invalid">Àwọn gbolohun proxy yìí kò tọ́</string>
+    <string name="ignore_proxy_settings_invalid">Gbé àwọn àtúnṣe proxy tí kò tọ́ sẹ́yìn</string>
+    <string name="settings_seconds_format">%d àwọn ìṣẹ́jú-aaya</string>
+    <string name="settings_milliseconds_format">%d àwọn milisẹkọndì</string>
+
+    <string name="settings_pause_when_noisy">Gbé dúró nígbà tí a ba yọ ee-fóònù kúrò</string>
+
+    <string name="settings_auto_resume_do_not_resume">Mā tẹ̀síwájú</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">Tẹ̀síwájú nígbà tí a ba fi àpapọ̀ wa lori àyà</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">Tẹ̀síwájú gbéjáde nígbà tí a ba fi ee-fóònù sí i</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Tẹ̀síwájú nínú ìsopọ̀ Bluetooth</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Tẹ̀síwájú gbéjáde nígbà tí ẹrọ Bluetooth A2DP ba so pọ̀</string>
+
+    <string name="settings_auto_resume_on_any_connected">Tẹ̀síwájú nígbà gbogbo ìsopọ̀</string>
+
+    <string name="settings_warn_no_wifi">Ìkilọ̀ láláìsí Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">Lẹ́rù nígbà tí o ba ń gbéjáde láláìsí Wi-Fi</string>
+    <string name="settings_warn_no_wifi_off">Má lẹ́rù nígbà tí kò sí Wi-Fi</string>
+
+    <string name="notify_pre_play">Ń so pọ̀</string>
+    <string name="notify_play">Ń gbé jáde</string>
+    <string name="notify_paused">A gbé e dúró</string>
+    <string name="notify_metered_connection">Ìsopọ̀ ti a wọn</string>
+
+    <string name="notify_starred">A fi ilé-iṣẹ́ rédíò kún àwọn ààyò</string>
+    <string name="notify_autostarred">A fi ilé-iṣẹ́ rédíò kún àwọn ààyò ní ara ẹni</string>
+    <string name="notify_unstarred">A yọ ilé-iṣẹ́ rédíò kúrò ní àwọn ààyò</string>
+    <string name="notify_deleted_favorites">A parẹ́ àwọn ààyò</string>
+    <string name="notify_deleted_history">A rẹ́ ìtàn kúrò</string>
+
+    <string name="notify_open_link_failure">Kò sí áńpù ti a rí láti sí ìhon yìí</string>
+
+    <string name="notify_station_removed_from_list">1 a yọ kúrò</string>
+    <string name="action_station_removed_from_list_undo">TÚN SE (UNDO)</string>
+
+    <string name="alert_delete_history">Ṣé o dá ẹ lójú pé o fẹ́ rẹ́ ìtàn kúrò?</string>
+    <string name="alert_delete_favorites">Ṣé o dá ẹ lójú pé o fẹ́ parẹ́ gbogbo àwọn ààyò?</string>
+    <string name="yes">Bẹ́ẹ̀ ni</string>
+    <string name="no">Bẹ́ẹ̀ kọ́</string>
+
+    <string name="alert_select_player">Jọ̀wọ́ yàn mọ̀ṣín gbéjáde kan</string>
+    <string name="alert_select_player_name">Orúkọ</string>
+    <string name="hostname">Àdírẹ́ẹ̀sì sáfà</string>
+    <string name="port">Port netwọọki</string>
+
+    <string name="alert_press_back_to_exit">Tẹ bọtini emi sẹ́yìn lẹ́ẹ̀kan sí i láti bó sí wò</string>
+
+    <string name="error_stream_url">Ìṣòro URL streamu</string>
+    <string name="error_caching_stream">Ìṣòro fi streamu sí kashè (cache)</string>
+    <string name="error_play_stream">Kò le gbé streamu yìí jáde</string>
+    <string name="error_stream_reconnect_timeout">Kò le so pọ̀ mọ́ streamu yìí gẹ́gẹ́ bí àsìkò ti kọjá</string>
+    <string name="warning_no_network_trying_resume">Kò sí netwọọki. Ń gbìyànjú láti tẹ̀síwájú nígbà ti netwọọki ba padà bọ̀.</string>
+    <string name="giving_up_resume">A fi atúnṣe gbéjáde sílẹ̀</string>
+
+    <string name="error_grant_audiofocus">Sistẹ́mù kò fi àyè fún ohùn fókọ́ọ̀sì</string>
+
+    <string name="error_no_equalizer_found">Kò sí áńpù equalizer ti a rí</string>
+
+    <string name="player_info_status">Aàyè:&#160;</string>
+    <string name="player_info_status_stopped">A mú e dúró</string>
+    <string name="player_info_status_playing">Ń gbé jáde</string>
+    <string name="player_info_transferred">Data ti a fi ránṣẹ́: %1$s</string>
+
+    <string name="tab_player_art">Àwòrán àlúbọ́mù</string>
+    <string name="tab_player_info">Ìròyìn</string>
+    <string name="tab_player_history">Ìtàn àwọn orin</string>
+
+    <string name="station_detail_bitrate">%1$d kbps</string>
+    <string name="station_detail_broken">Ó BÀJẸ́</string>
+    <string name="station_detail_deleted_on_server">A PARẸ́ Ẹ</string>
+
+    <string name="station_details_clicks">%1$d àwọn látẹ̀tẹ̀</string>
+    <string name="station_details_votes">%1$d àwọn ìbò</string>
+
+    <string name="image_button_disable">Zà á kúrò</string>
+    <string name="image_button_delete">Parẹ́</string>
+    <string name="image_button_more">Si sí i</string>
+    <string name="image_button_less">Dín kù</string>
+    <string name="image_button_repeat">Tún ṣe</string>
+    <string name="image_button_dont_repeat">Mā tún ṣe</string>
+    <string name="icon_click_trend_decreasing">Agbára ayọ̀ ń dín kù</string>
+    <string name="icon_click_trend_increasing">Agbára ayọ̀ ń pọ̀ sí i</string>
+    <string name="icon_click_trend_stable">Agbára ayọ̀ wà déédéé</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% Láláìsí Ìpolówó &amp; Ti Ara Ẹni</string>
+
+    <string name="action_play_in_external">Gbé jáde nínú mọ̀ṣín ode</string>
+    <string name="action_choose_external_player">Yàn mọ̀ṣín ode</string>
+
+    <string name="settings_disable_battery_optimization">Gbé jáde ní abẹ́lé</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">Àwọn mìíràn</string>
+    <string name="settings_rate_app">Fi àmì gíga fún AMARadio</string>
+    <string name="settings_rate_app_summary">Ti o ba fẹ́ràn áńpù yìí, jọ̀wọ́ fi àwòrán rẹ sí Play Store!</string>
+    <string name="settings_rate_app_github">Ṣé o ń gbádùn AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Fi ìràwọ̀ sí GitHub! Ó ń giúp àwọn mìíràn rí áńpù yìí.</string>
+    <string name="settings_statistics">Àwọn Àtòjọ Òǹka</string>
+    <string name="settings_about">Nípa AMARadio</string>
+
+    <string name="description_btn_skip_to_next">Kọjá sí eleyi to tẹ̀lé e</string>
+    <string name="description_btn_skip_to_previous">Kọjá sí tẹ́lẹ̀ ri</string>
+
+    <string-array name="weekdays">
+        <item>Àì</item>
+        <item>Aj</item>
+        <item>Ìṣ</item>
+        <item>Ọr</item>
+        <item>Ọ̀ṣ</item>
+        <item>Ẹt</item>
+        <item>Àb</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">A ṣe àdàkọ URL streamu ní àseyọrí</string>
+    <string name="notify_track_info_copied">A ṣe àdàkọ ìròyìn orin ní àseyọrí</string>
+
+    <string-array name="actions_station_link">
+        <item>Rí ojú-ewé yẹ́bù</item>
+        <item>Ṣe àdàkọ URL streamu</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">A rí ìsopọ̀ ti a wọn</string>
+    <string name="alert_metered_connection_message">Ìsopọ̀ ti a wọn le mú owó si i wá, tẹ \'Ó dára\' láti tẹ̀síwájú.</string>
+    <string name="nav_item_statistics">Àwọn Àtòjọ Òǹka</string>
+    <string name="nav_item_about">Nípa</string>
+    <string name="refresh">Tún ṣe rẹ̀</string>
+    <string name="action_filter">Asẹ́</string>
+    <string name="filter_country">Orílẹ̀-èdè</string>
+    <string name="filter_tag">Àmì</string>
+    <string name="filter_language">Èdè</string>
+    <string name="filter_sort_by">Tò nípa</string>
+    <string name="filter_reverse">Tò pẹ̀lú ípa ilà keji</string>
+    <string name="filter_apply">Lò asẹ́</string>
+    <string name="sort_name">Orúkọ</string>
+    <string name="sort_votes">Àwọn ìbò</string>
+    <string name="sort_clicks">Àwọn látẹ̀tẹ̀</string>
+    <string name="sort_lastchange">Àtúnṣe ìgbẹ̀yìn</string>
+    <string name="filter_select_country">Yàn orílẹ̀-èdè</string>
+    <string name="filter_select_language">Yàn èdè</string>
+    <string name="filter_type_tag">Kọ àmì kan…</string>
+    <string name="filter_tap_to_configure">Tẹ̀ fún àwọn àtúnṣe</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">Àwòrán ilé-iṣẹ́ rédíò</string>
+    <string name="accessibility_favorite_selected">Ààyò, ti a yàn</string>
+    <string name="accessibility_favorite_not_selected">Ààyò, ti kò sí nínú yíyàn</string>
+    <string name="accessibility_category_icon">Àwòrán ẹ̀ka</string>
+    <string name="accessibility_playing">Ń gbé jáde nísinsìnyí</string>
+    <string name="accessibility_menu">Sí àtẹ àwọn kọ́kọ́rọ́</string>
+    <string name="accessibility_search_back">Ló tì àwárí</string>
+    <string name="accessibility_filter_reverse">Pààrọ̀ àtòjọ títò</string>
+    <string name="accessibility_clear_text">Rẹ́ àwọn gbolohun kúrò</string>
+    <string name="accessibility_back">Sẹ́yìn</string>
+    <string name="accessibility_configure">Tún ṣe</string>
+    <string name="accessibility_close">Ló tì</string>
+    <string name="accessibility_add_filter">Fi asẹ́ kún un</string>
+    <string name="accessibility_station_options">Àwọn àyànfẹ́ ilé-iṣẹ́ rédíò</string>
+    <string name="not_applicable">Kò ṣeé lò</string>
+    <string name="accessibility_station_description">Ilé-iṣẹ́ rédíò: %1$s, Èdè: %2$s, Àwọn àmì: %3$s</string>
+
+    <string name="error_no_file_manager">Kò sí mọ̀ṣín fayìlì ti a rí. Jọ̀wọ́ ri i daju pé fọ́dà rẹ wà nípò.</string>
+    <string name="error_no_browser">Kò sí yẹ́bù bọ̀rọ̀ọ̀sà ti a rí. Jọ̀wọ́ fi bọ̀rọ̀ọ̀sà sí i láti sí ìhon yìí.</string>
+    <string name="error_no_homepage">Kò sí ojú-ewé ilé fún ilé-iṣẹ́ rédíò yìí</string>
+    <string name="tab_custom_stations">Ti ara ẹni</string>
+    <string name="action_add_custom">Fi ilé-iṣẹ́ rédíò ti ara ẹni kún un</string>
+    <string name="station_name">Orúkọ ilé-iṣẹ́ rédíò</string>
+    <string name="stream_url">URL streamu</string>
+    <string name="favicon_url">URL àwòrán ilé-iṣẹ́ (Favicon)</string>
+    <string name="select_image">Yàn àwòrán</string>
+    <string name="error_invalid_url">Jọ̀wọ́ fi URL gidi kọ́</string>
+    <string name="action_save">Tọ́jú</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">Àwọn àtúnṣe gbéjáde lọ́gán</string>
+    <string name="widget_description_full">Mọ̀ṣín gbéjáde ati àtòjọ ilé-iṣẹ́ rédíò</string>
+
+    <string name="settings_auto_db_update">Ìsọdọ̀kan data abẹ́lé</string>
+    <string name="settings_auto_db_update_desc">Tún àtòjọ ilé-iṣẹ́ ṣe ní ara ẹni nígbà gbogbo pẹ̀lú Radio-Browser API.</string>
+    <string name="settings_station_click_counter">Òǹka látẹ̀tẹ̀ ilé-iṣẹ́ rédíò</string>
+    <string name="settings_station_click_counter_desc">Stipendia Radio-Browser àtòjọ ònka nípa pínpín àwọn ìṣẹ̀lẹ̀ gbéjáde ní aṣírí.</string>
+
+    <string name="settings_remove_notification_on_stop">Yọ ìfilọ̀ kúrò nígbà tí a ba mú e dúró</string>
+    <string name="settings_remove_notification_on_stop_desc">Yọ ìfilọ̀ mọ̀ṣín gbéjáde kúrò ní ara ẹni nígbà tí a ba mú e dúró</string>
+    <string name="settings_auto_resume_audio_focus">Tẹ̀síwájú lẹ́yìn àìsí ohùn fókọ́ọ̀sì</string>
+    <string name="settings_auto_resume_audio_focus_desc">Tẹ̀síwájú gbéjáde ní ara ẹni lẹ́yìn àwọn àpepè fóònù tàbí àwọn alaarmo</string>
+
+    <string name="settings_backup_restore">Ààbò àti àtúnṣe dídá padà</string>
+    <string name="settings_export_backup">Ṣẹ̀dá ààbò ti o kún fún rẹ̀ (ZIP)</string>
+    <string name="settings_export_backup_desc">Tọ́jú gbogbo àwọn ààyò, àwọn ilé-iṣẹ́ ti ara ẹni ati àwọn àwòrán sí fayìlì ZIP</string>
+    <string name="settings_import_backup">Mú ààbò dádá padà (ZIP)</string>
+    <string name="settings_import_backup_desc">Mú àwọn ààyò ati àwọn ilé-iṣẹ́ ti ara ẹni dádá padà láti fayìlì ZIP</string>
+    <string name="backup_export_success">A tọ́jú ààbò pẹ̀lú àseyọrí</string>
+    <string name="backup_export_error">Kò le tọ́jú ààbò yìí</string>
+    <string name="backup_import_success">A mú ààbò dádá padà pẹ̀lú àseyọrí</string>
+    <string name="backup_import_error">Kò le mú ààbò yìí dádá padà</string>
+
+    <string name="database_summary_title">Àtòjọ data ti agbègbè</string>
+    <string name="database_total_stations">Gbogbo àwọn ilé-iṣẹ́ rédíò</string>
+    <string name="database_last_sync">Àtúnṣe ìgbẹ̀yìn</string>
+    <string name="database_update_now">Tún àtòjọ data ṣe nísinsìnyí</string>
+    <string name="database_full_update">Tún àtòjọ data ṣe</string>
+    <string name="database_syncing">Ń sọ dọ̀kan…</string>
+    <string name="database_downloading">Ń layisha láti ori intanẹ́ẹ̀tì…</string>
+    <string name="database_stations_loaded">%1$s àwọn ilé-iṣẹ́ rédíò</string>
+    <string name="database_sync_channel_name">Ìsọdọ̀kan àtòjọ data ilé-iṣẹ́ rédíò</string>
+    <string name="database_sync_success">A tún àtòjọ data ilé-iṣẹ́ ṣe pẹ̀lú àseyọrí</string>
+    <string name="database_error_no_connection">Kò sí ìsopọ̀ intanẹ́ẹ̀tì</string>
+    <string name="database_error_no_space">Ààyè fayìlì kò tó nínú áńpù</string>
+    <string name="database_error_failed">Àtúnṣe àtòjọ data kò fẹsẹ̀ múlẹ̀</string>
+
+    <string name="settings_disable_battery_optimization_desc">Láti tẹ̀síwájú gbéjáde nígbà tí ojú-àwòrán ba wa ní oókan, yàn àtúnṣe bạtirí sí \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Sí àwọn àtúnṣe</string>
+    <string name="battery_opt_later">Nígbà mìíràn</string>
 </resources>

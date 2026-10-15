@@ -56,20 +56,20 @@
     <string name="filter_empty_sort_by">Sortera efter</string>
     <string name="filter_empty_sort_desc">Klick, alfabet, röster eller senaste ändring</string>
     <string name="filter_empty_hint">Skriv ett namn i fältet ovan för att spara denna vy!</string>
-    <string name="error_station_load">Kunde inte ansluta till stationen</string>
-    <string name="error_list_update">Kunde inte ansluta till radio browser-servern</string>
+    <string name="error_station_load">Kunde inte ansluta till radiostationen</string>
+    <string name="error_list_update">Kunde inte ansluta till Radio-Browser-servern</string>
 
     <string name="error_no_connection">Ingen internetanslutning tillgänglig.</string>
     <string name="warning_volume_zero">Volymen är noll. Du kanske inte hör något.</string>
 
-    <string name="share_action">Dela stationslänk med…</string>
+    <string name="share_action">Dela radiostationslänk med…</string>
 
-    <string name="nav_item_stations">Stationer</string>
+    <string name="nav_item_stations">Radiostationer</string>
     <string name="nav_item_starred">Favoriter</string>
     <string name="nav_item_history">Historik</string>
     <string name="nav_item_settings">Inställningar</string>
 
-    <string name="about_text">AMARadio är 100% reklamfritt och integritetsfokuserat.\n\nJag utvecklade ursprungligen denna app för min mamma för att ge henne en enkel, ärlig radioupplevelse utan irriterande reklam eller spårning. Det är därför AMARadio alltid kommer att förbli reklamfritt – det är ett löfte till henne, som jag delar med er alla.\n\nDetta projekt är en fork av det utmärkta https://github.com/segler-alex/RadioDroid . Hela källkoden har migrerats från Java till Kotlin för att säkerställa att appen förblir modern och kompatibel med framtida Android-versioner.\n\nKällkoden finns tillgänglig på: https://github.com/ounben/AMARadio\n\nDenna app använder den kostnadsfria radiostationskatalogen på https://www.radio-browser.info .\nVem som helst kan lägga till stationer där. Det fungerar som ett wiki för onlineradiostationer.\n\nKontakt: ben@ounben.com\n\nFelrapportering: https://github.com/ounben/AMARadio/issues\n\nOm du gillar programvaran och vill hjälpa till, skicka gärna ett e-postmeddelande.\nIdéer om nya funktioner uppskattas också alltid!\n\nDenna app är fri programvara, licensierad under GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio är 100% reklamfritt och integritetsfokuserat.\n\nJag utvecklade ursprungligen denna app för min mamma för att ge henne en enkel, ärlig radioupplevelse utan irriterande reklam eller spårning. Det är därför AMARadio alltid kommer att förbli reklamfritt – det är ett löfte till henne, som jag delar med er alla.\n\nDetta projekt är en fork av RadioDroid. Hela källkoden har migrerats från Java till Kotlin för att säkerställa att appen förblir modern och kompatibel med framtida Android-versioner.\n\nKällkoden finns tillgänglig på: https://github.com/ounben/AMARadio\n\nDenna app använder den kostnadsfria radiostationskatalogen på https://www.radio-browser.info .\nVem som helst kan lägga till stationer där. Det fungerar som ett wiki för onlineradiostationer.\n\nKontakt: ben@ounben.com\n\nFelrapportering: https://github.com/ounben/AMARadio/issues\n\nOm du gillar programvaran och vill hjälpa till, skicka gärna ett e-postmeddelande.\nIdéer om nya funktioner uppskattas också alltid!\n\nDenna app är fri programvara, licensierad under GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Version: %1$s</string>
     <string name="detail_star">Lägg till i favoriter</string>
     <string name="detail_unstar">Ta bort från favoriter</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Mörkt</string>
     <string name="theme_system">Följ systemet</string>
     <string name="settings_compact_style">Kompakt läge</string>
-    <string name="settings_compact_style_desc_off">Stor ikon med stationsdetaljer</string>
-    <string name="settings_compact_style_desc_on">Liten ikon utan stationsdetaljer</string>
+    <string name="settings_compact_style_desc_off">Stor ikon med radiostationsdetaljer</string>
+    <string name="settings_compact_style_desc_on">Liten ikon utan radiostationsdetaljer</string>
     <string name="settings_bottom_navigation">Bottennavigering</string>
     <string name="settings_ui_scale">UI-skalning</string>
     <string name="settings_language">Språk</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Sällan använda taggar kommer inte att visas</string>
     <string name="settings_single_use_tags_desc_on">Sällan använda taggar kommer att visas</string>
 
-    <string name="settings_show_broken">Trasiga stationer</string>
-    <string name="settings_show_broken_on">Visa trasiga stationer i listor</string>
-    <string name="settings_show_broken_off">Visa inte trasiga stationer i listor</string>
+    <string name="settings_show_broken">Trasiga radiostationer</string>
+    <string name="settings_show_broken_on">Visa trasiga radiostationer i listor</string>
+    <string name="settings_show_broken_off">Visa inte trasiga radiostationer i listor</string>
 
     <string name="settings_startup_behaviour">Startbeteende</string>
     <string name="action_grid_view">Rutnätsvy</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Startåtgärd</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Visa alla stationer</string>
+    <string name="startup_show_all_stations">Visa alla radiostationer</string>
     <string name="startup_show_favorites">Visa favoriter</string>
     <string name="startup_show_history">Visa historik</string>
     <string name="startup_show_last_view">Senaste vy</string>
 
-    <string name="settings_load_icons">Visa stationsikoner</string>
+    <string name="settings_load_icons">Visa radiostationsikoner</string>
     <string name="settings_load_icons_on">Ikoner kommer att laddas ner</string>
     <string name="settings_load_icons_off">Ikoner kommer inte att laddas ner</string>
 
     <string name="settings_auto_favorite">Auto-favoriter</string>
-    <string name="settings_auto_favorite_on">Lägg automatiskt till stationer i favoriter vid uppspelning</string>
-    <string name="settings_auto_favorite_off">Lägg inte automatiskt till stationer i favoriter vid uppspelning</string>
+    <string name="settings_auto_favorite_on">Lägg automatiskt till radiostationer i favoriter vid uppspelning</string>
+    <string name="settings_auto_favorite_off">Lägg inte automatiskt till radiostationer i favoriter vid uppspelning</string>
 
     <string name="settings_play">Spelare</string>
     <string name="settings_auto_play_on_startup">Auto-spela</string>
-    <string name="settings_auto_play_on_startup_on">Spela senaste station vid start</string>
-    <string name="settings_auto_play_on_startup_off">Spela inte senaste station vid start</string>
+    <string name="settings_auto_play_on_startup_on">Spela senaste radiostation vid start</string>
+    <string name="settings_auto_play_on_startup_off">Spela inte senaste radiostation vid start</string>
     <string name="settings_auto_off_on_startup">Auto-stopp</string>
     <string name="settings_auto_off_on_startup_on">Använd auto-stopp-timer med auto-spelning</string>
     <string name="settings_auto_off_on_startup_off">Använd inte auto-stopp-timer med auto-spelning</string>
     <string name="settings_auto_off_sleep_timer">Auto-stopp-timer</string>
     <string name="settings_auto_off_sleep_timer_desc">Stoppa uppspelningen efter %1$s minuter</string>
     <string name="settings_play_external">Aktivera extern spelare</string>
-    <string name="settings_play_external_desc_on">Spela stationer med extern spelare</string>
-    <string name="settings_play_external_desc_off">Spela stationer med AMARadio</string>
+    <string name="settings_play_external_desc_on">Spela radiostationer med extern spelare</string>
+    <string name="settings_play_external_desc_off">Spela radiostationer med AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Anslutning</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Pausad</string>
     <string name="notify_metered_connection">Anslutning med datataxa</string>
 
-    <string name="notify_starred">Stationen har lagts till i favoriter</string>
-    <string name="notify_autostarred">Stationen har lagts till automatiskt i favoriter</string>
-    <string name="notify_unstarred">Stationen har tagits bort från favoriter</string>
+    <string name="notify_starred">Radiostationen har lagts till i favoriter</string>
+    <string name="notify_autostarred">Radiostationen har lagts till automatiskt i favoriter</string>
+    <string name="notify_unstarred">Radiostationen har tagits bort från favoriter</string>
     <string name="notify_deleted_favorites">Favoriterna har raderats</string>
     <string name="notify_deleted_history">Historiken har raderats</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Vänligen välj en spelare</string>
     <string name="alert_select_player_name">Namn</string>
-    <string name="hostname">Värdnamn</string>
-    <string name="port">Port</string>
+    <string name="hostname">Serveradress</string>
+    <string name="port">Nätverksport</string>
 
     <string name="alert_press_back_to_exit">Tryck på bakåt en gång till för att avsluta</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Spela i extern spelare</string>
     <string name="action_choose_external_player">Välj extern spelare</string>
 
-    <string name="settings_disable_battery_optimization">Batterioptimering</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Batterioptimering ignoreras, AMARadio bör alltid kunna återfå fokus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Batterioptimering är aktiverad, AMARadio kommer inte att kunna återfå fokus om den är i bakgrunden.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Bakgrundsuppspelning</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Övrigt</string>
     <string name="settings_rate_app">Betygsätt AMARadio</string>
     <string name="settings_rate_app_summary">Om du gillar appen, lämna gärna en recension i Play Store!</string>
+    <string name="settings_rate_app_github">Gillar du AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Lämna en stjärna på GitHub! Det hjälper andra att upptäcka appen och stödjer framtida utveckling.</string>
     <string name="settings_statistics">Statistik</string>
     <string name="settings_about">Om AMARadio</string>
 
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Konfigurera</string>
     <string name="accessibility_close">Stäng</string>
     <string name="accessibility_add_filter">Lägg till filter</string>
-    <string name="accessibility_station_options">Stationsalternativ</string>
+    <string name="accessibility_station_options">Radiostationsalternativ</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Station: %1$s, Språk: %2$s, Taggar: %3$s</string>
 
     <string name="error_no_file_manager">Det gick inte att hitta en systemfilhanterare. Se till att en filutforskare är installerad och aktiverad.</string>
     <string name="error_no_browser">Det gick inte att hitta en webbläsare. Installera en webbläsare för att öppna denna länk.</string>
-    <string name="error_no_homepage">Ingen hemsida tillgänglig för denna station</string>
-    <string name="tab_custom_stations">Beställnings</string>
-    <string name="action_add_custom">Lägg till Custom Station</string>
-    <string name="station_name">Stationens namn</string>
-    <string name="stream_url">Streama URL</string>
-    <string name="favicon_url">Favicon URL (valfritt)</string>
-    <string name="select_image">Välj Bild</string>
+    <string name="error_no_homepage">Ingen hemsida tillgänglig för denna radiostation</string>
+    <string name="tab_custom_stations">Eganpassade</string>
+    <string name="action_add_custom">Lägg till eganpassad radiostation</string>
+    <string name="station_name">Radiostationens namn</string>
+    <string name="stream_url">Strömnings-URL</string>
+    <string name="favicon_url">Stationslogotyp-URL (Favicon)</string>
+    <string name="select_image">Välj bild</string>
     <string name="error_invalid_url">Ange en giltig URL</string>
     <string name="action_save">Spara</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Snabba spelarkontroller</string>
-    <string name="widget_description_full">Spelare och stationslista</string>
+    <string name="widget_description_full">Radiospelare och stationslista</string>
 
     <string name="settings_auto_db_update">Bakgrundsdatasynkronisering</string>
     <string name="settings_auto_db_update_desc">Uppdatera stationsdatabasen automatiskt via Radio-Browser API (rekommenderas).</string>
-    <string name="settings_station_click_counter">Stationsklickräknare</string>
-    <string name="settings_station_click_counter_desc">Stöd Radio-Browser-statistik genom att anonymt dela spelhändelser.</string>
-    <string name="settings_rate_app_github">Gillar du AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Lämna en stjärna på GitHub! Det hjälper andra att upptäcka appen och stödjer framtida utveckling.</string>
+    <string name="settings_station_click_counter">Radiostationsklickräknare</string>
+    <string name="settings_station_click_counter_desc">Stöd Radio-Browser-statistik genom att anonymt dela uppspelningshändelser.</string>
 
-    <string name="settings_remove_notification_on_stop">Ta bort avisering när appen är stängd</string>
-    <string name="settings_remove_notification_on_stop_desc">Stäng automatiskt medieaviseringen när appen stängs från de senaste apparna</string>
+    <string name="settings_remove_notification_on_stop">Ta bort avisering vid stopp</string>
+    <string name="settings_remove_notification_on_stop_desc">Ta bort medieaviseringen automatiskt när uppspelningen stoppas</string>
     <string name="settings_auto_resume_audio_focus">Återuppta efter förlust av ljudfokus</string>
     <string name="settings_auto_resume_audio_focus_desc">Återuppta uppspelningen automatiskt efter telefonsamtal, larm eller andra ljudstopp</string>
+
+    <string name="settings_backup_restore">Säkerhetskopiering och återställning</string>
+    <string name="settings_export_backup">Skapa fullständig säkerhetskopia (ZIP)</string>
+    <string name="settings_export_backup_desc">Sparar alla favoriter, eganpassade stationer och ikoner i en ZIP-fil</string>
+    <string name="settings_import_backup">Återställ säkerhetskopia (ZIP)</string>
+    <string name="settings_import_backup_desc">Återställer favoriter och eganpassade stationer från en ZIP-säkerhetskopia</string>
+    <string name="backup_export_success">Säkerhetskopia sparad</string>
+    <string name="backup_export_error">Kunde inte spara säkerhetskopia</string>
+    <string name="backup_import_success">Säkerhetskopia återställd</string>
+    <string name="backup_import_error">Kunde inte återställa säkerhetskopia</string>
+
+    <string name="database_summary_title">Lokal databas</string>
+    <string name="database_total_stations">Radiostationer totalt</string>
+    <string name="database_last_sync">Senaste uppdatering</string>
+    <string name="database_update_now">Uppdatera databasen nu</string>
+    <string name="database_full_update">Uppdatera databasen</string>
+    <string name="database_syncing">Synkroniserar…</string>
+    <string name="database_downloading">Laddar ner…</string>
+    <string name="database_stations_loaded">%1$s radiostationer</string>
+    <string name="database_sync_channel_name">Synkronisering av radiostationsdatabas</string>
+    <string name="database_sync_success">Databasuppdateringen slutfördes</string>
+    <string name="database_error_no_connection">Ingen internetanslutning</string>
+    <string name="database_error_no_space">Inte tillräckligt med diskutrymme</string>
+    <string name="database_error_failed">Uppdateringen av databasen misslyckades</string>
+
+    <string name="settings_disable_battery_optimization_desc">För att fortsätta uppspelningen när skärmen är avstängd, ställ in batterianvändningen till \'Obegränsad\'.</string>
+    <string name="battery_opt_open_settings">Öppna inställningar</string>
+    <string name="battery_opt_later">Senare</string>
 </resources>

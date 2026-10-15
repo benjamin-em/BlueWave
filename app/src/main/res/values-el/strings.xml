@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Μετονομασία καρτέλας</string>
     <string name="error_filter_name_required">Παρακαλούμε εισαγάγετε πρώτα ένα όνομα για αυτήν την καρτέλα φίλτρου</string>
     <string name="confirm_delete_filter_tab">Είστε σίγουροι ότι θέλετε να διαγράψετε το φίλτρο \"%1$s\";</string>
-    <string name="filter_empty_title">Δημιουργήστε τη δική σας ροή σταθμών</string>
+    <string name="filter_empty_title">Δημιουργήστε τη δική σας ροή ραδιοφωνικών σταθμών</string>
     <string name="filter_empty_desc">Δημιουργήστε μια εξατομικευμένη προβολή συνδυάζοντας πολλαπλά κριτήρια. Μπορείτε να περιορίσετε την αναζήτησή σας χρησιμοποιώντας:</string>
     <string name="filter_empty_filter_by">Φιλτράρισμα κατά</string>
-    <string name="filter_empty_filter_desc">Χώρα, Όνομα σταθμού, Ετικέτες ή Γλώσσα</string>
+    <string name="filter_empty_filter_desc">Χώρα, Όνομα ραδιοφωνικού σταθμού, Ετικέτες ή Γλώσσα</string>
     <string name="filter_empty_sort_by">Ταξινόμηση κατά</string>
     <string name="filter_empty_sort_desc">Κλικ, Αλφάβητο, Ψήφοι ή Τελευταία αλλαγή</string>
     <string name="filter_empty_hint">Πληκτρολογήστε ένα όνομα στο παραπάνω πεδίο για να αποθηκεύσετε αυτήν την προσαρμοσμένη προβολή!</string>
-    <string name="error_station_load">Αδυναμία σύνδεσης στο σταθμό</string>
-    <string name="error_list_update">Αδυναμία σύνδεσης στον διακομιστή radio browser</string>
+    <string name="error_station_load">Αδυναμία σύνδεσης στο ραδιοφωνικό σταθμό</string>
+    <string name="error_list_update">Αδυναμία σύνδεσης στον διακομιστή Radio-Browser</string>
 
     <string name="error_no_connection">Δεν υπάρχει διαθέσιμη σύνδεση στο διαδίκτυο</string>
     <string name="warning_volume_zero">Η ένταση είναι στο μηδέν. Μπορεί να μην ακούσετε τίποτα.</string>
 
-    <string name="share_action">Μοίρασμα συνδέσμου σταθμού με&#8230;</string>
+    <string name="share_action">Μοίρασμα συνδέσμου ραδιοφωνικού σταθμού με&#8230;</string>
 
-    <string name="nav_item_stations">Σταθμοί</string>
+    <string name="nav_item_stations">Ραδιοφωνικοί σταθμοί</string>
     <string name="nav_item_starred">Αγαπημένα</string>
     <string name="nav_item_history">Ιστορικό</string>
     <string name="nav_item_settings">Ρυθμίσεις</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Σκοτεινό</string>
     <string name="theme_system">Ακολούθηση συστήματος</string>
     <string name="settings_compact_style">Συμπαγής λειτουργία</string>
-    <string name="settings_compact_style_desc_off">Μεγάλο εικονίδιο με λεπτομέρειες σταθμού</string>
-    <string name="settings_compact_style_desc_on">Μικρό εικονίδιο χωρίς λεπτομέρειες σταθμού</string>
+    <string name="settings_compact_style_desc_off">Μεγάλο εικονίδιο με λεπτομέρειες ραδιοφωνικού σταθμού</string>
+    <string name="settings_compact_style_desc_on">Μικρό εικονίδιο χωρίς λεπτομέρειες ραδιοφωνικού σταθμού</string>
     <string name="settings_bottom_navigation">Πλοήγηση στο κάτω μέρος</string>
     <string name="settings_ui_scale">Κλίμακα UI</string>
     <string name="settings_language">Γλώσσα</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Σπάνια χρησιμοποιούμενες ετικέτες δεν θα εμφανίζονται</string>
     <string name="settings_single_use_tags_desc_on">Σπάνια χρησιμοποιούμενες ετικέτες θα εμφανίζονται</string>
 
-    <string name="settings_show_broken">Μη λειτουργικοί σταθμοί</string>
-    <string name="settings_show_broken_on">Εμφάνιση μη λειτουργικών σταθμών σε λίστες</string>
-    <string name="settings_show_broken_off">Απόκρυψη μη λειτουργικών σταθμών σε λίστες</string>
+    <string name="settings_show_broken">Μη λειτουργικοί ραδιοφωνικοί σταθμοί</string>
+    <string name="settings_show_broken_on">Εμφάνιση μη λειτουργικών ραδιοφωνικών σταθμών σε λίστες</string>
+    <string name="settings_show_broken_off">Απόκρυψη μη λειτουργικών ραδιοφωνικών σταθμών σε λίστες</string>
 
     <string name="settings_startup_behaviour">Συμπεριφορά έναρξης</string>
     <string name="action_grid_view">Προβολή πλέγματος</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Ενέργεια έναρξης</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Εμφάνιση όλων των σταθμών</string>
+    <string name="startup_show_all_stations">Εμφάνιση όλων των ραδιοφωνικών σταθμών</string>
     <string name="startup_show_favorites">Εμφάνιση αγαπημένων</string>
     <string name="startup_show_history">Εμφάνιση ιστορικού</string>
     <string name="startup_show_last_view">Τελευταία προβολή</string>
 
-    <string name="settings_load_icons">Εμφάνιση εικονιδίων σταθμών</string>
+    <string name="settings_load_icons">Εμφάνιση εικονιδίων ραδιοφωνικών σταθμών</string>
     <string name="settings_load_icons_on">Θα γίνεται λήψη εικονιδίων</string>
     <string name="settings_load_icons_off">Δεν θα γίνεται λήψη εικονιδίων</string>
 
     <string name="settings_auto_favorite">Αυτόματα αγαπημένα</string>
-    <string name="settings_auto_favorite_on">Αυτόματη προσθήκη σταθμών στα αγαπημένα κατά την αναπαραγωγή</string>
-    <string name="settings_auto_favorite_off">Όχι αυτόματη προσθήκη σταθμών στα αγαπημένα κατά την αναπαραγωγή</string>
+    <string name="settings_auto_favorite_on">Αυτόματη προσθήκη ραδιοφωνικών σταθμών στα αγαπημένα κατά την αναπαραγωγή</string>
+    <string name="settings_auto_favorite_off">Όχι αυτόματη προσθήκη ραδιοφωνικών σταθμών στα αγαπημένα κατά την αναπαραγωγή</string>
 
     <string name="settings_play">Αναπαραγωγός</string>
     <string name="settings_auto_play_on_startup">Αυτόματη αναπαραγωγή</string>
-    <string name="settings_auto_play_on_startup_on">Αναπαραγωγή τελευταίου σταθμού κατά την έναρξη</string>
-    <string name="settings_auto_play_on_startup_off">Όχι αναπαραγωγή τελευταίου σταθμού κατά την έναρξη</string>
+    <string name="settings_auto_play_on_startup_on">Αναπαραγωγή τελευταίου ραδιοφωνικού σταθμού κατά την έναρξη</string>
+    <string name="settings_auto_play_on_startup_off">Όχι αναπαραγωγή τελευταίου ραδιοφωνικού σταθμού κατά την έναρξη</string>
     <string name="settings_auto_off_on_startup">Αυτόματη διακοπή</string>
     <string name="settings_auto_off_on_startup_on">Χρήση χρονοδιακόπτη αυτόματης διακοπής με την αυτόματη αναπαραγωγή</string>
     <string name="settings_auto_off_on_startup_off">Όχι χρήση χρονοδιακόπτη αυτόματης διακοπής με την αυτόματη αναπαραγωγή</string>
     <string name="settings_auto_off_sleep_timer">Χρονοδιακόπτης αυτόματης διακοπής</string>
     <string name="settings_auto_off_sleep_timer_desc">Διακοπή αναπαραγωγής μετά από %1$s λεπτά</string>
     <string name="settings_play_external">Ενεργοποίηση εξωτερικού αναπαραγωγού</string>
-    <string name="settings_play_external_desc_on">Αναπαραγωγή σταθμών με εξωτερικό αναπαραγωγό</string>
-    <string name="settings_play_external_desc_off">Αναπαραγωγή σταθμών με το AMARadio</string>
+    <string name="settings_play_external_desc_on">Αναπαραγωγή ραδιοφωνικών σταθμών με εξωτερικό αναπαραγωγό</string>
+    <string name="settings_play_external_desc_off">Αναπαραγωγή ραδιοφωνικών σταθμών με το AMARadio</string>
     <string name="settings_equalizer">Ισοσταθμιστής</string>
 
     <string name="settings_connectivity">Συνδεσιμότητα</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Παύση</string>
     <string name="notify_metered_connection">Σύνδεση με χρέωση</string>
 
-    <string name="notify_starred">Ο σταθμός προστέθηκε στα αγαπημένα</string>
-    <string name="notify_autostarred">Ο σταθμός προστέθηκε αυτόματα στα αγαπημένα</string>
-    <string name="notify_unstarred">Ο σταθμός αφαιρέθηκε από τα αγαπημένα</string>
+    <string name="notify_starred">Ο ραδιοφωνικός σταθμός προστέθηκε στα αγαπημένα</string>
+    <string name="notify_autostarred">Ο ραδιοφωνικός σταθμός προστέθηκε αυτόματα στα αγαπημένα</string>
+    <string name="notify_unstarred">Ο ραδιοφωνικός σταθμός αφαιρέθηκε από τα αγαπημένα</string>
     <string name="notify_deleted_favorites">Τα αγαπημένα διαγράφηκαν</string>
     <string name="notify_deleted_history">Το ιστορικό διαγράφηκε</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Παρακαλώ επιλέξτε έναν αναπαραγωγό</string>
     <string name="alert_select_player_name">Όνομα</string>
-    <string name="hostname">Όνομα κεντρικού υπολογιστή</string>
-    <string name="port">Θύρα</string>
+    <string name="hostname">Διεύθυνση διακομιστή</string>
+    <string name="port">Θύρα δικτύου</string>
 
     <string name="alert_press_back_to_exit">Πιέστε πίσω άλλη μια φορά για έξοδο</string>
 
@@ -264,10 +264,10 @@
     <string name="action_play_in_external">Αναπαραγωγή σε εξωτερικό αναπαραγωγό</string>
     <string name="action_choose_external_player">Επιλέξτε εξωτερικό αναπαραγωγό</string>
 
-    <string name="settings_disable_battery_optimization">Βελτιστοποίηση μπαταρίας</string>
+    <string name="settings_disable_battery_optimization">Αναπαραγωγή στο παρασκήνιο</string>
     <string name="settings_ignore_battery_optimization_summary_on">Η βελτιστοποίηση μπαταρίας αγνοείται, το AMARadio θα πρέπει πάντα να μπορεί να ανακτά την εστίαση μετά από απώλεια.</string>
     <string name="settings_ignore_battery_optimization_summary_off">Η βελτιστοποίηση μπαταρίας είναι ενεργοποιημένη, το AMARadio ενδέχεται να μην μπορεί να ανακτήσει την εστίαση εάν βρίσκεται στο παρασκήνιο.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Άλλα</string>
     <string name="settings_rate_app">Αξιολογήστε το AMARadio</string>
     <string name="settings_rate_app_summary">Αν σας αρέσει η εφαρμογή, αφήστε μια κριτική στο Play Store!</string>
@@ -323,12 +323,8 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Εναλλακτική ειδοποίηση</string>
-    <string name="alarm_fallback_info">Χρησιμοποιήθηκε η ειδοποίηση συστήματος καθώς ο επιλεγμένος ραδιοφωνικός σταθμός απέτυχε να φορτώσει</string>
-    <string name="alarm_back_desc">Εναλλακτική ειδοποίηση συστήματος όταν ο ραδιοφωνικός σταθμός αποτυγχάνει να φορτώσει</string>
-
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Λογότυπο σταθμού</string>
+    <string name="accessibility_station_logo">Λογότυπο ραδιοφωνικού σταθμού</string>
     <string name="accessibility_favorite_selected">Αγαπημένο, επιλεγμένο</string>
     <string name="accessibility_favorite_not_selected">Αγαπημένο, μη επιλεγμένο</string>
     <string name="accessibility_category_icon">Εικονίδιο κατηγορίας</string>
@@ -341,35 +337,63 @@
     <string name="accessibility_configure">Διαμόρφωση</string>
     <string name="accessibility_close">Κλείσιμο</string>
     <string name="accessibility_add_filter">Προσθήκη φίλτρου</string>
-    <string name="accessibility_station_options">Επιλογές σταθμού</string>
+    <string name="accessibility_station_options">Επιλογές ραδιοφωνικού σταθμού</string>
     <string name="not_applicable">Δ/Υ</string>
     <string name="accessibility_station_description">Σταθμός: %1$s, Γλώσσα: %2$s, Ετικέτες: %3$s</string>
 
     <string name="error_no_file_manager">Δεν ήταν δυνατή η εύρεση διαχειριστή αρχείων συστήματος. Βεβαιωθείτε ότι έχει εγκατασταθεί και ενεργοποιηθεί ένας εξερευνητής αρχείων.</string>
     <string name="error_no_browser">Δεν ήταν δυνατή η εύρεση προγράμματος περιήγησης ιστού. Εγκαταστήστε ένα πρόγραμμα περιήγησης για να ανοίξετε αυτόν τον σύνδεσμο.</string>
     <string name="error_no_homepage">Δεν υπάρχει διαθέσιμη αρχική σελίδα για αυτόν τον σταθμό</string>
-    <string name="tab_custom_stations">Εθιμο</string>
-    <string name="action_add_custom">Προσθήκη προσαρμοσμένου σταθμού</string>
-    <string name="station_name">Όνομα Σταθμού</string>
+    <string name="tab_custom_stations">Προσαρμοσμένα</string>
+    <string name="action_add_custom">Προσθήκη προσαρμοσμένου ραδιοφωνικού σταθμού</string>
+    <string name="station_name">Όνομα ραδιοφωνικού σταθμού</string>
     <string name="stream_url">URL ροής</string>
-    <string name="favicon_url">URL Favicon (προαιρετικό)</string>
+    <string name="favicon_url">URL λογότυπου σταθμού (Favicon)</string>
     <string name="select_image">Επιλέξτε Εικόνα</string>
     <string name="error_invalid_url">Εισαγάγετε μια έγκυρη διεύθυνση URL</string>
-    <string name="action_save">Εκτός</string>
+    <string name="action_save">Αποθήκευση</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Γρήγορα χειριστήρια αναπαραγωγής</string>
-    <string name="widget_description_full">Λίστα αναπαραγωγής και σταθμών</string>
+    <string name="widget_description_full">Λίστα αναπαραγωγής και ραδιοφωνικών σταθμών</string>
 
     <string name="settings_auto_db_update">Συγχρονισμός δεδομένων παρασκηνίου</string>
     <string name="settings_auto_db_update_desc">Αυτόματη ενημέρωση βάσης δεδομένων σταθμών μέσω Radio-Browser API (συνιστάται).</string>
-    <string name="settings_station_click_counter">Μετρητής κλικ σταθμού</string>
-    <string name="settings_station_click_counter_desc">Υποστήριξη στατιστικών του προγράμματος περιήγησης ραδιοφώνου με ανώνυμη κοινή χρήση συμβάντων αναπαραγωγής.</string>
+    <string name="settings_station_click_counter">Μετρητής κλικ ραδιοφωνικού σταθμού</string>
+    <string name="settings_station_click_counter_desc">Υποστήριξη στατιστικών του Radio-Browser με ανώνυμη κοινή χρήση συμβάντων αναπαραγωγής.</string>
     <string name="settings_rate_app_github">Απολαμβάνετε το AMARadio;</string>
     <string name="settings_rate_app_github_summary">Αφήστε ένα αστέρι στο GitHub! Βοηθά άλλους να ανακαλύψουν την εφαρμογή και υποστηρίζει μελλοντική ανάπτυξη.</string>
 
-    <string name="settings_remove_notification_on_stop">Καταργήστε την ειδοποίηση όταν η εφαρμογή είναι κλειστή</string>
-    <string name="settings_remove_notification_on_stop_desc">Αυτόματη απόρριψη της ειδοποίησης πολυμέσων όταν η εφαρμογή είναι κλειστή από πρόσφατες εφαρμογές</string>
+    <string name="settings_remove_notification_on_stop">Κατάργηση ειδοποίησης κατά τη διακοπή</string>
+    <string name="settings_remove_notification_on_stop_desc">Αυτόματη απόρριψη της ειδοποίησης πολυμέσων όταν η αναπαραγωγή διακόπτεται</string>
     <string name="settings_auto_resume_audio_focus">Συνέχιση μετά από απώλεια εστίασης ήχου</string>
     <string name="settings_auto_resume_audio_focus_desc">Αυτόματη συνέχιση της αναπαραγωγής μετά από τηλεφωνικές κλήσεις, ξυπνητήρια ή άλλες στάσεις ήχου</string>
+
+    <string name="settings_backup_restore">Δημιουργία &amp; επαναφορά αντίγραφων ασφαλείας</string>
+    <string name="settings_export_backup">Δημιουργία πλήρους αντιγράφου ασφαλείας (ZIP)</string>
+    <string name="settings_export_backup_desc">Αποθηκεύει όλα τα αγαπημένα, τους προσαρμοσμένους σταθμούς και τα εικονίδια σε ένα αρχείο ZIP</string>
+    <string name="settings_import_backup">Επαναφορά αντιγράφου ασφαλείας (ZIP)</string>
+    <string name="settings_import_backup_desc">Επαναφέρει τα αγαπημένα και τους προσαρμοσμένους σταθμούς από ένα αρχείο ZIP</string>
+    <string name="backup_export_success">Το αντίγραφο ασφαλείας αποθηκεύτηκε με επιτυχία</string>
+    <string name="backup_export_error">Αποτυχία αποθήκευσης αντιγράφου ασφαλείας</string>
+    <string name="backup_import_success">Το αντίγραφο ασφαλείας επαναφέρθηκε με επιτυχία</string>
+    <string name="backup_import_error">Αποτυχία επαναφοράς αντιγράφου ασφαλείας</string>
+
+    <string name="database_summary_title">Τοπική βάση δεδομένων</string>
+    <string name="database_total_stations">Συνολικοί ραδιοφωνικοί σταθμοί</string>
+    <string name="database_last_sync">Τελευταίος συγχρονισμός</string>
+    <string name="database_update_now">Ενημέρωση βάσης δεδομένων τώρα</string>
+    <string name="database_full_update">Ενημέρωση βάσης δεδομένων</string>
+    <string name="database_syncing">Συγχρονισμός…</string>
+    <string name="database_downloading">Λήψη…</string>
+    <string name="database_stations_loaded">%1$s ραδιοφωνικοί σταθμοί</string>
+    <string name="database_sync_channel_name">Συγχρονισμός βάσης δεδομένων ραδιοφωνικών σταθμών</string>
+    <string name="database_sync_success">Η ενημέρωση της βάσης δεδομένων σταθμών ολοκληρώθηκε με επιτυχία</string>
+    <string name="database_error_no_connection">Δεν υπάρχει σύνδεση στο διαδίκτυο</string>
+    <string name="database_error_no_space">Δεν υπάρχει αρκετός ελεύθερος χώρος στο δίσκο</string>
+    <string name="database_error_failed">Αποτυχία ενημέρωσης βάσης δεδομένων</string>
+
+    <string name="settings_disable_battery_optimization_desc">Για να συνεχιστεί η αναπαραγωγή με την οθόνη απενεργοποιημένη, ορίστε τη χρήση μπαταρίας σε \'Χωρίς περιορισμούς\'.</string>
+    <string name="battery_opt_open_settings">Άνοιγμα ρυθμίσεων</string>
+    <string name="battery_opt_later">Αργότερα</string>
 </resources>

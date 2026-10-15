@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Izveidojiet savu pielāgoto radio staciju plūsmu</string>
     <string name="filter_empty_desc">Izveidojiet personalizētu skatu, apvienojot vairākus kritērijus. Jūs varat sašaurināt meklēšanu pēc:</string>
     <string name="filter_empty_filter_by">Filtrēt pēc</string>
-    <string name="filter_empty_filter_desc">Valsts, stacijas nosaukuma, birkām vai valodas</string>
+    <string name="filter_empty_filter_desc">Valsts, radio stacijas nosaukuma, birkām vai valodas</string>
     <string name="filter_empty_sort_by">Kārtot pēc</string>
     <string name="filter_empty_sort_desc">Klikšķiem, alfabēta, balsīm vai pēdējām izmaiņām</string>
     <string name="filter_empty_hint">Ievadiet nosaukumu laukā augstāk, lai saglabātu šo skatu!</string>
-    <string name="error_station_load">Neizdevās izveidot savienojumu ar staciju</string>
-    <string name="error_list_update">Neizdevās izveidot savienojumu ar radio pārlūka serveri</string>
+    <string name="error_station_load">Neizdevās izveidot savienojumu ar radio staciju</string>
+    <string name="error_list_update">Neizdevās izveidot savienojumu ar Radio-Browser serveri</string>
 
     <string name="error_no_connection">Nav pieejams interneta savienojums.</string>
     <string name="warning_volume_zero">Skaļums ir iestatīts uz nulli. Jūs varētu neko nedzirdēt.</string>
 
-    <string name="share_action">Kopīgot stacijas saiti ar…</string>
+    <string name="share_action">Kopīgot radio stacijas saiti ar…</string>
 
-    <string name="nav_item_stations">Stacijas</string>
+    <string name="nav_item_stations">Radio stacijas</string>
     <string name="nav_item_starred">Izlase</string>
     <string name="nav_item_history">Vēsture</string>
     <string name="nav_item_settings">Iestatījumi</string>
 
-    <string name="about_text">AMARadio ir 100% bez reklāmām un vērsts uz privātumu.\n\nSākotnēji es izstrādāju šo lietotni savai mātei, lai sniegtu viņai vienkāršu, godīgu radio klausīšanās pieredzi bez kaitinošām reklāmām vai izsekošanas. Tāpēc AMARadio vienmēr paliks bez reklāmām – tas ir solījums viņai, ar ko dalos ar jums visiem.\n\nŠis projekts ir lieliskā https://github.com/segler-alex/RadioDroid atzarojums. Viss pirmkods tika migrēts no Java uz Kotlin, lai nodrošinātu lietotnes mūsdienīgumu un saderību ar nākamajām Android versijām.\n\nPirmkods ir pieejams: https://github.com/ounben/AMARadio\n\nŠī lietotne izmanto bezmaksas radio staciju direktoriju https://www.radio-browser.info .\nIkviens var tajā pievienot stacijas. Tas darbojas kā vikipēdija tiešsaistes radio stacijām.\n\nKontakti: ben@ounben.com\n\nKļūdu ziņošana: https://github.com/ounben/AMARadio/issues\n\nJa jums patīk šī programmatūra un vēlaties palīdzēt, droši sūtiet man e-pastu.\nArī idejas par jaunām funkcijām vienmēr tiek novērtētas!\n\nŠī lietotne ir brīvā programmatūra, licencēta saskaņā ar GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio ir 100% bez reklāmām un vērsts uz privātumu.\n\nSākotnēji es izstrādāju šo lietotni savai mātei, lai sniegtu viņai vienkāršu, godīgu radio klausīšanās pieredzi bez kaitinošām reklāmām vai izsekošanas. Tāpēc AMARadio vienmēr paliks bez reklāmām – tas ir solījums viņai, ar ko dalos ar jums visiem.\n\nŠis projekts ir lieliskā RadioDroid atzarojums. Viss pirmkods tika migrēts no Java uz Kotlin, lai nodrošinātu lietotnes mūsdienīgumu un saderību ar nākamajām Android versijām.\n\nPirmkods ir pieejams: https://github.com/ounben/AMARadio\n\nŠī lietotne izmanto bezmaksas radio staciju direktoriju https://www.radio-browser.info .\nIkviens var tajā pievienot stacijas. Tas darbojas kā vikipēdija tiešsaistes radio stacijām.\n\nKontakti: ben@ounben.com\n\nKļūdu ziņošana: https://github.com/ounben/AMARadio/issues\n\nJa jums patīk šī programmatūra un vēlaties palīdzēt, droši sūtiet man e-pastu.\nArī idejas par jaunām funkcijām vienmēr tiek novērtētas!\n\nŠī lietotne ir brīvā programmatūra, licencēta saskaņā ar GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versija: %1$s</string>
     <string name="detail_star">Pievienot izlasei</string>
     <string name="detail_unstar">Noņemt no izlases</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Tumšais</string>
     <string name="theme_system">Sistēmas iestatījums</string>
     <string name="settings_compact_style">Kompaktais režīms</string>
-    <string name="settings_compact_style_desc_off">Liela ikona ar stacijas informāciju</string>
-    <string name="settings_compact_style_desc_on">Maza ikona bez stacijas informācijas</string>
+    <string name="settings_compact_style_desc_off">Liela ikona ar radio stacijas informāciju</string>
+    <string name="settings_compact_style_desc_on">Maza ikona bez radio stacijas informācijas</string>
     <string name="settings_bottom_navigation">Apakšējā navigācija</string>
     <string name="settings_ui_scale">Saskarnes mērogošana</string>
     <string name="settings_language">Valoda</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Reti lietotas birkas netiks rādītas</string>
     <string name="settings_single_use_tags_desc_on">Reti lietotas birkas tiks rādītas</string>
 
-    <string name="settings_show_broken">Nedarbojošās stacijas</string>
-    <string name="settings_show_broken_on">Rādīt nedarbojošās stacijas sarakstos</string>
-    <string name="settings_show_broken_off">Nerādīt nedarbojošās stacijas sarakstos</string>
+    <string name="settings_show_broken">Nedarbojošās radio stacijas</string>
+    <string name="settings_show_broken_on">Rādīt nedarbojošās radio stacijas sarakstos</string>
+    <string name="settings_show_broken_off">Nerādīt nedarbojošās radio stacijas sarakstos</string>
 
     <string name="settings_startup_behaviour">Startēšanas uzvedība</string>
     <string name="action_grid_view">Režģa skats</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Startēšanas darbība</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Rādīt visas stacijas</string>
+    <string name="startup_show_all_stations">Rādīt visas radio stacijas</string>
     <string name="startup_show_favorites">Rādīt izlasi</string>
     <string name="startup_show_history">Rādīt vēsturi</string>
     <string name="startup_show_last_view">Pēdējais skats</string>
 
-    <string name="settings_load_icons">Rādīt staciju ikonas</string>
+    <string name="settings_load_icons">Rādīt radio staciju ikonas</string>
     <string name="settings_load_icons_on">Ikonas tiks lejupielādētas</string>
     <string name="settings_load_icons_off">Ikonas netiks lejupielādētas</string>
 
     <string name="settings_auto_favorite">Automātiskā izlase</string>
-    <string name="settings_auto_favorite_on">Automātiski pievienot stacijas izlasei atskaņošanas laikā</string>
-    <string name="settings_auto_favorite_off">Nepievienot stacijas automātiski izlasei atskaņošanas laikā</string>
+    <string name="settings_auto_favorite_on">Automātiski pievienot radio stacijas izlasei atskaņošanas laikā</string>
+    <string name="settings_auto_favorite_off">Nepievienot radio stacijas automātiski izlasei atskaņošanas laikā</string>
 
     <string name="settings_play">Atskaņotājs</string>
     <string name="settings_auto_play_on_startup">Automātiskā atskaņošana</string>
-    <string name="settings_auto_play_on_startup_on">Atskaņot pēdējo staciju startēšanas laikā</string>
-    <string name="settings_auto_play_on_startup_off">Neatskaņot pēdējo staciju startēšanas laikā</string>
+    <string name="settings_auto_play_on_startup_on">Atskaņot pēdējo radio staciju startēšanas laikā</string>
+    <string name="settings_auto_play_on_startup_off">Neatskaņot pēdējo radio staciju startēšanas laikā</string>
     <string name="settings_auto_off_on_startup">Automātiskā apturēšana</string>
     <string name="settings_auto_off_on_startup_on">Izmantot automātiskās apturēšanas taimeri ar automātisko atskaņošanu</string>
     <string name="settings_auto_off_on_startup_off">Neizmantot automātiskās apturēšanas taimeri ar automātisko atskaņošanu</string>
     <string name="settings_auto_off_sleep_timer">Automātiskās apturēšanas taimeris</string>
     <string name="settings_auto_off_sleep_timer_desc">Apturēt atskaņošanu pēc %1$s minūtēm</string>
     <string name="settings_play_external">Iespējot ārējo atskaņotāju</string>
-    <string name="settings_play_external_desc_on">Atskaņot stacijas ar ārējo atskaņotāju</string>
-    <string name="settings_play_external_desc_off">Atskaņot stacijas ar AMARadio</string>
+    <string name="settings_play_external_desc_on">Atskaņot radio stacijas ar ārējo atskaņotāju</string>
+    <string name="settings_play_external_desc_off">Atskaņot radio stacijas ar AMARadio</string>
     <string name="settings_equalizer">Ekvalaizers</string>
 
     <string name="settings_connectivity">Savienojamība</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Pauzēts</string>
     <string name="notify_metered_connection">Savienojums ar datu uzskaiti</string>
 
-    <string name="notify_starred">Stacija pievienota izlasei</string>
-    <string name="notify_autostarred">Stacija automātiski pievienota izlasei</string>
-    <string name="notify_unstarred">Stacija noņemta no izlases</string>
+    <string name="notify_starred">Radio stacija pievienota izlasei</string>
+    <string name="notify_autostarred">Radio stacija automātiski pievienota izlasei</string>
+    <string name="notify_unstarred">Radio stacija noņemta no izlases</string>
     <string name="notify_deleted_favorites">Izlase ir izdzēsta</string>
     <string name="notify_deleted_history">Vēsture ir izdzēsta</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Lūdzu, izvēlieties atskaņotāju</string>
     <string name="alert_select_player_name">Nosaukums</string>
-    <string name="hostname">Saimniekdatora nosaukums</string>
-    <string name="port">Ports</string>
+    <string name="hostname">Servera adrese</string>
+    <string name="port">Tīkla ports</string>
 
     <string name="alert_press_back_to_exit">Nospiediet atpakaļ vēlreiz, lai izietu</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Atskaņot ārējā atskaņotājā</string>
     <string name="action_choose_external_player">Izvēlēties ārējo atskaņotāju</string>
 
-    <string name="settings_disable_battery_optimization">Akumulatora optimizācija</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Akumulatora optimizācija tiek ignorēta, AMARadio vienmēr jāspēj atgūt fokusu.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Akumulatora optimizācija ir aktivizēta, AMARadio nevarēs atgūt fokusu fonā.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Fona atskaņošana</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Cits</string>
     <string name="settings_rate_app">Novērtēt AMARadio</string>
     <string name="settings_rate_app_summary">Ja jums patīk lietotne, lūdzu, atstājiet atsauksmi Play veikalā!</string>
+    <string name="settings_rate_app_github">Vai jums patīk AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Atstājiet zvaigznīti vietnē GitHub! Tas palīdz citiem atklāt lietotni un atbalsta turpmāko attīstību.</string>
     <string name="settings_statistics">Statistika</string>
     <string name="settings_about">Par AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stacijas logotips</string>
+    <string name="accessibility_station_logo">Radio stacijas logotips</string>
     <string name="accessibility_favorite_selected">Izlase, atlasīta</string>
     <string name="accessibility_favorite_not_selected">Izlase, nav atlasīta</string>
     <string name="accessibility_category_icon">Kategorijas ikona</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Konfigurēt</string>
     <string name="accessibility_close">Aizvērt</string>
     <string name="accessibility_add_filter">Pievienot filtru</string>
-    <string name="accessibility_station_options">Stacijas opcijas</string>
+    <string name="accessibility_station_options">Radio stacijas opcijas</string>
     <string name="not_applicable">nav piemērojams</string>
     <string name="accessibility_station_description">Stacija: %1$s, Valoda: %2$s, Birkas: %3$s</string>
 
     <string name="error_no_file_manager">Nevarēja atrast sistēmas failu pārvaldnieku. Lūdzu, pārliecinieties, vai ir instalēts un iespējots failu pārlūks.</string>
     <string name="error_no_browser">Nevarēja atrast tīmekļa pārlūkprogrammu. Lūdzu, instalējiet pārlūkprogrammu, lai atvērtu šo saiti.</string>
-    <string name="error_no_homepage">Šai stacijai nav pieejama mājaslapa</string>
-    <string name="tab_custom_stations">Pielāgots</string>
-    <string name="action_add_custom">Pievienojiet pielāgotu staciju</string>
-    <string name="station_name">Stacijas nosaukums</string>
+    <string name="error_no_homepage">Šai radio stacijai nav pieejama mājaslapa</string>
+    <string name="tab_custom_stations">Pielāgotās</string>
+    <string name="action_add_custom">Pievienojiet pielāgotu radio staciju</string>
+    <string name="station_name">Radio stacijas nosaukums</string>
     <string name="stream_url">Straumes URL</string>
-    <string name="favicon_url">Favicon URL (neobligāti)</string>
+    <string name="favicon_url">Stacijas logotipa URL (Favicon)</string>
     <string name="select_image">Izvēlieties Attēls</string>
     <string name="error_invalid_url">Lūdzu, ievadiet derīgu URL</string>
     <string name="action_save">Saglabāt</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Ātrās atskaņotāja vadīklas</string>
-    <string name="widget_description_full">Spēlētāju un staciju saraksts</string>
+    <string name="widget_description_full">Atskaņotājs un radio staciju saraksts</string>
 
     <string name="settings_auto_db_update">Fona datu sinhronizācija</string>
     <string name="settings_auto_db_update_desc">Automātiski atjaunināt staciju datu bāzi, izmantojot Radio-Browser API (ieteicams).</string>
-    <string name="settings_station_click_counter">Stacijas klikšķu skaitītājs</string>
-    <string name="settings_station_click_counter_desc">Atbalstiet radio pārlūkprogrammas statistiku, anonīmi kopīgojot atskaņošanas notikumus.</string>
-    <string name="settings_rate_app_github">Vai jums patīk AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Atstājiet zvaigznīti vietnē GitHub! Tas palīdz citiem atklāt lietotni un atbalsta turpmāko attīstību.</string>
+    <string name="settings_station_click_counter">Radio stacijas klikšķu skaitītājs</string>
+    <string name="settings_station_click_counter_desc">Atbalstiet Radio-Browser statistiku, anonīmi kopīgojot atskaņošanas notikumus.</string>
 
-    <string name="settings_remove_notification_on_stop">Noņemiet paziņojumu, kad lietotne ir aizvērta</string>
-    <string name="settings_remove_notification_on_stop_desc">Automātiski noraidīt multivides paziņojumu, kad lietotne tiek aizvērta no jaunākajām lietotnēm</string>
+    <string name="settings_remove_notification_on_stop">Noņemt paziņojumu apturot</string>
+    <string name="settings_remove_notification_on_stop_desc">Automātiski noraidīt multivides paziņojumu, kad atskaņošana tiek apturēta</string>
     <string name="settings_auto_resume_audio_focus">Atsākt pēc audio fokusa zuduma</string>
     <string name="settings_auto_resume_audio_focus_desc">Automātiski atsākt atskaņošanu pēc tālruņa zvaniem, modinātājiem vai cita veida skaņas apturēšanas</string>
+
+    <string name="settings_backup_restore">Dublēšana un atjaunošana</string>
+    <string name="settings_export_backup">Izveidot pilnu dublējumu (ZIP)</string>
+    <string name="settings_export_backup_desc">Saglabā visas izlases, pielāgotās stacijas un ikonas ZIP failā</string>
+    <string name="settings_import_backup">Atjaunot dublējumu (ZIP)</string>
+    <string name="settings_import_backup_desc">Atjauno izlasi un pielāgotās stacijas no ZIP dublējuma faila</string>
+    <string name="backup_export_success">Dublējums veiksmīgi saglabāts</string>
+    <string name="backup_export_error">Neizdevās saglabāt dublējumu</string>
+    <string name="backup_import_success">Dublējums veiksmīgi atjaunots</string>
+    <string name="backup_import_error">Neizdevās atjaunot dublējumu</string>
+
+    <string name="database_summary_title">Vietējā datubāze</string>
+    <string name="database_total_stations">Kopā radio stacijas</string>
+    <string name="database_last_sync">Pēdējais atjauninājums</string>
+    <string name="database_update_now">Atjaunināt datubāzi tagad</string>
+    <string name="database_full_update">Atjaunināt datubāzi</string>
+    <string name="database_syncing">Sinhronizē…</string>
+    <string name="database_downloading">Lejupielādē…</string>
+    <string name="database_stations_loaded">%1$s radio stacijas</string>
+    <string name="database_sync_channel_name">Radio staciju datubāzes sinhronizācija</string>
+    <string name="database_sync_success">Staciju datubāzes atjaunināšana veiksmīgi pabeigta</string>
+    <string name="database_error_no_connection">Nav interneta savienojuma</string>
+    <string name="database_error_no_space">Nepietiek vietas diskā</string>
+    <string name="database_error_failed">Datubāzes atjaunināšana neizdevās</string>
+
+    <string name="settings_disable_battery_optimization_desc">Lai turpinātu atskaņošanu ar izslēgtu ekrānu, iestatiet akumulatora lietojumu uz \'Neierobežots\'.</string>
+    <string name="battery_opt_open_settings">Atvērt iestatījumus</string>
+    <string name="battery_opt_later">Vēlāk</string>
 </resources>

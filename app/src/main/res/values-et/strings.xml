@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Loo oma kohandatud raadiojaamade voog</string>
     <string name="filter_empty_desc">Loo personaliseeritud vaade, kombineerides mitmeid kriteeriume. Saate otsingut kitsendada järgmiselt:</string>
     <string name="filter_empty_filter_by">Filtreeri</string>
-    <string name="filter_empty_filter_desc">Riik, jaama nimi, sildid või keel</string>
+    <string name="filter_empty_filter_desc">Riik, raadiojaama nimi, sildid või keel</string>
     <string name="filter_empty_sort_by">Sorteeri</string>
     <string name="filter_empty_sort_desc">Klikid, tähestik, hääled või viimane muudatus</string>
     <string name="filter_empty_hint">Selle vaate salvestamiseks sisestage nimi ülalolevasse välja!</string>
-    <string name="error_station_load">Jaamaga ei õnnestunud ühendust saada</string>
-    <string name="error_list_update">Radio browseri serveriga ei õnnestunud ühendust saada</string>
+    <string name="error_station_load">Raadiojaamaga ei õnnestunud ühendust saada</string>
+    <string name="error_list_update">Radio-Browseri serveriga ei õnnestunud ühendust saada</string>
 
     <string name="error_no_connection">Interneti-ühendus puudub</string>
     <string name="warning_volume_zero">Helitugevus on nullis. Te ei pruugi midagi kuulda.</string>
 
-    <string name="share_action">Jaga jaama linki…</string>
+    <string name="share_action">Jaga raadiojaama linki…</string>
 
-    <string name="nav_item_stations">Jaamad</string>
+    <string name="nav_item_stations">Raadiojaamad</string>
     <string name="nav_item_starred">Lemmikud</string>
     <string name="nav_item_history">Ajalugu</string>
     <string name="nav_item_settings">Seaded</string>
 
-    <string name="about_text">AMARadio on 100% reklaamivaba ja privaatsusele suunatud.\n\nArendasin selle rakenduse algselt oma emale, et pakkuda talle lihtsat ja ausat raadiokogemust ilma tüütute reklaamide või jälgimiseta. Seetõttu jääb AMARadio alati reklaamivabaks – see on lubadus temale, mida jagan teie kõigiga.\n\nSee projekt on fork suurepärasest https://github.com/segler-alex/RadioDroid projektist. Kogu koodibaas on porditud Javast Kotlini, et tagada rakenduse kaasaegsus ja ühilduvus tulevaste Androidi versioonidega.\n\nLähtekood on saadaval aadressil: https://github.com/ounben/AMARadio\n\nSee rakendus kasutab tasuta raadiojaamade kataloogi aadressil https://www.radio-browser.info .\nIgaüks saab sinna jaamu lisada. See toimib nagu veebiraadiojaamade viki.\n\nKontakt: ben@ounben.com\n\nVigadest teatamine: https://github.com/ounben/AMARadio/issues\n\nKui teile tarkvara meeldib ja soovite aidata, saatke mulle e-kiri.\nSamuti on uued funktsioonide ideed alati oodatud!\n\nSee rakendus on vaba tarkvara, litsentsitud GPLv3 alusel. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio on 100% reklaamivaba ja privaatsusele suunatud.\n\nArendasin selle rakenduse algselt oma emale, et pakkuda talle lihtsat ja ausat raadiokogemust ilma tüütute reklaamide või jälgimiseta. Seetõttu jääb AMARadio alati reklaamivabaks – see on lubadus temale, mida jagan teie kõigiga.\n\nSee projekt on fork suurepärasest RadioDroid projektist. Kogu koodibaas on porditud Javast Kotlini, et tagada rakenduse kaasaegsus ja ühilduvus tulevaste Androidi versioonidega.\n\nSee rakendus kasutab tasuta raadiojaamade kataloogi aadressil https://www.radio-browser.info .\nIgaüks saab sinna jaamu lisada. See toimib nagu veebiraadiojaamade viki.\n\nKontakt: ben@ounben.com\n\nVigadest teatamine: https://github.com/ounben/AMARadio/issues\n\nKui teile tarkvara meeldib ja soovite aidata, saatke mulle e-kiri.\nSamuti on uued funktsioonide ideed alati oodatud!\n\nSee rakendus on vaba tarkvara, litsentsitud GPLv3 alusel. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versioon: %1$s</string>
     <string name="detail_star">Lisa lemmikutesse</string>
     <string name="detail_unstar">Eemalda lemmikutest</string>
@@ -107,9 +107,9 @@
     <string name="theme_light">Hele</string>
     <string name="theme_dark">Tume</string>
     <string name="theme_system">Süsteemi järgi</string>
-    <string name="settings_compact_style">Kompaktne režiim</string>
-    <string name="settings_compact_style_desc_off">Suur ikoon jaama üksikasjadega</string>
-    <string name="settings_compact_style_desc_on">Väike ikoon ilma üksikasjadeta</string>
+    <string name="settings_compact_style">Kompaktsusrežiim</string>
+    <string name="settings_compact_style_desc_off">Suur ikoon raadiojaama üksikasjadega</string>
+    <string name="settings_compact_style_desc_on">Väike ikoon ilma raadiojaama üksikasjadeta</string>
     <string name="settings_bottom_navigation">Alumine navigatsioon</string>
     <string name="settings_ui_scale">UI skaleerimine</string>
     <string name="settings_language">Keel</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Harva kasutatavaid silte ei näidata</string>
     <string name="settings_single_use_tags_desc_on">Harva kasutatavaid silte näidatakse</string>
 
-    <string name="settings_show_broken">Katkised jaamad</string>
-    <string name="settings_show_broken_on">Näita katkiseid jaamu loendites</string>
-    <string name="settings_show_broken_off">Ära näita katkiseid jaamu loendites</string>
+    <string name="settings_show_broken">Defektsed raadiojaamad</string>
+    <string name="settings_show_broken_on">Näita defektseid raadiojaamu loendites</string>
+    <string name="settings_show_broken_off">Ära näita defektseid raadiojaamu loendites</string>
 
     <string name="settings_startup_behaviour">Käivitumine</string>
     <string name="action_grid_view">Ruudustikvaade</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Käivitamise tegevus</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Näita kõiki jaamu</string>
+    <string name="startup_show_all_stations">Näita kõiki raadiojaamu</string>
     <string name="startup_show_favorites">Näita lemmikuid</string>
     <string name="startup_show_history">Näita ajalugu</string>
     <string name="startup_show_last_view">Viimane vaade</string>
 
-    <string name="settings_load_icons">Näita jaamade ikoone</string>
+    <string name="settings_load_icons">Näita raadiojaamade ikoone</string>
     <string name="settings_load_icons_on">Ikoonid laetakse alla</string>
     <string name="settings_load_icons_off">Ikoone ei laeta alla</string>
 
     <string name="settings_auto_favorite">Automaatne lemmikuks lisamine</string>
-    <string name="settings_auto_favorite_on">Lisa jaamad mängimisel automaatselt lemmikutesse</string>
-    <string name="settings_auto_favorite_off">Ära lisa jaamu mängimisel automaatselt lemmikutesse</string>
+    <string name="settings_auto_favorite_on">Lisa raadiojaamad mängimisel automaatselt lemmikutesse</string>
+    <string name="settings_auto_favorite_off">Ära lisa raadiojaamu mängimisel automaatselt lemmikutesse</string>
 
     <string name="settings_play">Mängija</string>
     <string name="settings_auto_play_on_startup">Automaatne esitus</string>
-    <string name="settings_auto_play_on_startup_on">Esita käivitamisel viimast jaama</string>
-    <string name="settings_auto_play_on_startup_off">Ära esita käivitamisel viimast jaama</string>
+    <string name="settings_auto_play_on_startup_on">Esita käivitamisel viimast raadiojaama</string>
+    <string name="settings_auto_play_on_startup_off">Ära esita käivitamisel viimast raadiojaama</string>
     <string name="settings_auto_off_on_startup">Automaatne peatamine</string>
     <string name="settings_auto_off_on_startup_on">Kasuta automaatse peatamise taimerit koos automaatse esitusega</string>
     <string name="settings_auto_off_on_startup_off">Ära kasuta automaatse peatamise taimerit koos automaatse esitusega</string>
     <string name="settings_auto_off_sleep_timer">Automaatse peatamise taimer</string>
     <string name="settings_auto_off_sleep_timer_desc">Peata esitus %1$s minuti pärast</string>
     <string name="settings_play_external">Luba väline mängija</string>
-    <string name="settings_play_external_desc_on">Esita jaamu välise mängijaga</string>
-    <string name="settings_play_external_desc_off">Esita jaamu AMARadioga</string>
+    <string name="settings_play_external_desc_on">Esita raadiojaamu välise mängijaga</string>
+    <string name="settings_play_external_desc_off">Esita raadiojaamu AMARadioga</string>
     <string name="settings_equalizer">Ekvalaiser</string>
 
     <string name="settings_connectivity">Ühenduvus</string>
@@ -176,6 +176,12 @@
     <string name="ignore_proxy_settings_invalid">Vigaseid proksi seadeid ignoreeriti</string>
     <string name="settings_seconds_format">%d sekundit</string>
     <string name="settings_milliseconds_format">%d millisekundit</string>
+
+    <string name="settings_auto_db_update">Taustaandmete sünkroonimine</string>
+    <string name="settings_auto_db_update_desc">Raadiojaamade andmebaasi automaatne värskendamine Radio-Browser API kaudu (soovitatav).</string>
+
+    <string name="settings_station_click_counter">Raadiojaama klikiloendur</string>
+    <string name="settings_station_click_counter_desc">Toetage Radio-Browseri statistikat, jagades taasesitussündmusi anonüümselt.</string>
 
     <string name="settings_pause_when_noisy">Paus kõrvaklappide eemaldamisel</string>
 
@@ -198,9 +204,9 @@
     <string name="notify_paused">Pausil</string>
     <string name="notify_metered_connection">Mõõdetud ühendus</string>
 
-    <string name="notify_starred">Jaam lisati lemmikutesse</string>
-    <string name="notify_autostarred">Jaam lisati automaatselt lemmikutesse</string>
-    <string name="notify_unstarred">Jaam eemaldati lemmikutest</string>
+    <string name="notify_starred">Raadiojaam lisati lemmikutesse</string>
+    <string name="notify_autostarred">Raadiojaam lisati automaatselt lemmikutesse</string>
+    <string name="notify_unstarred">Raadiojaam eemaldati lemmikutest</string>
     <string name="notify_deleted_favorites">Lemmikud on kustutatud</string>
     <string name="notify_deleted_history">Ajalugu on kustutatud</string>
 
@@ -216,8 +222,8 @@
 
     <string name="alert_select_player">Palun vali mängija</string>
     <string name="alert_select_player_name">Nimi</string>
-    <string name="hostname">Hostinimi</string>
-    <string name="port">Port</string>
+    <string name="hostname">Serveri aadress</string>
+    <string name="port">Võrguport</string>
 
     <string name="alert_press_back_to_exit">Väljumiseks vajutage veel kord tagasi</string>
 
@@ -242,7 +248,7 @@
     <string name="tab_player_history">Lugude ajalugu</string>
 
     <string name="station_detail_bitrate">%1$1d kbps</string>
-    <string name="station_detail_broken">KATKINE</string>
+    <string name="station_detail_broken">DEFEKTNE</string>
     <string name="station_detail_deleted_on_server">KUSTUTATUD</string>
 
     <string name="station_details_clicks">%1$d klikki</string>
@@ -264,13 +270,16 @@
     <string name="action_play_in_external">Mängi välises mängijas</string>
     <string name="action_choose_external_player">Vali väline mängija</string>
 
-    <string name="settings_disable_battery_optimization">Aku optimeerimine</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Aku optimeerimist ignoreeritakse, AMARadio peaks saama alati fookuse tagasi.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Aku optimeerimine on aktiveeritud, AMARadio ei pruugi taustal olles fookust tagasi saada.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Taustal taasesitus</string>
+    <string name="settings_disable_battery_optimization_desc">Taasesituse jätkamiseks väljalülitatud ekraaniga määrake aku kasutus valikule \'Piiranguteta\'.</string>
+    <string name="battery_opt_open_settings">Ava seaded</string>
+    <string name="battery_opt_later">Hiljem</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Muu</string>
     <string name="settings_rate_app">Hinda AMARadio</string>
     <string name="settings_rate_app_summary">Kui teile rakendus meeldib, jätke palun arvustus Play Store\'is!</string>
+    <string name="settings_rate_app_github">Kas teile meeldib AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Jäta GitHubi tärn! See aitab teistel rakendust avastada ja toetab edasist arengut.</string>
     <string name="settings_statistics">Statistika</string>
     <string name="settings_about">AMARadio teave</string>
 
@@ -324,7 +333,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Jaama logo</string>
+    <string name="accessibility_station_logo">Raadiojaama logo</string>
     <string name="accessibility_favorite_selected">Lemmik, valitud</string>
     <string name="accessibility_favorite_not_selected">Lemmik, valimata</string>
     <string name="accessibility_category_icon">Kategooria ikoon</string>
@@ -337,7 +346,7 @@
     <string name="accessibility_configure">Seadista</string>
     <string name="accessibility_close">Sulge</string>
     <string name="accessibility_add_filter">Lisa filter</string>
-    <string name="accessibility_station_options">Jaama valikud</string>
+    <string name="accessibility_station_options">Raadiojaama valikud</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Jaam: %1$s, Keel: %2$s, Sildid: %3$s</string>
 
@@ -345,27 +354,44 @@
     <string name="error_no_browser">Veebibrauserit ei leitud. Selle lingi avamiseks installige brauser.</string>
     <string name="error_no_homepage">Selle jaama jaoks pole kodulehte saadaval</string>
     <string name="tab_custom_stations">Kohandatud</string>
-    <string name="action_add_custom">Lisa kohandatud jaam</string>
-    <string name="station_name">Jaama nimi</string>
+    <string name="action_add_custom">Lisa kohandatud raadiojaam</string>
+    <string name="station_name">Raadiojaama nimi</string>
     <string name="stream_url">Voo URL</string>
-    <string name="favicon_url">Faviconi URL (valikuline)</string>
+    <string name="favicon_url">Jaama logo URL (Favicon)</string>
     <string name="select_image">Valige Pilt</string>
     <string name="error_invalid_url">Sisestage kehtiv URL</string>
     <string name="action_save">Salvesta</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Kiire mängija juhtnupud</string>
-    <string name="widget_description_full">Mängija ja jaamade loend</string>
+    <string name="widget_description_full">Mängija ja raadiojaamade loend</string>
 
-    <string name="settings_auto_db_update">Taustaandmete sünkroonimine</string>
-    <string name="settings_auto_db_update_desc">Jaamade andmebaasi automaatne värskendamine Radio-Browser API kaudu (soovitatav).</string>
-    <string name="settings_station_click_counter">Jaama klikiloendur</string>
-    <string name="settings_station_click_counter_desc">Toetage raadiobrauseri statistikat, jagades mängusündmusi anonüümselt.</string>
-    <string name="settings_rate_app_github">Kas teile meeldib AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Jäta GitHubi tärn! See aitab teistel rakendust avastada ja toetab edasist arengut.</string>
-
-    <string name="settings_remove_notification_on_stop">Eemaldage märguanne, kui rakendus on suletud</string>
-    <string name="settings_remove_notification_on_stop_desc">Lülitage meediumiteatis automaatselt välja, kui rakendus suletakse viimastest rakendustest</string>
+    <string name="settings_remove_notification_on_stop">Eemaldage märguanne peatamisel</string>
+    <string name="settings_remove_notification_on_stop_desc">Lülitage meediumiteatis automaatselt välja, kui taasesitus peatatakse</string>
     <string name="settings_auto_resume_audio_focus">Jätkake pärast heli fookuse kadumist</string>
     <string name="settings_auto_resume_audio_focus_desc">Jätkake taasesitust automaatselt pärast telefonikõnesid, äratusi või muu heli peatamist</string>
+
+    <string name="settings_backup_restore">Varundamine ja taastamine</string>
+    <string name="settings_export_backup">Loo täielik varukoopia (ZIP)</string>
+    <string name="settings_export_backup_desc">Salvestab kõik lemmikud, kohandatud jaamad ja ikoonid ühte ZIP-faili</string>
+    <string name="settings_import_backup">Taasta varukoopia (ZIP)</string>
+    <string name="settings_import_backup_desc">Taastab lemmikud ja kohandatud jaamad ZIP-varufailist</string>
+    <string name="backup_export_success">Varukoopia salvestatud</string>
+    <string name="backup_export_error">Varukoopia salvestamine ebaõnnestus</string>
+    <string name="backup_import_success">Varukoopia taastatud</string>
+    <string name="backup_import_error">Varukoopia taastamine ebaõnnestus</string>
+
+    <string name="database_summary_title">Kohalik andmebaas</string>
+    <string name="database_total_stations">Raadiojaamu kokku</string>
+    <string name="database_last_sync">Viimane värskendus</string>
+    <string name="database_update_now">Värskenda andmebaasi kohe</string>
+    <string name="database_full_update">Värskenda andmebaasi</string>
+    <string name="database_syncing">Sünkroonimine…</string>
+    <string name="database_downloading">Allalaadimine…</string>
+    <string name="database_stations_loaded">%1$s raadiojaama</string>
+    <string name="database_sync_channel_name">Raadiojaamade andmebaasi sünkroonimine</string>
+    <string name="database_sync_success">Andmebaasi värskendamine lõpetati edukalt</string>
+    <string name="database_error_no_connection">Interneti-ühendus puudub</string>
+    <string name="database_error_no_space">Kettaruumi pole piisavalt</string>
+    <string name="database_error_failed">Andmebaasi värskendamine ebaõnnestus</string>
 </resources>

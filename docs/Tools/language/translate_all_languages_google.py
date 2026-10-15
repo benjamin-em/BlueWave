@@ -134,7 +134,25 @@ def format_xml_value(text):
         val = '\\' + val
     return val
 
-def process_language(lang_dir, master_keys):
+CACHE_FILE = os.path.join(os.path.dirname(__file__), ".master_strings_cache.json")
+
+def load_master_cache():
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+def save_master_cache(cache_data):
+    try:
+        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache_data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving master cache: {e}")
+
+def process_language(lang_dir, master_keys, modified_master_keys=None):
     global RATE_LIMIT_HIT
     if RATE_LIMIT_HIT:
         return
@@ -151,18 +169,18 @@ def process_language(lang_dir, master_keys):
     existing_keys = parse_string_keys(file_path)
 
     missing_keys = []
-    replace_keys = []
+    replace_keys = list(modified_master_keys) if modified_master_keys else []
 
     for k, eng_text in master_keys.items():
         if k not in existing_keys:
             missing_keys.append(k)
-        elif existing_keys[k].strip() == eng_text.strip() and eng_text.strip() not in PROTECTED_VALUES:
+        elif k not in replace_keys and existing_keys[k].strip() == eng_text.strip() and eng_text.strip() not in PROTECTED_VALUES:
             replace_keys.append(k)
 
     if not missing_keys and not replace_keys:
         return
 
-    print(f"Processing {folder_name} ({target_lang}) - {len(missing_keys)} missing, {len(replace_keys)} untranslated English...", flush=True)
+    print(f"Processing {folder_name} ({target_lang}) - {len(missing_keys)} missing, {len(replace_keys)} modified/untranslated...", flush=True)
 
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
@@ -212,6 +230,13 @@ def main():
     master_keys = parse_string_keys(default_path)
     print(f"Master translatable keys: {len(master_keys)}", flush=True)
 
+    master_cache = load_master_cache()
+    modified_master_keys = set()
+    for k, text in master_keys.items():
+        if k in master_cache and master_cache[k] != text:
+            modified_master_keys.add(k)
+            print(f"Detected English source text change for '{k}': '{master_cache[k]}' -> '{text}'")
+
     all_lang_dirs = sorted(glob.glob(os.path.join(RES_DIR, "values-*")))
     lang_dirs = [d for d in all_lang_dirs if os.path.basename(d) in FOLDER_TO_GOOGLE_LANG]
 
@@ -219,9 +244,10 @@ def main():
         if RATE_LIMIT_HIT:
             print("\n[Abbruch] Vorgang abgebrochen wegen Rate-Limit (HTTP 429).")
             break
-        process_language(lang_dir, master_keys)
+        process_language(lang_dir, master_keys, modified_master_keys)
 
     if not RATE_LIMIT_HIT:
+        save_master_cache(master_keys)
         print("ALL LANGUAGES COMPLETED SUCCESSFULLY!", flush=True)
 
 if __name__ == "__main__":

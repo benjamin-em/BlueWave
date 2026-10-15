@@ -49,27 +49,27 @@
     <string name="action_rename_tab">Semmi mill-ġdid it-tab</string>
     <string name="error_filter_name_required">Jekk jogħġbok daħħal isem għal din it-tab tal-filtru l-ewwel</string>
     <string name="confirm_delete_filter_tab">Żgur li trid tħassar il-filtru \"%1$s\"?</string>
-    <string name="filter_empty_title">Ibni l-lista tal-istazzjonijiet tiegħek</string>
+    <string name="filter_empty_title">Ibni l-lista tal-istazzjonijiet tar-radju tiegħek</string>
     <string name="filter_empty_desc">Oħloq veduta personalizzata billi tgħaqqad diversi kriterji. Tista\' tnaqqas it-tfittxija tiegħek billi tuża:</string>
     <string name="filter_empty_filter_by">Filtra skont</string>
-    <string name="filter_empty_filter_desc">Pajjiż, Isem tal-istazzjon, Tags, jew Lingwa</string>
+    <string name="filter_empty_filter_desc">Pajjiż, Isem tal-istazzjon tar-radju, Tags, jew Lingwa</string>
     <string name="filter_empty_sort_by">Irranġa skont</string>
     <string name="filter_empty_sort_desc">Klicks, Alfabet, Voti, jew l-Aħħar bidla</string>
     <string name="filter_empty_hint">Ikteb isem fil-field t\'hawn fuq biex issalva din il-veduta!</string>
-    <string name="error_station_load">Ma setax isir kuntatt mal-istazzjon</string>
-    <string name="error_list_update">Ma setax isir kuntatt mas-server tar-radio browser</string>
+    <string name="error_station_load">Ma setax isir kuntatt mal-istazzjon tar-radju</string>
+    <string name="error_list_update">Ma setax isir kuntatt mas-server ta\' Radio-Browser</string>
 
     <string name="error_no_connection">M\'hemm l-ebda konnessjoni tal-internet disponibbli.</string>
     <string name="warning_volume_zero">Il-volum qiegħed fuq żero. Jista\' jkun li ma tisma\' xejn.</string>
 
-    <string name="share_action">Aqsam il-link tal-istazzjon ma\'…</string>
+    <string name="share_action">Aqsam il-link tal-istazzjon tar-radju ma\'…</string>
 
-    <string name="nav_item_stations">Stazzjonijiet</string>
+    <string name="nav_item_stations">Stazzjonijiet tar-Radju</string>
     <string name="nav_item_starred">Favoriti</string>
     <string name="nav_item_history">Storja</string>
     <string name="nav_item_settings">Settings</string>
 
-    <string name="about_text">AMARadio huwa 100% ħieles mir-reklami u ffukat fuq il-privatezza.\n\nOriġinarjament żviluppajt din l-app għal ommi biex nipprovdilha esperjenza tar-radju sempliċi u onesta mingħajr reklami tedjanti jew traċċar. Huwa għalhekk li AMARadio dejjem se jibqa\' ħieles mir-reklami – hija wegħda lilha, kondiviża magħkom ilkoll.\n\nDan il-proġett huwa fork tal-eċċellenti https://github.com/segler-alex/RadioDroid . Il-codebase kollu ġie migrat minn Java għal Kotlin biex niżguraw li l-app tibqa\' moderna u kompatibbli mal-verżjonijiet futuri ta\' Android.\n\nIs-sors huwa disponibbli fuq: https://github.com/ounben/AMARadio\n\nDin l-app tuża d-direttorju b\'xejn tal-istazzjonijiet tar-radju f\'https://www.radio-browser.info .\nKulħadd jista\' jżid stazzjonijiet fih. Jaħdem bħal wiki għall-istazzjonijiet tar-radju online.\n\nKuntatt: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nJekk jogħġobkom is-software u tridu tgħinu, toqogħdux lura milli tibagħtuli email.\nUkoll ideat għal karatteristiċi ġodda huma dejjem apprezzati!\n\nDin l-app hija software ħieles, liċenzjata taħt GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio huwa 100% ħieles mir-reklami u ffukat fuq il-privatezza.\n\nOriġinarjament żviluppajt din l-app għal ommi biex nipprovdilha esperjenza tar-radju sempliċi u onesta mingħajr reklami tedjanti jew traċċar. Huwa għalhekk li AMARadio dejjem se jibqa\' ħieles mir-reklami – hija wegħda lilha, kondiviża magħkom ilkoll.\n\nDan il-proġett huwa fork ta\' RadioDroid. Il-codebase kollu ġie migrat minn Java għal Kotlin biex niżguraw li l-app tibqa\' moderna u kompatibbli mal-verżjonijiet futuri ta\' Android.\n\nIs-sors huwa disponibbli fuq: https://github.com/ounben/AMARadio\n\nDin l-app tuża d-direttorju b\'xejn tal-istazzjonijiet tar-radju f\'https://www.radio-browser.info .\nKulħadd jista\' jżid stazzjonijiet fih. Jaħdem bħal wiki għall-istazzjonijiet tar-radju online.\n\nKuntatt: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nJekk jogħġobkom is-software u tridu tgħinu, toqogħdux lura milli tibagħtuli email.\nUkoll ideat għal karatteristiċi ġodda huma dejjem apprezzati!\n\nDin l-app hija software ħieles, liċenzjata taħt GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Verżjoni: %1$s</string>
     <string name="detail_star">Żid mal-favoriti</string>
     <string name="detail_unstar">Neħħi mill-favoriti</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Dlam</string>
     <string name="theme_system">Segwi s-sistema</string>
     <string name="settings_compact_style">Mod kompatt</string>
-    <string name="settings_compact_style_desc_off">Ikona kbira b\'dettalji tal-istazzjon</string>
-    <string name="settings_compact_style_desc_on">Ikona żgħira mingħajr dettalji tal-istazzjon</string>
+    <string name="settings_compact_style_desc_off">Ikona kbira b\'dettalji tal-istazzjon tar-radju</string>
+    <string name="settings_compact_style_desc_on">Ikona żgħira mingħajr dettalji tal-istazzjon tar-radju</string>
     <string name="settings_bottom_navigation">Navigazzjoni t\'isfel</string>
     <string name="settings_ui_scale">Skalar tal-UI</string>
     <string name="settings_language">Lingwa</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Tags li rari jintużaw mhux se jintwerew</string>
     <string name="settings_single_use_tags_desc_on">Tags li rari jintużaw se jintwerew</string>
 
-    <string name="settings_show_broken">Stazzjonijiet li ma jaħdmux</string>
-    <string name="settings_show_broken_on">Uri stazzjonijiet li ma jaħdmux fil-listi</string>
-    <string name="settings_show_broken_off">Turix stazzjonijiet li ma jaħdmux fil-listi</string>
+    <string name="settings_show_broken">Stazzjonijiet tar-radju li ma jaħdmux</string>
+    <string name="settings_show_broken_on">Uri stazzjonijiet tar-radju li ma jaħdmux fil-listi</string>
+    <string name="settings_show_broken_off">Turix stazzjonijiet tar-radju li ma jaħdmux fil-listi</string>
 
     <string name="settings_startup_behaviour">Imġiba fil-bidu</string>
     <string name="action_grid_view">Grid View</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Azzjoni fil-bidu</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Uri l-istazzjonijiet kollha</string>
+    <string name="startup_show_all_stations">Uri l-istazzjonijiet tar-radju kollha</string>
     <string name="startup_show_favorites">Uri l-favoriti</string>
     <string name="startup_show_history">Uri l-istorja</string>
     <string name="startup_show_last_view">L-aħħar veduta</string>
 
-    <string name="settings_load_icons">Uri l-ikoni tal-istazzjonijiet</string>
+    <string name="settings_load_icons">Uri l-ikoni tal-istazzjonijiet tar-radju</string>
     <string name="settings_load_icons_on">L-ikoni se jitniżżlu</string>
     <string name="settings_load_icons_off">L-ikoni mhux se jitniżżlu</string>
 
     <string name="settings_auto_favorite">Auto-favoriti</string>
-    <string name="settings_auto_favorite_on">Żid stazzjonijiet awtomatikament mal-favoriti meta ddoqqhom</string>
-    <string name="settings_auto_favorite_off">Tżidx stazzjonijiet awtomatikament mal-favoriti meta ddoqqhom</string>
+    <string name="settings_auto_favorite_on">Żid stazzjonijiet tar-radju awtomatikament mal-favoriti meta ddoqqhom</string>
+    <string name="settings_auto_favorite_off">Tżidx stazzjonijiet tar-radju awtomatikament mal-favoriti meta ddoqqhom</string>
 
     <string name="settings_play">Player</string>
     <string name="settings_auto_play_on_startup">Auto-play</string>
-    <string name="settings_auto_play_on_startup_on">Iddoqq l-aħħar stazzjon fil-bidu</string>
-    <string name="settings_auto_play_on_startup_off">Iddoqqx l-aħħar stazzjon fil-bidu</string>
+    <string name="settings_auto_play_on_startup_on">Iddoqq l-aħħar stazzjon tar-radju fil-bidu</string>
+    <string name="settings_auto_play_on_startup_off">Iddoqqx l-aħħar stazzjon tar-radju fil-bidu</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Uża timer tal-auto-stop mal-auto-play</string>
     <string name="settings_auto_off_on_startup_off">Tużax timer tal-auto-stop mal-auto-play</string>
     <string name="settings_auto_off_sleep_timer">Timer tal-auto-stop</string>
     <string name="settings_auto_off_sleep_timer_desc">Waqqaf id-daqq wara %1$s minuta</string>
     <string name="settings_play_external">Ippermetti player estern</string>
-    <string name="settings_play_external_desc_on">Iddoqq stazzjonijiet b\'player estern</string>
-    <string name="settings_play_external_desc_off">Iddoqq stazzjonijiet bl-AMARadio</string>
+    <string name="settings_play_external_desc_on">Iddoqq stazzjonijiet tar-radju b\'player estern</string>
+    <string name="settings_play_external_desc_off">Iddoqq stazzjonijiet tar-radju bl-AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Konnettività</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Fil-pawża</string>
     <string name="notify_metered_connection">Konnessjoni mkejla</string>
 
-    <string name="notify_starred">L-istazzjon ġie miżjud mal-favoriti</string>
-    <string name="notify_autostarred">L-istazzjon ġie miżjud awtomatikament mal-favoriti</string>
-    <string name="notify_unstarred">L-istazzjon tneħħa mill-favoriti</string>
+    <string name="notify_starred">L-istazzjon tar-radju ġie miżjud mal-favoriti</string>
+    <string name="notify_autostarred">L-istazzjon tar-radju ġie miżjud awtomatikament mal-favoriti</string>
+    <string name="notify_unstarred">L-istazzjon tar-radju tneħħa mill-favoriti</string>
     <string name="notify_deleted_favorites">Il-favoriti tħassru</string>
     <string name="notify_deleted_history">L-istorja tħassret</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Jekk jogħġbok agħżel player</string>
     <string name="alert_select_player_name">Isem</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Port</string>
+    <string name="hostname">Indirizz tas-server</string>
+    <string name="port">Port tan-network</string>
 
     <string name="alert_press_back_to_exit">Agħfas lura darba oħra biex toħroġ</string>
 
@@ -242,7 +242,7 @@
     <string name="tab_player_history">Storja tad-diski</string>
 
     <string name="station_detail_bitrate">%1$1d kbps</string>
-    <string name="station_detail_broken">BROKEN</string>
+    <string name="station_detail_broken">MA JAĦDIMX</string>
     <string name="station_detail_deleted_on_server">IMĦASSAR</string>
 
     <string name="station_details_clicks">%1$d klicks</string>
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Iddoqq f\'player estern</string>
     <string name="action_choose_external_player">Agħżel player estern</string>
 
-    <string name="settings_disable_battery_optimization">Ottimizzazzjoni tal-batterija</string>
-    <string name="settings_ignore_battery_optimization_summary_on">L-ottimizzazzjoni tal-batterija hija injorata, AMARadio għandu dejjem ikun jista\' jerġa\' jieħu l-focus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">L-ottimizzazzjoni tal-batterija hija attivata, AMARadio mhux se jkun jista\' jerġa\' jieħu l-focus jekk ikun fil-background.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Daqq fl-isfond</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Oħrajn</string>
     <string name="settings_rate_app">Ikklassifika AMARadio</string>
     <string name="settings_rate_app_summary">Jekk tħobb l-app, jekk jogħġbok ħalli reviżjoni fuq il-Play Store!</string>
+    <string name="settings_rate_app_github">Jgħoġbok AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Ħalli stilla fuq GitHub! Jgħin lill-oħrajn jiskopru l-app u jappoġġja l-iżvilupp futur.</string>
     <string name="settings_statistics">Statistika</string>
     <string name="settings_about">Dwar l-AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logo tal-istazzjon</string>
+    <string name="accessibility_station_logo">Logo tal-istazzjon tar-radju</string>
     <string name="accessibility_favorite_selected">Favorit, magħżul</string>
     <string name="accessibility_favorite_not_selected">Favorit, mhux magħżul</string>
     <string name="accessibility_category_icon">Ikona tal-kategorija</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Ikkonfigura</string>
     <string name="accessibility_close">Agħlaq</string>
     <string name="accessibility_add_filter">Żid filtru</string>
-    <string name="accessibility_station_options">Għażliet tal-istazzjon</string>
+    <string name="accessibility_station_options">Għażliet tal-istazzjon tar-radju</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Istazzjon: %1$s, Lingwa: %2$s, Tags: %3$s</string>
 
     <string name="error_no_file_manager">Ma setgħetx issib maniġer tal-fajls tas-sistema. Jekk jogħġbok kun żgur li explorer tal-fajls huwa installat u attivat.</string>
     <string name="error_no_browser">Ma setgħetx issib web browser. Jekk jogħġbok installa browser biex tiftaħ din il-link.</string>
-    <string name="error_no_homepage">L-ebda homepage disponibbli għal dan l-istazzjon</string>
-    <string name="tab_custom_stations">Custom</string>
-    <string name="action_add_custom">Żid Custom Station</string>
-    <string name="station_name">Isem tal-Istazzjon</string>
+    <string name="error_no_homepage">L-ebda homepage disponibbli għal dan l-istazzjon tar-radju</string>
+    <string name="tab_custom_stations">Personalizzati</string>
+    <string name="action_add_custom">Żid stazzjon tar-radju personalizzat</string>
+    <string name="station_name">Isem tal-Istazzjon tar-radju</string>
     <string name="stream_url">Stream URL</string>
-    <string name="favicon_url">URL tal-favicon (mhux obbligatorju)</string>
+    <string name="favicon_url">URL tal-logo tal-istazzjon (Favicon)</string>
     <string name="select_image">Agħżel Image</string>
     <string name="error_invalid_url">Jekk jogħġbok daħħal URL validu</string>
-    <string name="action_save">Ħlief</string>
+    <string name="action_save">Insalva</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Kontrolli tal-plejer malajr</string>
-    <string name="widget_description_full">Lista tal-plejers u l-istazzjonijiet</string>
+    <string name="widget_description_small">Kontrolli mgħaġġla tal-player</string>
+    <string name="widget_description_full">Player u lista tal-istazzjonijiet tar-radju</string>
 
     <string name="settings_auto_db_update">Sinkronizzazzjoni tad-Data ta\' Sfond</string>
-    <string name="settings_auto_db_update_desc">Aġġorna awtomatikament id-database tal-istazzjon permezz tal-API tar-Radju-Browser (rakkomandat).</string>
-    <string name="settings_station_click_counter">Stazzjon ikklikkja counter</string>
-    <string name="settings_station_click_counter_desc">Appoġġa l-istatistika tar-Radju-Browser billi taqsam b\'mod anonimu avvenimenti tal-logħob.</string>
-    <string name="settings_rate_app_github">Tgawdi AMRadio?</string>
-    <string name="settings_rate_app_github_summary">Ħalli stilla fuq GitHub! Jgħin lill-oħrajn jiskopru l-app u jappoġġja l-iżvilupp futur.</string>
+    <string name="settings_auto_db_update_desc">Aġġorna awtomatikament id-database tal-istazzjonijiet tar-radju permezz tal-API ta\' Radio-Browser (rakkomandat).</string>
+    <string name="settings_station_click_counter">Counter tal-klicks tal-istazzjonijiet tar-radju</string>
+    <string name="settings_station_click_counter_desc">Appoġġa l-istatistika ta\' Radio-Browser billi taqsam b\'mod anonimu avvenimenti tad-daqq.</string>
 
-    <string name="settings_remove_notification_on_stop">Neħħi n-notifika meta l-app tkun magħluqa</string>
-    <string name="settings_remove_notification_on_stop_desc">Tiċħad awtomatikament in-notifika tal-midja meta l-app tingħalaq minn apps riċenti</string>
+    <string name="settings_remove_notification_on_stop">Neħħi n-notifika meta jepfej id-daqq</string>
+    <string name="settings_remove_notification_on_stop_desc">Tiċħad awtomatikament in-notifika tal-midja meta d-daqq jieqaf</string>
     <string name="settings_auto_resume_audio_focus">Ibda wara t-telf tal-fokus tal-awdjo</string>
     <string name="settings_auto_resume_audio_focus_desc">Ibda awtomatikament id-daqq wara telefonati, allarmi, jew waqfiet awdjo oħra</string>
+
+    <string name="settings_backup_restore">Backup u rkupru</string>
+    <string name="settings_export_backup">Oħloq backup sħiħ (ZIP)</string>
+    <string name="settings_export_backup_desc">Issalva l-favoriti, l-istazzjonijiet personalizzati u l-ikoni kollha f\'fajl ZIP</string>
+    <string name="settings_import_backup">Irrestawra backup (ZIP)</string>
+    <string name="settings_import_backup_desc">Jirrestawra l-favoriti u l-istazzjonijiet personalizzati minn fajl backup ZIP</string>
+    <string name="backup_export_success">Il-backup ġie ffrankat b\'suċċess</string>
+    <string name="backup_export_error">Naqas milli jsalva l-backup</string>
+    <string name="backup_import_success">Il-backup ġie rrestawrat b\'suċċess</string>
+    <string name="backup_import_error">Naqas milli jirrestawra l-backup</string>
+
+    <string name="database_summary_title">Database lokali</string>
+    <string name="database_total_stations">Total ta\' stazzjonijiet tar-radju</string>
+    <string name="database_last_sync">L-aħħar aġġornament</string>
+    <string name="database_update_now">Aġġorna d-database issa</string>
+    <string name="database_full_update">Aġġorna d-database</string>
+    <string name="database_syncing">Qed jissinkronizza…</string>
+    <string name="database_downloading">Qed iniżżel…</string>
+    <string name="database_stations_loaded">%1$s stazzjon tar-radju</string>
+    <string name="database_sync_channel_name">Sinkronizzazzjoni tad-database tal-istazzjonijiet tar-radju</string>
+    <string name="database_sync_success">L-aġġornament tad-database tal-istazzjonijiet tlesta b\'suċċess</string>
+    <string name="database_error_no_connection">M\'hemmx konnessjoni tal-internet</string>
+    <string name="database_error_no_space">M\'hemmx biżżejjed spazju fuq id-disk</string>
+    <string name="database_error_failed">L-aġġornament tad-database falla</string>
+
+    <string name="settings_disable_battery_optimization_desc">Biex tkompli ddoqq meta l-iskrin ikun mitfi, issettja l-użu tal-batterija għal \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Iftaħ is-settings</string>
+    <string name="battery_opt_later">Aktar tard</string>
 </resources>

@@ -57,7 +57,7 @@
     <string name="filter_empty_sort_desc">ကလစ်များ၊ အက္ခရာစဉ်၊ မဲများ သို့မဟုတ် နောက်ဆုံးပြောင်းလဲမှု</string>
     <string name="filter_empty_hint">ဤမြင်ကွင်းကို သိမ်းဆည်းရန် အပေါ်ရှိ အကွက်တွင် အမည်တစ်ခု ရိုက်ထည့်ပါ!</string>
     <string name="error_station_load">ရေဒီယိုလိုင်းသို့ ချိတ်ဆက်၍မရပါ</string>
-    <string name="error_list_update">ရေဒီယို ဆာဗာသို့ ချိတ်ဆက်၍မရပါ</string>
+    <string name="error_list_update">Radio-Browser ဆာဗာသို့ ချိတ်ဆက်၍မရပါ</string>
 
     <string name="error_no_connection">အင်တာနက် ချိတ်ဆက်မှု မရှိပါ</string>
     <string name="warning_volume_zero">အသံပမာဏမှာ သုညဖြစ်နေသည်။ မည်သည့်အသံမှ ကြားရမည်မဟုတ်ပါ။</string>
@@ -69,7 +69,7 @@
     <string name="nav_item_history">မှတ်တမ်း</string>
     <string name="nav_item_settings">ဆက်တင်များ</string>
 
-    <string name="about_text">AMARadio သည် ၁၀၀% ကြော်ငြာမပါဘဲ ကိုယ်ရေးကိုယ်တာ လုံခြုံမှုကို အလေးထားပါသည်။\n\nကျွန်တော်သည် ဤအက်ပ်ကို ကျွန်တော့်အမေအတွက် ကြော်ငြာများ သို့မဟုတ် ခြေရာခံမှုများမပါဘဲ ရိုးရှင်းပြီး ရိုးသားသော ရေဒီယိုအတွေ့အကြုံကို ပေးနိုင်ရန် မူလက ဖန်တီးခဲ့ခြင်းဖြစ်ပါသည်။ ထို့ကြောင့် AMARadio သည် အမြဲတမ်း ကြော်ငြာမပါဘဲ ရှိနေပါလိမ့်မည် - ၎င်းမှာ ကျွန်တော့်အမေကို ပေးထားသော ကတိဖြစ်ပြီး သင်တို့အားလုံးကိုလည်း ဝေမျှပါသည်။\n\nဤပရောဂျက်သည် ကောင်းမွန်လှသော https://github.com/segler-alex/RadioDroid မှ ခွဲထွက်လာခြင်းဖြစ်သည်။ အက်ပ်သည် ခေတ်မီနေစေရန်နှင့် နောက်ပိုင်းထွက်မည့် Android ဗားရှင်းများနှင့် ကိုက်ညီမှုရှိစေရန် Source Code အားလုံးကို Java မှ Kotlin သို့ ပြောင်းလဲထားပါသည်။\n\nSource Code ကို ဤနေရာတွင် ရနိုင်ပါသည် - https://github.com/ounben/AMARadio\n\nဤအက်ပ်သည် https://www.radio-browser.info ရှိ အခမဲ့ ရေဒီယိုလိုင်း လမ်းညွှန်ကို အသုံးပြုပါသည်။ မည်သူမဆို ရေဒီယိုလိုင်းများ ထည့်သွင်းနိုင်ပါသည်။ ၎င်းသည် အွန်လိုင်း ရေဒီယိုလိုင်းများအတွက် ဝီကီပီးဒီးယားကဲ့သို့ အလုပ်လုပ်ပါသည်။\n\nဆက်သွယ်ရန် - ben@ounben.com\n\nBugtracker - https://github.com/ounben/AMARadio/issues\n\nအကယ်၍ သင်သည် ဤဆော့ဖ်ဝဲလ်ကို နှစ်သက်ပြီး ကူညီလိုပါက ကျွန်တော့်ထံ အီးမေးလ် ပေးပို့နိုင်ပါသည်။ ဝန်ဆောင်မှုအသစ်များအတွက် အကြံဉာဏ်များကိုလည်း အမြဲတမ်း ကြိုဆိုလျက်ရှိပါသည်။\n\nဤအက်ပ်သည် GPLv3 လိုင်စင်အောက်တွင် ရှိသော အခမဲ့ ဆော့ဖ်ဝဲလ် ဖြစ်ပါသည်။ https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio သည် ၁၀၀% ကြော်ငြာမပါဘဲ ကိုယ်ရေးကိုယ်တာ လုံခြုံမှုကို အလေးထားပါသည်။\n\nကျွန်တော်သည် ဤအက်ပ်ကို ကျွန်တော့်အမေအတွက် ကြော်ငြာများ သို့မဟုတ် ခြေရာခံမှုများမပါဘဲ ရိုးရှင်းပြီး ရိုးသားသော ရေဒီယိုအတွေ့အကြုံကို ပေးနိုင်ရန် မူလက ဖန်တီးခဲ့ခြင်းဖြစ်ပါသည်။ ထို့ကြောင့် AMARadio သည် အမြဲတမ်း ကြော်ငြာမပါဘဲ ရှိနေပါလိမ့်မည် - ၎င်းမှာ ကျွန်တော့်အမေကို ပေးထားသော ကတိဖြစ်ပြီး သင်တို့အားလုံးကိုလည်း ဝေမျှပါသည်။\n\nဤပရောဂျက်သည် RadioDroid မှ ခွဲထွက်လာခြင်းဖြစ်သည်။ အက်ပ်သည် ခေတ်မီနေစေရန်နှင့် နောက်ပိုင်းထွက်မည့် Android ဗားရှင်းများနှင့် ကိုက်ညီမှုရှိစေရန် Source Code အားလုံးကို Java မှ Kotlin သို့ ပြောင်းလဲထားပါသည်။\n\nSource Code ကို ဤနေရာတွင် ရနိုင်ပါသည် - https://github.com/ounben/AMARadio\n\nဤအက်ပ်သည် https://www.radio-browser.info ရှိ အခမဲ့ ရေဒီယိုလိုင်း လမ်းညွှန်ကို အသုံးပြုပါသည်။ မည်သူမဆို ရေဒီယိုလိုင်းများ ထည့်သွင်းနိုင်ပါသည်။ ၎င်းသည် အွန်လိုင်း ရေဒီယိုလိုင်းများအတွက် ဝီကီပီးဒီးယားကဲ့သို့ အလုပ်လုပ်ပါသည်။\n\nဆက်သွယ်ရန် - ben@ounben.com\n\nBugtracker - https://github.com/ounben/AMARadio/issues\n\nအကယ်၍ သင်သည် ဤဆော့ဖ်ဝဲလ်ကို နှစ်သက်ပြီး ကူညီလိုပါက ကျွန်တော့်ထံ အီးမေးလ် ပေးပို့နိုင်ပါသည်။ ဝန်ဆောင်မှုအသစ်များအတွက် အကြံဉာဏ်များကိုလည်း အမြဲတမ်း ကြိုဆိုလျက်ရှိပါသည်။\n\nဤအက်ပ်သည် GPLv3 လိုင်စင်အောက်တွင် ရှိသော အခမဲ့ ဆော့ဖ်ဝဲလ် ဖြစ်ပါသည်။ https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">ဗားရှင်း - %1$s</string>
     <string name="detail_star">အကြိုက်ဆုံးထဲသို့ ထည့်ရန်</string>
     <string name="detail_unstar">အကြိုက်ဆုံးထဲမှ ဖယ်ရန်</string>
@@ -150,7 +150,7 @@
     <string name="settings_auto_play_on_startup">အလိုအလျောက် ဖွင့်ရန်</string>
     <string name="settings_auto_play_on_startup_on">စတင်ချိန်တွင် နောက်ဆုံးဖွင့်ခဲ့သောလိုင်းကို ဖွင့်မည်</string>
     <string name="settings_auto_play_on_startup_off">စတင်ချိန်တွင် နောက်ဆုံးဖွင့်ခဲ့သောလိုင်းကို ဖွင့်မည်မဟုတ်</string>
-    <string name="settings_auto_off_on_startup">အလိုအလျောက် รပ်ရန်</string>
+    <string name="settings_auto_off_on_startup">အလိုအလျောက် ရပ်ရန်</string>
     <string name="settings_auto_off_on_startup_on">အလိုအလျောက် ဖွင့်ခြင်းနှင့်အတူ အလိုအလျောက် ရပ်ချိန်စက်ကို သုံးမည်</string>
     <string name="settings_auto_off_on_startup_off">အလိုအလျောက် ဖွင့်ခြင်းနှင့်အတူ အလိုအလျောက် ရပ်ချိန်စက်ကို သုံးမည်မဟုတ်</string>
     <string name="settings_auto_off_sleep_timer">အလိုအလျောက် ရပ်ချိန်စက်</string>
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">ပလေယာတစ်ခု ရွေးပါ</string>
     <string name="alert_select_player_name">အမည်</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Port</string>
+    <string name="hostname">ဆာဗာလိပ်စာ</string>
+    <string name="port">ကွန်ရက် ပေါ့တ်</string>
 
     <string name="alert_press_back_to_exit">ထွက်ရန် နောက်ပြန်ခလုတ်ကို နောက်တစ်ကြိမ် နှိပ်ပါ</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">အပြင်ပလေယာဖြင့် ဖွင့်ရန်</string>
     <string name="action_choose_external_player">အပြင်ပလေယာ ရွေးရန်</string>
 
-    <string name="settings_disable_battery_optimization">ဘက်ထရီ အကောင်းဆုံးဖြစ်အောင်လုပ်ခြင်း</string>
-    <string name="settings_ignore_battery_optimization_summary_on">ဘက်ထရီ ချွေတာမှုကို လျစ်လျူရှုထားသည်၊ AMARadio သည် အမြဲတမ်း ပုံမှန်အလုပ်လုပ်နိုင်ပါလိမ့်မည်।</string>
-    <string name="settings_ignore_battery_optimization_summary_off">ဘက်ထရီ ချွေတာမှုကို ဖွင့်ထားသည်၊ AMARadio သည် နောက်ကွယ်မှ အလုပ်လုပ်ရန် အခက်အခဲ ရှိနိုင်ပါသည်။</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">နောက်ကွယ်မှ ဖွင့်လှစ်မှု</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">အခြား</string>
     <string name="settings_rate_app">AMARadio ကို အဆင့်သတ်မှတ်ပါ</string>
     <string name="settings_rate_app_summary">သင် ဤအက်ပ်ကို ကြိုက်နှစ်သက်ပါက Play Store တွင် သုံးသပ်ချက်တစ်ခု ရေးပေးပါဦး။</string>
+    <string name="settings_rate_app_github">AMARadio ကို နှစ်သက်ပါသလား။</string>
+    <string name="settings_rate_app_github_summary">GitHub တွင် ကြယ်တစ်ပွင့် ထားခဲ့ပါ။ ၎င်းသည် အခြားသူများကို အက်ပ်ကို ရှာဖွေတွေ့ရှိရန် ကူညီပေးပြီး အနာဂတ်ဖွံ့ဖြိုးတိုးတက်မှုကို ပံ့ပိုးပေးသည်။</string>
     <string name="settings_statistics">စာရင်းဇယားများ</string>
     <string name="settings_about">AMARadio အကြောင်း</string>
 
@@ -343,29 +343,55 @@
 
     <string name="error_no_file_manager">စနစ်ဖိုင်မန်နေဂျာကို ရှာမတွေ့ပါ။ ဖိုင်ရှာဖွေသူအား ထည့်သွင်းပြီး ဖွင့်ထားကြောင်း သေချာပါစေ။</string>
     <string name="error_no_browser">ဝဘ်ဘရောက်ဆာကို ရှာမတွေ့ပါ။ ဤလင့်ခ်ကိုဖွင့်ရန် ဘရောက်ဆာတစ်ခုကို ထည့်သွင်းပါ။</string>
-    <string name="error_no_homepage">ဤဘူတာရုံအတွက် ပင်မစာမျက်နှာမရှိပါ။</string>
+    <string name="error_no_homepage">ဤရေဒီယိုလိုင်းအတွက် ပင်မစာမျက်နှာမရှိပါ။</string>
     <string name="tab_custom_stations">စိတ်ကြိုက်</string>
-    <string name="action_add_custom">စိတ်ကြိုက်ဘူတာကိုထည့်ပါ။</string>
-    <string name="station_name">ဘူတာအမည်</string>
+    <string name="action_add_custom">စိတ်ကြိုက် ရေဒီယိုလိုင်း ထည့်ရန်</string>
+    <string name="station_name">ရေဒီယိုလိုင်းအမည်</string>
     <string name="stream_url">တိုက်ရိုက်လွှင့် URL</string>
-    <string name="favicon_url">Favicon URL (ချန်လှပ်ထားနိုင်သည်)</string>
-    <string name="select_image">Image ကို ရွေးပါ။</string>
+    <string name="favicon_url">ရေဒီယိုလိုင်း လိုဂို URL (Favicon)</string>
+    <string name="select_image">ဓာတ်ပုံ ရွေးပါ</string>
     <string name="error_invalid_url">ကျေးဇူးပြု၍ တရားဝင် URL ကိုထည့်ပါ။</string>
-    <string name="action_save">သိမ်းဆည်းပါ။</string>
+    <string name="action_save">သိမ်းဆည်းရန်</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">လျင်မြန်သောကစားသမားထိန်းချုပ်မှုများ</string>
-    <string name="widget_description_full">ကစားသမားများနှင့် ဘူတာရုံများစာရင်း</string>
+    <string name="widget_description_small">အမြန် ပလေယာ ထိန်းချုပ်မှုများ</string>
+    <string name="widget_description_full">ပလေယာ နှင့် ရေဒီယိုလိုင်းများ စာရင်း</string>
 
-    <string name="settings_auto_db_update">နောက်ခံဒေတာ Sync</string>
-    <string name="settings_auto_db_update_desc">Radio-Browser API မှတစ်ဆင့် ဘူတာရုံဒေတာဘေ့စ်ကို အလိုအလျောက် အပ်ဒိတ်လုပ်ပါ (အကြံပြုထားသည်)။</string>
-    <string name="settings_station_click_counter">ဘူတာရုံကလစ်ကောင်တာ</string>
-    <string name="settings_station_click_counter_desc">ကစားပွဲများကို အမည်ဝှက်ဖြင့် မျှဝေခြင်းဖြင့် ရေဒီယို-ဘရောက်ဇာ စာရင်းဇယားများကို ပံ့ပိုးကူညီပါ။</string>
-    <string name="settings_rate_app_github">AMARadio ကို နှစ်သက်ပါသလား။</string>
-    <string name="settings_rate_app_github_summary">GitHub တွင် ကြယ်တစ်ပွင့် ထားခဲ့ပါ။ ၎င်းသည် အခြားသူများကို အက်ပ်ကို ရှာဖွေတွေ့ရှိရန် ကူညီပေးပြီး အနာဂတ်ဖွံ့ဖြိုးတိုးတက်မှုကို ပံ့ပိုးပေးသည်။</string>
+    <string name="settings_auto_db_update">နောက်ခံဒေတာ ချိတ်ဆက်မှု</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API မှတစ်ဆင့် ရေဒီယိုလိုင်း ဒေတာဘေ့စ်ကို အလိုအလျောက် အပ်ဒိတ်လုပ်ရန် (အကြံပြုထားသည်)။</string>
+    <string name="settings_station_click_counter">ရေဒီယိုလိုင်း ကလစ် ရေတွက်စက်</string>
+    <string name="settings_station_click_counter_desc">ဖွင့်လှစ်မှု ဖြစ်စဉ်များကို အမည်ဝှက်ဖြင့် မျှဝေခြင်းဖြင့် Radio-Browser စာရင်းဇယားများကို ပံ့ပိုးပေးပါ။</string>
 
-    <string name="settings_remove_notification_on_stop">အက်ပ်ပိတ်သည့်အခါ အကြောင်းကြားချက်ကို ဖယ်ရှားပါ။</string>
-    <string name="settings_remove_notification_on_stop_desc">အက်ပ်ကို လတ်တလောအက်ပ်များမှ ပိတ်သည့်အခါ မီဒီယာသတိပေးချက်ကို အလိုအလျောက်ပိတ်ပါ။</string>
-    <string name="settings_auto_resume_audio_focus">အသံအာရုံစူးစိုက်မှုပျောက်ဆုံးပြီးနောက် ပြန်လည်စတင်ပါ။</string>
-    <string name="settings_auto_resume_audio_focus_desc">ဖုန်းခေါ်ဆိုမှုများ၊ နှိုးစက်များ သို့မဟုတ် အခြားအသံများရပ်တန့်ပြီးနောက် အလိုအလျောက်ပြန်ဖွင့်ပါ။</string>
+    <string name="settings_remove_notification_on_stop">ရပ်တန့်လိုက်လျှင် အကြောင်းကြားချက် ဖယ်ရှားရန်</string>
+    <string name="settings_remove_notification_on_stop_desc">ဖွင့်လက်စ ရပ်တန့်လိုက်သည့်အခါ အကြောင်းကြားချက်ကို အလိုအလျောက် ဖယ်ရှားပါ</string>
+    <string name="settings_auto_resume_audio_focus">အသံ ဦးစားပေး ပျောက်ဆုံးပြီးနောက် ပြန်လည်စတင်ရန်</string>
+    <string name="settings_auto_resume_audio_focus_desc">ဖုန်းခေါ်ဆိုမှုများ သို့မဟုတ် နှိုးစက်များ ပြီးဆုံးပြီးနောက် အလိုအလျောက် ပြန်ဖွင့်ပါ</string>
+
+    <string name="settings_backup_restore">နောက်ကြောင်းပြန် သိမ်းဆည်းမှုနှင့် ပြန်လည်ရယူမှု</string>
+    <string name="settings_export_backup">အပြည့်အဝ နောက်ကြောင်းပြန် သိမ်းဆည်းမှု ပြုလုပ်ရန် (ZIP)</string>
+    <string name="settings_export_backup_desc">အကြိုက်ဆုံးများ၊ စိတ်ကြိုက်လိုင်းများနှင့် အိုင်ကွန်အားလုံးကို ZIP ဖိုင်တစ်ခုတည်းတွင် သိမ်းဆည်းပေးသည်</string>
+    <string name="settings_import_backup">နောက်ကြောင်းပြန် သိမ်းဆည်းမှုကို ပြန်လည်ရယူရန် (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP ဖိုင်မှ အကြိုက်ဆုံးများနှင့် စိတ်ကြိုက်လိုင်းများကို ပြန်လည်ရယူပေးသည်</string>
+    <string name="backup_export_success">နောက်ကြောင်းပြန် သိမ်းဆည်းမှု အောင်မြင်ပါသည်</string>
+    <string name="backup_export_error">နောက်ကြောင်းပြန် သိမ်းဆည်းရန် မအောင်မြင်ပါ</string>
+    <string name="backup_import_success">နောက်ကြောင်းပြန် ပြန်လည်ရယူမှု အောင်မြင်ပါသည်</string>
+    <string name="backup_import_error">နောက်ကြောင်းပြန် ပြန်လည်ရယူရန် မအောင်မြင်ပါ</string>
+
+    <string name="database_summary_title">ဒေသတွင်း ဒေတာဘေ့စ်</string>
+    <string name="database_total_stations">စုစုပေါင်း ရေဒီယိုလိုင်းများ</string>
+    <string name="database_last_sync">နောက်ဆုံး အပ်ဒိတ်</string>
+    <string name="database_update_now">ဒေတာဘေ့စ်ကို ယခု အပ်ဒိတ်လုပ်ရန်</string>
+    <string name="database_full_update">ဒေတာဘေ့စ်ကို အပ်ဒိတ်လုပ်ရန်</string>
+    <string name="database_syncing">ချိတ်ဆက် ပြင်ဆင်နေသည်…</string>
+    <string name="database_downloading">ဒေါင်းလုဒ်လုပ်နေသည်…</string>
+    <string name="database_stations_loaded">%1$s ရေဒီယိုလိုင်းများ</string>
+    <string name="database_sync_channel_name">ရေဒီယိုလိုင်း ဒေတာဘေ့စ် ချိတ်ဆက်မှု</string>
+    <string name="database_sync_success">ရေဒီယိုလိုင်း ဒေတာဘေ့စ် အပ်ဒိတ်လုပ်ခြင်း အောင်မြင်ပါသည်</string>
+    <string name="database_error_no_connection">အင်တာနက် ချိတ်ဆက်မှု မရှိပါ</string>
+    <string name="database_error_no_space">ဒစ်ခ်အတွင်း နေရာလွတ် မလုံလောက်ပါ</string>
+    <string name="database_error_failed">ဒေတာဘေ့စ် အပ်ဒိတ်လုပ်ရန် မအောင်မြင်ပါ</string>
+
+    <string name="settings_disable_battery_optimization_desc">မျက်နှာပြင် ပိတ်ထားစဉ်တွင်လည်း သီချင်းဖွင့်နိုင်စေရန် ဘက်ထရီ အသုံးပြုမှုကို \'Unrestricted\' သို့ သတ်မှတ်ပါ။</string>
+    <string name="battery_opt_open_settings">ဆက်တင်များ ဖွင့်ရန်</string>
+    <string name="battery_opt_later">နောက်မှ</string>
 </resources>

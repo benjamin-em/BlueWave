@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Construiește-ți propriul flux de posturi radio</string>
     <string name="filter_empty_desc">Creează o vizualizare personalizată combinând mai multe criterii. Poți restrânge căutarea folosind:</string>
     <string name="filter_empty_filter_by">Filtrează după</string>
-    <string name="filter_empty_filter_desc">Țară, Nume post, Etichete sau Limbă</string>
+    <string name="filter_empty_filter_desc">Țară, Nume post radio, Etichete sau Limbă</string>
     <string name="filter_empty_sort_by">Sortează după</string>
     <string name="filter_empty_sort_desc">Accesări, Alfabet, Voturi sau Ultima modificare</string>
     <string name="filter_empty_hint">Introdu un nume în câmpul de mai sus pentru a salva această vizualizare!</string>
-    <string name="error_station_load">Nu s-a putut conecta la post</string>
-    <string name="error_list_update">Nu s-a putut conecta la serverul radio browser</string>
+    <string name="error_station_load">Nu s-a putut conecta la postul radio</string>
+    <string name="error_list_update">Nu s-a putut conecta la serverul Radio-Browser</string>
 
     <string name="error_no_connection">Nu există nicio conexiune la internet disponibilă</string>
     <string name="warning_volume_zero">Volumul este la zero. S-ar putea să nu auzi nimic.</string>
 
-    <string name="share_action">Partajează link-ul postului cu…</string>
+    <string name="share_action">Partajează link-ul postului radio cu…</string>
 
-    <string name="nav_item_stations">Posturi</string>
+    <string name="nav_item_stations">Posturi radio</string>
     <string name="nav_item_starred">Favorite</string>
     <string name="nav_item_history">Istoric</string>
     <string name="nav_item_settings">Setări</string>
 
-    <string name="about_text">AMARadio este 100% fără reclame și concentrat pe confidențialitate.\n\nInițial am dezvoltat această aplicație pentru mama mea, pentru a-i oferi o experiență radio simplă și onestă, fără reclame enervante sau urmărire. De aceea AMARadio va rămâne mereu fără publicitate – este o promisiune făcută ei, partajată cu voi toți.\n\nAcest proiect este un fork al excelentului https://github.com/segler-alex/RadioDroid . Întregul cod sursă a fost migrat din Java în Kotlin pentru a asigura că aplicația rămâne modernă și compatibilă cu viitoarele versiuni de Android.\n\nCodul sursă este disponibil la: https://github.com/ounben/AMARadio\n\nAceastă aplicație folosește directorul gratuit de posturi radio de la https://www.radio-browser.info .\nOricine poate adăuga posturi în el. Funcționează ca un wiki pentru posturile de radio online.\n\nContact: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nDacă vă place software-ul și doriți să ajutați, nu ezitați să-mi trimiteți un e-mail.\nDe asemenea, ideile pentru funcții noi sunt întotdeauna apreciate!\n\nAceastă aplicație este software liber, licențiat sub GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio este 100% fără reclame și concentrat pe confidențialitate.\n\nInițial am dezvoltat această aplicație pentru mama mea, pentru a-i oferi o experiență radio simplă și onestă, fără reclame enervante sau urmărire. De aceea AMARadio va rămâne mereu fără publicitate – este o promisiune făcută ei, partajată cu voi toți.\n\nAcest proiect este un fork al RadioDroid. Întregul cod sursă a fost migrat din Java în Kotlin pentru a asigura că aplicația rămâne modernă și compatibilă cu viitoarele versiuni de Android.\n\nCodul sursă este disponibil la: https://github.com/ounben/AMARadio\n\nAceastă aplicație folosește directorul gratuit de posturi radio de la https://www.radio-browser.info .\nOricine poate adăuga posturi în el. Funcționează ca un wiki pentru posturile de radio online.\n\nContact: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nDacă vă place software-ul și doriți să ajutați, nu ezitați să-mi trimiteți un e-mail.\nDe asemenea, ideile pentru funcții noi sunt întotdeauna apreciate!\n\nAceastă aplicație este software liber, licențiat sub GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versiune: %1$s</string>
     <string name="detail_star">Adaugă la favorite</string>
     <string name="detail_unstar">Elimină din favorite</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Întunecată</string>
     <string name="theme_system">Urmează sistemul</string>
     <string name="settings_compact_style">Mod compact</string>
-    <string name="settings_compact_style_desc_off">Pictogramă mare cu detaliile postului</string>
-    <string name="settings_compact_style_desc_on">Pictogramă mică fără detaliile postului</string>
+    <string name="settings_compact_style_desc_off">Pictogramă mare cu detaliile postului radio</string>
+    <string name="settings_compact_style_desc_on">Pictogramă mică fără detaliile postului radio</string>
     <string name="settings_bottom_navigation">Navigare jos</string>
     <string name="settings_ui_scale">Scalare interfață</string>
     <string name="settings_language">Limbă</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Etichetele rar utilizate nu vor fi afișate</string>
     <string name="settings_single_use_tags_desc_on">Etichetele rar utilizate vor fi afișate</string>
 
-    <string name="settings_show_broken">Posturi nefuncționale</string>
-    <string name="settings_show_broken_on">Afișează posturile nefuncționale în liste</string>
-    <string name="settings_show_broken_off">Nu afișa posturile nefuncționale în liste</string>
+    <string name="settings_show_broken">Posturi radio nefuncționale</string>
+    <string name="settings_show_broken_on">Afișează posturile radio nefuncționale în liste</string>
+    <string name="settings_show_broken_off">Nu afișa posturile radio nefuncționale în liste</string>
 
     <string name="settings_startup_behaviour">Comportament pornire</string>
     <string name="action_grid_view">Vizualizare grilă</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Acțiune pornire</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Afișează toate posturile</string>
+    <string name="startup_show_all_stations">Afișează toate posturile radio</string>
     <string name="startup_show_favorites">Afișează favoritele</string>
     <string name="startup_show_history">Afișează istoricul</string>
     <string name="startup_show_last_view">Ultima vizualizare</string>
 
-    <string name="settings_load_icons">Afișează pictogramele posturilor</string>
+    <string name="settings_load_icons">Afișează pictogramele posturilor radio</string>
     <string name="settings_load_icons_on">Pictogramele vor fi descărcate</string>
     <string name="settings_load_icons_off">Pictogramele nu vor fi descărcate</string>
 
     <string name="settings_auto_favorite">Auto-favorite</string>
-    <string name="settings_auto_favorite_on">Adaugă posturile automat la favorite în timpul redării</string>
-    <string name="settings_auto_favorite_off">Nu adăuga posturile automat la favorite în timpul redării</string>
+    <string name="settings_auto_favorite_on">Adaugă posturile radio automat la favorite în timpul redării</string>
+    <string name="settings_auto_favorite_off">Nu adăuga posturile radio automat la favorite în timpul redării</string>
 
     <string name="settings_play">Player</string>
     <string name="settings_auto_play_on_startup">Redare automată</string>
-    <string name="settings_auto_play_on_startup_on">Redă ultimul post la pornire</string>
-    <string name="settings_auto_play_on_startup_off">Nu reda ultimul post la pornire</string>
+    <string name="settings_auto_play_on_startup_on">Redă ultimul post radio la pornire</string>
+    <string name="settings_auto_play_on_startup_off">Nu reda ultimul post radio la pornire</string>
     <string name="settings_auto_off_on_startup">Oprire automată</string>
     <string name="settings_auto_off_on_startup_on">Folosește temporizatorul de oprire automată cu redarea automată</string>
     <string name="settings_auto_off_on_startup_off">Nu folosi temporizatorul de oprire automată cu redarea automată</string>
     <string name="settings_auto_off_sleep_timer">Temporizator oprire automată</string>
     <string name="settings_auto_off_sleep_timer_desc">Oprește redarea după %1$s minute</string>
     <string name="settings_play_external">Activează player extern</string>
-    <string name="settings_play_external_desc_on">Redă posturile cu player extern</string>
-    <string name="settings_play_external_desc_off">Redă posturile cu AMARadio</string>
+    <string name="settings_play_external_desc_on">Redă posturile radio cu player extern</string>
+    <string name="settings_play_external_desc_off">Redă posturile radio cu AMARadio</string>
     <string name="settings_equalizer">Egalizator</string>
 
     <string name="settings_connectivity">Conectivitate</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Pauză</string>
     <string name="notify_metered_connection">Conexiune contorizată</string>
 
-    <string name="notify_starred">Postul a fost adăugat la favorite</string>
-    <string name="notify_autostarred">Postul a fost adăugat automat la favorite</string>
-    <string name="notify_unstarred">Postul a fost eliminat din favorite</string>
+    <string name="notify_starred">Postul radio a fost adăugat la favorite</string>
+    <string name="notify_autostarred">Postul radio a fost adăugat automat la favorite</string>
+    <string name="notify_unstarred">Postul radio a fost eliminat din favorite</string>
     <string name="notify_deleted_favorites">Favoritele au fost șterse</string>
     <string name="notify_deleted_history">Istoricul a fost șters</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Vă rugăm să selectați un player</string>
     <string name="alert_select_player_name">Nume</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Port</string>
+    <string name="hostname">Adresă server</string>
+    <string name="port">Port rețea</string>
 
     <string name="alert_press_back_to_exit">Apăsați înapoi încă o dată pentru a ieși</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Redare în player extern</string>
     <string name="action_choose_external_player">Alege player extern</string>
 
-    <string name="settings_disable_battery_optimization">Optimizare baterie</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Optimizarea bateriei este ignorată, AMARadio ar trebui să poată recăpăta focalizarea oricând.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Optimizarea bateriei este activată, AMARadio nu va putea recăpăta focalizarea în fundal.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Redare în fundal</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Altele</string>
     <string name="settings_rate_app">Evaluează AMARadio</string>
     <string name="settings_rate_app_summary">Dacă vă place aplicația, vă rugăm să lăsați o recenzie în Play Store!</string>
+    <string name="settings_rate_app_github">Vă bucurați de AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Lăsați o stea pe GitHub! Îi ajută pe alții să descopere aplicația și sprijină dezvoltarea viitoare.</string>
     <string name="settings_statistics">Statistici</string>
     <string name="settings_about">Despre AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logoul postului</string>
+    <string name="accessibility_station_logo">Logoul postului radio</string>
     <string name="accessibility_favorite_selected">Favorit, selectat</string>
     <string name="accessibility_favorite_not_selected">Favorit, neselectat</string>
     <string name="accessibility_category_icon">Pictogramă categorie</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Configurare</string>
     <string name="accessibility_close">Închide</string>
     <string name="accessibility_add_filter">Adaugă filtru</string>
-    <string name="accessibility_station_options">Opțiuni post</string>
-    <string name="not_applicable">n/a</string>
+    <string name="accessibility_station_options">Opțiuni post radio</string>
+    <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Post: %1$s, Limbă: %2$s, Etichete: %3$s</string>
 
     <string name="error_no_file_manager">Nu s-a putut găsi un manager de fișiere de sistem. Asigurați-vă că este instalat și activat un explorator de fișiere.</string>
     <string name="error_no_browser">Nu s-a putut găsi un browser web. Vă rugăm să instalați un browser pentru a deschide acest link.</string>
-    <string name="error_no_homepage">Nicio pagină de pornire disponibilă pentru această stație</string>
-    <string name="tab_custom_stations">Personalizat</string>
-    <string name="action_add_custom">Adăugați stație personalizată</string>
-    <string name="station_name">Numele stației</string>
+    <string name="error_no_homepage">Nicio pagină de pornire disponibilă pentru acest post radio</string>
+    <string name="tab_custom_stations">Personalizate</string>
+    <string name="action_add_custom">Adăugați post radio personalizat</string>
+    <string name="station_name">Numele postului radio</string>
     <string name="stream_url">Adresa URL a fluxului</string>
-    <string name="favicon_url">Adresa URL a faviconului (opțional)</string>
+    <string name="favicon_url">URL logo post (Favicon)</string>
     <string name="select_image">Selectați Imagine</string>
     <string name="error_invalid_url">Vă rugăm să introduceți o adresă URL validă</string>
-    <string name="action_save">Salva</string>
+    <string name="action_save">Salvează</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Comenzi rapide ale jucătorului</string>
-    <string name="widget_description_full">Lista de jucători și posturi</string>
+    <string name="widget_description_small">Comenzi rapide ale playerului</string>
+    <string name="widget_description_full">Player și listă de posturi radio</string>
 
     <string name="settings_auto_db_update">Sincronizarea datelor de fundal</string>
-    <string name="settings_auto_db_update_desc">Actualizare automată a bazei de date a stației prin API-ul Radio-Browser (recomandat).</string>
-    <string name="settings_station_click_counter">Contor de clicuri ale stației</string>
-    <string name="settings_station_click_counter_desc">Sprijină statisticile Radio-Browser prin partajarea anonimă a evenimentelor de joc.</string>
-    <string name="settings_rate_app_github">Vă bucurați de AMRadio?</string>
-    <string name="settings_rate_app_github_summary">Lăsați o stea pe GitHub! Îi ajută pe alții să descopere aplicația și sprijină dezvoltarea viitoare.</string>
+    <string name="settings_auto_db_update_desc">Actualizare automată a bazei de date a posturilor radio prin API-ul Radio-Browser (recomandat).</string>
+    <string name="settings_station_click_counter">Contor de clicuri ale postului radio</string>
+    <string name="settings_station_click_counter_desc">Sprijină statisticile Radio-Browser prin partajarea anonimă a evenimentelor de redare.</string>
 
-    <string name="settings_remove_notification_on_stop">Eliminați notificarea când aplicația este închisă</string>
-    <string name="settings_remove_notification_on_stop_desc">Închideți automat notificarea media când aplicația este închisă din aplicațiile recente</string>
+    <string name="settings_remove_notification_on_stop">Eliminați notificarea la oprire</string>
+    <string name="settings_remove_notification_on_stop_desc">Închideți automat notificarea media când redarea este oprită</string>
     <string name="settings_auto_resume_audio_focus">Reluați după pierderea focalizării audio</string>
     <string name="settings_auto_resume_audio_focus_desc">Reluați automat redarea după apeluri telefonice, alarme sau alte opriri audio</string>
+
+    <string name="settings_backup_restore">Copiere de rezervă și restaurare</string>
+    <string name="settings_export_backup">Creează copie de rezervă completă (ZIP)</string>
+    <string name="settings_export_backup_desc">Salvează toate favoritele, posturile personalizate și pictogramele într-un fișier ZIP</string>
+    <string name="settings_import_backup">Restaurează copia de rezervă (ZIP)</string>
+    <string name="settings_import_backup_desc">Restaurează favoritele și posturile personalizate dintr-un fișier de rezervă ZIP</string>
+    <string name="backup_export_success">Copia de rezervă a fost salvată cu succes</string>
+    <string name="backup_export_error">Salvarea copiei de rezervă a eșuat</string>
+    <string name="backup_import_success">Copia de rezervă a fost restaurată cu succes</string>
+    <string name="backup_import_error">Restaurarea copiei de rezervă a eșuat</string>
+
+    <string name="database_summary_title">Bază de date locală</string>
+    <string name="database_total_stations">Total posturi radio</string>
+    <string name="database_last_sync">Ultima actualizare</string>
+    <string name="database_update_now">Actualizează baza de date acum</string>
+    <string name="database_full_update">Actualizează baza de date</string>
+    <string name="database_syncing">Se sincronizează…</string>
+    <string name="database_downloading">Se descarcă…</string>
+    <string name="database_stations_loaded">%1$s posturi radio</string>
+    <string name="database_sync_channel_name">Sincronizarea bazei de date a posturilor radio</string>
+    <string name="database_sync_success">Actualizarea bazei de date a fost finalizată cu succes</string>
+    <string name="database_error_no_connection">Fără conexiune la internet</string>
+    <string name="database_error_no_space">Spațiu insuficient pe disc</string>
+    <string name="database_error_failed">Actualizarea bazei de date a eșuat</string>
+
+    <string name="settings_disable_battery_optimization_desc">Pentru a continua redarea când ecranul este oprit, setați utilizarea bateriei la \'Fără restricții\'.</string>
+    <string name="battery_opt_open_settings">Deschide setările</string>
+    <string name="battery_opt_later">Mai târziu</string>
 </resources>

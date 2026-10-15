@@ -3,7 +3,7 @@
   <string name="detail_name">Navn</string>
   <string name="detail_tags">Merkelapper</string>
   <string name="detail_country">Land</string>
-  <string name="detail_create_shortcut">Legg til på startskærmen</string>
+  <string name="detail_create_shortcut">Legg til på startskjermen</string>
   <string name="detail_language">Språk</string>
   <string name="detail_weblink">Hyperlenke</string>
   <string name="detail_visit_website">@string/action_station_visit_website</string>
@@ -49,27 +49,27 @@
   <string name="action_rename_tab">Gi nytt navn til fanen</string>
   <string name="error_filter_name_required">Vennligst skriv inn et navn for denne filterfanen først</string>
   <string name="confirm_delete_filter_tab">Er du sikker på at du vil slette filteret \"%1$s\"?</string>
-  <string name="filter_empty_title">Bygg din egen kanal-strøm</string>
+  <string name="filter_empty_title">Bygg din egen radiokanal-strøm</string>
   <string name="filter_empty_desc">Lag en personlig visning ved å kombinere flere kriterier. Du kan begrense søket ved hjelp av:</string>
   <string name="filter_empty_filter_by">Filtrer etter</string>
   <string name="filter_empty_filter_desc">Land, kanalnavn, merkelapper eller språk</string>
   <string name="filter_empty_sort_by">Sorter etter</string>
-  <string name="filter_empty_sort_desc">Klikk, Alfabet, Stemmer oder Siste endring</string>
+  <string name="filter_empty_sort_desc">Klikk, Alfabet, Stemmer eller Siste endring</string>
   <string name="filter_empty_hint">Skriv et navn i feltet over for å lagre denne tilpassede visningen!</string>
-  <string name="error_station_load">Klarte ikke koble til kanalen</string>
-  <string name="error_list_update">Klarte nicht koble til radio-browser-serveren</string>
+  <string name="error_station_load">Klarte ikke koble til radiokanalen</string>
+  <string name="error_list_update">Klarte ikke koble til Radio-Browser-serveren</string>
 
   <string name="error_no_connection">Ingen internettilkobling tilgjengelig.</string>
   <string name="warning_volume_zero">Volumet er på null. Det kan hende du ikke hører noe.</string>
 
   <string name="share_action">Del kanallenke med&#8230;</string>
 
-  <string name="nav_item_stations">Kanaler</string>
+  <string name="nav_item_stations">Radiokanaler</string>
   <string name="nav_item_starred">Favoritter</string>
   <string name="nav_item_history">Historikk</string>
   <string name="nav_item_settings">Innstillinger</string>
 
-  <string name="about_text">AMARadio er 100% reklamefri og personvernfokusert.\n\nJeg utviklet opprinnelig denne appen for moren min for å gi henne en enkel, ærlig radioopplevelse uten irriterende reklame eller sporing. Det er derfor AMARadio alltid vil forbli reklamefri – det er et løfte til henne, delt med dere alle.\n\nDette prosjektet er en fork av den utmerkede RadioDroid. Hele kodebasen har blitt migrert fra Java til Kotlin for å sikre at appen forblir moderne og kompatibel med fremtidige Android-versjoner.\n\nKildekoden er tilgjengelig på: https://github.com/ounben/AMARadio\n\nDenne appen bruker radiokanaloversikten til https://www.radio-browser.info .\nAlle kan legge til nye radiokanaler. Nettsiden fungerer som en wiki om nettbaserte radiokanaler.\n\nKontakt: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nHvis du liker appen og ønsker å hjelpe til, ta gjerne kontakt med meg på e-post.\nForslag til nye funksjoner blir også satt pris på!\n\nDenne appen er fri programvare tilgjengelig under GPLv3-lisensen. https://www.gnu.org/licenses/gpl-3.0.html</string>
+  <string name="about_text">AMARadio er 100% reklamefri og personvernfokusert.\n\nJeg utviklet opprinnelig denne appen for moren min for å gi henne en enkel, ærlig radioopplevelse uten irriterende reklame eller sporing. Det er derfor AMARadio alltid vil forbli reklamefri – det er et løfte til henne, delt med dere alle.\n\nDette prosjektet er en fork av RadioDroid. Hele kodebasen har blitt migrert fra Java til Kotlin for å sikre at appen forblir moderne og kompatibel med fremtidige Android-versjoner.\n\nKildekoden er tilgjengelig på: https://github.com/ounben/AMARadio\n\nDenne appen bruker radiokanaloversikten til https://www.radio-browser.info .\nAlle kan legge til nye radiokanaler. Nettsiden fungerer som en wiki om nettbaserte radiokanaler.\n\nKontakt: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nHvis du liker appen og ønsker å hjelpe til, ta gjerne kontakt med meg på e-post.\nForslag til nye funksjoner blir også satt pris på!\n\nDenne appen er fri programvare tilgjengelig under GPLv3-lisensen. https://www.gnu.org/licenses/gpl-3.0.html</string>
   <string name="about_version">Versjon: %1$s</string>
   <string name="detail_star">Legg til som favoritt</string>
   <string name="detail_unstar">Fjern fra favoritter</string>
@@ -108,8 +108,8 @@
   <string name="theme_dark">Mørkt</string>
   <string name="theme_system">Følg systemet</string>
   <string name="settings_compact_style">Kompakt visning</string>
-  <string name="settings_compact_style_desc_off">Store ikoner med kanaldetaljer</string>
-  <string name="settings_compact_style_desc_on">Små ikoner uten kanaldetaljer</string>
+  <string name="settings_compact_style_desc_off">Store ikoner med radiokanaldetaljer</string>
+  <string name="settings_compact_style_desc_on">Små ikoner uten radiokanaldetaljer</string>
   <string name="settings_bottom_navigation">Navigering nederst</string>
   <string name="settings_ui_scale">UI-skalering</string>
   <string name="settings_language">Språk</string>
@@ -122,11 +122,11 @@
   <string name="settings_single_use_tags">Vis sjeldne tagger</string>
   <string name="settings_single_use_tags_desc_off">Sjeldne tagger blir ikke vist</string>
   <string name="settings_single_use_tags_desc_on">Sjeldne tagger blir vist</string>
-  
+
   <string name="settings_show_broken">Kanaler med brutte koblinger</string>
   <string name="settings_show_broken_on">Vis kanaler med brutte koblinger i lister</string>
   <string name="settings_show_broken_off">Ikke vis kanaler med brutte koblinger i lister</string>
-  
+
   <string name="settings_startup_behaviour">Oppførsel ved oppstart</string>
   <string name="action_grid_view">Rutenettvisning</string>
   <string name="action_list_view">Listevisning</string>
@@ -137,11 +137,11 @@
   <string name="startup_show_favorites">Vis favoritter</string>
   <string name="startup_show_history">Vis historikk</string>
   <string name="startup_show_last_view">Siste visning</string>
-  
+
   <string name="settings_load_icons">Vis kanalikoner</string>
   <string name="settings_load_icons_on">Kanalikoner blir lastet ned</string>
   <string name="settings_load_icons_off">Kanalikoner blir ikke lastet ned</string>
-  
+
   <string name="settings_auto_favorite">Auto-favoritter</string>
   <string name="settings_auto_favorite_on">Legg til kanaler automatisk som favoritter ved avspilling</string>
   <string name="settings_auto_favorite_off">Ikke legg til kanaler automatisk som favoritter ved avspilling</string>
@@ -159,7 +159,7 @@
   <string name="settings_play_external_desc_on">Spill kanaler i ekstern avspiller</string>
   <string name="settings_play_external_desc_off">Spill kanaler i AMARadio</string>
   <string name="settings_equalizer">Equalizer</string>
-  
+
   <string name="settings_connectivity">Tilkobling</string>
   <string name="settings_connect_timeout">Tidsavbrudd ved tilkobling</string>
   <string name="settings_read_timeout">Tidsavbrudd ved lesing</string>
@@ -176,7 +176,7 @@
   <string name="ignore_proxy_settings_invalid">Ignorer ugyldige proxyinnstillinger</string>
   <string name="settings_seconds_format">%d sekunder</string>
   <string name="settings_milliseconds_format">%d millisekunder</string>
-  
+
   <string name="settings_pause_when_noisy">Pause når hodetelefoner kobles fra</string>
 
   <string name="settings_auto_resume_do_not_resume">Ikke gjenoppta</string>
@@ -186,7 +186,7 @@
 
   <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Gjenoppta ved Bluetooth tilkobling</string>
   <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Gjenoppta avspilling ved tilkobling av Bluetooth A2DP enheter</string>
-  
+
   <string name="settings_auto_resume_on_any_connected">Gjenoppta ved enhver tilkobling</string>
 
   <string name="settings_warn_no_wifi">Vis advarsel når ikke tilkoblet wifi</string>
@@ -197,15 +197,15 @@
   <string name="notify_play">Spiller av</string>
   <string name="notify_paused">Pause</string>
   <string name="notify_metered_connection">Forbruksmålt tilkobling</string>
-	  
+
   <string name="notify_starred">Kanalen er lagt til favoritter</string>
   <string name="notify_autostarred">Kanalen er automatisk lagt til i favoritter</string>
   <string name="notify_unstarred">Kanalen er fjernet fra favoritter</string>
   <string name="notify_deleted_favorites">Favorittene er slettet</string>
   <string name="notify_deleted_history">Historikken er tømt</string>
-  
+
   <string name="notify_open_link_failure">App for å åpne lenken ikke funnet</string>
-  
+
   <string name="notify_station_removed_from_list">1 fjernet</string>
   <string name="action_station_removed_from_list_undo">ANGRE</string>
 
@@ -213,25 +213,25 @@
   <string name="alert_delete_favorites">Slette favorittene?</string>
   <string name="yes">Ja</string>
   <string name="no">Nei</string>
-  
+
   <string name="alert_select_player">Vennligst velg en spiller</string>
   <string name="alert_select_player_name">Navn</string>
-  <string name="hostname">Vertsnavn</string>
-  <string name="port">Port</string>
+  <string name="hostname">Serveradresse</string>
+  <string name="port">Nettverksport</string>
 
   <string name="alert_press_back_to_exit">Trykk «Tilbake» igjen for å avslutte</string>
-  
+
   <string name="error_stream_url">Feil på strømming-adresse</string>
   <string name="error_caching_stream">Feil ved bufring av radiostrøm</string>
   <string name="error_play_stream">Kan ikke spille av radiostøm</string>
   <string name="error_stream_reconnect_timeout">Kan ikke koble til radiostrøm på nytt: tidsavbrudd</string>
   <string name="warning_no_network_trying_resume">Nettverk mangler. Gjenoppta når enheten er tilkoblet igjen.</string>
   <string name="giving_up_resume">Gir opp forsøk på å gjenoppta avspilling</string>
-	
+
   <string name="error_grant_audiofocus">Forespørsel om lydfokus ble avvist av systemet</string>
-  
+
   <string name="error_no_equalizer_found">Fant ingen equalizer app</string>
-  
+
   <string name="player_info_status">Status:&#160;</string>
   <string name="player_info_status_stopped">stoppet</string>
   <string name="player_info_status_playing">spiller av</string>
@@ -244,7 +244,7 @@
   <string name="station_detail_bitrate">%1$1d kbps</string>
   <string name="station_detail_broken">BRUTT</string>
   <string name="station_detail_deleted_on_server">SLETTET</string>
-	  
+
   <string name="station_details_clicks">%1$d klikk</string>
   <string name="station_details_votes">%1$d stemmer</string>
 
@@ -257,23 +257,23 @@
   <string name="icon_click_trend_decreasing">Minkende popularitet</string>
   <string name="icon_click_trend_increasing">Økende popularitet</string>
   <string name="icon_click_trend_stable">Stabil popularitet</string>
-  
+
   <string name="app_name">AMARadio</string>
   <string name="ad_free_promise">100% reklamefri &amp; privat</string>
 
   <string name="action_play_in_external">Spill av i ekstern avspiller</string>
   <string name="action_choose_external_player">Velg ekstern avspiller</string>
 
-  <string name="settings_disable_battery_optimization">Batterioptimalisering</string>
-  <string name="settings_ignore_battery_optimization_summary_on">Batterioptimalisering ignoreres, AMARadio bør alltid kunne gjenvinne fokus.</string>
-  <string name="settings_ignore_battery_optimization_summary_off">Batterioptimalisering er aktivert, AMARadio kan kanskje ikke gjenvinne fokus i bakgrunnen.</string>
-  <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+  <string name="settings_disable_battery_optimization">Bakgrunnsavspilling</string>
+  <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
   <string name="settings_other">Annet</string>
   <string name="settings_rate_app">Vurder AMARadio</string>
   <string name="settings_rate_app_summary">Hvis du liker appen, vennligst legg igjen en anmeldelse i Play Store!</string>
+  <string name="settings_rate_app_github">Liker du AMARadio?</string>
+  <string name="settings_rate_app_github_summary">Legg igjen en stjerne på GitHub! Det hjelper andre med å oppdage appen og støtter fremtidig utvikling.</string>
   <string name="settings_statistics">Statistikk</string>
   <string name="settings_about">Om AMARadio</string>
-  
+
   <string name="description_btn_skip_to_next">Hopp til neste</string>
   <string name="description_btn_skip_to_previous">Hopp til forrige</string>
 
@@ -286,10 +286,10 @@
     <item>F</item>
     <item>L</item>
   </string-array>
-  
+
   <string name="notify_stream_url_copied">Adressen til radiostrømmen kopiert</string>
   <string name="notify_track_info_copied">Sporinfo kopiert</string>
-  
+
   <string-array name="actions_station_link">
         <item>Besøk nettside</item>
         <item>Kopier adressen til radiostrømmen</item>
@@ -323,10 +323,6 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Reservealarm</string>
-    <string name="alarm_fallback_info">Systemalarm valgt siden den valgte radiostasjonen ikke kunne lastes inn</string>
-    <string name="alarm_back_desc">Alternativ systemalarm valgt når radiostasjonen ikke lastes inn</string>
-
     <!-- Accessibility -->
     <string name="accessibility_station_logo">Stasjonslogo</string>
     <string name="accessibility_favorite_selected">Favoritt, valgt</string>
@@ -347,29 +343,55 @@
 
     <string name="error_no_file_manager">Kunne ikke finne en systemfilbehandling. Sørg for at en filutforsker er installert og aktivert.</string>
     <string name="error_no_browser">Kunne ikke finne en nettleser. Installer en nettleser for å åpne denne linken.</string>
-    <string name="error_no_homepage">Ingen hjemmeside tilgjengelig for denne stasjonen</string>
-    <string name="tab_custom_stations">Skikk</string>
-    <string name="action_add_custom">Legg til Custom Station</string>
-    <string name="station_name">Stasjonsnavn</string>
+    <string name="error_no_homepage">Ingen hjemmeside tilgjengelig for denne radiokanalen</string>
+    <string name="tab_custom_stations">Egendefinert</string>
+    <string name="action_add_custom">Legg til egendefinert radiokanal</string>
+    <string name="station_name">Radiokanalnavn</string>
     <string name="stream_url">Strøm URL</string>
-    <string name="favicon_url">Favorittikon-URL (valgfritt)</string>
+    <string name="favicon_url">Kanallogo-URL (Favicon)</string>
     <string name="select_image">Velg Bilde</string>
     <string name="error_invalid_url">Vennligst skriv inn en gyldig URL</string>
-    <string name="action_save">Spare</string>
+    <string name="action_save">Lagre</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Raske spillerkontroller</string>
-    <string name="widget_description_full">Spiller og stasjonsliste</string>
+    <string name="widget_description_small">Raske avspillerkontroller</string>
+    <string name="widget_description_full">Radioavspiller og kanalliste</string>
 
     <string name="settings_auto_db_update">Bakgrunnsdatasynkronisering</string>
     <string name="settings_auto_db_update_desc">Automatisk oppdatering av stasjonsdatabase via Radio-Browser API (anbefalt).</string>
     <string name="settings_station_click_counter">Stasjonsklikketeller</string>
-    <string name="settings_station_click_counter_desc">Støtt Radio-Browser-statistikk ved anonymt å dele spillbegivenheter.</string>
-    <string name="settings_rate_app_github">Liker du AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Legg igjen en stjerne på GitHub! Det hjelper andre med å oppdage appen og støtter fremtidig utvikling.</string>
+    <string name="settings_station_click_counter_desc">Støtt Radio-Browser-statistikk ved anonymt å dele avspillingshendelser.</string>
 
-    <string name="settings_remove_notification_on_stop">Fjern varsel når appen er stengt</string>
-    <string name="settings_remove_notification_on_stop_desc">Avvis automatisk medievarslingen når appen er stengt fra nylige apper</string>
+    <string name="settings_remove_notification_on_stop">Fjern varsel ved stopp</string>
+    <string name="settings_remove_notification_on_stop_desc">Fjern medievarslingen automatisk når avspillingen stoppes</string>
     <string name="settings_auto_resume_audio_focus">Fortsett etter tap av lydfokus</string>
     <string name="settings_auto_resume_audio_focus_desc">Gjenoppta avspillingen automatisk etter telefonsamtaler, alarmer eller annen lydstopp</string>
+
+    <string name="settings_backup_restore">Sikkerhetskopiering og gjenoppretting</string>
+    <string name="settings_export_backup">Opprett fullstendig sikkerhetskopi (ZIP)</string>
+    <string name="settings_export_backup_desc">Lagrer alle favoritter, egendefinerte kanaler og ikoner i en ZIP-fil</string>
+    <string name="settings_import_backup">Gjenopprett sikkerhetskopi (ZIP)</string>
+    <string name="settings_import_backup_desc">Gjenoppretter favoritter og egendefinerte kanaler fra en ZIP-sikkerhetskopifil</string>
+    <string name="backup_export_success">Sikkerhetskopi lagret</string>
+    <string name="backup_export_error">Kunne ikke lagre sikkerhetskopi</string>
+    <string name="backup_import_success">Sikkerhetskopi gjenopprettet</string>
+    <string name="backup_import_error">Kunne ikke gjenopprette sikkerhetskopi</string>
+
+    <string name="database_summary_title">Lokal database</string>
+    <string name="database_total_stations">Radiokanaler totalt</string>
+    <string name="database_last_sync">Siste oppdatering</string>
+    <string name="database_update_now">Oppdater databasen nå</string>
+    <string name="database_full_update">Oppdater databasen</string>
+    <string name="database_syncing">Synkroniserer…</string>
+    <string name="database_downloading">Laster ned…</string>
+    <string name="database_stations_loaded">%1$s radiokanaler</string>
+    <string name="database_sync_channel_name">Synkronisering av radiokanal-database</string>
+    <string name="database_sync_success">Kanal-database oppdatert</string>
+    <string name="database_error_no_connection">Ingen internettilkobling</string>
+    <string name="database_error_no_space">Ikke nok diskplass</string>
+    <string name="database_error_failed">Oppdatering av databasen mislyktes</string>
+
+    <string name="settings_disable_battery_optimization_desc">For å fortsette avspillingen når skjermen er slått av, sett batteribruken til \'Ubegrenset\'.</string>
+    <string name="battery_opt_open_settings">Åpne innstillinger</string>
+    <string name="battery_opt_later">Senere</string>
 </resources>

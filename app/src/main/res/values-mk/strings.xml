@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Направете свој прилагоден радио извор</string>
     <string name="filter_empty_desc">Креирајте персонализиран приказ со комбинирање на повеќе критериуми. Можете да го стесните пребарувањето користејќи:</string>
     <string name="filter_empty_filter_by">Филтрирај по</string>
-    <string name="filter_empty_filter_desc">Земја, Име на станица, Тагови или Јазик</string>
+    <string name="filter_empty_filter_desc">Земја, Име на радио станица, Тагови или Јазик</string>
     <string name="filter_empty_sort_by">Сортирај по</string>
     <string name="filter_empty_sort_desc">Кликови, Алфабет, Гласови или Последна промена</string>
     <string name="filter_empty_hint">Внесете име во полето погоре за да го зачувате овој приказ!</string>
-    <string name="error_station_load">Не може да се поврзе со станицата</string>
-    <string name="error_list_update">Не може да се поврзе со радио прелистувачот</string>
+    <string name="error_station_load">Не може да се поврзе со радио станицата</string>
+    <string name="error_list_update">Не може да се поврзе со Radio-Browser серверот</string>
 
     <string name="error_no_connection">Нема достапна интернет-врска.</string>
     <string name="warning_volume_zero">Јачината на звукот е нула. Можеби нема да слушнете ништо.</string>
 
-    <string name="share_action">Сподели врска до станицата преку…</string>
+    <string name="share_action">Сподели врска до радио станицата преку…</string>
 
-    <string name="nav_item_stations">Станици</string>
+    <string name="nav_item_stations">Радио станици</string>
     <string name="nav_item_starred">Омилени</string>
     <string name="nav_item_history">Историја</string>
     <string name="nav_item_settings">Поставки</string>
 
-    <string name="about_text">AMARadio е 100% без реклами и фокусиран на приватноста.\n\nПрвично ја развив оваа апликација за мојата мајка за да ѝ овозможам едноставно, искрено радио искуство без досадни реклами или следење. Затоа AMARadio секогаш ќе остане без реклами – тоа е ветување кон неа, споделено со сите вас.\n\nОвој проект е форк на одличниот https://github.com/segler-alex/RadioDroid . Целиот изворен код е префрлен од Java на Kotlin за да се осигура дека апликацијата останува модерна и компатибилна со идните верзии на Android.\n\nИзворниот код е достапен на: https://github.com/ounben/AMARadio\n\nОваа апликација го користи бесплатниот директориум за радио станици на https://www.radio-browser.info .\nСекој може да додава станици во него. Функционира како вики за онлајн радио станици.\n\nКонтакт: ben@ounben.com\n\nСледење грешки: https://github.com/ounben/AMARadio/issues\n\nАко ви се допаѓа софтверот и сакате да помогнете, слободно испратете ми е-пошта.\nИсто така, идеите за нови функции се секогаш добредојдени!\n\nОваа апликација е слободен софтвер, лиценциран под GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio е 100% без реклами и фокусиран на приватноста.\n\nПрвично ја развив оваа апликација за мојата мајка за да ѝ овозможам едноставно, искрено радио искуство без досадни реклами или следење. Затоа AMARadio секогаш ќе остане без реклами – тоа е ветување кон неа, споделено со сите вас.\n\nОвој проект е форк на RadioDroid. Целиот изворен код е префрлен од Java на Kotlin за да се осигура дека апликацијата останува модерна и компатибилна со идните верзии на Android.\n\nИзворниот код е достапен на: https://github.com/ounben/AMARadio\n\nОваа апликација го користи бесплатниот директориум за радио станици на https://www.radio-browser.info .\nСекој може да додава станици во него. Функционира како вики за онлајн радио станици.\n\nКонтакт: ben@ounben.com\n\nСледење грешки: https://github.com/ounben/AMARadio/issues\n\nАко ви се допаѓа софтверот и сакате да помогнете, слободно испратете ми е-пошта.\nИсто така, идеите за нови функции се секогаш добредојдени!\n\nОваа апликација е слободен софтвер, лиценциран под GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Верзија: %1$s</string>
     <string name="detail_star">Додај во омилени</string>
     <string name="detail_unstar">Отстрани од омилени</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Темна</string>
     <string name="theme_system">Следи го системот</string>
     <string name="settings_compact_style">Компактен режим</string>
-    <string name="settings_compact_style_desc_off">Голема икона со детали за станицата</string>
-    <string name="settings_compact_style_desc_on">Мала икона без детали за станицата</string>
+    <string name="settings_compact_style_desc_off">Голема икона со детали за радио станицата</string>
+    <string name="settings_compact_style_desc_on">Мала икона без детали за радио станицата</string>
     <string name="settings_bottom_navigation">Долна навигација</string>
     <string name="settings_ui_scale">Скалирање на интерфејсот</string>
     <string name="settings_language">Јазик</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Ретко користените тагови нема да се прикажуваат</string>
     <string name="settings_single_use_tags_desc_on">Ретко користените тагови ќе се прикажуваат</string>
 
-    <string name="settings_show_broken">Расипани станици</string>
-    <string name="settings_show_broken_on">Прикажи ги расипаните станици во листите</string>
-    <string name="settings_show_broken_off">Не ги прикажувај расипаните станици во листите</string>
+    <string name="settings_show_broken">Расипани радио станици</string>
+    <string name="settings_show_broken_on">Прикажи ги расипаните радио станици во листите</string>
+    <string name="settings_show_broken_off">Не ги прикажувај расипаните радио станици во листите</string>
 
     <string name="settings_startup_behaviour">Однесување при стартување</string>
     <string name="action_grid_view">Приказ на мрежа</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Акција при стартување</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Прикажи ги сите станици</string>
+    <string name="startup_show_all_stations">Прикажи ги сите радио станици</string>
     <string name="startup_show_favorites">Прикажи ги омилените</string>
     <string name="startup_show_history">Прикажи ја историјата</string>
     <string name="startup_show_last_view">Последен приказ</string>
 
-    <string name="settings_load_icons">Прикажи икони на станиците</string>
+    <string name="settings_load_icons">Прикажи икони на радио станиците</string>
     <string name="settings_load_icons_on">Иконите ќе се преземаат</string>
     <string name="settings_load_icons_off">Иконите нема да се преземаат</string>
 
     <string name="settings_auto_favorite">Авто-омилени</string>
-    <string name="settings_auto_favorite_on">Автоматски додавај ги станиците во омилени при слушање</string>
-    <string name="settings_auto_favorite_off">Не ги додавај станиците автоматски во омилени при слушање</string>
+    <string name="settings_auto_favorite_on">Автоматски додавај ги радио станиците во омилени при слушање</string>
+    <string name="settings_auto_favorite_off">Не ги додавај радио станиците автоматски во омилени при слушање</string>
 
     <string name="settings_play">Плеер</string>
     <string name="settings_auto_play_on_startup">Авто-репродукција</string>
-    <string name="settings_auto_play_on_startup_on">Пушти ја последната станица при стартување</string>
-    <string name="settings_auto_play_on_startup_off">Не ја пуштај последната станица при стартување</string>
+    <string name="settings_auto_play_on_startup_on">Пушти ја последната радио станица при стартување</string>
+    <string name="settings_auto_play_on_startup_off">Не ја пуштај последната радио станица при стартување</string>
     <string name="settings_auto_off_on_startup">Авто-стоп</string>
     <string name="settings_auto_off_on_startup_on">Користи тајмер за авто-стоп со авто-репродукција</string>
     <string name="settings_auto_off_on_startup_off">Не користи тајмер за авто-стоп со авто-репродукција</string>
     <string name="settings_auto_off_sleep_timer">Тајмер за авто-стоп</string>
     <string name="settings_auto_off_sleep_timer_desc">Запри ја репродукцијата по %1$s минути</string>
     <string name="settings_play_external">Овозможи надворешен плеер</string>
-    <string name="settings_play_external_desc_on">Пуштај ги станиците со надворешен плеер</string>
-    <string name="settings_play_external_desc_off">Пуштај ги станиците со AMARadio</string>
+    <string name="settings_play_external_desc_on">Пуштај ги радио станиците со надворешен плеер</string>
+    <string name="settings_play_external_desc_off">Пуштај ги радио станиците со AMARadio</string>
     <string name="settings_equalizer">Еквилајзер</string>
 
     <string name="settings_connectivity">Поврзување</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Паузирано</string>
     <string name="notify_metered_connection">Мерена врска</string>
 
-    <string name="notify_starred">Станицата е додадена во омилени</string>
-    <string name="notify_autostarred">Станицата е автоматски додадена во омилени</string>
-    <string name="notify_unstarred">Станицата е отстранета од омилени</string>
+    <string name="notify_starred">Радио станицата е додадена во омилени</string>
+    <string name="notify_autostarred">Радио станицата е автоматски додадена во омилени</string>
+    <string name="notify_unstarred">Радио станицата е отстранета од омилени</string>
     <string name="notify_deleted_favorites">Омилените се избришани</string>
     <string name="notify_deleted_history">Историјата е избришана</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Ве молиме изберете плеер</string>
     <string name="alert_select_player_name">Име</string>
-    <string name="hostname">Хост име</string>
-    <string name="port">Порта</string>
+    <string name="hostname">Адреса на серверот</string>
+    <string name="port">Мрежна порта</string>
 
     <string name="alert_press_back_to_exit">Притиснете назад уште еднаш за излез</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Пушти во надворешен плеер</string>
     <string name="action_choose_external_player">Избери надворешен плеер</string>
 
-    <string name="settings_disable_battery_optimization">Оптимизација на батеријата</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Оптимизацијата на батеријата е игнорирана, AMARadio секогаш треба да може повторно да добие фокус.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Оптимизацијата на батеријата е активирана, AMARadio нема да може да добие фокус ако е во позадина.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Репродукција во заднина</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Друго</string>
     <string name="settings_rate_app">Оценете го AMARadio</string>
     <string name="settings_rate_app_summary">Ако ви се допаѓа апликацијата, ве молиме оставете преглед во Play Store!</string>
+    <string name="settings_rate_app_github">Уживате во AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Оставете ѕвезда на GitHub! Им помага на другите да ја откријат апликацијата и го поддржува идниот развој.</string>
     <string name="settings_statistics">Статистика</string>
     <string name="settings_about">За AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Лого на станицата</string>
+    <string name="accessibility_station_logo">Лого на радио станицата</string>
     <string name="accessibility_favorite_selected">Омилено, избрано</string>
     <string name="accessibility_favorite_not_selected">Омилено, неизбрано</string>
     <string name="accessibility_category_icon">Икона на категорија</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Конфигурирај</string>
     <string name="accessibility_close">Затвори</string>
     <string name="accessibility_add_filter">Додај филтер</string>
-    <string name="accessibility_station_options">Опции на станицата</string>
+    <string name="accessibility_station_options">Опции на радио станицата</string>
     <string name="not_applicable">н/п</string>
     <string name="accessibility_station_description">Станица: %1$s, Јазик: %2$s, Тагови: %3$s</string>
 
     <string name="error_no_file_manager">Не може да се најде системски управувач со датотеки. Проверете дали е инсталиран и овозможен истражувач на датотеки.</string>
     <string name="error_no_browser">Не можев да најдам веб-прелистувач. Инсталирајте прелистувач за да ја отворите оваа врска.</string>
-    <string name="error_no_homepage">Нема достапна почетна страница за оваа станица</string>
-    <string name="tab_custom_stations">Прилагодено</string>
-    <string name="action_add_custom">Додајте прилагодена станица</string>
-    <string name="station_name">Име на станицата</string>
+    <string name="error_no_homepage">Нема достапна почетна страница за оваа радио станица</string>
+    <string name="tab_custom_stations">Прилагодени</string>
+    <string name="action_add_custom">Додај прилагодена радио станица</string>
+    <string name="station_name">Име на радио станицата</string>
     <string name="stream_url">URL-адреса за пренос</string>
-    <string name="favicon_url">URL на фавикон (изборно)</string>
+    <string name="favicon_url">URL на лого на станицата (Favicon)</string>
     <string name="select_image">Изберете Слика</string>
     <string name="error_invalid_url">Ве молиме внесете важечка URL-адреса</string>
     <string name="action_save">Зачувај</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Брзи контроли на плеерот</string>
-    <string name="widget_description_full">Список на плеер и станици</string>
+    <string name="widget_description_full">Плеер и листа на радио станици</string>
 
     <string name="settings_auto_db_update">Синхронизација на податоци во заднина</string>
     <string name="settings_auto_db_update_desc">Автоматско ажурирање на базата на податоци на станиците преку API на Radio-Browser (се препорачува).</string>
-    <string name="settings_station_click_counter">Бројач за кликнување на станицата</string>
-    <string name="settings_station_click_counter_desc">Поддржете ја статистиката на радио-прелистувачот со анонимно споделување настани за репродукција.</string>
-    <string name="settings_rate_app_github">Уживате во AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Оставете ѕвезда на GitHub! Им помага на другите да ја откријат апликацијата и го поддржува идниот развој.</string>
+    <string name="settings_station_click_counter">Бројач за кликнување на радио станицата</string>
+    <string name="settings_station_click_counter_desc">Поддржете ја статистиката на Radio-Browser со анонимно споделување настани за репродукција.</string>
 
-    <string name="settings_remove_notification_on_stop">Отстранете го известувањето кога апликацијата е затворена</string>
-    <string name="settings_remove_notification_on_stop_desc">Автоматски отфрли го известувањето за медиуми кога апликацијата е затворена од неодамнешните апликации</string>
+    <string name="settings_remove_notification_on_stop">Отстрани го известувањето при запирање</string>
+    <string name="settings_remove_notification_on_stop_desc">Автоматски отфрли го известувањето за медиуми кога репродукцијата ќе се запре</string>
     <string name="settings_auto_resume_audio_focus">Продолжете по губењето на аудио фокусот</string>
     <string name="settings_auto_resume_audio_focus_desc">Автоматски продолжете со репродукцијата по телефонски повици, аларми или други аудио прекини</string>
+
+    <string name="settings_backup_restore">Бекaп и враќање</string>
+    <string name="settings_export_backup">Креирај целосен бекап (ZIP)</string>
+    <string name="settings_export_backup_desc">Ги зачувува сите омилени, прилагодени радио станици и икони во ZIP датотека</string>
+    <string name="settings_import_backup">Врати бекап (ZIP)</string>
+    <string name="settings_import_backup_desc">Ги враќа омилените и прилагодените радио станици од ZIP бекап датотека</string>
+    <string name="backup_export_success">Бекапот е успешно зачуван</string>
+    <string name="backup_export_error">Зачувувањето на бекапот не успеа</string>
+    <string name="backup_import_success">Бекапот е успешно вратен</string>
+    <string name="backup_import_error">Враќањето на бекапот не успеа</string>
+
+    <string name="database_summary_title">Локална база на податоци</string>
+    <string name="database_total_stations">Вкупно радио станици</string>
+    <string name="database_last_sync">Последно ажурирање</string>
+    <string name="database_update_now">Ажурирај ја базата веднаш</string>
+    <string name="database_full_update">Ажурирај ја базата на податоци</string>
+    <string name="database_syncing">Се синхронизира…</string>
+    <string name="database_downloading">Се презема…</string>
+    <string name="database_stations_loaded">%1$s радио станици</string>
+    <string name="database_sync_channel_name">Синхронизација на базата на радио станици</string>
+    <string name="database_sync_success">Ажурирањето на базата на станици заврши успешно</string>
+    <string name="database_error_no_connection">Нема интернет-врска</string>
+    <string name="database_error_no_space">Нема доволно простор на дискот</string>
+    <string name="database_error_failed">Ажурирањето на базата на податоци не успеа</string>
+
+    <string name="settings_disable_battery_optimization_desc">За да продолжи репродукцијата кога екранот е исклучен, поставете ја употребата на батеријата на \'Неограничено\'.</string>
+    <string name="battery_opt_open_settings">Отвори поставки</string>
+    <string name="battery_opt_later">Подоцна</string>
 </resources>

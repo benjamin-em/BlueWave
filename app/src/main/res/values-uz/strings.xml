@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Oʻz radio stansiyalar tasmangizni yarating</string>
     <string name="filter_empty_desc">Bir nechta mezonlarni birlashtirib, shaxsiy koʻrinish yarating. Qidiruvni quyidagilar orqali cheklashingiz mumkin:</string>
     <string name="filter_empty_filter_by">Saralash turi:</string>
-    <string name="filter_empty_filter_desc">Mamlakat, Stansiya nomi, Teglar yoki Til</string>
+    <string name="filter_empty_filter_desc">Mamlakat, Radio stansiya nomi, Teglar yoki Til</string>
     <string name="filter_empty_sort_by">Tartiblash:</string>
     <string name="filter_empty_sort_desc">Kliklar, Alifbo, Ovozlar yoki Oxirgi oʻzgarish</string>
     <string name="filter_empty_hint">Ushbu koʻrinishni saqlash uchun yuqoridagi maydonga nom yozing!</string>
-    <string name="error_station_load">Stansiyaga ulanib boʻlmadi</string>
-    <string name="error_list_update">Radio brauzer serveriga ulanib boʻlmadi</string>
+    <string name="error_station_load">Radio stansiyaga ulanib boʻlmadi</string>
+    <string name="error_list_update">Radio-Browser serveriga ulanib boʻlmadi</string>
 
     <string name="error_no_connection">Internet ulanishi mavjud emas</string>
     <string name="warning_volume_zero">Ovoz darajasi nolga teng. Hech narsa eshitilmasligi mumkin.</string>
 
-    <string name="share_action">Stansiya havolasini ulashish…</string>
+    <string name="share_action">Radio stansiya havolasini ulashish…</string>
 
-    <string name="nav_item_stations">Stansiyalar</string>
+    <string name="nav_item_stations">Radio stansiyalar</string>
     <string name="nav_item_starred">Saralanganlar</string>
     <string name="nav_item_history">Tarix</string>
     <string name="nav_item_settings">Sozlamalar</string>
 
-    <string name="about_text">AMARadio 100% reklamasiz va maxfiylikka yoʻnaltirilgan.\n\nMen ushbu ilovani dastlab onam uchun, unga bezovta qiluvchi reklamalar yoki kuzatuvlarsiz oddiy va halol radio tajribasini taqdim etish uchun ishlab chiqqanman. Shuning uchun AMARadio doimo reklamasiz qoladi – bu unga berilgan vaʼda boʻlib, uni barchangiz bilan baham koʻraman.\n\nUshbu loyiha ajoyib https://github.com/segler-alex/RadioDroid loyihasining forki (fork) hisoblanadi. Ilova zamonaviy boʻlib qolishi va kelajakdagi Android versiyalari bilan mos kelishi uchun barcha manba kodi Java-dan Kotlin-ga oʻtkazildi.\n\nManba kodi ushbu manzilda mavjud: https://github.com/ounben/AMARadio\n\nUshbu ilova https://www.radio-browser.info saytidagi bepul radio stansiyalar katalogidan foydalanadi. Har kim unga stansiyalar qoʻshishi mumkin. U onlayn radio stansiyalar uchun viki kabi ishlaydi.\n\nBogʻlanish: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nAgar sizga dastur yoqsa va yordam bermoqchi boʻlsangiz, menga elektron pochta orqali xabar yuboring. Shuningdek, yangi xususiyatlar boʻyicha gʻoyalar doimo mamnuniyat bilan qabul qilinadi!\n\nUshbu ilova GPLv3 litsenziyasi ostidagi bepul dasturiy taʼminotdir. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% reklamasiz va maxfiylikka yoʻnaltirilgan.\n\nMen ushbu ilovani dastlab onam uchun, unga bezovta qiluvchi reklamalar yoki kuzatuvlarsiz oddiy va halol radio tajribasini taqdim etish uchun ishlab chiqqanman. Shuning uchun AMARadio doimo reklamasiz qoladi – bu unga berilgan vaʼda boʻlib, uni barchangiz bilan baham koʻraman.\n\nUshbu loyiha RadioDroid loyihasining forki (fork) hisoblanadi. Ilova zamonaviy boʻlib qolishi va kelajakdagi Android versiyalari bilan mos kelishi uchun barcha manba kodi Java-dan Kotlin-ga oʻtkazildi.\n\nManba kodi ushbu manzilda mavjud: https://github.com/ounben/AMARadio\n\nUshbu ilova https://www.radio-browser.info saytidagi bepul radio stansiyalar katalogidan foydalanadi. Har kim unga stansiyalar qoʻshishi mumkin. U onlayn radio stansiyalar uchun viki kabi ishlaydi.\n\nBogʻlanish: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nAgar sizga dastur yoqsa va yordam bermoqchi boʻlsangiz, menga elektron pochta orqali xabar yuboring. Shuningdek, yangi xususiyatlar boʻyicha gʻoyalar doimo mamnuniyat bilan qabul qilinadi!\n\nUshbu ilova GPLv3 litsenziyasi ostidagi bepul dasturiy taʼminotdir. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versiya: %1$s</string>
     <string name="detail_star">Saralanganlarga qoʻshish</string>
     <string name="detail_unstar">Saralanganlardan olib tashlash</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">Qorongʻu</string>
     <string name="theme_system">Tizimga mos</string>
     <string name="settings_compact_style">Ixcham rejim</string>
-    <string name="settings_compact_style_desc_off">Katta piktogramma va stansiya maʻlumotlari</string>
+    <string name="settings_compact_style_desc_off">Katta piktogramma va radio stansiya maʻlumotlari</string>
     <string name="settings_compact_style_desc_on">Kichik piktogramma va maʻlumotlarsiz</string>
     <string name="settings_bottom_navigation">Pastki navigatsiya</string>
     <string name="settings_ui_scale">UI masshtabi</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Kam foydalaniladigan teglar koʻrsatilmaydi</string>
     <string name="settings_single_use_tags_desc_on">Kam foydalaniladigan teglar koʻrsatiladi</string>
 
-    <string name="settings_show_broken">Ishlamayotgan stansiyalar</string>
-    <string name="settings_show_broken_on">Ishlamayotgan stansiyalarni roʻyxatda koʻrsatish</string>
-    <string name="settings_show_broken_off">Ishlamayotgan stansiyalarni roʻyxatda koʻrsatmaslik</string>
+    <string name="settings_show_broken">Ishlamayotgan radio stansiyalar</string>
+    <string name="settings_show_broken_on">Ishlamayotgan radio stansiyalarni roʻyxatda koʻrsatish</string>
+    <string name="settings_show_broken_off">Ishlamayotgan radio stansiyalarni roʻyxatda koʻrsatmaslik</string>
 
     <string name="settings_startup_behaviour">Boshlanish harakati</string>
     <string name="action_grid_view">Toʻr koʻrinishi</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Boshlanish harakati</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Barcha stansiyalarni koʻrsatish</string>
+    <string name="startup_show_all_stations">Barcha radio stansiyalarni koʻrsatish</string>
     <string name="startup_show_favorites">Saralanganlarni koʻrsatish</string>
     <string name="startup_show_history">Tarixni koʻrsatish</string>
     <string name="startup_show_last_view">Oxirgi koʻrinish</string>
 
-    <string name="settings_load_icons">Stansiya piktogrammalarini koʻrsatish</string>
+    <string name="settings_load_icons">Radio stansiya piktogrammalarini koʻrsatish</string>
     <string name="settings_load_icons_on">Piktogrammalar yuklab olinadi</string>
     <string name="settings_load_icons_off">Piktogrammalar yuklab olinmaydi</string>
 
     <string name="settings_auto_favorite">Avto-saralangan</string>
-    <string name="settings_auto_favorite_on">Tinglash vaqtida stansiyalarni avtomatik ravishda saralanganlarga qoʻshish</string>
-    <string name="settings_auto_favorite_off">Tinglash vaqtida stansiyalarni avtomatik ravishda saralanganlarga qoʻshmaslik</string>
+    <string name="settings_auto_favorite_on">Tinglash vaqtida radio stansiyalarni avtomatik ravishda saralanganlarga qoʻshish</string>
+    <string name="settings_auto_favorite_off">Tinglash vaqtida radio stansiyalarni avtomatik ravishda saralanganlarga qoʻshmaslik</string>
 
     <string name="settings_play">Pleyer</string>
     <string name="settings_auto_play_on_startup">Avto-tinglash</string>
-    <string name="settings_auto_play_on_startup_on">Ilovaga kirganda oxirgi stansiyani tinglash</string>
-    <string name="settings_auto_play_on_startup_off">Ilovaga kirganda oxirgi stansiyani tinglamaslik</string>
+    <string name="settings_auto_play_on_startup_on">Ilovaga kirganda oxirgi radio stansiyani tinglash</string>
+    <string name="settings_auto_play_on_startup_off">Ilovaga kirganda oxirgi radio stansiyani tinglamaslik</string>
     <string name="settings_auto_off_on_startup">Avto-toʻxtatish</string>
     <string name="settings_auto_off_on_startup_on">Avto-tinglash bilan avto-toʻxtatish taymeridan foydalanish</string>
     <string name="settings_auto_off_on_startup_off">Avto-tinglash bilan avto-toʻxtatish taymeridan foydalanmaslik</string>
     <string name="settings_auto_off_sleep_timer">Avto-toʻxtatish taymeri</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s daqiqadan soʻng toʻxtatish</string>
     <string name="settings_play_external">Tashqi pleyerni yoqish</string>
-    <string name="settings_play_external_desc_on">Stansiyalarni tashqi pleyerda tinglash</string>
-    <string name="settings_play_external_desc_off">Stansiyalarni AMARadio-da tinglash</string>
+    <string name="settings_play_external_desc_on">Radio stansiyalarni tashqi pleyerda tinglash</string>
+    <string name="settings_play_external_desc_off">Radio stansiyalarni AMARadio-da tinglash</string>
     <string name="settings_equalizer">Ekvalayzer</string>
 
     <string name="settings_connectivity">Ulanish</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Toʻxtatib turildi</string>
     <string name="notify_metered_connection">Pullik ulanish</string>
 
-    <string name="notify_starred">Stansiya saralanganlarga qoʻshildi</string>
-    <string name="notify_autostarred">Stansiya avtomatik ravishda saralanganlarga qoʻshildi</string>
-    <string name="notify_unstarred">Stansiya saralanganlardan olib tashlandi</string>
+    <string name="notify_starred">Radio stansiya saralanganlarga qoʻshildi</string>
+    <string name="notify_autostarred">Radio stansiya avtomatik ravishda saralanganlarga qoʻshildi</string>
+    <string name="notify_unstarred">Radio stansiya saralanganlardan olib tashlandi</string>
     <string name="notify_deleted_favorites">Saralanganlar oʻchirildi</string>
     <string name="notify_deleted_history">Tarix oʻchirildi</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Iltimos, pleyerni tanlang</string>
     <string name="alert_select_player_name">Nomi</string>
-    <string name="hostname">Xost nomi (Hostname)</string>
-    <string name="port">Port</string>
+    <string name="hostname">Server manzili</string>
+    <string name="port">Tarmoq porti</string>
 
     <string name="alert_press_back_to_exit">Chiqish uchun orqaga tugmasini yana bir marta bosing</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Tashqi pleyerda tinglash</string>
     <string name="action_choose_external_player">Tashqi pleyerni tanlash</string>
 
-    <string name="settings_disable_battery_optimization">Batareya optimallashtirish</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Batareya optimallashtirish eʼtiborga olinmaydi, AMARadio doimo fokusni qayta olishi kerak.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Batareya optimallashtirish yoqilgan, AMARadio fonda boʻlganda fokusni qayta ololmasligi mumkin.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Fonda ijro etish</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Boshqa</string>
     <string name="settings_rate_app">AMARadio-ni baholang</string>
     <string name="settings_rate_app_summary">Agar dastur sizga yoqsa, iltimos Play Store-da fikr qoldiring!</string>
+    <string name="settings_rate_app_github">AMARadio yoqyapsizmi?</string>
+    <string name="settings_rate_app_github_summary">GitHub\'da yulduz qoldiring! Bu boshqalarga ilovani topishga yordam beradi va kelajakdagi rivojlanishni qoʻllab-quvvatlaydi.</string>
     <string name="settings_statistics">Statistika</string>
     <string name="settings_about">AMARadio haqida</string>
 
@@ -278,13 +278,13 @@
     <string name="description_btn_skip_to_previous">Oldingisiga oʻtish</string>
 
     <string-array name="weekdays">
-        <item>Ya</item>
-        <item>Du</item>
-        <item>Se</item>
+        <item>Y</item>
+        <item>D</item>
+        <item>S</item>
         <item>Ch</item>
-        <item>Pa</item>
-        <item>Ju</item>
-        <item>Sha</item>
+        <item>P</item>
+        <item>J</item>
+        <item>Sh</item>
     </string-array>
 
     <string name="notify_stream_url_copied">Oqim URL manzili muvaffaqiyatli nusxalandi</string>
@@ -324,48 +324,74 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stansiya logotipi</string>
+    <string name="accessibility_station_logo">Radio stansiya logotipi</string>
     <string name="accessibility_favorite_selected">Saralangan, tanlangan</string>
     <string name="accessibility_favorite_not_selected">Saralangan, tanlanmagan</string>
     <string name="accessibility_category_icon">Turkum belgisi</string>
     <string name="accessibility_playing">Hozir ijro etilmoqda</string>
     <string name="accessibility_menu">Menyuni ochish</string>
     <string name="accessibility_search_back">Qidiruvni yopish</string>
-    <string name="accessibility_filter_reverse">Saralash tartibini o\'zgartirish</string>
+    <string name="accessibility_filter_reverse">Saralash tartibini oʻzgartirish</string>
     <string name="accessibility_clear_text">Matnni tozalash</string>
     <string name="accessibility_back">Orqaga</string>
     <string name="accessibility_configure">Sozlash</string>
     <string name="accessibility_close">Yopish</string>
-    <string name="accessibility_add_filter">Filtr qo\'shish</string>
-    <string name="accessibility_station_options">Stansiya variantlari</string>
+    <string name="accessibility_add_filter">Filtr qoʻshish</string>
+    <string name="accessibility_station_options">Radio stansiya variantlari</string>
     <string name="not_applicable">mavjud emas</string>
     <string name="accessibility_station_description">Stansiya: %1$s, Til: %2$s, Teglar: %3$s</string>
 
-    <string name="error_no_file_manager">Tizim fayl boshqaruvchisi topilmadi. Iltimos, fayl tadqiqotchisi o\'rnatilgan va yoqilganligiga ishonch hosil qiling.</string>
-    <string name="error_no_browser">Veb-brauzer topilmadi. Iltimos, ushbu havolani ochish uchun brauzerni o\'rnating.</string>
-    <string name="error_no_homepage">Bu stansiya uchun bosh sahifa mavjud emas</string>
-    <string name="tab_custom_stations">Maxsus</string>
-    <string name="action_add_custom">Maxsus stantsiya qo\'shing</string>
-    <string name="station_name">Stansiya nomi</string>
+    <string name="error_no_file_manager">Tizim fayl boshqaruvchisi topilmadi. Iltimos, fayl tadqiqotchisi oʻrnatilgan va yoqilganligiga ishonch hosil qiling.</string>
+    <string name="error_no_browser">Veb-brauzer topilmadi. Iltimos, ushbu havolani ochish uchun brauzerni oʻrnating.</string>
+    <string name="error_no_homepage">Bu radio stansiya uchun bosh sahifa mavjud emas</string>
+    <string name="tab_custom_stations">Oʻzingizniki</string>
+    <string name="action_add_custom">Shaxsiy radio stansiya qoʻshish</string>
+    <string name="station_name">Radio stansiya nomi</string>
     <string name="stream_url">Strim URL</string>
-    <string name="favicon_url">Favicon URL (ixtiyoriy)</string>
+    <string name="favicon_url">Stansiya logotipi URL-i (Favicon)</string>
     <string name="select_image">Rasmni tanlang</string>
     <string name="error_invalid_url">Yaroqli URL manzilini kiriting</string>
     <string name="action_save">Saqlash</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Tez o\'yinchi boshqaruvi</string>
-    <string name="widget_description_full">O\'yinchilar va stantsiyalar ro\'yxati</string>
+    <string name="widget_description_small">Pleyerni tezkor boshqarish</string>
+    <string name="widget_description_full">Pleyer va radio stansiyalar roʻyxati</string>
 
-    <string name="settings_auto_db_update">Fon ma\'lumotlarini sinxronlash</string>
-    <string name="settings_auto_db_update_desc">Radio-Browser API orqali stantsiya ma\'lumotlar bazasini avtomatik yangilash (tavsiya etiladi).</string>
-    <string name="settings_station_click_counter">Stantsiyani bosish hisoblagichi</string>
-    <string name="settings_station_click_counter_desc">O\'yin voqealarini anonim ravishda almashish orqali Radio-brauzer statistikasini qo\'llab-quvvatlang.</string>
-    <string name="settings_rate_app_github">AMARadio yoqyapsizmi?</string>
-    <string name="settings_rate_app_github_summary">GitHub\'da yulduz qoldiring! Bu boshqalarga ilovani topishga yordam beradi va kelajakdagi rivojlanishni qo\'llab-quvvatlaydi.</string>
+    <string name="settings_auto_db_update">Fon maʻlumotlarini sinxronlash</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API orqali stansiya maʻlumotlar bazasini avtomatik yangilash (tavsiya etiladi).</string>
+    <string name="settings_station_click_counter">Radio stansiyani bosish hisoblagichi</string>
+    <string name="settings_station_click_counter_desc">Tinglash hodisalarini anonim ravishda almashish orqali Radio-Browser statistikalarini qoʻllab-quvvatlang.</string>
 
-    <string name="settings_remove_notification_on_stop">Ilova yopilganda bildirishnomani olib tashlang</string>
-    <string name="settings_remove_notification_on_stop_desc">Ilova oxirgi ilovalardan yopilganda, media bildirishnomasini avtomatik ravishda o\'chirib qo\'ying</string>
-    <string name="settings_auto_resume_audio_focus">Audio fokus yo\'qolganidan keyin davom eting</string>
-    <string name="settings_auto_resume_audio_focus_desc">Telefon qo\'ng\'iroqlari, signallar yoki boshqa audio to\'xtashlardan keyin avtomatik ravishda o\'ynatishni davom ettiring</string>
+    <string name="settings_remove_notification_on_stop">Toʻxtatilganda bildirishnomani olib tashlang</string>
+    <string name="settings_remove_notification_on_stop_desc">Tinglash toʻxtatilganda media bildirishnomasini avtomatik ravishda olib tashlang</string>
+    <string name="settings_auto_resume_audio_focus">Audio fokus yoʻqolganidan keyin davom eting</string>
+    <string name="settings_auto_resume_audio_focus_desc">Telefon qoʻngʻiroqlari, signallar yoki boshqa audio toʻxtashlardan keyin avtomatik ravishda oʻynatishni davom ettiring</string>
+
+    <string name="settings_backup_restore">Zahira nusxa va tiklash</string>
+    <string name="settings_export_backup">Toʻliq zahira nusxasini yaratish (ZIP)</string>
+    <string name="settings_export_backup_desc">Barcha saralanganlar, shaxsiy stansiyalar va belgilarni ZIP faylida saqlaydi</string>
+    <string name="settings_import_backup">Zahira nusxasini tiklash (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP faylidan saralanganlar va shaxsiy stansiyalarni tiklaydi</string>
+    <string name="backup_export_success">Zahira nusxasi muvaffaqiyatli saqlandi</string>
+    <string name="backup_export_error">Zahira nusxasini saqlab boʻlmadi</string>
+    <string name="backup_import_success">Zahira nusxasi muvaffaqiyatli tiklandi</string>
+    <string name="backup_import_error">Zahira nusxasini tiklab boʻlmadi</string>
+
+    <string name="database_summary_title">Mahalliy maʻlumotlar bazasi</string>
+    <string name="database_total_stations">Jami radio stansiyalar</string>
+    <string name="database_last_sync">Oxirgi yangilanish</string>
+    <string name="database_update_now">Maʻlumotlar bazasini hozir yangilash</string>
+    <string name="database_full_update">Maʻlumotlar bazasini yangilash</string>
+    <string name="database_syncing">Sinxronlanmoqda…</string>
+    <string name="database_downloading">Yuklab olinmoqda…</string>
+    <string name="database_stations_loaded">%1$s ta radio stansiya</string>
+    <string name="database_sync_channel_name">Radio stansiyalar maʻlumotlar bazasini sinxronlash</string>
+    <string name="database_sync_success">Stansiyalar maʻlumotlar bazasi yangilanishi muvaffaqiyatli yakunlandi</string>
+    <string name="database_error_no_connection">Internet ulanishi yoʻq</string>
+    <string name="database_error_no_space">Diskkda yetarli joy yoʻq</string>
+    <string name="database_error_failed">Maʻlumotlar bazasini yangilash amalga oshmadi</string>
+
+    <string name="settings_disable_battery_optimization_desc">Ekran oʻchirilganda ham tinglashni davom ettirish uchun batareya sarfini \'Unrestricted\' deb sozlang.</string>
+    <string name="battery_opt_open_settings">Sozlamalarni ochish</string>
+    <string name="battery_opt_later">Keyinroq</string>
 </resources>

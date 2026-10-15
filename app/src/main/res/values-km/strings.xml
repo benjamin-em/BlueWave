@@ -49,27 +49,27 @@
     <string name="action_rename_tab">ប្តូរឈ្មោះផ្ទាំង</string>
     <string name="error_filter_name_required">សូមបញ្ចូលឈ្មោះសម្រាប់ផ្ទាំងចម្រោះនេះជាមុនសិន</string>
     <string name="confirm_delete_filter_tab">តើអ្នកប្រាកដថាចង់លុបការចម្រោះ \"%1$s\" មែនទេ?</string>
-    <string name="filter_empty_title">បង្កើតបញ្ជីស្ថានីយ៍វិទ្យុផ្ទាល់ខ្លួនរបស់អ្នក</string>
+    <string name="filter_empty_title">បង្កើតបញ្ជីស្ថានីយវិទ្យុផ្ទាល់ខ្លួនរបស់អ្នក</string>
     <string name="filter_empty_desc">បង្កើតទិដ្ឋភាពផ្ទាល់ខ្លួនដោយបញ្ចូលលក្ខខណ្ឌច្រើន។ អ្នកអាចបង្រួមការស្វែងរកដោយប្រើ៖</string>
     <string name="filter_empty_filter_by">ចម្រោះតាម</string>
-    <string name="filter_empty_filter_desc">ប្រទេស, ឈ្មោះស្ថានីយ៍, ស្លាក ឬភាសា</string>
+    <string name="filter_empty_filter_desc">ប្រទេស, ឈ្មោះស្ថានីយវិទ្យុ, ស្លាក ឬភាសា</string>
     <string name="filter_empty_sort_by">តម្រៀបតាម</string>
     <string name="filter_empty_sort_desc">ការចុច, អក្ខរក្រម, ការបោះឆ្នោត ឬការផ្លាស់ប្តូរចុងក្រោយ</string>
     <string name="filter_empty_hint">វាយឈ្មោះក្នុងប្រអប់ខាងលើដើម្បីរក្សាទុកទិដ្ឋភាពនេះ!</string>
-    <string name="error_station_load">មិនអាចភ្ជាប់ទៅស្ថានីយ៍បានទេ</string>
-    <string name="error_list_update">មិនអាចភ្ជាប់ទៅម៉ាស៊ីនមេ radio browser បានទេ</string>
+    <string name="error_station_load">មិនអាចភ្ជាប់ទៅស្ថានីយវិទ្យុបានទេ</string>
+    <string name="error_list_update">មិនអាចភ្ជាប់ទៅម៉ាស៊ីនមេ Radio-Browser បានទេ</string>
 
     <string name="error_no_connection">មិនមានការភ្ជាប់អ៊ីនធឺណិតទេ។</string>
     <string name="warning_volume_zero">កម្រិតសំឡេងគឺសូន្យ។ អ្នកប្រហែលជាមិនឮអ្វីទាំងអស់។</string>
 
-    <string name="share_action">ចែករំលែកតំណស្ថានីយ៍ទៅកាន់…</string>
+    <string name="share_action">ចែករំលែកតំណស្ថានីយវិទ្យុទៅកាន់…</string>
 
-    <string name="nav_item_stations">ស្ថានីយ៍</string>
+    <string name="nav_item_stations">ស្ថានីយវិទ្យុ</string>
     <string name="nav_item_starred">សំណព្វ</string>
     <string name="nav_item_history">ប្រវត្តិ</string>
     <string name="nav_item_settings">ការកំណត់</string>
 
-    <string name="about_text">AMARadio គឺគ្មានការផ្សាយពាណិជ្ជកម្ម ១០០% និងផ្តោតលើឯកជនភាព។\n\nដំបូងឡើយ ខ្ញុំបានបង្កើតកម្មវិធីនេះសម្រាប់ម្តាយរបស់ខ្ញុំ ដើម្បីផ្តល់ឱ្យគាត់នូវបទពិសោធន៍វិទ្យុដ៏សាមញ្ញ និងស្មោះត្រង់ ដោយគ្មានការផ្សាយពាណិជ្ជកម្មដែលរំខាន ឬការតាមដាន។ នេះជាមូលហេតុដែល AMARadio នឹងតែងតែមិនមានការផ្សាយពាណិជ្ជកម្មជារៀងរហូត – វាគឺជាការសន្យាចំពោះគាត់ ដែលបានចែករំលែកជាមួយអ្នកទាំងអស់គ្នា។\n\nគម្រោងនេះគឺជា fork នៃកម្មវិធីដ៏អស្ចារ្យ https://github.com/segler-alex/RadioDroid ។ កូដទាំងអស់ត្រូវបានប្តូរពី Java ទៅ Kotlin ដើម្បីធានាថាកម្មវិធីនៅតែទំនើប និងឆបគ្នាជាមួយកំណែ Android នាពេលអនាគត។\n\nកូដប្រភពមាននៅ៖ https://github.com/ounben/AMARadio\n\nកម្មវិធីនេះប្រើប្រាស់បញ្ជីស្ថានីយ៍វិទ្យុឥតគិតថ្លៃនៅ https://www.radio-browser.info ។ នរណាក៏អាចបន្ថែមស្ថានីយ៍ទៅក្នុងនោះបានដែរ។ វាដំណើរការដូចជា wiki សម្រាប់ស្ថានីយ៍វិទ្យុអនឡាញ។\n\nទំនាក់ទំនង៖ ben@ounben.com\n\nរាយការណ៍បញ្ហា៖ https://github.com/ounben/AMARadio/issues\n\nប្រសិនបើអ្នកចូលចិត្តកម្មវិធីនេះ ហើយចង់ជួយ សូមផ្ញើអ៊ីមែលមកខ្ញុំ។ គំនិតសម្រាប់មុខងារថ្មីៗតែងតែត្រូវបានស្វាគមន៍!\n\nកម្មវិធីនេះជាកម្មវិធីសេរី ដែលមានអាជ្ញាប័ណ្ណក្រោម GPLv3។ https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio គឺគ្មានការផ្សាយពាណិជ្ជកម្ម ១០០% និងផ្តោតលើឯកជនភាព។\n\nដំបូងឡើយ ខ្ញុំបានបង្កើតកម្មវិធីនេះសម្រាប់ម្តាយរបស់ខ្ញុំ ដើម្បីផ្តល់ឱ្យគាត់នូវបទពិសោធន៍វិទ្យុដ៏សាមញ្ញ និងស្មោះត្រង់ ដោយគ្មានការផ្សាយពាណិជ្ជកម្មដែលរំខាន ឬការតាមដាន។ នេះជាមូលហេតុដែល AMARadio នឹងតែងតែមិនមានការផ្សាយពាណិជ្ជកម្មជារៀងរហូត – វាគឺជាការសន្យាចំពោះគាត់ ដែលបានចែករំលែកជាមួយអ្នកទាំងអស់គ្នា។\n\nគម្រោងនេះគឺជា fork នៃ RadioDroid ។ កូដទាំងអស់ត្រូវបានប្តូរពី Java ទៅ Kotlin ដើម្បីធានាថាកម្មវិធីនៅតែទំនើប និងឆបគ្នាជាមួយកំណែ Android នាពេលអនាគត។\n\nកូដប្រភពមាននៅ៖ https://github.com/ounben/AMARadio\n\nកម្មវិធីនេះប្រើប្រាស់បញ្ជីស្ថានីយវិទ្យុឥតគិតថ្លៃនៅ https://www.radio-browser.info ។ នរណាក៏អាចបន្ថែមស្ថានីយ៍ទៅក្នុងនោះបានដែរ។ វាដំណើរការដូចជា wiki សម្រាប់ស្ថានីយ៍វិទ្យុអនឡាញ។\n\nទំនាក់ទំនង៖ ben@ounben.com\n\nរាយការណ៍បញ្ហា៖ https://github.com/ounben/AMARadio/issues\n\nប្រសិនបើអ្នកចូលចិត្តកម្មវិធីនេះ ហើយចង់ជួយ សូមផ្ញើអ៊ីមែលមកខ្ញុំ។ គំនិតសម្រាប់មុខងារថ្មីៗតែងតែត្រូវបានស្វាគមន៍!\n\nកម្មវិធីនេះជាកម្មវិធីសេរី ដែលមានអាជ្ញាប័ណ្ណក្រោម GPLv3។ https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">កំណែ៖ %1$s</string>
     <string name="detail_star">បន្ថែមទៅសំណព្វ</string>
     <string name="detail_unstar">លុបចេញពីសំណព្វ</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">ងងឹត</string>
     <string name="theme_system">តាមប្រព័ន្ធ</string>
     <string name="settings_compact_style">របៀបបង្រួម</string>
-    <string name="settings_compact_style_desc_off">រូបតំណាងធំជាមួយព័ត៌មានលម្អិត</string>
-    <string name="settings_compact_style_desc_on">រូបតំណាងតូចគ្មានព័ត៌មានលម្អិត</string>
+    <string name="settings_compact_style_desc_off">រូបតំណាងធំជាមួយព័ត៌មានលម្អិតនៃស្ថានីយវិទ្យុ</string>
+    <string name="settings_compact_style_desc_on">រូបតំណាងតូចគ្មានព័ត៌មានលម្អិតនៃស្ថានីយវិទ្យុ</string>
     <string name="settings_bottom_navigation">ការរុករកខាងក្រោម</string>
     <string name="settings_ui_scale">មាត្រដ្ឋាន UI</string>
     <string name="settings_language">ភាសា</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">ស្លាកដែលកម្រប្រើនឹងមិនត្រូវបានបង្ហាញទេ</string>
     <string name="settings_single_use_tags_desc_on">ស្លាកដែលកម្រប្រើនឹងត្រូវបានបង្ហាញ</string>
 
-    <string name="settings_show_broken">ស្ថានីយ៍ដែលខូច</string>
-    <string name="settings_show_broken_on">បង្ហាញស្ថានីយ៍ដែលខូចក្នុងបញ្ជី</string>
-    <string name="settings_show_broken_off">មិនបង្ហាញស្ថានីយ៍ដែលខូចក្នុងបញ្ជី</string>
+    <string name="settings_show_broken">ស្ថានីយវិទ្យុដែលខូច</string>
+    <string name="settings_show_broken_on">បង្ហាញស្ថានីយវិទ្យុដែលខូចក្នុងបញ្ជី</string>
+    <string name="settings_show_broken_off">មិនបង្ហាញស្ថានីយវិទ្យុដែលខូចក្នុងបញ្ជី</string>
 
     <string name="settings_startup_behaviour">សកម្មភាពពេលចាប់ផ្តើម</string>
     <string name="action_grid_view">ទិដ្ឋភាពក្រឡា</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">សកម្មភាពចាប់ផ្តើម</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">បង្ហាញស្ថានីយ៍ទាំងអស់</string>
+    <string name="startup_show_all_stations">បង្ហាញស្ថានីយវិទ្យុទាំងអស់</string>
     <string name="startup_show_favorites">បង្ហាញសំណព្វ</string>
     <string name="startup_show_history">បង្ហាញប្រវត្តិ</string>
     <string name="startup_show_last_view">ទិដ្ឋភាពចុងក្រោយ</string>
 
-    <string name="settings_load_icons">បង្ហាញរូបតំណាងស្ថានីយ៍</string>
+    <string name="settings_load_icons">បង្ហាញរូបតំណាងស្ថានីយវិទ្យុ</string>
     <string name="settings_load_icons_on">រូបតំណាងនឹងត្រូវបានទាញយក</string>
     <string name="settings_load_icons_off">រូបតំណាងនឹងមិនត្រូវបានទាញយកទេ</string>
 
     <string name="settings_auto_favorite">សំណព្វស្វ័យប្រវត្តិ</string>
-    <string name="settings_auto_favorite_on">បន្ថែមស្ថានីយ៍ទៅសំណព្វដោយស្វ័យប្រវត្តិពេលចាក់</string>
-    <string name="settings_auto_favorite_off">មិនបន្ថែមស្ថានីយ៍ទៅសំណព្វដោយស្វ័យប្រវត្តិពេលចាក់</string>
+    <string name="settings_auto_favorite_on">បន្ថែមស្ថានីយវិទ្យុទៅសំណព្វដោយស្វ័យប្រវត្តិពេលចាក់</string>
+    <string name="settings_auto_favorite_off">មិនបន្ថែមស្ថានីយវិទ្យុទៅសំណព្វដោយស្វ័យប្រវត្តិពេលចាក់</string>
 
     <string name="settings_play">កម្មវិធីចាក់</string>
     <string name="settings_auto_play_on_startup">ចាក់ស្វ័យប្រវត្តិ</string>
-    <string name="settings_auto_play_on_startup_on">ចាក់ស្ថានីយ៍ចុងក្រោយពេលបើកកម្មវិធី</string>
-    <string name="settings_auto_play_on_startup_off">មិនចាក់ស្ថានីយ៍ចុងក្រោយពេលបើកកម្មវិធី</string>
+    <string name="settings_auto_play_on_startup_on">ចាក់ស្ថានីយវិទ្យុចុងក្រោយពេលបើកកម្មវិធី</string>
+    <string name="settings_auto_play_on_startup_off">មិនចាក់ស្ថានីយវិទ្យុចុងក្រោយពេលបើកកម្មវិធី</string>
     <string name="settings_auto_off_on_startup">បញ្ឈប់ស្វ័យប្រវត្តិ</string>
     <string name="settings_auto_off_on_startup_on">ប្រើម៉ោងបញ្ឈប់ស្វ័យប្រវត្តិជាមួយការចាក់ស្វ័យប្រវត្តិ</string>
     <string name="settings_auto_off_on_startup_off">មិនប្រើម៉ោងបញ្ឈប់ស្វ័យប្រវត្តិជាមួយការចាក់ស្វ័យប្រវត្តិ</string>
     <string name="settings_auto_off_sleep_timer">ម៉ោងបញ្ឈប់ស្វ័យប្រវត្តិ</string>
     <string name="settings_auto_off_sleep_timer_desc">បញ្ឈប់ការចាក់បន្ទាប់ពី %1$s នាទី</string>
     <string name="settings_play_external">បើកកម្មវិធីចាក់ខាងក្រៅ</string>
-    <string name="settings_play_external_desc_on">ចាក់ស្ថានីយ៍ជាមួយកម្មវិធីចាក់ខាងក្រៅ</string>
-    <string name="settings_play_external_desc_off">ចាក់ស្ថានីយ៍ជាមួយ AMARadio</string>
+    <string name="settings_play_external_desc_on">ចាក់ស្ថានីយវិទ្យុជាមួយកម្មវិធីចាក់ខាងក្រៅ</string>
+    <string name="settings_play_external_desc_off">ចាក់ស្ថានីយវិទ្យុជាមួយ AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">ការភ្ជាប់</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">បានផ្អាក</string>
     <string name="notify_metered_connection">ការភ្ជាប់ដែលមានការគិតថ្លៃ</string>
 
-    <string name="notify_starred">ស្ថានីយ៍ត្រូវបានបន្ថែមទៅសំណព្វ</string>
-    <string name="notify_autostarred">ស្ថានីយ៍ត្រូវបានបន្ថែមទៅសំណព្វដោយស្វ័យប្រវត្តិ</string>
-    <string name="notify_unstarred">ស្ថានីយ៍ត្រូវបានលុបចេញពីសំណព្វ</string>
+    <string name="notify_starred">ស្ថានីយវិទ្យុត្រូវបានបន្ថែមទៅសំណព្វ</string>
+    <string name="notify_autostarred">ស្ថានីយវិទ្យុត្រូវបានបន្ថែមទៅសំណព្វដោយស្វ័យប្រវត្តិ</string>
+    <string name="notify_unstarred">ស្ថានីយវិទ្យុត្រូវបានលុបចេញពីសំណព្វ</string>
     <string name="notify_deleted_favorites">សំណព្វត្រូវបានលុប</string>
     <string name="notify_deleted_history">ប្រវត្តិត្រូវបានលុប</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">សូមជ្រើសរើសកម្មវិធីចាក់</string>
     <string name="alert_select_player_name">ឈ្មោះ</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">ច្រក (Port)</string>
+    <string name="hostname">អាសយដ្ឋានម៉ាស៊ីនមេ</string>
+    <string name="port">ច្រកបណ្តាញ</string>
 
     <string name="alert_press_back_to_exit">ចុចថយក្រោយម្តងទៀតដើម្បីចាកចេញ</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">ចាក់ក្នុងកម្មវិធីចាក់ខាងក្រៅ</string>
     <string name="action_choose_external_player">ជ្រើសរើសកម្មវិធីចាក់ខាងក្រៅ</string>
 
-    <string name="settings_disable_battery_optimization">ការបង្កើនប្រសិទ្ធភាពថ្ម</string>
-    <string name="settings_ignore_battery_optimization_summary_on">ការបង្កើនប្រសិទ្ធភាពថ្មត្រូវបានមិនអើពើ AMARadio គួរតែអាចទទួលបាន Focus ឡើងវិញជានិច្ច។</string>
-    <string name="settings_ignore_battery_optimization_summary_off">ការបង្កើនប្រសិទ្ធភាពថ្មត្រូវបានបើក AMARadio ប្រហែលជាមិនអាចទទួលបាន Focus ឡើងវិញទេបើស្ថិតក្នុង background។</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">ការចាក់នៅផ្ទៃខាងក្រោយ</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">ផ្សេងៗ</string>
     <string name="settings_rate_app">វាយតម្លៃ AMARadio</string>
     <string name="settings_rate_app_summary">ប្រសិនបើអ្នកចូលចិត្តកម្មវិធីនេះ សូមផ្តល់មតិយោបល់នៅលើ Play Store!</string>
+    <string name="settings_rate_app_github">រីករាយជាមួយ AMARadio?</string>
+    <string name="settings_rate_app_github_summary">ទុកផ្កាយនៅលើ GitHub! វាជួយឱ្យអ្នកដទៃរកឃើញកម្មវិធី និងគាំទ្រការអភិវឌ្ឍន៍នាពេលអនាគត។</string>
     <string name="settings_statistics">ស្ថិតិ</string>
     <string name="settings_about">អំពី AMARadio</string>
 
@@ -324,48 +324,74 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">ឡូហ្គោស្ថានីយ</string>
+    <string name="accessibility_station_logo">ឡូហ្គោស្ថានីយវិទ្យុ</string>
     <string name="accessibility_favorite_selected">សំណព្វ, បានជ្រើសរើស</string>
     <string name="accessibility_favorite_not_selected">សំណព្វ, មិនបានជ្រើសរើស</string>
     <string name="accessibility_category_icon">រូបតំណាងប្រភេទ</string>
     <string name="accessibility_playing">កំពុងចាក់</string>
-    <string name="accessibility_menu">បើក مینو</string>
+    <string name="accessibility_menu">បើកម៉ឺនុយ</string>
     <string name="accessibility_search_back">បិទការស្វែងរក</string>
-    <string name="accessibility_filter_reverse">ត្រឡប់លំដับតម្រៀប</string>
+    <string name="accessibility_filter_reverse">ត្រឡប់លំដាប់តម្រៀប</string>
     <string name="accessibility_clear_text">សម្អាតអត្ថបទ</string>
     <string name="accessibility_back">ថយក្រោយ</string>
     <string name="accessibility_configure">កំណត់រចនាសម្ព័ន្ធ</string>
     <string name="accessibility_close">បិទ</string>
     <string name="accessibility_add_filter">បន្ថែមតម្រង</string>
-    <string name="accessibility_station_options">ជម្រើសស្ថានីយ</string>
+    <string name="accessibility_station_options">ជម្រើសស្ថានីយវិទ្យុ</string>
     <string name="not_applicable">មិនមាន</string>
     <string name="accessibility_station_description">ស្ថានីយ៖ %1$s, ភាសា៖ %2$s, ស្លាក៖ %3$s</string>
 
     <string name="error_no_file_manager">មិនអាចស្វែងរកកម្មវិធីគ្រប់គ្រងឯកសារប្រព័ន្ធបានទេ។ សូមប្រាកដថាកម្មវិធីរុករកឯកសារត្រូវបានដំឡើង និងបើកដំណើរការ។</string>
     <string name="error_no_browser">មិនអាចស្វែងរកកម្មវិធីរុករកតាមអ៊ីនធឺណិតបានទេ។ សូមដំឡើងកម្មវិធីរុករកតាមអ៊ីនធឺណិត ដើម្បីបើកតំណនេះ។</string>
-    <string name="error_no_homepage">មិនមានគេហទំព័រសម្រាប់ស្ថានីយ៍នេះទេ។</string>
+    <string name="error_no_homepage">មិនមានគេហទំព័រសម្រាប់ស្ថានីយវិទ្យុប្រព័ន្ធនេះទេ។</string>
     <string name="tab_custom_stations">ផ្ទាល់ខ្លួន</string>
-    <string name="action_add_custom">បន្ថែមស្ថានីយ៍ផ្ទាល់ខ្លួន</string>
-    <string name="station_name">ឈ្មោះស្ថានីយ៍</string>
+    <string name="action_add_custom">បន្ថែមស្ថានីយវិទ្យុផ្ទាល់ខ្លួន</string>
+    <string name="station_name">ឈ្មោះស្ថានីយវិទ្យុ</string>
     <string name="stream_url">URL ស្ទ្រីម</string>
-    <string name="favicon_url">Favicon URL (ជាជម្រើស)</string>
+    <string name="favicon_url">URL ឡូហ្គោស្ថានីយ (Favicon)</string>
     <string name="select_image">ជ្រើសរើសរូបភាព</string>
     <string name="error_invalid_url">សូមបញ្ចូល URL ត្រឹមត្រូវ។</string>
     <string name="action_save">រក្សាទុក</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">ការគ្រប់គ្រងអ្នកលេងរហ័ស</string>
-    <string name="widget_description_full">បញ្ជីចាក់និងស្ថានីយ៍</string>
+    <string name="widget_description_small">ការបញ្ជាកម្មវិធីចាក់រហ័ស</string>
+    <string name="widget_description_full">កម្មវិធីចាក់ និងបញ្ជីស្ថានីយវិទ្យុ</string>
 
     <string name="settings_auto_db_update">សមកាលកម្មទិន្នន័យផ្ទៃខាងក្រោយ</string>
-    <string name="settings_auto_db_update_desc">ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យស្ថានីយ៍ដោយស្វ័យប្រវត្តិតាមរយៈ Radio-Browser API (បានណែនាំ)។</string>
-    <string name="settings_station_click_counter">ស្ថានីយចុចរាប់</string>
-    <string name="settings_station_click_counter_desc">គាំទ្រស្ថិតិរបស់ Radio-Browser ដោយចែករំលែកព្រឹត្តិការណ៍លេងដោយអនាមិក។</string>
-    <string name="settings_rate_app_github">រីករាយជាមួយ AMARadio?</string>
-    <string name="settings_rate_app_github_summary">ទុកផ្កាយនៅលើ GitHub! វាជួយឱ្យអ្នកដទៃរកឃើញកម្មវិធី និងគាំទ្រការអភិវឌ្ឍន៍នាពេលអនាគត។</string>
+    <string name="settings_auto_db_update_desc">ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យស្ថានីយដោយស្វ័យប្រវត្តិតាមរយៈ Radio-Browser API (បានណែនាំ)۔</string>
+    <string name="settings_station_click_counter">រាប់ចំនួនចុចស្ថានីយវិទ្យុ</string>
+    <string name="settings_station_click_counter_desc">គាំទ្រស្ថិតិរបស់ Radio-Browser ដោយចែករំលែកព្រឹត្តិការណ៍ចាក់ដោយអនាមិក។</string>
 
-    <string name="settings_remove_notification_on_stop">លុបការជូនដំណឹងនៅពេលកម្មវិធីបិទ</string>
-    <string name="settings_remove_notification_on_stop_desc">ច្រានចោលការជូនដំណឹងប្រព័ន្ធផ្សព្វផ្សាយដោយស្វ័យប្រវត្តិ នៅពេលដែលកម្មវិធីត្រូវបានបិទពីកម្មវិធីថ្មីៗ</string>
+    <string name="settings_remove_notification_on_stop">លុបការជូនដំណឹងនៅពេលបញ្ឈប់</string>
+    <string name="settings_remove_notification_on_stop_desc">លុបការជូនដំណឹងប្រព័ន្ធផ្សព្វផ្សាយដោយស្វ័យប្រវត្តិ នៅពេលដែលការចាក់ត្រូវបានបញ្ឈប់</string>
     <string name="settings_auto_resume_audio_focus">បន្តបន្ទាប់ពីបាត់បង់ការផ្តោតអារម្មណ៍សំឡេង</string>
     <string name="settings_auto_resume_audio_focus_desc">បន្តការចាក់សារថ្មីដោយស្វ័យប្រវត្តិបន្ទាប់ពីការហៅទូរសព្ទ សំឡេងរោទិ៍ ឬសំឡេងផ្សេងទៀតឈប់</string>
+
+    <string name="settings_backup_restore">ការបម្រុងទុក និងការស្តារឡើងវិញ</string>
+    <string name="settings_export_backup">បង្កើតការបម្រុងទុកពេញលេញ (ZIP)</string>
+    <string name="settings_export_backup_desc">រក្សាទុកសំណព្វ ស្ថានីយផ្ទាល់ខ្លួន និងរូបតំណាងទាំងអស់ទៅក្នុងឯកសារ ZIP</string>
+    <string name="settings_import_backup">ស្តារការបម្រុងទុក (ZIP)</string>
+    <string name="settings_import_backup_desc">ស្តារសំណព្វ និងស្ថានីយផ្ទាល់ខ្លួនពីឯកសារបម្រុងទុក ZIP</string>
+    <string name="backup_export_success">រក្សាទុកការបម្រុងទុកដោយជោគជ័យ</string>
+    <string name="backup_export_error">បរាជ័យក្នុងការរក្សាទុកការបម្រុងទុក</string>
+    <string name="backup_import_success">ស្តារការបម្រុងទុកដោយជោគជ័យ</string>
+    <string name="backup_import_error">បរាជ័យក្នុងការស្តារការបម្រុងទុក</string>
+
+    <string name="database_summary_title">មូលដ្ឋានទិន្នន័យក្នុងម៉ាស៊ីន</string>
+    <string name="database_total_stations">ស្ថានីយវិទ្យុសរុប</string>
+    <string name="database_last_sync">ការធ្វើបច្ចុប្បន្នភាពចុងក្រោយ</string>
+    <string name="database_update_now">ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យឥឡូវនេះ</string>
+    <string name="database_full_update">ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ</string>
+    <string name="database_syncing">កំពុងធ្វើសមកាលកម្ម…</string>
+    <string name="database_downloading">កំពុងទាញយក…</string>
+    <string name="database_stations_loaded">%1$s ស្ថានីយវិទ្យុ</string>
+    <string name="database_sync_channel_name">ការធ្វើសមកាលកម្មមូលដ្ឋានទិន្នន័យស្ថានីយវិទ្យុ</string>
+    <string name="database_sync_success">បានធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យស្ថានីយដោយជោគជ័យ</string>
+    <string name="database_error_no_connection">គ្មានការភ្ជាប់អ៊ីនធឺណិត</string>
+    <string name="database_error_no_space">គ្មានទំហំផ្ទុកទំនេរគ្រប់គ្រាន់</string>
+    <string name="database_error_failed">បរាជ័យក្នុងការធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ</string>
+
+    <string name="settings_disable_battery_optimization_desc">ដើម្បីបន្តការចាក់នៅពេលបិទអេក្រង់ សូមកំណត់ការប្រើប្រាស់ថ្មទៅ \'មិនកំណត់\' (Unrestricted)۔</string>
+    <string name="battery_opt_open_settings">បើកការកំណត់</string>
+    <string name="battery_opt_later">ពេលក្រោយ</string>
 </resources>

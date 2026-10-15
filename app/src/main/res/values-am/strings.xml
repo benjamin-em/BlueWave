@@ -52,24 +52,24 @@
     <string name="filter_empty_title">የራስዎን የሬዲዮ ጣቢያ ዝርዝር ይገንቡ</string>
     <string name="filter_empty_desc">በርካታ መስፈርቶችን በማጣመር ግላዊ እይታ ይፍጠሩ። ፍለጋዎን በሚከተሉት ማጥበብ ይችላሉ፡</string>
     <string name="filter_empty_filter_by">አጣራ በ፡</string>
-    <string name="filter_empty_filter_desc">ሀገር፣ የጣቢያ ስም፣ መለያዎች ወይም ቋንቋ</string>
+    <string name="filter_empty_filter_desc">ሀገር፣ የሬዲዮ ጣቢያ ስም፣ መለያዎች ወይም ቋንቋ</string>
     <string name="filter_empty_sort_by">ደርድር በ፡</string>
     <string name="filter_empty_sort_desc">ጠቅታዎች፣ ፊደላት፣ ድምጾች ወይም የመጨረሻ ለውጥ</string>
     <string name="filter_empty_hint">ይህንን እይታ ለማስቀመጥ ከላይ ባለው ሳጥን ውስጥ ስም ይተይቡ!</string>
-    <string name="error_station_load">ከጣቢያው ጋር መገናኘት አልተቻለም</string>
-    <string name="error_list_update">ከሬዲዮ ብሮውዘር አገልጋይ ጋር መገናኘት አልተቻለም</string>
+    <string name="error_station_load">ከሬዲዮ ጣቢያው ጋር መገናኘት አልተቻለም</string>
+    <string name="error_list_update">ከ Radio-Browser አገልጋይ ጋር መገናኘት አልተቻለም</string>
 
     <string name="error_no_connection">የኢንተርኔት ግንኙነት የለም</string>
     <string name="warning_volume_zero">ድምጹ ዜሮ ላይ ነው። ምንም ላይሰማዎት ይችላል።</string>
 
-    <string name="share_action">የጣቢያ አገናኝ አጋራ ከ...</string>
+    <string name="share_action">የሬዲዮ ጣቢያ አገናኝ አጋራ ከ...</string>
 
-    <string name="nav_item_stations">ጣቢያዎች</string>
+    <string name="nav_item_stations">የሬዲዮ ጣቢያዎች</string>
     <string name="nav_item_starred">ተወዳጆች</string>
     <string name="nav_item_history">ታሪክ</string>
     <string name="nav_item_settings">ቅንብሮች</string>
 
-    <string name="about_text">AMARadio 100% ከማስታወቂያ ነጻ እና በግላዊነት ላይ ያተኮረ ነው።\n\nመጀመሪያ ላይ ይህን መተግበሪያ ያዘጋጀሁት ለእናቴ ያለምንም የሚያበሳጭ ማስታወቂያ ወይም ክትትል ቀላል እና እውነተኛ የሬዲዮ ተሞክሮ እንዲኖራት ነው። ለዚህም ነው AMARadio ሁልጊዜ ከማስታወቂያ ነጻ ሆኖ የሚቀጥለው - ይህ ለእሷ የተገባ ቃል ነው፣ ለሁላችሁም የሚጋራ።\n\nይህ ፕሮጀክት የጥሩው https://github.com/segler-alex/RadioDroid ፎርክ (fork) ነው። መተግበሪያው ዘመናዊ ሆኖ እንዲቀጥል እና ወደፊት ከሚመጡት የአንድሮይድ ስሪቶች ጋር ተኳሃኝ እንዲሆን ሙሉው የኮድ መሰረት ከጃቫ ወደ ኮትሊን ተቀይሯል።\n\nየምንጭ ኮዱ እዚህ ይገኛል፡ https://github.com/ounben/AMARadio\n\nይህ መተግበሪያ በ https://www.radio-browser.info የሚገኘውን ነጻ የሬዲዮ ጣቢያ ዝርዝር ይጠቀማል። ማንኛውም ሰው ጣቢያዎችን በእሱ ላይ ማከል ይችላል። ለኦንላይን የሬዲዮ ጣቢያዎች እንደ ዊኪ ይሰራል::\n\nእውቂያ: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nሶፍትዌሩን ከወደዱት እና መርዳት ከፈለጉ ኢሜል ለመላክ ነፃነት ይሰማዎ። እንዲሁም ለአዳዲስ ባህሪያት ሀሳቦች ሁል ጊዜ አድናቆት አላቸው!\n\nይህ መተግበሪያ በGPLv3 ስር ፍቃድ ያለው ነጻ ሶፍትዌር ነው። https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% ከማስታወቂያ ነጻ እና በግላዊነት ላይ ያተኮረ ነው።\n\nመጀመሪያ ላይ ይህን መተግበሪያ ያዘጋጀሁት ለእናቴ ያለምንም የሚያበሳጭ ማስታወቂያ ወይም ክትትል ቀላል እና እውነተኛ የሬዲዮ ተሞክሮ እንዲኖራት ነው። ለዚህም ነው AMARadio ሁልጊዜ ከማስታወቂያ ነጻ ሆኖ የሚቀጥለው - ይህ ለእሷ የተገባ ቃል ነው፣ ለሁላችሁም የሚጋራ።\n\nይህ ፕሮጀክት የጥሩው https://github.com/segler-alex/RadioDroid ቅርንጫፍ ነው። መተግበሪያው ዘመናዊ ሆኖ እንዲቀጥል እና ወደፊት ከሚመጡት የአንድሮይድ ስሪቶች ጋር ተኳሃኝ እንዲሆን ሙሉው የኮድ መሰረት ከጃቫ ወደ ኮትሊን ተቀይሯል።\n\nየምንጭ ኮዱ እዚህ ይገኛል፡ https://github.com/ounben/AMARadio\n\nይህ መተግበሪያ በ https://www.radio-browser.info የሚገኘውን ነጻ የሬዲዮ ጣቢያ ዝርዝር ይጠቀማል። ማንኛውም ሰው ጣቢያዎችን በእሱ ላይ ማከል ይችላል። ለኦንላይን የሬዲዮ ጣቢያዎች እንደ ዊኪ ይሰራል::\n\nእውቂያ: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nሶፍትዌሩን ከወደዱት እና መርዳት ከፈለጉ ኢሜል ለመላክ ነፃነት ይሰማዎ። እንዲሁም ለአዳዲስ ባህሪያት ሀሳቦች ሁል ጊዜ አድናቆት አላቸው!\n\nይህ መተግበሪያ በGPLv3 ስር ፍቃድ ያለው ነጻ ሶፍትዌር ነው። https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">ስሪት፡ %1$s</string>
     <string name="detail_star">ወደ ተወዳጆች አክል</string>
     <string name="detail_unstar">ከተወዳጆች ሰርዝ</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">ጨለማ</string>
     <string name="theme_system">የስርዓቱን ተከተል</string>
     <string name="settings_compact_style">አነስተኛ ሁነታ</string>
-    <string name="settings_compact_style_desc_off">ትልቅ አዶ ከጣቢያ ዝርዝሮች ጋር</string>
-    <string name="settings_compact_style_desc_on">ትንሽ አዶ ያለ ጣቢያ ዝርዝሮች</string>
+    <string name="settings_compact_style_desc_off">ትልቅ አዶ ከየሬዲዮ ጣቢያ ዝርዝሮች ጋር</string>
+    <string name="settings_compact_style_desc_on">ትንሽ አዶ ያለ የሬዲዮ ጣቢያ ዝርዝሮች</string>
     <string name="settings_bottom_navigation">የታችኛው ዳሰሳ</string>
     <string name="settings_ui_scale">የተጠቃሚ በይነገጽ መጠን</string>
     <string name="settings_language">ቋንቋ</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">አልፎ አልፎ ጥቅም ላይ የሚውሉ መለያዎች አይታዩም</string>
     <string name="settings_single_use_tags_desc_on">አልፎ አልፎ ጥቅም ላይ የሚውሉ መለያዎች ይታያሉ</string>
 
-    <string name="settings_show_broken">የተበላሹ ጣቢያዎች</string>
-    <string name="settings_show_broken_on">የተበላሹ ጣቢያዎችን በዝርዝሮች ውስጥ አሳይ</string>
-    <string name="settings_show_broken_off">የተበላሹ ጣቢያዎችን በዝርዝሮች ውስጥ አታሳይ</string>
+    <string name="settings_show_broken">የተበላሹ የሬዲዮ ጣቢያዎች</string>
+    <string name="settings_show_broken_on">የተበላሹ የሬዲዮ ጣቢያዎችን በዝርዝሮች ውስጥ አሳይ</string>
+    <string name="settings_show_broken_off">የተበላሹ የሬዲዮ ጣቢያዎችን በዝርዝሮች ውስጥ አታሳይ</string>
 
     <string name="settings_startup_behaviour">የመጀመሪያ ባህሪ</string>
     <string name="action_grid_view">የፍርግርግ እይታ</string>
@@ -133,7 +133,7 @@
 
     <string name="startup_action_title">የመጀመሪያ ተግባር</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">ሁሉንም ጣቢያዎች አሳይ</string>
+    <string name="startup_show_all_stations">ሁሉንም የሬዲዮ ጣቢያዎች አሳይ</string>
     <string name="startup_show_favorites">ተወዳጆችን አሳይ</string>
     <string name="startup_show_history">ታሪክን አሳይ</string>
     <string name="startup_show_last_view">የመጨረሻ እይታ</string>
@@ -148,16 +148,16 @@
 
     <string name="settings_play">ማጫወቻ</string>
     <string name="settings_auto_play_on_startup">ራስ-አጫውት</string>
-    <string name="settings_auto_play_on_startup_on">መተግበሪያው ሲጀምር የመጨረሻውን ጣቢያ አጫውት</string>
-    <string name="settings_auto_play_on_startup_off">መተግበሪያው ሲጀምር የመጨረሻውን ጣቢያ አታጫውት</string>
+    <string name="settings_auto_play_on_startup_on">መተግበሪያው ሲጀምር የመጨረሻውን የሬዲዮ ጣቢያ አጫውት</string>
+    <string name="settings_auto_play_on_startup_off">መተግበሪያው ሲጀምር የመጨረሻውን የሬዲዮ ጣቢያ አታጫውት</string>
     <string name="settings_auto_off_on_startup">ራስ-አቁም</string>
     <string name="settings_auto_off_on_startup_on">ከራስ-አጫውት ጋር የራስ-አቁም ሰዓት ቆጣሪን ተጠቀም</string>
     <string name="settings_auto_off_on_startup_off">ከራስ-አጫውት ጋር የራስ-አቁም ሰዓት ቆጣሪን አትጠቀም</string>
     <string name="settings_auto_off_sleep_timer">የራስ-አቁም ሰዓት ቆጣሪ</string>
     <string name="settings_auto_off_sleep_timer_desc">ከ %1$s ደቂቃዎች በኋላ መጫወቱን አቁም</string>
     <string name="settings_play_external">ውጫዊ ማጫወቻን አንቃ</string>
-    <string name="settings_play_external_desc_on">ጣቢያዎችን በውጫዊ ማጫወቻ አጫውት</string>
-    <string name="settings_play_external_desc_off">ጣቢያዎችን በAMARadio አጫውት</string>
+    <string name="settings_play_external_desc_on">የሬዲዮ ጣቢያዎችን በውጫዊ ማጫወቻ አጫውት</string>
+    <string name="settings_play_external_desc_off">የሬዲዮ ጣቢያዎችን በAMARadio አጫውት</string>
     <string name="settings_equalizer">ኢኳላይዘር</string>
 
     <string name="settings_connectivity">ግንኙነት</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">ቆሟል</string>
     <string name="notify_metered_connection">የተገደበ ግንኙነት</string>
 
-    <string name="notify_starred">ጣቢያ ወደ ተወዳጆች ታክሏል</string>
-    <string name="notify_autostarred">ጣቢያ በራስ-ሰር ወደ ተወዳጆች ታክሏል</string>
-    <string name="notify_unstarred">ጣቢያ ከተወዳጆች ተወግዷል</string>
+    <string name="notify_starred">የሬዲዮ ጣቢያ ወደ ተወዳጆች ታክሏል</string>
+    <string name="notify_autostarred">የሬዲዮ ጣቢያ በራስ-ሰር ወደ ተወዳጆች ታክሏል</string>
+    <string name="notify_unstarred">የሬዲዮ ጣቢያ ከተወዳጆች ተወግዷል</string>
     <string name="notify_deleted_favorites">ተወዳጆቹ ተሰርዘዋል</string>
     <string name="notify_deleted_history">ታሪኩ ተሰርዟል</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">እባክዎ ማጫወቻ ይምረጡ</string>
     <string name="alert_select_player_name">ስም</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Port</string>
+    <string name="hostname">የአገልጋይ አድራሻ</string>
+    <string name="port">የአውታረ መረብ ወደብ</string>
 
     <string name="alert_press_back_to_exit">ለመውጣት አንዴ ድጋሚ የኋሊት ቁልፍን ይጫኑ</string>
 
@@ -264,10 +264,10 @@
     <string name="action_play_in_external">በውጫዊ ማጫወቻ አጫውት</string>
     <string name="action_choose_external_player">ውጫዊ ማጫወቻ ይምረጡ</string>
 
-    <string name="settings_disable_battery_optimization">የባትሪ ማመቻቸት</string>
+    <string name="settings_disable_battery_optimization">የበስተጀርባ መልሶ ማጫወት</string>
     <string name="settings_ignore_battery_optimization_summary_on">የባትሪ ማመቻቸት ችላ ተብሏል፣ AMARadio ሁልጊዜ ፎከስን መልሶ ማግኘት መቻል አለበት።</string>
     <string name="settings_ignore_battery_optimization_summary_off">የባትሪ ማመቻቸት ነቅቷል፣ AMARadio ከበስተጀርባ ከሆነ ፎከስን መልሶ ማግኘት ላይችል ይችላል።</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">ሌላ</string>
     <string name="settings_rate_app">AMARadio ደረጃ ይስጡ</string>
     <string name="settings_rate_app_summary">መተግበሪያውን ከወደዱ እባክዎን በPlay መደብር ላይ ግምገማ ይተው!</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">የጣቢያ አርማ</string>
+    <string name="accessibility_station_logo">የሬዲዮ ጣቢያ አርማ</string>
     <string name="accessibility_favorite_selected">ተወዳጅ፣ ተመርጧል</string>
     <string name="accessibility_favorite_not_selected">ተወዳጅ፣ አልተመረጠም</string>
     <string name="accessibility_category_icon">የምድብ አዶ</string>
@@ -337,7 +337,7 @@
     <string name="accessibility_configure">አዋቅር</string>
     <string name="accessibility_close">ዝጋ</string>
     <string name="accessibility_add_filter">ማጣሪያ ያክሉ</string>
-    <string name="accessibility_station_options">የጣቢያ አማራጮች</string>
+    <string name="accessibility_station_options">የሬዲዮ ጣቢያ አማራጮች</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">ጣቢያ፡ %1$s፣ ቋንቋ፡ %2$s፣ መለያዎች፡ %3$s</string>
 
@@ -345,10 +345,10 @@
     <string name="error_no_browser">የድር አሳሽ ማግኘት አልተቻለም። እባክዎ ይህን ሊንክ ለመክፈት አሳሽ ይጫኑ።</string>
     <string name="error_no_homepage">ለዚህ ጣቢያ ምንም መነሻ ገጽ የለም።</string>
     <string name="tab_custom_stations">ብጁ</string>
-    <string name="action_add_custom">ብጁ ጣቢያ ያክሉ</string>
-    <string name="station_name">የጣቢያ ስም</string>
+    <string name="action_add_custom">ብጁ የሬዲዮ ጣቢያ ያክሉ</string>
+    <string name="station_name">የሬዲዮ ጣቢያ ስም</string>
     <string name="stream_url">የዥረት URL</string>
-    <string name="favicon_url">Favicon URL (አማራጭ)</string>
+    <string name="favicon_url">የጣቢያ አርማ URL (Favicon)</string>
     <string name="select_image">ምስል ይምረጡ</string>
     <string name="error_invalid_url">እባክህ የሚሰራ URL አስገባ</string>
     <string name="action_save">አስቀምጥ</string>
@@ -358,9 +358,9 @@
     <string name="widget_description_full">የተጫዋች እና የጣቢያ ዝርዝር</string>
 
     <string name="settings_auto_db_update">የበስተጀርባ ውሂብ ማመሳሰል</string>
-    <string name="settings_auto_db_update_desc">በራዲዮ-አሳሽ ኤፒአይ በኩል የጣቢያ ዳታቤዝ በራስ-አዘምን (የሚመከር)።</string>
-    <string name="settings_station_click_counter">የጣቢያ ጠቅታ ቆጣሪ</string>
-    <string name="settings_station_click_counter_desc">ማንነታቸው ሳይታወቅ የጨዋታ ዝግጅቶችን በማጋራት የራዲዮ-አሳሽ ስታቲስቲክስን ይደግፉ።</string>
+    <string name="settings_auto_db_update_desc">በ Radio-Browser ኤፒአይ በኩል የጣቢያ ዳታቤዝ በራስ-አዘምን (የሚመከር)።</string>
+    <string name="settings_station_click_counter">የሬዲዮ ጣቢያ ጠቅታ ቆጣሪ</string>
+    <string name="settings_station_click_counter_desc">ማንነታቸው ሳይታወቅ የመልሶ ማጫወት ክስተቶችን በማጋራት የ Radio-Browser ስታቲስቲክስን ይደግፉ።</string>
     <string name="settings_rate_app_github">በAMARadio እየተዝናኑ ነው?</string>
     <string name="settings_rate_app_github_summary">በ GitHub ላይ ኮከብ ይተው! ሌሎች መተግበሪያውን እንዲያገኙ ያግዛል እና የወደፊት እድገትን ይደግፋል።</string>
 
@@ -368,4 +368,28 @@
     <string name="settings_remove_notification_on_stop_desc">መተግበሪያው ከቅርብ ጊዜ መተግበሪያዎች ሲዘጋ የማህደረ መረጃ ማሳወቂያውን በራስ-ሰር ያሰናብቱት።</string>
     <string name="settings_auto_resume_audio_focus">የኦዲዮ ትኩረት ከጠፋ በኋላ ከቆመበት ቀጥል</string>
     <string name="settings_auto_resume_audio_focus_desc">ከስልክ ጥሪዎች፣ ማንቂያዎች ወይም ሌላ የድምጽ ማቆሚያዎች በኋላ መልሶ ማጫወትን በራስ-ሰር ይቀጥሉ</string>
+
+    <string name="settings_backup_restore">ምትኬ እና እነበረበት መልስ</string>
+    <string name="settings_export_backup">ሙሉ የመጠባበቂያ ፍጠር (ZIP)</string>
+    <string name="settings_export_backup_desc">ሁሉንም ተወዳጆች፣ ብጁ ጣቢያዎችን እና የአካባቢ አዶዎችን በአንድ የ ZIP ፋይል ውስጥ ያስቀምጣል</string>
+    <string name="settings_import_backup">የመጠባበቂያ እነበረበት መልስ (ZIP)</string>
+    <string name="settings_import_backup_desc">ተወዳጆችን፣ ብጁ ጣቢያዎችን እና አዶዎችን ከመጠባበቂያ ZIP ፋይል ይመልሳል</string>
+    <string name="backup_export_success">ምትኬ በተሳካ ሁኔታ ተቀምጧል</string>
+    <string name="backup_export_error">ምትኬ ማስቀመጥ አልተቻለም</string>
+    <string name="backup_import_success">ምትኬ በተሳካ ሁኔታ ተመልሷል</string>
+    <string name="backup_import_error">የመጠባበቂያ ወደነበረበት መመለስ አልተሳካም</string>
+
+    <string name="database_summary_title">የአካባቢ ዳታቤዝ</string>
+    <string name="database_total_stations">ጠቅላላ የሬዲዮ ጣቢያዎች</string>
+    <string name="database_last_sync">የመጨረሻው ማመሳሰል</string>
+    <string name="database_update_now">የውሂብ ጎታውን አሁን ያዘምኑ</string>
+    <string name="database_full_update">የውሂብ ጎታውን ያዘምኑ</string>
+    <string name="database_syncing">በማመሳሰል ላይ…</string>
+    <string name="database_downloading">በማውረድ ላይ…</string>
+    <string name="database_stations_loaded">%1$s የሬዲዮ ጣቢያዎች</string>
+    <string name="database_sync_channel_name">የሬዲዮ ጣቢያ ዳታቤዝ ማመሳሰል</string>
+    <string name="database_sync_success">የጣቢያ ዳታቤዝ ማዘመን በተሳካ ሁኔታ ተጠናቋል</string>
+    <string name="database_error_no_connection">የበይነመረብ ግንኙነት የለም</string>
+    <string name="database_error_no_space">በቂ የዲስክ ቦታ የለም</string>
+    <string name="database_error_failed">የውሂብ ጎታ ማዘመን አልተሳካም</string>
 </resources>

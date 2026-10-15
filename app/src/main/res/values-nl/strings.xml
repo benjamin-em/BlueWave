@@ -49,27 +49,27 @@
     <string name="action_rename_tab">Tabblad hernoemen</string>
     <string name="error_filter_name_required">Voer eerst een naam in voor dit filtertabblad</string>
     <string name="confirm_delete_filter_tab">Weet u zeker dat u het filter \"%1$s\" wilt verwijderen?</string>
-    <string name="filter_empty_title">Bouw uw eigen station-feed</string>
+    <string name="filter_empty_title">Bouw uw eigen radiostation-feed</string>
     <string name="filter_empty_desc">Maak een gepersonaliseerde weergave door meerdere criteria te combineren. U kunt uw zoekopdracht verfijnen met:</string>
     <string name="filter_empty_filter_by">Filteren op</string>
-    <string name="filter_empty_filter_desc">Land, stationsnaam, labels of taal</string>
+    <string name="filter_empty_filter_desc">Land, radiostationsnaam, labels of taal</string>
     <string name="filter_empty_sort_by">Sorteren op</string>
-    <string name="filter_empty_sort_desc">Klikken, Alfabet, Stemmen oder Laatste wijziging</string>
+    <string name="filter_empty_sort_desc">Klikken, Alfabet, Stemmen of Laatste wijziging</string>
     <string name="filter_empty_hint">Typ een naam in het veld hierboven om deze aangepaste weergave op te slaan!</string>
-    <string name="error_station_load">Kan geen verbinding maken met station</string>
-    <string name="error_list_update">Kan geen verbinding maken met radio browser server</string>
+    <string name="error_station_load">Kan geen verbinding maken met het radiostation</string>
+    <string name="error_list_update">Kan geen verbinding maken met de Radio-Browser-server</string>
 
     <string name="error_no_connection">Geen internetverbinding beschikbaar</string>
     <string name="warning_volume_zero">Volume staat op nul. Je hoort mogelijk niets.</string>
 
-    <string name="share_action">Stationslink delen met&#8230;</string>
+    <string name="share_action">Radiostationlink delen met&#8230;</string>
 
-    <string name="nav_item_stations">Stations</string>
+    <string name="nav_item_stations">Radiostations</string>
     <string name="nav_item_starred">Favorieten</string>
     <string name="nav_item_history">Geschiedenis</string>
     <string name="nav_item_settings">Instellingen</string>
 
-    <string name="about_text">AMARadio is 100% reclamevrij en gericht op privacy.\n\nIk heb deze app oorspronkelijk ontwikkeld voor mijn moeder om haar een eenvoudige, eerlijke radio-ervaring te bieden zonder irritante advertenties of tracking. Daarom zal AMARadio altijd reclamevrij blijven – het is een belofte aan haar, gedeeld met jullie allemaal.\n\nDit project is een fork van de uitstekende RadioDroid. De volledige codebasis is gemigreerd van Java naar Kotlin om ervoor te zorgen dat de app modern blijft en compatibel is met toekomstige Android-versies.\n\nDeze app gebruikt de gratis radiostationsindex op https://www.radio-browser.info .\nIedereen kan stations toevoegen. Het werkt als een wiki voor online radiostations.\n\nContact: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nAls je deze software fijn vindt en wilt helpen, stuur me dan een e-mail.\nIdeeën voor nieuwe functies zijn ook altijd welkom!\n\nDeze app is vrije software onder de GPLv3-licentie. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio is 100% reclamevrij en gericht op privacy.\n\nIk heb deze app oorspronkelijk ontwikkeld voor mijn moeder om haar een eenvoudige, eerlijke radio-ervaring te bieden zonder irritante advertenties of tracking. Daarom zal AMARadio altijd reclamevrij blijven – het is een belofte aan haar, gedeeld met jullie allemaal.\n\nDit project is een fork van RadioDroid. De volledige codebasis is gemigreerd van Java naar Kotlin om ervoor te zorgen dat de app modern blijft en compatibel is met toekomstige Android-versies.\n\nDeze app gebruikt de gratis radiostationsindex op https://www.radio-browser.info .\nIedereen kan stations toevoegen. Het werkt als een wiki voor online radiostations.\n\nContact: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nAls je deze software fijn vindt en wilt helpen, stuur me dan een e-mail.\nIdeeën voor nieuwe functies zijn ook altijd welkom!\n\nDeze app is vrije software onder de GPLv3-licentie. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versie: %1$s</string>
     <string name="detail_star">Toevoegen aan favorieten</string>
     <string name="detail_unstar">Verwijderen uit favorieten</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Donker</string>
     <string name="theme_system">Systeem volgen</string>
     <string name="settings_compact_style">Compacte modus</string>
-    <string name="settings_compact_style_desc_off">Groot pictogram met stationdetails</string>
-    <string name="settings_compact_style_desc_on">Klein pictogram zonder stationdetails</string>
+    <string name="settings_compact_style_desc_off">Groot pictogram met radiostationdetails</string>
+    <string name="settings_compact_style_desc_on">Klein pictogram zonder radiostationdetails</string>
     <string name="settings_bottom_navigation">Navigatie onderaan</string>
     <string name="settings_ui_scale">UI Schaling</string>
     <string name="settings_language">Taal</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Zelden gebruikte labels worden verborgen</string>
     <string name="settings_single_use_tags_desc_on">Zelden gebruikte labels worden getoond</string>
 
-    <string name="settings_show_broken">Defecte stations</string>
-    <string name="settings_show_broken_on">Defecte stations in lijsten tonen</string>
-    <string name="settings_show_broken_off">Defecte stations in lijsten verbergen</string>
+    <string name="settings_show_broken">Defecte radiostations</string>
+    <string name="settings_show_broken_on">Defecte radiostations in lijsten tonen</string>
+    <string name="settings_show_broken_off">Defecte radiostations in lijsten verbergen</string>
 
     <string name="settings_startup_behaviour">Opstartgedrag</string>
     <string name="action_grid_view">Rasterweergave</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Opstartactie</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Alle stations tonen</string>
+    <string name="startup_show_all_stations">Alle radiostations tonen</string>
     <string name="startup_show_favorites">Favorieten tonen</string>
     <string name="startup_show_history">Geschiedenis tonen</string>
     <string name="startup_show_last_view">Laatste weergave</string>
 
-    <string name="settings_load_icons">Stationslogo\'s tonen</string>
+    <string name="settings_load_icons">Radiostationlogo\'s tonen</string>
     <string name="settings_load_icons_on">Logo\'s worden gedownload</string>
     <string name="settings_load_icons_off">Logo\'s worden niet gedownload</string>
 
     <string name="settings_auto_favorite">Automatische favorieten</string>
-    <string name="settings_auto_favorite_on">Stations automatisch aan favorieten toevoegen bij afspelen</string>
-    <string name="settings_auto_favorite_off">Stations niet automatisch aan favorieten toevoegen bij afspelen</string>
+    <string name="settings_auto_favorite_on">Radiostations automatisch aan favorieten toevoegen bij afspelen</string>
+    <string name="settings_auto_favorite_off">Radiostations niet automatisch aan favorieten toevoegen bij afspelen</string>
 
     <string name="settings_play">Speler</string>
     <string name="settings_auto_play_on_startup">Automatisch afspelen</string>
-    <string name="settings_auto_play_on_startup_on">Laatste station afspelen bij opstarten</string>
-    <string name="settings_auto_play_on_startup_off">Laatste station niet afspelen bij opstarten</string>
+    <string name="settings_auto_play_on_startup_on">Laatste radiostation afspelen bij opstarten</string>
+    <string name="settings_auto_play_on_startup_off">Laatste radiostation niet afspelen bij opstarten</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Auto-stop timer gebruiken bij automatisch afspelen</string>
     <string name="settings_auto_off_on_startup_off">Auto-stop timer niet gebruiken bij automatisch afspelen</string>
     <string name="settings_auto_off_sleep_timer">Auto-stop timer</string>
     <string name="settings_auto_off_sleep_timer_desc">Stoppen met afspelen na %1$s minuten</string>
     <string name="settings_play_external">Externe speler gebruiken</string>
-    <string name="settings_play_external_desc_on">Stations afspelen met externe speler</string>
-    <string name="settings_play_external_desc_off">Stations afspelen met AMARadio</string>
+    <string name="settings_play_external_desc_on">Radiostations afspelen met externe speler</string>
+    <string name="settings_play_external_desc_off">Radiostations afspelen met AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Connectiviteit</string>
@@ -175,7 +175,7 @@
     <string name="settings_proxy_invalid">Proxy-waarden zijn ongeldig</string>
     <string name="ignore_proxy_settings_invalid">Ongeldige proxy-instellingen genegeerd</string>
     <string name="settings_seconds_format">%d seconden</string>
-    <string name="settings_milliseconds_format">%d millisekunden</string>
+    <string name="settings_milliseconds_format">%d milliseconden</string>
 
     <string name="settings_pause_when_noisy">Pauzeren bij loskoppelen headset</string>
 
@@ -198,9 +198,9 @@
     <string name="notify_paused">Gepauzeerd</string>
     <string name="notify_metered_connection">Verbinding met datalimiet</string>
 
-    <string name="notify_starred">Station toegevoegd aan favorieten</string>
-    <string name="notify_autostarred">Station automatisch toegevoegd aan favorieten</string>
-    <string name="notify_unstarred">Station verwijderd uit favorieten</string>
+    <string name="notify_starred">Radiostation toegevoegd aan favorieten</string>
+    <string name="notify_autostarred">Radiostation automatisch toegevoegd aan favorieten</string>
+    <string name="notify_unstarred">Radiostation verwijderd uit favorieten</string>
     <string name="notify_deleted_favorites">Favorieten zijn verwijderd</string>
     <string name="notify_deleted_history">Geschiedenis is gewist</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Selecteer een speler</string>
     <string name="alert_select_player_name">Naam</string>
-    <string name="hostname">Hostnaam</string>
-    <string name="port">Poort</string>
+    <string name="hostname">Serveradres</string>
+    <string name="port">Netwerkpoort</string>
 
     <string name="alert_press_back_to_exit">Druk nogmaals op terug om af te sluiten</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Afspelen in externe speler</string>
     <string name="action_choose_external_player">Kies externe speler</string>
 
-    <string name="settings_disable_battery_optimization">Batterij-optimalisatie</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Batterij-optimalisatie wordt genegeerd, AMARadio moet de focus altijd kunnen herwinnen.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Batterij-optimalisatie is ingeschakeld, AMARadio kan de focus in de achtergrond mogelijk niet herwinnen.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Achtergrondweergave</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Overige</string>
     <string name="settings_rate_app">AMARadio beoordelen</string>
     <string name="settings_rate_app_summary">Als je de app leuk vindt, laat dan een beoordeling achter in de Play Store!</string>
+    <string name="settings_rate_app_github">Geniet je van AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Laat een ster achter op GitHub! Het helpt anderen de app te ontdekken en ondersteunt toekomstige ontwikkeling.</string>
     <string name="settings_statistics">Statistieken</string>
     <string name="settings_about">Over AMARadio</string>
 
@@ -323,12 +323,8 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Reserve-alarm</string>
-    <string name="alarm_fallback_info">Systeemalarm gebruikt omdat het geselecteerde radiostation niet kon worden geladen</string>
-    <string name="alarm_back_desc">Alternatief systeemalarm gebruikt wanneer radiostation niet laadt</string>
-
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stationlogo</string>
+    <string name="accessibility_station_logo">Radiostationlogo</string>
     <string name="accessibility_favorite_selected">Favoriet, geselecteerd</string>
     <string name="accessibility_favorite_not_selected">Favoriet, niet geselecteerd</string>
     <string name="accessibility_category_icon">Categorie-icoon</string>
@@ -341,35 +337,61 @@
     <string name="accessibility_configure">Configureren</string>
     <string name="accessibility_close">Sluiten</string>
     <string name="accessibility_add_filter">Filter toevoegen</string>
-    <string name="accessibility_station_options">Stationopties</string>
+    <string name="accessibility_station_options">Radiostationopties</string>
     <string name="not_applicable">N.v.t.</string>
     <string name="accessibility_station_description">Station: %1$s, Taal: %2$s, Tags: %3$s</string>
 
     <string name="error_no_file_manager">Kon geen systeembestandsbeheerder vinden. Zorg ervoor dat een bestandsverkenner is geïnstalleerd en ingeschakeld.</string>
     <string name="error_no_browser">Kon geen webbrowser vinden. Installeer een browser om deze link te openen.</string>
-    <string name="error_no_homepage">Er is geen homepage beschikbaar voor deze zender</string>
+    <string name="error_no_homepage">Er is geen homepage beschikbaar voor dit radiostation</string>
     <string name="tab_custom_stations">Aangepast</string>
-    <string name="action_add_custom">Aangepast station toevoegen</string>
-    <string name="station_name">Stationsnaam</string>
+    <string name="action_add_custom">Aangepast radiostation toevoegen</string>
+    <string name="station_name">Radiostationsnaam</string>
     <string name="stream_url">Stream-URL</string>
-    <string name="favicon_url">Favicon-URL (optioneel)</string>
+    <string name="favicon_url">Stationlogo-URL (Favicon)</string>
     <string name="select_image">Selecteer Afbeelding</string>
     <string name="error_invalid_url">Voer een geldige URL in</string>
-    <string name="action_save">Redden</string>
+    <string name="action_save">Opslaan</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Snelle spelerbediening</string>
-    <string name="widget_description_full">Speler- en zenderlijst</string>
+    <string name="widget_description_small">Snelle bediening van de speler</string>
+    <string name="widget_description_full">Speler en radiostationslijst</string>
 
     <string name="settings_auto_db_update">Synchronisatie van achtergrondgegevens</string>
     <string name="settings_auto_db_update_desc">Automatische update van de zenderdatabase via Radio-Browser API (aanbevolen).</string>
-    <string name="settings_station_click_counter">Stationklikteller</string>
-    <string name="settings_station_click_counter_desc">Ondersteun Radio-Browser-statistieken door anoniem speelevenementen te delen.</string>
-    <string name="settings_rate_app_github">Genieten van AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Laat een ster achter op GitHub! Het helpt anderen de app te ontdekken en ondersteunt toekomstige ontwikkeling.</string>
+    <string name="settings_station_click_counter">Radiostationklikteller</string>
+    <string name="settings_station_click_counter_desc">Ondersteun Radio-Browser-statistieken door anoniem afspeelevenementen te delen.</string>
 
-    <string name="settings_remove_notification_on_stop">Verwijder de melding wanneer de app wordt gesloten</string>
-    <string name="settings_remove_notification_on_stop_desc">Sluit automatisch de mediamelding af wanneer de app wordt gesloten voor recente apps</string>
+    <string name="settings_remove_notification_on_stop">Verwijder de melding bij stoppen</string>
+    <string name="settings_remove_notification_on_stop_desc">Sluit automatisch de mediamelding af wanneer het afspelen wordt gestopt</string>
     <string name="settings_auto_resume_audio_focus">Hervatten na verlies van audiofocus</string>
     <string name="settings_auto_resume_audio_focus_desc">Hervat het afspelen automatisch nadat telefoongesprekken, alarmen of andere audio-stops zijn</string>
+
+    <string name="settings_backup_restore">Back-up en herstel</string>
+    <string name="settings_export_backup">Volledige back-up maken (ZIP)</string>
+    <string name="settings_export_backup_desc">Slaat alle favorieten, aangepaste stations en pictogrammen op in een ZIP-bestand</string>
+    <string name="settings_import_backup">Back-up herstellen (ZIP)</string>
+    <string name="settings_import_backup_desc">Herstelt favorieten en aangepaste stations uit een ZIP-back-upbestand</string>
+    <string name="backup_export_success">Back-up succesvol opgeslagen</string>
+    <string name="backup_export_error">Opslaan van back-up mislukt</string>
+    <string name="backup_import_success">Back-up succesvol hersteld</string>
+    <string name="backup_import_error">Herstellen van back-up mislukt</string>
+
+    <string name="database_summary_title">Lokale database</string>
+    <string name="database_total_stations">Totaal aantal radiostations</string>
+    <string name="database_last_sync">Laatste update</string>
+    <string name="database_update_now">Database nu bijwerken</string>
+    <string name="database_full_update">Database bijwerken</string>
+    <string name="database_syncing">Synchroniseren…</string>
+    <string name="database_downloading">Downloaden…</string>
+    <string name="database_stations_loaded">%1$s radiostations</string>
+    <string name="database_sync_channel_name">Synchronisatie van radiostationsdatabase</string>
+    <string name="database_sync_success">Update van stationsdatabase succesvol voltooid</string>
+    <string name="database_error_no_connection">Geen internetverbinding</string>
+    <string name="database_error_no_space">Onvoldoende schijfruimte</string>
+    <string name="database_error_failed">Update van database mislukt</string>
+
+    <string name="settings_disable_battery_optimization_desc">Om het afspelen voort te zetten wanneer het scherm is uitgeschakeld, stelt u het batterijgebruik in op \'Onbeperkt\'.</string>
+    <string name="battery_opt_open_settings">Instellingen openen</string>
+    <string name="battery_opt_later">Laters</string>
 </resources>

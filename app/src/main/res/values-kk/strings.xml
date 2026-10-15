@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Өзіңіздің жеке радиостанциялар тізімін жасаңыз</string>
     <string name="filter_empty_desc">Бірнеше критерийді біріктіру арқылы жекелендірілген көрініс жасаңыз. Іздеуді келесілер бойынша шектей аласыз:</string>
     <string name="filter_empty_filter_by">Сүзгілеу:</string>
-    <string name="filter_empty_filter_desc">Ел, Станция атауы, Тегтер немесе Тіл</string>
+    <string name="filter_empty_filter_desc">Ел, Радиостанция атауы, Тегтер немесе Тіл</string>
     <string name="filter_empty_sort_by">Сұрыптау:</string>
     <string name="filter_empty_sort_desc">Шертулер, Әліпби, Дауыстар немесе Соңғы өзгеріс</string>
     <string name="filter_empty_hint">Осы көріністі сақтау үшін жоғарыдағы өріске атау енгізіңіз!</string>
-    <string name="error_station_load">Станцияға қосылу мүмкін болмады</string>
-    <string name="error_list_update">Radio browser серверіне қосылу мүмкін болмады</string>
+    <string name="error_station_load">Радиостанцияға қосылу мүмкін болмады</string>
+    <string name="error_list_update">Radio-Browser серверіне қосылу мүмкін болмады</string>
 
     <string name="error_no_connection">Интернет қосылымы жоқ.</string>
     <string name="warning_volume_zero">Дыбыс деңгейі нөлге тең. Ештеңе естілмеуі мүмкін.</string>
 
-    <string name="share_action">Станция сілтемесімен бөлісу…</string>
+    <string name="share_action">Радиостанция сілтемесімен бөлісу…</string>
 
-    <string name="nav_item_stations">Станциялар</string>
+    <string name="nav_item_stations">Радиостанциялар</string>
     <string name="nav_item_starred">Таңдаулылар</string>
     <string name="nav_item_history">Тарих</string>
     <string name="nav_item_settings">Параметрлер</string>
 
-    <string name="about_text">AMARadio 100% жарнамасыз және құпиялылыққа бағытталған.\n\nМен бұл қолданбаны алғаш рет анам үшін, оған жарнамасыз немесе аңдусыз қарапайым радио тәжірибесін ұсыну үшін жасадым. Сондықтан AMARadio әрқашан жарнамасыз болып қалады – бұл оған берілген уәде және оны баршаңызбен бөлісемін.\n\nБұл жоба тамаша https://github.com/segler-alex/RadioDroid жобасының форкы (fork) болып табылады. Қолданба заманауи болып қалуы және болашақ Android нұсқаларымен үйлесімді болуы үшін барлық бастапқы код Java-дан Kotlin-ге көшірілді.\n\nБастапқы код мына мекенжайда қолжетімді: https://github.com/ounben/AMARadio\n\nБұл қолданба https://www.radio-browser.info сайтындағы тегін радиостанциялар каталогын пайдаланады. Кез келген адам оған станциялар қоса алады. Ол онлайн радиостанциялар үшін вики сияқты жұмыс істейді.\n\nБайланыс: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nЕгер сізге бағдарлама ұнаса және көмектескіңіз келсе, маған электрондық хат жіберуден тартынбаңыз. Сондай-ақ жаңа мүмкіндіктер туралы идеялар әрқашан құпталады!\n\nБұл қолданба GPLv3 лицензиясы бойынша тегін бағдарламалық құрал болып табылады. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% жарнамасыз және құпиялылыққа бағытталған.\n\nМен бұл қолданбаны алғаш рет анам үшін, оған жарнамасыз немесе аңдусыз қарапайым радио тәжірибесін ұсыну үшін жасадым. Сондықтан AMARadio әрқашан жарнамасыз болып қалады – бұл оған берілген уәде және оны баршаңызбен бөлісемін.\n\nБұл жоба тамаша RadioDroid жобасының форкы (fork) болып табылады. Қолданба заманауи болып қалуы және болашақ Android нұсқаларымен үйлесімді болуы үшін барлық бастапқы код Java-дан Kotlin-ге көшірілді.\n\nБастапқы код мына мекенжайда қолжетімді: https://github.com/ounben/AMARadio\n\nБұл қолданба https://www.radio-browser.info сайтындағы тегін радиостанциялар каталогын пайдаланады. Кез келген адам оған станциялар қоса алады. Ол онлайн радиостанциялар үшін вики сияқты жұмыс істейді.\n\nБайланыс: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nЕгер сізге бағдарлама ұнаса және көмектескіңіз келсе, маған электрондық хат жіберуден тартынбаңыз. Сондай-ақ жаңа мүмкіндіктер туралы идеялар әрқашан құпталады!\n\nБұл қолданба GPLv3 лицензиясы бойынша тегін бағдарламалық құрал болып табылады. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Нұсқа: %1$s</string>
     <string name="detail_star">Таңдаулыларға қосу</string>
     <string name="detail_unstar">Таңдаулылардан алып тастау</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Қараңғы</string>
     <string name="theme_system">Жүйе бойынша</string>
     <string name="settings_compact_style">Ықшам режим</string>
-    <string name="settings_compact_style_desc_off">Станция мәліметтері бар үлкен белгіше</string>
-    <string name="settings_compact_style_desc_on">Мәліметтері жоқ кішкентай белгіше</string>
+    <string name="settings_compact_style_desc_off">Радиостанция мәліметтері бар үлкен белгіше</string>
+    <string name="settings_compact_style_desc_on">Радиостанция мәліметтері жоқ кішкентай белгіше</string>
     <string name="settings_bottom_navigation">Төменгі навигация</string>
     <string name="settings_ui_scale">UI масштабтау</string>
     <string name="settings_language">Тіл</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Сирек қолданылатын тегтер көрсетілмейді</string>
     <string name="settings_single_use_tags_desc_on">Сирек қолданылатын тегтер көрсетіледі</string>
 
-    <string name="settings_show_broken">Істен шыққан станциялар</string>
-    <string name="settings_show_broken_on">Тізімдерде істен шыққан станцияларды көрсету</string>
-    <string name="settings_show_broken_off">Тізімдерде істен шыққан станцияларды көрсетпеу</string>
+    <string name="settings_show_broken">Істен шыққан радиостанциялар</string>
+    <string name="settings_show_broken_on">Тізімдерде істен шыққан радиостанцияларды көрсету</string>
+    <string name="settings_show_broken_off">Тізімдерде істен шыққан радиостанцияларды көрсетпеу</string>
 
     <string name="settings_startup_behaviour">Іске қосу әрекеті</string>
     <string name="action_grid_view">Тор көрінісі</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Іске қосу әрекеті</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Барлық станцияларды көрсету</string>
+    <string name="startup_show_all_stations">Барлық радиостанцияларды көрсету</string>
     <string name="startup_show_favorites">Таңдаулыларды көрсету</string>
     <string name="startup_show_history">Тарихты көрсету</string>
     <string name="startup_show_last_view">Соңғы көрініс</string>
 
-    <string name="settings_load_icons">Станция белгішелерін көрсету</string>
+    <string name="settings_load_icons">Радиостанция белгішелерін көрсету</string>
     <string name="settings_load_icons_on">Белгішелер жүктеледі</string>
     <string name="settings_load_icons_off">Белгішелер жүктелмейді</string>
 
     <string name="settings_auto_favorite">Авто-таңдаулы</string>
-    <string name="settings_auto_favorite_on">Ойнату кезінде станцияларды автоматты түрде таңдаулыларға қосу</string>
-    <string name="settings_auto_favorite_off">Ойнату кезінде станцияларды автоматты түрде таңдаулыларға қоспау</string>
+    <string name="settings_auto_favorite_on">Ойнату кезінде радиостанцияларды автоматты түрде таңдаулыларға қосу</string>
+    <string name="settings_auto_favorite_off">Ойнату кезінде радиостанцияларды автоматты түрде таңдаулыларға қоспау</string>
 
     <string name="settings_play">Ойнатқыш</string>
     <string name="settings_auto_play_on_startup">Авто-ойнату</string>
-    <string name="settings_auto_play_on_startup_on">Іске қосу кезінде соңғы станцияны ойнату</string>
-    <string name="settings_auto_play_on_startup_off">Іске қосу кезінде соңғы станцияны ойнатпау</string>
+    <string name="settings_auto_play_on_startup_on">Іске қосу кезінде соңғы радиостанцияны ойнату</string>
+    <string name="settings_auto_play_on_startup_off">Іске қосу кезінде соңғы радиостанцияны ойнатпау</string>
     <string name="settings_auto_off_on_startup">Авто-тоқтату</string>
     <string name="settings_auto_off_on_startup_on">Авто-ойнатумен бірге авто-тоқтату таймерін пайдалану</string>
     <string name="settings_auto_off_on_startup_off">Авто-ойнатумен бірге авто-тоқтату таймерін пайдаланбау</string>
     <string name="settings_auto_off_sleep_timer">Авто-тоқтату таймері</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s минуттан кейін ойнатуды тоқтату</string>
     <string name="settings_play_external">Сыртқы ойнатқышты қосу</string>
-    <string name="settings_play_external_desc_on">Станцияларды сыртқы ойнатқышпен ойнату</string>
-    <string name="settings_play_external_desc_off">Станцияларды AMARadio арқылы ойнату</string>
+    <string name="settings_play_external_desc_on">Радиостанцияларды сыртқы ойнатқышпен ойнату</string>
+    <string name="settings_play_external_desc_off">Радиостанцияларды AMARadio арқылы ойнату</string>
     <string name="settings_equalizer">Эквалайзер</string>
 
     <string name="settings_connectivity">Қосылым</string>
@@ -198,26 +198,26 @@
     <string name="notify_paused">Кідіртілді</string>
     <string name="notify_metered_connection">Лимиттелген қосылым</string>
 
-    <string name="notify_starred">Станция таңдаулыларға қосылды</string>
-    <string name="notify_autostarred">Станция автоматты түрде таңдаулыларға қосылды</string>
-    <string name="notify_unstarred">Станция таңдаулылардан алынып тасталды</string>
+    <string name="notify_starred">Радиостанция таңдаулыларға қосылды</string>
+    <string name="notify_autostarred">Радиостанция автоматты түрде таңдаулыларға қосылды</string>
+    <string name="notify_unstarred">Радиостанция таңдаулылардан алынып тасталды</string>
     <string name="notify_deleted_favorites">Таңдаулылар өшірілді</string>
     <string name="notify_deleted_history">Тарих өшірілді</string>
 
     <string name="notify_open_link_failure">Сілтемені ашуға арналған қолданба табылмады</string>
 
-    <string name="notify_station_removed_from_list">1 станция жойылды</string>
+    <string name="notify_station_removed_from_list">1 радиостанция жойылды</string>
     <string name="action_station_removed_from_list_undo">БОЛДЫРМАУ</string>
 
     <string name="alert_delete_history">Шынымен тарихты өшіргіңіз келе ме?</string>
-    <string name="alert_delete_favorites">Шынымен барлық таңдаулыларды өшіргіңіз келе ме?</string>
+    <string name="alert_delete_favorites">Шынымен барлық таңдаулыларды өшіргіңіז келе ме?</string>
     <string name="yes">Иә</string>
     <string name="no">Жоқ</string>
 
     <string name="alert_select_player">Ойнатқышты таңдаңыз</string>
     <string name="alert_select_player_name">Атауы</string>
-    <string name="hostname">Хост атауы</string>
-    <string name="port">Порт</string>
+    <string name="hostname">Сервер мекенжайы</string>
+    <string name="port">Желілік порт</string>
 
     <string name="alert_press_back_to_exit">Шығу үшін \"Артқа\" түймесін тағы бір рет басыңыз</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Сыртқы ойнатқышта ойнату</string>
     <string name="action_choose_external_player">Сыртқы ойнатқышты таңдау</string>
 
-    <string name="settings_disable_battery_optimization">Батареяны оңтайландыру</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Батареяны оңтайландыру еленбейді, AMARadio әрқашан фокусты қайтара алуы керек.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Батареяны оңтайландыру белсендірілген, AMARadio фондық режимде фокусты қайтара алмауы мүмкін.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Фондық режимде ойнату</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Басқалары</string>
     <string name="settings_rate_app">AMARadio-ны бағалау</string>
     <string name="settings_rate_app_summary">Егер сізге қолданба ұнаса, Play Store-да пікір қалдырыңыз!</string>
+    <string name="settings_rate_app_github">AMARadio ұнай ма?</string>
+    <string name="settings_rate_app_github_summary">GitHub сайтында жұлдыз қалдырыңыз! Бұл басқаларға қолданбаны табуға көмектеседі және болашақ дамуды қолдайды.</string>
     <string name="settings_statistics">Статистика</string>
     <string name="settings_about">AMARadio туралы</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Станция логотипі</string>
+    <string name="accessibility_station_logo">Радиостанция логотипі</string>
     <string name="accessibility_favorite_selected">Таңдаулы, таңдалды</string>
     <string name="accessibility_favorite_not_selected">Таңдаулы, таңдалмады</string>
     <string name="accessibility_category_icon">Санат белгішесі</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Конфигурациялау</string>
     <string name="accessibility_close">Жабу</string>
     <string name="accessibility_add_filter">Сүзгіні қосу</string>
-    <string name="accessibility_station_options">Станция параметрлері</string>
+    <string name="accessibility_station_options">Радиостанция параметрлері</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Станция: %1$s, Тіл: %2$s, Тегтер: %3$s</string>
 
     <string name="error_no_file_manager">Жүйелік файл менеджері табылмады. Файл шолғышының орнатылғанын және қосылғанын тексеріңіз.</string>
     <string name="error_no_browser">Веб-шолғыш табылмады. Осы сілтемені ашу үшін браузерді орнатыңыз.</string>
-    <string name="error_no_homepage">Бұл станцияның басты беті жоқ</string>
-    <string name="tab_custom_stations">Арнаулы</string>
-    <string name="action_add_custom">Пайдаланушы станциясын қосыңыз</string>
-    <string name="station_name">Станция атауы</string>
+    <string name="error_no_homepage">Бұл радиостанцияның басты беті жоқ</string>
+    <string name="tab_custom_stations">Пайдаланушы</string>
+    <string name="action_add_custom">Пайдаланушы радиостанциясын қосу</string>
+    <string name="station_name">Радиостанция атауы</string>
     <string name="stream_url">Ағын URL</string>
-    <string name="favicon_url">Favicon URL (міндетті емес)</string>
+    <string name="favicon_url">Станция логотипінің URL-і (Favicon)</string>
     <string name="select_image">Суретті таңдаңыз</string>
     <string name="error_invalid_url">Жарамды URL мекенжайын енгізіңіз</string>
     <string name="action_save">Сақтау</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Жылдам ойнатқышты басқару</string>
-    <string name="widget_description_full">Ойыншы және станция тізімі</string>
+    <string name="widget_description_full">Ойнатқыш және радиостанциялар тізімі</string>
 
     <string name="settings_auto_db_update">Фондық деректерді синхрондау</string>
-    <string name="settings_auto_db_update_desc">Radio-Browser API арқылы станция дерекқорын автоматты түрде жаңарту (ұсынылады).</string>
-    <string name="settings_station_click_counter">Станцияны басу есептегіші</string>
-    <string name="settings_station_click_counter_desc">Ойын оқиғаларын жасырын түрде бөлісу арқылы Radio-Browser статистикасын қолдаңыз.</string>
-    <string name="settings_rate_app_github">AMARadio ұнай ма?</string>
-    <string name="settings_rate_app_github_summary">GitHub сайтында жұлдыз қалдырыңыз! Бұл басқаларға қолданбаны табуға көмектеседі және болашақ дамуды қолдайды.</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API арқылы радиостанциялар дерекқорын автоматты түрде жаңарту (ұсынылады).</string>
+    <string name="settings_station_click_counter">Радиостанцияны басу есептегіші</string>
+    <string name="settings_station_click_counter_desc">Ойнату оқиғаларын жасырын түрде бөлісу арқылы Radio-Browser статистикасын қолдаңыз.</string>
 
-    <string name="settings_remove_notification_on_stop">Қолданба жабылған кезде хабарландыруды алып тастаңыз</string>
-    <string name="settings_remove_notification_on_stop_desc">Қолданба соңғы қолданбалардан жабылған кезде медиа хабарландыруын автоматты түрде жабыңыз</string>
-    <string name="settings_auto_resume_audio_focus">Дыбыс фокусын жоғалтқаннан кейін жалғастырыңыз</string>
-    <string name="settings_auto_resume_audio_focus_desc">Телефон қоңырауларынан, дабылдардан немесе басқа дыбыс тоқтағаннан кейін ойнатуды автоматты түрде жалғастырыңыз</string>
+    <string name="settings_remove_notification_on_stop">Тоқтатылғанда хабарландыруды алып тастау</string>
+    <string name="settings_remove_notification_on_stop_desc">Ойнату тоқтатылған кезде медиа хабарландыруын автоматты түрде жабу</string>
+    <string name="settings_auto_resume_audio_focus">Дыбыс фокусын жоғалтқаннан кейін жалғастыру</string>
+    <string name="settings_auto_resume_audio_focus_desc">Телефон қоңырауларынан, дабылдардан немесе басқа дыбыс тоқтағаннан кейін ойнатуды автоматты түрде жалғастыру</string>
+
+    <string name="settings_backup_restore">Резервтік көшірме жасау және калпына келтіру</string>
+    <string name="settings_export_backup">Толық резервтік көшірме жасау (ZIP)</string>
+    <string name="settings_export_backup_desc">Барлық таңдаулыларды, пайдаланушы станцияларын және белгішелерді ZIP файла сақтайды</string>
+    <string name="settings_import_backup">Резервтік көшірмені қалпына келтіру (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP резервтік көшірме файлынан таңдаулылар мен пайдаланушы станцияларын қалпына келтіреді</string>
+    <string name="backup_export_success">Резервтік көшірме сәтті сақталды</string>
+    <string name="backup_export_error">Резервтік көшірмені сақтау мүмкін болмады</string>
+    <string name="backup_import_success">Резервтік көшірме сәтті қалпына келтірілді</string>
+    <string name="backup_import_error">Резервтік көшірмені қалпына келтіру мүмкін болмады</string>
+
+    <string name="database_summary_title">Жергілікті дерекқор</string>
+    <string name="database_total_stations">Барлығы радиостанциялар</string>
+    <string name="database_last_sync">Соңғы жаңарту</string>
+    <string name="database_update_now">Дерекқорды қазір жаңарту</string>
+    <string name="database_full_update">Дерекқорды жаңарту</string>
+    <string name="database_syncing">Синхрондалуда…</string>
+    <string name="database_downloading">Жүктелуде…</string>
+    <string name="database_stations_loaded">%1$s радиостанция</string>
+    <string name="database_sync_channel_name">Радиостанциялар дерекқорын синхрондау</string>
+    <string name="database_sync_success">Станциялар дерекқорын жаңарту сәтті аяқталды</string>
+    <string name="database_error_no_connection">Интернет қосылымы жоқ</string>
+    <string name="database_error_no_space">Дискіде бос орын жеткіліксіз</string>
+    <string name="database_error_failed">Дерекқорды жаңарту сәтсіз аяқталды</string>
+
+    <string name="settings_disable_battery_optimization_desc">Экран өшірулі кезде ойнатуды жалғастыру үшін батареяны пайдалануды \'Шектеусіз\' күйіне орнатыңыз.</string>
+    <string name="battery_opt_open_settings">Баптауларды ашу</string>
+    <string name="battery_opt_later">Кейінірек</string>
 </resources>

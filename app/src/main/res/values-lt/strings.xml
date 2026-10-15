@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Susikurkite savo radijo stočių srautą</string>
     <string name="filter_empty_desc">Sukurkite asmeninį rodinį derindami kelis kriterijus. Paiešką galite susiaurinti pagal:</string>
     <string name="filter_empty_filter_by">Filtruoti pagal</string>
-    <string name="filter_empty_filter_desc">Šalį, stoties pavadinimą, žymas arba kalbą</string>
+    <string name="filter_empty_filter_desc">Šalį, radijo stoties pavadinimą, žymas arba kalbą</string>
     <string name="filter_empty_sort_by">Rūšiuoti pagal</string>
     <string name="filter_empty_sort_desc">Paspaudimus, abėcėlę, balsus arba paskutinius pakeitimus</string>
     <string name="filter_empty_hint">Įveskite pavadinimą laukelyje aukščiau, kad išsaugotumėte šį rodinį!</string>
-    <string name="error_station_load">Nepavyko prisijungti prie stoties</string>
-    <string name="error_list_update">Nepavyko prisijungti prie radijo naršyklės serverio</string>
+    <string name="error_station_load">Nepavyko prisijungti prie radijo stoties</string>
+    <string name="error_list_update">Nepavyko prisijungti prie Radio-Browser serverio</string>
 
     <string name="error_no_connection">Nėra interneto ryšio.</string>
     <string name="warning_volume_zero">Garsumas nustatytas į nulį. Galite nieko negirdėti.</string>
 
-    <string name="share_action">Dalintis stoties nuoroda per…</string>
+    <string name="share_action">Dalintis radijo stoties nuoroda per…</string>
 
-    <string name="nav_item_stations">Stotys</string>
+    <string name="nav_item_stations">Radijo stotys</string>
     <string name="nav_item_starred">Mėgstamos</string>
     <string name="nav_item_history">Istorija</string>
     <string name="nav_item_settings">Nustatymai</string>
 
-    <string name="about_text">AMARadio yra 100 % be reklamų ir orientuota į privatumą.\n\nIš pradžių šią programėlę sukūriau savo mamai, kad ji galėtų paprastai ir sąžiningai klausytis radijo be erzinančių reklamų ar sekimo. Štai kodėl AMARadio visada išliks nemokama – tai pažadas jai, kuriuo dalinuosi su jumis visais.\n\nŠis projektas yra puikios https://github.com/segler-alex/RadioDroid programėlės atšaka. Visas kodas buvo perkeltas iš Java į Kotlin, kad programėlė išliktų šiuolaikiška ir suderinama su būsimomis Android versijomis.\n\nIšeities kodą galite rasti: https://github.com/ounben/AMARadio\n\nŠi programėlė naudoja nemokamą radijo stočių katalogą adresu https://www.radio-browser.info .\nKiekvienas gali ten pridėti stočių. Tai veikia kaip interneto radijo stočių viki.\n\nKontaktai: ben@ounben.com\n\nKlaidų registravimas: https://github.com/ounben/AMARadio/issues\n\nJei jums patinka ši programinė įranga ir norite padėti, nedvejodami rašykite man el. paštu.\nTaip pat idėjos naujoms funkcijoms visada laukiamos!\n\nŠi programėlė yra laisvoji programinė įranga, licencijuota pagal GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio yra 100 % be reklamų ir orientuota į privatumą.\n\nIš pradžių šią programėlę sukūriau savo mamai, kad ji galėtų paprastai ir sąžiningai klausytis radijo be erzinančių reklamų ar sekimo. Štai kodėl AMARadio visada išliks nemokama – tai pažadas jai, kuriuo dalinuosi su jumis visais.\n\nŠis projektas yra puikios RadioDroid programėlės atšaka. Visas kodas buvo perkeltas iš Java į Kotlin, kad programėlė išliktų šiuolaikiška ir suderinama su būsimomis Android versijomis.\n\nIšeities kodą galite rasti: https://github.com/ounben/AMARadio\n\nŠi programėlė naudoja nemokamą radijo stočių katalogą adresu https://www.radio-browser.info .\nKiekvienas gali ten pridėti stočių. Tai veikia kaip interneto radijo stočių viki.\n\nKontaktai: ben@ounben.com\n\nKlaidų registravimas: https://github.com/ounben/AMARadio/issues\n\nJei jums patinka ši programinė įranga ir norite padėti, nedvejodami rašykite man el. paštu.\nTaip pat idėjos naujoms funkcijoms visada laukiamos!\n\nŠi programėlė yra laisvoji programinė įranga, licencijuota pagal GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versija: %1$s</string>
     <string name="detail_star">Pridėti prie mėgstamų</string>
     <string name="detail_unstar">Pašalinti iš mėgstamų</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Tamsi</string>
     <string name="theme_system">Sisteminė</string>
     <string name="settings_compact_style">Kompaktiškas režimas</string>
-    <string name="settings_compact_style_desc_off">Didelė ikona su stoties informacija</string>
-    <string name="settings_compact_style_desc_on">Maža ikona be stoties informacijos</string>
+    <string name="settings_compact_style_desc_off">Didelė ikona su radijo stoties informacija</string>
+    <string name="settings_compact_style_desc_on">Maža ikona be radijo stoties informacijos</string>
     <string name="settings_bottom_navigation">Apatinė navigacija</string>
     <string name="settings_ui_scale">Sąsajos mastelis</string>
     <string name="settings_language">Kalba</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Retai naudojamos žymos nebus rodomos</string>
     <string name="settings_single_use_tags_desc_on">Retai naudojamos žymos bus rodomos</string>
 
-    <string name="settings_show_broken">Neveikiančios stotys</string>
-    <string name="settings_show_broken_on">Rodyti neveikiančias stotis sąrašuose</string>
-    <string name="settings_show_broken_off">Nerodyti neveikiančių stočių sąrašuose</string>
+    <string name="settings_show_broken">Neveikiančios radijo stotys</string>
+    <string name="settings_show_broken_on">Rodyti neveikiančias radijo stotis sąrašuose</string>
+    <string name="settings_show_broken_off">Nerodyti neveikiančių radijo stočių sąrašuose</string>
 
     <string name="settings_startup_behaviour">Pradžios elgsena</string>
     <string name="action_grid_view">Tinklelio rodinis</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Pradžios veiksmas</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Rodyti visas stotis</string>
+    <string name="startup_show_all_stations">Rodyti visas radijo stotis</string>
     <string name="startup_show_favorites">Rodyti mėgstamas</string>
     <string name="startup_show_history">Rodyti istoriją</string>
     <string name="startup_show_last_view">Paskutinis rodinis</string>
 
-    <string name="settings_load_icons">Rodyti stočių ikonas</string>
+    <string name="settings_load_icons">Rodyti radijo stočių ikonas</string>
     <string name="settings_load_icons_on">Ikonos bus atsisiunčiamos</string>
     <string name="settings_load_icons_off">Ikonos nebus atsisiunčiamos</string>
 
     <string name="settings_auto_favorite">Automatinis pridėjimas</string>
-    <string name="settings_auto_favorite_on">Automatiškai pridėti stotis prie mėgstamų klausantis</string>
-    <string name="settings_auto_favorite_off">Nepridėti stočių automatiškai prie mėgstamų klausantis</string>
+    <string name="settings_auto_favorite_on">Automatiškai pridėti radijo stotis prie mėgstamų klausantis</string>
+    <string name="settings_auto_favorite_off">Nepridėti radijo stočių automatiškai prie mėgstamų klausantis</string>
 
     <string name="settings_play">Grotuvas</string>
     <string name="settings_auto_play_on_startup">Automatinis grojimas</string>
-    <string name="settings_auto_play_on_startup_on">Paleisti paskutinę stotį įjungus programėlę</string>
-    <string name="settings_auto_play_on_startup_off">Nepaleisti paskutinės stoties įjungus programėlę</string>
+    <string name="settings_auto_play_on_startup_on">Paleisti paskutinę radijo stotį įjungus programėlę</string>
+    <string name="settings_auto_play_on_startup_off">Nepaleisti paskutinės radijo stoties įjungus programėlę</string>
     <string name="settings_auto_off_on_startup">Automatinis sustabdymas</string>
     <string name="settings_auto_off_on_startup_on">Naudoti automatinio sustabdymo laikmatį su automatiniu grojimu</string>
     <string name="settings_auto_off_on_startup_off">Nenaudoti automatinio sustabdymo laikmačio su automatiniu grojimu</string>
     <string name="settings_auto_off_sleep_timer">Automatinio sustabdymo laikmatis</string>
     <string name="settings_auto_off_sleep_timer_desc">Sustabdyti grojimą po %1$s minučių</string>
     <string name="settings_play_external">Leisti išorinį grotuvą</string>
-    <string name="settings_play_external_desc_on">Groti stotis per išorinį grotuvą</string>
-    <string name="settings_play_external_desc_off">Groti stotis per AMARadio</string>
+    <string name="settings_play_external_desc_on">Groti radijo stotis per išorinį grotuvą</string>
+    <string name="settings_play_external_desc_off">Groti radijo stotis per AMARadio</string>
     <string name="settings_equalizer">Glodintuvas (Equalizer)</string>
 
     <string name="settings_connectivity">Ryšys</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Sustabdyta</string>
     <string name="notify_metered_connection">Mokamas ryšys</string>
 
-    <string name="notify_starred">Stotis pridėta prie mėgstamų</string>
-    <string name="notify_autostarred">Stotis automatiškai pridėta prie mėgstamų</string>
-    <string name="notify_unstarred">Stotis pašalinta iš mėgstamų</string>
+    <string name="notify_starred">Radijo stotis pridėta prie mėgstamų</string>
+    <string name="notify_autostarred">Radijo stotis automatiškai pridėta prie mėgstamų</string>
+    <string name="notify_unstarred">Radijo stotis pašalinta iš mėgstamų</string>
     <string name="notify_deleted_favorites">Mėgstamos ištrintos</string>
     <string name="notify_deleted_history">Istorija išvalyta</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Pasirinkite grotuvą</string>
     <string name="alert_select_player_name">Pavadinimas</string>
-    <string name="hostname">Serverio vardas</string>
-    <string name="port">Prievadas (Port)</string>
+    <string name="hostname">Serverio adresas</string>
+    <string name="port">Tinklo prievadas</string>
 
     <string name="alert_press_back_to_exit">Dar kartą paspauskite „Atgal“, kad išeitumėte</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Groti išoriniame grotuve</string>
     <string name="action_choose_external_player">Pasirinkti išorinį grotuvą</string>
 
-    <string name="settings_disable_battery_optimization">Baterijos optimizavimas</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Baterijos optimizavimo nepaisoma, AMARadio visada turėtų atgauti prioritetą.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Baterijos optimizavimas aktyvuotas, fone AMARadio gali nepavykti atgauti prioriteto.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Grojimas fone</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Kita</string>
     <string name="settings_rate_app">Įvertinti AMARadio</string>
     <string name="settings_rate_app_summary">Jei jums patinka programėlė, palikite atsiliepimą Play Store!</string>
+    <string name="settings_rate_app_github">Mėgaukitės AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Palikite žvaigždutę „GitHub“! Tai padeda kitiems atrasti programą ir palaiko būsimą plėtrą.</string>
     <string name="settings_statistics">Statistika</string>
     <string name="settings_about">Apie AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Stoties logotipas</string>
+    <string name="accessibility_station_logo">Radijo stoties logotipas</string>
     <string name="accessibility_favorite_selected">Mėgstama, pasirinkta</string>
     <string name="accessibility_favorite_not_selected">Mėgstama, nepasirinkta</string>
     <string name="accessibility_category_icon">Kategorijos piktograma</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Konfigūruoti</string>
     <string name="accessibility_close">Uždaryti</string>
     <string name="accessibility_add_filter">Pridėti filtrą</string>
-    <string name="accessibility_station_options">Stoties parinktys</string>
+    <string name="accessibility_station_options">Radijo stoties parinktys</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Stotis: %1$s, Kalba: %2$s, Žymos: %3$s</string>
 
     <string name="error_no_file_manager">Nepavyko rasti sistemos failų tvarkyklės. Įsitikinkite, kad įdiegta ir įjungta failų naršyklė.</string>
     <string name="error_no_browser">Nepavyko rasti žiniatinklio naršyklės. Įdiekite naršyklę, kad atidarytumėte šią nuorodą.</string>
-    <string name="error_no_homepage">Nėra šios stoties pagrindinio puslapio</string>
-    <string name="tab_custom_stations">Pasirinktinis</string>
-    <string name="action_add_custom">Pridėti pasirinktinę stotį</string>
-    <string name="station_name">Stoties pavadinimas</string>
+    <string name="error_no_homepage">Nėra šios radijo stoties pagrindinio puslapio</string>
+    <string name="tab_custom_stations">Pritaikytos</string>
+    <string name="action_add_custom">Pridėti pasirinktinę radijo stotį</string>
+    <string name="station_name">Radijo stoties pavadinimas</string>
     <string name="stream_url">Srauto URL</string>
-    <string name="favicon_url">Favicon URL (pasirenkama)</string>
+    <string name="favicon_url">Stoties logotipo URL (Favicon)</string>
     <string name="select_image">Pasirinkite Vaizdas</string>
     <string name="error_invalid_url">Įveskite tinkamą URL</string>
     <string name="action_save">Išsaugoti</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Greitas grotuvo valdymas</string>
-    <string name="widget_description_full">Grotuvų ir stočių sąrašas</string>
+    <string name="widget_description_full">Grotuvas ir radijo stočių sąrašas</string>
 
     <string name="settings_auto_db_update">Fono duomenų sinchronizavimas</string>
     <string name="settings_auto_db_update_desc">Automatiškai atnaujinti stoties duomenų bazę per Radio-Browser API (rekomenduojama).</string>
-    <string name="settings_station_click_counter">Stoties paspaudimų skaitiklis</string>
-    <string name="settings_station_click_counter_desc">Palaikykite radijo naršyklės statistiką anonimiškai bendrindami žaidimo įvykius.</string>
-    <string name="settings_rate_app_github">Mėgaukitės AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Palikite žvaigždutę „GitHub“! Tai padeda kitiems atrasti programą ir palaiko būsimą plėtrą.</string>
+    <string name="settings_station_click_counter">Radijo stoties paspaudimų skaitiklis</string>
+    <string name="settings_station_click_counter_desc">Palaikykite Radio-Browser statistiką anonimiškai bendrindami perklausų įvykius.</string>
 
-    <string name="settings_remove_notification_on_stop">Pašalinkite pranešimą, kai programa uždaroma</string>
-    <string name="settings_remove_notification_on_stop_desc">Automatiškai atsisakyti medijos pranešimo, kai programa uždaroma iš naujausių programų</string>
+    <string name="settings_remove_notification_on_stop">Pašalinkite pranešimą sustabdžius</string>
+    <string name="settings_remove_notification_on_stop_desc">Automatiškai atsisakyti medijos pranešimo, kai grojimas sustabdomas</string>
     <string name="settings_auto_resume_audio_focus">Tęsti praradus garso fokusavimą</string>
     <string name="settings_auto_resume_audio_focus_desc">Automatiškai atnaujinkite atkūrimą po telefono skambučių, signalų ar kito garso sustabdymo</string>
+
+    <string name="settings_backup_restore">Atsarginė kopija ir atkūrimas</string>
+    <string name="settings_export_backup">Sukurti pilną atsarginę kopiją (ZIP)</string>
+    <string name="settings_export_backup_desc">Išsaugo visas mėgstamas, pritaikytas stotis ir piktogramas ZIP faile</string>
+    <string name="settings_import_backup">Atkurti atsarginę kopiją (ZIP)</string>
+    <string name="settings_import_backup_desc">Atkuria mėgstamas ir pritaikytas stotis iš ZIP atsarginės kopijos failo</string>
+    <string name="backup_export_success">Atsarginė kopija sėkmingai išsaugota</string>
+    <string name="backup_export_error">Nepavyko išsaugoti atsarginės kopijos</string>
+    <string name="backup_import_success">Atsarginė kopija sėkmingai atkurta</string>
+    <string name="backup_import_error">Nepavyko atkurti atsarginės kopijos</string>
+
+    <string name="database_summary_title">Vietinė duomenų bazė</string>
+    <string name="database_total_stations">Iš viso radijo stočių</string>
+    <string name="database_last_sync">Paskutinis atnaujinimas</string>
+    <string name="database_update_now">Atnaujinti duomenų bazę dabar</string>
+    <string name="database_full_update">Atnaujinti duomenų bazę</string>
+    <string name="database_syncing">Sinchronizuojama…</string>
+    <string name="database_downloading">Atsisiunčiama…</string>
+    <string name="database_stations_loaded">%1$s radijo stočių</string>
+    <string name="database_sync_channel_name">Radijo stočių duomenų bazės sinchronizavimas</string>
+    <string name="database_sync_success">Stočių duomenų bazės atnaujinimas sėkmingai baigtas</string>
+    <string name="database_error_no_connection">Nėra interneto ryšio</string>
+    <string name="database_error_no_space">Trūksta vietos diske</string>
+    <string name="database_error_failed">Duomenų bazės atnaujinimas nepavyko</string>
+
+    <string name="settings_disable_battery_optimization_desc">Norėdami tęsti grojimą išjungtu ekranu, nustatykite baterijos naudojimą į \'Neribojama\'.</string>
+    <string name="battery_opt_open_settings">Atidaryti nustatymus</string>
+    <string name="battery_opt_later">Vėliau</string>
 </resources>

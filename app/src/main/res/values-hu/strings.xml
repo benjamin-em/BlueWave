@@ -49,22 +49,22 @@
     <string name="action_rename_tab">Lap átnevezése</string>
     <string name="error_filter_name_required">Kérjük, először adjon meg egy nevet ennek a szűrőlapnak</string>
     <string name="confirm_delete_filter_tab">Biztosan törölni szeretné a \"%1$s\" szűrőt?</string>
-    <string name="filter_empty_title">Készítse el saját állomáscsatornáját</string>
+    <string name="filter_empty_title">Készítse el saját rádióállomás-hírfolyamát</string>
     <string name="filter_empty_desc">Hozzon létre egy személyre szabott nézetet több feltétel kombinálásával. A keresést a következőkkel szűkítheti:</string>
     <string name="filter_empty_filter_by">Szűrés alapja</string>
-    <string name="filter_empty_filter_desc">Ország, állomásnév, címkék vagy nyelv</string>
+    <string name="filter_empty_filter_desc">Ország, rádióállomás neve, címkék vagy nyelv</string>
     <string name="filter_empty_sort_by">Rendezés alapja</string>
-    <string name="filter_empty_sort_desc">Kattintások, Ábécé, Szavazatok oder Utolsó módosítás</string>
+    <string name="filter_empty_sort_desc">Kattintások, Ábécé, Szavazatok vagy Utolsó módosítás</string>
     <string name="filter_empty_hint">Írjon be egy nevet a fenti mezőbe a nézet mentéséhez!</string>
-    <string name="error_station_load">Nem lehet kapcsolódni az állomáshoz</string>
-    <string name="error_list_update">Nem lehet kapcsolódni a radio browser szerverhez</string>
+    <string name="error_station_load">Nem lehet kapcsolódni a rádióállomáshoz</string>
+    <string name="error_list_update">Nem lehet kapcsolódni a Radio-Browser szerverhez</string>
 
     <string name="error_no_connection">Nincs elérhető internetkapcsolat.</string>
     <string name="warning_volume_zero">A hangerő nullán van. Előfordulhat, hogy semmit sem hall.</string>
 
-    <string name="share_action">Állomáshivatkozás megosztása&#8230;</string>
+    <string name="share_action">Rádióállomás hivatkozásának megosztása&#8230;</string>
 
-    <string name="nav_item_stations">Állomások</string>
+    <string name="nav_item_stations">Rádióállomások</string>
     <string name="nav_item_starred">Kedvencek</string>
     <string name="nav_item_history">Előzmények</string>
     <string name="nav_item_settings">Beállítások</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Sötét</string>
     <string name="theme_system">Rendszer követése</string>
     <string name="settings_compact_style">Kompakt mód</string>
-    <string name="settings_compact_style_desc_off">Nagy ikon állomásadatokkal</string>
-    <string name="settings_compact_style_desc_on">Kis ikon állomásadatok nélkül</string>
+    <string name="settings_compact_style_desc_off">Nagy ikon rádióállomás-adatokkal</string>
+    <string name="settings_compact_style_desc_on">Kis ikon rádióállomás-adatok nélkül</string>
     <string name="settings_bottom_navigation">Alsó navigáció</string>
     <string name="settings_ui_scale">UI skálázás</string>
     <string name="settings_language">Nyelv</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">A ritkán használt címkék rejtve maradnak</string>
     <string name="settings_single_use_tags_desc_on">A ritkán használt címkék megjelennek</string>
 
-    <string name="settings_show_broken">Hibás állomások</string>
-    <string name="settings_show_broken_on">Hibás állomások megjelenítése a listákban</string>
-    <string name="settings_show_broken_off">Hibás állomások elrejtése a listákban</string>
+    <string name="settings_show_broken">Hibás rádióállomások</string>
+    <string name="settings_show_broken_on">Hibás rádióállomások megjelenítése a listákban</string>
+    <string name="settings_show_broken_off">Hibás rádióállomások elrejtése a listákban</string>
 
     <string name="settings_startup_behaviour">Indítási viselkedés</string>
     <string name="action_grid_view">Rácsnézet</string>
@@ -133,22 +133,22 @@
 
     <string name="startup_action_title">Indítási művelet</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Összes állomás megjelenítése</string>
+    <string name="startup_show_all_stations">Összes rádióállomás megjelenítése</string>
     <string name="startup_show_favorites">Kedvencek megjelenítése</string>
     <string name="startup_show_history">Előzmények megjelenítése</string>
     <string name="startup_show_last_view">Legutóbbi nézet</string>
 
-    <string name="settings_load_icons">Állomásikonok megjelenítése</string>
+    <string name="settings_load_icons">Rádióállomás-ikonok megjelenítése</string>
     <string name="settings_load_icons_on">Ikonok letöltése</string>
     <string name="settings_load_icons_off">Ikonok letöltésének mellőzése</string>
 
     <string name="settings_auto_favorite">Automatikus kedvencek</string>
-    <string name="settings_auto_favorite_on">Állomások automatikus hozzáadása a kedvencekhez lejátszáskor</string>
-    <string name="settings_auto_favorite_off">Állomások kézi hozzáadása a kedvencekhez lejátszáskor</string>
+    <string name="settings_auto_favorite_on">Rádióállomások automatikus hozzáadása a kedvencekhez lejátszáskor</string>
+    <string name="settings_auto_favorite_off">Rádióállomások kézi hozzáadása a kedvencekhez lejátszáskor</string>
 
-    <string name="settings_play">Lejátszás</string>
+    <string name="settings_play">Lejátszó</string>
     <string name="settings_auto_play_on_startup">Automatikus lejátszás</string>
-    <string name="settings_auto_play_on_startup_on">Utolsó állomás lejátszása indításkor</string>
+    <string name="settings_auto_play_on_startup_on">Utolsó rádióállomás lejátszása indításkor</string>
     <string name="settings_auto_play_on_startup_off">Nincs automatikus lejátszás indításkor</string>
     <string name="settings_auto_off_on_startup">Automatikus leállítás</string>
     <string name="settings_auto_off_on_startup_on">Auto-leállítás időzítő használata auto-lejátszással</string>
@@ -156,8 +156,8 @@
     <string name="settings_auto_off_sleep_timer">Auto-leállítás időzítő</string>
     <string name="settings_auto_off_sleep_timer_desc">Lejátszás leállítása %1$s perc után</string>
     <string name="settings_play_external">Külső lejátszó használata</string>
-    <string name="settings_play_external_desc_on">Állomások lejátszása külső lejátszóval</string>
-    <string name="settings_play_external_desc_off">Állomások lejátszása az AMARadio-val</string>
+    <string name="settings_play_external_desc_on">Rádióállomások lejátszása külső lejátszóval</string>
+    <string name="settings_play_external_desc_off">Rádióállomások lejátszása az AMARadio-val</string>
     <string name="settings_equalizer">Hangszínszabályzó</string>
 
     <string name="settings_connectivity">Kapcsolódás</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Szüneteltetve</string>
     <string name="notify_metered_connection">Forgalmi díjas kapcsolat</string>
 
-    <string name="notify_starred">Állomás hozzáadva a kedvencekhez</string>
-    <string name="notify_autostarred">Állomás automatikusan hozzáadva a kedvencekhez</string>
-    <string name="notify_unstarred">Állomás eltávolítva a kedvencek közül</string>
+    <string name="notify_starred">Rádióállomás hozzáadva a kedvencekhez</string>
+    <string name="notify_autostarred">Rádióállomás automatikusan hozzáadva a kedvencekhez</string>
+    <string name="notify_unstarred">Rádióállomás eltávolítva a kedvencek közül</string>
     <string name="notify_deleted_favorites">Kedvencek törölve</string>
     <string name="notify_deleted_history">Előzmények törölve</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Kérjük, válasszon egy lejátszót</string>
     <string name="alert_select_player_name">Név</string>
-    <string name="hostname">Gépnév</string>
-    <string name="port">Port</string>
+    <string name="hostname">Szervercím</string>
+    <string name="port">Hálózati port</string>
 
     <string name="alert_press_back_to_exit">Nyomja meg még egyszer a visszát a kilépéshez</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Lejátszás külső lejátszóval</string>
     <string name="action_choose_external_player">Válasszon külső lejátszót</string>
 
-    <string name="settings_disable_battery_optimization">Akku-optimalizáció</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Akku-optimalizáció figyelmen kívül hagyva, az AMARadio-nak mindig vissza kell tudnia szerezni a fókuszt.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Akku-optimalizáció engedélyezve, az AMARadio nem biztos, hogy vissza tudja szerezni a fókuszt a háttérben.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Háttérben történő lejátszás</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Egyéb</string>
     <string name="settings_rate_app">AMARadio értékelése</string>
     <string name="settings_rate_app_summary">Ha tetszik az alkalmazás, kérjük, írjon véleményt a Play Áruházban!</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Állomás logója</string>
+    <string name="accessibility_station_logo">Rádióállomás logója</string>
     <string name="accessibility_favorite_selected">Kedvenc, kiválasztva</string>
     <string name="accessibility_favorite_not_selected">Kedvenc, nincs kiválasztva</string>
     <string name="accessibility_category_icon">Kategória ikon</string>
@@ -337,35 +335,63 @@
     <string name="accessibility_configure">Konfigurálás</string>
     <string name="accessibility_close">Bezárás</string>
     <string name="accessibility_add_filter">Szűrő hozzáadása</string>
-    <string name="accessibility_station_options">Állomás beállításai</string>
+    <string name="accessibility_station_options">Rádióállomás beállításai</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Állomás: %1$s, Nyelv: %2$s, Címkék: %3$s</string>
 
     <string name="error_no_file_manager">Nem található rendszerfájlkezelő. Győződjön meg róla, hogy a fájlkezelő telepítve van és engedélyezve van.</string>
     <string name="error_no_browser">Nem található webböngésző. Kérjük, telepítsen egy böngészőt a hivatkozás megnyitásához.</string>
-    <string name="error_no_homepage">Ehhez az állomáshoz nem érhető el honlap</string>
-    <string name="tab_custom_stations">Szokás</string>
-    <string name="action_add_custom">Egyéni állomás hozzáadása</string>
-    <string name="station_name">Állomás neve</string>
+    <string name="error_no_homepage">Ehhez a rádióállomáshoz nem érhető el honlap</string>
+    <string name="tab_custom_stations">Egyéni</string>
+    <string name="action_add_custom">Egyéni rádióállomás hozzáadása</string>
+    <string name="station_name">Rádióállomás neve</string>
     <string name="stream_url">Stream URL</string>
-    <string name="favicon_url">Favicon URL (nem kötelező)</string>
-    <string name="select_image">Válassza a Kép lehetőséget</string>
+    <string name="favicon_url">Állomáslogó URL-je (Favicon)</string>
+    <string name="select_image">Kép kiválasztása</string>
     <string name="error_invalid_url">Adjon meg egy érvényes URL-t</string>
-    <string name="action_save">Megtakarítás</string>
+    <string name="action_save">Mentés</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Gyors lejátszó vezérlők</string>
-    <string name="widget_description_full">Lejátszók és állomások listája</string>
+    <string name="widget_description_full">Lejátszó és rádióállomások listája</string>
 
     <string name="settings_auto_db_update">Háttéradatok szinkronizálása</string>
-    <string name="settings_auto_db_update_desc">Állomásadatbázis automatikus frissítése a Radio-Browser API-n keresztül (ajánlott).</string>
-    <string name="settings_station_click_counter">Állomás kattintás számláló</string>
-    <string name="settings_station_click_counter_desc">Támogassa a Radio-Browser statisztikákat a játékesemények névtelen megosztásával.</string>
+    <string name="settings_auto_db_update_desc">Rádióállomás-adatbázis automatikus frissítése a Radio-Browser API-n keresztül (ajánlott).</string>
+    <string name="settings_station_click_counter">Rádióállomás kattintásszámláló</string>
+    <string name="settings_station_click_counter_desc">Támogassa a Radio-Browser statisztikákat a lejátszási események névtelen megosztásával.</string>
     <string name="settings_rate_app_github">Élvezed az AMARadiót?</string>
     <string name="settings_rate_app_github_summary">Hagyj csillagot a GitHubon! Segít másoknak felfedezni az alkalmazást, és támogatja a jövőbeli fejlesztést.</string>
 
-    <string name="settings_remove_notification_on_stop">Távolítsa el az értesítést az alkalmazás bezárásakor</string>
-    <string name="settings_remove_notification_on_stop_desc">A médiaértesítés automatikus elvetése, ha az alkalmazást bezárják a legutóbbi alkalmazások közül</string>
+    <string name="settings_remove_notification_on_stop">Értesítés eltávolítása leállításkor</string>
+    <string name="settings_remove_notification_on_stop_desc">A médiaértesítés automatikus elvetése, amikor a lejátszást leállítják</string>
     <string name="settings_auto_resume_audio_focus">Folytatás a hangfókusz elvesztése után</string>
     <string name="settings_auto_resume_audio_focus_desc">A lejátszás automatikus folytatása telefonhívások, riasztások vagy egyéb hangjelzések leállása után</string>
+
+    <string name="settings_backup_restore">Biztonsági mentés és visszaállítás</string>
+    <string name="settings_export_backup">Teljes biztonsági mentés készítése (ZIP)</string>
+    <string name="settings_export_backup_desc">Elmenti az összes kedvencet, egyéni állomást és ikont egy ZIP-fájlba</string>
+    <string name="settings_import_backup">Biztonsági mentés visszaállítása (ZIP)</string>
+    <string name="settings_import_backup_desc">Visszaállítja a kedvenceket és az egyéni állomásokat egy ZIP-fájlból</string>
+    <string name="backup_export_success">Biztonsági mentés sikeresen elmentve</string>
+    <string name="backup_export_error">A biztonsági mentés mentése nem sikerült</string>
+    <string name="backup_import_success">Biztonsági mentés sikeresen visszaállítva</string>
+    <string name="backup_import_error">A biztonsági mentés visszaállítása nem sikerült</string>
+
+    <string name="database_summary_title">Helyi adatbázis</string>
+    <string name="database_total_stations">Rádióállomások összesen</string>
+    <string name="database_last_sync">Utolsó frissítés</string>
+    <string name="database_update_now">Adatbázis frissítése most</string>
+    <string name="database_full_update">Adatbázis frissítése</string>
+    <string name="database_syncing">Szinkronizálás…</string>
+    <string name="database_downloading">Letöltés…</string>
+    <string name="database_stations_loaded">%1$s rádióállomás</string>
+    <string name="database_sync_channel_name">Rádióállomás-adatbázis szinkronizálása</string>
+    <string name="database_sync_success">Az állomásadatbázis frissítése sikeresen befejeződött</string>
+    <string name="database_error_no_connection">Nincs internetkapcsolat</string>
+    <string name="database_error_no_space">Nincs elegendő lemezterület</string>
+    <string name="database_error_failed">Az adatbázis frissítése nem sikerült</string>
+
+    <string name="settings_disable_battery_optimization_desc">A lejátszás kikapcsolt képernyő melletti folytatásához állítsa az akkumulátorhasználatot \'Korlátlan\' értékre.</string>
+    <string name="battery_opt_open_settings">Beállítások megnyitása</string>
+    <string name="battery_opt_later">Később</string>
 </resources>

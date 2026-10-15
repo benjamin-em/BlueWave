@@ -49,27 +49,27 @@
     <string name="action_rename_tab">탭 이름 변경</string>
     <string name="error_filter_name_required">이 필터 탭의 이름을 먼저 입력하세요</string>
     <string name="confirm_delete_filter_tab">\"%1$s\" 필터를 삭제하시겠습니까?</string>
-    <string name="filter_empty_title">나만의 라디오 스테이션 피드 만들기</string>
+    <string name="filter_empty_title">나만의 라디오 방송국 피드 만들기</string>
     <string name="filter_empty_desc">여러 기준을 조합하여 개인화된 보기를 만드세요. 다음을 사용하여 검색 범위를 좁힐 수 있습니다:</string>
     <string name="filter_empty_filter_by">필터 기준</string>
-    <string name="filter_empty_filter_desc">국가, 스테이션 이름, 태그 또는 언어</string>
+    <string name="filter_empty_filter_desc">국가, 라디오 방송국 이름, 태그 또는 언어</string>
     <string name="filter_empty_sort_by">정렬 기준</string>
     <string name="filter_empty_sort_desc">클릭수, 알파벳순, 추천수 또는 최근 변경순</string>
     <string name="filter_empty_hint">이 보기를 저장하려면 위의 필드에 이름을 입력하세요!</string>
-    <string name="error_station_load">스테이션에 연결할 수 없습니다</string>
-    <string name="error_list_update">라디오 브라우저 서버에 연결할 수 없습니다</string>
+    <string name="error_station_load">라디오 방송국에 연결할 수 없습니다</string>
+    <string name="error_list_update">Radio-Browser 서버에 연결할 수 없습니다</string>
 
     <string name="error_no_connection">인터넷에 연결되어 있지 않습니다.</string>
     <string name="warning_volume_zero">볼륨이 0입니다. 소리가 들리지 않을 수 있습니다.</string>
 
-    <string name="share_action">스테이션 링크 공유 대상…</string>
+    <string name="share_action">라디오 방송국 링크 공유 대상…</string>
 
-    <string name="nav_item_stations">스테이션</string>
+    <string name="nav_item_stations">라디오 방송국</string>
     <string name="nav_item_starred">즐겨찾기</string>
     <string name="nav_item_history">기록</string>
     <string name="nav_item_settings">설정</string>
 
-    <string name="about_text">AMARadio는 100% 광고가 없으며 개인 정보 보호를 최우선으로 합니다.\n\n저는 원래 어머니께 광고나 추적 없이 간단하고 정직한 라디오 경험을 제공하기 위해 이 앱을 개발했습니다. 이것이 AMARadio가 항상 광고 없이 유지될 이유이며, 이는 여러분 모두와 공유하는 어머니와의 약속입니다.\n\n이 프로젝트는 훌륭한 https://github.com/segler-alex/RadioDroid 의 포크입니다. 앱이 최신 상태를 유지하고 향후 Android 버전과 호환되도록 모든 소스 코드를 Java에서 Kotlin으로 마이그레이션했습니다.\n\n소스 코드는 다음에서 확인할 수 있습니다: https://github.com/ounben/AMARadio\n\n이 앱은 https://www.radio-browser.info 의 무료 라디오 스테이션 디렉토리를 사용합니다.\n누구나 스테이션을 추가할 수 있습니다. 온라인 라디오 스테이션을 위한 위키처럼 작동합니다.\n\n연락처: ben@ounben.com\n\n버그 제보: https://github.com/ounben/AMARadio/issues\n\n이 소프트웨어가 마음에 들고 돕고 싶으시다면 언제든지 이메일을 보내주세요.\n새로운 기능에 대한 아이디어도 언제나 환영합니다!\n\n이 앱은 GPLv3 라이선스 하에 제공되는 자유 소프트웨어입니다. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio는 100% 광고가 없으며 개인 정보 보호를 최우선으로 합니다.\n\n저는 원래 어머니께 광고나 추적 없이 간단하고 정직한 라디오 경험을 제공하기 위해 이 앱을 개발했습니다. 이것이 AMARadio가 항상 광고 없이 유지될 이유이며, 이는 여러분 모두와 공유하는 어머니와의 약속입니다.\n\n이 프로젝트는 RadioDroid 의 포크입니다. 앱이 최신 상태를 유지하고 향후 Android 버전과 호환되도록 모든 소스 코드를 Java에서 Kotlin으로 마이그레이션했습니다.\n\n소스 코드는 다음에서 확인할 수 있습니다: https://github.com/ounben/AMARadio\n\n이 앱은 https://www.radio-browser.info 의 무료 라디오 방송국 디렉토리를 사용합니다.\n누구나 방송국을 추가할 수 있습니다. 온라인 라디오 방송국을 위한 위키처럼 작동합니다.\n\n연락처: ben@ounben.com\n\n버그 제보: https://github.com/ounben/AMARadio/issues\n\n이 소프트웨어가 마음에 들고 돕고 싶으시다면 언제든지 이메일을 보내주세요.\n새로운 기능에 대한 아이디어도 언제나 환영합니다!\n\n이 앱은 GPLv3 라이선스 하에 제공되는 자유 소프트웨어입니다. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">버전: %1$s</string>
     <string name="detail_star">즐겨찾기에 추가</string>
     <string name="detail_unstar">즐겨찾기에서 삭제</string>
@@ -93,11 +93,11 @@
     <string name="label_button_overwrite">덮어쓰기</string>
     <string name="notify_load_playlist_nok">%1$s&#47;%2$s에서 가져올 수 없습니다</string>
     <string name="notify_load_playlist_now">%1$s&#47;%2$s에서 가져오는 중입니다. 잠시만 기다려 주세요.</string>
-    <string name="notify_load_playlist_ok">%2$s&#47;%3$s에서 %1$d개의 스테이션을 가져왔습니다</string>
+    <string name="notify_load_playlist_ok">%2$s&#47;%3$s에서 %1$d개의 방송국을 가져왔습니다</string>
     <string name="notify_save_playlist_nok">%1$s&#47;%2$s로 내보낼 수 없습니다</string>
     <string name="notify_save_playlist_now">%1$s&#47;%2$s로 내보내는 중입니다. 잠시만 기다려 주세요.</string>
     <string name="notify_save_playlist_ok">%1$s&#47;%2$s로 성공적으로 내보냈습니다</string>
-    <string name="notify_sync_list_deleted_entries">목록의 로컬 스테이션 %2$d개 중 %1$d개가 서버에 존재하지 않는 것으로 표시되었습니다</string>
+    <string name="notify_sync_list_deleted_entries">목록의 로컬 방송국 %2$d개 중 %1$d개가 서버에 존재하지 않는 것으로 표시되었습니다</string>
 
     <string name="searchpreference_clear_history">기록 삭제</string>
     <string name="searchpreference_no_results">결과 없음</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">어둡게</string>
     <string name="theme_system">시스템 설정 따름</string>
     <string name="settings_compact_style">컴팩트 모드</string>
-    <string name="settings_compact_style_desc_off">스테이션 상세 정보와 함께 큰 아이콘 표시</string>
+    <string name="settings_compact_style_desc_off">라디오 방송국 상세 정보와 함께 큰 아이콘 표시</string>
     <string name="settings_compact_style_desc_on">상세 정보 없이 작은 아이콘 표시</string>
     <string name="settings_bottom_navigation">하단 네비게이션</string>
     <string name="settings_ui_scale">UI 크기 조절</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">자주 사용되지 않는 태그는 표시하지 않음</string>
     <string name="settings_single_use_tags_desc_on">자주 사용되지 않는 태그도 표시</string>
 
-    <string name="settings_show_broken">끊긴 스테이션</string>
-    <string name="settings_show_broken_on">목록에 끊긴 스테이션 표시</string>
-    <string name="settings_show_broken_off">목록에 끊긴 스테이션 표시하지 않음</string>
+    <string name="settings_show_broken">끊긴 라디오 방송국</string>
+    <string name="settings_show_broken_on">목록에 끊긴 라디오 방송국 표시</string>
+    <string name="settings_show_broken_off">목록에 끊긴 라디오 방송국 표시하지 않음</string>
 
     <string name="settings_startup_behaviour">시작 동작</string>
     <string name="action_grid_view">그리드 보기</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">시작 시 동작</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">모든 스테이션 표시</string>
+    <string name="startup_show_all_stations">모든 라디오 방송국 표시</string>
     <string name="startup_show_favorites">즐겨찾기 표시</string>
     <string name="startup_show_history">기록 표시</string>
     <string name="startup_show_last_view">마지막 보기</string>
 
-    <string name="settings_load_icons">스테이션 아이콘 표시</string>
+    <string name="settings_load_icons">라디오 방송국 아이콘 표시</string>
     <string name="settings_load_icons_on">아이콘을 다운로드함</string>
     <string name="settings_load_icons_off">아이콘을 다운로드하지 않음</string>
 
     <string name="settings_auto_favorite">자동 즐겨찾기</string>
-    <string name="settings_auto_favorite_on">재생 시 스테이션을 자동으로 즐겨찾기에 추가</string>
-    <string name="settings_auto_favorite_off">재생 시 스테이션을 자동으로 즐겨찾기에 추가하지 않음</string>
+    <string name="settings_auto_favorite_on">재생 시 라디오 방송국을 자동으로 즐겨찾기에 추가</string>
+    <string name="settings_auto_favorite_off">재생 시 라디오 방송국을 자동으로 즐겨찾기에 추가하지 않음</string>
 
     <string name="settings_play">플레이어</string>
     <string name="settings_auto_play_on_startup">자동 재생</string>
-    <string name="settings_auto_play_on_startup_on">시작 시 마지막 스테이션 재생</string>
-    <string name="settings_auto_play_on_startup_off">시작 시 마지막 스테이션 재생하지 않음</string>
+    <string name="settings_auto_play_on_startup_on">시작 시 마지막 라디오 방송국 재생</string>
+    <string name="settings_auto_play_on_startup_off">시작 시 마지막 라디오 방송국 재생하지 않음</string>
     <string name="settings_auto_off_on_startup">자동 중지</string>
     <string name="settings_auto_off_on_startup_on">자동 재생과 함께 자동 중지 타이머 사용</string>
     <string name="settings_auto_off_on_startup_off">자동 재생과 함께 자동 중지 타이머 사용하지 않음</string>
     <string name="settings_auto_off_sleep_timer">자동 중지 타이머</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s분 후 재생 중지</string>
     <string name="settings_play_external">외부 플레이어 사용</string>
-    <string name="settings_play_external_desc_on">외부 플레이어로 스테이션 재생</string>
-    <string name="settings_play_external_desc_off">AMARadio로 스테이션 재생</string>
+    <string name="settings_play_external_desc_on">외부 플레이어로 라디오 방송국 재생</string>
+    <string name="settings_play_external_desc_off">AMARadio로 라디오 방송국 재생</string>
     <string name="settings_equalizer">이퀄라이저</string>
 
     <string name="settings_connectivity">연결성</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">일시정지됨</string>
     <string name="notify_metered_connection">종량제 연결</string>
 
-    <string name="notify_starred">스테이션이 즐겨찾기에 추가되었습니다</string>
-    <string name="notify_autostarred">스테이션이 자동으로 즐겨찾기에 추가되었습니다</string>
-    <string name="notify_unstarred">스테이션이 즐겨찾기에서 제거되었습니다</string>
+    <string name="notify_starred">라디오 방송국이 즐겨찾기에 추가되었습니다</string>
+    <string name="notify_autostarred">라디오 방송국이 자동으로 즐겨찾기에 추가되었습니다</string>
+    <string name="notify_unstarred">라디오 방송국이 즐겨찾기에서 제거되었습니다</string>
     <string name="notify_deleted_favorites">즐겨찾기가 삭제되었습니다</string>
     <string name="notify_deleted_history">기록이 삭제되었습니다</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">플레이어를 선택하세요</string>
     <string name="alert_select_player_name">이름</string>
-    <string name="hostname">호스트 이름</string>
-    <string name="port">포트</string>
+    <string name="hostname">서버 주소</string>
+    <string name="port">네트워크 포트</string>
 
     <string name="alert_press_back_to_exit">종료하려면 뒤로 버튼을 한 번 더 누르세요</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">외부 플레이어에서 재생</string>
     <string name="action_choose_external_player">외부 플레이어 선택</string>
 
-    <string name="settings_disable_battery_optimization">배터리 최적화</string>
-    <string name="settings_ignore_battery_optimization_summary_on">배터리 최적화 무시 중. AMARadio가 포커스를 항상 다시 얻을 수 있어야 합니다.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">배터리 최적화 활성 중. 백그라운드에서 포커스를 다시 얻지 못할 수 있습니다.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">백그라운드 재생</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">기타</string>
     <string name="settings_rate_app">AMARadio 평가하기</string>
     <string name="settings_rate_app_summary">앱이 마음에 드신다면 Play 스토어에 리뷰를 남겨주세요!</string>
+    <string name="settings_rate_app_github">AMARadio를 즐기고 계시나요?</string>
+    <string name="settings_rate_app_github_summary">GitHub에 별표를 남겨주세요! 이는 다른 사람들이 앱을 발견하는 데 도움이 되고 향후 개발을 지원합니다.</string>
     <string name="settings_statistics">통계</string>
     <string name="settings_about">AMARadio 정보</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">방송국 로고</string>
+    <string name="accessibility_station_logo">라디오 방송국 로고</string>
     <string name="accessibility_favorite_selected">즐겨찾기, 선택됨</string>
     <string name="accessibility_favorite_not_selected">즐겨찾기, 선택 안 됨</string>
     <string name="accessibility_category_icon">카테고리 아이콘</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">구성</string>
     <string name="accessibility_close">닫기</string>
     <string name="accessibility_add_filter">필터 추가</string>
-    <string name="accessibility_station_options">방송국 옵션</string>
+    <string name="accessibility_station_options">라디오 방송국 옵션</string>
     <string name="not_applicable">해당 없음</string>
     <string name="accessibility_station_description">방송국: %1$s, 언어: %2$s, 태그: %3$s</string>
 
     <string name="error_no_file_manager">시스템 파일 관리자를 찾을 수 없습니다. 파일 탐색기가 설치되어 활성화되어 있는지 확인하세요.</string>
     <string name="error_no_browser">웹 브라우저를 찾을 수 없습니다. 이 링크를 열려면 브라우저를 설치하세요.</string>
-    <string name="error_no_homepage">이 방송국에 사용할 수 있는 홈페이지가 없습니다.</string>
-    <string name="tab_custom_stations">관습</string>
-    <string name="action_add_custom">사용자 정의 스테이션 추가</string>
-    <string name="station_name">역 이름</string>
+    <string name="error_no_homepage">이 라디오 방송국에 사용할 수 있는 홈페이지가 없습니다.</string>
+    <string name="tab_custom_stations">사용자 지정</string>
+    <string name="action_add_custom">사용자 지정 라디오 방송국 추가</string>
+    <string name="station_name">라디오 방송국 이름</string>
     <string name="stream_url">스트림 URL</string>
-    <string name="favicon_url">파비콘 URL(선택사항)</string>
+    <string name="favicon_url">방송국 로고 URL (Favicon)</string>
     <string name="select_image">이미지 선택</string>
     <string name="error_invalid_url">유효한 URL을 입력하세요.</string>
-    <string name="action_save">구하다</string>
+    <string name="action_save">저장</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">빠른 플레이어 컨트롤</string>
-    <string name="widget_description_full">플레이어 및 스테이션 목록</string>
+    <string name="widget_description_full">플레이어 및 라디오 방송국 목록</string>
 
     <string name="settings_auto_db_update">백그라운드 데이터 동기화</string>
-    <string name="settings_auto_db_update_desc">Radio-Browser API를 통해 방송국 데이터베이스를 자동 업데이트합니다(권장).</string>
-    <string name="settings_station_click_counter">스테이션 클릭 카운터</string>
-    <string name="settings_station_click_counter_desc">익명으로 플레이 이벤트를 공유하여 라디오 브라우저 통계를 지원합니다.</string>
-    <string name="settings_rate_app_github">AMRadio를 즐기고 계시나요?</string>
-    <string name="settings_rate_app_github_summary">GitHub에 별표를 남겨주세요! 이는 다른 사람들이 앱을 발견하는 데 도움이 되고 향후 개발을 지원합니다.</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API를 통해 라디오 방송국 데이터베이스를 자동 업데이트합니다(권장).</string>
+    <string name="settings_station_click_counter">라디오 방송국 클릭 카운터</string>
+    <string name="settings_station_click_counter_desc">익명으로 재생 이벤트를 공유하여 Radio-Browser 통계를 지원합니다.</string>
 
-    <string name="settings_remove_notification_on_stop">앱이 닫힐 때 알림 제거</string>
-    <string name="settings_remove_notification_on_stop_desc">최근 앱에서 앱이 종료되면 미디어 알림을 자동으로 해제합니다.</string>
+    <string name="settings_remove_notification_on_stop">정지 시 알림 제거</string>
+    <string name="settings_remove_notification_on_stop_desc">재생이 정지되면 미디어 알림을 자동으로 제거합니다</string>
     <string name="settings_auto_resume_audio_focus">오디오 포커스 손실 후 재개</string>
     <string name="settings_auto_resume_audio_focus_desc">전화 통화, 알람 또는 기타 오디오 중지 후 자동으로 재생을 재개합니다.</string>
+
+    <string name="settings_backup_restore">백업 및 복원</string>
+    <string name="settings_export_backup">전체 백업 생성 (ZIP)</string>
+    <string name="settings_export_backup_desc">모든 즐겨찾기, 사용자 지정 방송국 및 아이콘을 ZIP 파일로 저장합니다</string>
+    <string name="settings_import_backup">백업 복원 (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP 백업 파일에서 즐겨찾기 및 사용자 지정 방송국을 복원합니다</string>
+    <string name="backup_export_success">백업이 성공적으로 저장되었습니다</string>
+    <string name="backup_export_error">백업 저장 실패</string>
+    <string name="backup_import_success">백업이 성공적으로 복원되었습니다</string>
+    <string name="backup_import_error">백업 복원 실패</string>
+
+    <string name="database_summary_title">로컬 데이터베이스</string>
+    <string name="database_total_stations">총 라디오 방송국</string>
+    <string name="database_last_sync">최근 업데이트</string>
+    <string name="database_update_now">지금 데이터베이스 업데이트</string>
+    <string name="database_full_update">데이터베이스 업데이트</string>
+    <string name="database_syncing">동기화 중…</string>
+    <string name="database_downloading">다운로드 중…</string>
+    <string name="database_stations_loaded">%1$s개 라디오 방송국</string>
+    <string name="database_sync_channel_name">라디오 방송국 데이터베이스 동기화</string>
+    <string name="database_sync_success">방송국 데이터베이스 업데이트가 성공적으로 완료되었습니다</string>
+    <string name="database_error_no_connection">인터넷 연결이 없습니다</string>
+    <string name="database_error_no_space">디스크 공간이 부족합니다</string>
+    <string name="database_error_failed">데이터베이스 업데이트 실패</string>
+
+    <string name="settings_disable_battery_optimization_desc">화면이 꺼진 상태에서도 재생을 유지하려면 배터리 사용량을 \'제한 없음\'으로 설정하세요.</string>
+    <string name="battery_opt_open_settings">설정 열기</string>
+    <string name="battery_opt_later">나중에</string>
 </resources>

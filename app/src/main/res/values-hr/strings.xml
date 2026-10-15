@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Izradite svoj prilagođeni popis radio stanica</string>
     <string name="filter_empty_desc">Izradite personalizirani prikaz kombiniranjem više kriterija. Pretragu možete suziti pomoću:</string>
     <string name="filter_empty_filter_by">Filtriraj po</string>
-    <string name="filter_empty_filter_desc">Zemlja, Ime stanice, Oznake ili Jezik</string>
+    <string name="filter_empty_filter_desc">Zemlja, Ime radio stanice, Oznake ili Jezik</string>
     <string name="filter_empty_sort_by">Sortiraj po</string>
     <string name="filter_empty_sort_desc">Klikovi, Abeceda, Glasovi ili Zadnja promjena</string>
     <string name="filter_empty_hint">Upišite naziv u polje iznad kako biste spremili ovaj prikaz!</string>
-    <string name="error_station_load">Nije moguće povezivanje sa stanicom</string>
-    <string name="error_list_update">Nije moguće povezivanje s radio browser poslužiteljem</string>
+    <string name="error_station_load">Nije moguće povezivanje sa radio stanicom</string>
+    <string name="error_list_update">Nije moguće povezivanje s Radio-Browser poslužiteljem</string>
 
     <string name="error_no_connection">Internetska veza nije dostupna.</string>
     <string name="warning_volume_zero">Glasnoća je na nuli. Možda nećete ništa čuti.</string>
 
-    <string name="share_action">Podijeli poveznicu stanice putem…</string>
+    <string name="share_action">Podijeli poveznicu radio stanice putem…</string>
 
-    <string name="nav_item_stations">Stanice</string>
+    <string name="nav_item_stations">Radio stanice</string>
     <string name="nav_item_starred">Omiljene</string>
     <string name="nav_item_history">Povijest</string>
     <string name="nav_item_settings">Postavke</string>
 
-    <string name="about_text">AMARadio je 100% bez oglasa i usmjeren na privatnost.\n\nPrvotno sam razvio ovu aplikaciju za svoju majku kako bih joj pružio jednostavno, iskreno iskustvo slušanja radija bez dosadnih oglasa ili praćenja. Zato će AMARadio uvijek ostati bez oglasa – to je obećanje njoj, koje dijelim sa svima vama.\n\nOvaj projekt je fork izvrsnog https://github.com/segler-alex/RadioDroid . Cijeli izvorni kod je prebačen s Jave na Kotlin kako bi se osiguralo da aplikacija ostane moderna i kompatibilna s budućim verzijama Androida.\n\nIzvorni kod je dostupan na: https://github.com/ounben/AMARadio\n\nAplikacija koristi besplatni direktorij radio stanica na https://www.radio-browser.info .\nSvatko može dodati stanice. Radi kao wiki za internetske radio stanice.\n\nKontakt: ben@ounben.com\n\nPraćenje pogrešaka: https://github.com/ounben/AMARadio/issues\n\nAko vam se sviđa softver i želite pomoći, slobodno mi pošaljite e-mail.\nTakođer su ideje za nove značajke uvijek dobrodošle!\n\nOva aplikacija je slobodan softver, licenciran pod GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio je 100% bez oglasa i usmjeren na privatnost.\n\nPrvotno sam razvio ovu aplikaciju za svoju majku kako bih joj pružio jednostavno, iskreno iskustvo slušanja radija bez dosadnih oglasa ili praćenja. Zato će AMARadio uvijek ostati bez oglasa – to je obećanje njoj, koje dijelim sa svima vama.\n\nOvaj projekt je fork izvrsnog RadioDroid. Cijeli izvorni kod je prebačen s Jave na Kotlin kako bi se osiguralo da aplikacija ostane moderna i kompatibilna s budućim verzijama Androida.\n\nIzvorni kod je dostupan na: https://github.com/ounben/AMARadio\n\nAplikacija koristi besplatni direktorij radio stanica na https://www.radio-browser.info .\nSvatko može dodati stanice. Radi kao wiki za internetske radio stanice.\n\nKontakt: ben@ounben.com\n\nPraćenje pogrešaka: https://github.com/ounben/AMARadio/issues\n\nAko vam se sviđa softver i želite pomoći, slobodno mi pošaljite e-mail.\nTakođer su ideje za nove značajke uvijek dobrodošle!\n\nOva aplikacija je slobodan softver, licenciran pod GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Verzija: %1$s</string>
     <string name="detail_star">Dodaj u omiljene</string>
     <string name="detail_unstar">Ukloni iz omiljenih</string>
@@ -94,7 +94,7 @@
     <string name="notify_load_playlist_nok">Nije moguće uvesti iz %1$s&#47;%2$s</string>
     <string name="notify_load_playlist_now">Uvozi se iz %1$s&#47;%2$s, molimo pričekajte.</string>
     <string name="notify_load_playlist_ok">Uvezeno %1$d stanica iz %2$s&#47;%3$s</string>
-    <string name="notify_save_playlist_nok">Nije moguće izvesti u %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_nok">Nije mogoče izvesti u %1$s&#47;%2$s</string>
     <string name="notify_save_playlist_now">Izvozi se u %1$s&#47;%2$s, molimo pričekajte.</string>
     <string name="notify_save_playlist_ok">Uspješno izvezeno u %1$s&#47;%2$s</string>
     <string name="notify_sync_list_deleted_entries">%1$d od %2$d lokalnih stanica na popisu označeno je kao nepostojeće na poslužitelju</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Tamna</string>
     <string name="theme_system">Prati sustav</string>
     <string name="settings_compact_style">Kompaktni način</string>
-    <string name="settings_compact_style_desc_off">Velika ikona s detaljima stanice</string>
-    <string name="settings_compact_style_desc_on">Mala ikona bez detalja stanice</string>
+    <string name="settings_compact_style_desc_off">Velika ikona s detaljima radio stanice</string>
+    <string name="settings_compact_style_desc_on">Mala ikona bez detalja radio stanice</string>
     <string name="settings_bottom_navigation">Donja navigacija</string>
     <string name="settings_ui_scale">Skaliranje sučelja</string>
     <string name="settings_language">Jezik</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Rijetko korištene oznake neće biti prikazane</string>
     <string name="settings_single_use_tags_desc_on">Rijetko korištene oznake će biti prikazane</string>
 
-    <string name="settings_show_broken">Pokvarene stanice</string>
-    <string name="settings_show_broken_on">Prikaži pokvarene stanice na popisima</string>
-    <string name="settings_show_broken_off">Ne prikazuj pokvarene stanice na popisima</string>
+    <string name="settings_show_broken">Pokvarene radio stanice</string>
+    <string name="settings_show_broken_on">Prikaži pokvarene radio stanice na popisima</string>
+    <string name="settings_show_broken_off">Ne prikazuj pokvarene radio stanice na popisima</string>
 
     <string name="settings_startup_behaviour">Ponašanje pri pokretanju</string>
     <string name="action_grid_view">Mrežni prikaz</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Radnja pri pokretanju</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Prikaži sve stanice</string>
+    <string name="startup_show_all_stations">Prikaži sve radio stanice</string>
     <string name="startup_show_favorites">Prikaži omiljene</string>
     <string name="startup_show_history">Prikaži povijest</string>
     <string name="startup_show_last_view">Zadnji prikaz</string>
 
-    <string name="settings_load_icons">Prikaži ikone stanica</string>
+    <string name="settings_load_icons">Prikaži ikone radio stanica</string>
     <string name="settings_load_icons_on">Ikone će biti preuzete</string>
     <string name="settings_load_icons_off">Ikone neće biti preuzete</string>
 
     <string name="settings_auto_favorite">Auto-omiljeno</string>
-    <string name="settings_auto_favorite_on">Automatski dodaj stanice u omiljene tijekom slušanja</string>
-    <string name="settings_auto_favorite_off">Nemoj automatski dodavati stanice u omiljene tijekom slušanja</string>
+    <string name="settings_auto_favorite_on">Automatski dodaj radio stanice u omiljene tijekom slušanja</string>
+    <string name="settings_auto_favorite_off">Nemoj automatski dodavati radio stanice u omiljene tijekom slušanja</string>
 
     <string name="settings_play">Reproduktor</string>
     <string name="settings_auto_play_on_startup">Auto-reprodukcija</string>
-    <string name="settings_auto_play_on_startup_on">Slušaj zadnju stanicu pri pokretanju</string>
-    <string name="settings_auto_play_on_startup_off">Nemoj slušati zadnju stanicu pri pokretanju</string>
+    <string name="settings_auto_play_on_startup_on">Slušaj zadnju radio stanicu pri pokretanju</string>
+    <string name="settings_auto_play_on_startup_off">Nemoj slušati zadnju radio stanicu pri pokretanju</string>
     <string name="settings_auto_off_on_startup">Auto-zaustavljanje</string>
     <string name="settings_auto_off_on_startup_on">Koristi mjerač auto-zaustavljanja s auto-reprodukcijom</string>
     <string name="settings_auto_off_on_startup_off">Nemoj koristiti mjerač auto-zaustavljanja s auto-reprodukcijom</string>
     <string name="settings_auto_off_sleep_timer">Mjerač auto-zaustavljanja</string>
     <string name="settings_auto_off_sleep_timer_desc">Zaustavi reprodukciju nakon %1$s minuta</string>
     <string name="settings_play_external">Omogući vanjski reproduktor</string>
-    <string name="settings_play_external_desc_on">Slušaj stanice putem vanjskog reproduktora</string>
-    <string name="settings_play_external_desc_off">Slušaj stanice putem AMARadio</string>
+    <string name="settings_play_external_desc_on">Slušaj radio stanice putem vanjskog reproduktora</string>
+    <string name="settings_play_external_desc_off">Slušaj radio stanice putem AMARadio</string>
     <string name="settings_equalizer">Ekvilajzer</string>
 
     <string name="settings_connectivity">Povezivost</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Pauzirano</string>
     <string name="notify_metered_connection">Veza s ograničenim prometom</string>
 
-    <string name="notify_starred">Stanica je dodana u omiljene</string>
-    <string name="notify_autostarred">Stanica je automatski dodana u omiljene</string>
-    <string name="notify_unstarred">Stanica je uklonjena iz omiljenih</string>
+    <string name="notify_starred">Radio stanica je dodana u omiljene</string>
+    <string name="notify_autostarred">Radio stanica je automatski dodana u omiljene</string>
+    <string name="notify_unstarred">Radio stanica je uklonjena iz omiljenih</string>
     <string name="notify_deleted_favorites">Omiljene su izbrisane</string>
     <string name="notify_deleted_history">Povijest je izbrisana</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Odaberite reproduktor</string>
     <string name="alert_select_player_name">Ime</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Port</string>
+    <string name="hostname">Adresa poslužitelja</string>
+    <string name="port">Mrežni port</string>
 
     <string name="alert_press_back_to_exit">Pritisnite Natrag još jednom za izlaz</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Slušaj u vanjskom reproduktoru</string>
     <string name="action_choose_external_player">Odaberi vanjski reproduktor</string>
 
-    <string name="settings_disable_battery_optimization">Optimizacija baterije</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Optimizacija baterije je zanemarena, AMARadio bi uvijek trebao moći vratiti fokus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Optimizacija baterije je aktivirana, AMARadio neće moći vratiti fokus ako je u pozadini.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Reprodukcija u pozadini</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Ostalo</string>
     <string name="settings_rate_app">Ocijenite AMARadio</string>
     <string name="settings_rate_app_summary">Ako vam se sviđa aplikacija, ostavite recenziju na Play Store-u!</string>
@@ -299,7 +297,7 @@
     <string name="alert_metered_connection_message">Mjerena veza može uzrokovati dodatne troškove, pritisnite \'U redu\' za nastavak.</string>
     <string name="nav_item_statistics">Statistika</string>
     <string name="nav_item_about">O aplikaciji</string>
-    <string name="refresh">Osvježi</string>
+    <string name="refresh">Osvreži</string>
     <string name="action_filter">Filtar</string>
     <string name="filter_country">Zemlja</string>
     <string name="filter_tag">Oznaka</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logotip postaje</string>
+    <string name="accessibility_station_logo">Logotip radio stanice</string>
     <string name="accessibility_favorite_selected">Omiljeno, odabrano</string>
     <string name="accessibility_favorite_not_selected">Omiljeno, nije odabrano</string>
     <string name="accessibility_category_icon">Ikona kategorije</string>
@@ -337,35 +335,63 @@
     <string name="accessibility_configure">Konfiguriraj</string>
     <string name="accessibility_close">Zatvori</string>
     <string name="accessibility_add_filter">Dodaj filtar</string>
-    <string name="accessibility_station_options">Opcije postaje</string>
+    <string name="accessibility_station_options">Opcije radio stanice</string>
     <string name="not_applicable">n/p</string>
     <string name="accessibility_station_description">Postaja: %1$s, Jezik: %2$s, Oznake: %3$s</string>
 
     <string name="error_no_file_manager">Nije moguće pronaći upravitelja sistemskih datoteka. Provjerite je li file explorer instaliran i omogućen.</string>
-    <string name="error_no_browser">Nije moguće pronaći web preglednik. Molimo instalirajte preglednik kako biste otvorili ovu vezu.</string>
-    <string name="error_no_homepage">Nema dostupne početne stranice za ovu postaju</string>
-    <string name="tab_custom_stations">Običaj</string>
-    <string name="action_add_custom">Dodaj prilagođenu stanicu</string>
-    <string name="station_name">Naziv postaje</string>
+    <string name="error_no_browser">Nije mogoče pronaći web preglednik. Molimo instalirajte preglednik kako biste otvorili ovu vezu.</string>
+    <string name="error_no_homepage">Nema dostupne početne stranice za ovu radio stanicu</string>
+    <string name="tab_custom_stations">Prilagođeno</string>
+    <string name="action_add_custom">Dodaj prilagođenu radio stanicu</string>
+    <string name="station_name">Naziv radio stanice</string>
     <string name="stream_url">URL streama</string>
-    <string name="favicon_url">Favicon URL (nije obavezno)</string>
+    <string name="favicon_url">URL logotipa stanice (Favicon)</string>
     <string name="select_image">Odaberite Slika</string>
     <string name="error_invalid_url">Unesite važeći URL</string>
-    <string name="action_save">Uštedjeti</string>
+    <string name="action_save">Spremi</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Brze kontrole igrača</string>
-    <string name="widget_description_full">Popis igrača i postaja</string>
+    <string name="widget_description_small">Brze kontrole reproduktora</string>
+    <string name="widget_description_full">Reproduktor i popis radio stanica</string>
 
     <string name="settings_auto_db_update">Pozadinska sinkronizacija podataka</string>
-    <string name="settings_auto_db_update_desc">Automatsko ažuriranje baze podataka postaja putem API-ja Radio-Browser (preporučeno).</string>
-    <string name="settings_station_click_counter">Brojač klikova stanica</string>
-    <string name="settings_station_click_counter_desc">Podržite statistiku Radio-Browsera anonimnim dijeljenjem događaja igranja.</string>
+    <string name="settings_auto_db_update_desc">Automatsko ažuriranje baze podataka radio stanica putem Radio-Browser API-ja (preporučeno).</string>
+    <string name="settings_station_click_counter">Brojač klikova radio stanica</string>
+    <string name="settings_station_click_counter_desc">Podržite statistiku Radio-Browsera anonimnim dijeljenjem događaja reprodukcije.</string>
     <string name="settings_rate_app_github">Uživate li u AMARadio?</string>
     <string name="settings_rate_app_github_summary">Ostavite zvijezdu na GitHubu! Pomaže drugima da otkriju aplikaciju i podržava budući razvoj.</string>
 
-    <string name="settings_remove_notification_on_stop">Ukloni obavijest kada se aplikacija zatvori</string>
-    <string name="settings_remove_notification_on_stop_desc">Automatski odbaci medijsku obavijest kada se aplikacija zatvori iz nedavnih aplikacija</string>
+    <string name="settings_remove_notification_on_stop">Ukloni obavijest pri zaustavljanju</string>
+    <string name="settings_remove_notification_on_stop_desc">Automatski odbaci medijsku obavijest kada se reprodukcija zaustavi</string>
     <string name="settings_auto_resume_audio_focus">Nastavak nakon gubitka audio fokusa</string>
     <string name="settings_auto_resume_audio_focus_desc">Automatski nastavite reprodukciju nakon što telefonski pozivi, alarmi ili drugi zvukovi prestanu</string>
+
+    <string name="settings_backup_restore">Sigurnosna kopija i vraćanje</string>
+    <string name="settings_export_backup">Stvori potpunu sigurnosnu kopiju (ZIP)</string>
+    <string name="settings_export_backup_desc">Sprema sve omiljene, prilagođene stanice i ikone u ZIP datoteku</string>
+    <string name="settings_import_backup">Vrati sigurnosnu kopiju (ZIP)</string>
+    <string name="settings_import_backup_desc">Vraća omiljene i prilagođene stanice iz ZIP datoteke</string>
+    <string name="backup_export_success">Sigurnosna kopija uspješno spremljena</string>
+    <string name="backup_export_error">Nije moguće spremiti sigurnosnu kopiju</string>
+    <string name="backup_import_success">Sigurnosna kopija uspješno vraćena</string>
+    <string name="backup_import_error">Nije moguće vratiti sigurnosnu kopiju</string>
+
+    <string name="database_summary_title">Lokalna baza podataka</string>
+    <string name="database_total_stations">Ukupno radio stanica</string>
+    <string name="database_last_sync">Posljednje ažuriranje</string>
+    <string name="database_update_now">Ažuriraj bazu podataka sada</string>
+    <string name="database_full_update">Ažuriraj bazu podataka</string>
+    <string name="database_syncing">Sinkronizacija…</string>
+    <string name="database_downloading">Preuzimanje…</string>
+    <string name="database_stations_loaded">%1$s radio stanica</string>
+    <string name="database_sync_channel_name">Sinkronizacija baze radio stanica</string>
+    <string name="database_sync_success">Ažuriranje baze podataka uspješno završeno</string>
+    <string name="database_error_no_connection">Nema internetske veze</string>
+    <string name="database_error_no_space">Nema dovoljno prostora na disku</string>
+    <string name="database_error_failed">Ažuriranje baze podataka nije uspjelo</string>
+
+    <string name="settings_disable_battery_optimization_desc">Za nastavak reprodukcije s ugašenim zaslonom, postavite potrošnju baterije na \'Neograničeno\'.</string>
+    <string name="battery_opt_open_settings">Otvori postavke</string>
+    <string name="battery_opt_later">Kasnije</string>
 </resources>

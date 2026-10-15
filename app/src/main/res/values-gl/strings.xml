@@ -49,27 +49,27 @@
     <string name="action_rename_tab">Renomear pestana</string>
     <string name="error_filter_name_required">Introduza primeiro un nome para esta pestana de filtro</string>
     <string name="confirm_delete_filter_tab">Ten a certeza de que quere eliminar o filtro \"%1$s\"?</string>
-    <string name="filter_empty_title">Constrúe o teu propio feed de emisoras</string>
+    <string name="filter_empty_title">Constrúe o teu propio feed de emisoras de radio</string>
     <string name="filter_empty_desc">Crea unha vista personalizada combinando varios criterios. Podes restrinxir a túa busca mediante:</string>
     <string name="filter_empty_filter_by">Filtrar por</string>
-    <string name="filter_empty_filter_desc">País, nome da emisora, etiquetas ou idioma</string>
+    <string name="filter_empty_filter_desc">País, nome da emisora de radio, etiquetas ou idioma</string>
     <string name="filter_empty_sort_by">Ordenar por</string>
     <string name="filter_empty_sort_desc">Clics, Alfabeto, Votos ou Último cambio</string>
     <string name="filter_empty_hint">Escribe un nome no campo superior para gardar esta vista personalizada!</string>
-    <string name="error_station_load">Non se puido conectar a emisora</string>
-    <string name="error_list_update">Non se puido conectar ao servidor radio browser</string>
+    <string name="error_station_load">Non se puido conectar a emisora de radio</string>
+    <string name="error_list_update">Non se puido conectar ao servidor Radio-Browser</string>
 
     <string name="error_no_connection">Non hai conexión a Internet dispoñible</string>
     <string name="warning_volume_zero">O volume está a cero. Pode que non escoites nada.</string>
 
-    <string name="share_action">Compartir ligazón á emisora con&#8230;</string>
+    <string name="share_action">Compartir ligazón á emisora de radio con&#8230;</string>
 
-    <string name="nav_item_stations">Emisoras</string>
+    <string name="nav_item_stations">Emisoras de radio</string>
     <string name="nav_item_starred">Favoritas</string>
     <string name="nav_item_history">Historial</string>
     <string name="nav_item_settings">Axustes</string>
 
-    <string name="about_text">AMARadio é 100% libre de publicidade e centrado na privacidade.\n\nOrixinalmente desenvolveu esta aplicación para a miña nai para ofrecerlle unha experiencia de radio sinxela e honesta sen anuncios molestos nin seguimento. Por iso AMARadio sempre permanecerá libre de publicidade: é unha promesa para ela, compartida con todas vós.\n\nEste proxecto é un fork do excelente RadioDroid. Toda la base de código se migrou de Java a Kotlin para garantir que a aplicación se manteña moderna e compatible coas futuras versións de Android.\n\nEste app usa o directorio libre de emisoras de radio en https://www.radio-browser.info .\nCalquera persoa pode engadir emisoras. Funciona ao xeito dunha wiki para emisoras de radio en liña.\n\nContacto: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nSe che gusta o software e queres axudar, non dubides en enviarme un email.\nTamén agradecemos o aporte de novas ideas!\n\nEsta app é software libre baixo licenza GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio é 100% libre de publicidade e centrado na privacidade.\n\nOrixinalmente desenvolveu esta aplicación para a miña nai para ofrecerlle unha experiencia de radio sinxela e honesta sen anuncios molestos nin seguimento. Por iso AMARadio sempre permanecerá libre de publicidade: é unha promesa para ela, compartida con todas vós.\n\nEste proxecto é un fork do excelente RadioDroid. Toda a base de código se migrou de Java a Kotlin para garantir que a aplicación se manteña moderna e compatible coas futuras versións de Android.\n\nEste app usa o directorio libre de emisoras de radio en https://www.radio-browser.info .\nCalquera persoa pode engadir emisoras. Funciona ao xeito dunha wiki para emisoras de radio en liña.\n\nContacto: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nSe che gusta o software e queres axudar, non dubides en enviarme un email.\nTamén agradecemos o aporte de novas ideas!\n\nEsta app é software libre baixo licenza GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versión: %1$s</string>
     <string name="detail_star">Engadir a favoritas</string>
     <string name="detail_unstar">Eliminar de favoritas</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Escuro</string>
     <string name="theme_system">Seguir o sistema</string>
     <string name="settings_compact_style">Modo compacto</string>
-    <string name="settings_compact_style_desc_off">Icona grande con detalles da emisora</string>
-    <string name="settings_compact_style_desc_on">Icona pequena sen detalles da emisora</string>
+    <string name="settings_compact_style_desc_off">Icona grande con detalles da emisora de radio</string>
+    <string name="settings_compact_style_desc_on">Icona pequena sen detalles da emisora de radio</string>
     <string name="settings_bottom_navigation">Navegación inferior</string>
     <string name="settings_ui_scale">Escalado da UI</string>
     <string name="settings_language">Idioma</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Non se amosarán as etiquetas pouco utilizadas</string>
     <string name="settings_single_use_tags_desc_on">Amosaranse as etiquetas pouco utilizadas</string>
 
-    <string name="settings_show_broken">Emisoras estragadas</string>
-    <string name="settings_show_broken_on">Amosar nas listas as emisoras estragadas</string>
-    <string name="settings_show_broken_off">Non amosar nas listas as emisoras estragadas</string>
+    <string name="settings_show_broken">Emisoras de radio estragadas</string>
+    <string name="settings_show_broken_on">Amosar nas listas as emisoras de radio estragadas</string>
+    <string name="settings_show_broken_off">Non amosar nas listas as emisoras de radio estragadas</string>
 
     <string name="settings_startup_behaviour">Comportamento inicial</string>
     <string name="action_grid_view">Vista de grade</string>
@@ -133,12 +133,12 @@
 
     <string name="startup_action_title">Acción inicial</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Mostrar tódalas emisoras</string>
+    <string name="startup_show_all_stations">Mostrar tódalas emisoras de radio</string>
     <string name="startup_show_favorites">Mostrar favoritas</string>
     <string name="startup_show_history">Mostrar historial</string>
     <string name="startup_show_last_view">Última reproducida</string>
 
-    <string name="settings_load_icons">Mostrar iconas da emisora</string>
+    <string name="settings_load_icons">Mostrar iconas da emisora de radio</string>
     <string name="settings_load_icons_on">Descargaranse as iconas</string>
     <string name="settings_load_icons_off">Non se descargarán iconas</string>
 
@@ -148,16 +148,16 @@
 
     <string name="settings_play">Reprodutor</string>
     <string name="settings_auto_play_on_startup">Auto-play</string>
-    <string name="settings_auto_play_on_startup_on">Reproducir última emisora ao inicio</string>
-    <string name="settings_auto_play_on_startup_off">Non reproducir ao inicio a última emisora</string>
+    <string name="settings_auto_play_on_startup_on">Reproducir última emisora de radio ao inicio</string>
+    <string name="settings_auto_play_on_startup_off">Non reproducir ao inicio a última emisora de radio</string>
     <string name="settings_auto_off_on_startup">Auto-apagado</string>
     <string name="settings_auto_off_on_startup_on">Usar temporizador de auto-apagado con auto-play</string>
     <string name="settings_auto_off_on_startup_off">Non usar temporizador de auto-apagado con auto-play</string>
     <string name="settings_auto_off_sleep_timer">Temporizador de auto-apagado</string>
     <string name="settings_auto_off_sleep_timer_desc">Deixar de reproducir após %1$s minitos</string>
     <string name="settings_play_external">Activar reprodutor externo</string>
-    <string name="settings_play_external_desc_on">Reproducir emisoras cun reprodutor externo</string>
-    <string name="settings_play_external_desc_off">Reproducir emisoras con AMARadio</string>
+    <string name="settings_play_external_desc_on">Reproducir emisoras de radio cun reprodutor externo</string>
+    <string name="settings_play_external_desc_off">Reproducir emisoras de radio con AMARadio</string>
     <string name="settings_equalizer">Ecualizador</string>
 
     <string name="settings_connectivity">Conectividade</string>
@@ -187,7 +187,7 @@
     <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Retomar con conexión Bluetooth</string>
     <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Retomar reprodución ao conectar auriculares Bluetooth A2DP</string>
 
-    <string name="settings_auto_resume_on_any_connected">Retomar con calquera conexión</string>
+    <string name="settings_auto_resume_on_any_connected">Retomar con calquiera conexión</string>
 
     <string name="settings_warn_no_wifi">Aviso Wi-Fi</string>
     <string name="settings_warn_no_wifi_on">Avisar cando se está a reproducir sen conexión Wi-Fi</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">En pausa</string>
     <string name="notify_metered_connection">Conexión de uso medido</string>
 
-    <string name="notify_starred">Emisora engadida a favoritas</string>
-    <string name="notify_autostarred">Emisora engadida automáticamente a favoritas</string>
-    <string name="notify_unstarred">Emisora eliminada das favoritas</string>
+    <string name="notify_starred">Emisora de radio engadida a favoritas</string>
+    <string name="notify_autostarred">Emisora de radio engadida automáticamente a favoritas</string>
+    <string name="notify_unstarred">Emisora de radio eliminada das favoritas</string>
     <string name="notify_deleted_favorites">Elimináronse as favoritas</string>
     <string name="notify_deleted_history">Borrouse o historial</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Seleccione un reprodutor</string>
     <string name="alert_select_player_name">Nome</string>
-    <string name="hostname">Hostname</string>
-    <string name="port">Porto</string>
+    <string name="hostname">Enderezo do servidor</string>
+    <string name="port">Porto de rede</string>
 
     <string name="alert_press_back_to_exit">Preme outra vez para saír</string>
 
@@ -264,14 +264,12 @@
     <string name="action_play_in_external">Reproducir en reprodutor externo</string>
     <string name="action_choose_external_player">Elexir reprodutor externo</string>
 
-    <string name="settings_disable_battery_optimization">Optimización da batería</string>
-    <string name="settings_ignore_battery_optimization_summary_on">A optimización da batería ignórase, AMARadio sempre debería poder recuperar o foco.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">A optimización da batería está activada, AMARadio pode non recuperar o foco en segundo plano.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Reprodución en segundo plano</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Outras</string>
     <string name="settings_rate_app">Valorar AMARadio</string>
     <string name="settings_rate_app_summary">Se che gusta a aplicación, deixa unha recensión na Play Store!</string>
-    <string name="settings_statistics">Estatistikas</string>
+    <string name="settings_statistics">Estatísticas</string>
     <string name="settings_about">Acerca de AMARadio</string>
 
     <string name="description_btn_skip_to_next">Ir á seguinte</string>
@@ -323,12 +321,8 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Alarma alternativa</string>
-    <string name="alarm_fallback_info">Usouse a alarma do sistema porque a emisora seleccionada non se puido cargar</string>
-    <string name="alarm_back_desc">Alarma de sistema alternativa cando a emisora de radio non carga</string>
-
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logotipo da emisora</string>
+    <string name="accessibility_station_logo">Logotipo da emisora de radio</string>
     <string name="accessibility_favorite_selected">Favorito, seleccionado</string>
     <string name="accessibility_favorite_not_selected">Favorito, non seleccionado</string>
     <string name="accessibility_category_icon">Icona de categoría</string>
@@ -341,35 +335,63 @@
     <string name="accessibility_configure">Configurar</string>
     <string name="accessibility_close">Pechar</string>
     <string name="accessibility_add_filter">Engadir filtro</string>
-    <string name="accessibility_station_options">Opcións da emisora</string>
+    <string name="accessibility_station_options">Opcións da emisora de radio</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Emisora: %1$s, Idioma: %2$s, Etiquetas: %3$s</string>
 
     <string name="error_no_file_manager">Non se puido atopar un xestor de ficheiros do sistema. Asegúrate de ter instalado e activado un explorador de ficheiros.</string>
     <string name="error_no_browser">Non se puido atopar un navegador web. Instala un navegador para abrir esta ligazón.</string>
-    <string name="error_no_homepage">Non hai páxina de inicio dispoñible para esta estación</string>
-    <string name="tab_custom_stations">Personalizado</string>
-    <string name="action_add_custom">Engadir estación personalizada</string>
-    <string name="station_name">Nome da estación</string>
-    <string name="stream_url">URL de transmisión</string>
-    <string name="favicon_url">URL do favicon (opcional)</string>
+    <string name="error_no_homepage">Non hai páxina de inicio dispoñible para esta emisora de radio</string>
+    <string name="tab_custom_stations">Personalizadas</string>
+    <string name="action_add_custom">Engadir emisora de radio personalizada</string>
+    <string name="station_name">Nome da emisora de radio</string>
+    <string name="stream_url">URL do fluxo</string>
+    <string name="favicon_url">URL do logotipo da emisora (Favicon)</string>
     <string name="select_image">Seleccione Imaxe</string>
     <string name="error_invalid_url">Introduce un URL válido</string>
     <string name="action_save">Gardar</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Controis rápidos do xogador</string>
-    <string name="widget_description_full">Lista de reprodutores e emisoras</string>
+    <string name="widget_description_small">Controis rápidos do reprodutor</string>
+    <string name="widget_description_full">Reprodutor e lista de emisoras de radio</string>
 
     <string name="settings_auto_db_update">Sincronización de datos en segundo plano</string>
-    <string name="settings_auto_db_update_desc">Actualización automática da base de datos da estación a través da API de Radio-Browser (recomendado).</string>
-    <string name="settings_station_click_counter">Contador de clics da estación</string>
+    <string name="settings_auto_db_update_desc">Actualización automática da base de datos da emisora a través da API de Radio-Browser (recomendado).</string>
+    <string name="settings_station_click_counter">Contador de clics da emisora de radio</string>
     <string name="settings_station_click_counter_desc">Admite as estatísticas de Radio-Browser compartindo eventos de reprodución de forma anónima.</string>
-    <string name="settings_rate_app_github">Estás a gozar de AMRadio?</string>
+    <string name="settings_rate_app_github">Estás a gozar de AMARadio?</string>
     <string name="settings_rate_app_github_summary">Deixa unha estrela en GitHub! Axuda a outros a descubrir a aplicación e apoia o desenvolvemento futuro.</string>
 
-    <string name="settings_remove_notification_on_stop">Elimina a notificación cando a aplicación estea pechada</string>
-    <string name="settings_remove_notification_on_stop_desc">Rexeita automaticamente a notificación multimedia cando se pecha a aplicación das aplicacións recentes</string>
+    <string name="settings_remove_notification_on_stop">Elimina a notificación ao deter</string>
+    <string name="settings_remove_notification_on_stop_desc">Rexeita automaticamente a notificación multimedia cando se detén a reprodución</string>
     <string name="settings_auto_resume_audio_focus">Retomar despois da perda do foco de audio</string>
     <string name="settings_auto_resume_audio_focus_desc">Retoma a reprodución automaticamente despois de que se deteñan as chamadas telefónicas, as alarmas ou outros audios</string>
+
+    <string name="settings_backup_restore">Copia de seguranza e restauración</string>
+    <string name="settings_export_backup">Crear copia de seguranza completa (ZIP)</string>
+    <string name="settings_export_backup_desc">Garda todas as emisoras favoritas, personalizadas e iconas nun ficheiro ZIP</string>
+    <string name="settings_import_backup">Restaurar copia de seguranza (ZIP)</string>
+    <string name="settings_import_backup_desc">Restaura as emisoras favoritas e personalizadas desde un ficheiro ZIP</string>
+    <string name="backup_export_success">Copia de seguranza gardada correctamente</string>
+    <string name="backup_export_error">Non se puido gardar a copia de seguranza</string>
+    <string name="backup_import_success">Copia de seguranza restaurada correctamente</string>
+    <string name="backup_import_error">Non se puido restaurar a copia de seguranza</string>
+
+    <string name="database_summary_title">Base de datos local</string>
+    <string name="database_total_stations">Total de emisoras de radio</string>
+    <string name="database_last_sync">Última actualización</string>
+    <string name="database_update_now">Actualizar base de datos agora</string>
+    <string name="database_full_update">Actualizar base de datos</string>
+    <string name="database_syncing">Sincronizando…</string>
+    <string name="database_downloading">Descargando…</string>
+    <string name="database_stations_loaded">%1$s emisoras de radio</string>
+    <string name="database_sync_channel_name">Sincronización da base de datos de emisoras</string>
+    <string name="database_sync_success">Actualización da base de datos completada con éxito</string>
+    <string name="database_error_no_connection">Sen conexión a Internet</string>
+    <string name="database_error_no_space">Espazo en disco insuficiente</string>
+    <string name="database_error_failed">A actualización da base de datos fallou</string>
+
+    <string name="settings_disable_battery_optimization_desc">Para manter a reproduación coa pantalla apagada, establece o uso da batería en \'Sen restricións\'.</string>
+    <string name="battery_opt_open_settings">Abrir axustes</string>
+    <string name="battery_opt_later">Máis tarde</string>
 </resources>

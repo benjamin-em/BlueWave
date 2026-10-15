@@ -22,7 +22,7 @@
     <string name="action_station_visit_website">访问网站</string>
     <string name="action_station_copy_stream_url">复制流媒体地址</string>
     <string name="action_station_share">分享</string>
-    
+
     <string name="action_local">本地电台</string>
     <string name="action_skip_to_next">下一个</string>
     <string name="action_pause">暂停</string>
@@ -54,10 +54,10 @@
     <string name="filter_empty_filter_by">筛选依据</string>
     <string name="filter_empty_filter_desc">国家、电台名称、标签或语言</string>
     <string name="filter_empty_sort_by">排序依据</string>
-    <string name="filter_empty_sort_desc">点击量、字母顺序、票数 oder 最后修改</string>
+    <string name="filter_empty_sort_desc">点击量、字母顺序、票数或最后修改</string>
     <string name="filter_empty_hint">在上方字段中输入名称以保存此自定义视图！</string>
     <string name="error_station_load">无法连接电台</string>
-    <string name="error_list_update">无法连接 radio browser 服务器</string>
+    <string name="error_list_update">无法连接 Radio-Browser 服务器</string>
 
     <string name="error_no_connection">无可用的互联网连接</string>
     <string name="warning_volume_zero">音量已调至零。您可能听不到任何声音。</string>
@@ -81,7 +81,7 @@
     <string name="sleep_timer_apply">应用</string>
     <string name="sleep_timer_clear">清除</string>
     <string name="nav_item_add_sleep">睡眠定时器</string>
-    
+
     <string name="nav_item_save_playlist">导出收藏到播放列表</string>
     <string name="nav_item_load_playlist">从播放列表导入收藏</string>
     <string name="nav_item_save_history_playlist">导出历史到播放列表</string>
@@ -176,7 +176,7 @@
     <string name="ignore_proxy_settings_invalid">已忽略无效的代理服务器设置</string>
     <string name="settings_seconds_format">%d 秒</string>
     <string name="settings_milliseconds_format">%d 毫秒</string>
-    
+
     <string name="settings_pause_when_noisy">耳机断开时暂停</string>
 
     <string name="settings_auto_resume_do_not_resume">不恢复</string>
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">请选择一个播放器</string>
     <string name="alert_select_player_name">名称</string>
-    <string name="hostname">主机名</string>
-    <string name="port">端口</string>
+    <string name="hostname">服务器地址</string>
+    <string name="port">网络端口</string>
 
     <string name="alert_press_back_to_exit">再按一次返回退出</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">使用外部播放器播放</string>
     <string name="action_choose_external_player">选择外部播放器</string>
 
-    <string name="settings_disable_battery_optimization">电池优化</string>
-    <string name="settings_ignore_battery_optimization_summary_on">电池优化被忽略，AMARadio 会始终在失去焦点后重获焦点。</string>
-    <string name="settings_ignore_battery_optimization_summary_off">电池优化被激活，AMARadio 将可能无法在后台重获焦点。</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">后台播放</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">其他</string>
     <string name="settings_rate_app">评价 AMARadio</string>
     <string name="settings_rate_app_summary">如果您喜欢这个应用，请在 Play 商店留下评价！</string>
+    <string name="settings_rate_app_github">喜欢 AMARadio 吗？</string>
+    <string name="settings_rate_app_github_summary">在 GitHub 上点个 Star 吧！这能帮助其他人发现应用并支持后续开发。</string>
     <string name="settings_statistics">统计</string>
     <string name="settings_about">关于 AMARadio</string>
 
@@ -278,18 +278,17 @@
     <string name="description_btn_skip_to_previous">转到上一个</string>
 
     <string-array name="weekdays">
-        <item>周日</item>
-        <item>周一</item>
-        <item>周二</item>
-        <item>周三</item>
-        <item>周四</item>
-        <item>周五</item>
-        <item>周六</item>
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
     </string-array>
 
     <string name="notify_stream_url_copied">流媒体地址复制成功</string>
     <string name="notify_track_info_copied">曲目信息复制成功</string>
-
 
     <string-array name="actions_station_link">
         <item>访问网站</item>
@@ -344,29 +343,55 @@
 
     <string name="error_no_file_manager">找不到系统文件管理器。请确保已安装并启用文件浏览器。</string>
     <string name="error_no_browser">找不到网络浏览器。请安装浏览器来打开此链接。</string>
-    <string name="error_no_homepage">该站没有可用的主页</string>
-    <string name="tab_custom_stations">风俗</string>
-    <string name="action_add_custom">添加自定义站</string>
-    <string name="station_name">车站名称</string>
-    <string name="stream_url">串流网址</string>
-    <string name="favicon_url">网站图标 URL（可选）</string>
+    <string name="error_no_homepage">该电台没有可用的主页</string>
+    <string name="tab_custom_stations">自定义</string>
+    <string name="action_add_custom">添加自定义电台</string>
+    <string name="station_name">电台名称</string>
+    <string name="stream_url">流媒体 URL</string>
+    <string name="favicon_url">电台图标 URL (Favicon)</string>
     <string name="select_image">选择图像</string>
-    <string name="error_invalid_url">请输入有效的网址</string>
-    <string name="action_save">节省</string>
+    <string name="error_invalid_url">请输入有效的 URL</string>
+    <string name="action_save">保存</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">快速播放器控制</string>
     <string name="widget_description_full">播放器和电台列表</string>
 
     <string name="settings_auto_db_update">后台数据同步</string>
-    <string name="settings_auto_db_update_desc">通过无线电浏览器 API 自动更新电台数据库（推荐）。</string>
-    <string name="settings_station_click_counter">车站点击计数器</string>
-    <string name="settings_station_click_counter_desc">通过匿名共享播放事件支持广播浏览器统计。</string>
-    <string name="settings_rate_app_github">喜欢 AMARadio 吗？</string>
-    <string name="settings_rate_app_github_summary">在 GitHub 上留下一个星星吧！它可以帮助其他人发现该应用程序并支持未来的开发。</string>
+    <string name="settings_auto_db_update_desc">通过 Radio-Browser API 自动更新电台数据库（推荐）。</string>
+    <string name="settings_station_click_counter">电台点击计数器</string>
+    <string name="settings_station_click_counter_desc">通过匿名共享播放事件支持 Radio-Browser 统计。</string>
 
-    <string name="settings_remove_notification_on_stop">删除应用程序关闭时的通知</string>
-    <string name="settings_remove_notification_on_stop_desc">当应用程序从最近的应用程序中关闭时自动关闭媒体通知</string>
-    <string name="settings_auto_resume_audio_focus">音频焦点丢失后恢复</string>
-    <string name="settings_auto_resume_audio_focus_desc">电话、闹钟或其他音频停止后自动恢复播放</string>
+    <string name="settings_remove_notification_on_stop">停止播放时移除通知</string>
+    <string name="settings_remove_notification_on_stop_desc">停止播放时自动关闭媒体通知</string>
+    <string name="settings_auto_resume_audio_focus">失去音频焦点后恢复</string>
+    <string name="settings_auto_resume_audio_focus_desc">在电话、闹钟或其他音频停止后自动恢复播放</string>
+
+    <string name="settings_backup_restore">备份与恢复</string>
+    <string name="settings_export_backup">创建完整备份 (ZIP)</string>
+    <string name="settings_export_backup_desc">将所有收藏、自定义电台和图标保存到 ZIP 文件</string>
+    <string name="settings_import_backup">恢复备份 (ZIP)</string>
+    <string name="settings_import_backup_desc">从 ZIP 备份文件恢复收藏和自定义电台</string>
+    <string name="backup_export_success">备份保存成功</string>
+    <string name="backup_export_error">保存备份失败</string>
+    <string name="backup_import_success">备份恢复成功</string>
+    <string name="backup_import_error">恢复备份失败</string>
+
+    <string name="database_summary_title">本地数据库</string>
+    <string name="database_total_stations">电台总数</string>
+    <string name="database_last_sync">上次更新</string>
+    <string name="database_update_now">立即更新数据库</string>
+    <string name="database_full_update">更新数据库</string>
+    <string name="database_syncing">正在同步…</string>
+    <string name="database_downloading">正在下载…</string>
+    <string name="database_stations_loaded">%1$s 个电台</string>
+    <string name="database_sync_channel_name">电台数据库同步</string>
+    <string name="database_sync_success">电台数据库更新成功完成</string>
+    <string name="database_error_no_connection">无网络连接</string>
+    <string name="database_error_no_space">磁盘空间不足</string>
+    <string name="database_error_failed">数据库更新失败</string>
+
+    <string name="settings_disable_battery_optimization_desc">要在屏幕关闭时继续播放，请将电池使用设置为 \'Unrestricted\'（无限制）。</string>
+    <string name="battery_opt_open_settings">打开设置</string>
+    <string name="battery_opt_later">稍后</string>
 </resources>

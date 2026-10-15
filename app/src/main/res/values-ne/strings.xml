@@ -46,30 +46,30 @@
     <string name="action_languages">भाषाहरू</string>
     <string name="action_edit">सम्पादन गर्नुहोस्</string>
     <string name="action_copy_info">जानकारी प्रतिलिपि गर्नुहोस्</string>
-    <string name="action_rename_tab">ट्याब पुन: नामकरण गर्नुहोस्</string>
+    <string name="action_rename_tab">ट्याબ पुन: नामकरण गर्नुहोस्</string>
     <string name="error_filter_name_required">कृपया पहिले यो फिल्टर ट्याबको लागि नाम प्रविष्ट गर्नुहोस्</string>
     <string name="confirm_delete_filter_tab">के तपाईं पक्का हुनुहुन्छ कि तपाईं फिल्टर \"%1$s\" मेटाउन चाहनुहुन्छ?</string>
     <string name="filter_empty_title">तपाईंको आफ्नै रेडियो स्टेशन फिड बनाउनुहोस्</string>
-    <string name="filter_empty_desc">धेरै मापदण्डहरू मिलाएर एक व्यक्तिगत दृश्य सिर्जना गर्नुहोस्। तपाईं आफ्नो खोजलाई यसरी कम गर्न सक्नुहुन्छ:</string>
+    <string name="filter_empty_desc">धेရै मापदण्डहरू मिलाएर एक व्यक्तिगत दृश्य सिर्जना गर्नुहोस्। तपाईं आफ्नो खोजलाई यसरी कम गर्न सक्नुहुन्छ:</string>
     <string name="filter_empty_filter_by">यसद्वारा फिल्टर गर्नुहोस्:</string>
-    <string name="filter_empty_filter_desc">देश, स्टेशनको नाम, ट्यागहरू वा भाषा</string>
+    <string name="filter_empty_filter_desc">देश, रेडियो स्टेशनको नाम, ट्यागहरू वा भाषा</string>
     <string name="filter_empty_sort_by">यसद्वारा क्रमबद्ध गर्नुहोस्:</string>
     <string name="filter_empty_sort_desc">क्लिकहरू, वर्णमाला, भोट वा अन्तिम परिवर्तन</string>
     <string name="filter_empty_hint">यो दृश्य बचत गर्न माथिको फिल्डमा नाम टाइप गर्नुहोस्!</string>
-    <string name="error_station_load">स्टेशनसँग जडान हुन सकेन</string>
-    <string name="error_list_update">रेडियो ब्राउजर सर्भरसँग जडान हुन सकेन</string>
+    <string name="error_station_load">रेडियो स्टेशनसँग जडान हुन सकेन</string>
+    <string name="error_list_update">Radio-Browser सर्भरसँग जडान हुन सकेन</string>
 
     <string name="error_no_connection">इन्टरनेट जडान उपलब्ध छैन</string>
     <string name="warning_volume_zero">भोल्युम शून्यमा छ। तपाईंले केही सुन्न सक्नुहुन्न।</string>
 
-    <string name="share_action">स्टेशन लिङ्क साझा गर्नुहोस्…</string>
+    <string name="share_action">रेडियो स्टेशन लिङ्क साझा गर्नुहोस्…</string>
 
-    <string name="nav_item_stations">स्टेशनहरू</string>
+    <string name="nav_item_stations">रेडियो स्टेशनहरू</string>
     <string name="nav_item_starred">मनपर्नेहरू</string>
     <string name="nav_item_history">इतिहास</string>
     <string name="nav_item_settings">सेटिङहरू</string>
 
-    <string name="about_text">AMARadio १००% विज्ञापन-रहित र गोपनीयता-केन्द्रित छ।\n\nमैले सुरुमा मेरो आमाको लागि विज्ञापन वा ट्र्याकिङ बिना सरल, इमानदार रेडियो अनुभव प्रदान गर्न यो एप विकास गरेको हुँ। त्यसैले AMARadio सधैं विज्ञापन-रहित रहनेछ – यो उहाँसँग गरिएको वाचा हो, जुन तपाईं सबैसँग साझा गरिएको छ।\n\nयो परियोजना उत्कृष्ट https://github.com/segler-alex/RadioDroid को एक फोर्क हो। एपलाई आधुनिक राख्न र भविष्यका एन्ड्रोइड संस्करणहरूसँग उपयुक्त बनाउन सम्पूर्ण स्रोत कोड जाभाबाट कोटलिनमा सारिएको छ।\n\nस्रोत कोड यहाँ उपलब्ध छ: https://github.com/ounben/AMARadio\n\nयो एपले https://www.radio-browser.info मा नि:शुल्क रेडियो स्टेशन निर्देशिका प्रयोग गर्दछ। जो कोहीले यसमा स्टेशनहरू थप्न सक्छन्। यसले अनलाइन रेडियो स्टेशनहरूको लागि विकी जस्तै काम गर्दछ।\n\nसम्पर्क: ben@ounben.com\n\nबग ट्र्याकर: https://github.com/ounben/AMARadio/issues\n\nयदि तपाईंलाई यो सफ्टवेयर मनपर्छ र मद्दत गर्न चाहनुहुन्छ भने, मलाई इमेल पठाउन नहिचकिचाउनुहोस्। नयाँ सुविधाहरूको लागि विचारहरू पनि सधैं स्वागत गरिन्छ!\n\nयो एप GPLv3 अन्तर्गत इजाजतपत्र प्राप्त नि:शुल्क सफ्टवेयर हो। https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio १००% विज्ञापन-रहित र गोपनीयता-केन्द्रित छ।\n\nमैले सुरुमा मेरो आमाको लागि विज्ञापन वा ट्र्याकिङ बिना सरल, इमानदार रेडियो अनुभव प्रदान गर्न यो एप विकास गरेको हुँ। त्यसैले AMARadio सधैं विज्ञापन-रहित रहनेछ – यो उहाँसँग गरिएको वाचा हो, जुन तपाईं सबैसँग साझा गरिएको छ।\n\nयो परियोजना उत्कृष्ट RadioDroid को एक फोर्क हो। एपलाई आधुनिक राख्न र भविष्यका एन्ड्रोइड संस्करणहरूसँग उपयुक्त बनाउन सम्पूर्ण स्रोत कोड जाभाबाट कोटलिनमा सारिएको छ।\n\nस्रोत कोड यहाँ उपलब्ध छ: https://github.com/ounben/AMARadio\n\nयो एपले https://www.radio-browser.info मा नि:शुल्क रेडियो स्टेशन निर्देशिका प्रयोग गर्दछ। जो कोहीले यसमा स्टेशनहरू थप्न सक्छन्। यसले अनलाइन रेडियो स्टेशनहरूको लागि विकी जस्तै काम गर्दछ।\n\nसम्पर्क: ben@ounben.com\n\nबग ट्र्याकर: https://github.com/ounben/AMARadio/issues\n\nयदि तपाईंलाई यो सफ्टवेयर मनपर्छ र मद्दत गर्न चाहनुहुन्छ भने, मलाई इमेल पठाउन नहिचकिचाउनुहोस्। नयाँ सुविधाहरूको लागि विचारहरू पनि सधैं स्वागत गरिन्छ!\n\nयो एप GPLv3 अन्तर्गत इजाजतपत्र प्राप्त नि:शुल्क सफ्टवेयर हो। https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">संस्करण: %1$s</string>
     <string name="detail_star">मनपर्नेमा थप्नुहोस्</string>
     <string name="detail_unstar">मनपर्नेबाट हटाउनुहोस्</string>
@@ -82,7 +82,7 @@
     <string name="sleep_timer_clear">हटाउनुहोस्</string>
     <string name="nav_item_add_sleep">स्लीप टाइमर</string>
 
-    <string name="nav_item_save_playlist">मनपर्नेहरूलाई प्लेलिस्टको रूपमा निर्यात गर्नुहोस्</string>
+    <string name="nav_item_save_playlist">मनপर्नेहरूलाई प्लेलिस्टको रूपमा निर्यात गर्नुहोस्</string>
     <string name="nav_item_load_playlist">प्लेलिस्टबाट मनपर्नेहरू आयात गर्नुहोस्</string>
     <string name="nav_item_save_history_playlist">इतिहासलाई प्लेलिस्टको रूपमा निर्यात गर्नुहोस्</string>
     <string name="confirm_overwrite_file">फाइल ओभरराइट गर्ने?</string>
@@ -91,7 +91,7 @@
     <string name="error_invalid_file_name">अमान्य फाइल नाम</string>
     <string name="label_button_cancel">रद्द गर्नुहोस्</string>
     <string name="label_button_overwrite">ओभरराइट</string>
-    <string name="notify_load_playlist_nok">%1$s&#47;%2$s बाट आयात गर्न सकिएन</string>
+    <string name="notify_load_playlist_nok">%1$s&#47;%2$s बाट आयात गर्न सकिएန</string>
     <string name="notify_load_playlist_now">%1$s&#47;%2$s बाट आयात गरिँदैछ, कृपया प्रतीक्षा गर्नुहोस्।</string>
     <string name="notify_load_playlist_ok">%2$s&#47;%3$s बाट %1$d स्टेशनहरू आयात गरियो</string>
     <string name="notify_save_playlist_nok">%1$s&#47;%2$s मा निर्यात गर्न सकिएन</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">अँध्यारो</string>
     <string name="theme_system">प्रणाली पछ्याउनुहोस्</string>
     <string name="settings_compact_style">कम्प्याक्ट मोड</string>
-    <string name="settings_compact_style_desc_off">स्टेशन विवरण सहित ठूलो आइकन</string>
+    <string name="settings_compact_style_desc_off">रेडियो स्टेशन विवरण सहित ठूलो आइकन</string>
     <string name="settings_compact_style_desc_on">विवरण बिना सानो आइकन</string>
     <string name="settings_bottom_navigation">तलको नेभिगेसन</string>
     <string name="settings_ui_scale">UI स्केलिंग</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">विरलै प्रयोग हुने ट्यागहरू देखाइने छैन</string>
     <string name="settings_single_use_tags_desc_on">विरलै प्रयोग हुने ट्यागहरू देखाइनेछ</string>
 
-    <string name="settings_show_broken">काम नगर्ने स्टेशनहरू</string>
-    <string name="settings_show_broken_on">सूचीमा काम नगर्ने स्टेशनहरू देखाउनुहोस्</string>
-    <string name="settings_show_broken_off">सूचीमा काम नगर्ने स्टेशनहरू नदेखाउनुहोस्</string>
+    <string name="settings_show_broken">काम नगर्ने रेडियो स्टेशनहरू</string>
+    <string name="settings_show_broken_on">सूचीमा काम नगर्ने रेडियो स्टेशनहरू देखाउनुहोस्</string>
+    <string name="settings_show_broken_off">सूचीमा काम नगर्ने रेडियो स्टेशनहरू नदेखाउनुहोस्</string>
 
     <string name="settings_startup_behaviour">सुरुवात व्यवहार</string>
     <string name="action_grid_view">ग्रिड दृश्य</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">सुरुवात कार्य</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">सबै स्टेशनहरू देखाउनुहोस्</string>
+    <string name="startup_show_all_stations">सबै रेडियो स्टेशनहरू देखाउनुहोस्</string>
     <string name="startup_show_favorites">मनपर्नेहरू देखाउनुहोस्</string>
     <string name="startup_show_history">इतिहास देखाउनुहोस्</string>
     <string name="startup_show_last_view">अन्तिम दृश्य</string>
 
-    <string name="settings_load_icons">स्टेशन आइकनहरू देखाउनुहोस्</string>
+    <string name="settings_load_icons">ਰੇഡിയോ स्टेशन आइकनहरू देखाउनुहोस्</string>
     <string name="settings_load_icons_on">आइकनहरू डाउनलोड गरिनेछ</string>
     <string name="settings_load_icons_off">आइकनहरू डाउनलोड गरिने छैन</string>
 
     <string name="settings_auto_favorite">स्वत: मनपर्ने</string>
-    <string name="settings_auto_favorite_on">बजाउँदा स्टेशनहरू स्वतः मनपर्नेमा थप्नुहोस्</string>
-    <string name="settings_auto_favorite_off">बजाउँदा स्टेशनहरू स्वतः मनपर्नेमा नथप्नुहोस्</string>
+    <string name="settings_auto_favorite_on">बजाउँदा रेडियो स्टेशनहरू स्वतः मनपर्नेमा थप्नुहोस्</string>
+    <string name="settings_auto_favorite_off">बजाउँदा रेडियो स्टेशनहरू स्वतः मनपर्नेमा नथप्नुहोस्</string>
 
     <string name="settings_play">प्लेयर</string>
     <string name="settings_auto_play_on_startup">स्वत: प्ले</string>
-    <string name="settings_auto_play_on_startup_on">सुरुवातमा अन्तिम स्टेशन बजाउनुहोस्</string>
-    <string name="settings_auto_play_on_startup_off">सुरुवातमा अन्तिम स्टेशन नबजाउनुहोस्</string>
+    <string name="settings_auto_play_on_startup_on">सुरुवातमा अन्तिम रेडियो स्टेशन बजाउनुहोस्</string>
+    <string name="settings_auto_play_on_startup_off">सुरुवातमा अन्तिम रेडियो स्टेशन नबजाउनुहोस्</string>
     <string name="settings_auto_off_on_startup">स्वत: बन्द</string>
     <string name="settings_auto_off_on_startup_on">स्वत: प्लेको साथ स्वतः बन्द टाइमर प्रयोग गर्नुहोस्</string>
     <string name="settings_auto_off_on_startup_off">स्वत: प्लेको साथ स्वतः बन्द टाइमर प्रयोग नगर्नुहोस्</string>
     <string name="settings_auto_off_sleep_timer">स्वत: बन्द टाइमर</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s मिनेट पछि बजाउन रोक्नुहोस्</string>
     <string name="settings_play_external">बाहिरी प्लेयर सक्षम गर्नुहोस्</string>
-    <string name="settings_play_external_desc_on">बाहिरी प्लेयरसँग स्टेशनहरू बजाउनुहोस्</string>
-    <string name="settings_play_external_desc_off">AMARadio सँग स्टेशनहरू बजाउनुहोस्</string>
+    <string name="settings_play_external_desc_on">बाहिरी प्लेयरसँग रेडियो स्टेशनहरू बजाउनुहोस्</string>
+    <string name="settings_play_external_desc_off">AMARadio सँग रेडियो स्टेशनहरू बजाउनुहोस्</string>
     <string name="settings_equalizer">इक्वलाइजर</string>
 
     <string name="settings_connectivity">जडान</string>
@@ -182,10 +182,10 @@
     <string name="settings_auto_resume_do_not_resume">पुन: सुरु नगर्नुहोस्</string>
 
     <string name="settings_auto_resume_on_wired_headset_connected">तार जडानमा पुनः सुरु गर्नुहोस्</string>
-    <string name="settings_auto_resume_on_wired_headset_connected_on">तार भएको हेडसेट प्लग-इन गर्दा प्लेब्याक पुनः सुरु गर्नुहोस्</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">तार भएको हेडसेट प्लग-इन गर्दा प्लेబ్యాക് पुनः सुरु गर्नुहोस्</string>
 
     <string name="settings_auto_resume_on_bluetooth_a2dp_connected">ब्लुटुथ जडानमा पुनः सुरु गर्नुहोस्</string>
-    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">ब्लुटुथ A2DP उपकरण जडान गर्दा प्लेब्याक पुनः सुरु गर्नुहोस्</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">ब्लुटुथ A2DP उपकरण जडान गर्दा प्लेబ్యాക് पुनः सुरु गर्नुहोस्</string>
 
     <string name="settings_auto_resume_on_any_connected">कुनै पनि जडानमा पुनः सुरु गर्नुहोस्</string>
 
@@ -198,9 +198,9 @@
     <string name="notify_paused">रोकिएको छ</string>
     <string name="notify_metered_connection">मिटर जडान</string>
 
-    <string name="notify_starred">स्टेशन मनपर्नेमा थपिएको छ</string>
-    <string name="notify_autostarred">स्टेशन स्वतः मनपर्नेमा थपिएको छ</string>
-    <string name="notify_unstarred">स्टेशन मनपर्नेबाट हटाइएको छ</string>
+    <string name="notify_starred">रेडियो स्टेशन मनपर्नेमा थपिएको छ</string>
+    <string name="notify_autostarred">रेडियो स्टेशन स्वतः मनपर्नेमा थपिएको छ</string>
+    <string name="notify_unstarred">रेडियो स्टेशन मनपर्नेबाट हटाइएको छ</string>
     <string name="notify_deleted_favorites">मनपर्नेहरू मेटिएका छन्</string>
     <string name="notify_deleted_history">इतिहास मेटिएको छ</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">कृपया प्लेयर चयन गर्नुहोस्</string>
     <string name="alert_select_player_name">नाम</string>
-    <string name="hostname">होस्टनाम</string>
-    <string name="port">पोर्ट</string>
+    <string name="hostname">सर्भर ठेगाना</string>
+    <string name="port">नेटवर्क पोर्ट</string>
 
     <string name="alert_press_back_to_exit">बाहिर निस्कन एक पटक फेरि ब्याक थिच्नुहोस्</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">बाहिरी प्लेयरमा बजाउनुहोस्</string>
     <string name="action_choose_external_player">बाहिरी प्लेयर छान्नुहोस्</string>
 
-    <string name="settings_disable_battery_optimization">ब्याट्री अनुकूलन</string>
-    <string name="settings_ignore_battery_optimization_summary_on">ब्याट्री अनुकूलनलाई बेवास्ता गरिएको छ, AMARadio सधैं फोकस पुन: प्राप्त गर्न सक्षम हुनुपर्छ।</string>
-    <string name="settings_ignore_battery_optimization_summary_off">ब्याट्री अनुकूलन सक्रिय गरिएको छ, पृष्ठभूमिमा हुँदा AMARadio ले फोकस पुन: प्राप्त गर्न सक्षम नहुन सक्छ।</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">पृष्ठभूमि प्लेब्याक</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">अन्य</string>
     <string name="settings_rate_app">AMARadio लाई रेट गर्नुहोस्</string>
     <string name="settings_rate_app_summary">यदि तपाईंलाई एप मनपर्छ भने, कृपया प्ले स्टोरमा समीक्षा छोड्नुहोस्!</string>
+    <string name="settings_rate_app_github">AMARadio रमाइलो गर्दै हुनुहुन्छ?</string>
+    <string name="settings_rate_app_github_summary">GitHub मा एक तारा छोड्नुहोस्! यसले अरूलाई एप पत्ता लगाउन मद्दत गर्छ र भविष्यको विकासलाई समर्थन गर्छ।</string>
     <string name="settings_statistics">तथ्याङ्क</string>
     <string name="settings_about">AMARadio को बारेमा</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">स्टेशन लोगो</string>
+    <string name="accessibility_station_logo">रेडियो स्टेशन लोगो</string>
     <string name="accessibility_favorite_selected">मनपर्ने, चयन गरिएको</string>
     <string name="accessibility_favorite_not_selected">मनपर्ने, चयन नगरिएको</string>
     <string name="accessibility_category_icon">श्रेणी आइकन</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">कन्फिगर गर्नुहोस्</string>
     <string name="accessibility_close">बन्द गर्नुहोस्</string>
     <string name="accessibility_add_filter">फिल्टर थप्नुहोस्</string>
-    <string name="accessibility_station_options">स्टेशन विकल्पहरू</string>
+    <string name="accessibility_station_options">रेडियो स्टेशन विकल्पहरू</string>
     <string name="not_applicable">लागू हुँदैन</string>
     <string name="accessibility_station_description">स्टेशन: %1$s, भाषा: %2$s, ट्यागहरू: %3$s</string>
 
     <string name="error_no_file_manager">प्रणाली फाइल प्रबन्धक फेला पार्न सकेन। कृपया फाइल एक्सप्लोरर स्थापना र सक्षम भएको सुनिश्चित गर्नुहोस्।</string>
     <string name="error_no_browser">वेब ब्राउजर फेला पार्न सकेन। कृपया यो लिङ्क खोल्न ब्राउजर स्थापना गर्नुहोस्।</string>
-    <string name="error_no_homepage">यस स्टेशनको लागि कुनै गृहपृष्ठ उपलब्ध छैन</string>
+    <string name="error_no_homepage">यस रेडियो स्टेशनको लागि कुनै गृहपृष्ठ उपलब्ध छैन</string>
     <string name="tab_custom_stations">अनुकूलन</string>
-    <string name="action_add_custom">अनुकूलन स्टेशन थप्नुहोस्</string>
-    <string name="station_name">स्टेशनको नाम</string>
+    <string name="action_add_custom">अनुकूलन रेडियो स्टेशन थप्नुहोस्</string>
+    <string name="station_name">रेडियो स्टेशनको नाम</string>
     <string name="stream_url">स्ट्रिम URL</string>
-    <string name="favicon_url">फेभिकन URL (वैकल्पिक)</string>
+    <string name="favicon_url">स्टेशन लोगो URL (Favicon)</string>
     <string name="select_image">छवि चयन गर्नुहोस्</string>
     <string name="error_invalid_url">कृपया मान्य URL प्रविष्ट गर्नुहोस्</string>
     <string name="action_save">बचत गर्नुहोस्</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">द्रुत खेलाडी नियन्त्रणहरू</string>
-    <string name="widget_description_full">खेलाडी र स्टेशन सूची</string>
+    <string name="widget_description_small">द्रुत प्लेयर नियन्त्रणहरू</string>
+    <string name="widget_description_full">प्लेयर र रेडियो स्टेशनहरूको सूची</string>
 
     <string name="settings_auto_db_update">पृष्ठभूमि डेटा सिंक</string>
-    <string name="settings_auto_db_update_desc">रेडियो-ब्राउजर API मार्फत स्टेशन डाटाबेस स्वत: अद्यावधिक गर्नुहोस् (सिफारिस गरिएको)।</string>
-    <string name="settings_station_click_counter">स्टेशन क्लिक काउन्टर</string>
-    <string name="settings_station_click_counter_desc">अज्ञात रूपमा प्ले घटनाहरू साझेदारी गरेर रेडियो-ब्राउजर तथ्याङ्कहरूलाई समर्थन गर्नुहोस्।</string>
-    <string name="settings_rate_app_github">AMARadio रमाइलो गर्दै हुनुहुन्छ?</string>
-    <string name="settings_rate_app_github_summary">GitHub मा एक तारा छोड्नुहोस्! यसले अरूलाई एप पत्ता लगाउन मद्दत गर्छ र भविष्यको विकासलाई समर्थन गर्छ।</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API मार्फत स्टेशन डाटाबेस स्वत: अद्यावधिक गर्नुहोस् (सिफारिस गरिएको)।</string>
+    <string name="settings_station_click_counter">रेडियो स्टेशन क्लिक काउन्टर</string>
+    <string name="settings_station_click_counter_desc">प्लेബ्याክ घटनाहरू अज्ञात रूपमा साझेदारी गरेर Radio-Browser तथ्याङ्कहरूलाई समर्थन गर्नुहोस्।</string>
 
     <string name="settings_remove_notification_on_stop">एप बन्द हुँदा सूचना हटाउनुहोस्</string>
     <string name="settings_remove_notification_on_stop_desc">भर्खरका एपहरूबाट एप बन्द हुँदा मिडिया सूचना स्वतः खारेज गर्नुहोस्</string>
     <string name="settings_auto_resume_audio_focus">अडियो फोकस हानि पछि पुन: सुरु गर्नुहोस्</string>
-    <string name="settings_auto_resume_audio_focus_desc">फोन कल, अलार्म वा अन्य अडियो बन्द भएपछि स्वचालित रूपमा प्लेब्याक पुन: सुरु गर्नुहोस्</string>
+    <string name="settings_auto_resume_audio_focus_desc">फोन कल, अलार्म वा अन्य अडियो बन्द भएपछि स्वचालित रूपमा प्लेಬ्याክ पुन: सुरु गर्नुहोस्</string>
+
+    <string name="settings_backup_restore">ब्याकअप र पुनर्स्थापना</string>
+    <string name="settings_export_backup">पूर्ण ब्याकअप सिर्जना गर्नुहोस् (ZIP)</string>
+    <string name="settings_export_backup_desc">सबै मनपर्नेहरू, अनुकूलन स्टेशनहरू र आइकनहरूलाई ZIP फाइलमा बचत गर्दछ</string>
+    <string name="settings_import_backup">ब्याकअप पुनर्स्थापना गर्नुहोस् (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP ब्याकअप फाइलबाट मनपर्नेहरू र अनुकूलन स्टेशनहरू पुनर्स्थापना गर्दछ</string>
+    <string name="backup_export_success">ब्याकअप सफलतापूर्वक बचत गरियो</string>
+    <string name="backup_export_error">ब्याकअप बचत गर्न असफल भयो</string>
+    <string name="backup_import_success">ब्याकअप सफलतापूर्वक पुनर्स्थापना गरियो</string>
+    <string name="backup_import_error">ब्याकअप पुनर्स्थापना गर्न असफल भयो</string>
+
+    <string name="database_summary_title">स्थानीय डाटाबेस</string>
+    <string name="database_total_stations">जम्मा रेडियो स्टेशनहरू</string>
+    <string name="database_last_sync">अन्तिम अद्यावधिक</string>
+    <string name="database_update_now">अहिले डाटाबेस अद्यावधिक गर्नुहोस्</string>
+    <string name="database_full_update">डाटाबेस अद्यावधिक गर्नुहोस्</string>
+    <string name="database_syncing">सिंक हुँदैछ…</string>
+    <string name="database_downloading">डाउनलोड हुँदैछ…</string>
+    <string name="database_stations_loaded">%1$s रेडियो स्टेशनहरू</string>
+    <string name="database_sync_channel_name">रेडियो स्टेशन डाटाबेस सिंक्रोनाइዜसन</string>
+    <string name="database_sync_success">स्टेशन डाटाबेस अद्यावधिक सफलतापूर्वक सम्पन्न भयो</string>
+    <string name="database_error_no_connection">कुनै इन्टरनेट जडान छैन</string>
+    <string name="database_error_no_space">पर्याप्त डिस्क ठाउँ छैन</string>
+    <string name="database_error_failed">डाटाबेस अद्यावधिक गर्न असफल भयो</string>
+
+    <string name="settings_disable_battery_optimization_desc">स्क्रिन बन्द हुँदा पनि बजाउन जारी राख्न ब्याટ्री प्रयोगलाई \'Unrestricted\' मा सेट गर्नुहोस्।</string>
+    <string name="battery_opt_open_settings">सेटिङहरू खोल्नुहोस्</string>
+    <string name="battery_opt_later">पछि</string>
 </resources>

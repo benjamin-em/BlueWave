@@ -57,7 +57,7 @@
     <string name="filter_empty_sort_desc">點擊次數、字母順序、得票數或最後變更</string>
     <string name="filter_empty_hint">在上方欄位輸入名稱以儲存此檢視！</string>
     <string name="error_station_load">無法連線至電台</string>
-    <string name="error_list_update">無法連線至 radio browser 伺服器</string>
+    <string name="error_list_update">無法連線至 Radio-Browser 伺服器</string>
 
     <string name="error_no_connection">無可用網際網路連線</string>
     <string name="warning_volume_zero">音量為零。您可能聽不到任何聲音。</string>
@@ -69,7 +69,7 @@
     <string name="nav_item_history">歷史</string>
     <string name="nav_item_settings">設定</string>
 
-    <string name="about_text">AMARadio 100% 無廣告並注重隱私。\n\n我最初是為我母親開發這個應用程式，為她提供簡單、誠實且沒有煩人廣告或追蹤的廣播體驗。這就是為什麼 AMARadio 將永遠保持無廣告 – 這是對她的承諾，並與大家分享。\n\n此專案是優秀的 https://github.com/segler-alex/RadioDroid 的分支。整個程式碼庫已從 Java 遷移到 Kotlin，以確保應用程式保持現代化並相容於未來的 Android 版本。\n\n源代碼可在以下網址取得：https://github.com/ounben/AMARadio\n\n此應用程式使用來自 https://www.radio-browser.info 的免費廣播電台目錄。任何人都可以向其中添加電台。它的運作方式就像在線廣播電台的維基百科。\n\n聯絡方式：ben@ounben.com\n\n問題追蹤：https://github.com/ounben/AMARadio/issues\n\n如果您喜歡這個軟體並想提供幫助，歡迎給我發送電子郵件。我們也隨時歡迎關於新功能的想法！\n\n此應用程式是自由軟體，採用 GPLv3 授權。 https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100% 無廣告並注重隱私。\n\n我最初是為我母親開發這個應用程式，為她提供簡單、誠實且沒有煩人廣告或追蹤的廣播體驗。這就是為什麼 AMARadio 將永遠保持無廣告 – 這是對她的承諾，並與大家分享。\n\n此專案是 RadioDroid 的分支。整個程式碼庫已從 Java 遷移到 Kotlin，以確保應用程式保持現代化並相容於未來的 Android 版本。\n\n源代碼可在以下網址取得：https://github.com/ounben/AMARadio\n\n此應用程式使用來自 https://www.radio-browser.info 的免費廣播電台目錄。任何人都可以向其中添加電台。它的運作方式就像在線廣播電台的維基百科。\n\n聯絡方式：ben@ounben.com\n\n問題追蹤：https://github.com/ounben/AMARadio/issues\n\n如果您喜歡這個軟體並想提供幫助，歡迎給我發送電子郵件。我們也隨時歡迎關於新功能的想法！\n\n此應用程式是自由軟體，採用 GPLv3 授權。 https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">版本：%1$s</string>
     <string name="detail_star">加入收藏</string>
     <string name="detail_unstar">從收藏中移除</string>
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">請選擇播放器</string>
     <string name="alert_select_player_name">名稱</string>
-    <string name="hostname">主機名稱</string>
-    <string name="port">連接埠</string>
+    <string name="hostname">伺服器位址</string>
+    <string name="port">網路連接埠</string>
 
     <string name="alert_press_back_to_exit">再按一次返回鍵以退出</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">使用外部播放器播放</string>
     <string name="action_choose_external_player">選擇外部播放器</string>
 
-    <string name="settings_disable_battery_optimization">電池最佳化</string>
-    <string name="settings_ignore_battery_optimization_summary_on">忽略電池最佳化，AMARadio 應隨時能重新獲取焦點。</string>
-    <string name="settings_ignore_battery_optimization_summary_off">電池最佳化已啟動，若在背景執行，AMARadio 可能無法重新獲取焦點。</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">背景播放</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">其他</string>
     <string name="settings_rate_app">評價 AMARadio</string>
     <string name="settings_rate_app_summary">如果您喜歡這個應用，請在 Play 商店留下評價！</string>
+    <string name="settings_rate_app_github">喜歡 AMARadio 嗎？</string>
+    <string name="settings_rate_app_github_summary">在 GitHub 上留下一個星星吧！它可以幫助其他人發現該應用程式並支援未來的開發。</string>
     <string name="settings_statistics">統計資料</string>
     <string name="settings_about">關於 AMARadio</string>
 
@@ -343,29 +343,55 @@
 
     <string name="error_no_file_manager">找不到系統檔案管理器。請確保已安裝並啟用文件瀏覽器。</string>
     <string name="error_no_browser">找不到網頁瀏覽器。請安裝瀏覽器來開啟此連結。</string>
-    <string name="error_no_homepage">該站沒有可用的主頁</string>
-    <string name="tab_custom_stations">風俗</string>
-    <string name="action_add_custom">新增自訂站</string>
-    <string name="station_name">車站名稱</string>
+    <string name="error_no_homepage">該電台沒有可用的首頁</string>
+    <string name="tab_custom_stations">自訂</string>
+    <string name="action_add_custom">新增自訂電台</string>
+    <string name="station_name">電台名稱</string>
     <string name="stream_url">串流網址</string>
-    <string name="favicon_url">網站圖示 URL（可選）</string>
+    <string name="favicon_url">電台圖示 URL (Favicon)</string>
     <string name="select_image">選擇影像</string>
     <string name="error_invalid_url">請輸入有效的網址</string>
-    <string name="action_save">節省</string>
+    <string name="action_save">儲存</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">快速播放器控制</string>
-    <string name="widget_description_full">播放器和電台列表</string>
+    <string name="widget_description_full">播放器與電台清單</string>
 
     <string name="settings_auto_db_update">後台資料同步</string>
-    <string name="settings_auto_db_update_desc">透過無線電瀏覽器 API 自動更新電台資料庫（建議）。</string>
-    <string name="settings_station_click_counter">車站點擊計數器</string>
-    <string name="settings_station_click_counter_desc">透過匿名共享播放事件支援廣播瀏覽器統計。</string>
-    <string name="settings_rate_app_github">喜歡 AMARadio 嗎？</string>
-    <string name="settings_rate_app_github_summary">在 GitHub 上留下一個星星吧！它可以幫助其他人發現該應用程式並支援未來的開發。</string>
+    <string name="settings_auto_db_update_desc">透過 Radio-Browser API 自動更新電台資料庫（建議）。</string>
+    <string name="settings_station_click_counter">電台點擊計數器</string>
+    <string name="settings_station_click_counter_desc">透過匿名共享播放事件支援 Radio-Browser 統計。</string>
 
-    <string name="settings_remove_notification_on_stop">刪除應用程式關閉時的通知</string>
-    <string name="settings_remove_notification_on_stop_desc">當應用程式從最近的應用程式關閉時自動關閉媒體通知</string>
+    <string name="settings_remove_notification_on_stop">停止播放時移除通知</string>
+    <string name="settings_remove_notification_on_stop_desc">停止播放時自動關閉媒體通知</string>
     <string name="settings_auto_resume_audio_focus">音訊焦點遺失後恢復</string>
     <string name="settings_auto_resume_audio_focus_desc">電話、鬧鐘或其他音訊停止後自動恢復播放</string>
+
+    <string name="settings_backup_restore">備份與還原</string>
+    <string name="settings_export_backup">建立完整備份 (ZIP)</string>
+    <string name="settings_export_backup_desc">將所有收藏、自訂電台和圖示儲存至 ZIP 檔案</string>
+    <string name="settings_import_backup">還原備份 (ZIP)</string>
+    <string name="settings_import_backup_desc">從 ZIP 備份檔案還原收藏與自訂電台</string>
+    <string name="backup_export_success">備份儲存成功</string>
+    <string name="backup_export_error">儲存備份失敗</string>
+    <string name="backup_import_success">備份還原成功</string>
+    <string name="backup_import_error">還原備份失敗</string>
+
+    <string name="database_summary_title">本地資料庫</string>
+    <string name="database_total_stations">電台總數</string>
+    <string name="database_last_sync">上次更新</string>
+    <string name="database_update_now">立即更新資料庫</string>
+    <string name="database_full_update">更新資料庫</string>
+    <string name="database_syncing">正在同步…</string>
+    <string name="database_downloading">正在下載…</string>
+    <string name="database_stations_loaded">%1$s 個電台</string>
+    <string name="database_sync_channel_name">電台資料庫同步</string>
+    <string name="database_sync_success">電台資料庫更新成功完成</string>
+    <string name="database_error_no_connection">無網絡連線</string>
+    <string name="database_error_no_space">磁碟空間不足</string>
+    <string name="database_error_failed">資料庫更新失敗</string>
+
+    <string name="settings_disable_battery_optimization_desc">要在螢幕關閉時繼續播放，請將電池使用量設定為 \'Unrestricted\'（無限制）。</string>
+    <string name="battery_opt_open_settings">開啟設定</string>
+    <string name="battery_opt_later">稍後</string>
 </resources>

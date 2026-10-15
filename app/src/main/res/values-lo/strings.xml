@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">ຊື່</string>
+    <string name="detail_tags">แทັກ</string>
+    <string name="detail_country">ປະເທດ</string>
+    <string name="detail_create_shortcut">ເພີ່ມໃສ່ໜ້າຈໍຫຼັກ</string>
+    <string name="detail_language">ພາສາ</string>
+    <string name="detail_weblink">ລິ້ງເວັບ</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">ຫຼິ້ນ</string>
+    <string name="detail_pause">ຢຸດຊົ່ວຄາວ</string>
+    <string name="detail_stop">ຢຸດ</string>
+    <string name="detail_share">ແບ່ງປັນ</string>
+    <string name="detail_play_in_AMARadio">ຫຼິ້ນໃນ AMARadio</string>
+
+    <string name="action_links">ລິ້ງ</string>
+    <string name="action_homepage">ໜ້າຫຼັກ</string>
+    <string name="action_favorite">ລາຍການໂປດ</string>
+    <string name="action_starred_add">ເພີ່ມໃສ່ລາຍການໂປດ</string>
+    <string name="action_starred_remove">ລົບออกจากລາຍການໂປດ</string>
+
+    <string name="action_station_visit_website">ເຂົ້າເບິ່ງເວັບໄຊ</string>
+    <string name="action_station_copy_stream_url">ຄັດລອກ URL ສະຕຣີມ</string>
+    <string name="action_station_share">ແບ່ງປັນ</string>
+
+    <string name="action_local">ໃນເຄື່ອງ</string>
+    <string name="action_skip_to_next">ຖັດໄປ</string>
+    <string name="action_pause">ຢຸດຊົ່ວຄາວ</string>
+    <string name="action_skip_to_previous">ກ່ອນໜ້າ</string>
+    <string name="action_resume">ຫຼິ້ນຕໍ່</string>
+    <string name="action_stop">ຢຸດ</string>
+    <string name="action_search">ຄົ້ນຫາ</string>
+    <string name="action_delete">ລົບ</string>
+    <string name="action_delete_history">ລົບປະຫວັດ</string>
+    <string name="action_delete_favorites">ລົບລາຍການໂປດທັງໝົດ</string>
+    <string name="action_delete_stream_history">ລ້າງປະຫວັດเพลง</string>
+    <string name="action_ok">ຕົกลົງ</string>
+    <string name="action_cancel">ຍົກເລີກ</string>
+    <string name="action_top_click">ກົດຫຼາຍທີ່ສຸດ</string>
+    <string name="action_toggle_view">ປ່ຽນມຸມມອງ</string>
+    <string name="action_top_vote">ໂหวດຫຼາຍທີ່ສຸດ</string>
+    <string name="action_changed_lately">ປ່ຽນແປງຫຼ້າສຸດ</string>
+    <string name="action_currently_playing">ກຳລັງຫຼິ້ນ</string>
+    <string name="action_tags">แทັກ</string>
+    <string name="action_countries">ປະເທດ/ພູມິພາກ</string>
+    <string name="action_languages">ພາສາ</string>
+    <string name="action_edit">ແກ້ໄຂ</string>
+    <string name="action_copy_info">ຄັດລອກຂໍ້ມູນ</string>
+    <string name="action_rename_tab">ປ່ຽນຊື່ແທັບ</string>
+
+    <string name="error_filter_name_required">ກະລຸນາປ້ອນຊື່ສຳລັບແທັບຕົວຕອງນີ້ກ່ອນ</string>
+    <string name="confirm_delete_filter_tab">ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລົບຕົວຕອງ \"%1$s\"?</string>
+    <string name="filter_empty_title">ສ້າງຟີດສະຖານີວິທະຍຸສ່ວນຕົວຂອງທ່ານ</string>
+    <string name="filter_empty_desc">ສ້າງມຸມມອງສ່ວນຕົວໂດຍການຮວມຫຼາຍເງື່ອນໄຂ. ທ່ານສາມາດຈຳກັດການຄົ້ນຫາໂດຍໃຊ້:</string>
+    <string name="filter_empty_filter_by">ຕອງຕາມ:</string>
+    <string name="filter_empty_filter_desc">ປະເທດ, ຊື່ສະຖານີວິທະຍຸ, แทັກ ຫຼື ພາສາ</string>
+    <string name="filter_empty_sort_by">ຈັດຮຽງຕາມ:</string>
+    <string name="filter_empty_sort_desc">ການກົດ, ຕາມຕົວອັກສອນ, ຄະແນນໂหวດ ຫຼື ການປ່ຽນແປງຫຼ້າສຸດ</string>
+    <string name="filter_empty_hint">ພິມຊື່ໃນຊ່ອງດ່ານເທິງເພື່ອບັນທຶກມຸມມອງນີ້!</string>
+
+    <string name="error_station_load">ບໍ່ສາມາດເຊື່ອມຕໍ່ຫາສະຖານີວິທະຍຸໄດ້</string>
+    <string name="error_list_update">ບໍ່ສາມາດເຊື່ອມຕໍ່ຫາເຊີບເວີ Radio-Browser ໄດ້</string>
+
+    <string name="error_no_connection">ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ.</string>
+    <string name="warning_volume_zero">ລະດັບສຽງຢູ່ທີ່ສູນ. ທ່ານອາດຈະບໍ່ໄດ້ຍິນຫຍັງເລີຍ.</string>
+
+    <string name="share_action">ແບ່ງປັນລິ້ງສະຖານີວິທະຍຸນຳ…</string>
+
+    <string name="nav_item_stations">ສະຖານີວິທະຍຸ</string>
+    <string name="nav_item_starred">ລາຍການໂປດ</string>
+    <string name="nav_item_history">ປະຫວັດ</string>
+    <string name="nav_item_settings">ການຕັ້ງຄ່າ</string>
+
+    <string name="about_text">AMARadio ແມ່ນບໍ່ມີໂຄສະນາ 100% ແລະເນັ້ນຄວາມເປັນສ່ວນຕົວ.\n\nແຕ່ເດີມ ຂ້ອຍໄດ້ພັດທະນາແອັບນີ້ໃຫ້ແກ່ແມ່ຂອງຂ້ອຍ ເພື່ອໃຫ້ລາວໄດ້ຮັບປະສົບການການຟັງວິທະຍຸທີ່ງ່າຍດາຍ ແລະ ຈິງໃຈ ໂດຍບໍ່ມີໂຄສະນາລົບກວນ ຫຼື ການຕິດຕາມ. ນັ້ນແມ່ນເຫດຜົນທີ່ AMARadio ຈະບໍ່ມີໂຄສະນາຕະຫຼອດໄປ – ມັນແມ່ນສັນຍາກັບລາວ, ທີ່ແບ່ງປັນກັບພວກເຈົ້າທຸກຄົນ.\n\nໂຄງການນີ້ແມ່ນ fork ຈາກ RadioDroid. ໂຄດທັງໝົດໄດ້ຖືກຍ້າຍຈາກ Java ໄປເປັນ Kotlin ເພື່ອໃຫ້ແອັບທັນສະໄໝ ແລະ ເຂົ້າກັນໄດ້ກັບ Android ເວີຊັນໃໝ່ໆ.\n\nຊອດໂຄດມີຢູ່ທີ່: https://github.com/ounben/AMARadio\n\nແອັບນີ້ໃຊ້ໄດເຣັກທໍຣີສະຖານີວິທະຍຸຟຣີທີ່ https://www.radio-browser.info .\nທຸກຄົນສາມາດເພີ່ມສະຖານີໄດ້. ມັນເຮັດວຽກຄືກັບ wiki ສໍາລັບສະຖານີວິທະຍຸອອນໄລນ໌.\n\nຕິດຕໍ່: ben@ounben.com\n\nແຈ້ງບັນຫາ: https://github.com/ounben/AMARadio/issues\n\nຖ້າທ່ານມັກແອັບນີ້ ແລະ ຕ້ອງການຊ່ວຍເຫຼືອ, ສາມາດສົ່ງອີເມວຫາຂ້ອຍໄດ້. ຄວາມຄິດສໍາລັບຟີເຈີໃໝ່ໆກໍຍິນດີຕ້ອນຮັບສະເໝີ!\n\nແອັບນີ້ແມ່ນຊອບແວຟຣີ ພາຍໃຕ້ໃບອະນຸຍາດ GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">ເວີຊັນ: %1$s</string>
+    <string name="detail_star">ເພີ່ມໃສ່ລາຍການໂປດ</string>
+    <string name="detail_unstar">ລົບออกจากລາຍການໂປດ</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">ກຳລັງໂຫຼດ…</string>
+
+    <string name="sleep_timer" formatted="true">ຕົວຕັ້ງເວລາປິດ: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">ຢຸດການຫຼິ້ນຫຼັງຈາກນາທີທີ່ເລືອກ</string>
+    <string name="sleep_timer_apply">ນຳໃຊ້</string>
+    <string name="sleep_timer_clear">ລ້າງ</string>
+    <string name="nav_item_add_sleep">ຕົວຕັ້ງເວລາປິດ</string>
+
+    <string name="nav_item_save_playlist">ສົ່ງອອກລາຍການໂປດເປັນເພລລິສ</string>
+    <string name="nav_item_load_playlist">ນຳເຂົ້າລາຍການໂປດຈາກເພລລິສ</string>
+    <string name="nav_item_save_history_playlist">ສົ່ງອອກປະຫວັດເປັນເພລລິສ</string>
+    <string name="confirm_overwrite_file">เขียนທັບໄຟລ໌ບໍ?</string>
+    <string name="dialog_hint_file_name">ປ້ອນຊື່ໄຟລ໌</string>
+    <string name="error_empty_field">ຊ່ອງນີ້ຈຳເປັນຕ້ອງປ້ອນ</string>
+    <string name="error_invalid_file_name">ຊື່ໄຟລ໌ບໍ່ຖືກຕ້ອງ</string>
+    <string name="label_button_cancel">ຍົກເລີກ</string>
+    <string name="label_button_overwrite">เขียนທັບ</string>
+    <string name="notify_load_playlist_nok">ບໍ່ສາມາດນຳເຂົ້າຈາກ %1$s&#47;%2$s</string>
+    <string name="notify_load_playlist_now">ກຳລັງນຳເຂົ້າຈາກ %1$s&#47;%2$s, ກະລຸນາຖໍ້າທ່າ.</string>
+    <string name="notify_load_playlist_ok">ນຳເຂົ້າ %1$d ສະຖານີຈາກ %2$s&#47;%3$s ແລ້ວ</string>
+    <string name="notify_save_playlist_nok">ບໍ່ສາມາດສົ່ງອອກไปยัง %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_now">ກຳລັງສົ່ງອອກไปยัง %1$s&#47;%2$s, ກະລຸນາຖໍ້າທ່າ.</string>
+    <string name="notify_save_playlist_ok">ສົ່ງອອກไปยัง %1$s&#47;%2$s ສຳເລັດແລ້ວ</string>
+    <string name="notify_sync_list_deleted_entries">%1$d ຈາກ %2$d ສະຖານີໃນເຄື່ອງຖືກລະບຸວ່າບໍ່ມີໃນເຊີບເວີ</string>
+
+    <string name="searchpreference_clear_history">ລ້າງປະຫວັດ</string>
+    <string name="searchpreference_no_results">ບໍ່ພົບຜົນລັບ</string>
+    <string name="searchpreference_search">ຄົ້ນຫາ…</string>
+    <string name="settings_appearance">ຮູບລັກສະນະ</string>
+    <string name="settings_theme_selection_title">ທີມ</string>
+    <string name="theme_light">ສະຫວ່າງ</string>
+    <string name="theme_dark">ມືດ</string>
+    <string name="theme_system">ຕາມລະບົບ</string>
+    <string name="settings_compact_style">ໂໝດກະທັດຮັດ</string>
+    <string name="settings_compact_style_desc_off">ໄອຄອນໃຫຍ່ພ້ອມລາຍລະອຽດສະຖານີວິທະຍຸ</string>
+    <string name="settings_compact_style_desc_on">ໄອຄອນນ້ອຍບໍ່ມີລາຍລະອຽດສະຖານີວິທະຍຸ</string>
+    <string name="settings_bottom_navigation">ແຖບຄວບຄຸມດ່ານລຸ່ມ</string>
+    <string name="settings_ui_scale">ຂະໜາດ UI</string>
+    <string name="settings_language">ພາສາ</string>
+    <string name="ui_scale_compact">ກະທັດຮັດ</string>
+    <string name="ui_scale_standard">ມາດຕະຖານລະບົບ</string>
+    <string name="ui_scale_large">ໃຫຍ່</string>
+    <string name="ui_scale_extra_large">ໃຫຍ່ຫຼາຍ</string>
+
+    <string name="settings_interaction">ການໂຕ້ຕອບ</string>
+    <string name="settings_single_use_tags">ສະແດງแทັກທີ່ບໍ່ຄ່ອຍໄດ້ໃຊ້</string>
+    <string name="settings_single_use_tags_desc_off">แทັກທີ່ບໍ່ຄ່ອຍໄດ້ໃຊ້ຈະບໍ່ຖືກສະແດງ</string>
+    <string name="settings_single_use_tags_desc_on">ສະແດງแทັກທີ່ບໍ່ຄ່ອຍໄດ້ໃຊ້</string>
+
+    <string name="settings_show_broken">ສະຖານີວິທະຍຸທີ່ໃຊ້ບໍ່ໄດ້</string>
+    <string name="settings_show_broken_on">ສະແດງສະຖານີວິທະຍຸທີ່ໃຊ້ບໍ່ໄດ້ໃນລາຍການ</string>
+    <string name="settings_show_broken_off">ບໍ່ສະແດງສະຖານີວິທະຍຸທີ່ໃຊ້ບໍ່ໄດ້ໃນລາຍການ</string>
+
+    <string name="settings_startup_behaviour">ພຶດຕິກຳເມື່ອເລີ່ມຕົ້ນ</string>
+    <string name="action_grid_view">ມຸມມອງຕາຕະລາງ</string>
+    <string name="action_list_view">ມຸມມອງລາຍການ</string>
+
+    <string name="startup_action_title">ການກະທຳເມື່ອເລີ່ມຕົ້ນ</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">ສະແດງສະຖານີວິທະຍຸທັງໝົດ</string>
+    <string name="startup_show_favorites">ສະແດງລາຍການໂປດ</string>
+    <string name="startup_show_history">ສະແດງປະຫວັດ</string>
+    <string name="startup_show_last_view">ມຸມມອງຫຼ້າສຸດ</string>
+
+    <string name="settings_load_icons">ສະແດງໄອຄອນສະຖານີວິທະຍຸ</string>
+    <string name="settings_load_icons_on">ໄອຄອນຈະຖືກດາວໂຫຼດ</string>
+    <string name="settings_load_icons_off">ໄອຄອນຈະບໍ່ຖືກດາວໂຫຼດ</string>
+
+    <string name="settings_auto_favorite">ເພີ່ມໃສ່ລາຍການໂປດອັດໂນມັດ</string>
+    <string name="settings_auto_favorite_on">ເພີ່ມສະຖານີວິທະຍຸໃສ່ລາຍການໂປດອັດໂນມັດເມື່ອຫຼິ້ນ</string>
+    <string name="settings_auto_favorite_off">ບໍ່ເພີ່ມສະຖານີວິທະຍຸໃສ່ລາຍການໂປດອັດໂນມັດເມື່ອຫຼິ້ນ</string>
+
+    <string name="settings_play">ເຄື່ອງຫຼິ້ນ</string>
+    <string name="settings_auto_play_on_startup">ຫຼິ້ນອັດໂນມັດ</string>
+    <string name="settings_auto_play_on_startup_on">ຫຼິ້ນສະຖານີວິທະຍຸຫຼ້າສຸດເມື່ອເລີ່ມຕົ້ນ</string>
+    <string name="settings_auto_play_on_startup_off">ບໍ່ຫຼິ້ນສະຖານີວິທະຍຸຫຼ້າສຸດເມື່ອເລີ່ມຕົ້ນ</string>
+    <string name="settings_auto_off_on_startup">ຢຸດອັດໂນມັດ</string>
+    <string name="settings_auto_off_on_startup_on">ໃຊ້ຕົວຕັ້ງເວລາຢຸດອັດໂນມັດນຳການຫຼິ້ນອັດໂນມັດ</string>
+    <string name="settings_auto_off_on_startup_off">ບໍ່ໃຊ້ຕົວຕັ້ງເວລາຢຸດອັດໂနມັດນຳການຫຼິ້ນອັດໂນມັດ</string>
+    <string name="settings_auto_off_sleep_timer">ຕົວຕັ້ງເວລາຢຸດອັດໂນມັດ</string>
+    <string name="settings_auto_off_sleep_timer_desc">ຢຸດການຫຼິ້ນຫຼັງຈາກ %1$s ນາທີ</string>
+    <string name="settings_play_external">ໃຊ້ເຄື່ອງຫຼິ້ນພາຍນອກ</string>
+    <string name="settings_play_external_desc_on">ຫຼິ້ນສະຖານີວິທະຍຸດ້ວຍເຄື່ອງຫຼິ້ນພາຍນອກ</string>
+    <string name="settings_play_external_desc_off">ຫຼິ້ນສະຖານີວິທະຍຸດ້ວຍ AMARadio</string>
+    <string name="settings_equalizer">ອີຄົວໄລເຊີ</string>
+
+    <string name="settings_connectivity">ການເຊື່ອມຕໍ່</string>
+    <string name="settings_connect_timeout">ໝົດເວລາເຊື່ອມຕໍ່</string>
+    <string name="settings_read_timeout">ໝົດເວລາອ່ານ</string>
+    <string name="settings_resume_timeout">ໝົດເວລາຫຼິ້ນຕໍ່</string>
+    <string name="settings_retry_timeout">ໝົດເວລາລອງໃໝ່</string>
+    <string name="settings_retry_delay">ໄລຍະເວລາລໍຖ້າການເຊື່ອມຕໍ່ໃໝ່</string>
+    <string name="settings_proxy">ພຣັອກຊີ</string>
+    <string name="settings_proxy_login">ຊື່ຜູ້ໃຊ້</string>
+    <string name="settings_proxy_password">ລະຫັດຜ່ານ</string>
+    <string name="settings_proxy_action_test">ທົດສອບ</string>
+    <string name="settings_proxy_working">ເຊື່ອມຕໍ່ຫາ %s ສຳເລັດແລ້ວ</string>
+    <string name="settings_proxy_not_working">ເຊື່ອມຕໍ່ຫາ %1$s ບໍ່ສຳເລັດ\n%2$s</string>
+    <string name="settings_proxy_invalid">ຄ່າທີ່ທ່ານປ້ອນສຳລັບພຣັອກຊີບໍ່ຖືກຕ້ອງ</string>
+    <string name="ignore_proxy_settings_invalid">ຂ້າມການຕັ້ງຄ່າພຣັອກຊີທີ່ບໍ່ຖືກຕ້ອງ</string>
+    <string name="settings_seconds_format">%d ວິນາທີ</string>
+    <string name="settings_milliseconds_format">%d ມິນລິວິນາທີ</string>
+
+    <string name="settings_pause_when_noisy">ຢຸດຊົ່ວຄາວເມື່ອຖອດຫູຟັງອອກ</string>
+
+    <string name="settings_auto_resume_do_not_resume">ບໍ່ຫຼິ້ນຕໍ່</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">ຫຼິ້ນຕໍ່ເມື່ອເຊື່ອມຕໍ່ຫູຟັງມີສາຍ</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">ຫຼິ້ນຕໍ່ອັດໂນມັດເມື່ອສຽບຫູຟັງມີສາຍ</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">ຫຼິ້ນຕໍ່ເມື່ອເຊື່ອມຕໍ່ Bluetooth</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">ຫຼິ້ນຕໍ່ອັດໂນມັດເມື່ອເຊື່ອມຕໍ່ອຸປະກອນ Bluetooth A2DP</string>
+
+    <string name="settings_auto_resume_on_any_connected">ຫຼິ້ນຕໍ່ເມື່ອມີການເຊື່ອມຕໍ່ໃດໆ</string>
+
+    <string name="settings_warn_no_wifi">ເຕືອນເມື່ອບໍ່ມີ Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">ເຕືອນເມື່ອຫຼິ້ນໂດຍບໍ່ມີການເຊື່ອມຕໍ່ Wi-Fi</string>
+    <string name="settings_warn_no_wifi_off">ບໍ່ເຕືອນເມື່ອຫຼິ້ນໂດຍບໍ່ມີການເຊື່ອມຕໍ່ Wi-Fi</string>
+
+    <string name="notify_pre_play">ກຳລັງເຊື່ອມຕໍ່</string>
+    <string name="notify_play">ກຳລັງຫຼິ້ນ</string>
+    <string name="notify_paused">ຢຸດຊົ່ວຄາວ</string>
+    <string name="notify_metered_connection">ການເຊື່ອມຕໍ່ແບບຈຳກັດຂໍ້ມູນ</string>
+
+    <string name="notify_starred">ເພີ່ມສະຖານີວິທະຍຸໃສ່ລາຍການໂປດແລ້ວ</string>
+    <string name="notify_autostarred">ເພີ່ມສະຖານີວິທະຍຸໃສ່ລາຍການໂປດອັດໂນມັດແລ້ວ</string>
+    <string name="notify_unstarred">ລົບສະຖານີວິທະຍຸออกจากລາຍການໂປດແລ້ວ</string>
+    <string name="notify_deleted_favorites">ລົບລາຍການໂປດແລ້ວ</string>
+    <string name="notify_deleted_history">ລົບປະຫວັດແລ້ວ</string>
+
+    <string name="notify_open_link_failure">ບໍ່ພົບແອັບພລິເຄຊັນເພື່ອເປີດລິ້ງ</string>
+
+    <string name="notify_station_removed_from_list">ລົບ 1 ສະຖານີແລ້ວ</string>
+    <string name="action_station_removed_from_list_undo">ເລີກເຮັດ</string>
+
+    <string name="alert_delete_history">ທ່ານຕ້ອງການລົບປະຫວັດແທ້ບໍ?</string>
+    <string name="alert_delete_favorites">ທ່ານຕ້ອງການລົບລາຍການໂປດທັງໝົດແທ້ບໍ?</string>
+    <string name="yes">ແມ່ນ</string>
+    <string name="no">ບໍ່</string>
+
+    <string name="alert_select_player">ກະລຸນາເລືອກເຄື່ອງຫຼິ້ນ</string>
+    <string name="alert_select_player_name">ຊື່</string>
+    <string name="hostname">ທີ່ຢູ່ເຊີບເວີ</string>
+    <string name="port">ພອດເຄືອຂ່າຍ</string>
+
+    <string name="alert_press_back_to_exit">ກົດກັບຄືນອີກຄັ້ງເພື່ອອອກ</string>
+
+    <string name="error_stream_url">ບັນຫາ URL ສະຕຣີມ</string>
+    <string name="error_caching_stream">ບັນຫາແຄຊສະຕຣີມ</string>
+    <string name="error_play_stream">ບໍ່ສາມາດຫຼິ້ນສະຕຣີມໄດ້</string>
+    <string name="error_stream_reconnect_timeout">ບໍ່ສາມາດເຊື່ອມຕໍ່ຫາສະຕຣີມຄືນໄດ້: ໝົດເວລາ</string>
+    <string name="warning_no_network_trying_resume">ບໍ່ມີການເຊື່ອມຕໍ່ເຄືອຂ່າຍ. ກຳລັງລອງຫຼິ້ນຕໍ່ເມື່ອມີການເຊື່ອມຕໍ່.</string>
+    <string name="giving_up_resume">ຍົກເລີກຄວາມພະຍາຍາມໃນການຫຼິ້ນຕໍ່</string>
+
+    <string name="error_grant_audiofocus">ລະບົບບໍ່ອະນຸມັດສິດ Audio Focus</string>
+
+    <string name="error_no_equalizer_found">ບໍ່ພົບແອັບອີຄົວໄລເຊີ</string>
+
+    <string name="player_info_status">ສະຖານະ:&#160;</string>
+    <string name="player_info_status_stopped">ຢຸດແລ້ວ</string>
+    <string name="player_info_status_playing">ກຳລັງຫຼິ້ນ</string>
+    <string name="player_info_transferred">ຂໍ້ມູນທີ່ສົ່ງ: %1$s</string>
+
+    <string name="tab_player_art">ຮູບປົກอัลบั້ມ</string>
+    <string name="tab_player_info">ຂໍ້ມູນ</string>
+    <string name="tab_player_history">ປະຫວັດເພງ</string>
+
+    <string name="station_detail_bitrate">%1$1d kbps</string>
+    <string name="station_detail_broken">ໃຊ້ບໍ່ໄດ້</string>
+    <string name="station_detail_deleted_on_server">ລົບແລ້ວ</string>
+
+    <string name="station_details_clicks">%1$d ການກົດ</string>
+    <string name="station_details_votes">%1$d ຄະແນນໂຫວດ</string>
+
+    <string name="image_button_disable">ປິດໃຊ້ງານ</string>
+    <string name="image_button_delete">ລົບ</string>
+    <string name="image_button_more">ເພີ່ມເຕີມ</string>
+    <string name="image_button_less">ໜ້ອຍລົງ</string>
+    <string name="image_button_repeat">ຮ້ອງຊ້ຳ</string>
+    <string name="image_button_dont_repeat">ບໍ່ຮ້ອງຊ້ຳ</string>
+    <string name="icon_click_trend_decreasing">ຄວາມນິຍົມຫຼຸດລົງ</string>
+    <string name="icon_click_trend_increasing">ຄວາມນິຍົມເພີ່ມຂຶ້ນ</string>
+    <string name="icon_click_trend_stable">ຄວາມນິຍົມຄົງທີ່</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">ບໍ່ມີໂຄສະນາ 100% &amp; ເປັນສ່ວນຕົວ</string>
+
+    <string name="action_play_in_external">ຫຼິ້ນໃນເຄື່ອງຫຼິ້ນພາຍນອກ</string>
+    <string name="action_choose_external_player">ເລືອກເຄື່ອງຫຼິ້ນພາຍນອກ</string>
+
+    <string name="settings_disable_battery_optimization">ການຫຼິ້ນພື້ນຫຼັງ</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">ອື່ນໆ</string>
+    <string name="settings_rate_app">ໃຫ້ຄະແນນ AMARadio</string>
+    <string name="settings_rate_app_summary">ຖ້າທ່ານມັກແອັບນີ້, ກະລຸນາໃຫ້ຄຳວິຈານໃນ Play Store!</string>
+    <string name="settings_rate_app_github">ມັກ AMARadio ບໍ?</string>
+    <string name="settings_rate_app_github_summary">ໃຫ້ດາວໃນ GitHub! ມັນຊ່ວຍໃຫ້ຄົນອື່ນຄົ້ນພົບແອັບ ແລະ ສະໜັບສະໜູນການພັດທະນາໃນອະນາຄົດ.</string>
+    <string name="settings_statistics">ສະຖິຕິ</string>
+    <string name="settings_about">ກ່ຽວກັບ AMARadio</string>
+
+    <string name="description_btn_skip_to_next">ຂ້າມໄປຖັດໄປ</string>
+    <string name="description_btn_skip_to_previous">ຂ້າມໄປກ່ອນໜ້າ</string>
+
+    <string-array name="weekdays">
+        <item>ອາ</item>
+        <item>ຈ</item>
+        <item>ອ</item>
+        <item>ພ</item>
+        <item>ພະ</item>
+        <item>ສຸ</item>
+        <item>ສ</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">ຄັດລອກ URL ສະຕຣີມສຳເລັດແລ້ວ</string>
+    <string name="notify_track_info_copied">ຄັດລອກຂໍ້ມູນເພງສຳເລັດແລ້ວ</string>
+
+    <string-array name="actions_station_link">
+        <item>ເຂົ້າເບິ່ງເວັບໄຊ</item>
+        <item>ຄັດລອກ URL ສະຕຣີມ</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">ກວດພົບການເຊື່ອມຕໍ່ແບບຈຳກັດຂໍ້ມູນ</string>
+    <string name="alert_metered_connection_message">ການເຊື່ອມຕໍ່ແບບຈຳກັດຂໍ້ມູນອາດມີຄ່າບໍລິການເພີ່ມເຕີມ, ກົດ \'ຕົກລົງ\' ເພື່ອດຳເນີນການຕໍ່.</string>
+    <string name="nav_item_statistics">ສະຖິຕິ</string>
+    <string name="nav_item_about">ກ່ຽວກັບ</string>
+    <string name="refresh">ຣີເຟຣຊ</string>
+    <string name="action_filter">ຕົວຕອງ</string>
+    <string name="filter_country">ປະເທດ</string>
+    <string name="filter_tag">แทັກ</string>
+    <string name="filter_language">ພາສາ</string>
+    <string name="filter_sort_by">ຈັດຮຽງຕາມ</string>
+    <string name="filter_reverse">ຈັດຮຽງຍ້ອນກັບ</string>
+    <string name="filter_apply">ນຳໃຊ້ຕົວຕອງ</string>
+    <string name="sort_name">ຊື່</string>
+    <string name="sort_votes">ຄະແນນໂຫວດ</string>
+    <string name="sort_clicks">ການກົດ</string>
+    <string name="sort_lastchange">ການປ່ຽນແປງຫຼ້າສຸດ</string>
+    <string name="filter_select_country">ເລືອກປະເທດ</string>
+    <string name="filter_select_language">ເລືອກພາສາ</string>
+    <string name="filter_type_tag">ພິມแทັກ…</string>
+    <string name="filter_tap_to_configure">ແຕະເພື່ອຕັ້ງຄ່າ</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">ໂລໂກ້ສະຖານີວິທະຍຸ</string>
+    <string name="accessibility_favorite_selected">ລາຍການໂປດ, ເລືອກແລ້ວ</string>
+    <string name="accessibility_favorite_not_selected">ລາຍການໂປດ, ບໍ່ໄດ້ເລືອກ</string>
+    <string name="accessibility_category_icon">ໄອຄອນໝວດໝູ່</string>
+    <string name="accessibility_playing">ກຳລັງຫຼິ້ນ</string>
+    <string name="accessibility_menu">ເປີດເມນູ</string>
+    <string name="accessibility_search_back">ປິດການຄົ້ນຫາ</string>
+    <string name="accessibility_filter_reverse">ປ່ຽນລຳດັບການຈັດຮຽງ</string>
+    <string name="accessibility_clear_text">ລ້າງຂໍ້ຄວາມ</string>
+    <string name="accessibility_back">ກັບຄືນ</string>
+    <string name="accessibility_configure">ຕັ້ງຄ່າ</string>
+    <string name="accessibility_close">ປິດ</string>
+    <string name="accessibility_add_filter">ເພີ່ມຕົວຕອງ</string>
+    <string name="accessibility_station_options">ຕົວເລືອກສະຖານີວິທະຍຸ</string>
+    <string name="not_applicable">ບໍ່ມີ</string>
+    <string name="accessibility_station_description">ສະຖານີ: %1$s, ພາສາ: %2$s, แทັກ: %3$s</string>
+
+    <string name="error_no_file_manager">ບໍ່ພົບແອັບຈັດການໄຟລ໌ລະບົບ. ກະລຸນາກວດສອບວ່າໄດ້ຕິດຕັ້ງ ແລະ ເປີດໃຊ້ງານແອັບຈັດການໄຟລ໌ແລ້ວ.</string>
+    <string name="error_no_browser">ບໍ່ພົບເວັບບຣາວເຊີ. ກະລຸນາຕິດຕັ້ງບຣາວເຊີເພື່ອເປີດລິ້ງນີ້.</string>
+    <string name="error_no_homepage">ບໍ່ມີໜ້າຫຼັກສຳລັບສະຖານີວິທະຍຸນີ້</string>
+    <string name="tab_custom_stations">ກຳນົດເອງ</string>
+    <string name="action_add_custom">ເພີ່ມສະຖານີວິທະຍຸທີ່ກຳນົດເອງ</string>
+    <string name="station_name">ຊື່ສະຖານີວິທະຍຸ</string>
+    <string name="stream_url">URL ສະຕຣີມ</string>
+    <string name="favicon_url">URL ໂລໂກ້ສະຖານີ (Favicon)</string>
+    <string name="select_image">ເລືອກຮູບພາບ</string>
+    <string name="error_invalid_url">ກະລຸນາປ້ອນ URL ທີ່ຖືກຕ້ອງ</string>
+    <string name="action_save">ບັນທຶກ</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">ປຸ່ມຄວບຄຸມເຄື່ອງຫຼິ້ນແບບໄວ</string>
+    <string name="widget_description_full">ເຄື່ອງຫຼິ້ນ ແລະ ລາຍການສະຖານີວິທະຍຸ</string>
+
+    <string name="settings_auto_db_update">ສຳຄັນຂໍ້ມູນພື້ນຫຼັງ</string>
+    <string name="settings_auto_db_update_desc">ອັບເດດຖານຂໍ້ມູນສະຖານີວິທະຍຸອັດໂນມັດຜ່ານ Radio-Browser API (ແນະນຳ).</string>
+    <string name="settings_station_click_counter">ຕົວນັບການກົດສະຖານີວິທະຍຸ</string>
+    <string name="settings_station_click_counter_desc">ສະໜັບສະໜູນສະຖິຕິຂອງ Radio-Browser ໂດຍການແບ່ງປັນເຫດການການຫຼິ້ນແບບບໍ່ລະບຸຕົວຕົນ.</string>
+
+    <string name="settings_remove_notification_on_stop">ລົບການແຈ້ງເຕືອນເມື່ອຢຸດ</string>
+    <string name="settings_remove_notification_on_stop_desc">ລົບການແຈ້ງເຕືອນມີເດຍອັດໂນມັດເມື່ອການຫຼິ້ນຖືກຢຸດ</string>
+    <string name="settings_auto_resume_audio_focus">ຫຼິ້ນຕໍ່ຫຼັງຈາກເສຍສິດ Audio Focus</string>
+    <string name="settings_auto_resume_audio_focus_desc">ຫຼິ້ນຕໍ່ອັດໂນມັດຫຼັງຈາກສາຍໂທເຂົ້າ, ສຽງເຕືອນ ຫຼື ການຢຸດສຽງອື່ນໆສິ້ນສຸດ</string>
+
+    <string name="settings_backup_restore">ສຳຮອງຂໍ້ມູນ ແລະ ຟື້ນຟູ</string>
+    <string name="settings_export_backup">ສ້າງການສຳຮອງຂໍ້ມູນທັງໝົດ (ZIP)</string>
+    <string name="settings_export_backup_desc">ບັນທຶກລາຍການໂປດ, ສະຖານີທີ່ກຳນົດເອງ ແລະ ໄອຄອນທັງໝົດລົງໃນໄຟລ໌ ZIP</string>
+    <string name="settings_import_backup">ຟື້ນຟູການສຳຮອງຂໍ້ມູນ (ZIP)</string>
+    <string name="settings_import_backup_desc">ຟື້ນຟູລາຍການໂປດ ແລະ ສະຖານີທີ່ກຳນົດເອງຈາກໄຟລ໌ສຳຮອງ ZIP</string>
+    <string name="backup_export_success">ບັນທຶກການສຳຮອງຂໍ້ມູນສຳເລັດແລ້ວ</string>
+    <string name="backup_export_error">ບັນທຶກການສຳຮອງຂໍ້ມູນບໍ່ສຳເລັດ</string>
+    <string name="backup_import_success">ຟື້ນຟູການສຳຮອງຂໍ້ມູນສຳເລັດແລ້ວ</string>
+    <string name="backup_import_error">ຟື້ນຟູການສຳຮອງຂໍ້ມູນບໍ່ສຳເລັດ</string>
+
+    <string name="database_summary_title">ຖານຂໍ້ມູນໃນເຄື່ອງ</string>
+    <string name="database_total_stations">ສະຖານີວິທະຍຸທັງໝົດ</string>
+    <string name="database_last_sync">ອັບເດດຫຼ້າສຸດ</string>
+    <string name="database_update_now">ອັບເດດຖານຂໍ້ມູນດຽວນີ້</string>
+    <string name="database_full_update">ອັບເດດຖານຂໍ້ມູນ</string>
+    <string name="database_syncing">ກຳລັງສຳຄັນຂໍ້ມູນ…</string>
+    <string name="database_downloading">ກຳລັງດາວໂຫຼດ…</string>
+    <string name="database_stations_loaded">%1$s ສະຖານີວິທະຍຸ</string>
+    <string name="database_sync_channel_name">ການສຳຄັນຖານຂໍ້ມູນສະຖານີວິທະຍຸ</string>
+    <string name="database_sync_success">ອັບເດດຖານຂໍ້ມູນສະຖານີສຳເລັດແລ້ວ</string>
+    <string name="database_error_no_connection">ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ</string>
+    <string name="database_error_no_space">ພື້ນທີ່ຈັດເກັບບໍ່ພຽງພໍ</string>
+    <string name="database_error_failed">ອັບເດດຖານຂໍ້ມູນບໍ່ສຳເລັດ</string>
+
+    <string name="settings_disable_battery_optimization_desc">ເພື່ອໃຫ້ການຫຼິ້ນດຳເນີນຕໍ່ໄປເມື່ອຈໍປິດ, ໃຫ້ຕັ້ງການໃຊ້ແບັດເຕີຣີເປັນ \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">ເປີດການຕັ້ງຄ່າ</string>
+    <string name="battery_opt_later">ໄວ້ທີຫຼັງ</string>
 </resources>

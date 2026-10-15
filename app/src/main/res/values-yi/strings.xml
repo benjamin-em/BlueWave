@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">נאָמען</string>
+    <string name="detail_tags">טאַגס</string>
+    <string name="detail_country">לאַנד</string>
+    <string name="detail_create_shortcut">לייג צו צום הויפּט סקרין</string>
+    <string name="detail_language">שפּראַך</string>
+    <string name="detail_weblink">וועב לינק</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">שפּילן</string>
+    <string name="detail_pause">פּאַוזע</string>
+    <string name="detail_stop">אָפּשטעלן</string>
+    <string name="detail_share">טיילן</string>
+    <string name="detail_play_in_AMARadio">שפּילן אין AMARadio</string>
+
+    <string name="action_links">לינקס</string>
+    <string name="action_homepage">הויפּט זײַט</string>
+    <string name="action_favorite">פֿאַוואָריט</string>
+    <string name="action_starred_add">לייג צו צו פֿאַוואָריטן</string>
+    <string name="action_starred_remove">נעם אַראָפּ פֿון פֿאַוואָריטן</string>
+
+    <string name="action_station_visit_website">באַזוכן וועבזײַט</string>
+    <string name="action_station_copy_stream_url">קאָפּירן סטרים URL</string>
+    <string name="action_station_share">טיילן</string>
+
+    <string name="action_local">לאָקאַל</string>
+    <string name="action_skip_to_next">ווייטערדיקע</string>
+    <string name="action_pause">פּאַוזע</string>
+    <string name="action_skip_to_previous">פֿריִערדיקע</string>
+    <string name="action_resume">פֿאָרצעצן</string>
+    <string name="action_stop">אָפּשטעלן</string>
+    <string name="action_search">זוכן</string>
+    <string name="action_delete">מעקן</string>
+    <string name="action_delete_history">מעקן היסטאָריע</string>
+    <string name="action_delete_favorites">מעקן אַלע פֿאַוואָריטן</string>
+    <string name="action_delete_stream_history">רייניקן לידער היסטאָריע</string>
+    <string name="action_ok">פֿאַראַן (OK)</string>
+    <string name="action_cancel">אַנולירן</string>
+    <string name="action_top_click">מערסט קליקט</string>
+    <string name="action_toggle_view">טוישן אויסזען</string>
+    <string name="action_top_vote">מערסט געשטימט</string>
+    <string name="action_changed_lately">לעצטנס געטוישט</string>
+    <string name="action_currently_playing">שפּילט איצט</string>
+    <string name="action_tags">טאַגס</string>
+    <string name="action_countries">לענדער/ראַיאָנען</string>
+    <string name="action_languages">שפּראַכן</string>
+    <string name="action_edit">רעדאַקטירן</string>
+    <string name="action_copy_info">קאָפּירן אינפֿאָרמאַציע</string>
+    <string name="action_rename_tab">איבערנאָמענען טאַב</string>
+
+    <string name="error_filter_name_required">ביטע שטעלט קודם אַ נאָמען פֿאַר דעם פֿילטער טאַב</string>
+    <string name="confirm_delete_filter_tab">זײַט איר זיכער אַז איר ווילט מעקן דעם פֿילטער \"%1$s\"?</string>
+    <string name="filter_empty_title">בויט אייער אײַגענעם ראַדיאָ סטענציע ליסטע</string>
+    <string name="filter_empty_desc">שאַפֿט אַ פּערזענלעכן אויסזען דורך צופּאַסן עטלעכע תנאים. איר קענט אײַנצוימען דעם זוך דורך:</string>
+    <string name="filter_empty_filter_by">פֿילטערט דורך:</string>
+    <string name="filter_empty_filter_desc">לאַנד, ראַדיאָ סטענציע נאָמען, טאַגס אָדער שפּראַך</string>
+    <string name="filter_empty_sort_by">סאָרטירט דורך:</string>
+    <string name="filter_empty_sort_desc">קליקס, אַלפֿאַבעט, שטימען אָדער לעצטע ענדערונג</string>
+    <string name="filter_empty_hint">שרײַבט אַ נאָמען אין דער קעסטל אויבן צו ראַטעווען דעם אויסזען!</string>
+
+    <string name="error_station_load">נישט געקענט זיך פֿאַרבינדן צו דער ראַדיאָ סטענציע</string>
+    <string name="error_list_update">נישט געקענט זיך פֿאַרבינדן צום Radio-Browser סערווער</string>
+
+    <string name="error_no_connection">קיין אינטערנעץ פֿאַרבינדונג פֿאַראַן.</string>
+    <string name="warning_volume_zero">דער קלאַנג איז אויף נול. איר וועט אפֿשר גאָרנישט הערן.</string>
+
+    <string name="share_action">טיילן די ראַדיאָ סטענציע לינק מיט…</string>
+
+    <string name="nav_item_stations">ראַדיאָ סטענציעס</string>
+    <string name="nav_item_starred">פֿאַוואָריטן</string>
+    <string name="nav_item_history">היסטאָריע</string>
+    <string name="nav_item_settings">אינסטאַלציעס</string>
+
+    <string name="about_text">AMARadio איז 100% פֿרײַ פֿון אַדווערטייזמענץ און היט אויף אייער פּריוואַטקייט.\n\nאיך האָב אָנהייבנטלעך געמאַכט די אַפּליקאַציע פֿאַר מײַן מוטער צו געבן איר אַ גרינגע, ערלעכע ראַדיאָ עקספּעריענס אָן קיין שטערנדיקע אַדווערטייזמענץ אָדער נאָכפֿאָלגונג. דערפֿאַר וועט AMARadio שטענדיק בלײַבן פֿרײַ פֿון אַדס – דאָס איז אַ צוזאָג צו איר, געטיילט מיט אייך אַלע.\n\nדער פּראָיעקט איז אַ פֿאָרק פֿון RadioDroid. דער גאַנצער קאָד איז אַריבערגעפֿירט געוואָרן פֿון Java צו Kotlin.\n\nדער סאָרס קאָד איז פֿאַראַן אויף: https://github.com/ounben/AMARadio\n\nדי אַפּליקאַציע נוצט די פֿרײַע ראַדיאָ סטענציעס דירעקטאָרי אויף https://www.radio-browser.info .\n\nקאָנטאַקט: ben@ounben.com\n\nבאַג טראַקער: https://github.com/ounben/AMARadio/issues\n\nדי אַפּליקאַציע איז פֿרײַע סאָפֿטוואַר אונטער דער GPLv3 ליצענץ. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">ווערסיע: %1$s</string>
+    <string name="detail_star">לייג צו צו פֿאַוואָריטן</string>
+    <string name="detail_unstar">נעם אַראָפּ פֿון פֿאַוואָריטן</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">לאָדנט זיך…</string>
+
+    <string name="sleep_timer" formatted="true">שלאָף טײַמער: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">אָפּשטעלן דאָס שפּילן נאָך די אויסגעוויילטע מינוטן</string>
+    <string name="sleep_timer_apply">אָנווענדן</string>
+    <string name="sleep_timer_clear">רייניקן</string>
+    <string name="nav_item_add_sleep">שלאָף טײַמער</string>
+
+    <string name="nav_item_save_playlist">עקספּאָרטירן פֿאַוואָריטן ווי אַ פּלייליסט</string>
+    <string name="nav_item_load_playlist">אימפּאָרטירן פֿאַוואָריטן פֿון אַ פּלייליסט</string>
+    <string name="nav_item_save_history_playlist">עקספּאָרטירן היסטאָריע ווי אַ פּלייליסט</string>
+    <string name="confirm_overwrite_file">איבערשרײַבן דעם פֿײַל?</string>
+    <string name="dialog_hint_file_name">שרײַבט אײַן דעם פֿײַל נאָמען</string>
+    <string name="error_empty_field">דאָס פֿעלד איז וויכטיק</string>
+    <string name="error_invalid_file_name">אומגילטיקער פֿײַל נאָמען</string>
+    <string name="label_button_cancel">אַנולירן</string>
+    <string name="label_button_overwrite">איבערשרײַבן</string>
+    <string name="notify_load_playlist_nok">נישט געקענט אימפּאָרטירן פֿון %1$s&#47;%2$s</string>
+    <string name="notify_load_playlist_now">אימפּאָרטירט פֿון %1$s&#47;%2$s, ביטע וואַרט.</string>
+    <string name="notify_load_playlist_ok">אימפּאָרטירט %1$d סטענציעס פֿון %2$s&#47;%3$s</string>
+    <string name="notify_save_playlist_nok">נישט געקענט עקספּאָרטירן צו %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_now">עקספּאָרטירט צו %1$s&#47;%2$s, ביטע וואַרט.</string>
+    <string name="notify_save_playlist_ok">עקספּאָרטירט צו %1$s&#47;%2$s מיט הצלחה</string>
+    <string name="notify_sync_list_deleted_entries">%1$d פֿון %2$d לאָקאַלע סטענציעס אין דער ליסטע זענען באַצייכנט געוואָרן ווי נישט פֿאַראַן אויפֿן סערווער</string>
+
+    <string name="searchpreference_clear_history">רייניקן היסטאָריע</string>
+    <string name="searchpreference_no_results">קיין רעזולטאַטן נישטא</string>
+    <string name="searchpreference_search">זוכן…</string>
+    <string name="settings_appearance">אויסזען</string>
+    <string name="settings_theme_selection_title">טעמאַ</string>
+    <string name="theme_light">ליכטיק</string>
+    <string name="theme_dark">פינצטער</string>
+    <string name="theme_system">פֿאָלגן די סיסטעם</string>
+    <string name="settings_compact_style">קאָמפּאַקטער מאָדע</string>
+    <string name="settings_compact_style_desc_off">גראָסער אייקאָן מיט די ראַדיאָ סטענציע פּרטים</string>
+    <string name="settings_compact_style_desc_on">קליינער אייקאָן אָן די פּרטים</string>
+    <string name="settings_bottom_navigation">אונטערשטער נאַוויגאַציע בואַרד</string>
+    <string name="settings_ui_scale">UI סקאַלירונג</string>
+    <string name="settings_language">שפּראַך</string>
+    <string name="ui_scale_compact">קאָמפּאַקט</string>
+    <string name="ui_scale_standard">סיסטעם סטאַנדאַרט</string>
+    <string name="ui_scale_large">גרויס</string>
+    <string name="ui_scale_extra_large">זייער גרויס</string>
+
+    <string name="settings_interaction">אינטעראַקציע</string>
+    <string name="settings_single_use_tags">ווײַזן זעלטענע טאַגס</string>
+    <string name="settings_single_use_tags_desc_off">זעלטן גענוצטע טאַגס וועלן נישט געווײַזט ווערן</string>
+    <string name="settings_single_use_tags_desc_on">זעלטן גענוצטע טאַגס וועלן געווײַזט ווערן</string>
+
+    <string name="settings_show_broken">אומפֿאַנגענע ראַדיאָ סטענציעס</string>
+    <string name="settings_show_broken_on">ווײַזן אומפֿאַנגענע סטענציעס אין ליסטעס</string>
+    <string name="settings_show_broken_off">באַהאַלטן אומפֿאַנגענע סטענציעס אין ליסטעס</string>
+
+    <string name="settings_startup_behaviour">הויפּט אָנהייב אויפֿפֿירונג</string>
+    <string name="action_grid_view">גריד אויסזען</string>
+    <string name="action_list_view">ליסטע אויסזען</string>
+
+    <string name="startup_action_title">אָנהייב אַקציע</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">ווײַזן אַלע ראַדיאָ סטענציעס</string>
+    <string name="startup_show_favorites">ווײַזן פֿאַוואָריטן</string>
+    <string name="startup_show_history">ווײַזן היסטאָריע</string>
+    <string name="startup_show_last_view">לעצטער אויסזען</string>
+
+    <string name="settings_load_icons">ווײַזן די סטענציע אייקאָנס</string>
+    <string name="settings_load_icons_on">אייקאָנס וועלן אראפּגעלאָדן ווערן</string>
+    <string name="settings_load_icons_off">אייקאָנס וועלן נישט אראפּגעלאָדן ווערן</string>
+
+    <string name="settings_auto_favorite">אויטאָמאַטישע פֿאַוואָריטן</string>
+    <string name="settings_auto_favorite_on">לייגן צו ראַדיאָ סטענציעס אויטאָמאַטיש צו פֿאַוואָריטן בײַם שפּילן</string>
+    <string name="settings_auto_favorite_off">נישט לייגן צו ראַדיאָ סטענציעס אויטאָמאַטיש צו פֿאַוואָריטן בײַם שפּילן</string>
+
+    <string name="settings_play">נאַוויגאַטאָר/נגן</string>
+    <string name="settings_auto_play_on_startup">אויטאָמאַטיש שפּילן</string>
+    <string name="settings_auto_play_on_startup_on">שפּילן די לעצטע ראַדיאָ סטענציע בײַם אָנהייב</string>
+    <string name="settings_auto_play_on_startup_off">נישט שפּילן די לעצטע ראַדיאָ סטענציע בײַם אָנהייב</string>
+    <string name="settings_auto_off_on_startup">אויטאָמאַטיש אָפּשטעלן</string>
+    <string name="settings_auto_off_on_startup_on">נוצן דעם אָפּשטעל טײַמער מיט דעם אויטאָמאַטישן שפּילן</string>
+    <string name="settings_auto_off_on_startup_off">נישט נוצן דעם אָפּשטעל טײַמער מיט דעם אויטאָמאַטישן שפּילן</string>
+    <string name="settings_auto_off_sleep_timer">אויטאָמאַטישער אָפּשטעל טײַמער</string>
+    <string name="settings_auto_off_sleep_timer_desc">אָפּשטעלן דאָס שפּילן נאָך %1$s מינוטן</string>
+    <string name="settings_play_external">נוצן דרויסנדיקן נגן</string>
+    <string name="settings_play_external_desc_on">שפּילן די סטענציעס דורך אַ דרויסנדיקן נגן</string>
+    <string name="settings_play_external_desc_off">שפּילן די סטענציעס מיט AMARadio</string>
+    <string name="settings_equalizer">עקוואַלייזער</string>
+
+    <string name="settings_connectivity">פֿאַרבינדונג</string>
+    <string name="settings_connect_timeout">פֿאַרבינדונג צײַט אָפּלויף</string>
+    <string name="settings_read_timeout">לייענען צײַט אָפּלויף</string>
+    <string name="settings_resume_timeout">פֿאָרצעצן צײַט אָפּלויף</string>
+    <string name="settings_retry_timeout">איבערחזרן צײַט אָפּלויף</string>
+    <string name="settings_retry_delay">איבער פֿאַרבינדונג פֿאַרשפּעטיקונג</string>
+    <string name="settings_proxy">פּראָקסי</string>
+    <string name="settings_proxy_login">באַנוצער נאָמען</string>
+    <string name="settings_proxy_password">פּאַסוואָרט</string>
+    <string name="settings_proxy_action_test">פּראָבירן</string>
+    <string name="settings_proxy_working">פֿאַרבונדן מיט הצלחה צו %s</string>
+    <string name="settings_proxy_not_working">נישט געקענט פֿאַרבינדן צו %1$s\n%2$s</string>
+    <string name="settings_proxy_invalid">די פּראָקסי ווערטן זענען אומגילטיק</string>
+    <string name="ignore_proxy_settings_invalid">איגנאָרירט אומגילטיקע פּראָקסי אינסטאַלציעס</string>
+    <string name="settings_seconds_format">%d סעקונדעס</string>
+    <string name="settings_milliseconds_format">%d מיליסעקונדעס</string>
+
+    <string name="settings_pause_when_noisy">פּאַוזע ווען די קאָפּהערערס ווערן אַראָפּגענומען</string>
+
+    <string name="settings_auto_resume_do_not_resume">נישט פֿאָרצעצן</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">פֿאָרצעצן בײַ אַ דראָט פֿאַרבינדונג</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">פֿאָרצעצן דאָס שפּילן ווען די דראָט קאָפּהערערס ווערן אײַנגעשטעקט</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">פֿאָרצעצן בײַ אַ Bluetooth פֿאַרבינדונג</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">פֿאָרצעצן דאָס שפּילן ווען אַ Bluetooth A2DP מכשיר ווערט פֿאַרבונדן</string>
+
+    <string name="settings_auto_resume_on_any_connected">פֿאָرצעצן בײַ יעדער פֿאַרבינדונג</string>
+
+    <string name="settings_warn_no_wifi">וואָרנונג אָן Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">וואָרנען ווען מען שפּילט אָן אַ Wi-Fi פֿאַרבינדונג</string>
+    <string name="settings_warn_no_wifi_off">קיין וואָרנונג נישטא ווען עס פֿעלט Wi-Fi</string>
+
+    <string name="notify_pre_play">פֿאַרבינדט זיך</string>
+    <string name="notify_play">שפּילט</string>
+    <string name="notify_paused">אינעם פּאַוזע</string>
+    <string name="notify_metered_connection">געמאָסטענע פֿאַרבינדונג</string>
+
+    <string name="notify_starred">די ראַדיאָ סטענציע איז צוגעלייגט געוואָרן צו די פֿאַוואָריטן</string>
+    <string name="notify_autostarred">די ראַדיאָ סטענציע איז אויטאָמאַטיש צוגעלייגט געוואָרן צו די פֿאַוואָריטן</string>
+    <string name="notify_unstarred">די ראַדיאָ סטענציע איז אָפּגענומען געוואָרן פֿון די פֿאַוואָריטן</string>
+    <string name="notify_deleted_favorites">פֿאַוואָריטן זענען געמעקט געוואָרן</string>
+    <string name="notify_deleted_history">היסטאָריע איז רייניקט געוואָרן</string>
+
+    <string name="notify_open_link_failure">קיין אַפּליקאַציע נישט געפֿונען צו עפֿענען דעם לינק</string>
+
+    <string name="notify_station_removed_from_list">1 אָפּגענומען</string>
+    <string name="action_station_removed_from_list_undo">צוריקשטעלן</string>
+
+    <string name="alert_delete_history">ווילט איר באַמת רייניקן די היסטאָריע?</string>
+    <string name="alert_delete_favorites">ווילט איר באַמת מעקן אַלע פֿאַוואָריטן?</string>
+    <string name="yes">יאָ</string>
+    <string name="no">ניין</string>
+
+    <string name="alert_select_player">ביטע קלײַבט אויס אַ נגן</string>
+    <string name="alert_select_player_name">נאָמען</string>
+    <string name="hostname">סערווער אַדרעס</string>
+    <string name="port">נעצווערק פּאָרט</string>
+
+    <string name="alert_press_back_to_exit">קליקט נאָך אַמאָל «Back» צו אַרויסגיין</string>
+
+    <string name="error_stream_url">פּראָבלעם מיטן סטרים URL</string>
+    <string name="error_caching_stream">פּראָבלעם מיטן סטרים קאַש</string>
+    <string name="error_play_stream">נישט געקענט שפּילן דעם סטרים</string>
+    <string name="error_stream_reconnect_timeout">נישט געקענט איבער פֿאַרבינדן צום סטרים: צײַט אָפּגעלאָפֿן</string>
+    <string name="warning_no_network_trying_resume">קיין נעצווערק נישטא. פּראָבירט צו פֿאָרצעצן ווען די פֿאַרבינדונג קערט זיך צוריק.</string>
+    <string name="giving_up_resume">אויפֿגעגעבן דעם פּראָוב צו פֿאָרצעצן דאָס שפּילן</string>
+
+    <string name="error_grant_audiofocus">די סיסטעם האָט נישט ערלויבט דעם אָדיאָ פֿאָקוס</string>
+
+    <string name="error_no_equalizer_found">קיין עקוואַלייזער אַפּליקאַציע נישט געפֿונען</string>
+
+    <string name="player_info_status">מצב:&#160;</string>
+    <string name="player_info_status_stopped">אָפּגעשטעלט</string>
+    <string name="player_info_status_playing">שפּילט</string>
+    <string name="player_info_transferred">איבערגעפֿירטע דאַטן: %1$s</string>
+
+    <string name="tab_player_art">אַלבום בילד</string>
+    <string name="tab_player_info">אינפֿאָרמאַציע</string>
+    <string name="tab_player_history">לידער היסטאָריע</string>
+
+    <string name="station_detail_bitrate">%1$d kbps</string>
+    <string name="station_detail_broken">נישט געזונט</string>
+    <string name="station_detail_deleted_on_server">געמעקט</string>
+
+    <string name="station_details_clicks">%1$d קליקס</string>
+    <string name="station_details_votes">%1$d שטימען</string>
+
+    <string name="image_button_disable">אָפּשטעלן</string>
+    <string name="image_button_delete">מעקן</string>
+    <string name="image_button_more">מער</string>
+    <string name="image_button_less">ווייניקער</string>
+    <string name="image_button_repeat">איבערחזרן</string>
+    <string name="image_button_dont_repeat">נישט איבערחזרן</string>
+    <string name="icon_click_trend_decreasing">פּאָפּולאַריטעט פֿאַלט</string>
+    <string name="icon_click_trend_increasing">פּאָפּולאַריטעט שטײַגט</string>
+    <string name="icon_click_trend_stable">פּאָפּולאַריטעט איז סטאַביל</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% פֿרײַ פֿון אַדס &amp; פּריוואַט</string>
+
+    <string name="action_play_in_external">שפּילן אין אַ דרויסנדיקן נגן</string>
+    <string name="action_choose_external_player">קלײַבט אויס אַ דרויסנדיקן נגן</string>
+
+    <string name="settings_disable_battery_optimization">שפּילן אין דער הינטערגרונט</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">אַנדערע</string>
+    <string name="settings_rate_app">אָפּשאַצן AMARadio</string>
+    <string name="settings_rate_app_summary">אויב די אַפּליקאַציע געפֿעלט אייך, بيטע לאָזט אַ רעוויע אין Play Store!</string>
+    <string name="settings_rate_app_github">האָט איר הנאה פֿון AMARadio?</string>
+    <string name="settings_rate_app_github_summary">לאָזט אַ שטערן אויף GitHub! דאָס העלפֿט אַנדערע צו געפֿינען די אַפּ.</string>
+    <string name="settings_statistics">סטאַטיסטיק</string>
+    <string name="settings_about">וועגן AMARadio</string>
+
+    <string name="description_btn_skip_to_next">שפּרינגען צו דער נעקסטער</string>
+    <string name="description_btn_skip_to_previous">שפּרינגען צו דער פֿריִערדיקער</string>
+
+    <string-array name="weekdays">
+        <item>ז</item>
+        <item>מ</item>
+        <item>ד</item>
+        <item>מ</item>
+        <item>ד</item>
+        <item>פֿ</item>
+        <item>ש</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">סטרים URL קאָפּירט מיט הצלחה</string>
+    <string name="notify_track_info_copied">ליד אינפֿאָרמאַציע קאָפּירט מיט הצלחה</string>
+
+    <string-array name="actions_station_link">
+        <item>באַזוכן וועבזײַט</item>
+        <item>קאָפּירן סטרים URL</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">געפֿונען אַ געמאַאָסטענע פֿאַרבינדונג</string>
+    <string name="alert_metered_connection_message">אַ געמאַאָסטענע פֿאַרבינדונג קען אָנקאָסטן נאָך געלט, קליקט «OK» צו פֿאָרצעצן.</string>
+    <string name="nav_item_statistics">סטאַטיסטיק</string>
+    <string name="nav_item_about">וועגן</string>
+    <string name="refresh">אויפֿפֿרישן</string>
+    <string name="action_filter">פֿילטער</string>
+    <string name="filter_country">לאַנד</string>
+    <string name="filter_tag">טאַג</string>
+    <string name="filter_language">שפּראַך</string>
+    <string name="filter_sort_by">סאָרטירט דורך</string>
+    <string name="filter_reverse">פֿאַרקערטער סדר</string>
+    <string name="filter_apply">אָנווענדן פֿילטער</string>
+    <string name="sort_name">נאָמען</string>
+    <string name="sort_votes">שטימען</string>
+    <string name="sort_clicks">קליקס</string>
+    <string name="sort_lastchange">לעצטע ענדערונג</string>
+    <string name="filter_select_country">קלײַבט אויס לאַנד</string>
+    <string name="filter_select_language">קלײַבט אויס שפּראַך</string>
+    <string name="filter_type_tag">שרײַבט אַ טאַג…</string>
+    <string name="filter_tap_to_configure">קליקט צו אײַנשטעלן</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">סטענציע לאָגאָ</string>
+    <string name="accessibility_favorite_selected">פֿאַוואָריט, אויסגעוויילט</string>
+    <string name="accessibility_favorite_not_selected">פֿאַוואָריט, נישט אויסגעוויילט</string>
+    <string name="accessibility_category_icon">קאַטעגאָריע אייקאָן</string>
+    <string name="accessibility_playing">שפּילט איצט</string>
+    <string name="accessibility_menu">עפֿענען מעניו</string>
+    <string name="accessibility_search_back">פֿאַרמאַכן זוכן</string>
+    <string name="accessibility_filter_reverse">פֿאַרקערן די סאָרטירונג</string>
+    <string name="accessibility_clear_text">רייניקן טעקסט</string>
+    <string name="accessibility_back">צוריק</string>
+    <string name="accessibility_configure">אײַנשטעלן</string>
+    <string name="accessibility_close">פֿאַרמאַכן</string>
+    <string name="accessibility_add_filter">לייגן צו פֿילטער</string>
+    <string name="accessibility_station_options">סטענציע ברירות</string>
+    <string name="not_applicable">נישט פֿאַראַן</string>
+    <string name="accessibility_station_description">סטענציע: %1$s, שפּראַך: %2$s, טאַגס: %3$s</string>
+
+    <string name="error_no_file_manager">קיין סיסטעם פֿײַל מענעדזשער נישט געפֿונען. ביטע זיכערט אַז אַ פֿײַל עקספּלאָרער איז אינסטאַלירט.</string>
+    <string name="error_no_browser">קיין וועב בראַוזער נישט געפֿונען. ביטע אינסטאַלירט אַ בראַוזער צו עפֿענען דעם לינק.</string>
+    <string name="error_no_homepage">קיין הויפּט זײַט נישט פֿאַראַן פֿאַר דער ראַדיאָ סטענציע</string>
+    <string name="tab_custom_stations">אײַגענע</string>
+    <string name="action_add_custom">לייגן צו אַן אײַגענע ראַדיאָ סטענציע</string>
+    <string name="station_name">ראַדיאָ סטענציע נאָמען</string>
+    <string name="stream_url">סטרים URL</string>
+    <string name="favicon_url">סטענציע לאָגאָ URL (Favicon)</string>
+    <string name="select_image">קלײַבט אויס בילד</string>
+    <string name="error_invalid_url">ביטע שרײַבט אײַן אַ גילטיקן URL</string>
+    <string name="action_save">ראַטעווען</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">גיכע קאָנטראָל פֿאַרן נגן</string>
+    <string name="widget_description_full">נגן און ראַדיאָ סטענציעס ליסטע</string>
+
+    <string name="settings_auto_db_update">הינטערגרונט סינק</string>
+    <string name="settings_auto_db_update_desc">אויטאָמאַטישע דאַטן-באַזע אָפּדאַטע דורך דעם Radio-Browser API.</string>
+    <string name="settings_station_click_counter">ראַדיאָ סטענציע קליק ציילער</string>
+    <string name="settings_station_click_counter_desc">שטיצט Radio-Browser סטאַטיסטיק דורך טיילן אָנאָנים די שפּילן געשעענישן.</string>
+
+    <string name="settings_remove_notification_on_stop">אָפּנעמען מעלדונג בײַם אָפּשטעלן</string>
+    <string name="settings_remove_notification_on_stop_desc">אויטאָמאַטיש אָפּנעמען די מעדיאַ מעלדונג ווען דאָס שפּילן ווערט אָפּגעשטעלט</string>
+    <string name="settings_auto_resume_audio_focus">פֿאָרצעצן נאָך פֿאַרלירן דעם אָדיאָ פֿאָקוס</string>
+    <string name="settings_auto_resume_audio_focus_desc">אויטאָמאַטיש פֿאָרצעצן דאָס שפּילן נאָך טעלעפֿאָן קאָלס אָדער אַלאַרמס</string>
+
+    <string name="settings_backup_restore">סאַפֿטיקונג און צוריקשטעלונג</string>
+    <string name="settings_export_backup">מאַכן אַ פֿולע סאַפֿטיקונג (ZIP)</string>
+    <string name="settings_export_backup_desc">ראַטעוועט אַלע פֿאַוואָריטן, אײַגענע סטענציעס און אייקאָנס אין אַ ZIP פֿײַל</string>
+    <string name="settings_import_backup">צוריקשטעלן סאַפֿטיקונג (ZIP)</string>
+    <string name="settings_import_backup_desc">צוריקשטעלט פֿאַוואָריטן און אײַגענע סטענציעס פֿון אַ ZIP פֿײַל</string>
+    <string name="backup_export_success">סאַפֿטיקונג געראַטעוועט מיט הצלחה</string>
+    <string name="backup_export_error">נישט געקענט ראַטעווען די סאַפֿטיקונג</string>
+    <string name="backup_import_success">סאַפֿטיקונג צוריקגעשטעלט מיט הצלחה</string>
+    <string name="backup_import_error">נישט געקענט צוריקשטעלן די סאַפֿטיקונג</string>
+
+    <string name="database_summary_title">לאָקאַלע דאַטן-באַזע</string>
+    <string name="database_total_stations">סך הכל ראַדיאָ סטענציעס</string>
+    <string name="database_last_sync">לעצטע אָפּדאַטע</string>
+    <string name="database_update_now">אָפּדאַטירן דאַטן-באַזע איצט</string>
+    <string name="database_full_update">אָפּדאַטירן דאַטן-באַזע</string>
+    <string name="database_syncing">סינקירט זיך…</string>
+    <string name="database_downloading">לאָדנט אראפּ…</string>
+    <string name="database_stations_loaded">%1$s ראַדיאָ סטענציעס</string>
+    <string name="database_sync_channel_name">ראַדיאָ סטענציעס דאַטן-באַזע סינק</string>
+    <string name="database_sync_success">דאַטן-באַזע אָפּדאַטע מיט הצלחה געענדיקט</string>
+    <string name="database_error_no_connection">קיין אינטערנעץ פֿאַרבינדונג נישטא</string>
+    <string name="database_error_no_space">נישטאָ קיין גענוג פּלאַץ אויפֿן דיסק</string>
+    <string name="database_error_failed">דאַטן-באַזע אָפּדאַטע דורכגעפֿאַלן</string>
+
+    <string name="settings_disable_battery_optimization_desc">כדי צו פֿאָרצעצן דאָס שפּילן ווען דער סקרין איז אָפּגעשטעלט, שטעלט די באַטערי באַנוץ אויף \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">עפֿענען אינסטאַלציעס</string>
+    <string name="battery_opt_later">שפּעטער</string>
 </resources>

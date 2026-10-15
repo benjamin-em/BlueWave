@@ -52,24 +52,24 @@
     <string name="filter_empty_title">בנה את עדכון תחנות הרדיו המותאם אישית שלך</string>
     <string name="filter_empty_desc">צור תצוגה מותאמת אישית על ידי שילוב קריטריונים מרובים. ניתן לצמצם את החיפוש לפי:</string>
     <string name="filter_empty_filter_by">סנן לפי:</string>
-    <string name="filter_empty_filter_desc">מדינה, שם תחנה, תגיות או שפה</string>
+    <string name="filter_empty_filter_desc">מדינה, שם תחנת רדיו, תגיות או שפה</string>
     <string name="filter_empty_sort_by">מיין לפי:</string>
     <string name="filter_empty_sort_desc">לחיצות, סדר אלפביתי, הצבעות או שינוי אחרון</string>
     <string name="filter_empty_hint">הקלד שם בשדה למעלה כדי לשמור תצוגה זו!</string>
-    <string name="error_station_load">לא ניתן להתחבר לתחנה</string>
-    <string name="error_list_update">לא ניתן להתחבר לשרת דפדפן הרדיו</string>
+    <string name="error_station_load">לא ניתן להתחבר לתחנת הרדיו</string>
+    <string name="error_list_update">לא ניתן להתחבר לשרת Radio-Browser</string>
 
     <string name="error_no_connection">אין חיבור לאינטרנט זמין</string>
     <string name="warning_volume_zero">עוצמת הקול היא אפס. יתכן שלא תשמע דבר.</string>
 
-    <string name="share_action">שתף קישור לתחנה עם…</string>
+    <string name="share_action">שתף קישור לתחנת הרדיו עם…</string>
 
-    <string name="nav_item_stations">תחנות</string>
+    <string name="nav_item_stations">תחנות רדיו</string>
     <string name="nav_item_starred">מועדפים</string>
     <string name="nav_item_history">היסטוריה</string>
     <string name="nav_item_settings">הגדרות</string>
 
-    <string name="about_text">AMARadio היא 100% נטולת פרסומות וממוקדת בפרטיות.\n\nבמקור פיתחתי את האפליקציה הזו עבור אמא שלי כדי לספק לה חווית רדיו פשוטה וישרה ללא פרסומות מעצבנות או מעקב. זו הסיבה ש-AMARadio תמיד תישאר ללא פרסומות – זו הבטחה לה, שמשותפת לכולכם.\n\nפרויקט זה הוא פיצול (fork) של https://github.com/segler-alex/RadioDroid המצוין. כל קוד המקור הועבר מ-Java ל-Kotlin כדי להבטיח שהאפליקציה תישאר מודרנית ותואמת לגרסאות אנדרואיד עתידיות.\n\nקוד המקור זמין בכתובת: https://github.com/ounben/AMARadio\n\nאפליקציה זו משתמשת במדריך תחנות הרדיו החינמי בכתובת https://www.radio-browser.info . כל אחד יכול להוסיף לו תחנות. זה עובד כמו ויקיפדיה לתחנות רדיו מקוונות.\n\nליצירת קשר: ben@ounben.com\n\nדיווח על באגים: https://github.com/ounben/AMARadio/issues\n\nאם אתם אוהבים את התוכנה ורוצים לעזור, אל תהססו לשלוח לי אימייל. גם רעיונות לתכונות חדשות תמיד יתקבלו בברכה!\n\nאפליקציה זו היא תוכנה חופשית, ברישיון GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio היא 100% נטולת פרסומות וממוקדת בפרטיות.\n\nבמקור פיתחתי את האפליקציה הזו עבור אמא שלי כדי לספק לה חווית רדיו פשוטה וישרה ללא פרסומות מעצבנות או מעקב. זו הסיבה ש-AMARadio תמיד תישאר ללא פרסומות – זו הבטחה לה, שמשותפת לכולכם.\n\nפרויקט זה הוא פיצול (fork) של RadioDroid. כל קוד המקור הועבר מ-Java ל-Kotlin כדי להבטיח שהאפליקציה תישאר מודרנית ותואמת לגרסאות אנדרואיד עתידיות.\n\nקוד המקור זמין בכתובת: https://github.com/ounben/AMARadio\n\nאפליקציה זו משתמשת במדריך תחנות הרדיו החינמי בכתובת https://www.radio-browser.info . כל אחד יכול להוסיף לו תחנות. זה עובד כמו ויקיפדיה לתחנות רדיו מקוונות.\n\nליצירת קשר: ben@ounben.com\n\nדיווח על באגים: https://github.com/ounben/AMARadio/issues\n\nאם אתם אוהבים את התוכנה ורוצים לעזור, אל תהססו לשלוח לי אימייל. גם רעיונות לתכונות חדשות תמיד יתקבלו בברכה!\n\nאפליקציה זו היא תוכנה חופשית, ברישיון GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">גרסה: %1$s</string>
     <string name="detail_star">הוספה למועדפים</string>
     <string name="detail_unstar">הסרה מהמועדפים</string>
@@ -96,7 +96,7 @@
     <string name="notify_load_playlist_ok">יובאו %1$d תחנות מ-%2$s&#47;%3$s</string>
     <string name="notify_save_playlist_nok">לא ניתן לייצא ל-%1$s&#47;%2$s</string>
     <string name="notify_save_playlist_now">מייצא ל-%1$s&#47;%2$s, אנא המתן.</string>
-    <string name="notify_save_playlist_ok">יוצא ל-%1$s&#47;%2$s בהצלחה</string>
+    <string name="notify_save_playlist_ok">יוצא ל-%1$s&#47;%2$s בהצלحة</string>
     <string name="notify_sync_list_deleted_entries">%1$d מתוך %2$d תחנות מקומיות ברשימה סומנו כלא קיימות בשרת</string>
 
     <string name="searchpreference_clear_history">ניקוי היסטוריה</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">כהה</string>
     <string name="theme_system">לפי המערכת</string>
     <string name="settings_compact_style">מצב קומפקטי</string>
-    <string name="settings_compact_style_desc_off">אייקון גדול עם פרטי התחנה</string>
-    <string name="settings_compact_style_desc_on">אייקון קטן ללא פרטי התחנה</string>
+    <string name="settings_compact_style_desc_off">אייקון גדול עם פרטי תחנת הרדיו</string>
+    <string name="settings_compact_style_desc_on">אייקון קטן ללא פרטי תחנת הרדיו</string>
     <string name="settings_bottom_navigation">ניווט תחתון</string>
     <string name="settings_ui_scale">קנה מידה של הממשק</string>
     <string name="settings_language">שפה</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">תגיות נדירות לא יוצגו</string>
     <string name="settings_single_use_tags_desc_on">תגיות נדירות יוצגו</string>
 
-    <string name="settings_show_broken">תחנות לא פעילות</string>
-    <string name="settings_show_broken_on">הצגת תחנות לא פעילות ברשימות</string>
-    <string name="settings_show_broken_off">אל תציג תחנות לא פעילות ברשימות</string>
+    <string name="settings_show_broken">תחנות רדיו לא פעילות</string>
+    <string name="settings_show_broken_on">הצגת תחנות רדיו לא פעילות ברשימות</string>
+    <string name="settings_show_broken_off">אל תציג תחנות רדיו לא פעילות ברשימות</string>
 
     <string name="settings_startup_behaviour">התנהגות בהפעלה</string>
     <string name="action_grid_view">תצוגת רשת</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">פעולה בהפעלה</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">הצג את כל התחנות</string>
+    <string name="startup_show_all_stations">הצג את כל תחנות הרדיו</string>
     <string name="startup_show_favorites">הצג מועדפים</string>
     <string name="startup_show_history">הצג היסטוריה</string>
     <string name="startup_show_last_view">תצוגה אחרונה</string>
 
-    <string name="settings_load_icons">הצג אייקונים של תחנות</string>
+    <string name="settings_load_icons">הצג אייקונים של תחנות רדיו</string>
     <string name="settings_load_icons_on">אייקונים יורדו</string>
     <string name="settings_load_icons_off">אייקונים לא יורדו</string>
 
     <string name="settings_auto_favorite">הוספה אוטומטית למועדפים</string>
-    <string name="settings_auto_favorite_on">הוספת תחנות למועדפים באופן אוטומטי בזמן נגינה</string>
-    <string name="settings_auto_favorite_off">אל תוסיף תחנות למועדפים באופן אוטומטי</string>
+    <string name="settings_auto_favorite_on">הוספת תחנות רדיו למועדפים באופן אוטומטי בזמן נגינה</string>
+    <string name="settings_auto_favorite_off">אל תוסיף תחנות רדיו למועדפים באופן אוטומטי</string>
 
     <string name="settings_play">נגן</string>
     <string name="settings_auto_play_on_startup">נגינה אוטומטית</string>
-    <string name="settings_auto_play_on_startup_on">נגן תחנה אחרונה בהפעלה</string>
-    <string name="settings_auto_play_on_startup_off">אל תנגן תחנה אחרונה בהפעלה</string>
+    <string name="settings_auto_play_on_startup_on">נגן תחנת רדיו אחרונה בהפעלה</string>
+    <string name="settings_auto_play_on_startup_off">אל תנגן תחנת רדיו אחרונה בהפעלה</string>
     <string name="settings_auto_off_on_startup">עצירה אוטומטית</string>
     <string name="settings_auto_off_on_startup_on">השתמש בטיימר עצירה עם נגינה אוטומטית</string>
     <string name="settings_auto_off_on_startup_off">אל תשתמש בטיימר עצירה עם נגינה אוטומטית</string>
     <string name="settings_auto_off_sleep_timer">טיימר עצירה אוטומטית</string>
     <string name="settings_auto_off_sleep_timer_desc">עצור נגינה לאחר %1$s דקות</string>
     <string name="settings_play_external">הפעל נגן חיצוני</string>
-    <string name="settings_play_external_desc_on">נגן תחנות עם נגן חיצוני</string>
-    <string name="settings_play_external_desc_off">נגן תחנות עם AMARadio</string>
+    <string name="settings_play_external_desc_on">נגן תחנות רדיו עם נגן חיצוני</string>
+    <string name="settings_play_external_desc_off">נגן תחנות רדיו עם AMARadio</string>
     <string name="settings_equalizer">אקוולייזר</string>
 
     <string name="settings_connectivity">קישוריות</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">מושהה</string>
     <string name="notify_metered_connection">חיבור מוגבל (Metered)</string>
 
-    <string name="notify_starred">התחנה נוספה למועדפים</string>
-    <string name="notify_autostarred">התחנה נוספה אוטומטית למועדפים</string>
-    <string name="notify_unstarred">התחנה הוסרה מהמועדפים</string>
+    <string name="notify_starred">תחנת הרדיו נוספה למועדפים</string>
+    <string name="notify_autostarred">תחנת הרדיו נוספה אוטומטית למועדפים</string>
+    <string name="notify_unstarred">תחנת הרדיו הוסרה מהמועדפים</string>
     <string name="notify_deleted_favorites">המועדפים נמחקו</string>
     <string name="notify_deleted_history">ההיסטוריה נמחקה</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">אנא בחר נגן</string>
     <string name="alert_select_player_name">שם</string>
-    <string name="hostname">שם מארח (Hostname)</string>
-    <string name="port">פורט</string>
+    <string name="hostname">כתובת השרת</string>
+    <string name="port">פורט רשת</string>
 
     <string name="alert_press_back_to_exit">לחץ שוב על \'חזור\' כדי לצאת</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">נגן בנגן חיצוני</string>
     <string name="action_choose_external_player">בחר נגן חיצוני</string>
 
-    <string name="settings_disable_battery_optimization">אופטימיזציית סוללה</string>
-    <string name="settings_ignore_battery_optimization_summary_on">התעלמות מאופטימיזציית סוללה, AMARadio תמיד תוכל לקבל חזרה את המיקוד.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">אופטימיזציית סוללה מופעלת, AMARadio עלולה לא להצליח לקבל חזרה את המיקוד ברקע.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">השמעה ברקע</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">אחר</string>
     <string name="settings_rate_app">דרג את AMARadio</string>
     <string name="settings_rate_app_summary">אם אהבת את האפליקציה, אנא השאר ביקורת בחנות Play!</string>
+    <string name="settings_rate_app_github">נהנה מ-AMARadio?</string>
+    <string name="settings_rate_app_github_summary">השאר כוכב ב-GitHub! זה עוזר לאחרים לגלות את האפליקציה ותומך בפיתוח עתידי.</string>
     <string name="settings_statistics">סטטיסטיקה</string>
     <string name="settings_about">אודות AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">לוגו התחנה</string>
+    <string name="accessibility_station_logo">לוגו תחנת הרדיו</string>
     <string name="accessibility_favorite_selected">מועדף, נבחר</string>
     <string name="accessibility_favorite_not_selected">מועדף, לא נבחר</string>
     <string name="accessibility_category_icon">סמל קטגוריה</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">הגדר</string>
     <string name="accessibility_close">סגור</string>
     <string name="accessibility_add_filter">הוסף מסנן</string>
-    <string name="accessibility_station_options">אפשרויות תחנה</string>
+    <string name="accessibility_station_options">אפשרויות תחנת הרדיו</string>
     <string name="not_applicable">לא רלוונטי</string>
     <string name="accessibility_station_description">תחנה: %1$s, שפה: %2$s, תגיות: %3$s</string>
 
     <string name="error_no_file_manager">לא הצליח למצוא מנהל קבצי מערכת. אנא ודא שסייר קבצים מותקן ומופעל.</string>
     <string name="error_no_browser">לא הצליח למצוא דפדפן אינטרנט. אנא התקן דפדפן כדי לפתוח את הקישור הזה.</string>
-    <string name="error_no_homepage">אין דף בית זמין עבור תחנה זו</string>
-    <string name="tab_custom_stations">מִנְהָג</string>
-    <string name="action_add_custom">הוסף תחנה מותאמת אישית</string>
-    <string name="station_name">שם התחנה</string>
+    <string name="error_no_homepage">אין דף בית זמין עבור תחנת רדיו זו</string>
+    <string name="tab_custom_stations">מותאם אישית</string>
+    <string name="action_add_custom">הוסף תחנת רדיו מותאמת אישית</string>
+    <string name="station_name">שם תחנת הרדיו</string>
     <string name="stream_url">כתובת אתר של זרם</string>
-    <string name="favicon_url">כתובת אתר Favicon (אופציונלי)</string>
+    <string name="favicon_url">כתובת לוגו התחנה (Favicon)</string>
     <string name="select_image">בחר תמונה</string>
     <string name="error_invalid_url">אנא הזן כתובת אתר חוקית</string>
-    <string name="action_save">לְהַצִיל</string>
+    <string name="action_save">שמור</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">בקרות נגן מהירות</string>
-    <string name="widget_description_full">רשימת נגנים ותחנות</string>
+    <string name="widget_description_full">נגן ורשימת תחנות רדיו</string>
 
     <string name="settings_auto_db_update">סנכרון נתונים ברקע</string>
     <string name="settings_auto_db_update_desc">עדכון אוטומטי של מסד נתונים של תחנות באמצעות Radio-Browser API (מומלץ).</string>
-    <string name="settings_station_click_counter">מונה קליקים בתחנה</string>
-    <string name="settings_station_click_counter_desc">תמכו בסטטיסטיקות של דפדפן רדיו על ידי שיתוף אנונימי של אירועי משחק.</string>
-    <string name="settings_rate_app_github">נהנה מ-AMARadio?</string>
-    <string name="settings_rate_app_github_summary">השאר כוכב ב-GitHub! זה עוזר לאחרים לגלות את האפליקציה ותומך בפיתוח עתידי.</string>
+    <string name="settings_station_click_counter">מונה קליקים בתחנת הרדיו</string>
+    <string name="settings_station_click_counter_desc">תמכו בסטטיסטיקות של Radio-Browser על ידי שיתוף אנונימי של אירועי השמעה.</string>
 
-    <string name="settings_remove_notification_on_stop">הסר הודעה כאשר האפליקציה סגורה</string>
-    <string name="settings_remove_notification_on_stop_desc">סגור אוטומטית את הודעת המדיה כאשר האפליקציה סגורה מאפליקציות אחרונות</string>
+    <string name="settings_remove_notification_on_stop">הסר הודעה בעת עצירה</string>
+    <string name="settings_remove_notification_on_stop_desc">סגור אוטומטית את הודעת המדיה כאשר ההשמעה נעצרת</string>
     <string name="settings_auto_resume_audio_focus">המשך לאחר אובדן מיקוד השמע</string>
     <string name="settings_auto_resume_audio_focus_desc">המשך הפעלה אוטומטית לאחר הפסקת שיחות טלפון, אזעקות או שמע אחר</string>
+
+    <string name="settings_backup_restore">גיבוי ושחזור</string>
+    <string name="settings_export_backup">צור גיבוי מלא (ZIP)</string>
+    <string name="settings_export_backup_desc">שומר את כל המועדפים, התחנות המותאמות אישית והסמלים בקובץ ZIP אחד</string>
+    <string name="settings_import_backup">שחזר גיבוי (ZIP)</string>
+    <string name="settings_import_backup_desc">משחזר מועדפים ותחנות מותאמות אישית מקובץ גיבוי ZIP</string>
+    <string name="backup_export_success">הגיבוי נשמר בהצלחה</string>
+    <string name="backup_export_error">שמירת הגיבוי נכשלה</string>
+    <string name="backup_import_success">הגיבוי שוחזר בהצלחה</string>
+    <string name="backup_import_error">שחזור הגיבוי נכשל</string>
+
+    <string name="database_summary_title">מסד נתונים מקומי</string>
+    <string name="database_total_stations">סה\"כ תחנות רדיו</string>
+    <string name="database_last_sync">עדכון אחרון</string>
+    <string name="database_update_now">עדכן את מסד הנתונים עכשיו</string>
+    <string name="database_full_update">עדכן את מסד הנתונים</string>
+    <string name="database_syncing">מסנכרן…</string>
+    <string name="database_downloading">מוריד…</string>
+    <string name="database_stations_loaded">%1$s תחנות רדיו</string>
+    <string name="database_sync_channel_name">סנכרון מסד נתוני תחנות הרדיו</string>
+    <string name="database_sync_success">עדכון מסד נתוני התחנות הושלם בהצלחה</string>
+    <string name="database_error_no_connection">אין חיבור לאינטרנט</string>
+    <string name="database_error_no_space">אין מספיק מקום פנוי בזיכרון</string>
+    <string name="database_error_failed">עדכון מסד הנתונים נכשל</string>
+
+    <string name="settings_disable_battery_optimization_desc">כדי להמשיך בהשמעה כשהמסך כבוי, הגדר את שימוש הסוללה ל-\'ללא הגבלה\'.</string>
+    <string name="battery_opt_open_settings">פתח הגדרות</string>
+    <string name="battery_opt_later">מאוחר יותר</string>
 </resources>

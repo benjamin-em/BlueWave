@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Bina Suapan Stesen Radio Tersuai Anda</string>
     <string name="filter_empty_desc">Cipta paparan diperibadikan dengan menggabungkan pelbagai kriteria. Anda boleh mengecilkan carian anda menggunakan:</string>
     <string name="filter_empty_filter_by">Tapis mengikut</string>
-    <string name="filter_empty_filter_desc">Negara, Nama Stesen, Tag, atau Bahasa</string>
+    <string name="filter_empty_filter_desc">Negara, Nama Stesen Radio, Tag, atau Bahasa</string>
     <string name="filter_empty_sort_by">Susun mengikut</string>
     <string name="filter_empty_sort_desc">Klik, Abjad, Undian, atau Perubahan Terakhir</string>
     <string name="filter_empty_hint">Taip nama dalam medan di atas untuk menyimpan paparan ini!</string>
-    <string name="error_station_load">Tidak dapat menyambung ke stesen</string>
-    <string name="error_list_update">Tidak dapat menyambung ke pelayan radio browser</string>
+    <string name="error_station_load">Tidak dapat menyambung ke stesen radio</string>
+    <string name="error_list_update">Tidak dapat menyambung ke pelayan Radio-Browser</string>
 
     <string name="error_no_connection">Tiada sambungan internet tersedia.</string>
     <string name="warning_volume_zero">Kelantangan berada pada tahap sifar. Anda mungkin tidak mendengar apa-apa.</string>
 
-    <string name="share_action">Kongsi pautan stesen dengan…</string>
+    <string name="share_action">Kongsi pautan stesen radio dengan…</string>
 
-    <string name="nav_item_stations">Stesen</string>
+    <string name="nav_item_stations">Stesen Radio</string>
     <string name="nav_item_starred">Kegemaran</string>
     <string name="nav_item_history">Sejarah</string>
     <string name="nav_item_settings">Tetapan</string>
 
-    <string name="about_text">AMARadio adalah 100% bebas iklan dan memfokuskan privasi.\n\nSaya pada asalnya membangunkan aplikasi ini untuk ibu saya bagi memberikan pengalaman radio yang ringkas dan jujur tanpa iklan atau penjejakan yang menjengkelkan. Itulah sebabnya AMARadio akan sentiasa bebas daripada iklan – ini adalah janji kepada beliau, yang dikongsi dengan anda semua.\n\nProjek ini adalah fork daripada https://github.com/segler-alex/RadioDroid yang cemerlang. Keseluruhan pangkalan kod telah dipindahkan daripada Java ke Kotlin untuk memastikan aplikasi kekal moden dan serasi dengan versi Android masa hadapan.\n\nKod sumber tersedia di: https://github.com/ounben/AMARadio\n\nAplikasi ini menggunakan direktori stesen radio percuma di https://www.radio-browser.info .\nSesiapa sahaja boleh menambah stesen ke dalamnya. Ia berfungsi seperti wiki untuk stesen radio dalam talian.\n\nHubungi: ben@ounben.com\n\nPenjejak pepijat: https://github.com/ounben/AMARadio/issues\n\nJika anda menyukai perisian ini dan ingin membantu, sila hantarkan e-mel kepada saya.\nJuga idea untuk ciri baharu sentiasa dihargai!\n\nAplikasi ini adalah perisian bebas, dilesenkan di bawah GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio adalah 100% bebas iklan dan memfokuskan privasi.\n\nSaya pada asalnya membangunkan aplikasi ini untuk ibu saya bagi memberikan pengalaman radio yang ringkas dan jujur tanpa iklan atau penjejakan yang menjengkelkan. Itulah sebabnya AMARadio akan sentiasa bebas daripada iklan – ini adalah janji kepada beliau, yang dikongsi dengan anda semua.\n\nProjek ini adalah fork daripada RadioDroid. Keseluruhan pangkalan kod telah dipindahkan daripada Java ke Kotlin untuk memastikan aplikasi kekal moden dan serasi dengan versi Android masa hadapan.\n\nKod sumber tersedia di: https://github.com/ounben/AMARadio\n\nAplikasi ini menggunakan direktori stesen radio percuma di https://www.radio-browser.info .\nSesiapa sahaja boleh menambah stesen ke dalamnya. Ia berfungsi seperti wiki untuk stesen radio dalam talian.\n\nHubungi: ben@ounben.com\n\nPenjejak pepijat: https://github.com/ounben/AMARadio/issues\n\nJika anda menyukai perisian ini dan ingin membantu, sila hantarkan e-mel kepada saya.\nJuga idea untuk ciri baharu sentiasa dihargai!\n\nAplikasi ini adalah perisian bebas, dilesenkan di bawah GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Versi: %1$s</string>
     <string name="detail_star">Tambah ke kegemaran</string>
     <string name="detail_unstar">Buang daripada kegemaran</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Gelap</string>
     <string name="theme_system">Ikut sistem</string>
     <string name="settings_compact_style">Mod kompak</string>
-    <string name="settings_compact_style_desc_off">Ikon besar digunakan dengan butiran stesen</string>
-    <string name="settings_compact_style_desc_on">Ikon kecil digunakan tanpa butiran stesen</string>
+    <string name="settings_compact_style_desc_off">Ikon besar digunakan dengan butiran stesen radio</string>
+    <string name="settings_compact_style_desc_on">Ikon kecil digunakan tanpa butiran stesen radio</string>
     <string name="settings_bottom_navigation">Navigasi bawah</string>
     <string name="settings_ui_scale">Penskalaan UI</string>
     <string name="settings_language">Bahasa</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Tag yang jarang digunakan tidak akan ditunjukkan</string>
     <string name="settings_single_use_tags_desc_on">Tag yang jarang digunakan akan ditunjukkan</string>
 
-    <string name="settings_show_broken">Stesen yang rosak</string>
-    <string name="settings_show_broken_on">Tunjukkan stesen yang rosak dalam senarai</string>
-    <string name="settings_show_broken_off">Jangan tunjukkan stesen yang rosak dalam senarai</string>
+    <string name="settings_show_broken">Stesen radio yang rosak</string>
+    <string name="settings_show_broken_on">Tunjukkan stesen radio yang rosak dalam senarai</string>
+    <string name="settings_show_broken_off">Jangan tunjukkan stesen radio yang rosak dalam senarai</string>
 
     <string name="settings_startup_behaviour">Gelagat Mula</string>
     <string name="action_grid_view">Paparan Grid</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Tindakan mula</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Tunjukkan semua stesen</string>
+    <string name="startup_show_all_stations">Tunjukkan semua stesen radio</string>
     <string name="startup_show_favorites">Tunjukkan kegemaran</string>
     <string name="startup_show_history">Tunjukkan sejarah</string>
     <string name="startup_show_last_view">Paparan terakhir</string>
 
-    <string name="settings_load_icons">Tunjukkan ikon stesen</string>
+    <string name="settings_load_icons">Tunjukkan ikon stesen radio</string>
     <string name="settings_load_icons_on">Ikon akan dimuat turun</string>
     <string name="settings_load_icons_off">Ikon tidak akan dimuat turun</string>
 
     <string name="settings_auto_favorite">Kegemaran automatik</string>
-    <string name="settings_auto_favorite_on">Tambah stesen secara automatik ke kegemaran apabila dimainkan</string>
-    <string name="settings_auto_favorite_off">Jangan tambah stesen secara automatik ke kegemaran apabila dimainkan</string>
+    <string name="settings_auto_favorite_on">Tambah stesen radio secara automatik ke kegemaran apabila dimainkan</string>
+    <string name="settings_auto_favorite_off">Jangan tambah stesen radio secara automatik ke kegemaran apabila dimainkan</string>
 
     <string name="settings_play">Pemain</string>
     <string name="settings_auto_play_on_startup">Main automatik</string>
-    <string name="settings_auto_play_on_startup_on">Main stesen terakhir semasa mula</string>
-    <string name="settings_auto_play_on_startup_off">Jangan main stesen terakhir semasa mula</string>
+    <string name="settings_auto_play_on_startup_on">Main stesen radio terakhir semasa mula</string>
+    <string name="settings_auto_play_on_startup_off">Jangan main stesen radio terakhir semasa mula</string>
     <string name="settings_auto_off_on_startup">Berhenti automatik</string>
     <string name="settings_auto_off_on_startup_on">Gunakan pemasa henti automatik dengan main automatik</string>
     <string name="settings_auto_off_on_startup_off">Jangan gunakan pemasa henti automatik dengan main automatik</string>
     <string name="settings_auto_off_sleep_timer">Pemasa henti automatik</string>
     <string name="settings_auto_off_sleep_timer_desc">Berhenti bermain selepas %1$s minit</string>
     <string name="settings_play_external">Dayakan pemain luaran</string>
-    <string name="settings_play_external_desc_on">Main stesen dengan pemain luaran</string>
-    <string name="settings_play_external_desc_off">Main stesen dengan AMARadio</string>
+    <string name="settings_play_external_desc_on">Main stesen radio dengan pemain luaran</string>
+    <string name="settings_play_external_desc_off">Main stesen radio dengan AMARadio</string>
     <string name="settings_equalizer">Penyama</string>
 
     <string name="settings_connectivity">Ketersambungan</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Dijeda</string>
     <string name="notify_metered_connection">Sambungan bermeter</string>
 
-    <string name="notify_starred">Stesen telah ditambahkan ke kegemaran</string>
-    <string name="notify_autostarred">Stesen telah ditambahkan secara automatik ke kegemaran</string>
-    <string name="notify_unstarred">Stesen telah dibuang daripada kegemaran</string>
+    <string name="notify_starred">Stesen radio telah ditambahkan ke kegemaran</string>
+    <string name="notify_autostarred">Stesen radio telah ditambahkan secara automatik ke kegemaran</string>
+    <string name="notify_unstarred">Stesen radio telah dibuang daripada kegemaran</string>
     <string name="notify_deleted_favorites">Kegemaran telah dipadamkan</string>
     <string name="notify_deleted_history">Sejarah telah dipadamkan</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Sila pilih pemain</string>
     <string name="alert_select_player_name">Nama</string>
-    <string name="hostname">Nama hos</string>
-    <string name="port">Port</string>
+    <string name="hostname">Alamat Pelayan</string>
+    <string name="port">Port Rangkaian</string>
 
     <string name="alert_press_back_to_exit">Tekan kembali sekali lagi untuk keluar</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Main dalam pemain luaran</string>
     <string name="action_choose_external_player">Pilih pemain luaran</string>
 
-    <string name="settings_disable_battery_optimization">Pengoptimuman bateri</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Pengoptimuman bateri diabaikan, AMARadio harus sentiasa dapat memperoleh semula fokus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Pengoptimuman bateri diaktifkan, AMARadio mungkin tidak dapat memperoleh semula fokus jika berada di latar belakang.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Main Balik Latar Belakang</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Lain-lain</string>
     <string name="settings_rate_app">Nilai AMARadio</string>
     <string name="settings_rate_app_summary">Jika anda suka aplikasi ini, sila tinggalkan ulasan di Play Store!</string>
+    <string name="settings_rate_app_github">Menikmati AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Tinggalkan bintang di GitHub! Ia membantu orang lain menemui apl dan menyokong pembangunan masa hadapan.</string>
     <string name="settings_statistics">Statistik</string>
     <string name="settings_about">Mengenai AMARadio</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logo stesen</string>
+    <string name="accessibility_station_logo">Logo stesen radio</string>
     <string name="accessibility_favorite_selected">Kegemaran, dipilih</string>
     <string name="accessibility_favorite_not_selected">Kegemaran, tidak dipilih</string>
     <string name="accessibility_category_icon">Ikon kategori</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">Konfigur</string>
     <string name="accessibility_close">Tutup</string>
     <string name="accessibility_add_filter">Tambah penapis</string>
-    <string name="accessibility_station_options">Pilihan stesen</string>
+    <string name="accessibility_station_options">Pilihan stesen radio</string>
     <string name="not_applicable">t/a</string>
     <string name="accessibility_station_description">Stesen: %1$s, Bahasa: %2$s, Tag: %3$s</string>
 
     <string name="error_no_file_manager">Tidak dapat mencari pengurus fail sistem. Sila pastikan penjelajah fail dipasang dan didayakan.</string>
     <string name="error_no_browser">Tidak dapat mencari pelayar web. Sila pasang pelayar untuk membuka pautan ini.</string>
-    <string name="error_no_homepage">Tiada halaman utama tersedia untuk stesen ini</string>
-    <string name="tab_custom_stations">Adat</string>
-    <string name="action_add_custom">Tambah Stesen Tersuai</string>
-    <string name="station_name">Nama Stesen</string>
+    <string name="error_no_homepage">Tiada halaman utama tersedia untuk stesen radio ini</string>
+    <string name="tab_custom_stations">Tersuai</string>
+    <string name="action_add_custom">Tambah stesen radio tersuai</string>
+    <string name="station_name">Nama stesen radio</string>
     <string name="stream_url">URL strim</string>
-    <string name="favicon_url">URL Favicon (pilihan)</string>
+    <string name="favicon_url">URL Logo Stesen (Favicon)</string>
     <string name="select_image">Pilih Imej</string>
     <string name="error_invalid_url">Sila masukkan URL yang sah</string>
-    <string name="action_save">Jimat</string>
+    <string name="action_save">Simpan</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Kawalan pemain pantas</string>
-    <string name="widget_description_full">Senarai pemain dan stesen</string>
+    <string name="widget_description_full">Pemain dan senarai stesen radio</string>
 
     <string name="settings_auto_db_update">Penyegerakan Data Latar Belakang</string>
     <string name="settings_auto_db_update_desc">Autokemas kini pangkalan data stesen melalui Radio-Browser API (disyorkan).</string>
-    <string name="settings_station_click_counter">Kaunter klik stesen</string>
-    <string name="settings_station_click_counter_desc">Sokong statistik Pelayar Radio dengan berkongsi acara main secara tanpa nama.</string>
-    <string name="settings_rate_app_github">Menikmati AMRadio?</string>
-    <string name="settings_rate_app_github_summary">Tinggalkan bintang di GitHub! Ia membantu orang lain menemui apl dan menyokong pembangunan masa hadapan.</string>
+    <string name="settings_station_click_counter">Kaunter klik stesen radio</string>
+    <string name="settings_station_click_counter_desc">Sokong statistik Radio-Browser dengan berkongsi acara main balik secara tanpa nama.</string>
 
-    <string name="settings_remove_notification_on_stop">Alih keluar pemberitahuan apabila apl ditutup</string>
-    <string name="settings_remove_notification_on_stop_desc">Ketepikan pemberitahuan media secara automatik apabila apl ditutup daripada apl terbaharu</string>
+    <string name="settings_remove_notification_on_stop">Alih keluar pemberitahuan apabila dihentikan</string>
+    <string name="settings_remove_notification_on_stop_desc">Alih keluar pemberitahuan media secara automatik apabila main balik dihentikan</string>
     <string name="settings_auto_resume_audio_focus">Sambung semula selepas kehilangan fokus audio</string>
     <string name="settings_auto_resume_audio_focus_desc">Sambung semula main balik secara automatik selepas panggilan telefon, penggera atau audio berhenti</string>
+
+    <string name="settings_backup_restore">Sandaran dan Pulihkan</string>
+    <string name="settings_export_backup">Cipta Sandaran Penuh (ZIP)</string>
+    <string name="settings_export_backup_desc">Menyimpan semua kegemaran, stesen tersuai dan ikon dalam fail ZIP</string>
+    <string name="settings_import_backup">Pulihkan Sandaran (ZIP)</string>
+    <string name="settings_import_backup_desc">Memulihkan kegemaran dan stesen tersuai daripada fail sandaran ZIP</string>
+    <string name="backup_export_success">Sandaran berjaya disimpan</string>
+    <string name="backup_export_error">Gagal menyimpan sandaran</string>
+    <string name="backup_import_success">Sandaran berjaya dipulihkan</string>
+    <string name="backup_import_error">Gagal memulihkan sandaran</string>
+
+    <string name="database_summary_title">Pangkalan Data Tempatan</string>
+    <string name="database_total_stations">Jumlah Stesen Radio</string>
+    <string name="database_last_sync">Kemas Kini Terakhir</string>
+    <string name="database_update_now">Kemas Kini Pangkalan Data Sekarang</string>
+    <string name="database_full_update">Kemas Kini Pangkalan Data</string>
+    <string name="database_syncing">Menyegerak…</string>
+    <string name="database_downloading">Memuat turun…</string>
+    <string name="database_stations_loaded">%1$s stesen radio</string>
+    <string name="database_sync_channel_name">Penyegerakan Pangkalan Data Stesen Radio</string>
+    <string name="database_sync_success">Kemas kini pangkalan data stesen berjaya diselesaikan</string>
+    <string name="database_error_no_connection">Tiada sambungan internet</string>
+    <string name="database_error_no_space">Ruang storan tidak mencukupi</string>
+    <string name="database_error_failed">Kemas kini pangkalan data gagal</string>
+
+    <string name="settings_disable_battery_optimization_desc">Untuk meneruskan main balik semasa skrin dimatikan, tetapkan penggunaan bateri kepada \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Buka Tetapan</string>
+    <string name="battery_opt_later">Kemudian</string>
 </resources>

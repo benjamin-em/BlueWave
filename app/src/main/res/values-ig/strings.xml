@@ -1,3 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="detail_name">Aha</string>
+    <string name="detail_tags">Taggị</string>
+    <string name="detail_country">Ala</string>
+    <string name="detail_create_shortcut">Têmụ na ihuenyo mbụ</string>
+    <string name="detail_language">Asụsụ</string>
+    <string name="detail_weblink">Njikọ webụ</string>
+    <string name="detail_visit_website">@string/action_station_visit_website</string>
+    <string name="detail_play">Kpọọ</string>
+    <string name="detail_pause">Gụfụ obere oge</string>
+    <string name="detail_stop">Mụsịrị</string>
+    <string name="detail_share">Kekọrịta</string>
+    <string name="detail_play_in_AMARadio">Kpọọ na AMARadio</string>
+
+    <string name="action_links">Njikọ gị</string>
+    <string name="action_homepage">Ihuenyo ụlọ</string>
+    <string name="action_favorite">Ihe ka mma</string>
+    <string name="action_starred_add">Têmụ na ihe kacha mma</string>
+    <string name="action_starred_remove">Wepụ na ihe kacha mma</string>
+
+    <string name="action_station_visit_website">Gaa na saịtị webụ</string>
+    <string name="action_station_copy_stream_url">Kopịrị URL iyi ụda</string>
+    <string name="action_station_share">Kekọrịta</string>
+
+    <string name="action_local">Nke ala a</string>
+    <string name="action_skip_to_next">Nke na-abịa</string>
+    <string name="action_pause">Gụfụ obere oge</string>
+    <string name="action_skip_to_previous">Nke gara aga</string>
+    <string name="action_resume">Gaa n\'ihu</string>
+    <string name="action_stop">Mụsịrị</string>
+    <string name="action_search">Chọọ</string>
+    <string name="action_delete">Chụda</string>
+    <string name="action_delete_history">Gbuo akụkọ ihe mere eme</string>
+    <string name="action_delete_favorites">Gbuo ihe kacha mma niile</string>
+    <string name="action_delete_stream_history">Gbuo akụkọ ihe mere eme nke egwu</string>
+    <string name="action_ok">Ihe dị mma</string>
+    <string name="action_cancel">Kagbuo</string>
+    <string name="action_top_click">Nke kachasị pịa</string>
+    <string name="action_toggle_view">Gbanwee eleghara</string>
+    <string name="action_top_vote">Nke kachasị nhọrọ</string>
+    <string name="action_changed_lately">Gbanwere n\'oge na-adịbeghị anya</string>
+    <string name="action_currently_playing">Na-akpọ ugbu a</string>
+    <string name="action_tags">Taggị</string>
+    <string name="action_countries">Abalị/Ógbè</string>
+    <string name="action_languages">Asụsụ</string>
+    <string name="action_edit">Gbanwee</string>
+    <string name="action_copy_info">Kopịrị ozi</string>
+    <string name="action_rename_tab">Kpọgharịa aha taabụ</string>
+
+    <string name="error_filter_name_required">Biko buo ụzọ tinye aha maka taabụ nzacha a</string>
+    <string name="confirm_delete_filter_tab">Ị gbaala mbọ na ị chọrọ ihichapụ nzacha \"%1$s\"?</string>
+    <string name="filter_empty_title">Meepụta nri redio nke gị</string>
+    <string name="filter_empty_desc">Meepụta eleghara nke gị site na ijikọta ụkpụrụ dị iche iche. Ị nwere ike ime ka nchọpụta gị kpaa oke site na:</string>
+    <string name="filter_empty_filter_by">Zacha site na:</string>
+    <string name="filter_empty_filter_desc">Ala, Aha ụlọ redio, Taggị ma ọ bu Asụsụ</string>
+    <string name="filter_empty_sort_by">Sụgharia site na:</string>
+    <string name="filter_empty_sort_desc">Mpịa, Mkpụrụ edemede, Nhọrọ ma ọ bu Mgbanwe ikpeazụ</string>
+    <string name="filter_empty_hint">Pịnye aha n\'ụdị dị n\'elu ka ị chekwaa eleghara a!</string>
+
+    <string name="error_station_load">A pụghị ijikọ na ụlọ redio a</string>
+    <string name="error_list_update">A pụghị ijikọ na sava Radio-Browser</string>
+
+    <string name="error_no_connection">Babu njikọ intanetị dị oy</string>
+    <string name="warning_volume_zero">Ogo ụda dị na efu. Ị nwere ike ịghara ịnụ ihe arụ.</string>
+
+    <string name="share_action">Kekọrịta njikọ ụlọ redio na…</string>
+
+    <string name="nav_item_stations">Ụlọ Redio</string>
+    <string name="nav_item_starred">Mafi so</string>
+    <string name="nav_item_history">Akụkọ</string>
+    <string name="nav_item_settings">Nchịkọta</string>
+
+    <string name="about_text">AMARadio bụ 100% n\'efu site na mgbasa ozi na-eleba anya na nzuzo.\n\nM malitere imepụta ngwa a maka nne m iji nye ya ahụmịhe redio dị mfe ma doo anya na-enweghị mgbasa ozi na-ewe iwe ma ọ bụ nsuso. Wueru AMARadio ga-anọ n\'efu site na mgbasa ozi mgbe niile – nke a bụ nkwa nye ya, nke m soro gị niile kerịta.\n\nEbe a bụ gị fork nke egwu doro anya RadioDroid. A kpaliri koodu niile site na Java gaa na Kotlin iji hụ na ngwa a dị ọhụrụ ma dakọtara na ụdị Android n\'ọdịnihu.\n\nKoodu mbụ dị na: https://github.com/ounben/AMARadio\n\nNgwa a na-eji ndekọ ụlọ redio n\'efu na https://www.radio-browser.info .\nOnye ọ bụla nwere ike itinye ụlọ redio. Yana-aiki dị ka wiki maka ụlọ redio n\'ịntanetị.\n\nMmekọrịta: ben@ounben.com\n\nIhe matsaloli: https://github.com/ounben/AMARadio/issues\n\nỌ bụrụ na ị nwere mmasị na ngwa ngwa ma chọọ inye aka, zillere m ozi e-mail.\nA na-anabata echiche maka njirimara ọhụrụ mgbe niile!\n\nNgwa a bụ ngwanrọ n\'efu n\'okpuru GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_version">Ụdị: %1$s</string>
+    <string name="detail_star">Têmụ na ihe kacha mma</string>
+    <string name="detail_unstar">Wepụ na ihe kacha mma</string>
+    <string name="detail_play_in_external_player">@string/action_play_in_external</string>
+    <string name="progress_loading">Na-ebunye…</string>
+
+    <string name="sleep_timer" formatted="true">Oge ụra: %1$02d:%2$02d</string>
+    <string name="sleep_timer_title">Mụsịrị ịkpọ egwu mgbe oge a họrsọchara gachara</string>
+    <string name="sleep_timer_apply">Jiri a</string>
+    <string name="sleep_timer_clear">Gbuo</string>
+    <string name="nav_item_add_sleep">Oge ụra</string>
+
+    <string name="nav_item_save_playlist">Sụgharia ihe kacha mma gaa na ndepụta egwu</string>
+    <string name="nav_item_load_playlist">Bute ihe kacha mma site na ndepụta egwu</string>
+    <string name="nav_item_save_history_playlist">Sụgharia akụkọ gaa na ndepụta egwu</string>
+    <string name="confirm_overwrite_file">Gbanwee faịlụ a?</string>
+    <string name="dialog_hint_file_name">Tinye aha faịlụ</string>
+    <string name="error_empty_field">Ebe a bụ ihe dị mkpa</string>
+    <string name="error_invalid_file_name">Aha faịlụ adịghị mma</string>
+    <string name="label_button_cancel">Kagbuo</string>
+    <string name="label_button_overwrite">Gbanwee</string>
+    <string name="notify_load_playlist_nok">A pụghị ibute site na %1$s&#47;%2$s</string>
+    <string name="notify_load_playlist_now">Na-ebute site na %1$s&#47;%2$s, biko chere obere oge.</string>
+    <string name="notify_load_playlist_ok">Anabatara ụlọ redio %1$d site na %2$s&#47;%3$s</string>
+    <string name="notify_save_playlist_nok">A pụghị isụgharia gaa na %1$s&#47;%2$s</string>
+    <string name="notify_save_playlist_now">Na-esụgharia gaa na %1$s&#47;%2$s, biko chere obere oge.</string>
+    <string name="notify_save_playlist_ok">Anọchitere gaa na %1$s&#47;%2$s nke ọma</string>
+    <string name="notify_sync_list_deleted_entries">%1$d n\'ime %2$d ụlọ redio na ndepụta a adịghị na sava</string>
+
+    <string name="searchpreference_clear_history">Gbuo akụkọ</string>
+    <string name="searchpreference_no_results">Babu ihe a hụrụ</string>
+    <string name="searchpreference_search">Chọọ…</string>
+    <string name="settings_appearance">Ihuenyo</string>
+    <string name="settings_theme_selection_title">Agba</string>
+    <string name="theme_light">Acha ọcha</string>
+    <string name="theme_dark">Acha ojii</string>
+    <string name="theme_system">Soro sistemụ</string>
+    <string name="settings_compact_style">Ụdị obere</string>
+    <string name="settings_compact_style_desc_off">Nnukwu akara nwere ozi zuru ezu</string>
+    <string name="settings_compact_style_desc_on">Obere akara na-enweghị ozi zuru ezu</string>
+    <string name="settings_bottom_navigation">Nchịkọta ala</string>
+    <string name="settings_ui_scale">Oke ikike ihuenyo</string>
+    <string name="settings_language">Asụsụ</string>
+    <string name="ui_scale_compact">Obere</string>
+    <string name="ui_scale_standard">Nke sistemụ</string>
+    <string name="ui_scale_large">Nnukwu</string>
+    <string name="ui_scale_extra_large">Nke kachasị nnukwu</string>
+
+    <string name="settings_interaction">Mmekọrịta</string>
+    <string name="settings_single_use_tags">Nuna taggị na-adịghị n\'amamihe</string>
+    <string name="settings_single_use_tags_desc_off">Taggị na-adịghị n\'amamihe agaghị apụta</string>
+    <string name="settings_single_use_tags_desc_on">Taggị na-adịghị n\'amamihe ga-apụta</string>
+
+    <string name="settings_show_broken">Ụlọ redio na-anaghị viri aiki</string>
+    <string name="settings_show_broken_on">Nuna ụlọ redio na-anaghị viri aiki na ndepụta</string>
+    <string name="settings_show_broken_off">Musịrị nuna ụlọ redio na-anaghị viri aiki na ndepụta</string>
+
+    <string name="settings_startup_behaviour">Ihe na-eme na mbido</string>
+    <string name="action_grid_view">Eleghara Grid</string>
+    <string name="action_list_view">Eleghara List</string>
+
+    <string name="startup_action_title">Ihe a ga-eme na mbido</string>
+    <string name="startup_action_title_desc">%s</string>
+    <string name="startup_show_all_stations">Nuna ụlọ redio niile</string>
+    <string name="startup_show_favorites">Nuna ihe kacha mma</string>
+    <string name="startup_show_history">Nuna akụkọ</string>
+    <string name="startup_show_last_view">Eleghara ikpeazụ</string>
+
+    <string name="settings_load_icons">Nuna akara ụlọ redio</string>
+    <string name="settings_load_icons_on">A ga-ebudata akara niile</string>
+    <string name="settings_load_icons_off">A gaghị ebudata akara niile</string>
+
+    <string name="settings_auto_favorite">Ihe kacha mma na-akpaghị aka</string>
+    <string name="settings_auto_favorite_on">Tinye ụlọ redio na ihe kacha mma mgbe na-akpọ egwu</string>
+    <string name="settings_auto_favorite_off">Musịrị itinye na ihe kacha mma mgbe na-akpọ egwu</string>
+
+    <string name="settings_play">Igwe akpọ egwu</string>
+    <string name="settings_auto_play_on_startup">Auto-play</string>
+    <string name="settings_auto_play_on_startup_on">Kpọọ ụlọ redio ikpeazụ mgbe amalitere</string>
+    <string name="settings_auto_play_on_startup_off">Musịrị kpọọ ụlọ redio ikpeazụ mgbe amalitere</string>
+    <string name="settings_auto_off_on_startup">Auto-stop</string>
+    <string name="settings_auto_off_on_startup_on">Jiri agogo auto-stop mee ihe na auto-play</string>
+    <string name="settings_auto_off_on_startup_off">Musịrị jiri agogo auto-stop mee ihe na auto-play</string>
+    <string name="settings_auto_off_sleep_timer">Agogo auto-stop</string>
+    <string name="settings_auto_off_sleep_timer_desc">Mụsịrị ịkpọ egwu mgbe minit %1$s gachara</string>
+    <string name="settings_play_external">Kpọọ igwe akpọ egwu nke mpụga</string>
+    <string name="settings_play_external_desc_on">Kpọọ ụlọ redio na igwe mpụga</string>
+    <string name="settings_play_external_desc_off">Kpọọ ụlọ redio na AMARadio</string>
+    <string name="settings_equalizer">Equalizer</string>
+
+    <string name="settings_connectivity">Njikọ</string>
+    <string name="settings_connect_timeout">Oge njikọ agwụla</string>
+    <string name="settings_read_timeout">Oge igụ ụda agwụla</string>
+    <string name="settings_resume_timeout">Oge ịlaghachi agwụla</string>
+    <string name="settings_retry_timeout">Oge ịnwale mgbe e mesịrị agwụla</string>
+    <string name="settings_retry_delay">Jinkirin sake haɗawa</string>
+    <string name="settings_proxy">Proxy</string>
+    <string name="settings_proxy_login">Aha mai amfani</string>
+    <string name="settings_proxy_password">Lambar sirri</string>
+    <string name="settings_proxy_action_test">Nwalee</string>
+    <string name="settings_proxy_working">Ejikọtara na %s nke ọma</string>
+    <string name="settings_proxy_not_working">A pụghị ijikọ na %1$s\n%2$s</string>
+    <string name="settings_proxy_invalid">Nchịkọta proxy gị adịghị mma</string>
+    <string name="ignore_proxy_settings_invalid">A legharındara nchịkọta proxy na-adịghị mma</string>
+    <string name="settings_seconds_format">Sekọnd %d</string>
+    <string name="settings_milliseconds_format">Milisekọnd %d</string>
+
+    <string name="settings_pause_when_noisy">Gụfụ obere oge mgbe achụpụrụ ihe ntntị</string>
+
+    <string name="settings_auto_resume_do_not_resume">Musịrị gaa n\'ihu</string>
+
+    <string name="settings_auto_resume_on_wired_headset_connected">Gaa n\'ihu mgbe emebere njikọ igwe</string>
+    <string name="settings_auto_resume_on_wired_headset_connected_on">Gaa n\'ihu mgbe atinyere ihe ntntị igwe</string>
+
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected">Gaa n\'ihu mgbe emebere njikọ Bluetooth</string>
+    <string name="settings_auto_resume_on_bluetooth_a2dp_connected_on">Gaa n\'ihu mgbe ejikọtara Bluetooth A2DP</string>
+
+    <string name="settings_auto_resume_on_any_connected">Gaa n\'ihu na njikọ ọ bụla</string>
+
+    <string name="settings_warn_no_wifi">Gargadi na rashin Wi-Fi</string>
+    <string name="settings_warn_no_wifi_on">Dọọ aka ná ntị mgbe a na-akpọ egwu na-enweghị Wi-Fi</string>
+    <string name="settings_warn_no_wifi_off">Musịrị dọọ aka ná ntị mgbe na-enweghị Wi-Fi</string>
+
+    <string name="notify_pre_play">Na-ejikọ</string>
+    <string name="notify_play">Na-akpọ egwu</string>
+    <string name="notify_paused">A gụfụrụ obere oge</string>
+    <string name="notify_metered_connection">Njikọ intanetị nwere oke (Metered)</string>
+
+    <string name="notify_starred">Atinyere ụlọ redio na ihe kacha mma</string>
+    <string name="notify_autostarred">Atinyere ụlọ redio na ihe kacha mma na-akpaghị aka</string>
+    <string name="notify_unstarred">A wepụrụ ụlọ redio na ihe kacha mma</string>
+    <string name="notify_deleted_favorites">Agbuola ihe kacha mma niile</string>
+    <string name="notify_deleted_history">Agbuola akụkọ</string>
+
+    <string name="notify_open_link_failure">Enweghị ngwa a hụrụ iji meghee njikọ a</string>
+
+    <string name="notify_station_removed_from_list">Awepụrụ 1</string>
+    <string name="action_station_removed_from_list_undo">MBUAHA</string>
+
+    <string name="alert_delete_history">Ị gbaala mbọ na ị chọrọ ihichapụ akụkọ?</string>
+    <string name="alert_delete_favorites">Ị gbaala mbọ na ị chọrọ ihichapụ ihe kacha mma niile?</string>
+    <string name="yes">Eee</string>
+    <string name="no">Rara</string>
+
+    <string name="alert_select_player">Biko họrọ igwe akpọ egwu</string>
+    <string name="alert_select_player_name">Aha</string>
+    <string name="hostname">Seoladh an fhreastalaí (Hostname)</string>
+    <string name="port">Port líonra</string>
+
+    <string name="alert_press_back_to_exit">Pịa bọtịnụ azụ ọzọ ka ị pụọ</string>
+
+    <string name="error_stream_url">Nsogbu URL iyi ụda (Stream URL)</string>
+    <string name="error_caching_stream">Nsogbu nchekwa iyi ụda</string>
+    <string name="error_play_stream">A pụghị ịkpọ iyi ụda a</string>
+    <string name="error_stream_reconnect_timeout">A pụghị ijikọghachi na iyi ụda: oge agwụla</string>
+    <string name="warning_no_network_trying_resume">Babu njikọ intanetị. Na-anwalega ịlaghachi mgbe njikọ lọghachiri.</string>
+    <string name="giving_up_resume">Asụghara mbọ ịlaghachi na mpọ egwu</string>
+
+    <string name="error_grant_audiofocus">Sistemụ a ajụla arịrịọ maka ikike fuaime</string>
+
+    <string name="error_no_equalizer_found">Enweghị ngwa equalizer a hụrụ</string>
+
+    <string name="player_info_status">Ọnọdụ:&#160;</string>
+    <string name="player_info_status_stopped">amụsịrị</string>
+    <string name="player_info_status_playing">na-akpọ egwu</string>
+    <string name="player_info_transferred">Ozi e zigara: %1$s</string>
+
+    <string name="tab_player_art">Hoto na waƙa</string>
+    <string name="tab_player_info">Ozi</string>
+    <string name="tab_player_history">Akụkọ egwu niile</string>
+
+    <string name="station_detail_bitrate">%1$1d kbps</string>
+    <string name="station_detail_broken">ADỊGHỊ EME AỊKỊ</string>
+    <string name="station_detail_deleted_on_server">AGBUOLA</string>
+
+    <string name="station_details_clicks">Mpia %1$d</string>
+    <string name="station_details_votes">Nhọrọ %1$d</string>
+
+    <string name="image_button_disable">Kashe</string>
+    <string name="image_button_delete">Gbuo</string>
+    <string name="image_button_more">Mfe karị</string>
+    <string name="image_button_less">Obere karị</string>
+    <string name="image_button_repeat">Maimaita</string>
+    <string name="image_button_dont_repeat">Musịrị maimaita</string>
+    <string name="icon_click_trend_decreasing">Mmasị na-ada l\'ala</string>
+    <string name="icon_click_trend_increasing">Mmasị na-arị elu</string>
+    <string name="icon_click_trend_stable">Mmasị dị jụụ</string>
+
+    <string name="app_name">AMARadio</string>
+    <string name="ad_free_promise">100% N\'efu site na Mgbasa ozi &amp; Nzuzo</string>
+
+    <string name="action_play_in_external">Kpọọ na igwe mpụga</string>
+    <string name="action_choose_external_player">Họrọ igwe mpụga</string>
+
+    <string name="settings_disable_battery_optimization">Cigaba da kunne a baya</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
+    <string name="settings_other">Ihe ndị ọzọ</string>
+    <string name="settings_rate_app">Nye AMARadio ọkwa</string>
+    <string name="settings_rate_app_summary">Ọ bụrụ na ngwa a masịrị gị, biko hapụ eziokwu na Play Store!</string>
+    <string name="settings_rate_app_github">Gị nwere mmasị na AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Baraba kpakpando na GitHub! Yana-enyere ndị ọzọ aka ịchọpụta ngwa a.</string>
+    <string name="settings_statistics">Ndekọ ọnụ ọgụgụ</string>
+    <string name="settings_about">Gbasara AMARadio</string>
+
+    <string name="description_btn_skip_to_next">Gaa na nke na-abịa</string>
+    <string name="description_btn_skip_to_previous">Gaa na nke gara aga</string>
+
+    <string-array name="weekdays">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+
+    <string name="notify_stream_url_copied">Kopịrị URL iyi ụda nke ọma</string>
+    <string name="notify_track_info_copied">Kopịrị ozi egwu nke ọma</string>
+
+    <string-array name="actions_station_link">
+        <item>Gaa na saịtị webụ</item>
+        <item>Kopịrị URL iyi ụda</item>
+    </string-array>
+
+    <string name="alert_metered_connection_title">A hụrụ njikọ intanetị nwere oke</string>
+    <string name="alert_metered_connection_message">Njikọ nwere oke nwere ike iweta ego ọzọ, pịa \'OK\' ka ị gaa n\'ihu.</string>
+    <string name="nav_item_statistics">Ndekọ ọnụ ọgụgụ</string>
+    <string name="nav_item_about">Gbasara</string>
+    <string name="refresh">Nutawanye</string>
+    <string name="action_filter">Nzacha</string>
+    <string name="filter_country">Ala</string>
+    <string name="filter_tag">Taggị</string>
+    <string name="filter_language">Asụsụ</string>
+    <string name="filter_sort_by">Sụgharia site na</string>
+    <string name="filter_reverse">Maimaita ndepụta</string>
+    <string name="filter_apply">Jiri nzacha a</string>
+    <string name="sort_name">Aha</string>
+    <string name="sort_votes">Nhọrọ</string>
+    <string name="sort_clicks">Mpịa</string>
+    <string name="sort_lastchange">Mgbanwe ikpeazụ</string>
+    <string name="filter_select_country">Họrọ ala</string>
+    <string name="filter_select_language">Họrọ asụsụ</string>
+    <string name="filter_type_tag">Pịnye taggị…</string>
+    <string name="filter_tap_to_configure">Pịa ka ị hazie</string>
+
+    <string name="context_menu_share">@string/detail_share</string>
+    <string name="context_menu_visit_homepage">@string/action_station_visit_website</string>
+    <string name="context_menu_play_in_AMARadio">@string/detail_play_in_AMARadio</string>
+    <string name="context_menu_play_in_external_player">@string/action_play_in_external</string>
+    <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
+    <string name="context_menu_delete">@string/action_delete</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_station_logo">Akara ụlọ redio</string>
+    <string name="accessibility_favorite_selected">Ihe kacha mma, ahọpụtara</string>
+    <string name="accessibility_favorite_not_selected">Ihe kacha mma, ahọpụtaghị</string>
+    <string name="accessibility_category_icon">Akara rukuni</string>
+    <string name="accessibility_playing">Na-akpọ ugbu a</string>
+    <string name="accessibility_menu">Meghee menu</string>
+    <string name="accessibility_search_back">Mụsịrị nchọpụta</string>
+    <string name="accessibility_filter_reverse">Gbanwee usoro nhazi</string>
+    <string name="accessibility_clear_text">Gbuo rubutu</string>
+    <string name="accessibility_back">Koma baya</string>
+    <string name="accessibility_configure">Hazie</string>
+    <string name="accessibility_close">Mụsịrị</string>
+    <string name="accessibility_add_filter">Tinye nzacha</string>
+    <string name="accessibility_station_options">Zabin ụlọ redio</string>
+    <string name="not_applicable">Babu</string>
+    <string name="accessibility_station_description">Ụlọ redio: %1$s, Asụsụ: %2$s, Taggị: %3$s</string>
+
+    <string name="error_no_file_manager">A pụghị ihụ ngwa njikwa faịlụ. Biko hụ na atinyere explorer faịlụ.</string>
+    <string name="error_no_browser">A pụghị ihụ brabhsara webụ. Biko tinye brabhsara iji meghee njikọ a.</string>
+    <string name="error_no_homepage">Babu ihuenyo ụlọ maka ụlọ redio a</string>
+    <string name="tab_custom_stations">Nke gị</string>
+    <string name="action_add_custom">Tinye ụlboost redio nke gị</string>
+    <string name="station_name">Aha ụlọ redio</string>
+    <string name="stream_url">URL iyi ụda (Stream URL)</string>
+    <string name="favicon_url">URL akara ụlọ redio (Favicon)</string>
+    <string name="select_image">Họrọ foto</string>
+    <string name="error_invalid_url">Biko tinye URL ziri ezi</string>
+    <string name="action_save">Chekwaa</string>
+    <string name="widget_name_small">AMARadio Compact</string>
+    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_description_small">Mpempe aka kachasị ngwa ngwa</string>
+    <string name="widget_description_full">Igwe akpọ egwu na ndepụta ụlọ redio</string>
+
+    <string name="settings_auto_db_update">Mmekorịta data na azụ</string>
+    <string name="settings_auto_db_update_desc">Melite nchekwa data ụlọ redio ta atomatik site na Radio-Browser API (a na-atụ aro).</string>
+    <string name="settings_station_click_counter">Mita mpịa ụlọ redio</string>
+    <string name="settings_station_click_counter_desc">Nye nkwado na ndekọ ọnụ ọgụgụ Radio-Browser site na ịkekọrịta ihe omume mpọ egwu na-enweghị aha.</string>
+
+    <string name="settings_remove_notification_on_stop">Wepụ ozi mgbe amụsịrị</string>
+    <string name="settings_remove_notification_on_stop_desc">Wepụ ozi gbasara sauti mgbe amụsịrị ịkpọ egwu</string>
+    <string name="settings_auto_resume_audio_focus">Gaa n\'ihu mgbe emebere fuaime</string>
+    <string name="settings_auto_resume_audio_focus_desc">Gaa n\'ihu na mpọ egwu ta atomatik mgbe kọntaktị ekwentị, alarram ma ọ bụ nkwụsị fuaime ndị ọzogachara</string>
+
+    <string name="settings_backup_restore">Ajiya da maido da bayanai</string>
+    <string name="settings_export_backup">Ajiye dukkan bayanai (ZIP)</string>
+    <string name="settings_export_backup_desc">Yana adana duk abubuwan da aka fi so, gidajen rediyo na kanku da alamomi a cikin faifai ZIP</string>
+    <string name="settings_import_backup">Maido da bayanai daga ajiya (ZIP)</string>
+    <string name="settings_import_backup_desc">Yana maido da abubuwan da aka fi so da gidajen rediyo daga faifan ZIP</string>
+    <string name="backup_export_success">An adana ajiyar bayanai cikin nasara</string>
+    <string name="backup_export_error">An kasa adana ajiyar bayanai</string>
+    <string name="backup_import_success">An maido da ajiyar bayanai cikin nasara</string>
+    <string name="backup_import_error">An kasa maido da ajiyar bayanai</string>
+
+    <string name="database_summary_title">Rikodin bayanai na na\'ura</string>
+    <string name="database_total_stations">Jimlar gidajen rediyo</string>
+    <string name="database_last_sync">Sabuntawa na ƙarshe</string>
+    <string name="database_update_now">Sabunta rikodin bayanai yanzu</string>
+    <string name="database_full_update">Sabunta rikodin bayanai</string>
+    <string name="database_syncing">Yana sabuntawa…</string>
+    <string name="database_downloading">Yana saukarwa…</string>
+    <string name="database_stations_loaded">Gidajen rediyo %1$s</string>
+    <string name="database_sync_channel_name">Sabunta rikodin bayanai na gidajen rediyo</string>
+    <string name="database_sync_success">An kammala sabunta rikodin bayanai cikin nasara</string>
+    <string name="database_error_no_connection">Babu haɗin intanet</string>
+    <string name="database_error_no_space">Babu isasshen sarari a ma\'adana</string>
+    <string name="database_error_failed">An kasa sabunta rikodin bayanai</string>
+
+    <string name="settings_disable_battery_optimization_desc">Domin ci gaba da kunna sauti yayin da allon ke kashe, saita amfani da batir zuwa \'Unrestricted\'.</string>
+    <string name="battery_opt_open_settings">Buɗe saituna</string>
+    <string name="battery_opt_later">Daga baya</string>
 </resources>

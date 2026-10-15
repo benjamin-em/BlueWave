@@ -52,24 +52,24 @@
     <string name="filter_empty_title">შექმენით თქვენი რადიოსადგურების არხი</string>
     <string name="filter_empty_desc">შექმენით პერსონალიზებული ხედი რამდენიმე კრიტერიუმის კომბინაციით. შეგიძლიათ შეამციროთ ძიება შემდეგით:</string>
     <string name="filter_empty_filter_by">ფილტრაცია:</string>
-    <string name="filter_empty_filter_desc">ქვეყანა, სადგურის სახელი, ტეგები ან ენა</string>
+    <string name="filter_empty_filter_desc">ქვეყანა, რადიოსადგურის სახელი, ტეგები ან ენა</string>
     <string name="filter_empty_sort_by">სორტირება:</string>
     <string name="filter_empty_sort_desc">კლიკები, ანბანი, ხმები ან ბოლო ცვლილება</string>
     <string name="filter_empty_hint">ჩაწერეთ სახელი ზედა ველში ამ ხედის შესანახად!</string>
-    <string name="error_station_load">სადგურთან დაკავშირება ვერ მოხერხდა</string>
-    <string name="error_list_update">Radio Browser სერვერთან დაკავშირება ვერ მოხერხდა</string>
+    <string name="error_station_load">რადიოსადგურთან დაკავშირება ვერ მოხერხდა</string>
+    <string name="error_list_update">Radio-Browser სერვერთან დაკავშირება ვერ მოხერხდა</string>
 
     <string name="error_no_connection">ინტერნეტ კავშირი მიუწვდომელია.</string>
     <string name="warning_volume_zero">ხმა ნულზეა. შესაძლოა ვერაფერი გაიგონოთ.</string>
 
-    <string name="share_action">სადგურის ბმულის გაზიარება…</string>
+    <string name="share_action">რადიოსადგურის ბმულის გაზიარება…</string>
 
-    <string name="nav_item_stations">სადგურები</string>
+    <string name="nav_item_stations">რადიოსადგურები</string>
     <string name="nav_item_starred">ფავორიტები</string>
     <string name="nav_item_history">ისტორია</string>
     <string name="nav_item_settings">პარამეტრები</string>
 
-    <string name="about_text">AMARadio 100%-ით თავისუფალია რეკლამისგან და ორიენტირებულია კონფიდენციალურობაზე.\n\nმე თავდაპირველად ეს აპლიკაცია დედაჩემისთვის შევქმენი, რათა მისთვის მარტივი, პატიოსანი რადიო გამოცდილება მიმეცა გამაღიზიანებელი რეკლამებისა და თვალთვალის გარეშე. სწორედ ამიტომ AMARadio ყოველთვის დარჩება უფასო – ეს არის მისთვის მიცემული დაპირება, რომელიც ყველას გიზიარებთ.\n\nეს პროექტი შესანიშნავი https://github.com/segler-alex/RadioDroid-ის ფორკია. მთელი კოდი გადატანილია Java-დან Kotlin-ზე, რათა აპლიკაცია დარჩეს თანამედროვე და თავსებადი Android-ის მომავალ ვერსიებთან.\n\nწყარო ხელმისაწვდომია: https://github.com/ounben/AMARadio\n\nეს აპლიკაცია იყენებს უფასო რადიოსადგურების დირექტორიას https://www.radio-browser.info . ნებისმიერ მსურველს შეუძლია მასში სადგურების დამატება. ის მუშაობს როგორც ვიკიპედია ონლაინ რადიოსადგურებისთვის.\n\nკონტაქტი: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nთუ მოგწონთ პროგრამა და გსურთ დახმარება, ნუ მოგერიდებათ გამომიგზავნოთ ელფოსტა. ასევე იდეები ახალი ფუნქციებისთვის ყოველთვის მისასალმებელია!\n\nეს აპლიკაცია არის თავისუფალი პროგრამული უზრუნველყოფა, ლიცენზირებული GPLv3-ით. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio 100%-ით თავისუფალია რეკლამისგან და ორიენტირებულია კონფიდენციალურობაზე.\n\nმე თავდაპირველად ეს აპლიკაცია დედაჩემისთვის შევქმენი, რათა მისთვის მარტივი, პატიოსანი რადიო გამოცდილება მიმეცა გამაღიზიანებელი რეკლამებისა და თვალთვალის გარეშე. სწორედ ამიტომ AMARadio ყოველთვის დარჩება უფასო – ეს არის მისთვის მიცემული დაპირება, რომელიც ყველას გიზიარებთ.\n\nეს პროექტი შესანიშნავი RadioDroid-ის ფორკია. მთელი კოდი გადატანილია Java-დან Kotlin-ზე, რათა აპლიკაცია დარჩეს თანამედროვე და თავსებადი Android-ის მომავალ ვერსიებთან.\n\nწყარო ხელმისაწვდომია: https://github.com/ounben/AMARadio\n\nეს აპლიკაცია იყენებს უფასო რადიოსადგურების დირექტორიას https://www.radio-browser.info . ნებისმიერ მსურველს შეუძლია მასში სადგურების დამატება. ის მუშაობს როგორც ვიკიპედია ონლაინ რადიოსადგურებისთვის.\n\nკონტაქტი: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nთუ მოგწონთ პროგრამა და გსურთ დახმარება, ნუ მოგერიდებათ გამომიგზავნოთ ელფოსტა. ასევე იდეები ახალი ფუნქციებისთვის ყოველთვის მისასალმებელია!\n\nეს აპლიკაცია არის თავისუფალი პროგრამული უზრუნველყოფა, ლიცენზირებული GPLv3-ით. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">ვერსია: %1$s</string>
     <string name="detail_star">ფავორიტებში დამატება</string>
     <string name="detail_unstar">ფავორიტებიდან ამოშლა</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">ბნელი</string>
     <string name="theme_system">სისტემის მიხედვით</string>
     <string name="settings_compact_style">კომპაქტური რეჟიმი</string>
-    <string name="settings_compact_style_desc_off">დიდი ხატულა სადგურის დეტალებით</string>
-    <string name="settings_compact_style_desc_on">პატარა ხატულა დეტალების გარეშე</string>
+    <string name="settings_compact_style_desc_off">დიდი ხატულა რადიოსადგურის დეტალებით</string>
+    <string name="settings_compact_style_desc_on">პატარა ხატულა რადიოსადგურის დეტალების გარეშე</string>
     <string name="settings_bottom_navigation">ქვედა ნავიგაცია</string>
     <string name="settings_ui_scale">ინტერფეისის მასშტაბირება</string>
     <string name="settings_language">ენა</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">იშვიათი ტეგები არ გამოჩნდება</string>
     <string name="settings_single_use_tags_desc_on">იშვიათი ტეგები გამოჩნდება</string>
 
-    <string name="settings_show_broken">გაუმართავი სადგურები</string>
-    <string name="settings_show_broken_on">გაუმართავი სადგურების ჩვენება სიებში</string>
-    <string name="settings_show_broken_off">გაუმართავი სადგურების დამალვა სიებში</string>
+    <string name="settings_show_broken">გაუმართავი რადიოსადგურები</string>
+    <string name="settings_show_broken_on">გაუმართავი რადიოსადგურების ჩვენება სიებში</string>
+    <string name="settings_show_broken_off">გაუმართავი რადიოსადგურების დამალვა სიებში</string>
 
     <string name="settings_startup_behaviour">ქცევა გაშვებისას</string>
     <string name="action_grid_view">ბადისებრი ხედი</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">მოქმედება გაშვებისას</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">ყველა სადგურის ჩვენება</string>
+    <string name="startup_show_all_stations">ყველა რადიოსადგურის ჩვენება</string>
     <string name="startup_show_favorites">ფავორიტების ჩვენება</string>
     <string name="startup_show_history">ისტორიის ჩვენება</string>
     <string name="startup_show_last_view">ბოლო ხედი</string>
 
-    <string name="settings_load_icons">სადგურის ხატულების ჩვენება</string>
+    <string name="settings_load_icons">რადიოსადგურის ხატულების ჩვენება</string>
     <string name="settings_load_icons_on">ხატულები ჩამოიტვირთება</string>
     <string name="settings_load_icons_off">ხატულები არ ჩამოიტვირთება</string>
 
     <string name="settings_auto_favorite">ავტო-ფავორიტი</string>
-    <string name="settings_auto_favorite_on">სადგურების ავტომატური დამატება ფავორიტებში დაკვრისას</string>
-    <string name="settings_auto_favorite_off">სადგურების ავტომატური დამატების გამორთვა</string>
+    <string name="settings_auto_favorite_on">რადიოსადგურების ავტომატური დამატება ფავორიტებში დაკვრისას</string>
+    <string name="settings_auto_favorite_off">რადიოსადგურების ავტომატური დამატების გამორთვა</string>
 
     <string name="settings_play">ფლეიერი</string>
     <string name="settings_auto_play_on_startup">ავტო-დაკვრა</string>
-    <string name="settings_auto_play_on_startup_on">ბოლო სადგურის დაკვრა გაშვებისას</string>
-    <string name="settings_auto_play_on_startup_off">ბოლო სადგურის დაკვრის გამორთვა გაშვებისას</string>
+    <string name="settings_auto_play_on_startup_on">ბოლო რადიოსადგურის დაკვრა გაშვებისას</string>
+    <string name="settings_auto_play_on_startup_off">ბოლო რადიოსადგურის დაკვრის გამორთვა გაშვებისას</string>
     <string name="settings_auto_off_on_startup">ავტო-შეწყვეტა</string>
     <string name="settings_auto_off_on_startup_on">ავტო-შეწყვეტის ტაიმერის გამოყენება ავტო-დაკვრასთან ერთად</string>
     <string name="settings_auto_off_on_startup_off">ავტო-შეწყვეტის ტაიმერის გამორთვა</string>
     <string name="settings_auto_off_sleep_timer">ავტო-შეწყვეტის ტაიმერი</string>
     <string name="settings_auto_off_sleep_timer_desc">შეწყვიტე დაკვრა %1$s წუთის შემდეგ</string>
     <string name="settings_play_external">გარე ფლეიერის ჩართვა</string>
-    <string name="settings_play_external_desc_on">სადგურების დაკვრა გარე ფლეიერით</string>
-    <string name="settings_play_external_desc_off">სადგურების დაკვრა AMARadio-თი</string>
+    <string name="settings_play_external_desc_on">რადიოსადგურების დაკვრა გარე ფლეიერით</string>
+    <string name="settings_play_external_desc_off">რადიოსადგურების დაკვრა AMARadio-თი</string>
     <string name="settings_equalizer">ეკვალაიზერი</string>
 
     <string name="settings_connectivity">კავშირი</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">პაუზა</string>
     <string name="notify_metered_connection">ლიმიტირებული კავშირი</string>
 
-    <string name="notify_starred">სადგური დაემატა ფავორიტებში</string>
-    <string name="notify_autostarred">სადგური ავტომატურად დაემატა ფავორიტებში</string>
-    <string name="notify_unstarred">სადგური ამოიშალა ფავორიტებიდან</string>
+    <string name="notify_starred">რადიოსადგური დაემატა ფავორიტებში</string>
+    <string name="notify_autostarred">რადიოსადგური ავტომატურად დაემატა ფავორიტებში</string>
+    <string name="notify_unstarred">რადიოსადგური ამოიშალა ფავორიტებიდან</string>
     <string name="notify_deleted_favorites">ფავორიტები წაიშალა</string>
     <string name="notify_deleted_history">ისტორია წაიშალა</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">გთხოვთ აირჩიოთ ფლეიერი</string>
     <string name="alert_select_player_name">სახელი</string>
-    <string name="hostname">ჰოსტის სახელი</string>
-    <string name="port">პორტი</string>
+    <string name="hostname">სერვერის მისამართი</string>
+    <string name="port">ქსელური პორტი</string>
 
     <string name="alert_press_back_to_exit">გასასვლელად კიდევ ერთხელ დააჭირეთ „უკან“ ღილაკს</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">დაკვრა გარე ფლეიერში</string>
     <string name="action_choose_external_player">გარე ფლეიერის არჩევა</string>
 
-    <string name="settings_disable_battery_optimization">ბატარეის ოპტიმიზაცია</string>
-    <string name="settings_ignore_battery_optimization_summary_on">ბატარეის ოპტიმიზაცია იგნორირებულია, AMARadio ყოველთვის შეძლებს ფოკუსის დაბრუნებას.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">ბატარეის ოპტიმიზაცია ჩართულია, AMARadio-მ შესაძლოა ვერ დაიბრუნოს ფოკუსი ფონურ რეჟიმში.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">ფონური დაკვრა</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">სხვა</string>
     <string name="settings_rate_app">შეაფასეთ AMARadio</string>
     <string name="settings_rate_app_summary">თუ მოგწონთ აპი, გთხოვთ დატოვოთ მიმოხილვა Play Store-ში!</string>
+    <string name="settings_rate_app_github">მოგწონთ AMARadio?</string>
+    <string name="settings_rate_app_github_summary">დატოვე ვარსკვლავი GitHub-ზე! ის ეხმარება სხვებს აპის აღმოჩენაში და მხარს უჭერს მომავალ განვითარებას.</string>
     <string name="settings_statistics">სტატისტიკა</string>
     <string name="settings_about">AMARadio-ს შესახებ</string>
 
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">სადგურის ლოგო</string>
+    <string name="accessibility_station_logo">რადიოსადგურის ლოგო</string>
     <string name="accessibility_favorite_selected">ფავორიტი, არჩეულია</string>
     <string name="accessibility_favorite_not_selected">ფავორიტი, არ არის არჩეული</string>
     <string name="accessibility_category_icon">კატეგორიის ხატულა</string>
@@ -333,39 +333,65 @@
     <string name="accessibility_search_back">ძიების დახურვა</string>
     <string name="accessibility_filter_reverse">სორტირების რიგის შეცვლა</string>
     <string name="accessibility_clear_text">ტექსტის გასუფთავება</string>
-    <string name="accessibility_back">უკან</string>
+    <string name="accessibility_back">უკան</string>
     <string name="accessibility_configure">კონფიგურაცია</string>
     <string name="accessibility_close">დახურვა</string>
     <string name="accessibility_add_filter">ფილტრის დამატება</string>
-    <string name="accessibility_station_options">სადგურის პარამეტრები</string>
+    <string name="accessibility_station_options">რადიოსადგურის პარამეტრები</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">სადგური: %1$s, ენა: %2$s, ტეგები: %3$s</string>
 
     <string name="error_no_file_manager">ვერ ვიპოვე სისტემის ფაილების მენეჯერი. გთხოვთ, დარწმუნდეთ, რომ ფაილების მკვლევარი დაინსტალირებული და ჩართულია.</string>
     <string name="error_no_browser">ვებ ბრაუზერი ვერ ვიპოვე. გთხოვთ დააინსტალიროთ ბრაუზერი ამ ბმულის გასახსნელად.</string>
-    <string name="error_no_homepage">ამ სადგურისთვის მთავარი გვერდი არ არის ხელმისაწვდომი</string>
-    <string name="tab_custom_stations">საბაჟო</string>
-    <string name="action_add_custom">დაამატეთ საბაჟო სადგური</string>
-    <string name="station_name">სადგურის სახელი</string>
+    <string name="error_no_homepage">ამ რადიოსადგურისთვის მთავარი გვერდი არ არის ხელმისაწვდომი</string>
+    <string name="tab_custom_stations">საკუთარი</string>
+    <string name="action_add_custom">დაამატეთ საკუთარი რადიოსადგური</string>
+    <string name="station_name">რადიოსადგურის სახელი</string>
     <string name="stream_url">ნაკადის URL</string>
-    <string name="favicon_url">ფავიკონის URL (არასავალდებულო)</string>
+    <string name="favicon_url">სადგურის ლოგოს URL (Favicon)</string>
     <string name="select_image">აირჩიეთ სურათი</string>
     <string name="error_invalid_url">გთხოვთ, შეიყვანოთ სწორი URL</string>
     <string name="action_save">შენახვა</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">მოთამაშის სწრაფი კონტროლი</string>
-    <string name="widget_description_full">მოთამაშისა და სადგურების სია</string>
+    <string name="widget_description_small">დაკვრის სწრაფი მართვა</string>
+    <string name="widget_description_full">ფლეიერი და რადიოსადგურების სია</string>
 
     <string name="settings_auto_db_update">ფონური მონაცემთა სინქრონიზაცია</string>
     <string name="settings_auto_db_update_desc">სადგურის მონაცემთა ბაზის ავტომატური განახლება Radio-Browser API-ით (რეკომენდებულია).</string>
-    <string name="settings_station_click_counter">სადგურის დაწკაპუნების მრიცხველი</string>
-    <string name="settings_station_click_counter_desc">მხარი დაუჭირეთ რადიო-ბრაუზერის სტატისტიკას სათამაშო მოვლენების ანონიმურად გაზიარებით.</string>
-    <string name="settings_rate_app_github">მოგწონთ AMARadio?</string>
-    <string name="settings_rate_app_github_summary">დატოვე ვარსკვლავი GitHub-ზე! ის ეხმარება სხვებს აპის აღმოჩენაში და მხარს უჭერს მომავალ განვითარებას.</string>
+    <string name="settings_station_click_counter">რადიოსადგურის დაწკაპუნების მრიცხველი</string>
+    <string name="settings_station_click_counter_desc">მხარი დაუჭირეთ Radio-Browser-ის სტატისტიკას დაკვრის მოვლენების ანონიმურად გაზიარებით.</string>
 
-    <string name="settings_remove_notification_on_stop">წაშალეთ შეტყობინება, როდესაც აპლიკაცია დახურულია</string>
-    <string name="settings_remove_notification_on_stop_desc">მედიის შეტყობინების ავტომატურად გაუქმება, როდესაც აპი დახურულია უახლესი აპებიდან</string>
+    <string name="settings_remove_notification_on_stop">შეტყობინების წაშლა შეჩერებისას</string>
+    <string name="settings_remove_notification_on_stop_desc">მედიის შეტყობინების ავტომატურად გაუქმება, როდესაც დაკვრა შეჩერდება</string>
     <string name="settings_auto_resume_audio_focus">განაახლეთ აუდიო ფოკუსის დაკარგვის შემდეგ</string>
     <string name="settings_auto_resume_audio_focus_desc">ავტომატურად განაახლეთ დაკვრა სატელეფონო ზარების, სიგნალიზაციის ან სხვა აუდიო გაჩერების შემდეგ</string>
+
+    <string name="settings_backup_restore">სარეზერვო კოპირება და აღდგენა</string>
+    <string name="settings_export_backup">სრული სარეზერვო ასლის შექმნა (ZIP)</string>
+    <string name="settings_export_backup_desc">ინახავს ყველა ფავორიტს, საკუთარ სადგურს და ხატულას ZIP ფაილში</string>
+    <string name="settings_import_backup">სარეზერვო ასლის აღდგენა (ZIP)</string>
+    <string name="settings_import_backup_desc">აღადგენს ფავორიტებს და საკუთარ სადგურებს ZIP ფაილიდან</string>
+    <string name="backup_export_success">სარეზერვო ასლი წარმატებით შენახულია</string>
+    <string name="backup_export_error">სარეზერვო ასლის შენახვა ვერ მოხერხდა</string>
+    <string name="backup_import_success">სარეზერვო ასლი წარმატებით აღდგენილია</string>
+    <string name="backup_import_error">სარეზერვო ასლის აღდგენა ვერ მოხერხდა</string>
+
+    <string name="database_summary_title">ლოკალური მონაცემთა ბაზა</string>
+    <string name="database_total_stations">სულ რადიოსადგური</string>
+    <string name="database_last_sync">ბოლო განახლება</string>
+    <string name="database_update_now">მონაცემთა ბაზის განახლება ახლავე</string>
+    <string name="database_full_update">მონაცემთა ბაზის განახლება</string>
+    <string name="database_syncing">სინქრონიზაცია…</string>
+    <string name="database_downloading">ჩამოტვირთვა…</string>
+    <string name="database_stations_loaded">%1$s რადიოსადგური</string>
+    <string name="database_sync_channel_name">რადიოსადგურების მონაცემთა ბაზის სინქრონიზაცია</string>
+    <string name="database_sync_success">სადგურების მონაცემთა ბაზის განახლება წარმატებით დასრულდა</string>
+    <string name="database_error_no_connection">ინტერნეტ კავშირი არ არის</string>
+    <string name="database_error_no_space">მეხსიერებაში საკმარისი ადგილი არ არის</string>
+    <string name="database_error_failed">მონაცემთა ბაზის განახლება ვერ მოხერხდა</string>
+
+    <string name="settings_disable_battery_optimization_desc">გამორთული ეკრანის დროს დაკვრის გასაგრძელებლად დააყენეთ ბატარეის მოხმარება რეჟიმზე \'შეუზღუდავი\'.</string>
+    <string name="battery_opt_open_settings">პარამეტრების გახსნა</string>
+    <string name="battery_opt_later">მოგვიანებით</string>
 </resources>

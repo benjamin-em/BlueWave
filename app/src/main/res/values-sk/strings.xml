@@ -49,27 +49,27 @@
     <string name="action_rename_tab">Premenovať kartu</string>
     <string name="error_filter_name_required">Najprv zadajte názov tejto karty filtra</string>
     <string name="confirm_delete_filter_tab">Naozaj chcete odstrániť filter \"%1$s\"?</string>
-    <string name="filter_empty_title">Vytvorte si vlastný kanál staníc</string>
+    <string name="filter_empty_title">Vytvorte si vlastný kanál rádiostaníc</string>
     <string name="filter_empty_desc">Vytvorte si prispôsobené zobrazenie skombinovaním viacerých kritérií. Vyhľadávanie môžete zúžiť pomocou:</string>
     <string name="filter_empty_filter_by">Filtrovať podľa</string>
-    <string name="filter_empty_filter_desc">Krajina, názov stanice, značky alebo jazyk</string>
+    <string name="filter_empty_filter_desc">Krajina, názov rádiostanice, značky alebo jazyk</string>
     <string name="filter_empty_sort_by">Zoradiť podľa</string>
-    <string name="filter_empty_sort_desc">Kliknutia, abeceda, hlasy oder posledná zmena</string>
+    <string name="filter_empty_sort_desc">Kliknutia, Abeceda, Hlasy alebo Posledná zmena</string>
     <string name="filter_empty_hint">Zadajte názov do poľa vyššie a uložte toto vlastné zobrazenie!</string>
-    <string name="error_station_load">Nie je možné pripojiť sa k stanici</string>
-    <string name="error_list_update">Nie je možné pripojiť sa k serveru radio browser</string>
+    <string name="error_station_load">Nie je možné pripojiť sa k rádiostanici</string>
+    <string name="error_list_update">Nie je možné pripojiť sa k serveru Radio-Browser</string>
 
     <string name="error_no_connection">Nie je k dispozícii internetové pripojenie.</string>
     <string name="warning_volume_zero">Hlasitosť je na nule. Možno nebudete nič počuť.</string>
 
-    <string name="share_action">Zdieľať odkaz na stanicu&#8230;</string>
+    <string name="share_action">Zdieľať odkaz na rádiostanicu&#8230;</string>
 
-    <string name="nav_item_stations">Stanice</string>
+    <string name="nav_item_stations">Rádiostanice</string>
     <string name="nav_item_starred">Obľúbené</string>
     <string name="nav_item_history">História</string>
     <string name="nav_item_settings">Nastavenia</string>
 
-    <string name="about_text">AMARadio je 100% bez reklám a zamerané na súkromie.\n\nTútu aplikáciu som pôvodne vyvinul pre svoju matku, aby som jej poskytol jednoduchý a úprimný zážitok z rádia bez otravných reklám alebo sledovania. Preto AMARadio vždy zostane bez reklám – je to sľub daný jej, o ktorý sa delím s vami všetkými.\n\nTento projekt je fork vynikajúcej aplikácie RadioDroid. Celý kód bol migrovaný z Javy do Kotlinu, aby sa zabezpečilo, že aplikácia zostane moderná a kompatibilná s budúcimi verziami Androidu.\n\nZdrojový kód je k dispozícii na: https://github.com/ounben/AMARadio\n\nTáto aplikácia používa bezplatný zoznam rádio staníc na https://www.radio-browser.info .\nKaždý môže pridávať stanice. Funguje ako wiki pre online rádio stanice.\n\nKontakt: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nAk sa vám táto aplikácia páči a radi by ste pomohli, prosím ozvite sa emailom.\nNápady na nové vylepšenia sú tiež vítané!\n\nTáto aplikácia je slobodný softvér pod licenciou GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio je 100% bez reklam a zamerané na súkromie.\n\nTúto aplikáciu som pôvodne vyvinul pre svoju matku, aby som jej poskytol jednoduchý a úprimný zážitok z rádia bez otravných reklám alebo sledovania. Preto AMARadio vždy zostane bez reklam – je to sľub daný jej, o ktorý sa delím s vami všetkými.\n\nTento projekt je fork aplikácie RadioDroid. Celý kód bol migrovaný z Javy do Kotlinu, aby sa zabezpečilo, že aplikácia zostane moderná a kompatibilná s budúcimi verziami Androidu.\n\nZdrojový kód je k dispozícii na: https://github.com/ounben/AMARadio\n\nTáto aplikácia používa bezplatný zoznam rádio staníc na https://www.radio-browser.info .\nKaždý môže pridávať stanice. Funguje ako wiki pre online rádio stanice.\n\nKontakt: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nAk sa vám táto aplikácia páči a radi by ste pomohli, prosím ozvite sa emailom.\nNápady na nové vylepšenia sú tiež vítané!\n\nTáto aplikácia je slobodný softvér pod licenciou GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Verzia: %1$s</string>
     <string name="detail_star">Pridať do obľúbených</string>
     <string name="detail_unstar">Odstrániť z obľúbených</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Tmavý</string>
     <string name="theme_system">Podľa systému</string>
     <string name="settings_compact_style">Kompaktný režim</string>
-    <string name="settings_compact_style_desc_off">Veľká ikona s detailmi stanice</string>
-    <string name="settings_compact_style_desc_on">Malá ikona bez detailov stanice</string>
+    <string name="settings_compact_style_desc_off">Veľká ikona s detailmi rádiostanice</string>
+    <string name="settings_compact_style_desc_on">Malá ikona bez detailov rádiostanice</string>
     <string name="settings_bottom_navigation">Navigácia v dolnej časti</string>
     <string name="settings_ui_scale">Mierka UI</string>
     <string name="settings_language">Jazyk</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Zriedkavo používané značky sa nezobrazia</string>
     <string name="settings_single_use_tags_desc_on">Zriedkavo používané značky sa zobrazia</string>
 
-    <string name="settings_show_broken">Nefunkčné stanice</string>
-    <string name="settings_show_broken_on">Zobraziť nefunkčné stanice v zoznamoch</string>
-    <string name="settings_show_broken_off">Skryť nefunkčné stanice v zoznamoch</string>
+    <string name="settings_show_broken">Nefunkčné rádiostanice</string>
+    <string name="settings_show_broken_on">Zobraziť nefunkčné rádiostanice v zoznamoch</string>
+    <string name="settings_show_broken_off">Skryť nefunkčné rádiostanice v zoznamoch</string>
 
     <string name="settings_startup_behaviour">Správanie po spustení</string>
     <string name="action_grid_view">Zobrazenie mriežky</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Akcia po spustení</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Zobraziť všetky stanice</string>
+    <string name="startup_show_all_stations">Zobraziť všetky rádiostanice</string>
     <string name="startup_show_favorites">Zobraziť obľúbené</string>
     <string name="startup_show_history">Zobraziť históriu</string>
     <string name="startup_show_last_view">Posledné zobrazenie</string>
 
-    <string name="settings_load_icons">Zobraziť ikony staníc</string>
+    <string name="settings_load_icons">Zobraziť ikony rádiostaníc</string>
     <string name="settings_load_icons_on">Ikony sa stiahnu</string>
     <string name="settings_load_icons_off">Ikony sa nestiahnu</string>
 
     <string name="settings_auto_favorite">Automatické obľúbené</string>
-    <string name="settings_auto_favorite_on">Automaticky pridať stanice do obľúbených pri prehrávaní</string>
-    <string name="settings_auto_favorite_off">Nepridávať stanice do obľúbených automaticky pri prehrávaní</string>
+    <string name="settings_auto_favorite_on">Automaticky pridať rádiostanice do obľúbených pri prehrávaní</string>
+    <string name="settings_auto_favorite_off">Nepridávať rádiostanice do obľúbených automaticky pri prehrávaní</string>
 
     <string name="settings_play">Prehrávač</string>
     <string name="settings_auto_play_on_startup">Automatické prehrávanie</string>
-    <string name="settings_auto_play_on_startup_on">Prehrať poslednú stanicu pri spustení</string>
-    <string name="settings_auto_play_on_startup_off">Neprehrať poslednú stanicu pri spustení</string>
+    <string name="settings_auto_play_on_startup_on">Prehrať poslednú rádiostanicu pri spustení</string>
+    <string name="settings_auto_play_on_startup_off">Neprehrať poslednú rádiostanicu pri spustení</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Použiť časovač auto-stop pri automatickom prehrávaní</string>
     <string name="settings_auto_off_on_startup_off">Nepoužiť časovač auto-stop pri automatickom prehrávaní</string>
     <string name="settings_auto_off_sleep_timer">Časovač auto-stop</string>
     <string name="settings_auto_off_sleep_timer_desc">Zastaviť prehrávanie po %1$s minútach</string>
     <string name="settings_play_external">Povoliť externý prehrávač</string>
-    <string name="settings_play_external_desc_on">Prehrávať stanice pomocou externého prehrávača</string>
-    <string name="settings_play_external_desc_off">Prehrávať stanice v AMARadio</string>
+    <string name="settings_play_external_desc_on">Prehrávať rádiostanice pomocou externého prehrávača</string>
+    <string name="settings_play_external_desc_off">Prehrávať rádiostanice v AMARadio</string>
     <string name="settings_equalizer">Ekvalizér</string>
 
     <string name="settings_connectivity">Pripojenie</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Pozastavené</string>
     <string name="notify_metered_connection">Spoplatnené pripojenie</string>
 
-    <string name="notify_starred">Stanica pridaná do obľúbených</string>
-    <string name="notify_autostarred">Stanica bola automaticky pridaná do obľúbených</string>
-    <string name="notify_unstarred">Stanica odstránená z obľúbených</string>
+    <string name="notify_starred">Rádiostanica pridaná do obľúbených</string>
+    <string name="notify_autostarred">Rádiostanica bola automaticky pridaná do obľúbených</string>
+    <string name="notify_unstarred">Rádiostanica odstránená z obľúbených</string>
     <string name="notify_deleted_favorites">Obľúbené boli vymazané</string>
     <string name="notify_deleted_history">História bola vymazaná</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Vyberte prosím prehrávač</string>
     <string name="alert_select_player_name">Názov</string>
-    <string name="hostname">Hostiteľ</string>
-    <string name="port">Port</string>
+    <string name="hostname">Adresa servera</string>
+    <string name="port">Sieťový port</string>
 
     <string name="alert_press_back_to_exit">Stlačte Späť ešte raz pre ukončenie</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">Prehrať v externom prehrávači</string>
     <string name="action_choose_external_player">Vybrať externý prehrávač</string>
 
-    <string name="settings_disable_battery_optimization">Optimalizácia batérie</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Optimalizácia batérie sa ignoruje, AMARadio by malo byť vždy schopné znova získať fokus.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Optimalizácia batérie je aktivovaná, AMARadio nemusí byť schopné znova získať fokus, ak je na pozadí.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Prehrávanie na pozadí</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Ostatné</string>
     <string name="settings_rate_app">Ohodnotiť AMARadio</string>
     <string name="settings_rate_app_summary">Ak sa vám aplikácia páči, zanechajte prosím recenziu v Obchode Play!</string>
+    <string name="settings_rate_app_github">Páči sa vám AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Nechajte hviezdu na GitHub! Pomáha ostatným objaviť aplikáciu a podporuje budúci vývoj.</string>
     <string name="settings_statistics">Štatistiky</string>
     <string name="settings_about">O AMARadio</string>
 
@@ -323,12 +323,8 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Záložný budík</string>
-    <string name="alarm_fallback_info">Použil sa systémový budík, pretože vybranú rozhlasovú stanicu sa nepodarilo načítať</string>
-    <string name="alarm_back_desc">Alternatívny systémový budík, keď sa rozhlasová stanica nenačíta</string>
-
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logo stanice</string>
+    <string name="accessibility_station_logo">Logo rádiostanice</string>
     <string name="accessibility_favorite_selected">Obľúbené, vybraté</string>
     <string name="accessibility_favorite_not_selected">Obľúbené, nevybraté</string>
     <string name="accessibility_category_icon">Ikona kategórie</string>
@@ -341,35 +337,61 @@
     <string name="accessibility_configure">Konfigurovať</string>
     <string name="accessibility_close">Zatvoriť</string>
     <string name="accessibility_add_filter">Pridať filter</string>
-    <string name="accessibility_station_options">Možnosti stanice</string>
+    <string name="accessibility_station_options">Možnosti rádiostanice</string>
     <string name="not_applicable">n/a</string>
     <string name="accessibility_station_description">Stanica: %1$s, Jazyk: %2$s, Štítky: %3$s</string>
 
     <string name="error_no_file_manager">Nepodarilo sa nájsť správcu systémových súborov. Uistite sa, že je nainštalovaný a povolený prieskumník súborov.</string>
     <string name="error_no_browser">Nepodarilo sa nájsť webový prehliadač. Ak chcete otvoriť tento odkaz, nainštalujte si prehliadač.</string>
-    <string name="error_no_homepage">Pre túto stanicu nie je k dispozícii žiadna domovská stránka</string>
+    <string name="error_no_homepage">Pre túto rádiostanicu nie je k dispozícii žiadna domovská stránka</string>
     <string name="tab_custom_stations">Vlastné</string>
-    <string name="action_add_custom">Pridať vlastnú stanicu</string>
-    <string name="station_name">Názov stanice</string>
-    <string name="stream_url">Webová adresa streamu</string>
-    <string name="favicon_url">Webová adresa ikony favicon (voliteľné)</string>
+    <string name="action_add_custom">Pridať vlastnú rádiostanicu</string>
+    <string name="station_name">Názov rádiostanice</string>
+    <string name="stream_url">URL streamu</string>
+    <string name="favicon_url">URL logo stanice (Favicon)</string>
     <string name="select_image">Vyberte Obrázok</string>
     <string name="error_invalid_url">Zadajte platnú webovú adresu</string>
     <string name="action_save">Uložiť</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Rýchle ovládanie prehrávača</string>
-    <string name="widget_description_full">Zoznam prehrávačov a staníc</string>
+    <string name="widget_description_full">Prehrávač a zoznam rádiostaníc</string>
 
     <string name="settings_auto_db_update">Synchronizácia údajov na pozadí</string>
     <string name="settings_auto_db_update_desc">Automatická aktualizácia databázy staníc cez Radio-Browser API (odporúča sa).</string>
-    <string name="settings_station_click_counter">Počítadlo kliknutí stanice</string>
-    <string name="settings_station_click_counter_desc">Podporujte štatistiky Radio-Browser anonymným zdieľaním herných udalostí.</string>
-    <string name="settings_rate_app_github">Páči sa vám AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Nechajte hviezdu na GitHub! Pomáha ostatným objaviť aplikáciu a podporuje budúci vývoj.</string>
+    <string name="settings_station_click_counter">Počítadlo kliknutí rádiostanice</string>
+    <string name="settings_station_click_counter_desc">Podporujte štatistiky Radio-Browser anonymným zdieľaním udalostí prehrávania.</string>
 
-    <string name="settings_remove_notification_on_stop">Odstrániť upozornenie po zatvorení aplikácie</string>
-    <string name="settings_remove_notification_on_stop_desc">Automaticky zrušiť mediálne upozornenie, keď sa aplikácia zatvorí z nedávnych aplikácií</string>
+    <string name="settings_remove_notification_on_stop">Odstrániť upozornenie pri zastavení</string>
+    <string name="settings_remove_notification_on_stop_desc">Automaticky zrušiť mediálne upozornenie, keď sa prehrávanie zastaví</string>
     <string name="settings_auto_resume_audio_focus">Obnoviť po strate zamerania zvuku</string>
     <string name="settings_auto_resume_audio_focus_desc">Automaticky obnoviť prehrávanie po telefónnych hovoroch, budíkoch alebo iných zastaveniach zvuku</string>
+
+    <string name="settings_backup_restore">Zálohovanie a obnovenie</string>
+    <string name="settings_export_backup">Vytvoriť úplnú zálohu (ZIP)</string>
+    <string name="settings_export_backup_desc">Uloží všetky obľúbené, vlastné stanice a ikony do súboru ZIP</string>
+    <string name="settings_import_backup">Obnoviť zálohu (ZIP)</string>
+    <string name="settings_import_backup_desc">Obnoví obľúbené a vlastné stanice zo súboru zálohy ZIP</string>
+    <string name="backup_export_success">Záloha bola úspešne uložená</string>
+    <string name="backup_export_error">Nepodarilo sa uložiť zálohu</string>
+    <string name="backup_import_success">Záloha bola úspešne obnovená</string>
+    <string name="backup_import_error">Nepodarilo sa obnoviť zálohu</string>
+
+    <string name="database_summary_title">Lokálna databáza</string>
+    <string name="database_total_stations">Rádiostanice celkovo</string>
+    <string name="database_last_sync">Posledná aktualizácia</string>
+    <string name="database_update_now">Aktualizovať databázu teraz</string>
+    <string name="database_full_update">Aktualizovať databázu</string>
+    <string name="database_syncing">Synchronizuje sa…</string>
+    <string name="database_downloading">Sťahuje sa…</string>
+    <string name="database_stations_loaded">%1$s rádiostaníc</string>
+    <string name="database_sync_channel_name">Synchronizácia databázy rádiostaníc</string>
+    <string name="database_sync_success">Aktualizácia databázy staníc bola úspešne dokončená</string>
+    <string name="database_error_no_connection">Žiadne internetové pripojenie</string>
+    <string name="database_error_no_space">Nedostatok miesta na disku</string>
+    <string name="database_error_failed">Aktualizácia databázy zlyhala</string>
+
+    <string name="settings_disable_battery_optimization_desc">Ak chcete pokračovať v prehrávaní aj pri vypnutej obrazovke, nastavte využitie batérie na \'Bez obmedzenia\'.</string>
+    <string name="battery_opt_open_settings">Otvoriť nastavenia</string>
+    <string name="battery_opt_later">Neskôr</string>
 </resources>

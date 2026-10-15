@@ -52,19 +52,19 @@
     <string name="filter_empty_title">আপনার নিজস্ব রেডিও স্টেশন ফিড তৈরি করুন</string>
     <string name="filter_empty_desc">একাধিক মানদণ্ড একত্রিত করে একটি ব্যক্তিগতকৃত ভিউ তৈরি করুন। আপনি আপনার অনুসন্ধান সীমাবদ্ধ করতে পারেন:</string>
     <string name="filter_empty_filter_by">ফিল্টার করুন:</string>
-    <string name="filter_empty_filter_desc">দেশ, স্টেশনের নাম, ট্যাগ বা ভাষা</string>
+    <string name="filter_empty_filter_desc">দেশ, রেডিও স্টেশনের নাম, ট্যাগ বা ভাষা</string>
     <string name="filter_empty_sort_by">সাজান:</string>
     <string name="filter_empty_sort_desc">ক্লিক, বর্ণমালা, ভোট বা সর্বশেষ পরিবর্তন</string>
     <string name="filter_empty_hint">এই ভিউটি সংরক্ষণ করতে উপরের ক্ষেত্রে একটি নাম লিখুন!</string>
-    <string name="error_station_load">স্টেশনের সাথে সংযোগ করা যায়নি</string>
-    <string name="error_list_update">রেডিও ব্রাউজার সার্ভারের সাথে সংযোগ করা যায়নি</string>
+    <string name="error_station_load">রেডিও স্টেশনের সাথে সংযোগ করা যায়নি</string>
+    <string name="error_list_update">Radio-Browser সার্ভারের সাথে সংযোগ করা যায়নি</string>
 
     <string name="error_no_connection">কোনো ইন্টারনেট সংযোগ উপলব্ধ নেই</string>
     <string name="warning_volume_zero">ভলিউম শূন্যে আছে। আপনি কিছু শুনতে না-ও পারেন।</string>
 
-    <string name="share_action">স্টেশন লিঙ্ক শেয়ার করুন…</string>
+    <string name="share_action">রেডিও স্টেশন লিঙ্ক শেয়ার করুন…</string>
 
-    <string name="nav_item_stations">স্টেশনসমূহ</string>
+    <string name="nav_item_stations">রেডিও স্টেশন</string>
     <string name="nav_item_starred">প্রিয়</string>
     <string name="nav_item_history">ইতিহাস</string>
     <string name="nav_item_settings">সেটিংস</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">গাঢ়</string>
     <string name="theme_system">সিস্টেম অনুসরণ করুন</string>
     <string name="settings_compact_style">কম্প্যাক্ট মোড</string>
-    <string name="settings_compact_style_desc_off">স্টেশনের বিবরণ সহ বড় আইকন</string>
+    <string name="settings_compact_style_desc_off">রেডিও স্টেশনের বিবরণ সহ বড় আইকন</string>
     <string name="settings_compact_style_desc_on">বিবরণ ছাড়া ছোট আইকন</string>
     <string name="settings_bottom_navigation">নিচে নেভিগেশন</string>
     <string name="settings_ui_scale">ইউজার ইন্টারফেস স্কেলিং</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">খুব কম ব্যবহৃত ট্যাগ দেখানো হবে না</string>
     <string name="settings_single_use_tags_desc_on">খুব কম ব্যবহৃত ট্যাগ দেখানো হবে</string>
 
-    <string name="settings_show_broken">ত্রুটিপূর্ণ স্টেশন</string>
-    <string name="settings_show_broken_on">তালিকায় ত্রুটিপূর্ণ স্টেশন দেখান</string>
-    <string name="settings_show_broken_off">তালিকায় ত্রুটিপূর্ণ স্টেশন দেখাবেন না</string>
+    <string name="settings_show_broken">ত্রুটিপূর্ণ রেডিও স্টেশন</string>
+    <string name="settings_show_broken_on">তালিকায় ত্রুটিপূর্ণ রেডিও স্টেশন দেখান</string>
+    <string name="settings_show_broken_off">তালিকায় ত্রুটিপূর্ণ রেডিও স্টেশন দেখাবেন না</string>
 
     <string name="settings_startup_behaviour">স্টার্ট আচরণ</string>
     <string name="action_grid_view">গ্রিড ভিউ</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">স্টার্ট অ্যাকশন</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">সব স্টেশন দেখান</string>
+    <string name="startup_show_all_stations">সব রেডিও স্টেশন দেখান</string>
     <string name="startup_show_favorites">প্রিয়গুলো দেখান</string>
     <string name="startup_show_history">ইতিহাস দেখান</string>
     <string name="startup_show_last_view">শেষ ভিউ</string>
 
-    <string name="settings_load_icons">স্টেশন আইকন দেখান</string>
+    <string name="settings_load_icons">রেডিও স্টেশন আইকন দেখান</string>
     <string name="settings_load_icons_on">আইকন ডাউনলোড করা হবে</string>
     <string name="settings_load_icons_off">আইকন ডাউনলোড করা হবে না</string>
 
     <string name="settings_auto_favorite">অটো-প্রিয়</string>
-    <string name="settings_auto_favorite_on">বাজানোর সময় স্বয়ংক্রিয়ভাবে স্টেশনগুলো প্রিয়তে যোগ করুন</string>
+    <string name="settings_auto_favorite_on">বাজানোর সময় স্বয়ংক্রিয়ভাবে রেডিও স্টেশনগুলো প্রিয়তে যোগ করুন</string>
     <string name="settings_auto_favorite_off">বাজানোর সময় স্বয়ংক্রিয়ভাবে প্রিয়তে যোগ করবেন না</string>
 
     <string name="settings_play">প্লেয়ার</string>
     <string name="settings_auto_play_on_startup">অটো-প্লে</string>
-    <string name="settings_auto_play_on_startup_on">শুরুতে শেষ স্টেশনটি বাজান</string>
-    <string name="settings_auto_play_on_startup_off">শুরুতে শেষ স্টেশনটি বাজাবেন না</string>
+    <string name="settings_auto_play_on_startup_on">শুরুতে শেষ রেডিও স্টেশনটি বাজান</string>
+    <string name="settings_auto_play_on_startup_off">শুরুতে শেষ রেডিও স্টেশনটি বাজাবেন না</string>
     <string name="settings_auto_off_on_startup">অটো-স্টপ</string>
     <string name="settings_auto_off_on_startup_on">অটো-প্লে-এর সাথে অটো-স্টপ টাইমার ব্যবহার করুন</string>
     <string name="settings_auto_off_on_startup_off">অটো-প্লে-এর সাথে অটো-স্টপ টাইমার ব্যবহার করবেন না</string>
     <string name="settings_auto_off_sleep_timer">অটো-স্টপ টাইমার</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s মিনিট পর বাজানো বন্ধ করুন</string>
     <string name="settings_play_external">এক্সটার্নাল প্লেয়ার সক্ষম করুন</string>
-    <string name="settings_play_external_desc_on">এক্সটার্নাল প্লেয়ার দিয়ে স্টেশনগুলো বাজান</string>
-    <string name="settings_play_external_desc_off">AMARadio দিয়ে স্টেশনগুলো বাজান</string>
+    <string name="settings_play_external_desc_on">এক্সটার্নাল প্লেয়ার দিয়ে রেডিও স্টেশনগুলো বাজান</string>
+    <string name="settings_play_external_desc_off">AMARadio দিয়ে রেডিও স্টেশনগুলো বাজান</string>
     <string name="settings_equalizer">ইকুয়ালাইজার</string>
 
     <string name="settings_connectivity">সংযোগ</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">বিরতি দেওয়া হয়েছে</string>
     <string name="notify_metered_connection">মিটারড সংযোগ</string>
 
-    <string name="notify_starred">স্টেশনটি প্রিয়তে যোগ করা হয়েছে</string>
-    <string name="notify_autostarred">স্টেশনটি স্বয়ংক্রিয়ভাবে প্রিয়তে যোগ করা হয়েছে</string>
-    <string name="notify_unstarred">স্টেশনটি প্রিয় থেকে সরানো হয়েছে</string>
+    <string name="notify_starred">রেডিও স্টেশনটি প্রিয়তে যোগ করা হয়েছে</string>
+    <string name="notify_autostarred">রেডিও স্টেশনটি স্বয়ংক্রিয়ভাবে প্রিয়তে যোগ করা হয়েছে</string>
+    <string name="notify_unstarred">রেডিও স্টেশনটি প্রিয় থেকে সরানো হয়েছে</string>
     <string name="notify_deleted_favorites">প্রিয়গুলো মুছে ফেলা হয়েছে</string>
     <string name="notify_deleted_history">ইতিহাস মুছে ফেলা হয়েছে</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">অনুগ্রহ করে একটি প্লেয়ার নির্বাচন করুন</string>
     <string name="alert_select_player_name">নাম</string>
-    <string name="hostname">হোস্টনাম</string>
-    <string name="port">পোর্ট</string>
+    <string name="hostname">সার্ভার ঠিকানা</string>
+    <string name="port">নেটওয়ার্ক পোর্ট</string>
 
     <string name="alert_press_back_to_exit">বের হওয়ার জন্য আরেকবার ব্যাক চাপুন</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">এক্সটার্নাল প্লেয়ারে বাজান</string>
     <string name="action_choose_external_player">এক্সটার্নাল প্লেয়ার বেছে নিন</string>
 
-    <string name="settings_disable_battery_optimization">ব্যাটারি অপ্টিমাইজেশন</string>
-    <string name="settings_ignore_battery_optimization_summary_on">ব্যাটারি অপ্টিমাইজেশন উপেক্ষা করা হয়েছে, AMARadio সর্বদা ফোকাস ফিরে পেতে সক্ষম হওয়া উচিত।</string>
-    <string name="settings_ignore_battery_optimization_summary_off">ব্যাটারি অপ্টিমাইজেশন সক্রিয় করা হয়েছে, ব্যাকগ্রাউন্ডে থাকলে AMARadio ফোকাস ফিরে পেতে সক্ষম নাও হতে পারে।</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">ব্যাকগ্রাউন্ড প্লেব্যাক</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">অন্যান্য</string>
     <string name="settings_rate_app">AMARadio রেট করুন</string>
     <string name="settings_rate_app_summary">আপনি যদি অ্যাপটি পছন্দ করেন তবে দয়া করে প্লে স্টোরে একটি পর্যালোচনা দিন!</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">স্টেশন লোগো</string>
+    <string name="accessibility_station_logo">রেডিও স্টেশন লোগো</string>
     <string name="accessibility_favorite_selected">প্রিয়, নির্বাচিত</string>
     <string name="accessibility_favorite_not_selected">প্রিয়, নির্বাচিত নয়</string>
     <string name="accessibility_category_icon">বিভাগ আইকন</string>
@@ -337,7 +335,7 @@
     <string name="accessibility_configure">কনফিগার করুন</string>
     <string name="accessibility_close">বন্ধ করুন</string>
     <string name="accessibility_add_filter">ফিল্টার যোগ করুন</string>
-    <string name="accessibility_station_options">স্টেশন বিকল্প</string>
+    <string name="accessibility_station_options">রেডিও স্টেশন বিকল্প</string>
     <string name="not_applicable">প্রযোজ্য নয়</string>
     <string name="accessibility_station_description">স্টেশন: %1$s, ভাষা: %2$s, ট্যাগ: %3$s</string>
 
@@ -345,27 +343,55 @@
     <string name="error_no_browser">একটি ওয়েব ব্রাউজার খুঁজে পাওয়া যায়নি. এই লিঙ্ক খুলতে একটি ব্রাউজার ইনস্টল করুন.</string>
     <string name="error_no_homepage">এই স্টেশনের জন্য কোনো হোমপেজ উপলব্ধ নেই৷</string>
     <string name="tab_custom_stations">কাস্টম</string>
-    <string name="action_add_custom">কাস্টম স্টেশন যোগ করুন</string>
-    <string name="station_name">স্টেশনের নাম</string>
+    <string name="action_add_custom">কাস্টম রেডিও স্টেশন যোগ করুন</string>
+    <string name="station_name">রেডিও স্টেশনের নাম</string>
     <string name="stream_url">স্ট্রিম URL</string>
-    <string name="favicon_url">ফেভিকন URL (ঐচ্ছিক)</string>
+    <string name="favicon_url">Favicon URL (ঐচ্ছিক)</string>
     <string name="select_image">ছবি নির্বাচন করুন</string>
     <string name="error_invalid_url">একটি বৈধ URL লিখুন</string>
     <string name="action_save">সংরক্ষণ করুন</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">দ্রুত প্লেয়ার নিয়ন্ত্রণ</string>
-    <string name="widget_description_full">প্লেয়ার এবং স্টেশন তালিকা</string>
+    <string name="widget_description_full">প্লেয়ার এবং রেডিও স্টেশন তালিকা</string>
 
     <string name="settings_auto_db_update">ব্যাকগ্রাউন্ড ডেটা সিঙ্ক</string>
-    <string name="settings_auto_db_update_desc">রেডিও-ব্রাউজার API এর মাধ্যমে স্টেশন ডাটাবেস অটো-আপডেট করুন (প্রস্তাবিত)।</string>
-    <string name="settings_station_click_counter">স্টেশন ক্লিক কাউন্টার</string>
-    <string name="settings_station_click_counter_desc">বেনামে খেলার ঘটনা শেয়ার করে রেডিও-ব্রাউজার পরিসংখ্যান সমর্থন করুন।</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API এর মাধ্যমে স্টেশন ডাটাবেস অটো-আপডেট করুন (প্রস্তাবিত)।</string>
+    <string name="settings_station_click_counter">রেডিও স্টেশন ক্লিক কাউন্টার</string>
+    <string name="settings_station_click_counter_desc">বেনামে প্লেব্যাক ইভেন্ট শেয়ার করে Radio-Browser পরিসংখ্যান সমর্থন করুন।</string>
     <string name="settings_rate_app_github">AMARadio উপভোগ করছেন?</string>
     <string name="settings_rate_app_github_summary">GitHub এ একটি তারকা ছেড়ে দিন! এটি অন্যদের অ্যাপটি আবিষ্কার করতে সাহায্য করে এবং ভবিষ্যতের বিকাশকে সমর্থন করে।</string>
 
-    <string name="settings_remove_notification_on_stop">অ্যাপ বন্ধ হয়ে গেলে বিজ্ঞপ্তি সরান</string>
-    <string name="settings_remove_notification_on_stop_desc">সাম্প্রতিক অ্যাপ থেকে অ্যাপটি বন্ধ হয়ে গেলে স্বয়ংক্রিয়ভাবে মিডিয়া বিজ্ঞপ্তি খারিজ করুন</string>
+    <string name="settings_remove_notification_on_stop">স্টপ করলে বিজ্ঞপ্তি সরান</string>
+    <string name="settings_remove_notification_on_stop_desc">প্লেব্যাক বন্ধ হলে স্বয়ংক্রিয়ভাবে মিডিয়া বিজ্ঞপ্তি খারিজ করুন</string>
     <string name="settings_auto_resume_audio_focus">অডিও ফোকাস হারানোর পরে পুনরায় শুরু করুন</string>
-    <string name="settings_auto_resume_audio_focus_desc">ফোন কল, অ্যালার্ম বা অন্যান্য অডিও বন্ধ হওয়ার পরে স্বয়ংক্রিয়ভাবে প্লেব্যাক পুনরায় শুরু করুন</string>
+    <string name="settings_auto_resume_audio_focus_desc">ফোন কল বা অ্যালার্মের পরে স্বয়ংক্রিয়ভাবে প্লেব্যাক পুনরায় শুরু করুন</string>
+
+    <string name="settings_backup_restore">ব্যাকআপ এবং রিস্টোর</string>
+    <string name="settings_export_backup">সম্পূর্ণ ব্যাকআপ তৈরি করুন (ZIP)</string>
+    <string name="settings_export_backup_desc">সমস্ত প্রিয়, কাস্টম স্টেশন এবং আইকন একটি ZIP ফাইলে সংরক্ষণ করে</string>
+    <string name="settings_import_backup">ব্যাকআপ রিস্টোর করুন (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP ব্যাকআপ ফাইল থেকে প্রিয় এবং কাস্টম স্টেশনগুলো পুনরুদ্ধার করে</string>
+    <string name="backup_export_success">ব্যাকআপ সফলভাবে সংরক্ষিত হয়েছে</string>
+    <string name="backup_export_error">ব্যাকআপ সংরক্ষণ করা যায়নি</string>
+    <string name="backup_import_success">ব্যাকআপ সফলভাবে রিস্টোর করা হয়েছে</string>
+    <string name="backup_import_error">ব্যাকআপ রিস্টোর করা যায়নি</string>
+
+    <string name="database_summary_title">স্থানীয় ডাটাবেস</string>
+    <string name="database_total_stations">মোট রেডিও স্টেশন</string>
+    <string name="database_last_sync">সর্বশেষ সিঙ্ক</string>
+    <string name="database_update_now">এখনই ডাটাবেস আপডেট করুন</string>
+    <string name="database_full_update">ডাটাবেস আপডেট করুন</string>
+    <string name="database_syncing">সিঙ্ক হচ্ছে…</string>
+    <string name="database_downloading">ডাউনলোড হচ্ছে…</string>
+    <string name="database_stations_loaded">%1$sটি রেডিও স্টেশন</string>
+    <string name="database_sync_channel_name">রেডিও স্টেশন ডাটাবেস সিঙ্ক্রোনাইজেশন</string>
+    <string name="database_sync_success">স্টেশন ডাটাবেস আপডেট সফলভাবে সম্পন্ন হয়েছে</string>
+    <string name="database_error_no_connection">কোনো ইন্টারনেট সংযোগ নেই</string>
+    <string name="database_error_no_space">পর্যাপ্ত ডিস্ক স্পেস নেই</string>
+    <string name="database_error_failed">ডাটাবেস আপডেট ব্যর্থ হয়েছে</string>
+
+    <string name="settings_disable_battery_optimization_desc">স্ক্রীন বন্ধ থাকলেও প্লেব্যাক চালু রাখতে ব্যাটারি ব্যবহার \'Unrestricted\'-এ সেট করুন।</string>
+    <string name="battery_opt_open_settings">সেটিংস খুলুন</string>
+    <string name="battery_opt_later">পরে</string>
 </resources>

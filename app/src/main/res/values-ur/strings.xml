@@ -52,24 +52,24 @@
     <string name="filter_empty_title">اپنی مرضی کی ریڈیو اسٹیشن فیڈ بنائیں</string>
     <string name="filter_empty_desc">مختلف معیارات کو ملا کر ایک ذاتی ویو بنائیں۔ آپ اپنی تلاش کو محدود کر سکتے ہیں بذریعہ:</string>
     <string name="filter_empty_filter_by">فلٹر بذریعہ:</string>
-    <string name="filter_empty_filter_desc">ملک، اسٹیشن کا نام، ٹیگز، یا زبان</string>
+    <string name="filter_empty_filter_desc">ملک، ریڈیو اسٹیشن کا نام، ٹیگز، یا زبان</string>
     <string name="filter_empty_sort_by">ترتیب بذریعہ:</string>
     <string name="filter_empty_sort_desc">کلکس، حروف تہجی، ووٹ، یا آخری تبدیلی</string>
     <string name="filter_empty_hint">اس ویو کو محفوظ کرنے کے لیے اوپر والے خانے میں نام لکھیں!</string>
-    <string name="error_station_load">اسٹیشن سے رابطہ نہیں ہو سکا</string>
-    <string name="error_list_update">ریڈیو براؤزر سرور سے رابطہ نہیں ہو سکا</string>
+    <string name="error_station_load">ریڈیو اسٹیشن سے رابطہ نہیں ہو سکا</string>
+    <string name="error_list_update">Radio-Browser سرور سے رابطہ نہیں ہو سکا</string>
 
     <string name="error_no_connection">انٹرنیٹ کنکشن دستیاب نہیں ہے</string>
     <string name="warning_volume_zero">والیم صفر پر ہے۔ شاید آپ کو کچھ سنائی نہ دے۔</string>
 
-    <string name="share_action">اسٹیشن لنک شیئر کریں بذریعہ…</string>
+    <string name="share_action">ریڈیو اسٹیشن لنک شیئر کریں بذریعہ…</string>
 
-    <string name="nav_item_stations">اسٹیشنز</string>
+    <string name="nav_item_stations">ریڈیو اسٹیشنز</string>
     <string name="nav_item_starred">پسندیدہ</string>
     <string name="nav_item_history">ہسٹری</string>
     <string name="nav_item_settings">سیٹنگز</string>
 
-    <string name="about_text">AMARadio اشتہارات سے ۱۰۰٪ پاک اور رازداری پر مبنی ہے۔\n\nمیں نے اصل میں یہ ایپ اپنی والدہ کے لیے بنائی تھی تاکہ انہیں اشتہارات یا ٹریکنگ کے بغیر ایک سادہ اور ایماندارانہ ریڈیو کا تجربہ فراہم کر سکوں۔ اسی لیے AMARadio ہمیشہ اشتہارات سے پاک رہے گی – یہ ان سے ایک وعدہ ہے، جو آپ سب کے ساتھ شیئر کیا گیا ہے۔\n\nیہ پروجیکٹ بہترین https://github.com/segler-alex/RadioDroid کا ایک فورک ہے۔ ایپ کو جدید رکھنے اور مستقبل کے اینڈرائیڈ ورژنز کے ساتھ ہم آہنگ بنانے کے لیے پورے سورس کوڈ کو جاوا سے کوٹلن میں منتقل کر دیا گیا ہے۔\n\nسورس کوڈ یہاں دستیاب ہے: https://github.com/ounben/AMARadio\n\nیہ ایپ https://www.radio-browser.info پر مفت ریڈیو اسٹیشن ڈائرکٹری کا استعمال کرتی ہے۔ کوئی بھی اس میں اسٹیشن شامل کر سکتا ہے۔ یہ آن لائن ریڈیو اسٹیشنوں کے لیے وکی کی طرح کام کرتا ہے۔\n\nرابطہ: ben@ounben.com\n\nبگ ٹریکر: https://github.com/ounben/AMARadio/issues\n\nاگر آپ کو یہ سافٹ ویئر پسند آئے اور آپ مدد کرنا چاہیں تو مجھے ای میل کرنے میں ہچکچاہٹ محسوس نہ کریں۔ نئی خصوصیات کے لیے آئیڈیاز کی بھی ہمیشہ تعریف کی جاتی ہے!\n\nیہ ایپ فری سافٹ ویئر ہے، جو GPLv3 کے تحت لائسنس یافتہ ہے۔ https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio اشتہارات سے ۱۰۰٪ پاک اور رازداری پر مبنی ہے۔\n\nمیں نے اصل میں یہ ایپ اپنی والدہ کے لیے بنائی تھی تاکہ انہیں اشتہارات یا ٹریکنگ کے بغیر ایک سادہ اور ایماندارانہ ریڈیو کا تجربہ فراہم کر سکوں۔ اسی لیے AMARadio ہمیشہ اشتہارات سے پاک رہے گی – یہ ان سے ایک وعدہ ہے، جو آپ سب کے ساتھ شیئر کیا گیا ہے۔\n\nیہ پروجیکٹ RadioDroid کا ایک فورک ہے۔ ایپ کو جدید رکھنے اور مستقبل کے اینڈرائیڈ ورژنز کے ساتھ ہم آہنگ بنانے کے لیے پورے سورس کوڈ کو جاوا سے کوٹلن میں منتقل کر دیا گیا ہے۔\n\nسورس کوڈ یہاں دستیاب ہے: https://github.com/ounben/AMARadio\n\nیہ ایپ https://www.radio-browser.info پر مفت ریڈیو اسٹیشن ڈائرکٹری کا استعمال کرتی ہے۔ کوئی بھی اس میں اسٹیشن شامل کر سکتا ہے۔ یہ آن لائن ریڈیو اسٹیشنوں کے لیے وکی کی طرح کام کرتا ہے۔\n\nرابطہ: ben@ounben.com\n\nبگ ٹریکر: https://github.com/ounben/AMARadio/issues\n\nاگر آپ کو یہ سافٹ ویئر پسند آئے اور آپ مدد کرنا چاہیں تو مجھے ای میل کرنے میں ہچکچاہٹ محسوس نہ کریں۔ نئی خصوصیات کے لیے آئیڈیاز کی بھی ہمیشہ تعریف کی جاتی ہے!\n\nیہ ایپ فری سافٹ ویئر ہے، جو GPLv3 کے تحت لائسنس یافتہ ہے۔ https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">ورژن: %1$s</string>
     <string name="detail_star">پسندیدہ میں شامل کریں</string>
     <string name="detail_unstar">پسندیدہ سے نکالیں</string>
@@ -108,7 +108,7 @@
     <string name="theme_dark">تاریک</string>
     <string name="theme_system">سسٹم کے مطابق</string>
     <string name="settings_compact_style">کمپیکٹ موڈ</string>
-    <string name="settings_compact_style_desc_off">اسٹیشن کی تفصیلات کے ساتھ بڑے آئیکن</string>
+    <string name="settings_compact_style_desc_off">ریڈیو اسٹیشن کی تفصیلات کے ساتھ بڑے آئیکن</string>
     <string name="settings_compact_style_desc_on">تفصیلات کے بغیر چھوٹے آئیکن</string>
     <string name="settings_bottom_navigation">نیچے والی نیویگیشن</string>
     <string name="settings_ui_scale">UI اسکیلنگ</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">کبھی کبھار استعمال ہونے والے ٹیگز نہیں دکھائے جائیں گے</string>
     <string name="settings_single_use_tags_desc_on">کبھی کبھار استعمال ہونے والے ٹیگز دکھائے جائیں گے</string>
 
-    <string name="settings_show_broken">خراب اسٹیشنز</string>
-    <string name="settings_show_broken_on">فہرستوں میں خراب اسٹیشنز دکھائیں</string>
-    <string name="settings_show_broken_off">فہرستوں میں خراب اسٹیشنز نہ دکھائیں</string>
+    <string name="settings_show_broken">خراب ریڈیو اسٹیشنز</string>
+    <string name="settings_show_broken_on">فہرستوں میں خراب ریڈیو اسٹیشنز دکھائیں</string>
+    <string name="settings_show_broken_off">فہرستوں میں خراب ریڈیو اسٹیشنز نہ دکھائیں</string>
 
     <string name="settings_startup_behaviour">اسٹارٹ رویہ</string>
     <string name="action_grid_view">گرڈ ویو</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">اسٹارٹ ایکشن</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">تمام اسٹیشنز دکھائیں</string>
+    <string name="startup_show_all_stations">تمام ریڈیو اسٹیشنز دکھائیں</string>
     <string name="startup_show_favorites">پسندیدہ دکھائیں</string>
     <string name="startup_show_history">ہسٹری دکھائیں</string>
     <string name="startup_show_last_view">آخری ویو</string>
 
-    <string name="settings_load_icons">اسٹیشن آئیکنز دکھائیں</string>
+    <string name="settings_load_icons">ریڈیو اسٹیشن آئیکنز دکھائیں</string>
     <string name="settings_load_icons_on">آئیکنز ڈاؤن لوڈ کیے جائیں گے</string>
     <string name="settings_load_icons_off">آئیکنز ڈاؤن لوڈ نہیں کیے جائیں گے</string>
 
     <string name="settings_auto_favorite">خودکار پسندیدہ</string>
-    <string name="settings_auto_favorite_on">چلاتے وقت اسٹیشنز خود بخود پسندیدہ میں شامل کریں</string>
-    <string name="settings_auto_favorite_off">چلاتے وقت اسٹیشنز خود بخود پسندیدہ میں شامل نہ کریں</string>
+    <string name="settings_auto_favorite_on">చలాటప్పుడు ریڈیو اسٹیشنز خود بخود پسندیدہ میں شامل کریں</string>
+    <string name="settings_auto_favorite_off">చలాటప్పుడు ریڈیو اسٹیشنز خود بخود پسندیدہ میں شامل نہ کریں</string>
 
     <string name="settings_play">پلیئر</string>
     <string name="settings_auto_play_on_startup">خودکار پلے</string>
-    <string name="settings_auto_play_on_startup_on">شروع ہونے پر آخری اسٹیشن چلائیں</string>
-    <string name="settings_auto_play_on_startup_off">شروع ہونے پر آخری اسٹیشن نہ چلائیں</string>
+    <string name="settings_auto_play_on_startup_on">شروع ہونے پر آخری ریڈیو اسٹیشن چلائیں</string>
+    <string name="settings_auto_play_on_startup_off">شروع ہونے پر آخری ریڈیو اسٹیشن نہ چلائیں</string>
     <string name="settings_auto_off_on_startup">خودکار اسٹاپ</string>
     <string name="settings_auto_off_on_startup_on">خودکار پلے کے ساتھ آٹو اسٹاپ ٹائمر استعمال کریں</string>
     <string name="settings_auto_off_on_startup_off">خودکار پلے کے ساتھ آٹو اسٹاپ ٹائمر استعمال نہ کریں</string>
     <string name="settings_auto_off_sleep_timer">آٹو اسٹاپ ٹائمر</string>
     <string name="settings_auto_off_sleep_timer_desc">%1$s منٹ کے بعد چلنا بند کر دیں</string>
     <string name="settings_play_external">بیرونی پلیئر فعال کریں</string>
-    <string name="settings_play_external_desc_on">اسٹیشنز بیرونی پلیئر کے ساتھ چلائیں</string>
-    <string name="settings_play_external_desc_off">اسٹیشنز AMARadio کے ساتھ چلائیں</string>
+    <string name="settings_play_external_desc_on">ریڈیو اسٹیشنز بیرونی پلیئر کے ساتھ چلائیں</string>
+    <string name="settings_play_external_desc_off">ریڈیو اسٹیشنز AMARadio کے ساتھ چلائیں</string>
     <string name="settings_equalizer">ایکویلائزر</string>
 
     <string name="settings_connectivity">رابطہ</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">روک دیا گیا</string>
     <string name="notify_metered_connection">میٹرڈ کنکشن</string>
 
-    <string name="notify_starred">اسٹیشن پسندیدہ میں شامل کر دیا گیا ہے</string>
-    <string name="notify_autostarred">اسٹیشن خود بخود پسندیدہ میں شامل کر دیا گیا ہے</string>
-    <string name="notify_unstarred">اسٹیشن پسندیدہ سے نکال دیا گیا ہے</string>
+    <string name="notify_starred">ریڈیو اسٹیشن پسندیدہ میں شامل کر دیا گیا ہے</string>
+    <string name="notify_autostarred">ریڈیو اسٹیشن خود بخود پسندیدہ میں شامل کر دیا گیا ہے</string>
+    <string name="notify_unstarred">ریڈیو اسٹیشن پسندیدہ سے نکال دیا گیا ہے</string>
     <string name="notify_deleted_favorites">پسندیدہ ڈیلیٹ کر دیے گئے ہیں</string>
     <string name="notify_deleted_history">ہسٹری ڈیلیٹ کر دی گئی ہے</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">براہ کرم پلیئر منتخب کریں</string>
     <string name="alert_select_player_name">نام</string>
-    <string name="hostname">ہوسٹ کا نام</string>
-    <string name="port">پورٹ</string>
+    <string name="hostname">سرور کا پتہ</string>
+    <string name="port">نیٹ ورک پورٹ</string>
 
     <string name="alert_press_back_to_exit">باہر نکلنے کے لیے ایک بار پھر بیک دبائیں</string>
 
@@ -241,7 +241,7 @@
     <string name="tab_player_info">معلومات</string>
     <string name="tab_player_history">ٹریک ہسٹری</string>
 
-    <string name="station_detail_bitrate">%1$1d kbps</string>
+    <string name="station_detail_bitrate">%1$d kbps</string>
     <string name="station_detail_broken">خراب ہے</string>
     <string name="station_detail_deleted_on_server">ڈیلیٹ کر دیا گیا</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">بیرونی پلیئر میں چلائیں</string>
     <string name="action_choose_external_player">بیرونی پلیئر منتخب کریں</string>
 
-    <string name="settings_disable_battery_optimization">بیٹری آپٹیمائزیشن</string>
-    <string name="settings_ignore_battery_optimization_summary_on">بیٹری آپٹیمائزیشن کو نظر انداز کر دیا گیا ہے، AMARadio کو ہمیشہ فوکس دوبارہ حاصل کرنے کے قابل ہونا چاہیے۔</string>
-    <string name="settings_ignore_battery_optimization_summary_off">بیٹری آپٹیمائزیشن فعال ہے، اگر AMARadio بیک گراؤنڈ میں ہو تو وہ فوکس دوبارہ حاصل کرنے کے قابل نہیں ہو سکتا۔</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">بیک گراؤنڈ پلے بیک</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">دیگر</string>
     <string name="settings_rate_app">AMARadio کی درجہ بندی کریں</string>
     <string name="settings_rate_app_summary">اگر آپ کو ایپ پسند ہے تو براہ کرم پلے اسٹور پر ریویو دیں!</string>
+    <string name="settings_rate_app_github">AMARadio سے لطف اندوز ہو رہے ہیں؟</string>
+    <string name="settings_rate_app_github_summary">GitHub پر ایک ستارہ چھوڑ دو! اس سے دوسروں کو ایپ دریافت کرنے میں مدد ملتی ہے اور مستقبل کی ترقی میں مدد ملتی ہے۔</string>
     <string name="settings_statistics">اعداد و شمار</string>
     <string name="settings_about">AMARadio کے بارے میں</string>
 
@@ -278,13 +278,13 @@
     <string name="description_btn_skip_to_previous">پچھلے پر جائیں</string>
 
     <string-array name="weekdays">
-        <item>اتوار</item>
-        <item>پیر</item>
-        <item>منگل</item>
-        <item>بدھ</item>
-        <item>جمعرات</item>
-        <item>جمعہ</item>
-        <item>ہفتہ</item>
+        <item>ا</item>
+        <item>پ</item>
+        <item>م</item>
+        <item>ب</item>
+        <item>ج</item>
+        <item>ج</item>
+        <item>ہ</item>
     </string-array>
 
     <string name="notify_stream_url_copied">اسٹریم URL کامیابی سے کاپی ہو گیا</string>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">سٹیشن لوگو</string>
+    <string name="accessibility_station_logo">ریڈیو اسٹیشن لوگو</string>
     <string name="accessibility_favorite_selected">پسندیدہ، منتخب</string>
     <string name="accessibility_favorite_not_selected">پسندیدہ، غیر منتخب</string>
     <string name="accessibility_category_icon">زمرہ آئیکن</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">کنفیگر کریں</string>
     <string name="accessibility_close">بند کریں</string>
     <string name="accessibility_add_filter">فلٹر شامل کریں</string>
-    <string name="accessibility_station_options">سٹیشن کے اختیارات</string>
+    <string name="accessibility_station_options">ریڈیو اسٹیشن کے اختیارات</string>
     <string name="not_applicable">لاگو نہیں ہوتا</string>
-    <string name="accessibility_station_description">سٹیشن: %1$s، زبان: %2$s، ٹیگز: %3$s</string>
+    <string name="accessibility_station_description">اسٹیشن: %1$s، زبان: %2$s، ٹیگز: %3$s</string>
 
     <string name="error_no_file_manager">سسٹم فائل مینیجر نہیں مل سکا۔ براہ کرم یقینی بنائیں کہ فائل ایکسپلورر انسٹال اور فعال ہے۔</string>
     <string name="error_no_browser">ویب براؤزر نہیں مل سکا۔ براہ کرم اس لنک کو کھولنے کے لیے براؤزر انسٹال کریں۔</string>
-    <string name="error_no_homepage">اس اسٹیشن کے لیے کوئی ہوم پیج دستیاب نہیں ہے۔</string>
+    <string name="error_no_homepage">اس ریڈیو اسٹیشن کے لیے کوئی ہوم پیج دستیاب نہیں ہے۔</string>
     <string name="tab_custom_stations">حسب ضرورت</string>
-    <string name="action_add_custom">حسب ضرورت اسٹیشن شامل کریں۔</string>
-    <string name="station_name">اسٹیشن کا نام</string>
-    <string name="stream_url">سلسلہ یو آر ایل</string>
-    <string name="favicon_url">Favicon URL (اختیاری)</string>
-    <string name="select_image">تصویر منتخب کریں۔</string>
-    <string name="error_invalid_url">براہ کرم ایک درست URL درج کریں۔</string>
-    <string name="action_save">محفوظ کریں۔</string>
+    <string name="action_add_custom">حسب ضرورت ریڈیو اسٹیشن شامل کریں</string>
+    <string name="station_name">ریڈیو اسٹیشن کا نام</string>
+    <string name="stream_url">اسٹریم URL</string>
+    <string name="favicon_url">اسٹیشن لوگو URL (Favicon)</string>
+    <string name="select_image">تصویر منتخب کریں</string>
+    <string name="error_invalid_url">براہ کرم ایک درست URL درج کریں</string>
+    <string name="action_save">محفوظ کریں</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">فوری پلیئر کنٹرولز</string>
-    <string name="widget_description_full">پلیئر اور اسٹیشن کی فہرست</string>
+    <string name="widget_description_full">پلیئر اور ریڈیو اسٹیشنوں کی فہرست</string>
 
     <string name="settings_auto_db_update">بیک گراؤنڈ ڈیٹا سنک</string>
-    <string name="settings_auto_db_update_desc">ریڈیو براؤزر API (تجویز کردہ) کے ذریعے اسٹیشن ڈیٹا بیس کو آٹو اپ ڈیٹ کریں۔</string>
-    <string name="settings_station_click_counter">اسٹیشن کلک کاؤنٹر</string>
-    <string name="settings_station_click_counter_desc">گمنام طور پر پلے ایونٹس کا اشتراک کرکے ریڈیو براؤزر کے اعدادوشمار کو سپورٹ کریں۔</string>
-    <string name="settings_rate_app_github">AMARadio سے لطف اندوز ہو رہے ہیں؟</string>
-    <string name="settings_rate_app_github_summary">GitHub پر ایک ستارہ چھوڑ دو! اس سے دوسروں کو ایپ دریافت کرنے میں مدد ملتی ہے اور مستقبل کی ترقی میں مدد ملتی ہے۔</string>
+    <string name="settings_auto_db_update_desc">Radio-Browser API (تجویز کردہ) کے ذریعے اسٹیشن ڈیٹا بیس کو آٹو اپ ڈیٹ کریں۔</string>
+    <string name="settings_station_click_counter">ریڈیو اسٹیشن کلک کاؤنٹر</string>
+    <string name="settings_station_click_counter_desc">آڈیو پلے بیک ایونٹس کا اشتراک کرکے Radio-Browser کے اعدادوشمار کو سپورٹ کریں۔</string>
 
-    <string name="settings_remove_notification_on_stop">ایپ بند ہونے پر اطلاع ہٹا دیں۔</string>
-    <string name="settings_remove_notification_on_stop_desc">حالیہ ایپس سے ایپ بند ہونے پر میڈیا کی اطلاع کو خودکار طور پر برخاست کریں۔</string>
-    <string name="settings_auto_resume_audio_focus">آڈیو فوکس کے نقصان کے بعد دوبارہ شروع کریں۔</string>
+    <string name="settings_remove_notification_on_stop">بند ہونے پر نوٹیفکیشن ہٹائیں</string>
+    <string name="settings_remove_notification_on_stop_desc">پلے بیک بند ہونے پر میڈیا کی اطلاع کو خودکار طور پر ہٹائیں</string>
+    <string name="settings_auto_resume_audio_focus">آڈیو فوکس کے نقصان کے بعد دوبارہ شروع کریں</string>
     <string name="settings_auto_resume_audio_focus_desc">فون کالز، الارم، یا دیگر آڈیو رکنے کے بعد خودکار طور پر پلے بیک دوبارہ شروع کریں۔</string>
+
+    <string name="settings_backup_restore">بیک اپ اور بحالی</string>
+    <string name="settings_export_backup">مکمل بیک اپ بنائیں (ZIP)</string>
+    <string name="settings_export_backup_desc">تمام پسندیدہ، حسب ضرورت اسٹیشنوں اور آئیکنز کو ZIP فائل میں محفوظ کرتا ہے</string>
+    <string name="settings_import_backup">بیک اپ بحال کریں (ZIP)</string>
+    <string name="settings_import_backup_desc">ZIP فائل سے پسندیدہ اور حسب ضرورت اسٹیشنوں کو بحال کرتا ہے</string>
+    <string name="backup_export_success">بیک اپ کامیابی سے محفوظ ہو گیا</string>
+    <string name="backup_export_error">بیک اپ محفوظ کرنے میں ناکامی</string>
+    <string name="backup_import_success">بیک اپ کامیابی سے بحال ہو گیا</string>
+    <string name="backup_import_error">بیک اپ بحال کرنے میں ناکامی</string>
+
+    <string name="database_summary_title">مقامی ڈیٹا بیس</string>
+    <string name="database_total_stations">کل ریڈیو اسٹیشنز</string>
+    <string name="database_last_sync">آخری اپ ڈیٹ</string>
+    <string name="database_update_now">ڈیٹا بیس ابھی اپ ڈیٹ کریں</string>
+    <string name="database_full_update">ڈیٹا بیس اپ ڈیٹ کریں</string>
+    <string name="database_syncing">سنک ہو رہا ہے…</string>
+    <string name="database_downloading">ڈاؤن لوڈ ہو رہا ہے…</string>
+    <string name="database_stations_loaded">%1$s ریڈیو اسٹیشنز</string>
+    <string name="database_sync_channel_name">ریڈیو اسٹیشن ڈیٹا بیس کی مطابقت پذیری</string>
+    <string name="database_sync_success">اسٹیشن ڈیٹا بیس کی اپ ڈیٹ کامیابی سے مکمل ہو گئی</string>
+    <string name="database_error_no_connection">انٹرنیٹ کنکشن نہیں ہے</string>
+    <string name="database_error_no_space">ڈسک پر کافی جگہ نہیں ہے</string>
+    <string name="database_error_failed">ڈیٹا بیس اپ ڈیٹ ناکام ہو گئی</string>
+
+    <string name="settings_disable_battery_optimization_desc">اسکرین بند ہونے پر بھی کھیلنا جاری رکھنے کے لیے بیٹنگ کا استعمال \'Unrestricted\' پر سیٹ کریں۔</string>
+    <string name="battery_opt_open_settings">سیٹنگز کھولیں</string>
+    <string name="battery_opt_later">بعد میں</string>
 </resources>

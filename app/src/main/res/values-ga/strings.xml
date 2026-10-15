@@ -52,24 +52,24 @@
     <string name="filter_empty_title">Tóg do shruth stáisiúin raidió féin</string>
     <string name="filter_empty_desc">Cruthaigh amharc pearsantaithe trí roinnt critéar a chomhcheangal. Is féidir leat do chuardach a chúngú ag baint úsáide as:</string>
     <string name="filter_empty_filter_by">Scag de réir</string>
-    <string name="filter_empty_filter_desc">Tír, Ainm Stáisiúin, Clibeanna, nó Teanga</string>
+    <string name="filter_empty_filter_desc">Tír, Ainm Stáisiún Raidió, Clibeanna, nó Teanga</string>
     <string name="filter_empty_sort_by">Sórtáil de réir</string>
     <string name="filter_empty_sort_desc">Cliceanna, Aibítir, Vótaí, nó Athrú deiridh</string>
     <string name="filter_empty_hint">Clóscríobh ainm sa réimse thuas chun an t-amharc seo a shábháil!</string>
-    <string name="error_station_load">Níorbh fhéidir nascadh leis an stáisiún</string>
-    <string name="error_list_update">Níorbh fhéidir nascadh le freastalaí radio browser</string>
+    <string name="error_station_load">Níorbh fhéidir nascadh leis an stáisiún raidió</string>
+    <string name="error_list_update">Níorbh fhéidir nascadh le freastalaí Radio-Browser</string>
 
     <string name="error_no_connection">Níl aon nasc idirlín ar fáil</string>
     <string name="warning_volume_zero">Tá an t-airde fuaime ag nialas. Seans nach gcloisfidh tú aon rud.</string>
 
-    <string name="share_action">Comhroinn nasc an stáisiúin le…</string>
+    <string name="share_action">Comhroinn nasc an stáisiúin raidió le…</string>
 
-    <string name="nav_item_stations">Stáisiúin</string>
+    <string name="nav_item_stations">Stáisiúin Raidió</string>
     <string name="nav_item_starred">Ceanáin</string>
     <string name="nav_item_history">Stair</string>
     <string name="nav_item_settings">Socruithe</string>
 
-    <string name="about_text">Tá AMARadio 100% saor ó fhógraí agus dírithe ar phríobháideacht.\n\nD\'fhorbair mé an aip seo ar dtús do mo mháthair chun eispéireas raidió simplí, macánta a thabhairt di gan fógraí corraitheacha nó rianú. Sin an fáth go mbeidh AMARadio saor ó fhógraí i gcónaí – is geallúint di é, roinnte libh go léir.\n\nIs forc é an tionscadal seo den sár-aip https://github.com/segler-alex/RadioDroid . Tá an códbhunús iomlán aistrithe ó Java go Kotlin chun a chinntiú go bhfanann an aip nua-aimseartha agus comhoiriúnach le leaganacha amach anseo de Android.\n\nTá an cód foinse ar fáil ag: https://github.com/ounben/AMARadio\n\nÚsáideann an aip seo an t-eolaire stáisiún raidió saor in aisce ag https://www.radio-browser.info .\nIs féidir le duine ar bith stáisiúin a chur leis. Oibríonn sé cosúil le vicipéid do stáisiúin raidió ar líne.\n\nTeagmháil: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nMás maith leat an bogearraí agus más mian leat cabhrú, ná bíodh drogall ort ríomhphost a sheoladh chugam.\nTáimid buíoch i gcónaí as smaointe maidir le gnéithe nua!\n\nIs bogearraí saor in aisce an aip seo, ceadúnaithe faoi GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">Tá AMARadio 100% saor ó fhógraí agus dírithe ar phríobháideacht.\n\nD\'fhorbair mé an aip seo ar dtús do mo mháthair chun eispéireas raidió simplí, macánta a thabhairt di gan fógraí corraitheacha nó rianú. Sin an fáth go mbeidh AMARadio saor ó fhógraí i gcónaí – is geallúint di é, roinnte libh go léir.\n\nIs forc é an tionscadal seo den sár-aip RadioDroid. Tá an códbhunús iomlán aistrithe ó Java go Kotlin chun a chinntiú go bhfanann an aip nua-aimseartha agus comhoiriúnach le leaganacha amach anseo de Android.\n\nTá an cód foinse ar fáil ag: https://github.com/ounben/AMARadio\n\nÚsáideann an aip seo an t-eolaire stáisiún raidió saor in aisce ag https://www.radio-browser.info .\nIs féidir le duine ar bith stáisiúin a chur leis. Oibríonn sé cosúil le vicipéid do stáisiúin raidió ar líne.\n\nTeagmháil: ben@ounben.com\n\nBugtracker: https://github.com/ounben/AMARadio/issues\n\nMás maith leat an bogearraí agus más mian leat cabhrú, ná bíodh drogall ort ríomhphost a sheoladh chugam.\nTáimid buíoch i gcónaí as smaointe maidir le gnéithe nua!\n\nIs bogearraí saor in aisce an aip seo, ceadúnaithe faoi GPLv3. https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">Leagan: %1$s</string>
     <string name="detail_star">Cuir leis na ceanáin</string>
     <string name="detail_unstar">Bain de na ceanáin</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Dorcha</string>
     <string name="theme_system">Lean an córas</string>
     <string name="settings_compact_style">Mód dlúth</string>
-    <string name="settings_compact_style_desc_off">Deilbhín mór le sonraí stáisiúin</string>
-    <string name="settings_compact_style_desc_on">Deilbhín beag gan sonraí stáisiúin</string>
+    <string name="settings_compact_style_desc_off">Deilbhín mór le sonraí stáisiúin raidió</string>
+    <string name="settings_compact_style_desc_on">Deilbhín beag gan sonraí stáisiúin raidió</string>
     <string name="settings_bottom_navigation">Nascleanúint ag an mbun</string>
     <string name="settings_ui_scale">Scálú UI</string>
     <string name="settings_language">Teanga</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Ní thaispeánfar clibeanna nach n-úsáidtear go minic</string>
     <string name="settings_single_use_tags_desc_on">Taispeánfar clibeanna nach n-úsáidtear go minic</string>
 
-    <string name="settings_show_broken">Stáisiúin bhriste</string>
-    <string name="settings_show_broken_on">Taispeáin stáisiúin bhriste i liostaí</string>
-    <string name="settings_show_broken_off">Ná taispeáin stáisiúin bhriste i liostaí</string>
+    <string name="settings_show_broken">Stáisiúin raidió bhriste</string>
+    <string name="settings_show_broken_on">Taispeáin stáisiúin raidió bhriste i liostaí</string>
+    <string name="settings_show_broken_off">Ná taispeáin stáisiúin raidió bhriste i liostaí</string>
 
     <string name="settings_startup_behaviour">Iompar Tosaigh</string>
     <string name="action_grid_view">Amharc Eangaí</string>
@@ -133,12 +133,12 @@
 
     <string name="startup_action_title">Gníomh tosaigh</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Taispeáin gach stáisiún</string>
+    <string name="startup_show_all_stations">Taispeáin gach stáisiún raidió</string>
     <string name="startup_show_favorites">Taispeáin ceanáin</string>
     <string name="startup_show_history">Taispeáin stair</string>
     <string name="startup_show_last_view">Amharc deiridh</string>
 
-    <string name="settings_load_icons">Taispeáin deilbhíní stáisiúin</string>
+    <string name="settings_load_icons">Taispeáin deilbhíní stáisiúin raidió</string>
     <string name="settings_load_icons_on">Íoslódálfar deilbhíní</string>
     <string name="settings_load_icons_off">Ní íoslódálfar deilbhíní</string>
 
@@ -148,16 +148,16 @@
 
     <string name="settings_play">Seinnteoir</string>
     <string name="settings_auto_play_on_startup">Auto-sheinm</string>
-    <string name="settings_auto_play_on_startup_on">Seinn an stáisiún deiridh ag an tosú</string>
-    <string name="settings_auto_play_on_startup_off">Ná seinn an stáisiún deiridh ag an tosú</string>
+    <string name="settings_auto_play_on_startup_on">Seinn an stáisiún raidió deiridh ag an tosú</string>
+    <string name="settings_auto_play_on_startup_off">Ná seinn an stáisiún raidió deiridh ag an tosú</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Úsáid timer auto-stop le huath-sheinm</string>
     <string name="settings_auto_off_on_startup_off">Ná húsáid timer auto-stop le huath-sheinm</string>
     <string name="settings_auto_off_sleep_timer">Timer auto-stop</string>
     <string name="settings_auto_off_sleep_timer_desc">Stop an seinm tar éis %1$s nóiméad</string>
     <string name="settings_play_external">Cumasaigh seinnteoir seachtrach</string>
-    <string name="settings_play_external_desc_on">Seinn stáisiúin le seinnteoir seachtrach</string>
-    <string name="settings_play_external_desc_off">Seinn stáisiúin le AMARadio</string>
+    <string name="settings_play_external_desc_on">Seinn stáisiúin raidió le seinnteoir seachtrach</string>
+    <string name="settings_play_external_desc_off">Seinn stáisiúin raidió le AMARadio</string>
     <string name="settings_equalizer">Cothromóir</string>
 
     <string name="settings_connectivity">Nascacht</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Ar sos</string>
     <string name="notify_metered_connection">Nasc tomhaiste</string>
 
-    <string name="notify_starred">Cuireadh an stáisiún leis na ceanáin</string>
-    <string name="notify_autostarred">Cuireadh an stáisiún leis na ceanáin go huathoibríoch</string>
-    <string name="notify_unstarred">Baineadh an stáisiún de na ceanáin</string>
+    <string name="notify_starred">Cuireadh an stáisiún raidió leis na ceanáin</string>
+    <string name="notify_autostarred">Cuireadh an stáisiún raidió leis na ceanáin go huathoibríoch</string>
+    <string name="notify_unstarred">Baineadh an stáisiún raidió de na ceanáin</string>
     <string name="notify_deleted_favorites">Scriosadh na ceanáin</string>
     <string name="notify_deleted_history">Scriosadh an stair</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Roghnaigh seinnteoir le do thoil</string>
     <string name="alert_select_player_name">Ainm</string>
-    <string name="hostname">Ósta-ainm</string>
-    <string name="port">Port</string>
+    <string name="hostname">Seoladh an fhreastalaí</string>
+    <string name="port">Port líonra</string>
 
     <string name="alert_press_back_to_exit">Brúigh siar uair amháin eile chun scoir</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Seinn i seinnteoir seachtrach</string>
     <string name="action_choose_external_player">Roghnaigh seinnteoir seachtrach</string>
 
-    <string name="settings_disable_battery_optimization">Optamú ceallraí</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Tugtar neamhaird ar optamú ceallraí, ba cheart go mbeadh AMARadio in ann fócas a fháil ar ais i gcónaí.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Tá optamú ceallraí gníomhachtaithe, ní bheidh AMARadio in ann fócas a fháil ar ais má tá sé sa chúlra.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Athsheinm sa chúlra</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Eile</string>
     <string name="settings_rate_app">Rátáil AMARadio</string>
     <string name="settings_rate_app_summary">Más maith leat an aip, fág léirmheas ar an Play Store le do thoil!</string>
@@ -324,7 +322,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Lógó an stáisiúin</string>
+    <string name="accessibility_station_logo">Lógó an stáisiúin raidió</string>
     <string name="accessibility_favorite_selected">Is fearr leat, roghnaithe</string>
     <string name="accessibility_favorite_not_selected">Is fearr leat, gan roghnú</string>
     <string name="accessibility_category_icon">Deilbhín catagóire</string>
@@ -337,35 +335,63 @@
     <string name="accessibility_configure">Cumraigh</string>
     <string name="accessibility_close">Dún</string>
     <string name="accessibility_add_filter">Cuir scagaire leis</string>
-    <string name="accessibility_station_options">Roghanna stáisiúin</string>
+    <string name="accessibility_station_options">Roghanna an stáisiúin raidió</string>
     <string name="not_applicable">n/b</string>
     <string name="accessibility_station_description">Stáisiún: %1$s, Teanga: %2$s, Clibeanna: %3$s</string>
 
     <string name="error_no_file_manager">Níorbh fhéidir bainisteoir comhaid córais a aimsiú. Cinntigh le do thoil go bhfuil taiscéalaí comhad suiteáilte agus cumasaithe.</string>
     <string name="error_no_browser">Níorbh fhéidir brabhsálaí gréasáin a aimsiú. Suiteáil brabhsálaí chun an nasc seo a oscailt.</string>
-    <string name="error_no_homepage">Níl aon leathanach baile ar fáil don stáisiún seo</string>
+    <string name="error_no_homepage">Níl aon leathanach baile ar fáil don stáisiún raidió seo</string>
     <string name="tab_custom_stations">Saincheaptha</string>
-    <string name="action_add_custom">Cuir Stáisiún an Chustaim leis</string>
-    <string name="station_name">Ainm an Stáisiúin</string>
+    <string name="action_add_custom">Cuir stáisiún raidió saincheaptha leis</string>
+    <string name="station_name">Ainm an stáisiúin raidió</string>
     <string name="stream_url">Sruth URL</string>
-    <string name="favicon_url">URL Favicon (roghnach)</string>
+    <string name="favicon_url">URL lógó an stáisiúin (Favicon)</string>
     <string name="select_image">Roghnaigh Íomhá</string>
     <string name="error_invalid_url">Cuir isteach URL bailí</string>
     <string name="action_save">Sábháil</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">Rialuithe imreoir tapa</string>
-    <string name="widget_description_full">Liosta imreoirí agus stáisiúin</string>
+    <string name="widget_description_small">Rialuithe tapa an tseinnteora</string>
+    <string name="widget_description_full">Seinnteoir agus liosta stáisiún raidió</string>
 
     <string name="settings_auto_db_update">Sioncronú Sonraí Cúlra</string>
-    <string name="settings_auto_db_update_desc">Bunachar sonraí stáisiúin a nuashonrú go huathoibríoch trí API Brabhsálaí Raidió (molta).</string>
-    <string name="settings_station_click_counter">Stáisiún cliceáil gcuntar</string>
-    <string name="settings_station_click_counter_desc">Tacaigh le staitisticí Brabhsálaí Raidió trí imeachtaí súgartha a roinnt gan ainm.</string>
-    <string name="settings_rate_app_github">Ag baint suilt as AMAradio?</string>
+    <string name="settings_auto_db_update_desc">Bunachar sonraí stáisiúin a nuashonrú go huathoibríoch trí API Radio-Browser (molta).</string>
+    <string name="settings_station_click_counter">Clár cliceáil an stáisiúin raidió</string>
+    <string name="settings_station_click_counter_desc">Tacaigh le staitisticí Radio-Browser trí imeachtaí athsheinm a roinnt gan ainm.</string>
+    <string name="settings_rate_app_github">Ag baint suilt as AMARadio?</string>
     <string name="settings_rate_app_github_summary">Fág réalta ar GitHub! Cabhraíonn sé le daoine eile an aip a aimsiú agus tacaíonn sé le forbairt sa todhchaí.</string>
 
-    <string name="settings_remove_notification_on_stop">Bain fógra nuair a dhúntar an aip</string>
-    <string name="settings_remove_notification_on_stop_desc">Déan an fógra meán a dhíbhe go huathoibríoch nuair a dhúntar an aip ó aipeanna le déanaí</string>
+    <string name="settings_remove_notification_on_stop">Bain fógra nuair a stopfar</string>
+    <string name="settings_remove_notification_on_stop_desc">Déan an fógra meán a dhíbhe go huathoibríoch nuair a stopfar an athsheinm</string>
     <string name="settings_auto_resume_audio_focus">Atosú tar éis caillteanas fócas fuaime</string>
     <string name="settings_auto_resume_audio_focus_desc">Athsheinm arís go huathoibríoch tar éis glaonna gutháin, aláraim nó stadanna fuaime eile</string>
+
+    <string name="settings_backup_restore">Cúltaca agus athchóiriú</string>
+    <string name="settings_export_backup">Cruthaigh cúltaca iomlán (ZIP)</string>
+    <string name="settings_export_backup_desc">Sábhálann sé gach ceanán, stáisiún saincheaptha agus deilbhín i gcomhad ZIP</string>
+    <string name="settings_import_backup">Athchóirigh cúltaca (ZIP)</string>
+    <string name="settings_import_backup_desc">Athchóiríonn sé ceanáin agus stáisiúin saincheaptha ó chomhad cúltaca ZIP</string>
+    <string name="backup_export_success">Sábháladh an cúltaca go rathúil</string>
+    <string name="backup_export_error">Níorbh fhéidir an cúltaca a shábháil</string>
+    <string name="backup_import_success">Athchóiríodh an cúltaca go rathúil</string>
+    <string name="backup_import_error">Níorbh fhéidir an cúltaca a athchóiriú</string>
+
+    <string name="database_summary_title">Bunachar sonraí áitiúil</string>
+    <string name="database_total_stations">Stáisiúin raidió iomlána</string>
+    <string name="database_last_sync">Nuashonrú deiridh</string>
+    <string name="database_update_now">Nuashonraigh an bunachar sonraí anois</string>
+    <string name="database_full_update">Nuashonraigh an bunachar sonraí</string>
+    <string name="database_syncing">Ag sioncronú…</string>
+    <string name="database_downloading">Ag íoslódáil…</string>
+    <string name="database_stations_loaded">%1$s stáisiún raidió</string>
+    <string name="database_sync_channel_name">Sioncronú bhunachar sonraí na stáisiún raidió</string>
+    <string name="database_sync_success">Críochnaíodh nuashonrú bhunachar sonraí na stáisiún go rathúil</string>
+    <string name="database_error_no_connection">Níl aon nasc idirlín ann</string>
+    <string name="database_error_no_space">Níl go leor spáis ar an diosca</string>
+    <string name="database_error_failed">Theip ar nuashonrú an bhunachair shonraí</string>
+
+    <string name="settings_disable_battery_optimization_desc">Chun athsheinm a choinneáil ar siúl agus an scáileán múchta, socraigh úsáid ceallraí go \'Neamhtheoranta\'.</string>
+    <string name="battery_opt_open_settings">Oscail socruithe</string>
+    <string name="battery_opt_later">Níos déanaí</string>
 </resources>

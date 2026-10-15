@@ -52,24 +52,24 @@
     <string name="filter_empty_title">สร้างฟีดสถานีวิทยุของคุณเอง</string>
     <string name="filter_empty_desc">สร้างมุมมองส่วนตัวโดยรวมหลายเกณฑ์เข้าด้วยกัน คุณสามารถจำกัดการค้นหาให้แคบลงได้โดยใช้:</string>
     <string name="filter_empty_filter_by">กรองโดย</string>
-    <string name="filter_empty_filter_desc">ประเทศ, ชื่อสถานี, แท็ก หรือภาษา</string>
+    <string name="filter_empty_filter_desc">ประเทศ, ชื่อสถานีวิทยุ, แท็ก หรือภาษา</string>
     <string name="filter_empty_sort_by">จัดเรียงโดย</string>
     <string name="filter_empty_sort_desc">คลิก, ลำดับอักษร, โหวต หรือการเปลี่ยนแปลงล่าสุด</string>
     <string name="filter_empty_hint">พิมพ์ชื่อในช่องด้านบนเพื่อบันทึกมุมมองนี้!</string>
-    <string name="error_station_load">ไม่สามารถเชื่อมต่อกับสถานีได้</string>
-    <string name="error_list_update">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ radio browser ได้</string>
+    <string name="error_station_load">ไม่สามารถเชื่อมต่อกับสถานีวิทยุได้</string>
+    <string name="error_list_update">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ Radio-Browser ได้</string>
 
     <string name="error_no_connection">ไม่มีการเชื่อมต่ออินเทอร์เน็ต</string>
     <string name="warning_volume_zero">ระดับเสียงเป็นศูนย์ คุณอาจไม่ได้ยินเสียงใดๆ</string>
 
-    <string name="share_action">แชร์ลิงก์สถานีไปยัง…</string>
+    <string name="share_action">แชร์ลิงก์สถานีวิทยุไปยัง…</string>
 
-    <string name="nav_item_stations">สถานี</string>
+    <string name="nav_item_stations">สถานีวิทยุ</string>
     <string name="nav_item_starred">รายการโปรด</string>
     <string name="nav_item_history">ประวัติ</string>
     <string name="nav_item_settings">ตั้งค่า</string>
 
-    <string name="about_text">AMARadio ปราศจากโฆษณา 100% และมุ่งเน้นความเป็นส่วนตัว\n\nเดิมทีผมพัฒนาแอปนี้ให้แม่เพื่อให้ท่านได้รับประสบการณ์การฟังวิทยุที่เรียบง่ายและจริงใจ โดยไม่มีโฆษณาที่น่ารำคาญหรือการติดตาม นี่คือเหตุผลที่ AMARadio จะยังคงไม่มีโฆษณาตลอดไป – เป็นสัญญาที่ให้ไว้กับท่าน และแชร์ให้กับทุกคน\n\nโครงการนี้เป็นการ Fork มาจาก https://github.com/segler-alex/RadioDroid ที่ยอดเยี่ยม โค้ดทั้งหมดได้รับการพอร์ตจาก Java เป็น Kotlin เพื่อให้แน่ใจว่าแอปจะทันสมัยและเข้ากันได้กับ Android เวอร์ชันในอนาคต\n\nดูโค้ดต้นฉบับได้ที่: https://github.com/ounben/AMARadio\n\nแอปนี้ใช้ไดเรกทอรีสถานีวิทยุฟรีที่ https://www.radio-browser.info ทุกคนสามารถเพิ่มสถานีลงไปได้ ทำงานเหมือนวิกิสำหรับสถานีวิทยุออนไลน์\n\nติดต่อ: ben@ounben.com\n\nรายงานปัญหา: https://github.com/ounben/AMARadio/issues\n\nหากคุณชอบซอฟต์แวร์นี้และต้องการช่วยเหลือ สามารถส่งอีเมลหาผมได้ นอกจากนี้เรายังยินดีรับฟังไอเดียสำหรับคุณสมบัติใหม่ๆ เสมอ!\n\nแอปนี้เป็นซอฟต์แวร์เสรี ภายใต้ลิขสิทธิ์ GPLv3 https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="about_text">AMARadio ปราศจากโฆษณา 100% และมุ่งเน้นความเป็นส่วนตัว\n\nเดิมทีผมพัฒนาแอปนี้ให้แม่เพื่อให้ท่านได้รับประสบการณ์การฟังวิทยุที่เรียบง่ายและจริงใจ โดยไม่มีโฆษณาที่น่ารำคาญหรือการติดตาม นี่คือเหตุผลที่ AMARadio จะยังคงไม่มีโฆษณาตลอดไป – เป็นสัญญาที่ให้ไว้กับท่าน และแชร์ให้กับทุกคน\n\nโครงการนี้เป็นการ Fork มาจาก RadioDroid ที่ยอดเยี่ยม โค้ดทั้งหมดได้รับการพอร์ตจาก Java เป็น Kotlin เพื่อให้แน่ใจว่าแอปจะทันสมัยและเข้ากันได้กับ Android เวอร์ชันในอนาคต\n\nดูโค้ดต้นฉบับได้ที่: https://github.com/ounben/AMARadio\n\nแอปนี้ใช้ไดเรกทอรีสถานีวิทยุฟรีที่ https://www.radio-browser.info ทุกคนสามารถเพิ่มสถานีลงไปได้ ทำงานเหมือนวิกิสำหรับสถานีวิทยุออนไลน์\n\nติดต่อ: ben@ounben.com\n\nรายงานปัญหา: https://github.com/ounben/AMARadio/issues\n\nหากคุณชอบซอฟต์แวร์นี้และต้องการช่วยเหลือ สามารถส่งอีเมลหาผมได้ นอกจากนี้เรายังยินดีรับฟังไอเดียสำหรับคุณสมบัติใหม่ๆ เสมอ!\n\nแอปนี้เป็นซอฟต์แวร์เสรี ภายใต้ลิขสิทธิ์ GPLv3 https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version">เวอร์ชัน: %1$s</string>
     <string name="detail_star">เพิ่มในรายการโปรด</string>
     <string name="detail_unstar">ลบออกจากรายการโปรด</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">มืด</string>
     <string name="theme_system">ตามระบบ</string>
     <string name="settings_compact_style">โหมดกะทัดรัด</string>
-    <string name="settings_compact_style_desc_off">แสดงไอคอนขนาดใหญ่พร้อมรายละเอียดสถานี</string>
-    <string name="settings_compact_style_desc_on">แสดงไอคอนขนาดเล็กโดยไม่มีรายละเอียดสถานี</string>
+    <string name="settings_compact_style_desc_off">แสดงไอคอนขนาดใหญ่พร้อมรายละเอียดสถานีวิทยุ</string>
+    <string name="settings_compact_style_desc_on">แสดงไอคอนขนาดเล็กโดยไม่มีรายละเอียดสถานีวิทยุ</string>
     <string name="settings_bottom_navigation">แถบนำทางด้านล่าง</string>
     <string name="settings_ui_scale">การปรับขนาด UI</string>
     <string name="settings_language">ภาษา</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">แท็กที่ไม่ค่อยได้ใช้จะไม่แสดง</string>
     <string name="settings_single_use_tags_desc_on">แท็กที่ไม่ค่อยได้ใช้จะแสดง</string>
 
-    <string name="settings_show_broken">สถานีที่ขัดข้อง</string>
-    <string name="settings_show_broken_on">แสดงสถานีที่ขัดข้องในรายการ</string>
-    <string name="settings_show_broken_off">ไม่แสดงสถานีที่ขัดข้องในรายการ</string>
+    <string name="settings_show_broken">สถานีวิทยุที่ขัดข้อง</string>
+    <string name="settings_show_broken_on">แสดงสถานีวิทยุที่ขัดข้องในรายการ</string>
+    <string name="settings_show_broken_off">ไม่แสดงสถานีวิทยุที่ขัดข้องในรายการ</string>
 
     <string name="settings_startup_behaviour">พฤติกรรมการเริ่ม</string>
     <string name="action_grid_view">มุมมองตาราง</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">การทำงานเมื่อเริ่ม</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">แสดงสถานีทั้งหมด</string>
+    <string name="startup_show_all_stations">แสดงสถานีวิทยุทั้งหมด</string>
     <string name="startup_show_favorites">แสดงรายการโปรด</string>
     <string name="startup_show_history">แสดงประวัติ</string>
     <string name="startup_show_last_view">มุมมองล่าสุด</string>
 
-    <string name="settings_load_icons">แสดงไอคอนสถานี</string>
+    <string name="settings_load_icons">แสดงไอคอนสถานีวิทยุ</string>
     <string name="settings_load_icons_on">จะดาวน์โหลดไอคอน</string>
     <string name="settings_load_icons_off">จะไม่ดาวน์โหลดไอคอน</string>
 
     <string name="settings_auto_favorite">เพิ่มรายการโปรดอัตโนมัติ</string>
-    <string name="settings_auto_favorite_on">เพิ่มสถานีในรายการโปรดอัตโนมัติเมื่อเล่น</string>
-    <string name="settings_auto_favorite_off">ไม่เพิ่มสถานีในรายการโปรดอัตโนมัติเมื่อเล่น</string>
+    <string name="settings_auto_favorite_on">เพิ่มสถานีวิทยุในรายการโปรดอัตโนมัติเมื่อเล่น</string>
+    <string name="settings_auto_favorite_off">ไม่เพิ่มสถานีวิทยุในรายการโปรดอัตโนมัติเมื่อเล่น</string>
 
     <string name="settings_play">เครื่องเล่น</string>
     <string name="settings_auto_play_on_startup">เล่นอัตโนมัติ</string>
-    <string name="settings_auto_play_on_startup_on">เล่นสถานีล่าสุดเมื่อเปิดแอป</string>
-    <string name="settings_auto_play_on_startup_off">ไม่เล่นสถานีล่าสุดเมื่อเปิดแอป</string>
+    <string name="settings_auto_play_on_startup_on">เล่นสถานีวิทยุล่าสุดเมื่อเปิดแอป</string>
+    <string name="settings_auto_play_on_startup_off">ไม่เล่นสถานีวิทยุล่าสุดเมื่อเปิดแอป</string>
     <string name="settings_auto_off_on_startup">หยุดอัตโนมัติ</string>
     <string name="settings_auto_off_on_startup_on">ใช้ตัวตั้งเวลาหยุดอัตโนมัติร่วมกับเล่นอัตโนมัติ</string>
     <string name="settings_auto_off_on_startup_off">ไม่ใช้ตัวตั้งเวลาหยุดอัตโนมัติร่วมกับเล่นอัตโนมัติ</string>
     <string name="settings_auto_off_sleep_timer">ตัวตั้งเวลาหยุดอัตโนมัติ</string>
     <string name="settings_auto_off_sleep_timer_desc">หยุดเล่นหลังจาก %1$s นาที</string>
     <string name="settings_play_external">ใช้เครื่องเล่นภายนอก</string>
-    <string name="settings_play_external_desc_on">เล่นสถานีด้วยเครื่องเล่นภายนอก</string>
-    <string name="settings_play_external_desc_off">เล่นสถานีด้วย AMARadio</string>
+    <string name="settings_play_external_desc_on">เล่นสถานีวิทยุด้วยเครื่องเล่นภายนอก</string>
+    <string name="settings_play_external_desc_off">เล่นสถานีวิทยุด้วย AMARadio</string>
     <string name="settings_equalizer">อีควอไลเซอร์</string>
 
     <string name="settings_connectivity">การเชื่อมต่อ</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">หยุดชั่วคราว</string>
     <string name="notify_metered_connection">การเชื่อมต่อแบบจำกัดปริมาณข้อมูล</string>
 
-    <string name="notify_starred">เพิ่มสถานีในรายการโปรดแล้ว</string>
-    <string name="notify_autostarred">เพิ่มสถานีในรายการโปรดโดยอัตโนมัติแล้ว</string>
-    <string name="notify_unstarred">ลบสถานีออกจากรายการโปรดแล้ว</string>
+    <string name="notify_starred">สถานีวิทยุถูกเพิ่มในรายการโปรดแล้ว</string>
+    <string name="notify_autostarred">สถานีวิทยุถูกเพิ่มในรายการโปรดโดยอัตโนมัติแล้ว</string>
+    <string name="notify_unstarred">สถานีวิทยุถูกลบออกจากรายการโปรดแล้ว</string>
     <string name="notify_deleted_favorites">ลบรายการโปรดแล้ว</string>
     <string name="notify_deleted_history">ลบประวัติแล้ว</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">กรุณาเลือกเครื่องเล่น</string>
     <string name="alert_select_player_name">ชื่อ</string>
-    <string name="hostname">ชื่อโฮสต์</string>
-    <string name="port">พอร์ต</string>
+    <string name="hostname">ที่อยู่เซิร์ฟเวอร์</string>
+    <string name="port">พอร์ตเครือข่าย</string>
 
     <string name="alert_press_back_to_exit">กดกลับอีกครั้งเพื่อออก</string>
 
@@ -264,13 +264,13 @@
     <string name="action_play_in_external">เล่นในเครื่องเล่นภายนอก</string>
     <string name="action_choose_external_player">เลือกเครื่องเล่นภายนอก</string>
 
-    <string name="settings_disable_battery_optimization">การปรับปรุงแบตเตอรี่</string>
-    <string name="settings_ignore_battery_optimization_summary_on">ละเว้นการปรับปรุงแบตเตอรี่ AMARadio ควรจะสามารถดึงโฟกัสกลับมาได้เสมอ</string>
-    <string name="settings_ignore_battery_optimization_summary_off">เปิดใช้งานการปรับปรุงแบตเตอรี่ AMARadio อาจไม่สามารถดึงโฟกัสกลับมาได้หากทำงานในเบื้องหลัง</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">การเล่นในเบื้องหลัง</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">อื่นๆ</string>
     <string name="settings_rate_app">ให้คะแนน AMARadio</string>
     <string name="settings_rate_app_summary">หากคุณชอบแอปนี้ โปรดให้คะแนนใน Play Store!</string>
+    <string name="settings_rate_app_github">เพลิดเพลินกับ AMARadio ใช่ไหม?</string>
+    <string name="settings_rate_app_github_summary">ทิ้งดาวบน GitHub! ช่วยให้ผู้อื่นค้นพบแอปและสนับสนุนการพัฒนาในอนาคต</string>
     <string name="settings_statistics">สถิติ</string>
     <string name="settings_about">เกี่ยวกับ AMARadio</string>
 
@@ -282,7 +282,7 @@
         <item>จ</item>
         <item>อ</item>
         <item>พ</item>
-        <item>พฤ</item>
+        <item>พ</item>
         <item>ศ</item>
         <item>ส</item>
     </string-array>
@@ -324,7 +324,7 @@
     <string name="context_menu_delete">@string/action_delete</string>
 
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">โลโก้สถานี</string>
+    <string name="accessibility_station_logo">โลโก้สถานีวิทยุ</string>
     <string name="accessibility_favorite_selected">รายการโปรด, เลือกแล้ว</string>
     <string name="accessibility_favorite_not_selected">รายการโปรด, ยังไม่ได้เลือก</string>
     <string name="accessibility_category_icon">ไอคอนหมวดหมู่</string>
@@ -337,35 +337,61 @@
     <string name="accessibility_configure">กำหนดค่า</string>
     <string name="accessibility_close">ปิด</string>
     <string name="accessibility_add_filter">เพิ่มตัวกรอง</string>
-    <string name="accessibility_station_options">ตัวเลือกสถานี</string>
+    <string name="accessibility_station_options">ตัวเลือกสถานีวิทยุ</string>
     <string name="not_applicable">ไม่มี</string>
     <string name="accessibility_station_description">สถานี: %1$s, ภาษา: %2$s, แท็ก: %3$s</string>
 
     <string name="error_no_file_manager">ไม่พบตัวจัดการไฟล์ระบบ โปรดตรวจสอบให้แน่ใจว่าได้ติดตั้งและเปิดใช้งาน File Explorer แล้ว</string>
     <string name="error_no_browser">ไม่พบเว็บเบราว์เซอร์ กรุณาติดตั้งเบราว์เซอร์เพื่อเปิดลิงค์นี้</string>
-    <string name="error_no_homepage">ไม่มีหน้าแรกสำหรับสถานีนี้</string>
+    <string name="error_no_homepage">ไม่มีหน้าแรกสำหรับสถานีวิทยุนี้</string>
     <string name="tab_custom_stations">กำหนดเอง</string>
-    <string name="action_add_custom">เพิ่มสถานีแบบกำหนดเอง</string>
-    <string name="station_name">ชื่อสถานี</string>
+    <string name="action_add_custom">เพิ่มสถานีวิทยุแบบกำหนดเอง</string>
+    <string name="station_name">ชื่อสถานีวิทยุ</string>
     <string name="stream_url">URL สตรีม</string>
-    <string name="favicon_url">URL ไอคอน Fav (ไม่บังคับ)</string>
+    <string name="favicon_url">URL โลโก้สถานี (Favicon)</string>
     <string name="select_image">เลือกรูปภาพ</string>
     <string name="error_invalid_url">โปรดป้อน URL ที่ถูกต้อง</string>
     <string name="action_save">บันทึก</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
-    <string name="widget_description_small">การควบคุมผู้เล่นอย่างรวดเร็ว</string>
-    <string name="widget_description_full">รายชื่อผู้เล่นและสถานี</string>
+    <string name="widget_description_small">เครื่องมือควบคุมเครื่องเล่นแบบด่วน</string>
+    <string name="widget_description_full">เครื่องเล่นและรายการสถานีวิทยุ</string>
 
     <string name="settings_auto_db_update">การซิงโครไนซ์ข้อมูลพื้นหลัง</string>
-    <string name="settings_auto_db_update_desc">อัพเดตฐานข้อมูลสถานีอัตโนมัติผ่าน Radio-Browser API (แนะนำ)</string>
-    <string name="settings_station_click_counter">สถานีคลิกเคาน์เตอร์</string>
-    <string name="settings_station_click_counter_desc">สนับสนุนสถิติวิทยุเบราว์เซอร์โดยการแชร์กิจกรรมการเล่นโดยไม่ระบุชื่อ</string>
-    <string name="settings_rate_app_github">เพลิดเพลินกับ AMARadio ใช่ไหม?</string>
-    <string name="settings_rate_app_github_summary">ทิ้งดาวบน GitHub! ช่วยให้ผู้อื่นค้นพบแอปและสนับสนุนการพัฒนาในอนาคต</string>
+    <string name="settings_auto_db_update_desc">อัปเดตฐานข้อมูลสถานีวิทยุอัตโนมัติผ่าน Radio-Browser API (แนะนำ)</string>
+    <string name="settings_station_click_counter">ตัวนับคลิกสถานีวิทยุ</string>
+    <string name="settings_station_click_counter_desc">สนับสนุนสถิติ Radio-Browser โดยการแชร์เหตุการณ์การเล่นโดยไม่ระบุชื่อ</string>
 
-    <string name="settings_remove_notification_on_stop">ลบการแจ้งเตือนเมื่อปิดแอป</string>
-    <string name="settings_remove_notification_on_stop_desc">ปิดการแจ้งเตือนสื่อโดยอัตโนมัติเมื่อแอปปิดจากแอปล่าสุด</string>
+    <string name="settings_remove_notification_on_stop">ลบการแจ้งเตือนเมื่อหยุดเล่น</string>
+    <string name="settings_remove_notification_on_stop_desc">ปิดการแจ้งเตือนสื่อโดยอัตโนมัติเมื่อการเล่นหยุดลง</string>
     <string name="settings_auto_resume_audio_focus">ดำเนินการต่อหลังจากสูญเสียโฟกัสเสียง</string>
     <string name="settings_auto_resume_audio_focus_desc">เล่นต่อโดยอัตโนมัติหลังการโทร การปลุก หรือเสียงอื่นๆ หยุดลง</string>
+
+    <string name="settings_backup_restore">สำรองและคืนค่าข้อมูล</string>
+    <string name="settings_export_backup">สร้างไฟล์สำรองข้อมูลฉบับเต็ม (ZIP)</string>
+    <string name="settings_export_backup_desc">บันทึกรายการโปรด สถานีที่กำหนดเอง และไอคอนทั้งหมดลงในไฟล์ ZIP</string>
+    <string name="settings_import_backup">คืนค่าข้อมูลจากไฟล์สำรอง (ZIP)</string>
+    <string name="settings_import_backup_desc">คืนค่ารายการโปรดและสถานีที่กำหนดเองจากไฟล์สำรอง ZIP</string>
+    <string name="backup_export_success">บันทึกสำรองข้อมูลสำเร็จ</string>
+    <string name="backup_export_error">ไม่สามารถบันทึกสำรองข้อมูลได้</string>
+    <string name="backup_import_success">คืนค่าสำรองข้อมูลสำเร็จ</string>
+    <string name="backup_import_error">ไม่สามารถคืนค่าสำรองข้อมูลได้</string>
+
+    <string name="database_summary_title">ฐานข้อมูลในเครื่อง</string>
+    <string name="database_total_stations">สถานีวิทยุทั้งหมด</string>
+    <string name="database_last_sync">อัปเดตล่าสุด</string>
+    <string name="database_update_now">อัปเดตฐานข้อมูลทันที</string>
+    <string name="database_full_update">อัปเดตฐานข้อมูล</string>
+    <string name="database_syncing">กำลังซิงค์…</string>
+    <string name="database_downloading">กำลังดาวน์โหลด…</string>
+    <string name="database_stations_loaded">%1$s สถานีวิทยุ</string>
+    <string name="database_sync_channel_name">ซิงค์ฐานข้อมูลสถานีวิทยุ</string>
+    <string name="database_sync_success">อัปเดตฐานข้อมูลสถานีวิทยุสำเร็จ</string>
+    <string name="database_error_no_connection">ไม่มีการเชื่อมต่ออินเทอร์เน็ต</string>
+    <string name="database_error_no_space">พื้นที่ในดิสก์ไม่เพียงพอ</string>
+    <string name="database_error_failed">อัปเดตฐานข้อมูลไม่สำเร็จ</string>
+
+    <string name="settings_disable_battery_optimization_desc">เพื่อเล่นเสียงต่อเนื่องเมื่อปิดหน้าจอ โปรดตั้งค่าการใช้แบตเตอรี่เป็น \'Unrestricted\'</string>
+    <string name="battery_opt_open_settings">เปิดการตั้งค่า</string>
+    <string name="battery_opt_later">ภายหลัง</string>
 </resources>

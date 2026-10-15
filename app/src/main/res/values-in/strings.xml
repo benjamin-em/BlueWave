@@ -52,19 +52,19 @@
     <string name="filter_empty_title">Bangun feed stasiun radio kustom Anda</string>
     <string name="filter_empty_desc">Buat tampilan personal dengan menggabungkan beberapa kriteia. Anda dapat mempersempit pencarian menggunakan:</string>
     <string name="filter_empty_filter_by">Filter berdasarkan</string>
-    <string name="filter_empty_filter_desc">Negara, Nama Stasiun, Tag, atau Bahasa</string>
+    <string name="filter_empty_filter_desc">Negara, Nama Stasiun Radio, Tag, atau Bahasa</string>
     <string name="filter_empty_sort_by">Urutkan berdasarkan</string>
-    <string name="filter_empty_sort_desc">Klik, Alfabet, Vote oder Perubahan Terakhir</string>
+    <string name="filter_empty_sort_desc">Klik, Alfabet, Vote atau Perubahan Terakhir</string>
     <string name="filter_empty_hint">Ketik nama di kolom di atas untuk menyimpan tampilan kustom ini!</string>
-    <string name="error_station_load">Tidak bisa menyambung ke stasiun</string>
-    <string name="error_list_update">Tidak bisa menyambung ke server radio browser</string>
+    <string name="error_station_load">Tidak bisa menyambung ke stasiun radio</string>
+    <string name="error_list_update">Tidak bisa menyambung ke server Radio-Browser</string>
 
     <string name="error_no_connection">Tidak ada koneksi internet.</string>
     <string name="warning_volume_zero">Volume berada di angka nol. Anda mungkin tidak mendengar apa pun.</string>
 
-    <string name="share_action">Bagikan tautan stasiun dengan&#8230;</string>
+    <string name="share_action">Bagikan tautan stasiun radio dengan&#8230;</string>
 
-    <string name="nav_item_stations">Stasiun</string>
+    <string name="nav_item_stations">Stasiun Radio</string>
     <string name="nav_item_starred">Favorit</string>
     <string name="nav_item_history">Riwayat</string>
     <string name="nav_item_settings">Pengaturan</string>
@@ -108,8 +108,8 @@
     <string name="theme_dark">Gelap</string>
     <string name="theme_system">Ikuti sistem</string>
     <string name="settings_compact_style">Mode ringkas</string>
-    <string name="settings_compact_style_desc_off">Ikon besar dengan detail stasiun</string>
-    <string name="settings_compact_style_desc_on">Ikon kecil tanpa detail stasiun</string>
+    <string name="settings_compact_style_desc_off">Ikon besar dengan detail stasiun radio</string>
+    <string name="settings_compact_style_desc_on">Ikon kecil tanpa detail stasiun radio</string>
     <string name="settings_bottom_navigation">Navigasi bawah</string>
     <string name="settings_ui_scale">Skala UI</string>
     <string name="settings_language">Bahasa</string>
@@ -123,9 +123,9 @@
     <string name="settings_single_use_tags_desc_off">Tag yang jarang digunakan tidak akan ditampilkan</string>
     <string name="settings_single_use_tags_desc_on">Tag yang jarang digunakan akan ditampilkan</string>
 
-    <string name="settings_show_broken">Stasiun rusak</string>
-    <string name="settings_show_broken_on">Menampilkan stasiun yang rusak di dalam daftar</string>
-    <string name="settings_show_broken_off">Menyembunyikan stasiun yang rusak di dalam daftar</string>
+    <string name="settings_show_broken">Stasiun radio rusak</string>
+    <string name="settings_show_broken_on">Menampilkan stasiun radio yang rusak di dalam daftar</string>
+    <string name="settings_show_broken_off">Menyembunyikan stasiun radio yang rusak di dalam daftar</string>
 
     <string name="settings_startup_behaviour">Perilaku Mulai</string>
     <string name="action_grid_view">Tampilan kisi</string>
@@ -133,31 +133,31 @@
 
     <string name="startup_action_title">Tindakan mulai</string>
     <string name="startup_action_title_desc">%s</string>
-    <string name="startup_show_all_stations">Tampilkan semua stasiun</string>
+    <string name="startup_show_all_stations">Tampilkan semua stasiun radio</string>
     <string name="startup_show_favorites">Tampilkan favorit</string>
     <string name="startup_show_history">Tampilkan riwayat</string>
     <string name="startup_show_last_view">Tampilan terakhir</string>
 
-    <string name="settings_load_icons">Tampilkan ikon stasiun</string>
+    <string name="settings_load_icons">Tampilkan ikon stasiun radio</string>
     <string name="settings_load_icons_on">Ikon akan diunduh</string>
     <string name="settings_load_icons_off">Ikon tidak akan diunduh</string>
 
     <string name="settings_auto_favorite">Otomatis favorit</string>
-    <string name="settings_auto_favorite_on">Menambahkan stasiun secara otomatis ke favorit saat memutar</string>
-    <string name="settings_auto_favorite_off">Tidak menambahkan stasiun secara otomatis ke favorit saat memutar</string>
+    <string name="settings_auto_favorite_on">Menambahkan stasiun radio secara otomatis ke favorit saat memutar</string>
+    <string name="settings_auto_favorite_off">Tidak menambahkan stasiun radio secara otomatis ke favorit saat memutar</string>
 
     <string name="settings_play">Pemutar</string>
     <string name="settings_auto_play_on_startup">Putar otomatis</string>
-    <string name="settings_auto_play_on_startup_on">Putar stasiun terakhir saat memulai</string>
-    <string name="settings_auto_play_on_startup_off">Jangan putar stasiun terakhir saat memulai</string>
+    <string name="settings_auto_play_on_startup_on">Putar stasiun radio terakhir saat memulai</string>
+    <string name="settings_auto_play_on_startup_off">Jangan putar stasiun radio terakhir saat memulai</string>
     <string name="settings_auto_off_on_startup">Auto-stop</string>
     <string name="settings_auto_off_on_startup_on">Gunakan timer auto-stop dengan auto-play</string>
     <string name="settings_auto_off_on_startup_off">Jangan gunakan timer auto-stop dengan auto-play</string>
     <string name="settings_auto_off_sleep_timer">Timer auto-stop</string>
     <string name="settings_auto_off_sleep_timer_desc">Setop pemutaran setelah %1$s menit</string>
     <string name="settings_play_external">Aktifkan pemutar eksternal</string>
-    <string name="settings_play_external_desc_on">Putar stasiun dengan pemutar eksternal</string>
-    <string name="settings_play_external_desc_off">Putar stasiun dengan AMARadio</string>
+    <string name="settings_play_external_desc_on">Putar stasiun radio dengan pemutar eksternal</string>
+    <string name="settings_play_external_desc_off">Putar stasiun radio dengan AMARadio</string>
     <string name="settings_equalizer">Equalizer</string>
 
     <string name="settings_connectivity">Konektivitas</string>
@@ -198,9 +198,9 @@
     <string name="notify_paused">Dijeda</string>
     <string name="notify_metered_connection">Koneksi terbatas</string>
 
-    <string name="notify_starred">Stasiun telah ditambahkan ke favorit</string>
-    <string name="notify_autostarred">Stasiun telah ditambahkan secara otomatis ke favorit</string>
-    <string name="notify_unstarred">Stasiun telah dihapus dari favorit</string>
+    <string name="notify_starred">Stasiun radio telah ditambahkan ke favorit</string>
+    <string name="notify_autostarred">Stasiun radio telah ditambahkan secara otomatis ke favorit</string>
+    <string name="notify_unstarred">Stasiun radio telah dihapus dari favorit</string>
     <string name="notify_deleted_favorites">Favorit telah dihapus</string>
     <string name="notify_deleted_history">Riwayat telah dihapus</string>
 
@@ -216,8 +216,8 @@
 
     <string name="alert_select_player">Silakan pilih pemutar</string>
     <string name="alert_select_player_name">Nama</string>
-    <string name="hostname">Nama hos</string>
-    <string name="port">Porta</string>
+    <string name="hostname">Alamat Server</string>
+    <string name="port">Port Jaringan</string>
 
     <string name="alert_press_back_to_exit">Tekan sekali lagi untuk keluar</string>
 
@@ -264,10 +264,8 @@
     <string name="action_play_in_external">Putar di pemutar eksternal</string>
     <string name="action_choose_external_player">Pilih pemutar eksternal</string>
 
-    <string name="settings_disable_battery_optimization">Optimasi baterai</string>
-    <string name="settings_ignore_battery_optimization_summary_on">Optimasi baterai diabaikan, AMARadio harus selalu dapat memperoleh fokus kembali.</string>
-    <string name="settings_ignore_battery_optimization_summary_off">Optimasi baterai diaktifkan, AMARadio mungkin tidak dapat memperoleh fokus kembali di latar belakang.</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="settings_disable_battery_optimization">Pemutaran Latar Belakang</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Lainnya</string>
     <string name="settings_rate_app">Beri Nilai AMARadio</string>
     <string name="settings_rate_app_summary">Jika Anda menyukai aplikasi ini, silakan berikan ulasan di Play Store!</string>
@@ -278,13 +276,13 @@
     <string name="description_btn_skip_to_previous">Lewati ke sebelumnya</string>
 
     <string-array name="weekdays">
-        <item>Min</item>
-        <item>Sen</item>
-        <item>Sel</item>
-        <item>Rab</item>
-        <item>Kam</item>
-        <item>Jum</item>
-        <item>Sab</item>
+        <item>M</item>
+        <item>S</item>
+        <item>S</item>
+        <item>R</item>
+        <item>K</item>
+        <item>J</item>
+        <item>S</item>
     </string-array>
 
     <string name="notify_stream_url_copied">URL stream berhasil disalin</string>
@@ -323,12 +321,8 @@
     <string name="context_menu_create_shortcut">@string/detail_create_shortcut</string>
     <string name="context_menu_delete">@string/action_delete</string>
 
-    <string name="alarm_backup">Alarm Cadangan</string>
-    <string name="alarm_fallback_info">Alarm sistem digunakan karena stasiun radio yang dipilih gagal dimuat</string>
-    <string name="alarm_back_desc">Alarm sistem alternatif digunakan ketika stasiun radio tidak dapat dimuat</string>
-
     <!-- Accessibility -->
-    <string name="accessibility_station_logo">Logo stasiun</string>
+    <string name="accessibility_station_logo">Logo stasiun radio</string>
     <string name="accessibility_favorite_selected">Favorit, dipilih</string>
     <string name="accessibility_favorite_not_selected">Favorit, tidak dipilih</string>
     <string name="accessibility_category_icon">Ikon kategori</string>
@@ -341,35 +335,63 @@
     <string name="accessibility_configure">Konfigurasi</string>
     <string name="accessibility_close">Tutup</string>
     <string name="accessibility_add_filter">Tambah filter</string>
-    <string name="accessibility_station_options">Opsi stasiun</string>
+    <string name="accessibility_station_options">Opsi stasiun radio</string>
     <string name="not_applicable">N/A</string>
     <string name="accessibility_station_description">Stasiun: %1$s, Bahasa: %2$s, Tag: %3$s</string>
 
     <string name="error_no_file_manager">Tidak dapat menemukan pengelola file sistem. Harap pastikan file explorer diinstal dan diaktifkan.</string>
     <string name="error_no_browser">Tidak dapat menemukan browser web. Silakan instal browser untuk membuka tautan ini.</string>
-    <string name="error_no_homepage">Tidak ada beranda yang tersedia untuk stasiun ini</string>
-    <string name="tab_custom_stations">Kebiasaan</string>
-    <string name="action_add_custom">Tambahkan Stasiun Kustom</string>
-    <string name="station_name">Nama Stasiun</string>
-    <string name="stream_url">URL streaming</string>
-    <string name="favicon_url">URL Favicon (opsional)</string>
+    <string name="error_no_homepage">Tidak ada beranda yang tersedia untuk stasiun radio ini</string>
+    <string name="tab_custom_stations">Kustom</string>
+    <string name="action_add_custom">Tambahkan stasiun radio kustom</string>
+    <string name="station_name">Nama stasiun radio</string>
+    <string name="stream_url">URL stream</string>
+    <string name="favicon_url">URL Logo Stasiun (Favicon)</string>
     <string name="select_image">Pilih Gambar</string>
     <string name="error_invalid_url">Silakan masukkan URL yang valid</string>
-    <string name="action_save">Menyimpan</string>
+    <string name="action_save">Simpan</string>
     <string name="widget_name_small">AMARadio Compact</string>
     <string name="widget_name_full">AMARadio Player</string>
     <string name="widget_description_small">Kontrol pemutar cepat</string>
-    <string name="widget_description_full">Daftar pemutar dan stasiun</string>
+    <string name="widget_description_full">Pemutar dan daftar stasiun radio</string>
 
     <string name="settings_auto_db_update">Sinkronisasi Data Latar Belakang</string>
     <string name="settings_auto_db_update_desc">Perbarui basis data stasiun secara otomatis melalui Radio-Browser API (disarankan).</string>
-    <string name="settings_station_click_counter">Penghitung klik stasiun</string>
-    <string name="settings_station_click_counter_desc">Dukung statistik Radio-Browser dengan membagikan acara bermain secara anonim.</string>
+    <string name="settings_station_click_counter">Penghitung klik stasiun radio</string>
+    <string name="settings_station_click_counter_desc">Dukung statistik Radio-Browser dengan membagikan peristiwa pemutaran secara anonim.</string>
     <string name="settings_rate_app_github">Menikmati AMARadio?</string>
     <string name="settings_rate_app_github_summary">Tinggalkan bintang di GitHub! Ini membantu orang lain menemukan aplikasi dan mendukung pengembangan di masa depan.</string>
 
-    <string name="settings_remove_notification_on_stop">Hapus pemberitahuan saat aplikasi ditutup</string>
-    <string name="settings_remove_notification_on_stop_desc">Secara otomatis menutup pemberitahuan media ketika aplikasi ditutup dari aplikasi terbaru</string>
+    <string name="settings_remove_notification_on_stop">Hapus pemberitahuan saat dihentikan</string>
+    <string name="settings_remove_notification_on_stop_desc">Secara otomatis menutup pemberitahuan media ketika pemutaran dihentikan</string>
     <string name="settings_auto_resume_audio_focus">Lanjutkan setelah kehilangan fokus audio</string>
     <string name="settings_auto_resume_audio_focus_desc">Secara otomatis melanjutkan pemutaran setelah panggilan telepon, alarm, atau audio lainnya berhenti</string>
+
+    <string name="settings_backup_restore">Cadangan dan Pemulihan</string>
+    <string name="settings_export_backup">Buat Cadangan Lengkap (ZIP)</string>
+    <string name="settings_export_backup_desc">Menyimpan semua favorit, stasiun kustom, dan ikon ke dalam file ZIP</string>
+    <string name="settings_import_backup">Pulihkan Cadangan (ZIP)</string>
+    <string name="settings_import_backup_desc">Memulihkan favorit dan stasiun kustom dari file cadangan ZIP</string>
+    <string name="backup_export_success">Cadangan berhasil disimpan</string>
+    <string name="backup_export_error">Gagal menyimpan cadangan</string>
+    <string name="backup_import_success">Cadangan berhasil dipulihkan</string>
+    <string name="backup_import_error">Gagal memulihkan cadangan</string>
+
+    <string name="database_summary_title">Basis Data Lokal</string>
+    <string name="database_total_stations">Total Stasiun Radio</string>
+    <string name="database_last_sync">Pembaruan Terakhir</string>
+    <string name="database_update_now">Perbarui Basis Data Sekarang</string>
+    <string name="database_full_update">Perbarui Basis Data</string>
+    <string name="database_syncing">Menyingkronkan…</string>
+    <string name="database_downloading">Mengunduh…</string>
+    <string name="database_stations_loaded">%1$s stasiun radio</string>
+    <string name="database_sync_channel_name">Sinkronisasi Basis Data Stasiun Radio</string>
+    <string name="database_sync_success">Pembaruan basis data stasiun berhasil diselesaikan</string>
+    <string name="database_error_no_connection">Tidak ada koneksi internet</string>
+    <string name="database_error_no_space">Ruang penyimpanan tidak cukup</string>
+    <string name="database_error_failed">Pembaruan basis data gagal</string>
+
+    <string name="settings_disable_battery_optimization_desc">Untuk melanjutkan pemutaran saat layar mati, atur penggunaan baterai ke \'Tanpa Batasan\'.</string>
+    <string name="battery_opt_open_settings">Buka Pengaturan</string>
+    <string name="battery_opt_later">Nanti</string>
 </resources>
