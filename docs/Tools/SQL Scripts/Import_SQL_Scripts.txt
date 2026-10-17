@@ -1,6 +1,8 @@
 1. Import from Radio-Browser Mirror DB into SQLite via CSV
 
-2. Delete LastCheckOK 0
+2. Delete 
+
+delete FROM "Station" WHERE LastCheckOK = '0'
 
 3. Search Dublicate Stations:
 SELECT
@@ -33,7 +35,7 @@ SET
     ClickTimestamp = NULL,
     ChangeUuid = NULL,
     ServerUuid = NULL,
-    ClickTrend = NULL,;
+    ClickTrend = NULL;
 
 6.
 
