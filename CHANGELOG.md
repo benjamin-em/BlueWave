@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.43] - 2026-10-18
+### Added
+- **Complete Localization & Legacy Locale Sync**: Comprehensive audit, correction, and translation across all 88 supported languages in `values-*/strings.xml`, ensuring 100% domain-specific terminology for Internet Radio and Android System UI (including legacy codes `values-iw`, `values-in`, `values-ji`).
+
+### Changed
+- **UI Theme & Color Standardization**: Standardized Material 3 `ColorScheme` in `Theme.kt`, forcing all progress indicators, containers, and dialogs to `AmaradioAmber` and neutral grays, eliminating M3 baseline violet/purple fallback tints.
+- **Solid Red Delete Styling**: Updated Delete actions and confirmation dialogs with 100% solid, opaque red (`SolidRedError` `#FF3333` / `#D32F2F`) replacing M3 pastel pink/rosa fallback colors.
+- **Security & Cryptography Modernization**: Replaced legacy MD5 hashing in `Utils.kt` with SHA-256 for local feed cache filenames (`cache_<sha256>`), eliminating security/linter warnings.
+
+### Fixed
+- **Play/Pause UI Lag & ANR Prevention**: Moved `audioManager.getStreamVolume()` from the Main (UI) thread to `Dispatchers.IO` in `PlayerViewModel`, eliminating Binder IPC thread blocks on OPlus/OPPO/OnePlus/Xiaomi devices.
+- **Database Asset Cleanup**: Cleaned up pre-packaged database assets (`radio_browser_database.db`), removing duplicate entries and ensuring `LastCheckOK = 1`.
+
 ## [1.42] - 2026-10-10
 ### Added
 - **Full Backup & Restore (ZIP)**: Added a complete backup and restore feature in Settings (`AMARadio_Backup.zip`). Preserves Favorites, Custom Stations, and local station icons (`$uuid.jpg`), restoring custom stations back to the Custom Tab with full editing capabilities intact.
