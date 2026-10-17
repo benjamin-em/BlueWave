@@ -101,15 +101,12 @@ object Utils {
         }
     }
 
-    private fun String.md5(): String {
-        val bytes = MessageDigest.getInstance("MD5").digest(this.toByteArray())
-        return bytes.joinToString("") { "%02x".format(it) }
-    }
-
     @JvmStatic
     suspend fun getCacheFile(ctx: Context, cacheKey: String): String? = withContext(Dispatchers.IO) {
         try {
-            val fileName = "cache_" + cacheKey.md5()
+            val fileName = "cache_" + MessageDigest.getInstance("SHA-256")
+                .digest(cacheKey.toByteArray())
+                .joinToString("") { "%02x".format(it) }
             val file = File(ctx.cacheDir, fileName)
             if (!file.exists()) return@withContext null
             
@@ -133,7 +130,9 @@ object Utils {
     @JvmStatic
     suspend fun writeFileCache(ctx: Context, cacheKey: String, content: String) = withContext(Dispatchers.IO) {
         try {
-            val fileName = "cache_" + cacheKey.md5()
+            val fileName = "cache_" + MessageDigest.getInstance("SHA-256")
+                .digest(cacheKey.toByteArray())
+                .joinToString("") { "%02x".format(it) }
             val file = File(ctx.cacheDir, fileName)
             file.writeText(content, Charsets.UTF_8)
             if (isDebug) Log.d("UTIL", "Wrote cache file for: $cacheKey")
