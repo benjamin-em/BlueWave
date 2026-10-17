@@ -148,15 +148,22 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
             return
         }
 
-        // 2. Check Volume
-        val attributedContext = Utils.getAttributedContext(app)
-        val audioManager = attributedContext.getSystemService(Context.AUDIO_SERVICE) as AudioManager
-        val volume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)
-        if (volume == 0) {
-            _warningMessage.value = R.string.warning_volume_zero
-        }
-
+        // 2. Start playback immediately (zero UI latency)
         PlayerServiceUtil.play(station)
+
+        // 3. Check Volume asynchronously off the main thread to prevent Binder IPC ANR on OPlus/OPPO devices
+        viewModelScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+            try {
+                val attributedContext = Utils.getAttributedContext(app)
+                val audioManager = attributedContext.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+                val volume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)
+                if (volume == 0) {
+                    _warningMessage.value = R.string.warning_volume_zero
+                }
+            } catch (e: Exception) {
+                android.util.Log.e("PlayerViewModel", "Error checking volume", e)
+            }
+        }
     }
 
     fun clearWarning() {
