@@ -133,12 +133,14 @@ class CustomStationsViewModel(application: Application) : AndroidViewModel(appli
                     decodedBitmap
                 }
 
+                val whiteBitmap = Bitmap.createBitmap(finalBitmap.width, finalBitmap.height, Bitmap.Config.ARGB_8888)
+                val canvas = android.graphics.Canvas(whiteBitmap)
+                canvas.drawColor(android.graphics.Color.WHITE)
+                canvas.drawBitmap(finalBitmap, 0f, 0f, null)
+
                 FileOutputStream(iconFile).use { output ->
-                    finalBitmap.compress(Bitmap.CompressFormat.JPEG, 85, output)
+                    whiteBitmap.compress(Bitmap.CompressFormat.JPEG, 85, output)
                 }
-                
-                if (finalBitmap != decodedBitmap) decodedBitmap.recycle()
-                finalBitmap.recycle()
             }
             
             Uri.fromFile(iconFile).buildUpon()

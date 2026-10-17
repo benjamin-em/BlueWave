@@ -138,13 +138,17 @@ fun StationIcon(
                 onSuccess = { _, result ->
                     val iconDir = File(context.filesDir, "station_icons")
                     val iconFile = File(iconDir, "$stationUuid.jpg")
-                    if (!iconFile.exists()) {
+                    if (stationUuid.isNotEmpty()) {
                         CoroutineScope(Dispatchers.IO).launch {
                             try {
                                 if (!iconDir.exists()) iconDir.mkdirs()
-                                val bitmap = result.drawable.toBitmap(512, 512, android.graphics.Bitmap.Config.RGB_565)
+                                val sourceBitmap = result.drawable.toBitmap(512, 512, android.graphics.Bitmap.Config.ARGB_8888)
+                                val whiteBitmap = android.graphics.Bitmap.createBitmap(512, 512, android.graphics.Bitmap.Config.ARGB_8888)
+                                val canvas = android.graphics.Canvas(whiteBitmap)
+                                canvas.drawColor(android.graphics.Color.WHITE)
+                                canvas.drawBitmap(sourceBitmap, 0f, 0f, null)
                                 FileOutputStream(iconFile).use { out ->
-                                    bitmap.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, out)
+                                    whiteBitmap.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, out)
                                 }
                             } catch (_: Exception) { }
                         }
@@ -156,7 +160,6 @@ fun StationIcon(
 
     Box(
         modifier = modifier
-            .clip(RoundedCornerShape(8.dp))
             .background(if (isError || isLoading) placeholderColor else Color.White),
         contentAlignment = Alignment.Center
     ) {
@@ -172,7 +175,7 @@ fun StationIcon(
         AsyncImage(
             model = imageRequest,
             contentDescription = null,
-            modifier = Modifier.fillMaxSize().padding(4.dp),
+            modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Fit,
             onState = { state ->
                 isLoading = state is AsyncImagePainter.State.Loading
@@ -361,7 +364,7 @@ fun TrackListItem(
             .padding(vertical = 8.dp, horizontal = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Box(modifier = Modifier.size(40.dp), contentAlignment = Alignment.Center) {
+        Box(modifier = Modifier.size(48.dp), contentAlignment = Alignment.Center) {
             StationIcon(
                 stationName = track.stationName.ifEmpty { track.stationUuid },
                 stationUuid = track.stationUuid,
@@ -450,7 +453,7 @@ fun StationListItem(
                 ),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(modifier = Modifier.size(44.dp), contentAlignment = Alignment.Center) {
+            Box(modifier = Modifier.size(52.dp), contentAlignment = Alignment.Center) {
                 StationIcon(
                     stationName = station.Name,
                     stationUuid = station.StationUuid,

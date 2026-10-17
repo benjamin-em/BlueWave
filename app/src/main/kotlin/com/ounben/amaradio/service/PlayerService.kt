@@ -978,8 +978,12 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
 
     private fun saveBitmapToFile(bitmap: Bitmap, file: File) {
         try {
+            val whiteBitmap = Bitmap.createBitmap(bitmap.width, bitmap.height, Bitmap.Config.ARGB_8888)
+            val canvas = android.graphics.Canvas(whiteBitmap)
+            canvas.drawColor(android.graphics.Color.WHITE)
+            canvas.drawBitmap(bitmap, 0f, 0f, null)
             FileOutputStream(file).use { out ->
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out)
+                whiteBitmap.compress(Bitmap.CompressFormat.JPEG, 90, out)
             }
         } catch (e: Exception) {
             if (Utils.isDebug) {
