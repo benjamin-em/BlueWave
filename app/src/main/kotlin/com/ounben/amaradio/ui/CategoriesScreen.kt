@@ -30,7 +30,10 @@ fun CategoriesScreen(
         modifier = Modifier.fillMaxSize()
     ) {
         if (uiState.isLoading && uiState.categories.isEmpty()) {
-            CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+            CircularProgressIndicator(
+                modifier = Modifier.align(Alignment.Center),
+                color = AmaradioAmber
+            )
         } else if (uiState.error != null) {
             Column(
                 modifier = Modifier.align(Alignment.Center),

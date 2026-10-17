@@ -18,6 +18,8 @@ import com.ounben.amaradio.utils.UiScaler
 
 // Solid Brand Color
 val AmaradioAmber = Color(0xFFFF8F00) 
+val SolidRedError = Color(0xFFFF3333) // Solid Bright Red for Delete/Error in Dark Mode
+val SolidRedErrorLight = Color(0xFFD32F2F) // Solid Red for Delete/Error in Light Mode
 
 // Opaque Light Palette
 val LightBackground = Color(0xFFFFFFFF)
@@ -49,34 +51,64 @@ fun AMARadioTheme(
     }
 
     val colorScheme = if (useDarkTheme) {
-        // STRICT OPAQUE DARK
+        // STRICT OPAQUE DARK (All containers & indicators forced to Amber / Neutral Grays / Solid Red)
         darkColorScheme(
             primary = AmaradioAmber,
             onPrimary = Color.Black,
+            primaryContainer = Color(0xFF331E00),
+            onPrimaryContainer = AmaradioAmber,
             secondary = DarkSurfaceVariant,
             onSecondary = Color.White,
+            secondaryContainer = Color(0xFF2C2C2C),
+            onSecondaryContainer = Color.White,
+            tertiary = AmaradioAmber,
+            onTertiary = Color.Black,
+            tertiaryContainer = Color(0xFF331E00),
+            onTertiaryContainer = AmaradioAmber,
+            error = SolidRedError,
+            onError = Color.White,
+            errorContainer = Color(0xFF8C1D18),
+            onErrorContainer = Color(0xFFF9DEDC),
             background = DarkBackground,
             onBackground = Color.White,
             surface = DarkSurface,
             onSurface = Color.White,
             surfaceVariant = DarkSurfaceVariant,
             onSurfaceVariant = DarkOnSurfaceVariant,
+            surfaceContainer = Color(0xFF1E1E1E),
+            surfaceContainerHigh = Color(0xFF252525),
+            surfaceContainerHighest = Color(0xFF2D2D2D),
             outline = DarkOutline,
             surfaceTint = Color.Transparent
         )
     } else {
-        // STRICT OPAQUE LIGHT
+        // STRICT OPAQUE LIGHT (All containers & indicators forced to Amber / Neutral Grays / Solid Red)
         lightColorScheme(
             primary = AmaradioAmber,
             onPrimary = Color.White,
+            primaryContainer = Color(0xFFFFECB3),
+            onPrimaryContainer = Color(0xFF3E2723),
             secondary = LightSurfaceVariant,
             onSecondary = Color.Black,
+            secondaryContainer = Color(0xFFE0E0E0),
+            onSecondaryContainer = Color.Black,
+            tertiary = AmaradioAmber,
+            onTertiary = Color.White,
+            tertiaryContainer = Color(0xFFFFECB3),
+            onTertiaryContainer = Color(0xFF3E2723),
+            error = SolidRedErrorLight,
+            onError = Color.White,
+            errorContainer = Color(0xFFF9DEDC),
+            onErrorContainer = Color(0xFF410E0B),
             background = LightBackground,
             onBackground = Color.Black,
             surface = LightSurface,
             onSurface = Color.Black,
             surfaceVariant = LightSurfaceVariant,
             onSurfaceVariant = LightOnSurfaceVariant,
+            surfaceContainer = Color(0xFFF5F5F5),
+            surfaceContainerHigh = Color(0xFFEEEEEE),
+            surfaceContainerHighest = Color(0xFFE0E0E0),
             outline = LightOutline,
             surfaceTint = Color.Transparent
         )

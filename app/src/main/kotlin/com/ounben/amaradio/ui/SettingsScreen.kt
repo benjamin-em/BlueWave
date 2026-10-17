@@ -97,7 +97,8 @@ fun SettingsScreen(
                         }
                         LinearProgressIndicator(
                             modifier = Modifier.fillMaxWidth().height(6.dp),
-                            color = AmaradioAmber
+                            color = AmaradioAmber,
+                            trackColor = MaterialTheme.colorScheme.primaryContainer
                         )
                     }
 

@@ -283,7 +283,7 @@ fun ProxySettingsDialogCompose(onDismiss: () -> Unit) {
                     LinearProgressIndicator(
                         modifier = Modifier.fillMaxWidth(),
                         color = AmaradioAmber,
-                        trackColor = MaterialTheme.colorScheme.surfaceVariant
+                        trackColor = MaterialTheme.colorScheme.primaryContainer
                     )
                 }
             }
@@ -352,7 +352,7 @@ fun StationOptionsDialog(
                         StationActions.playInAMARadio(context, station)
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
                     headlineContent = { 
@@ -368,7 +368,7 @@ fun StationOptionsDialog(
                         }
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
                     headlineContent = { 
@@ -388,7 +388,7 @@ fun StationOptionsDialog(
                         onFavoriteClick()
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
                     headlineContent = { 
@@ -402,7 +402,7 @@ fun StationOptionsDialog(
                         StationActions.openStationHomeUrl(context, station)
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
                     headlineContent = { 
@@ -416,9 +416,10 @@ fun StationOptionsDialog(
                         StationActions.share(context, station)
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 if (onDeleteClick != null) {
+                    HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline)
                     ListItem(
                         headlineContent = { 
                             Text(
@@ -431,16 +432,14 @@ fun StationOptionsDialog(
                             onDeleteClick()
                             onDismiss()
                         },
-                        colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                        colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                     )
                 }
             }
         },
         confirmButton = {
-            Button(
-                onClick = onDismiss,
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                shape = RoundedCornerShape(8.dp)
+            TextButton(
+                onClick = onDismiss
             ) {
                 Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold)
             }

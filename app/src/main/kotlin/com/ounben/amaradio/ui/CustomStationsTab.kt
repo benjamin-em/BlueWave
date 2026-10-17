@@ -151,7 +151,7 @@ fun CustomStationOptionsDialog(
                         StationActions.playInAMARadio(context, station)
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
                     headlineContent = { Text(stringResource(R.string.action_play_in_external), color = MaterialTheme.colorScheme.onSurface) },
@@ -162,19 +162,19 @@ fun CustomStationOptionsDialog(
                         }
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline)
 
                 ListItem(
                     headlineContent = { Text(stringResource(R.string.action_edit), color = MaterialTheme.colorScheme.onSurface) },
                     leadingContent = { Icon(Icons.Default.Edit, contentDescription = null, tint = MaterialTheme.colorScheme.onSurface) },
                     modifier = Modifier.clickable { onEdit() },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
+                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline)
 
                 ListItem(
                     headlineContent = { Text(stringResource(R.string.action_station_visit_website), color = MaterialTheme.colorScheme.onSurface) },
@@ -183,7 +183,7 @@ fun CustomStationOptionsDialog(
                         StationActions.openStationHomeUrl(context, station)
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
                     headlineContent = { Text(stringResource(R.string.action_station_share), color = MaterialTheme.colorScheme.onSurface) },
@@ -192,13 +192,16 @@ fun CustomStationOptionsDialog(
                         StationActions.share(context, station)
                         onDismiss()
                     },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
+
+                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline)
+
                 ListItem(
                     headlineContent = { Text(stringResource(R.string.action_delete), color = MaterialTheme.colorScheme.error) },
                     leadingContent = { Icon(Icons.Default.Delete, contentDescription = null, tint = MaterialTheme.colorScheme.error) },
                     modifier = Modifier.clickable { onDelete() },
-                    colors = ListItemDefaults.colors(containerColor = Color.Transparent)
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
             }
         },
