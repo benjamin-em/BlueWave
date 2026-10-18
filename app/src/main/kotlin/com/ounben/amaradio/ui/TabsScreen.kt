@@ -81,6 +81,7 @@ fun TabsScreen(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
+                .height(48.dp)
                 .background(MaterialTheme.colorScheme.secondary),
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -91,7 +92,7 @@ fun TabsScreen(
 
                 SecondaryScrollableTabRow(
                     selectedTabIndex = safeSelectedIndex,
-                    modifier = Modifier.weight(1f),
+                    modifier = Modifier.weight(1f).height(48.dp),
                     edgePadding = 16.dp,
                     containerColor = Color.Transparent,
                     contentColor = MaterialTheme.colorScheme.onSecondary,
@@ -132,14 +133,16 @@ fun TabsScreen(
             }
 
             if (filterState.tabs.size < 5) {
-                Icon(
-                    imageVector = Icons.Default.Add,
-                    contentDescription = stringResource(R.string.accessibility_add_filter),
-                    tint = AmaradioAmber,
-                    modifier = Modifier
-                        .clickable { filterViewModel.addTab() }
-                        .padding(16.dp)
-                )
+                IconButton(
+                    onClick = { filterViewModel.addTab() },
+                    modifier = Modifier.size(48.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Add,
+                        contentDescription = stringResource(R.string.accessibility_add_filter),
+                        tint = AmaradioAmber
+                    )
+                }
             }
         }
 
