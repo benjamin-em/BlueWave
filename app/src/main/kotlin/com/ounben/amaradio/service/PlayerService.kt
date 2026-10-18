@@ -93,6 +93,7 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
     private var powerManager: PowerManager? = null
     private var wakeLock: PowerManager.WakeLock? = null
     private var wifiLock: WifiManager.WifiLock? = null
+    private var multicastLock: WifiManager.MulticastLock? = null
     private val becomingNoisyReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             if ((AudioManager.ACTION_AUDIO_BECOMING_NOISY == intent.action) && (radioPlayer?.isPlaying() == true)) {
@@ -750,6 +751,17 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
                 wifiLock = it.createWifiLock(mode, "PlayerService")
             }
             if (!wifiLock!!.isHeld) wifiLock!!.acquire()
+
+            if (multicastLock == null) {
+                multicastLock = it.createMulticastLock("AMARadioMulticastLock").apply {
+                    setReferenceCounted(false)
+                }
+            }
+            try {
+                if (!multicastLock!!.isHeld) multicastLock!!.acquire()
+            } catch (e: Exception) {
+                if (Utils.isDebug) Log.e(tag, "Failed to acquire multicast lock", e)
+            }
         }
     }
 
@@ -759,6 +771,10 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
         wakeLock = null
         wifiLock?.let { if (it.isHeld) it.release() }
         wifiLock = null
+        try {
+            multicastLock?.let { if (it.isHeld) it.release() }
+        } catch (_: Exception) {}
+        multicastLock = null
     }
 
     private fun sendMessage(theTitle: String, theMessage: String, theTicker: String, playState: PlayState?) {

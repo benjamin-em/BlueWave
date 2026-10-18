@@ -13,6 +13,8 @@ class CastManager private constructor(context: Context) {
     private val _isCasting = MutableStateFlow(false)
     val isCasting: StateFlow<Boolean> = _isCasting
 
+    fun ensureInitializedAsync(context: Context, onInitialized: ((Any) -> Unit)? = null) {}
+
     companion object {
         fun init(context: Context): CastManager = CastManager(context)
         fun getInstance(context: Context? = null): CastManager? = null

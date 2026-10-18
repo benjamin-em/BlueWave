@@ -139,6 +139,9 @@ class ActivityMain : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
             
             PlayerServiceUtil.startService(applicationContext)
 
+            // Eagerly initialize Google Cast background discovery on app launch
+            com.ounben.amaradio.cast.CastManager.getInstance(applicationContext)?.ensureInitializedAsync(applicationContext)
+
             val app = application as AMARadioApp
             app.reviewManager.maybeRequestReview(this)
 
