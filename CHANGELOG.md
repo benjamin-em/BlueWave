@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.44] - 2026-10-18
+### Added
+- **Google Cast & DLNA Discovery (Android 13–17 & One UI 9)**: Full integration with AndroidX Media3 Cast and Google Play Services Cast SDK. Added `CHANGE_WIFI_MULTICAST_STATE` and `NEARBY_WIFI_DEVICES` permissions to discover remote Chromecast, Smart TVs, and DLNA speakers in local Wi-Fi networks.
+- **On-Demand Permission Overlay**: Implemented `CastButtonWithPermission` with a transparent click overlay that requests `NEARBY_WIFI_DEVICES` (or location permission on legacy Android) strictly on-demand when tapping the Cast button, keeping app startup 100% quiet and pop-up free.
+
+### Changed
+- **Wi-Fi MulticastLock**: Added active `WifiManager.MulticastLock` management in `PlayerService` during Wi-Fi playback/scanning, preventing Android 14+ / One UI 9 battery optimization from dropping mDNS/SSDP discovery signals.
+- **Favicon & Station Logo Styling**: Removed rounded corners from station logos and expanded logo rendering to fill the full height of list items (`52dp` height) with a clean white background for transparent PNGs.
+- **Filter UI Refinement**: Streamlined the top sticky filter header button padding by 50% for a sleek, compact layout, and hid the station count display in the country selection dialog.
+
+### Fixed
+- **CastButton Theme Integration**: Wrapped native `MediaRouteButton` with dynamic `ContextThemeWrapper` (`Theme_AppCompat_NoActionBar` vs `Theme_AppCompat_Light_NoActionBar`) so the Cast icon and picker dialog automatically match Dark and Light mode.
+
 ## [1.43] - 2026-10-18
 ### Added
 - **Complete Localization & Legacy Locale Sync**: Comprehensive audit, correction, and translation across all 88 supported languages in `values-*/strings.xml`, ensuring 100% domain-specific terminology for Internet Radio and Android System UI (including legacy codes `values-iw`, `values-in`, `values-ji`).
