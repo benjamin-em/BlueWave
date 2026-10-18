@@ -1,0 +1,7 @@
+<resources>
+    <string name="cast_network_title">Caută dispozitive Cast</string>
+    <string name="cast_network_reason">Permite accesul la rețeaua locală pentru a găsi și conecta difuzoare și televizoare Cast din rețeaua Wi-Fi. După acordarea accesului, apasă din nou Cast pentru a alege un dispozitiv.</string>
+    <string name="cast_network_denied">Accesul la rețeaua locală este dezactivat. Permite accesul la Dispozitive din apropiere în setările aplicației, apoi apasă din nou Cast. Radioul poate reda în continuare pe telefon.</string>
+    <string name="cast_network_settings">Deschide setările</string>
+    <string name="cast_network_continue">Continuă</string>
+</resources>

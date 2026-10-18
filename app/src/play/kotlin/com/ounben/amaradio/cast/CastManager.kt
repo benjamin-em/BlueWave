@@ -1,5 +1,8 @@
 package com.ounben.amaradio.cast
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
 import android.content.Context
 import android.util.Log
 import androidx.core.content.ContextCompat
@@ -18,6 +21,7 @@ class CastManager private constructor(context: Context) {
 
     private val appContext = context.applicationContext
     private val executor = Executors.newSingleThreadExecutor()
+    @Volatile private var initializing = false
     
     private var _castPlayer: CastPlayer? = null
     val castPlayer: CastPlayer? get() = _castPlayer
@@ -56,15 +60,23 @@ class CastManager private constructor(context: Context) {
     }
 
     fun ensureInitializedAsync(context: Context, onInitialized: ((CastContext) -> Unit)? = null) {
+        if (Build.VERSION.SDK_INT >= 37 &&
+            ContextCompat.checkSelfPermission(appContext, Manifest.permission.ACCESS_LOCAL_NETWORK) != PackageManager.PERMISSION_GRANTED) {
+            Log.d(TAG, "Cast initialization deferred until local network access is granted")
+            return
+        }
         val existingContext = castContext
         if (existingContext != null) {
             onInitialized?.invoke(existingContext)
             return
         }
 
+        if (initializing) return
+        initializing = true
         val mainExecutor = ContextCompat.getMainExecutor(context)
         CastContext.getSharedInstance(context, executor)
             .addOnSuccessListener(mainExecutor) { contextInstance ->
+                initializing = false
                 try {
                     castContext = contextInstance
                     _castPlayer = CastPlayer(contextInstance, DefaultMediaItemConverter())
@@ -76,6 +88,7 @@ class CastManager private constructor(context: Context) {
                 }
             }
             .addOnFailureListener(mainExecutor) { e ->
+                initializing = false
                 Log.e(TAG, "Failed to initialize CastContext asynchronously", e)
             }
     }

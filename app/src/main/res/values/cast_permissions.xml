@@ -1,0 +1,7 @@
+<resources>
+    <string name="cast_network_title">Find Cast devices</string>
+    <string name="cast_network_reason">Allow local network access to find and connect to Cast speakers and TVs on your Wi-Fi. After allowing access, tap Cast again to choose a device.</string>
+    <string name="cast_network_denied">Local network access is disabled. Allow Nearby devices in app settings, then tap Cast again. Radio playback on this phone remains available.</string>
+    <string name="cast_network_settings">Open settings</string>
+    <string name="cast_network_continue">Continue</string>
+</resources>
