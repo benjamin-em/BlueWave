@@ -186,6 +186,7 @@ fun FilterScreen(
                         SearchableSelectionDialog(
                             title = stringResource(R.string.filter_country),
                             options = uiState.countries,
+                            showCount = false,
                             onSelect = { item -> 
                                 viewModel.onCountrySelect(tabIndex, item.code, item.label)
                                 onDismiss()
@@ -510,7 +511,8 @@ fun SearchableSelectionDialog(
     title: String,
     options: List<FilterViewModel.CategoryItem>,
     onSelect: (FilterViewModel.CategoryItem) -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    showCount: Boolean = true
 ) {
     var searchQuery by remember { mutableStateOf("") }
     val focusRequester = remember { FocusRequester() }
@@ -587,7 +589,7 @@ fun SearchableSelectionDialog(
                     ) { item ->
                         ListItem(
                             headlineContent = { Text(item.label, style = MaterialTheme.typography.bodyLarge) },
-                            supportingContent = if (item.count > 0) {
+                            supportingContent = if (showCount && item.count > 0) {
                                 { Text("${item.count} stations", style = MaterialTheme.typography.labelSmall) }
                             } else null,
                             leadingContent = if (item.emoji.isNotEmpty()) {
