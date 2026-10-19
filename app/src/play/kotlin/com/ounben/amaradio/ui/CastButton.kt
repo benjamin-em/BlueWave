@@ -1,107 +1,125 @@
 package com.ounben.amaradio.ui
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
+import android.provider.Settings
 import android.view.ContextThemeWrapper
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.mediarouter.app.MediaRouteButton
 import com.google.android.gms.cast.framework.CastButtonFactory
+import com.ounben.amaradio.R
 import com.ounben.amaradio.Utils
 import com.ounben.amaradio.cast.CastManager
 
 @Composable
 fun CastButton(modifier: Modifier = Modifier) {
-    CastButtonWithPermission(modifier = modifier)
+    CastButtonWithPermission(modifier)
 }
 
-@Suppress("DEPRECATION")
 @Composable
 fun CastButtonWithPermission(modifier: Modifier = Modifier) {
     val context = LocalContext.current
-    
-    // 2. Determine required runtime permission based on Android API level
-    val requiredPermission = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-        Manifest.permission.NEARBY_WIFI_DEVICES
-    } else {
-        Manifest.permission.ACCESS_FINE_LOCATION
-    }
+    // Android 17 uses a distinct LAN permission. Older Android versions do not
+    // require location or Wi-Fi permissions for ordinary Cast discovery.
+    val requiredPermission = if (Build.VERSION.SDK_INT >= 37) {
+        Manifest.permission.ACCESS_LOCAL_NETWORK
+    } else null
+    fun permissionGranted() = requiredPermission == null ||
+        ContextCompat.checkSelfPermission(context, requiredPermission) == PackageManager.PERMISSION_GRANTED
+    var hasPermission by remember { mutableStateOf(permissionGranted()) }
+    var showExplanation by remember { mutableStateOf(false) }
+    var showSettings by remember { mutableStateOf(false) }
 
-    var hasPermission by remember {
-        mutableStateOf(
-            ContextCompat.checkSelfPermission(context, requiredPermission) == PackageManager.PERMISSION_GRANTED
-        )
-    }
-
-    // 4. Permission launcher using ActivityResultContracts.RequestPermission
     val permissionLauncher = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.RequestPermission()
-    ) { isGranted ->
-        hasPermission = isGranted
-        if (isGranted) {
+        ActivityResultContracts.RequestPermission()
+    ) { granted ->
+        hasPermission = granted
+        showSettings = !granted
+        if (granted) {
             CastManager.getInstance(context.applicationContext)?.ensureInitializedAsync(context.applicationContext)
         }
     }
-
+    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
+        hasPermission = permissionGranted()
+        if (hasPermission) {
+            showSettings = false
+            CastManager.getInstance(context.applicationContext)?.ensureInitializedAsync(context.applicationContext)
+        }
+    }
     val systemDark = isSystemInDarkTheme()
     val isDark = when (Utils.getTheme(context)) {
         "dark" -> true
         "light" -> false
         else -> systemDark
     }
-
-    val themeRes = if (isDark) {
-        androidx.appcompat.R.style.Theme_AppCompat_NoActionBar
-    } else {
-        androidx.appcompat.R.style.Theme_AppCompat_Light_NoActionBar
-    }
+    val themeRes = if (isDark) androidx.appcompat.R.style.Theme_AppCompat_NoActionBar
+        else androidx.appcompat.R.style.Theme_AppCompat_Light_NoActionBar
 
     Box(modifier = modifier.size(48.dp)) {
-        // 1. Native AndroidX MediaRouteButton via AndroidView with CastButtonFactory
-        AndroidView(
-            factory = { ctx ->
-                val themedContext = ContextThemeWrapper(ctx, themeRes)
-                MediaRouteButton(themedContext).apply {
-                    try {
-                        CastButtonFactory.setUpMediaRouteButton(ctx, this)
-                    } catch (_: Exception) {}
-                    try {
+        key(themeRes, hasPermission) {
+            AndroidView(
+                factory = { ctx ->
+                    MediaRouteButton(ContextThemeWrapper(ctx, themeRes)).apply {
                         setAlwaysVisible(true)
-                    } catch (_: Exception) {}
-                }
-            },
-            update = { button ->
-                try {
-                    button.setAlwaysVisible(true)
-                } catch (_: Exception) {}
-            },
-            modifier = Modifier.matchParentSize()
-        )
-
-        // 3. & 5. Transparent click overlay active only while permission is missing
-        if (!hasPermission) {
-            Box(
-                modifier = Modifier
-                    .matchParentSize()
-                    .clickable(
-                        interactionSource = remember { MutableInteractionSource() },
-                        indication = null
-                    ) {
-                        permissionLauncher.launch(requiredPermission)
+                        if (hasPermission) {
+                            try {
+                                CastButtonFactory.setUpMediaRouteButton(ctx, this)
+                            } catch (e: Exception) {
+                                android.util.Log.e("AMARadioCast", "Cast route button setup failed", e)
+                            }
+                        }
                     }
+                },
+                modifier = Modifier.matchParentSize()
             )
         }
+        if (!hasPermission) {
+            Box(Modifier.matchParentSize().clickable(
+                onClickLabel = stringResource(R.string.cast_network_title)
+            ) { showExplanation = true })
+        }
+    }
+    if (showExplanation || showSettings) {
+        AlertDialog(
+            onDismissRequest = { showExplanation = false; showSettings = false },
+            title = { Text(stringResource(R.string.cast_network_title)) },
+            text = { Text(stringResource(if (showSettings) R.string.cast_network_denied else R.string.cast_network_reason)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    val openSettings = showSettings
+                    showExplanation = false
+                    showSettings = false
+                    if (openSettings) {
+                        context.startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                            Uri.parse("package:${context.packageName}")))
+                    } else requiredPermission?.let { permissionLauncher.launch(it) }
+                }) { Text(stringResource(if (showSettings) R.string.cast_network_settings else R.string.cast_network_continue)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showExplanation = false; showSettings = false }) {
+                    Text(stringResource(android.R.string.cancel))
+                }
+            }
+        )
     }
 }
