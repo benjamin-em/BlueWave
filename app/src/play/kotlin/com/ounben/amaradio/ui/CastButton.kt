@@ -14,12 +14,15 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
@@ -102,22 +105,39 @@ fun CastButtonWithPermission(modifier: Modifier = Modifier) {
     if (showExplanation || showSettings) {
         AlertDialog(
             onDismissRequest = { showExplanation = false; showSettings = false },
-            title = { Text(stringResource(R.string.cast_network_title)) },
-            text = { Text(stringResource(if (showSettings) R.string.cast_network_denied else R.string.cast_network_reason)) },
+            containerColor = MaterialTheme.colorScheme.surface,
+            tonalElevation = 0.dp,
+            title = { Text(stringResource(R.string.cast_network_title), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurface) },
+            text = { Text(stringResource(if (showSettings) R.string.cast_network_denied else R.string.cast_network_reason), color = MaterialTheme.colorScheme.onSurface) },
             confirmButton = {
-                TextButton(onClick = {
-                    val openSettings = showSettings
-                    showExplanation = false
-                    showSettings = false
-                    if (openSettings) {
-                        context.startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                            Uri.parse("package:${context.packageName}")))
-                    } else requiredPermission?.let { permissionLauncher.launch(it) }
-                }) { Text(stringResource(if (showSettings) R.string.cast_network_settings else R.string.cast_network_continue)) }
+                TextButton(
+                    onClick = {
+                        val openSettings = showSettings
+                        showExplanation = false
+                        showSettings = false
+                        if (openSettings) {
+                            context.startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                Uri.parse("package:${context.packageName}")))
+                        } else requiredPermission?.let { permissionLauncher.launch(it) }
+                    },
+                    colors = ButtonDefaults.textButtonColors(contentColor = AmaradioAmber)
+                ) {
+                    Text(
+                        text = stringResource(if (showSettings) R.string.cast_network_settings else R.string.action_ok),
+                        color = AmaradioAmber,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
             },
             dismissButton = {
-                TextButton(onClick = { showExplanation = false; showSettings = false }) {
-                    Text(stringResource(android.R.string.cancel))
+                TextButton(
+                    onClick = { showExplanation = false; showSettings = false },
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                ) {
+                    Text(
+                        text = stringResource(R.string.action_cancel),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                 }
             }
         )
