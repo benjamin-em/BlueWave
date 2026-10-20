@@ -77,11 +77,18 @@ class PlayStationTask(
                             .build()
                         AMARadioApp.httpClient.newCall(request).execute().use { response ->
                             if (response.isSuccessful) {
-                                val body = response.body?.string().orEmpty()
+                                val maxBytes = 128 * 1024L
+                                val body = response.body?.use { body ->
+                                    val source = body.source()
+                                    source.request(maxBytes)
+                                    val availableBytes = source.buffer.size.coerceAtMost(maxBytes)
+                                    source.buffer.readUtf8(availableBytes)
+                                }.orEmpty()
+
                                 PlaylistParser.parse(streamUrl, body)
                             } else null
                         }
-                    } catch (e: Exception) {
+                    } catch (e: Throwable) {
                         Log.e("PLAY", "Playlist resolution failed for $streamUrl", e)
                         null
                     }
