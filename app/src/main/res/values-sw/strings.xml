@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Ili kuendelea kucheza skrini ikiwa imezimwa, weka matumizi ya betri kuwa \'Bila Vikwazo\'.</string>
     <string name="battery_opt_open_settings">Fungua Mipangilio</string>
     <string name="battery_opt_later">Baadaye</string>
+
+    <string name="cast_network_title">Pata vifaa vya Cast</string>
+    <string name="cast_network_reason">Ruhusu ufikiaji wa mtandao wa ndani ili kupata na kuunganisha kwa spika za Cast na TV kwenye Wi-Fi yako. Baada ya kuruhusu ufikiaji, gusa Cast tena ili kuchagua kifaa.</string>
+    <string name="cast_network_denied">Ufikiaji wa mtandao wa ndani umezimwa. Ruhusu vifaa vya Karibu katika mipangilio ya programu, kisha uguse Cast tena. Uchezaji wa redio kwenye simu hii bado unapatikana.</string>
+    <string name="cast_network_settings">Fungua mipangilio</string>
+    <string name="cast_network_continue">Endelea</string>
+
+    <string name="action_later">Baadaye</string>
 </resources>

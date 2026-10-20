@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Chun athsheinm a choinneáil ar siúl agus an scáileán múchta, socraigh úsáid ceallraí go \'Neamhtheoranta\'.</string>
     <string name="battery_opt_open_settings">Oscail socruithe</string>
     <string name="battery_opt_later">Níos déanaí</string>
+
+    <string name="cast_network_title">Aimsigh feistí Cast</string>
+    <string name="cast_network_reason">Ceadaigh rochtain líonra áitiúil chun cainteoirí Cast agus teilifíseáin ar do Wi-Fi a aimsiú agus nascadh leo. Tar éis rochtain a cheadú, sconna Cast arís chun gléas a roghnú.</string>
+    <string name="cast_network_denied">Tá rochtain ar an líonra áitiúil díchumasaithe. Ceadaigh feistí In aice láimhe i socruithe app, ansin tapáil Cast arís. Tá athsheinm raidió ar an bhfón seo fós ar fáil.</string>
+    <string name="cast_network_settings">Oscail socruithe</string>
+    <string name="cast_network_continue">Lean ort</string>
+
+    <string name="action_later">Níos déanaí</string>
 </resources>

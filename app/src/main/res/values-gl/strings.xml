@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Para manter a reproduación coa pantalla apagada, establece o uso da batería en \'Sen restricións\'.</string>
     <string name="battery_opt_open_settings">Abrir axustes</string>
     <string name="battery_opt_later">Máis tarde</string>
+
+    <string name="cast_network_title">Busca dispositivos de emisión</string>
+    <string name="cast_network_reason">Permite o acceso á rede local para atopar e conectarse a altofalantes e televisores Cast na túa wifi. Despois de permitir o acceso, toca Emitir de novo para escoller un dispositivo.</string>
+    <string name="cast_network_denied">O acceso á rede local está desactivado. Permite os dispositivos próximos na configuración da aplicación e, a continuación, toca Emitir de novo. A reprodución de radio neste teléfono segue dispoñible.</string>
+    <string name="cast_network_settings">Abra a configuración</string>
+    <string name="cast_network_continue">Continuar</string>
+
+    <string name="action_later">Máis tarde</string>
 </resources>

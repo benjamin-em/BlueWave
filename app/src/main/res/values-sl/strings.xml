@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Za nadaljevanje predvajanja pri izklopljenem zaslonu nastavite porabo baterije na \'Neomejeno\'.</string>
     <string name="battery_opt_open_settings">Odpri nastavitve</string>
     <string name="battery_opt_later">Pozneje</string>
+
+    <string name="cast_network_title">Poiščite naprave Cast</string>
+    <string name="cast_network_reason">Dovolite dostop do lokalnega omrežja, da poiščete in se povežete z zvočniki Cast in televizorji v vašem omrežju Wi-Fi. Ko omogočite dostop, znova tapnite Cast, da izberete napravo.</string>
+    <string name="cast_network_denied">Dostop do lokalnega omrežja je onemogočen. Dovoli naprave v bližini v nastavitvah aplikacije, nato pa znova tapnite Cast. Predvajanje radia na tem telefonu je še vedno na voljo.</string>
+    <string name="cast_network_settings">Odprite nastavitve</string>
+    <string name="cast_network_continue">Nadaljuj</string>
+
+    <string name="action_later">Kasneje</string>
 </resources>

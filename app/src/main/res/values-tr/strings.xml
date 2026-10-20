@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Ekran kapalıyken oynatmaya devam etmek için pil kullanımını \'Kısıtlamasız\' olarak ayarlayın.</string>
     <string name="battery_opt_open_settings">Ayarları Aç</string>
     <string name="battery_opt_later">Daha Sonra</string>
+
+    <string name="cast_network_title">Cast cihazlarını bulun</string>
+    <string name="cast_network_reason">Yerel ağ erişiminin Wi-Fi\'nizdeki Cast hoparlörlerini ve TV\'lerini bulmasına ve bunlara bağlanmasına izin verin. Erişime izin verdikten sonra bir cihaz seçmek için Yayınla\'ya tekrar dokunun.</string>
+    <string name="cast_network_denied">Yerel ağ erişimi devre dışı bırakıldı. Uygulama ayarlarında Yakındaki cihazlara izin verin ve ardından tekrar Yayınla\'ya dokunun. Bu telefonda radyo çalma özelliği devam ediyor.</string>
+    <string name="cast_network_settings">Ayarları aç</string>
+    <string name="cast_network_continue">Devam etmek</string>
+
+    <string name="action_later">Daha sonra</string>
 </resources>

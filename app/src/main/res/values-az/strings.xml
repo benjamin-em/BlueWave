@@ -393,4 +393,14 @@
     <string name="settings_disable_battery_optimization_desc">Ekran sönük olduqda oxutmanı davam etdirmək üçün batareya istifadəsini \'Məhdudiyyətsiz\' olaraq təyin edin.</string>
     <string name="battery_opt_open_settings">Tənzimləmələri aç</string>
     <string name="battery_opt_later">Sonra</string>
+
+    <string name="error_no_connection">İnternet bağlantısı yoxdur</string>
+    <string name="warning_volume_zero">Həcmi sıfırdır. Ola bilər ki, heç nə eşitməyəcəksiniz.</string>
+    <string name="cast_network_title">Yayım cihazlarını tapın</string>
+    <string name="cast_network_reason">Wi-Fi-da Yayım dinamikləri və televizorları tapmaq və onlara qoşulmaq üçün yerli şəbəkəyə giriş icazəsi verin. Girişə icazə verdikdən sonra cihaz seçmək üçün yenidən Yayımla üzərinə klikləyin.</string>
+    <string name="cast_network_denied">Yerli şəbəkəyə giriş deaktiv edilib. Tətbiq ayarlarında Yaxınlıqdakı cihazlara icazə verin, sonra yenidən Yayımla klikləyin. Bu telefonda radio oxutma mövcud olaraq qalır.</string>
+    <string name="cast_network_settings">Parametrləri açın</string>
+    <string name="cast_network_continue">Davam et</string>
+
+    <string name="action_later">Daha sonra</string>
 </resources>

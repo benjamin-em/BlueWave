@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">ដើម្បីបន្តការចាក់នៅពេលបិទអេក្រង់ សូមកំណត់ការប្រើប្រាស់ថ្មទៅ \'មិនកំណត់\' (Unrestricted)۔</string>
     <string name="battery_opt_open_settings">បើកការកំណត់</string>
     <string name="battery_opt_later">ពេលក្រោយ</string>
+
+    <string name="cast_network_title">ស្វែងរកឧបករណ៍ខាស</string>
+    <string name="cast_network_reason">អនុញ្ញាតឱ្យចូលប្រើបណ្តាញមូលដ្ឋានដើម្បីស្វែងរក និងភ្ជាប់ទៅឧបករណ៍បំពងសំឡេង Cast និងទូរទស្សន៍នៅលើ Wi-Fi របស់អ្នក។ បន្ទាប់ពីអនុញ្ញាតឱ្យចូលប្រើ សូមចុចខាសម្តងទៀត ដើម្បីជ្រើសរើសឧបករណ៍។</string>
+    <string name="cast_network_denied">ការចូលប្រើបណ្តាញមូលដ្ឋានត្រូវបានបិទ។ អនុញ្ញាតឱ្យឧបករណ៍នៅក្បែរនៅក្នុងការកំណត់កម្មវិធី បន្ទាប់មកចុចខាសម្តងទៀត។ ការចាក់សារថ្មីវិទ្យុនៅលើទូរស័ព្ទនេះនៅតែមាន។</string>
+    <string name="cast_network_settings">បើកការកំណត់</string>
+    <string name="cast_network_continue">បន្ត</string>
+
+    <string name="action_later">ពេលក្រោយ</string>
 </resources>

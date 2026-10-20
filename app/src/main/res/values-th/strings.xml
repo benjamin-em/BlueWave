@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">เพื่อเล่นเสียงต่อเนื่องเมื่อปิดหน้าจอ โปรดตั้งค่าการใช้แบตเตอรี่เป็น \'Unrestricted\'</string>
     <string name="battery_opt_open_settings">เปิดการตั้งค่า</string>
     <string name="battery_opt_later">ภายหลัง</string>
+
+    <string name="cast_network_title">ค้นหาอุปกรณ์แคสต์</string>
+    <string name="cast_network_reason">อนุญาตให้เข้าถึงเครือข่ายท้องถิ่นเพื่อค้นหาและเชื่อมต่อกับลำโพง Cast และทีวีบน Wi-Fi ของคุณ หลังจากอนุญาตการเข้าถึงแล้ว ให้แตะ Cast อีกครั้งเพื่อเลือกอุปกรณ์</string>
+    <string name="cast_network_denied">การเข้าถึงเครือข่ายท้องถิ่นถูกปิดใช้งาน อนุญาตอุปกรณ์ใกล้เคียงในการตั้งค่าแอพ จากนั้นแตะแคสต์อีกครั้ง การเล่นวิทยุบนโทรศัพท์เครื่องนี้ยังคงใช้งานได้</string>
+    <string name="cast_network_settings">เปิดการตั้งค่า</string>
+    <string name="cast_network_continue">ดำเนินการต่อ</string>
+
+    <string name="action_later">ภายหลัง</string>
 </resources>

@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Om het afspelen voort te zetten wanneer het scherm is uitgeschakeld, stelt u het batterijgebruik in op \'Onbeperkt\'.</string>
     <string name="battery_opt_open_settings">Instellingen openen</string>
     <string name="battery_opt_later">Laters</string>
+
+    <string name="cast_network_title">Zoek Cast-apparaten</string>
+    <string name="cast_network_reason">Geef toegang tot het lokale netwerk om Cast-luidsprekers en tv\'s te vinden en er verbinding mee te maken via je wifi-netwerk. Nadat je toegang hebt verleend, tik je nogmaals op Casten om een ​​apparaat te kiezen.</string>
+    <string name="cast_network_denied">Lokale netwerktoegang is uitgeschakeld. Sta apparaten in de buurt toe in de app-instellingen en tik vervolgens nogmaals op Casten. Radio afspelen op deze telefoon blijft beschikbaar.</string>
+    <string name="cast_network_settings">Instellingen openen</string>
+    <string name="cast_network_continue">Doorgaan</string>
+
+    <string name="action_later">Later</string>
 </resources>

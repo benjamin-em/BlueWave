@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">තිරය අක්‍රිය වූ විටත් ධාවනය සක්‍රියව තබා ගැනීමට බැටරි භාවිතය \'Unrestricted\' ලෙස සකසන්න.</string>
     <string name="battery_opt_open_settings">සැකසුම් විවෘත කරන්න</string>
     <string name="battery_opt_later">පසුව</string>
+
+    <string name="cast_network_title">Cast උපාංග සොයන්න</string>
+    <string name="cast_network_reason">ඔබගේ Wi-Fi මත Cast ස්පීකර සහ TV සොයා ගැනීමට සහ සම්බන්ධ වීමට දේශීය ජාල ප්‍රවේශයට ඉඩ දෙන්න. ප්‍රවේශයට ඉඩ දීමෙන් පසුව, උපාංගයක් තේරීමට නැවත විකාශය තට්ටු කරන්න.</string>
+    <string name="cast_network_denied">දේශීය ජාල ප්‍රවේශය අබල කර ඇත. යෙදුම් සැකසීම් තුළ Nearby උපාංගවලට ඉඩ දෙන්න, ඉන්පසු නැවතත් Cast තට්ටු කරන්න. මෙම දුරකථනයේ රේඩියෝ නැවත ධාවනය පවතී.</string>
+    <string name="cast_network_settings">සැකසුම් විවෘත කරන්න</string>
+    <string name="cast_network_continue">දිගටම කරගෙන යන්න</string>
+
+    <string name="action_later">පසුව</string>
 </resources>

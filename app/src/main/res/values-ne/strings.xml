@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">स्क्रिन बन्द हुँदा पनि बजाउन जारी राख्न ब्याટ्री प्रयोगलाई \'Unrestricted\' मा सेट गर्नुहोस्।</string>
     <string name="battery_opt_open_settings">सेटिङहरू खोल्नुहोस्</string>
     <string name="battery_opt_later">पछि</string>
+
+    <string name="cast_network_title">Cast यन्त्रहरू फेला पार्नुहोस्</string>
+    <string name="cast_network_reason">तपाईंको Wi-Fi मा कास्ट स्पिकरहरू र टिभीहरू फेला पार्न र जडान गर्न स्थानीय नेटवर्क पहुँचलाई अनुमति दिनुहोस्। पहुँच अनुमति दिएपछि, यन्त्र छनोट गर्न फेरि Cast मा ट्याप गर्नुहोस्।</string>
+    <string name="cast_network_denied">स्थानीय नेटवर्क पहुँच असक्षम गरिएको छ। एप सेटिङहरूमा नजिकैका यन्त्रहरूलाई अनुमति दिनुहोस्, त्यसपछि फेरि Cast मा ट्याप गर्नुहोस्। यस फोनमा रेडियो प्लेब्याक उपलब्ध रहन्छ।</string>
+    <string name="cast_network_settings">सेटिङ्हरू खोल्नुहोस्</string>
+    <string name="cast_network_continue">जारी राख्नुहोस्</string>
+
+    <string name="action_later">पछि</string>
 </resources>

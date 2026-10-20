@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">要在螢幕關閉時繼續播放，請將電池使用量設定為 \'Unrestricted\'（無限制）。</string>
     <string name="battery_opt_open_settings">開啟設定</string>
     <string name="battery_opt_later">稍後</string>
+
+    <string name="cast_network_title">尋找 Cast 設備</string>
+    <string name="cast_network_reason">允許本地網路存取以在 Wi-Fi 上尋找並連接到 Cast 揚聲器和電視。允許存取後，再次點擊“投射”以選擇裝置。</string>
+    <string name="cast_network_denied">本地網路存取已停用。在應用程式設定中允許“附近的裝置”，然後再次點擊“投射”。此手機上的廣播播放仍可使用。</string>
+    <string name="cast_network_settings">開啟設定</string>
+    <string name="cast_network_continue">繼續</string>
+
+    <string name="action_later">之後</string>
 </resources>

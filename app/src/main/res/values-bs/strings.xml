@@ -392,4 +392,15 @@
     <string name="database_error_no_connection">Nema internet veze</string>
     <string name="database_error_no_space">Nema dovoljno prostora na disku</string>
     <string name="database_error_failed">Ažuriranje baze podataka nije uspjelo</string>
+
+    <string name="settings_disable_battery_optimization_desc">Za nastavak reprodukcije s isključenim ekranom, postavite potrošnju baterije na \'Neograničeno\'.</string>
+    <string name="battery_opt_open_settings">Otvorite postavke</string>
+    <string name="battery_opt_later">Kasnije</string>
+    <string name="cast_network_title">Pronađite Cast uređaje</string>
+    <string name="cast_network_reason">Dozvolite pristup lokalnoj mreži da pronađete i povežete se s Cast zvučnicima i televizorima na vašoj Wi-Fi mreži. Nakon što dozvolite pristup, ponovo dodirnite Cast da odaberete uređaj.</string>
+    <string name="cast_network_denied">Pristup lokalnoj mreži je onemogućen. Dozvolite uređaje u blizini u postavkama aplikacije, a zatim ponovo dodirnite Cast. Radio reprodukcija na ovom telefonu ostaje dostupna.</string>
+    <string name="cast_network_settings">Otvorite postavke</string>
+    <string name="cast_network_continue">Nastavi</string>
+
+    <string name="action_later">Kasnije</string>
 </resources>

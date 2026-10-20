@@ -46,6 +46,7 @@
     <string name="action_countries">Countries/Regions</string>
     <string name="action_languages">Languages</string>
     <string name="action_edit">Edit</string>
+    <string name="action_later">Later</string>
     <string name="action_copy_info">Copy Info</string>
     <string name="action_rename_tab">Rename Tab</string>
     <string name="error_filter_name_required">Please enter a name for this filter tab first</string>
@@ -307,7 +308,7 @@
     <string name="settings_disable_battery_optimization_desc">To keep playback running with the screen off, set battery usage to \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Open settings</string>
     <string name="battery_opt_later">Later</string>
-    <string name="key_ignore_battery_optimization">ignore_battery_optimization</string>
+    <string name="key_ignore_battery_optimization" translatable="false">ignore_battery_optimization</string>
     <string name="settings_other">Other</string>
     <string name="settings_rate_app">Rate AMARadio</string>
     <string name="settings_rate_app_summary">If you like the app, please leave a review on the Play Store!</string>
@@ -416,5 +417,7 @@
     <string name="cast_network_denied">Local network access is disabled. Allow Nearby devices in app settings, then tap Cast again. Radio playback on this phone remains available.</string>
     <string name="cast_network_settings">Open settings</string>
     <string name="cast_network_continue">Continue</string>
+    <string name="settings_ignore_battery_optimization_summary_on" translatable="false">settings_ignore_battery_optimization_summary_on</string>
+    <string name="settings_ignore_battery_optimization_summary_off" translatable="false">settings_ignore_battery_optimization_summary_off</string>
 
 </resources>

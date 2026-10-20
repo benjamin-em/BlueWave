@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">திரை அணைக்கப்படும்போதும் இயக்கத்தைத் தொடர, பேட்டரி பயன்பாட்டை \'Unrestricted\' ஆக அமைக்கவும்.</string>
     <string name="battery_opt_open_settings">அமைப்புகளைத் திறக்கவும்</string>
     <string name="battery_opt_later">பிறகு</string>
+
+    <string name="cast_network_title">Cast சாதனங்களைக் கண்டறியவும்</string>
+    <string name="cast_network_reason">உங்கள் வைஃபையில் காஸ்ட் ஸ்பீக்கர்கள் மற்றும் டிவிகளைக் கண்டறிந்து இணைக்க உள்ளூர் நெட்வொர்க் அணுகலை அனுமதிக்கவும். அணுகலை அனுமதித்த பிறகு, சாதனத்தைத் தேர்வுசெய்ய மீண்டும் Cast என்பதைத் தட்டவும்.</string>
+    <string name="cast_network_denied">உள்ளூர் நெட்வொர்க் அணுகல் முடக்கப்பட்டுள்ளது. பயன்பாட்டு அமைப்புகளில் அருகிலுள்ள சாதனங்களை அனுமதித்து, மீண்டும் அனுப்பு என்பதைத் தட்டவும். இந்த மொபைலில் ரேடியோ பிளேபேக் இன்னும் உள்ளது.</string>
+    <string name="cast_network_settings">அமைப்புகளைத் திறக்கவும்</string>
+    <string name="cast_network_continue">தொடரவும்</string>
+
+    <string name="action_later">பின்னர்</string>
 </resources>

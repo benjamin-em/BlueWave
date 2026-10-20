@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Aby kontynuować odtwarzanie przy wyłączonym ekranie, ustaw użycie baterii na \'Bez ograniczeń\'.</string>
     <string name="battery_opt_open_settings">Otwórz ustawienia</string>
     <string name="battery_opt_later">Później</string>
+
+    <string name="cast_network_title">Znajdź urządzenia przesyłające</string>
+    <string name="cast_network_reason">Zezwól na dostęp do sieci lokalnej, aby znajdować głośniki i telewizory Cast w sieci Wi-Fi i łączyć się z nimi. Po zezwoleniu na dostęp kliknij ponownie opcję Przesyłaj, aby wybrać urządzenie.</string>
+    <string name="cast_network_denied">Dostęp do sieci lokalnej jest wyłączony. Zezwól na urządzenia w pobliżu w ustawieniach aplikacji, a następnie ponownie dotknij opcji Przesyłaj. Odtwarzanie radia w tym telefonie będzie nadal dostępne.</string>
+    <string name="cast_network_settings">Otwórz ustawienia</string>
+    <string name="cast_network_continue">Dalej</string>
+
+    <string name="action_later">Później</string>
 </resources>

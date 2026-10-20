@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">A lejátszás kikapcsolt képernyő melletti folytatásához állítsa az akkumulátorhasználatot \'Korlátlan\' értékre.</string>
     <string name="battery_opt_open_settings">Beállítások megnyitása</string>
     <string name="battery_opt_later">Később</string>
+
+    <string name="cast_network_title">Keresse meg a Cast-eszközöket</string>
+    <string name="cast_network_reason">Engedélyezze a helyi hálózati hozzáférést a Cast-hangszórók és tévék megtalálásához és csatlakozásához Wi-Fi-hálózatán. A hozzáférés engedélyezése után koppintson ismét az Átküldés lehetőségre az eszköz kiválasztásához.</string>
+    <string name="cast_network_denied">A helyi hálózati hozzáférés le van tiltva. Engedélyezze a Közeli eszközök funkciót az alkalmazásbeállításokban, majd koppintson ismét az Átküldésre. A rádió lejátszása ezen a telefonon továbbra is elérhető.</string>
+    <string name="cast_network_settings">Nyissa meg a beállításokat</string>
+    <string name="cast_network_continue">Folytatás</string>
+
+    <string name="action_later">Később</string>
 </resources>

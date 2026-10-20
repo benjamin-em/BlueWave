@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">اسکرین بند ہونے پر بھی کھیلنا جاری رکھنے کے لیے بیٹنگ کا استعمال \'Unrestricted\' پر سیٹ کریں۔</string>
     <string name="battery_opt_open_settings">سیٹنگز کھولیں</string>
     <string name="battery_opt_later">بعد میں</string>
+
+    <string name="cast_network_title">کاسٹ آلات تلاش کریں۔</string>
+    <string name="cast_network_reason">اپنے Wi-Fi پر کاسٹ اسپیکرز اور TVs کو تلاش کرنے اور ان سے منسلک ہونے کے لیے مقامی نیٹ ورک تک رسائی کی اجازت دیں۔ رسائی کی اجازت دینے کے بعد، آلہ منتخب کرنے کے لیے دوبارہ کاسٹ کو تھپتھپائیں۔</string>
+    <string name="cast_network_denied">مقامی نیٹ ورک تک رسائی غیر فعال ہے۔ ایپ کی ترتیبات میں قریبی آلات کی اجازت دیں، پھر دوبارہ کاسٹ پر تھپتھپائیں۔ اس فون پر ریڈیو پلے بیک دستیاب رہتا ہے۔</string>
+    <string name="cast_network_settings">ترتیبات کھولیں۔</string>
+    <string name="cast_network_continue">جاری رکھیں</string>
+
+    <string name="action_later">بعد میں</string>
 </resources>

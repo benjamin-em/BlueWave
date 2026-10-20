@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Domin ci gaba da kunna sauti yayin da allon ke kashe, saita amfani da batir zuwa \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Buɗe saituna</string>
     <string name="battery_opt_later">Daga baya</string>
+
+    <string name="cast_network_title">Nemo Cast na\'urorin</string>
+    <string name="cast_network_reason">Bada damar hanyar sadarwar gida don nemo da haɗi zuwa masu magana da Cast da TV akan Wi-Fi naka. Bayan ba da izinin shiga, matsa Cast sake don zaɓar na\'ura.</string>
+    <string name="cast_network_denied">An kashe hanyar sadarwar gida. Bada na\'urorin Kusa a cikin saitunan app, sannan sake matsa Cast. Akwai sake kunna rediyo akan wannan wayar.</string>
+    <string name="cast_network_settings">Buɗe saitunan</string>
+    <string name="cast_network_continue">Ci gaba</string>
+
+    <string name="action_later">Daga baya</string>
 </resources>

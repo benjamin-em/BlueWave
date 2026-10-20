@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">للحفاظ على استمرار التشغيل عند إيقاف الشاشة، اضبط استخدام البطارية على \'غير مقيد\'.</string>
     <string name="battery_opt_open_settings">فتح الإعدادات</string>
     <string name="battery_opt_later">لاحقاً</string>
+
+    <string name="cast_network_title">ابحث عن أجهزة البث</string>
+    <string name="cast_network_reason">اسمح بالوصول إلى الشبكة المحلية للعثور على مكبرات الصوت وأجهزة التلفاز والاتصال بها على شبكة Wi-Fi لديك. بعد السماح بالوصول، انقر فوق Cast مرة أخرى لاختيار جهاز.</string>
+    <string name="cast_network_denied">تم تعطيل الوصول إلى الشبكة المحلية. اسمح للأجهزة القريبة في إعدادات التطبيق، ثم اضغط على \"إرسال\" مرة أخرى. يظل تشغيل الراديو على هذا الهاتف متاحًا.</string>
+    <string name="cast_network_settings">افتح الإعدادات</string>
+    <string name="cast_network_continue">يكمل</string>
+
+    <string name="action_later">لاحقاً</string>
 </resources>

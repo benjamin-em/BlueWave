@@ -269,8 +269,6 @@
     <string name="settings_other">Lainnya</string>
     <string name="settings_rate_app">Beri Nilai AMARadio</string>
     <string name="settings_rate_app_summary">Jika Anda menyukai aplikasi ini, silakan berikan ulasan di Play Store!</string>
-    <string name="settings_rate_app_github">Menikmati AMARadio?</string>
-    <string name="settings_rate_app_github_summary">Tinggalkan bintang di GitHub! Ini membantu orang lain menemukan aplikasi dan mendukung pengembangan di masa depan.</string>
     <string name="settings_statistics">Statistik</string>
     <string name="settings_about">Tentang AMARadio</string>
 
@@ -361,6 +359,8 @@
     <string name="settings_auto_db_update_desc">Perbarui basis data stasiun secara otomatis melalui Radio-Browser API (disarankan).</string>
     <string name="settings_station_click_counter">Penghitung klik stasiun radio</string>
     <string name="settings_station_click_counter_desc">Dukung statistik Radio-Browser dengan membagikan peristiwa pemutaran secara anonim.</string>
+    <string name="settings_rate_app_github">Menikmati AMARadio?</string>
+    <string name="settings_rate_app_github_summary">Tinggalkan bintang di GitHub! Ini membantu orang lain menemukan aplikasi dan mendukung pengembangan di masa depan.</string>
 
     <string name="settings_remove_notification_on_stop">Hapus pemberitahuan saat dihentikan</string>
     <string name="settings_remove_notification_on_stop_desc">Secara otomatis menutup pemberitahuan media ketika pemutaran dihentikan</string>
@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Untuk melanjutkan pemutaran saat layar mati, atur penggunaan baterai ke \'Tanpa Batasan\'.</string>
     <string name="battery_opt_open_settings">Buka Pengaturan</string>
     <string name="battery_opt_later">Nanti</string>
+
+    <string name="cast_network_title">Temukan perangkat Cast</string>
+    <string name="cast_network_reason">Izinkan akses jaringan lokal untuk menemukan dan terhubung ke speaker Cast dan TV di Wi-Fi Anda. Setelah mengizinkan akses, ketuk Transmisi lagi untuk memilih perangkat.</string>
+    <string name="cast_network_denied">Akses jaringan lokal dinonaktifkan. Izinkan perangkat di sekitar di setelan aplikasi, lalu ketuk Transmisikan lagi. Pemutaran radio di ponsel ini tetap tersedia.</string>
+    <string name="cast_network_settings">Buka pengaturan</string>
+    <string name="cast_network_continue">Melanjutkan</string>
+
+    <string name="action_later">Nanti</string>
 </resources>

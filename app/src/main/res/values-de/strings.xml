@@ -396,4 +396,12 @@
     <string name="database_error_no_connection">Keine Internetverbindung</string>
     <string name="database_error_no_space">Nicht genügend Speicherplatz frei</string>
     <string name="database_error_failed">Datenbank-Aktualisierung fehlgeschlagen</string>
+
+    <string name="cast_network_title">Cast-Geräte suchen</string>
+    <string name="cast_network_reason">Erlauben Sie den lokalen Netzwerkzugriff, um Cast-Lautsprecher und Fernseher in Ihrem WLAN zu finden und eine Verbindung zu ihnen herzustellen. Nachdem Sie den Zugriff zugelassen haben, tippen Sie erneut auf „Cast“, um ein Gerät auszuwählen.</string>
+    <string name="cast_network_denied">Der lokale Netzwerkzugriff ist deaktiviert. Erlauben Sie in den App-Einstellungen Geräte in der Nähe und tippen Sie dann erneut auf „Cast“. Die Radiowiedergabe auf diesem Telefon bleibt weiterhin verfügbar.</string>
+    <string name="cast_network_settings">Einstellungen öffnen</string>
+    <string name="cast_network_continue">Weiter</string>
+
+    <string name="action_later">Später</string>
 </resources>

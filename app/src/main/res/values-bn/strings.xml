@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">স্ক্রীন বন্ধ থাকলেও প্লেব্যাক চালু রাখতে ব্যাটারি ব্যবহার \'Unrestricted\'-এ সেট করুন।</string>
     <string name="battery_opt_open_settings">সেটিংস খুলুন</string>
     <string name="battery_opt_later">পরে</string>
+
+    <string name="cast_network_title">কাস্ট ডিভাইস খুঁজুন</string>
+    <string name="cast_network_reason">আপনার Wi-Fi-এ কাস্ট স্পিকার এবং টিভিগুলি খুঁজে পেতে এবং সংযোগ করতে স্থানীয় নেটওয়ার্ক অ্যাক্সেসের অনুমতি দিন। অ্যাক্সেসের অনুমতি দেওয়ার পরে, একটি ডিভাইস বেছে নিতে আবার কাস্টে আলতো চাপুন।</string>
+    <string name="cast_network_denied">স্থানীয় নেটওয়ার্ক অ্যাক্সেস অক্ষম করা হয়েছে৷ অ্যাপ সেটিংসে আশেপাশের ডিভাইসগুলিকে অনুমতি দিন, তারপর আবার কাস্টে ট্যাপ করুন। এই ফোনে রেডিও প্লেব্যাক উপলব্ধ থাকে।</string>
+    <string name="cast_network_settings">সেটিংস খুলুন</string>
+    <string name="cast_network_continue">চালিয়ে যান</string>
+
+    <string name="action_later">পরে</string>
 </resources>

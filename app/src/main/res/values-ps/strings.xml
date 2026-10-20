@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">د سکرین له مړ کېدو وروسته د ږغولو جاري ساتلو لپاره د بیٹری ترتیبات \'Unrestricted\' ته وټاکئ.</string>
     <string name="battery_opt_open_settings">ترتیبات پرانیستل</string>
     <string name="battery_opt_later">وروسته</string>
+
+    <string name="cast_network_title">د کاسټ وسایل ومومئ</string>
+    <string name="cast_network_reason">په خپل Wi-Fi کې د کاسټ سپیکرانو او تلویزیونونو موندلو او نښلولو لپاره محلي شبکې ته اجازه ورکړئ. د لاسرسي اجازه ورکولو وروسته، د وسیله غوره کولو لپاره بیا کاسټ ټایپ کړئ.</string>
+    <string name="cast_network_denied">د محلي شبکې لاسرسی غیر فعال دی. د اپلیکیشن تنظیماتو کې نږدې وسیلو ته اجازه ورکړئ ، بیا کاسټ ټایپ کړئ. په دې تلیفون کې د راډیو پلے بیک شتون لري.</string>
+    <string name="cast_network_settings">ترتیبات خلاص کړئ</string>
+    <string name="cast_network_continue">ادامه ورکړئ</string>
+
+    <string name="action_later">وروسته</string>
 </resources>

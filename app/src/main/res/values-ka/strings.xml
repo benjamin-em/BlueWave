@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">გამორთული ეკრანის დროს დაკვრის გასაგრძელებლად დააყენეთ ბატარეის მოხმარება რეჟიმზე \'შეუზღუდავი\'.</string>
     <string name="battery_opt_open_settings">პარამეტრების გახსნა</string>
     <string name="battery_opt_later">მოგვიანებით</string>
+
+    <string name="cast_network_title">იპოვეთ Cast მოწყობილობები</string>
+    <string name="cast_network_reason">მიეცით ადგილობრივ ქსელზე წვდომის ნებართვა, რომ იპოვოთ და დაუკავშირდეთ Cast დინამიკებსა და ტელევიზორებს თქვენს Wi-Fi-ზე. წვდომის დაშვების შემდეგ, მოწყობილობის ასარჩევად ხელახლა შეეხეთ ტრანსლაციას.</string>
+    <string name="cast_network_denied">ლოკალურ ქსელზე წვდომა გათიშულია. დაუშვით Nearby მოწყობილობები აპის პარამეტრებში, შემდეგ კვლავ შეეხეთ ტრანსლირებას. ამ ტელეფონზე რადიოს დაკვრა ხელმისაწვდომი რჩება.</string>
+    <string name="cast_network_settings">გახსენით პარამეტრები</string>
+    <string name="cast_network_continue">განაგრძეთ</string>
+
+    <string name="action_later">მოგვიანებით</string>
 </resources>

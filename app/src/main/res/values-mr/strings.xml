@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">स्क्रीन बंद असतानाही प्लेबॅक सुरू ठेवण्यासाठी बॅटरी वापर \'Unrestricted\' वर सेट करा.</string>
     <string name="battery_opt_open_settings">सेटिंग्ज उघडा</string>
     <string name="battery_opt_later">नंतर</string>
+
+    <string name="cast_network_title">कास्ट डिव्हाइस शोधा</string>
+    <string name="cast_network_reason">तुमच्या Wi-Fi वर कास्ट स्पीकर आणि टीव्ही शोधण्यासाठी आणि कनेक्ट करण्यासाठी स्थानिक नेटवर्क प्रवेशास अनुमती द्या. प्रवेशास अनुमती दिल्यानंतर, डिव्हाइस निवडण्यासाठी पुन्हा कास्ट करा टॅप करा.</string>
+    <string name="cast_network_denied">स्थानिक नेटवर्क प्रवेश अक्षम केला आहे. ॲप सेटिंग्जमध्ये जवळपासच्या डिव्हाइसेसना अनुमती द्या, त्यानंतर पुन्हा कास्ट करा वर टॅप करा. या फोनवर रेडिओ प्लेबॅक उपलब्ध आहे.</string>
+    <string name="cast_network_settings">सेटिंग्ज उघडा</string>
+    <string name="cast_network_continue">चालू ठेवा</string>
+
+    <string name="action_later">नंतर</string>
 </resources>

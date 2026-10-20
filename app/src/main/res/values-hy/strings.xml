@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Էկրանն անջատված ժամանակ նվագարկումը շարունակելու համար մարտկոցի օգտագործումը սահմանեք \'Անսահմանափակ\':</string>
     <string name="battery_opt_open_settings">Բացել կարգավորումները</string>
     <string name="battery_opt_later">Ավելի ուշ</string>
+
+    <string name="cast_network_title">Գտեք Cast սարքեր</string>
+    <string name="cast_network_reason">Թույլ տվեք տեղական ցանց մուտք գործել՝ գտնելու և միանալու Cast բարձրախոսներին և հեռուստացույցներին ձեր Wi-Fi-ով: Մուտքը թույլ տալուց հետո կրկին հպեք «Հեռարձակել»՝ սարք ընտրելու համար:</string>
+    <string name="cast_network_denied">Տեղական ցանցի հասանելիությունն անջատված է: Թույլատրել Nearby սարքերը հավելվածի կարգավորումներում, այնուհետև կրկին հպեք Հեռարձակել: Ռադիոյի նվագարկումն այս հեռախոսով մնում է հասանելի:</string>
+    <string name="cast_network_settings">Բացեք կարգավորումները</string>
+    <string name="cast_network_continue">Շարունակեք</string>
+
+    <string name="action_later">Ավելի ուշ</string>
 </resources>

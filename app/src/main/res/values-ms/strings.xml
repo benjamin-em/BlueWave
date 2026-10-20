@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Untuk meneruskan main balik semasa skrin dimatikan, tetapkan penggunaan bateri kepada \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Buka Tetapan</string>
     <string name="battery_opt_later">Kemudian</string>
+
+    <string name="cast_network_title">Cari peranti Cast</string>
+    <string name="cast_network_reason">Benarkan akses rangkaian setempat untuk mencari dan menyambung ke Cast pembesar suara dan TV pada Wi-Fi anda. Selepas membenarkan akses, ketik Hantar sekali lagi untuk memilih peranti.</string>
+    <string name="cast_network_denied">Akses rangkaian tempatan dilumpuhkan. Benarkan peranti Berdekatan dalam tetapan apl, kemudian ketik Hantar sekali lagi. Main balik radio pada telefon ini masih tersedia.</string>
+    <string name="cast_network_settings">Buka tetapan</string>
+    <string name="cast_network_continue">teruskan</string>
+
+    <string name="action_later">Nanti</string>
 </resources>

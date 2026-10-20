@@ -392,4 +392,15 @@
     <string name="database_error_no_connection">የበይነመረብ ግንኙነት የለም</string>
     <string name="database_error_no_space">በቂ የዲስክ ቦታ የለም</string>
     <string name="database_error_failed">የውሂብ ጎታ ማዘመን አልተሳካም</string>
+
+    <string name="settings_disable_battery_optimization_desc">ማያ ገጹ ጠፍቶ መልሶ ማጫወትን ለማስቀጠል የባትሪ አጠቃቀምን ወደ \'ያልተገደበ\' ያዘጋጁ።</string>
+    <string name="battery_opt_open_settings">ቅንብሮችን ይክፈቱ</string>
+    <string name="battery_opt_later">በኋላ</string>
+    <string name="cast_network_title">የCast መሣሪያዎችን ያግኙ</string>
+    <string name="cast_network_reason">በእርስዎ ዋይ ፋይ ላይ የCast ድምጽ ማጉያዎችን እና ቲቪዎችን እንዲያገኝ እና እንዲገናኝ የአካባቢ አውታረ መረብ መዳረሻ ፍቀድ። መዳረሻን ከፈቀዱ በኋላ መሣሪያን ለመምረጥ እንደገና ውሰድን ነካ ያድርጉ።</string>
+    <string name="cast_network_denied">የአካባቢ አውታረ መረብ መዳረሻ ተሰናክሏል። በአቅራቢያ ያሉ መሣሪያዎችን በመተግበሪያ ቅንብሮች ውስጥ ይፍቀዱ፣ ከዚያ Castን እንደገና ይንኩ። በዚህ ስልክ ላይ የሬዲዮ መልሶ ማጫወት እንዳለ ይቆያል።</string>
+    <string name="cast_network_settings">ቅንብሮችን ይክፈቱ</string>
+    <string name="cast_network_continue">ቀጥል</string>
+
+    <string name="action_later">በኋላ</string>
 </resources>

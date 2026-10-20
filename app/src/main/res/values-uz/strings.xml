@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Ekran oʻchirilganda ham tinglashni davom ettirish uchun batareya sarfini \'Unrestricted\' deb sozlang.</string>
     <string name="battery_opt_open_settings">Sozlamalarni ochish</string>
     <string name="battery_opt_later">Keyinroq</string>
+
+    <string name="cast_network_title">Cast qurilmalarini toping</string>
+    <string name="cast_network_reason">Wi-Fi orqali Cast karnaylari va televizorlarini topish va ularga ulanish uchun mahalliy tarmoqqa ruxsat bering. Ruxsat berilgandan so‘ng, qurilmani tanlash uchun Translatsiya tugmasini yana bosing.</string>
+    <string name="cast_network_denied">Mahalliy tarmoqqa kirish o\'chirilgan. Ilova sozlamalarida “Yaqin-atrofdagi” qurilmalarga ruxsat bering, so‘ng “Translatsiya” tugmasini yana bir marta bosing. Ushbu telefonda radio tinglash mavjud bo\'lib qoladi.</string>
+    <string name="cast_network_settings">Sozlamalarni oching</string>
+    <string name="cast_network_continue">Davom eting</string>
+
+    <string name="action_later">Keyinchalik</string>
 </resources>

@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">સ્ક્રીન બંધ હોય ત્યારે પ્લેબેક ચાલુ રાખવા માટે બેટરી ઉપયોગને \'Unrestricted\' પર સેટ કરો.</string>
     <string name="battery_opt_open_settings">સેટિંગ્સ ખોલો</string>
     <string name="battery_opt_later">પછીથી</string>
+
+    <string name="cast_network_title">કાસ્ટ ઉપકરણો શોધો</string>
+    <string name="cast_network_reason">તમારા Wi-Fi પર કાસ્ટ સ્પીકર્સ અને ટીવી શોધવા અને કનેક્ટ કરવા માટે સ્થાનિક નેટવર્ક ઍક્સેસની મંજૂરી આપો. ઍક્સેસની મંજૂરી આપ્યા પછી, ઉપકરણ પસંદ કરવા માટે ફરીથી કાસ્ટ કરો પર ટૅપ કરો.</string>
+    <string name="cast_network_denied">સ્થાનિક નેટવર્ક ઍક્સેસ અક્ષમ છે. એપ્લિકેશન સેટિંગ્સમાં નજીકના ઉપકરણોને મંજૂરી આપો, પછી ફરીથી કાસ્ટ કરો પર ટૅપ કરો. આ ફોન પર રેડિયો પ્લેબેક ઉપલબ્ધ રહે છે.</string>
+    <string name="cast_network_settings">સેટિંગ્સ ખોલો</string>
+    <string name="cast_network_continue">ચાલુ રાખો</string>
+
+    <string name="action_later">બાદમાં</string>
 </resources>

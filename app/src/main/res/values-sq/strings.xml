@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Për të vazhduar dëgjimin kur ekrani është i fikur, vendosni përdorimin e baterisë në \'Pa kufizime\'.</string>
     <string name="battery_opt_open_settings">Hap cilësimet</string>
     <string name="battery_opt_later">Më vonë</string>
+
+    <string name="cast_network_title">Gjeni pajisjet e Cast</string>
+    <string name="cast_network_reason">Lejo qasjen në rrjetin lokal për të gjetur dhe lidhur me altoparlantët dhe televizorët Cast në Wi-Fi. Pasi të keni lejuar aksesin, trokitni sërish Transmeto për të zgjedhur një pajisje.</string>
+    <string name="cast_network_denied">Qasja në rrjetin lokal është çaktivizuar. Lejo pajisjet në afërsi te cilësimet e aplikacionit dhe më pas trokit sërish Transme. Riprodhimi i radios në këtë telefon mbetet i disponueshëm.</string>
+    <string name="cast_network_settings">Hap cilësimet</string>
+    <string name="cast_network_continue">Vazhdoni</string>
+
+    <string name="action_later">Më vonë</string>
 </resources>

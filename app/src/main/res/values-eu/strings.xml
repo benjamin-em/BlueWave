@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Erreprodukzioa pantaila itzalita mantentzeko, ezarri bateriaren erabilera \'Mugarik gabe\' moduan.</string>
     <string name="battery_opt_open_settings">Ireki ezarpenak</string>
     <string name="battery_opt_later">Geroago</string>
+
+    <string name="cast_network_title">Bilatu Cast gailuak</string>
+    <string name="cast_network_reason">Eman tokiko sarerako sarbidea zure Wi-Fi-ko Cast bozgorailuak eta telebistak aurkitzeko eta konektatzeko. Sarbidea baimendu ondoren, sakatu Igorri berriro gailu bat aukeratzeko.</string>
+    <string name="cast_network_denied">Sare lokaleko sarbidea desgaituta dago. Baimendu Inguruko gailuak aplikazioaren ezarpenetan, eta, ondoren, sakatu Igorri berriro. Telefono honetan irrati-erreprodukzioak erabilgarri jarraitzen du.</string>
+    <string name="cast_network_settings">Ireki ezarpenak</string>
+    <string name="cast_network_continue">Jarraitu</string>
+
+    <string name="action_later">Geroago</string>
 </resources>

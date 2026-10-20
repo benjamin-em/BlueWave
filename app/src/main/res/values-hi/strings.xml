@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">स्क्रीन बंद होने पर भी प्लेबैक चालू रखने के लिए बैटरी उपयोग को \'Unrestricted\' पर सेट करें।</string>
     <string name="battery_opt_open_settings">सेटिंग्स खोलें</string>
     <string name="battery_opt_later">बाद में</string>
+
+    <string name="cast_network_title">कास्ट डिवाइस ढूंढें</string>
+    <string name="cast_network_reason">अपने वाई-फाई पर कास्ट स्पीकर और टीवी को ढूंढने और कनेक्ट करने के लिए स्थानीय नेटवर्क एक्सेस की अनुमति दें। एक्सेस की अनुमति देने के बाद, डिवाइस चुनने के लिए फिर से कास्ट पर टैप करें।</string>
+    <string name="cast_network_denied">स्थानीय नेटवर्क पहुंच अक्षम है. ऐप सेटिंग में आस-पास के डिवाइस को अनुमति दें, फिर कास्ट पर दोबारा टैप करें। इस फ़ोन पर रेडियो प्लेबैक उपलब्ध रहता है।</string>
+    <string name="cast_network_settings">सेटिंग्स खोलें</string>
+    <string name="cast_network_continue">जारी रखना</string>
+
+    <string name="action_later">बाद में</string>
 </resources>

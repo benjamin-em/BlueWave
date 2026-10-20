@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">För att fortsätta uppspelningen när skärmen är avstängd, ställ in batterianvändningen till \'Obegränsad\'.</string>
     <string name="battery_opt_open_settings">Öppna inställningar</string>
     <string name="battery_opt_later">Senare</string>
+
+    <string name="cast_network_title">Hitta Cast-enheter</string>
+    <string name="cast_network_reason">Tillåt lokal nätverksåtkomst för att hitta och ansluta till Cast-högtalare och TV-apparater på ditt Wi-Fi. När du har tillåtit åtkomst trycker du på Cast igen för att välja en enhet.</string>
+    <string name="cast_network_denied">Lokal nätverksåtkomst är inaktiverad. Tillåt enheter i närheten i appinställningarna och tryck sedan på Casta igen. Radiouppspelning på den här telefonen är fortfarande tillgänglig.</string>
+    <string name="cast_network_settings">Öppna inställningar</string>
+    <string name="cast_network_continue">Fortsätt</string>
+
+    <string name="action_later">Senare</string>
 </resources>

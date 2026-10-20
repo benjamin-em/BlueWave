@@ -96,7 +96,7 @@
     <string name="notify_load_playlist_ok">יובאו %1$d תחנות מ-%2$s&#47;%3$s</string>
     <string name="notify_save_playlist_nok">לא ניתן לייצא ל-%1$s&#47;%2$s</string>
     <string name="notify_save_playlist_now">מייצא ל-%1$s&#47;%2$s, אנא המתן.</string>
-    <string name="notify_save_playlist_ok">יוצא ל-%1$s&#47;%2$s בהצלחה</string>
+    <string name="notify_save_playlist_ok">יוצא ל-%1$s&#47;%2$s בהצלحة</string>
     <string name="notify_sync_list_deleted_entries">%1$d מתוך %2$d תחנות מקומיות ברשימה סומנו כלא קיימות בשרת</string>
 
     <string name="searchpreference_clear_history">ניקוי היסטוריה</string>
@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">כדי להמשיך בהשמעה כשהמסך כבוי, הגדר את שימוש הסוללה ל-\'ללא הגבלה\'.</string>
     <string name="battery_opt_open_settings">פתח הגדרות</string>
     <string name="battery_opt_later">מאוחר יותר</string>
+
+    <string name="cast_network_title">מצא מכשירי Cast</string>
+    <string name="cast_network_reason">אפשר גישה לרשת מקומית כדי למצוא ולהתחבר לרמקולי Cast ולטלוויזיות ב-Wi-Fi שלך. לאחר מתן גישה, הקש שוב על העבר כדי לבחור מכשיר.</string>
+    <string name="cast_network_denied">הגישה לרשת המקומית מושבתת. אפשר מכשירים קרובים בהגדרות האפליקציה, ולאחר מכן הקש שוב על העבר. השמעת רדיו בטלפון זה נשארת זמינה.</string>
+    <string name="cast_network_settings">פתח את ההגדרות</string>
+    <string name="cast_network_continue">לְהַמשִׁיך</string>
+
+    <string name="action_later">מְאוּחָר יוֹתֵר</string>
 </resources>

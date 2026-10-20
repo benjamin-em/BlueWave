@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Jotta toisto jatkuu näytön ollessa sammutettuna, aseta akun käyttöarvoksi \'Rajoittamaton\'.</string>
     <string name="battery_opt_open_settings">Avaa asetukset</string>
     <string name="battery_opt_later">Myöhemmin</string>
+
+    <string name="cast_network_title">Etsi Cast-laitteet</string>
+    <string name="cast_network_reason">Salli pääsy paikalliseen verkkoon, jotta voit löytää Wi-Fisi Cast-kaiuttimia ja televisioita ja muodostaa niihin yhteyden. Kun olet sallinut pääsyn, valitse laite napauttamalla Cast uudelleen.</string>
+    <string name="cast_network_denied">Paikallisverkkoyhteys on poistettu käytöstä. Salli Nearby-laitteet sovellusasetuksissa ja napauta sitten Cast uudelleen. Radion toisto tällä puhelimella on edelleen käytettävissä.</string>
+    <string name="cast_network_settings">Avaa asetukset</string>
+    <string name="cast_network_continue">Jatkaa</string>
+
+    <string name="action_later">Myöhemmin</string>
 </resources>

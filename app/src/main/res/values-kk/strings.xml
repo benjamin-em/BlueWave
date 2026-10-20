@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Экран өшірулі кезде ойнатуды жалғастыру үшін батареяны пайдалануды \'Шектеусіз\' күйіне орнатыңыз.</string>
     <string name="battery_opt_open_settings">Баптауларды ашу</string>
     <string name="battery_opt_later">Кейінірек</string>
+
+    <string name="cast_network_title">Cast құрылғыларын табыңыз</string>
+    <string name="cast_network_reason">Wi-Fi арқылы трансляциялау динамиктері мен теледидарларды табу және оларға қосылу үшін жергілікті желіге кіруге рұқсат беріңіз. Қол жеткізуге рұқсат бергеннен кейін құрылғыны таңдау үшін трансляциялау түймесін қайта түртіңіз.</string>
+    <string name="cast_network_denied">Жергілікті желіге кіру өшірілген. Қолданба параметрлерінде Nearby құрылғыларына рұқсат беріңіз, содан кейін трансляциялау түймесін қайта түртіңіз. Бұл телефонда радио ойнату қолжетімді болып қалады.</string>
+    <string name="cast_network_settings">Параметрлерді ашыңыз</string>
+    <string name="cast_network_continue">Жалғастыру</string>
+
+    <string name="action_later">Кейінірек</string>
 </resources>

@@ -393,4 +393,12 @@
     <string name="database_error_no_connection">Sin conexión a Internet</string>
     <string name="database_error_no_space">No hay suficiente espacio en disco</string>
     <string name="database_error_failed">Error al actualizar la base de datos</string>
+
+    <string name="cast_network_title">Encuentra dispositivos Cast</string>
+    <string name="cast_network_reason">Permita el acceso a la red local para buscar y conectarse a parlantes y televisores Cast en su Wi-Fi. Después de permitir el acceso, toque Transmitir nuevamente para elegir un dispositivo.</string>
+    <string name="cast_network_denied">El acceso a la red local está deshabilitado. Permita dispositivos cercanos en la configuración de la aplicación, luego toque Transmitir nuevamente. La reproducción de radio en este teléfono sigue estando disponible.</string>
+    <string name="cast_network_settings">Abrir configuración</string>
+    <string name="cast_network_continue">Continuar</string>
+
+    <string name="action_later">Más tarde</string>
 </resources>

@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Upang ipagpatuloy ang pagpapatugtog kapag nakapatay ang screen, i-set ang paggamit ng baterya sa \'Walang Restriksyon\'.</string>
     <string name="battery_opt_open_settings">Buksan ang Settings</string>
     <string name="battery_opt_later">Mamaya</string>
+
+    <string name="cast_network_title">Maghanap ng mga Cast device</string>
+    <string name="cast_network_reason">Payagan ang access sa lokal na network upang mahanap at kumonekta sa mga Cast speaker at TV sa iyong Wi-Fi. Pagkatapos payagan ang access, i-tap muli ang Cast para pumili ng device.</string>
+    <string name="cast_network_denied">Naka-disable ang access sa lokal na network. Payagan ang Mga Kalapit na device sa mga setting ng app, pagkatapos ay i-tap muli ang Cast. Nananatiling available ang pag-playback ng radyo sa teleponong ito.</string>
+    <string name="cast_network_settings">Buksan ang mga setting</string>
+    <string name="cast_network_continue">Magpatuloy</string>
+
+    <string name="action_later">Mamaya</string>
 </resources>

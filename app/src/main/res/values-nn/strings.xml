@@ -393,4 +393,12 @@
     <string name="settings_disable_battery_optimization_desc">For å halda fram avspelinga når skjermen er slått av, set batteribruken til \'Uavgrensa\'.</string>
     <string name="battery_opt_open_settings">Opna innstillingar</string>
     <string name="battery_opt_later">Seinare</string>
+
+    <string name="cast_network_title">Finn Cast-enheter</string>
+    <string name="cast_network_reason">Tillat lokal nettverkstilgang for å finne og koble til Cast-høyttalere og TV-er på Wi-Fi. Etter å ha gitt tilgang, trykk på Cast igjen for å velge en enhet.</string>
+    <string name="cast_network_denied">Lokal nettverkstilgang er deaktivert. Tillat enheter i nærheten i appinnstillingene, og trykk deretter på Cast igjen. Radioavspilling på denne telefonen er fortsatt tilgjengelig.</string>
+    <string name="cast_network_settings">Åpne innstillinger</string>
+    <string name="cast_network_continue">Fortsett</string>
+
+    <string name="action_later">Seinere</string>
 </resources>

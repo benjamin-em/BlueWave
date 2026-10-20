@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Láti tẹ̀síwájú gbéjáde nígbà tí ojú-àwòrán ba wa ní oókan, yàn àtúnṣe bạtirí sí \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Sí àwọn àtúnṣe</string>
     <string name="battery_opt_later">Nígbà mìíràn</string>
+
+    <string name="cast_network_title">Wa awọn ẹrọ Cast</string>
+    <string name="cast_network_reason">Gba iraye si nẹtiwọọki agbegbe lati wa ati sopọ si Awọn agbohunsoke Simẹnti ati awọn TV lori Wi-Fi rẹ. Lẹhin gbigba wiwọle, tẹ Simẹnti ni kia kia lẹẹkansi lati yan ẹrọ kan.</string>
+    <string name="cast_network_denied">Wiwọle nẹtiwọọki agbegbe jẹ alaabo. Gba awọn ẹrọ nitosi laaye ni awọn eto app, lẹhinna tẹ Simẹnti lẹẹkansi ni kia kia. Sisisẹsẹhin Redio lori foonu yii wa.</string>
+    <string name="cast_network_settings">Ṣii awọn eto</string>
+    <string name="cast_network_continue">Tesiwaju</string>
+
+    <string name="action_later">Nigbamii</string>
 </resources>

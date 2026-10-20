@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Biex tkompli ddoqq meta l-iskrin ikun mitfi, issettja l-użu tal-batterija għal \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Iftaħ is-settings</string>
     <string name="battery_opt_later">Aktar tard</string>
+
+    <string name="cast_network_title">Sib apparat Cast</string>
+    <string name="cast_network_reason">Ħalli aċċess għan-netwerk lokali biex issib u tikkonnettja mal-kelliema Cast u t-televiżjonijiet fuq il-Wi-Fi tiegħek. Wara li tippermetti l-aċċess, tektek Cast mill-ġdid biex tagħżel apparat.</string>
+    <string name="cast_network_denied">L-aċċess għan-netwerk lokali huwa diżattivat. Ħalli l-apparati Nearby fis-settings tal-app, imbagħad tektek Cast mill-ġdid. Daqq tar-radju fuq dan it-telefon jibqa\' disponibbli.</string>
+    <string name="cast_network_settings">Iftaħ is-settings</string>
+    <string name="cast_network_continue">Kompli</string>
+
+    <string name="action_later">Aktar tard</string>
 </resources>

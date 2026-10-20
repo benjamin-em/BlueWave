@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Экран өчүк кезде ойнотууну улантуу үчүн батареяны колдонууну \'Unrestricted\' абалына коюңуз.</string>
     <string name="battery_opt_open_settings">Орнотууларды ачуу</string>
     <string name="battery_opt_later">Кийинчерээк</string>
+
+    <string name="cast_network_title">Cast түзмөктөрүн табыңыз</string>
+    <string name="cast_network_reason">Wi-Fi аркылуу Cast динамиктерин жана сыналгыларын таап, аларга туташуу үчүн жергиликтүү тармакка кирүүгө уруксат бериңиз. Кирүүгө уруксат бергенден кийин, түзмөктү тандоо үчүн Тышкы экранга чыгарууну кайра таптаңыз.</string>
+    <string name="cast_network_denied">Жергиликтүү тармакка кирүү өчүрүлгөн. Колдонмонун жөндөөлөрүнөн Nearby түзмөктөрүнө уруксат берип, андан соң Тышкы экранга чыгарууга кайра таптаңыз. Бул телефондо радио ойнотуу жеткиликтүү бойдон калууда.</string>
+    <string name="cast_network_settings">Жөндөөлөрдү ачыңыз</string>
+    <string name="cast_network_continue">Улантуу</string>
+
+    <string name="action_later">Кийинчерээк</string>
 </resources>

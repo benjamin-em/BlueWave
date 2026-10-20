@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Untuk melanjutkan pemutaran saat layar mati, atur penggunaan baterai ke \'Tanpa Batasan\'.</string>
     <string name="battery_opt_open_settings">Buka Pengaturan</string>
     <string name="battery_opt_later">Nanti</string>
+
+    <string name="cast_network_title">Temukan perangkat Cast</string>
+    <string name="cast_network_reason">Izinkan akses jaringan lokal untuk menemukan dan terhubung ke speaker Cast dan TV di Wi-Fi Anda. Setelah mengizinkan akses, ketuk Transmisi lagi untuk memilih perangkat.</string>
+    <string name="cast_network_denied">Akses jaringan lokal dinonaktifkan. Izinkan perangkat di sekitar di setelan aplikasi, lalu ketuk Transmisikan lagi. Pemutaran radio di ponsel ini tetap tersedia.</string>
+    <string name="cast_network_settings">Buka pengaturan</string>
+    <string name="cast_network_continue">Melanjutkan</string>
+
+    <string name="action_later">Nanti</string>
 </resources>

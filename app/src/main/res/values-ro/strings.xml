@@ -400,4 +400,6 @@
     <string name="cast_network_denied">Accesul la rețeaua locală este dezactivat. Permite accesul la Dispozitive din apropiere în setările aplicației, apoi apasă din nou Cast. Radioul poate reda în continuare pe telefon.</string>
     <string name="cast_network_settings">Deschide setările</string>
     <string name="cast_network_continue">Continuă</string>
+
+    <string name="action_later">Mai târziu</string>
 </resources>

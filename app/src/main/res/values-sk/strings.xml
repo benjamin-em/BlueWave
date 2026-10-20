@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Ak chcete pokračovať v prehrávaní aj pri vypnutej obrazovke, nastavte využitie batérie na \'Bez obmedzenia\'.</string>
     <string name="battery_opt_open_settings">Otvoriť nastavenia</string>
     <string name="battery_opt_later">Neskôr</string>
+
+    <string name="cast_network_title">Nájdite zariadenia Cast</string>
+    <string name="cast_network_reason">Povoľte prístup k miestnej sieti, aby ste mohli nájsť a pripojiť sa k reproduktorom a televízorom Cast vo vašej sieti Wi-Fi. Po povolení prístupu znova klepnite na Prenášať a vyberte zariadenie.</string>
+    <string name="cast_network_denied">Prístup k miestnej sieti je zakázaný. Povoľte zariadenia v okolí v nastaveniach aplikácie a potom znova klepnite na Prenášať. Prehrávanie rádia na tomto telefóne zostáva dostupné.</string>
+    <string name="cast_network_settings">Otvorte nastavenia</string>
+    <string name="cast_network_continue">Pokračovať</string>
+
+    <string name="action_later">Neskôr</string>
 </resources>

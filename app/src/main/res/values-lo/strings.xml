@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">ເພື່ອໃຫ້ການຫຼິ້ນດຳເນີນຕໍ່ໄປເມື່ອຈໍປິດ, ໃຫ້ຕັ້ງການໃຊ້ແບັດເຕີຣີເປັນ \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">ເປີດການຕັ້ງຄ່າ</string>
     <string name="battery_opt_later">ໄວ້ທີຫຼັງ</string>
+
+    <string name="cast_network_title">ຊອກຫາອຸປະກອນ Cast</string>
+    <string name="cast_network_reason">ອະນຸຍາດໃຫ້ເຂົ້າເຖິງເຄືອຂ່າຍທ້ອງຖິ່ນເພື່ອຊອກຫາ ແລະເຊື່ອມຕໍ່ຫາລໍາໂພງ Cast ແລະໂທລະພາບຢູ່ໃນ Wi-Fi ຂອງທ່ານ. ຫຼັງຈາກອະນຸຍາດໃຫ້ເຂົ້າເຖິງ, ແຕະ Cast ອີກຄັ້ງເພື່ອເລືອກອຸປະກອນ.</string>
+    <string name="cast_network_denied">ການເຂົ້າເຖິງເຄືອຂ່າຍທ້ອງຖິ່ນຖືກປິດໃຊ້ງານ. ອະນຸຍາດອຸປະກອນໃກ້ຄຽງໃນການຕັ້ງຄ່າແອັບ, ຈາກນັ້ນແຕະ Cast ອີກຄັ້ງ. ການຫຼິ້ນວິທະຍຸຢູ່ໃນໂທລະສັບນີ້ຍັງມີຢູ່.</string>
+    <string name="cast_network_settings">ເປີດການຕັ້ງຄ່າ</string>
+    <string name="cast_network_continue">ສືບຕໍ່</string>
+
+    <string name="action_later">ຕໍ່ມາ</string>
 </resources>

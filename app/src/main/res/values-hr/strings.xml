@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Za nastavak reprodukcije s ugašenim zaslonom, postavite potrošnju baterije na \'Neograničeno\'.</string>
     <string name="battery_opt_open_settings">Otvori postavke</string>
     <string name="battery_opt_later">Kasnije</string>
+
+    <string name="cast_network_title">Pronađite Cast uređaje</string>
+    <string name="cast_network_reason">Dopustite pristup lokalnoj mreži za pronalaženje i povezivanje s Cast zvučnicima i televizorima na vašem Wi-Fiju. Nakon dopuštanja pristupa ponovno dodirnite Cast za odabir uređaja.</string>
+    <string name="cast_network_denied">Pristup lokalnoj mreži je onemogućen. Dopustite uređaje u blizini u postavkama aplikacije, zatim ponovno dodirnite Cast. Radio reprodukcija na ovom telefonu ostaje dostupna.</string>
+    <string name="cast_network_settings">Otvori postavke</string>
+    <string name="cast_network_continue">Nastaviti</string>
+
+    <string name="action_later">Kasnije</string>
 </resources>

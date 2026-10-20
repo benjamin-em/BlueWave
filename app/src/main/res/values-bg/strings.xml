@@ -392,4 +392,15 @@
     <string name="database_error_no_connection">Няма интернет връзка</string>
     <string name="database_error_no_space">Няма достатъчно свободно място на диска</string>
     <string name="database_error_failed">Неуспешна актуализация на базата данни</string>
+
+    <string name="settings_disable_battery_optimization_desc">За да продължите възпроизвеждането при изключен екран, задайте използването на батерията на \'Неограничено\'.</string>
+    <string name="battery_opt_open_settings">Отворете настройките</string>
+    <string name="battery_opt_later">по-късно</string>
+    <string name="cast_network_title">Намерете Cast устройства</string>
+    <string name="cast_network_reason">Разрешете достъп до локална мрежа за намиране и свързване с високоговорители и телевизори Cast във вашата Wi-Fi мрежа. След като разрешите достъп, докоснете Cast отново, за да изберете устройство.</string>
+    <string name="cast_network_denied">Достъпът до локалната мрежа е деактивиран. Разрешете устройства наблизо в настройките на приложението, след което докоснете Cast отново. Възпроизвеждането на радио на този телефон остава налично.</string>
+    <string name="cast_network_settings">Отворете настройките</string>
+    <string name="cast_network_continue">Продължи</string>
+
+    <string name="action_later">по-късно</string>
 </resources>

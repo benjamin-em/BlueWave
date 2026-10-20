@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">స్క్రీన్ ఆఫ్ అయినప్పుడు కూడా ప్లే చేయడం కొనసాగించడానికి, బ్యాటరీ వినియోగాన్ని \'Unrestricted\' కి సెట్ చేయండి.</string>
     <string name="battery_opt_open_settings">సెట్టింగ్‌లను తెరవండి</string>
     <string name="battery_opt_later">తర్వాత</string>
+
+    <string name="cast_network_title">ప్రసార పరికరాలను కనుగొనండి</string>
+    <string name="cast_network_reason">మీ Wi-Fiలో ప్రసార స్పీకర్‌లు మరియు టీవీలను కనుగొని, వాటికి కనెక్ట్ చేయడానికి స్థానిక నెట్‌వర్క్ యాక్సెస్‌ను అనుమతించండి. యాక్సెస్‌ని అనుమతించిన తర్వాత, పరికరాన్ని ఎంచుకోవడానికి మళ్లీ ప్రసారం నొక్కండి.</string>
+    <string name="cast_network_denied">స్థానిక నెట్‌వర్క్ యాక్సెస్ నిలిపివేయబడింది. యాప్ సెట్టింగ్‌లలో సమీప పరికరాలను అనుమతించి, ఆపై మళ్లీ ప్రసారం నొక్కండి. ఈ ఫోన్‌లో రేడియో ప్లేబ్యాక్ అందుబాటులో ఉంది.</string>
+    <string name="cast_network_settings">సెట్టింగ్‌లను తెరవండి</string>
+    <string name="cast_network_continue">కొనసాగించు</string>
+
+    <string name="action_later">తరువాత</string>
 </resources>

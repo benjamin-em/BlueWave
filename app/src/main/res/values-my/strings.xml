@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">မျက်နှာပြင် ပိတ်ထားစဉ်တွင်လည်း သီချင်းဖွင့်နိုင်စေရန် ဘက်ထရီ အသုံးပြုမှုကို \'Unrestricted\' သို့ သတ်မှတ်ပါ။</string>
     <string name="battery_opt_open_settings">ဆက်တင်များ ဖွင့်ရန်</string>
     <string name="battery_opt_later">နောက်မှ</string>
+
+    <string name="cast_network_title">Cast စက်ပစ္စည်းများကို ရှာပါ။</string>
+    <string name="cast_network_reason">သင်၏ Wi-Fi ရှိ Cast စပီကာများနှင့် TV များသို့ ရှာဖွေပြီး ချိတ်ဆက်ရန် ဒေသတွင်းကွန်ရက်ဝင်ရောက်ခွင့်ကို ခွင့်ပြုပါ။ အသုံးပြုခွင့်ကို ခွင့်ပြုပြီးနောက်၊ စက်ပစ္စည်းတစ်ခုကို ရွေးချယ်ရန် ကာစ်စ်ကို ထပ်မံနှိပ်ပါ။</string>
+    <string name="cast_network_denied">ဒေသတွင်းကွန်ရက်ဝင်ရောက်ခွင့်ကို ပိတ်ထားသည်။ အက်ပ်ဆက်တင်များတွင် အနီးနားရှိ စက်များကို ခွင့်ပြုပါ၊ ထို့နောက် ကာစ်စ်ကို ထပ်မံနှိပ်ပါ။ ဤဖုန်းတွင် ရေဒီယိုကို ဖွင့်နိုင်သေးသည်။</string>
+    <string name="cast_network_settings">ဆက်တင်များကိုဖွင့်ပါ။</string>
+    <string name="cast_network_continue">ဆက်ရန်</string>
+
+    <string name="action_later">နောက်တော့</string>
 </resources>

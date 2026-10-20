@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Para continuar a reprodução com a tela desligada, defina o uso da bateria como \'Sem restrições\'.</string>
     <string name="battery_opt_open_settings">Abrir configurações</string>
     <string name="battery_opt_later">Mais tarde</string>
+
+    <string name="cast_network_title">Encontre dispositivos de transmissão</string>
+    <string name="cast_network_reason">Permita que o acesso à rede local encontre e se conecte a alto-falantes e TVs do Google Cast no seu Wi-Fi. Após permitir o acesso, toque em Transmitir novamente para escolher um dispositivo.</string>
+    <string name="cast_network_denied">O acesso à rede local está desativado. Permitir dispositivos próximos nas configurações do aplicativo e toque em Transmitir novamente. A reprodução de rádio neste telefone permanece disponível.</string>
+    <string name="cast_network_settings">Abrir configurações</string>
+    <string name="cast_network_continue">Continuar</string>
+
+    <string name="action_later">Mais tarde</string>
 </resources>

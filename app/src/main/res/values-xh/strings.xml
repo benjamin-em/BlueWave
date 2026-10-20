@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Ukuba ufuna ukuqhubeka nokudlala xa isikrini sicinyiwe, seta ukusetyenziswa kwebhetri kwi-\'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Vula izicwangciso</string>
     <string name="battery_opt_later">Ngexesha elizayo</string>
+
+    <string name="cast_network_title">Fumana izixhobo zeCast</string>
+    <string name="cast_network_reason">Vumela ukufikelela kwinethiwekhi yasekhaya ukufumana kwaye uqhagamshele kwizipika zeCast kunye neeTV kwiWi-Fi yakho. Emva kokuvumela ufikelelo, cofa u-Casa kwakhona ukuze ukhethe isixhobo.</string>
+    <string name="cast_network_denied">Ufikelelo lwenethiwekhi yendawo luvaliwe. Vumela izixhobo ezikufuphi kuseto lwe-app, emva koko ucofe u-Casa kwakhona. Ukudlala kwirediyo kule fowuni kuhlala kufumaneka.</string>
+    <string name="cast_network_settings">Vula useto</string>
+    <string name="cast_network_continue">Qhubeka</string>
+
+    <string name="action_later">Kamva</string>
 </resources>

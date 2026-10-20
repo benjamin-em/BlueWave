@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Để tiếp tục phát khi tắt màn hình, hãy đặt mức sử dụng pin thành \'Unrestricted\' (Không hạn chế).</string>
     <string name="battery_opt_open_settings">Mở cài đặt</string>
     <string name="battery_opt_later">Để sau</string>
+
+    <string name="cast_network_title">Tìm thiết bị truyền</string>
+    <string name="cast_network_reason">Cho phép truy cập mạng cục bộ để tìm và kết nối với loa Cast và TV trên Wi-Fi của bạn. Sau khi cho phép truy cập, nhấn lại vào Truyền để chọn thiết bị.</string>
+    <string name="cast_network_denied">Truy cập mạng cục bộ bị vô hiệu hóa. Cho phép các thiết bị lân cận trong cài đặt ứng dụng, sau đó nhấn lại vào Truyền. Tính năng phát lại radio trên điện thoại này vẫn khả dụng.</string>
+    <string name="cast_network_settings">Mở cài đặt</string>
+    <string name="cast_network_continue">Tiếp tục</string>
+
+    <string name="action_later">Sau đó</string>
 </resources>

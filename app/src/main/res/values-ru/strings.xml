@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Чтобы продолжить воспроизведение при выключенном экране, установите использование батареи на \'Без ограничений\'.</string>
     <string name="battery_opt_open_settings">Открыть настройки</string>
     <string name="battery_opt_later">Позже</string>
+
+    <string name="cast_network_title">Найти устройства Cast</string>
+    <string name="cast_network_reason">Разрешите доступ к локальной сети, чтобы находить и подключаться к колонкам и телевизорам Cast на вашем Wi-Fi. После разрешения доступа снова коснитесь Cast, чтобы выбрать устройство.</string>
+    <string name="cast_network_denied">Доступ к локальной сети отключен. Разрешите «Устройства поблизости» в настройках приложения, затем снова нажмите «Трансляция». Воспроизведение радио на этом телефоне остается доступным.</string>
+    <string name="cast_network_settings">Открыть настройки</string>
+    <string name="cast_network_continue">Продолжить</string>
+
+    <string name="action_later">Позже</string>
 </resources>

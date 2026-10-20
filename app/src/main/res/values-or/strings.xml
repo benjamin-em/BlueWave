@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">ସ୍କ୍ରିନ୍ ବନ୍ଦ ଥିବାବେଳେ ମଧ୍ୟ ଚାଲିବା ଜାରି ରଖିବାକୁ ବ୍ୟାଟେରୀ ବ୍ୟବହାରକୁ \'Unrestricted\' ରେ ସେଟ୍ କରନ୍ତୁ।</string>
     <string name="battery_opt_open_settings">ସେଟିଂସ ଖୋଲନ୍ତୁ</string>
     <string name="battery_opt_later">ପରେ</string>
+
+    <string name="cast_network_title">କାଷ୍ଟ ଉପକରଣ ଖୋଜ |</string>
+    <string name="cast_network_reason">ଆପଣଙ୍କର ୱାଇ-ଫାଇରେ କାଷ୍ଟ ସ୍ପିକର ଏବଂ ଟିଭିଗୁଡ଼ିକୁ ଖୋଜିବା ଏବଂ ସଂଯୋଗ କରିବାକୁ ସ୍ଥାନୀୟ ନେଟୱାର୍କ ପ୍ରବେଶକୁ ଅନୁମତି ଦିଅନ୍ତୁ | ପ୍ରବେଶ ଅନୁମତି ଦେବା ପରେ, ଏକ ଉପକରଣ ବାଛିବା ପାଇଁ ପୁନର୍ବାର କାଷ୍ଟ ଟ୍ୟାପ୍ କରନ୍ତୁ |</string>
+    <string name="cast_network_denied">ସ୍ଥାନୀୟ ନେଟୱର୍କ ପ୍ରବେଶ ଅକ୍ଷମ ହୋଇଛି | ଆପ୍ ସେଟିଂସମୂହରେ ନିକଟସ୍ଥ ଉପକରଣଗୁଡ଼ିକୁ ଅନୁମତି ଦିଅନ୍ତୁ, ତାପରେ ପୁନର୍ବାର କାଷ୍ଟ ଟ୍ୟାପ୍ କରନ୍ତୁ | ଏହି ଫୋନରେ ରେଡିଓ ପ୍ଲେକ୍ ଉପଲବ୍ଧ ଅଛି |</string>
+    <string name="cast_network_settings">ସେଟିଂସମୂହ ଖୋଲନ୍ତୁ |</string>
+    <string name="cast_network_continue">ଜାରି ରଖ |</string>
+
+    <string name="action_later">ପରେ</string>
 </resources>

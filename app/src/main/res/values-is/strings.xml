@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Til að halda spilun áfram þegar slökkt er á skjánum skal stilla rafhlöðunotkun á \'Ótakmarkað\'.</string>
     <string name="battery_opt_open_settings">Opna stillingar</string>
     <string name="battery_opt_later">Síðar</string>
+
+    <string name="cast_network_title">Finndu Cast tæki</string>
+    <string name="cast_network_reason">Leyfðu aðgang að staðarneti til að finna og tengjast Cast hátalara og sjónvörpum á Wi-Fi. Eftir að þú hefur leyft aðgang skaltu ýta á Cast aftur til að velja tæki.</string>
+    <string name="cast_network_denied">Aðgangur að staðarneti er óvirkur. Leyfðu nálæg tæki í forritastillingum og pikkaðu svo aftur á Senda út. Útvarpsspilun á þessum síma er áfram tiltæk.</string>
+    <string name="cast_network_settings">Opnaðu stillingar</string>
+    <string name="cast_network_continue">Halda áfram</string>
+
+    <string name="action_later">Seinna</string>
 </resources>

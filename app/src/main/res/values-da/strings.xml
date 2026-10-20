@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">For at fortsætte afspilningen med slukket skærm skal du indstille batteribrug til \'Ubegrænset\'.</string>
     <string name="battery_opt_open_settings">Åbn indstillinger</string>
     <string name="battery_opt_later">Senere</string>
+
+    <string name="cast_network_title">Find Cast-enheder</string>
+    <string name="cast_network_reason">Tillad lokal netværksadgang for at finde og oprette forbindelse til Cast-højttalere og tv\'er på dit Wi-Fi. Når du har givet adgang, skal du trykke på Cast igen for at vælge en enhed.</string>
+    <string name="cast_network_denied">Lokal netværksadgang er deaktiveret. Tillad Enheder i nærheden i appindstillingerne, og tryk derefter på Cast igen. Radioafspilning på denne telefon forbliver tilgængelig.</string>
+    <string name="cast_network_settings">Åbn indstillinger</string>
+    <string name="cast_network_continue">Fortsæt</string>
+
+    <string name="action_later">Senere</string>
 </resources>

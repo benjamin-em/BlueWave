@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">ਸਕ੍ਰੀਨ ਬੰਦ ਹੋਣ \'ਤੇ ਵੀ ਚਲਾਉਣਾ ਜਾਰੀ ਰੱਖਣ ਲਈ ਬੈਟਰੀ ਵਰਤੋਂ ਨੂੰ \'Unrestricted\' \'ਤੇ ਸੈੱਟ ਕਰੋ।</string>
     <string name="battery_opt_open_settings">ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ</string>
     <string name="battery_opt_later">ਬਾਅਦ ਵਿੱਚ</string>
+
+    <string name="cast_network_title">ਕਾਸਟ ਡਿਵਾਈਸਾਂ ਲੱਭੋ</string>
+    <string name="cast_network_reason">ਆਪਣੇ ਵਾਈ-ਫਾਈ \'ਤੇ ਕਾਸਟ ਸਪੀਕਰਾਂ ਅਤੇ ਟੀਵੀ ਨੂੰ ਲੱਭਣ ਅਤੇ ਉਹਨਾਂ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਲਈ ਸਥਾਨਕ ਨੈੱਟਵਰਕ ਪਹੁੰਚ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ। ਪਹੁੰਚ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣ ਤੋਂ ਬਾਅਦ, ਇੱਕ ਡਿਵਾਈਸ ਚੁਣਨ ਲਈ ਦੁਬਾਰਾ ਕਾਸਟ \'ਤੇ ਟੈਪ ਕਰੋ।</string>
+    <string name="cast_network_denied">ਸਥਾਨਕ ਨੈੱਟਵਰਕ ਪਹੁੰਚ ਅਸਮਰਥਿਤ ਹੈ। ਐਪ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਨਜ਼ਦੀਕੀ ਡੀਵਾਈਸਾਂ ਨੂੰ ਇਜਾਜ਼ਤ ਦਿਓ, ਫਿਰ ਕਾਸਟ \'ਤੇ ਦੁਬਾਰਾ ਟੈਪ ਕਰੋ। ਇਸ ਫੋਨ \'ਤੇ ਰੇਡੀਓ ਪਲੇਬੈਕ ਉਪਲਬਧ ਰਹਿੰਦਾ ਹੈ।</string>
+    <string name="cast_network_settings">ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ</string>
+    <string name="cast_network_continue">ਜਾਰੀ ਰੱਖੋ</string>
+
+    <string name="action_later">ਬਾਅਦ ਵਿੱਚ</string>
 </resources>

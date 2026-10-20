@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Για να συνεχιστεί η αναπαραγωγή με την οθόνη απενεργοποιημένη, ορίστε τη χρήση μπαταρίας σε \'Χωρίς περιορισμούς\'.</string>
     <string name="battery_opt_open_settings">Άνοιγμα ρυθμίσεων</string>
     <string name="battery_opt_later">Αργότερα</string>
+
+    <string name="cast_network_title">Βρείτε συσκευές Cast</string>
+    <string name="cast_network_reason">Επιτρέψτε την πρόσβαση στο τοπικό δίκτυο για εύρεση και σύνδεση με ηχεία και τηλεοράσεις Cast στο Wi-Fi σας. Αφού επιτρέψετε την πρόσβαση, πατήστε ξανά Μετάδοση για να επιλέξετε μια συσκευή.</string>
+    <string name="cast_network_denied">Η πρόσβαση στο τοπικό δίκτυο είναι απενεργοποιημένη. Επιτρέψτε τις συσκευές Nearby στις ρυθμίσεις της εφαρμογής και, στη συνέχεια, πατήστε ξανά Μετάδοση. Η αναπαραγωγή ραδιοφώνου σε αυτό το τηλέφωνο παραμένει διαθέσιμη.</string>
+    <string name="cast_network_settings">Ανοίξτε τις ρυθμίσεις</string>
+    <string name="cast_network_continue">Συνεχίζω</string>
+
+    <string name="action_later">Αργότερα</string>
 </resources>

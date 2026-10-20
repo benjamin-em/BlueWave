@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Pour maintenir la lecture avec l\'écran éteint, réglez l\'utilisation de la batterie sur \'Non restreinte\'.</string>
     <string name="battery_opt_open_settings">Ouvrir les paramètres</string>
     <string name="battery_opt_later">Plus tard</string>
+
+    <string name="cast_network_title">Rechercher des appareils Cast</string>
+    <string name="cast_network_reason">Autorisez l\'accès au réseau local pour rechercher et vous connecter aux enceintes et aux téléviseurs Cast sur votre réseau Wi-Fi. Après avoir autorisé l\'accès, appuyez à nouveau sur Cast pour choisir un appareil.</string>
+    <string name="cast_network_denied">L\'accès au réseau local est désactivé. Autorisez les appareils à proximité dans les paramètres de l\'application, puis appuyez à nouveau sur Cast. La lecture radio sur ce téléphone reste disponible.</string>
+    <string name="cast_network_settings">Ouvrir les paramètres</string>
+    <string name="cast_network_continue">Continuer</string>
+
+    <string name="action_later">Plus tard</string>
 </resources>

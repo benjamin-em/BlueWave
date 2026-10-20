@@ -368,4 +368,37 @@
     <string name="settings_remove_notification_on_stop_desc">Аўтаматычна адхіляць мультымедыйнае апавяшчэнне пры закрыцці праграмы з апошніх праграм</string>
     <string name="settings_auto_resume_audio_focus">Аднавіць пасля страты фокусу гуку</string>
     <string name="settings_auto_resume_audio_focus_desc">Аўтаматычнае аднаўленне прайгравання пасля тэлефонных званкоў, будзільнікаў або іншых прыпынкаў гуку</string>
+
+    <string name="settings_backup_restore">Рэзервовае капіраванне і аднаўленне</string>
+    <string name="settings_export_backup">Стварыць поўную рэзервовую копію (ZIP)</string>
+    <string name="settings_export_backup_desc">Захоўвае ўсе абраныя, карыстальніцкія станцыі і лакальныя значкі ў адзін ZIP-файл</string>
+    <string name="settings_import_backup">Аднавіць рэзервовую копію (ZIP)</string>
+    <string name="settings_import_backup_desc">Аднаўляе абранае, карыстальніцкія станцыі і лакальныя значкі з рэзервовага ZIP-файла</string>
+    <string name="backup_export_success">Рэзервовая копія паспяхова захавана</string>
+    <string name="backup_export_error">Не ўдалося захаваць рэзервовую копію</string>
+    <string name="backup_import_success">Рэзервовае капіраванне паспяхова адноўлена</string>
+    <string name="backup_import_error">Не ўдалося аднавіць рэзервовую копію</string>
+    <string name="database_summary_title">Лакальная база дадзеных</string>
+    <string name="database_total_stations">Усяго радыёстанцый</string>
+    <string name="database_last_sync">Апошняя сінхранізацыя</string>
+    <string name="database_update_now">Абнавіце базу даных зараз</string>
+    <string name="database_full_update">Абнаўленне базы дадзеных</string>
+    <string name="database_syncing">Сінхранізацыя…</string>
+    <string name="database_downloading">Спампоўка…</string>
+    <string name="database_stations_loaded">%1$s радыёстанцый</string>
+    <string name="database_sync_channel_name">Сінхранізацыя базы дадзеных станцыі</string>
+    <string name="database_sync_success">Абнаўленне базы дадзеных станцыі паспяхова завершана</string>
+    <string name="database_error_no_connection">Няма падключэння да інтэрнэту</string>
+    <string name="database_error_no_space">Недастаткова месца на дыску</string>
+    <string name="database_error_failed">Збой абнаўлення базы даных</string>
+    <string name="settings_disable_battery_optimization_desc">Каб працягваць прайграванне пры выключаным экране, усталюйце для выкарыстання акумулятара значэнне \'Без абмежаванняў\'.</string>
+    <string name="battery_opt_open_settings">Адкрыйце налады</string>
+    <string name="battery_opt_later">Пазней</string>
+    <string name="cast_network_title">Пошук прылад Cast</string>
+    <string name="cast_network_reason">Дазвольце доступ да лакальнай сеткі, каб знаходзіць і падключацца да дынамікаў Cast і тэлевізараў праз Wi-Fi. Пасля дазволу доступу націсніце Cast яшчэ раз, каб выбраць прыладу.</string>
+    <string name="cast_network_denied">Доступ да лакальнай сеткі адключаны. Дазволіць прылады паблізу ў наладах праграмы, затым зноў націсніце Cast. Прайграванне радыё на гэтым тэлефоне застаецца даступным.</string>
+    <string name="cast_network_settings">Адкрыйце налады</string>
+    <string name="cast_network_continue">Працягнуць</string>
+
+    <string name="action_later">Пазней</string>
 </resources>

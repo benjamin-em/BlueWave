@@ -394,4 +394,12 @@
     <string name="database_error_no_connection">Interneti-ühendus puudub</string>
     <string name="database_error_no_space">Kettaruumi pole piisavalt</string>
     <string name="database_error_failed">Andmebaasi värskendamine ebaõnnestus</string>
+
+    <string name="cast_network_title">Otsige üles Cast-seadmed</string>
+    <string name="cast_network_reason">Lubage juurdepääs kohalikule võrgule, et leida WiFi kaudu ülekande kõlarid ja telerid ning nendega ühenduse luua. Pärast juurdepääsu lubamist puudutage seadme valimiseks uuesti ülekandmist.</string>
+    <string name="cast_network_denied">Juurdepääs kohalikule võrgule on keelatud. Lubage rakenduse seadetes Läheduses olevad seadmed, seejärel puudutage uuesti ülekandmist. Raadio taasesitus selles telefonis on endiselt saadaval.</string>
+    <string name="cast_network_settings">Ava seaded</string>
+    <string name="cast_network_continue">Jätka</string>
+
+    <string name="action_later">Hiljem</string>
 </resources>

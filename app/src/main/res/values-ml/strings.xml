@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">സ്ക്രീൻ ഓഫ് ആകുമ്പോഴും പ്ലേബാക്ക് തുടരാൻ ബാറ്ററി ഉപയോഗം \'Unrestricted\' ആക്കുക.</string>
     <string name="battery_opt_open_settings">ക്രമീകരണങ്ങൾ തുറക്കുക</string>
     <string name="battery_opt_later">പിന്നീട്</string>
+
+    <string name="cast_network_title">Cast ഉപകരണങ്ങൾ കണ്ടെത്തുക</string>
+    <string name="cast_network_reason">നിങ്ങളുടെ വൈഫൈയിൽ കാസ്റ്റ് സ്‌പീക്കറുകളും ടിവികളും കണ്ടെത്താനും കണക്‌റ്റ് ചെയ്യാനും പ്രാദേശിക നെറ്റ്‌വർക്ക് ആക്‌സസ് അനുവദിക്കുക. ആക്‌സസ് അനുവദിച്ചതിന് ശേഷം, ഒരു ഉപകരണം തിരഞ്ഞെടുക്കാൻ വീണ്ടും Cast ടാപ്പ് ചെയ്യുക.</string>
+    <string name="cast_network_denied">ലോക്കൽ നെറ്റ്‌വർക്ക് ആക്‌സസ് അപ്രാപ്‌തമാക്കി. ആപ്പ് ക്രമീകരണത്തിൽ സമീപമുള്ള ഉപകരണങ്ങളെ അനുവദിക്കുക, തുടർന്ന് വീണ്ടും Cast ടാപ്പ് ചെയ്യുക. ഈ ഫോണിൽ റേഡിയോ പ്ലേബാക്ക് ലഭ്യമാണ്.</string>
+    <string name="cast_network_settings">ക്രമീകരണങ്ങൾ തുറക്കുക</string>
+    <string name="cast_network_continue">തുടരുക</string>
+
+    <string name="action_later">പിന്നീട്</string>
 </resources>

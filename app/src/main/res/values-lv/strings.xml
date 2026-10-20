@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Lai turpinātu atskaņošanu ar izslēgtu ekrānu, iestatiet akumulatora lietojumu uz \'Neierobežots\'.</string>
     <string name="battery_opt_open_settings">Atvērt iestatījumus</string>
     <string name="battery_opt_later">Vēlāk</string>
+
+    <string name="cast_network_title">Atrodiet Cast ierīces</string>
+    <string name="cast_network_reason">Atļaujiet piekļuvi vietējam tīklam, lai Wi-Fi tīklā atrastu un izveidotu savienojumu ar Cast skaļruņiem un televizoriem. Pēc piekļuves atļaušanas vēlreiz pieskarieties apraide, lai izvēlētos ierīci.</string>
+    <string name="cast_network_denied">Vietējā tīkla piekļuve ir atspējota. Atļaut tuvumā esošās ierīces lietotņu iestatījumos, pēc tam vēlreiz pieskarieties Apraide. Radio atskaņošana šajā tālrunī joprojām ir pieejama.</string>
+    <string name="cast_network_settings">Atveriet iestatījumus</string>
+    <string name="cast_network_continue">Turpināt</string>
+
+    <string name="action_later">Vēlāk</string>
 </resources>

@@ -395,4 +395,12 @@
     <string name="settings_disable_battery_optimization_desc">Ukuze uqhubeke udlala lapho isikrini sicinyiwe, seta ukusetshenziswa kwebhethri kokuthi \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Vula izilungiselelo</string>
     <string name="battery_opt_later">Ngemuva kwesikhathi</string>
+
+    <string name="cast_network_title">Thola amadivayisi okusakaza</string>
+    <string name="cast_network_reason">Vumela ukufinyelela kwenethiwekhi yendawo ukuze uthole futhi uxhume kuzipikha zokusakaza nama-TV ku-Wi-Fi yakho. Ngemva kokuvumela ukufinyelela, cindezela u-Cast futhi ukuze ukhethe idivayisi.</string>
+    <string name="cast_network_denied">Ukufinyelela kwenethiwekhi yendawo kukhutshaziwe. Vumela amadivayisi aseduze kuzilungiselelo zohlelo lokusebenza, bese uthepha i-Cast futhi. Ukudlalwa kwerediyo kule foni kuhlala kutholakala.</string>
+    <string name="cast_network_settings">Vula izilungiselelo</string>
+    <string name="cast_network_continue">Qhubeka</string>
+
+    <string name="action_later">Kamuva</string>
 </resources>

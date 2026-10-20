@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">স্ক্ৰীন বন্ধ থাকিলেও প্লে চলাই ৰাখিবলৈ বেটাৰী ব্যৱহাৰ \'Unrestricted\' লৈ ছেট কৰক।</string>
     <string name="battery_opt_open_settings">ছেটিংছ খোলক</string>
     <string name="battery_opt_later">পিছত</string>
+
+    <string name="cast_network_title">Cast ডিভাইচসমূহ বিচাৰি উলিয়াওক</string>
+    <string name="cast_network_reason">আপোনাৰ ৱাই-ফাইত কাষ্ট স্পীকাৰ আৰু টিভিসমূহ বিচাৰিবলৈ আৰু সংযোগ কৰিবলৈ স্থানীয় নেটৱৰ্ক অভিগমৰ অনুমতি দিয়ক। অভিগমৰ অনুমতি দিয়াৰ পিছত, এটা ডিভাইচ নিৰ্ব্বাচন কৰিবলে পুনৰ কাষ্ট টেপ কৰক।</string>
+    <string name="cast_network_denied">স্থানীয় নে\'টৱৰ্ক অভিগম নিষ্ক্ৰিয় কৰা হৈছে। এপ ছেটিংছত ওচৰৰ ডিভাইচসমূহক অনুমতি দিয়ক, তাৰ পিছত পুনৰ কাষ্ট টেপ কৰক। এই ফোনত ৰেডিঅ’ প্লেবেক উপলব্ধ হৈয়েই আছে।</string>
+    <string name="cast_network_settings">ছেটিংছ খোলক</string>
+    <string name="cast_network_continue">অব্যাহত ৰাখক</string>
+
+    <string name="action_later">পাছত</string>
 </resources>

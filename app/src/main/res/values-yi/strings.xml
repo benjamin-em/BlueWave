@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">כדי צו פֿאָרצעצן דאָס שפּילן ווען דער סקרין איז אָפּגעשטעלט, שטעלט די באַטערי באַנוץ אויף \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">עפֿענען אינסטאַלציעס</string>
     <string name="battery_opt_later">שפּעטער</string>
+
+    <string name="cast_network_title">געפֿינען קאַסט דעוויסעס</string>
+    <string name="cast_network_reason">לאָזן היגע נעץ אַקסעס צו געפֿינען און פאַרבינדן צו קאַסט ספּיקערז און טווס אויף דיין Wi-Fi. נאָך אַלאַוינג אַקסעס, צאַפּן קאַסט ווידער צו קלייַבן אַ מיטל.</string>
+    <string name="cast_network_denied">לאקאלע נעץ אַקסעס איז פאַרקריפּלט. לאָזן נירביי דעוויסעס אין אַפּ סעטטינגס, און צאַפּן ווידער קאַסט. ראַדיאָ פּלייבאַק אויף דעם טעלעפאָן בלייבט בנימצא.</string>
+    <string name="cast_network_settings">עפֿענען סעטטינגס</string>
+    <string name="cast_network_continue">פאָרזעצן</string>
+
+    <string name="action_later">שפּעטער</string>
 </resources>

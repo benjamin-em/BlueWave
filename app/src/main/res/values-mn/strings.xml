@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Дэлгэц унтарсан үед тоглуулахыг үргэлжлүүлэхийн тулд батерейны ашиглалтыг \'Unrestricted\' болгож тохируулна уу.</string>
     <string name="battery_opt_open_settings">Тохиргоог нээх</string>
     <string name="battery_opt_later">Дараа</string>
+
+    <string name="cast_network_title">Дамжуулах төхөөрөмжүүдийг олоорой</string>
+    <string name="cast_network_reason">Өөрийн Wi-Fi дээрх дамжуулагч чанга яригч болон ТВ-г олж холбогдохын тулд дотоод сүлжээнд хандахыг зөвшөөрнө үү. Хандалтыг зөвшөөрсний дараа төхөөрөмж сонгохын тулд Дамжуулах товчийг дахин товшино уу.</string>
+    <string name="cast_network_denied">Дотоод сүлжээний хандалтыг идэвхгүй болгосон. Програмын тохиргоонд Ойролцоох төхөөрөмжүүдийг зөвшөөрч, Дамжуулах товчийг дахин товшино уу. Энэ утсан дээр радио тоглуулах боломжтой хэвээр байна.</string>
+    <string name="cast_network_settings">Тохиргоог нээх</string>
+    <string name="cast_network_continue">Үргэлжлүүлэх</string>
+
+    <string name="action_later">Дараа нь</string>
 </resources>

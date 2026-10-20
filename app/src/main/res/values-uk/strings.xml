@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Щоб продовжити відтворення при вимкненому екрані, встановіть використання батареї на \'Без обмежень\'.</string>
     <string name="battery_opt_open_settings">Відкрити налаштування</string>
     <string name="battery_opt_later">Пізніше</string>
+
+    <string name="cast_network_title">Знайдіть пристрої Cast</string>
+    <string name="cast_network_reason">Дозвольте доступ до локальної мережі, щоб знаходити колонки й телевізори Cast і підключатися до них через Wi-Fi. Надавши доступ, знову торкніться Cast, щоб вибрати пристрій.</string>
+    <string name="cast_network_denied">Доступ до локальної мережі вимкнено. Дозволити пристрої поблизу в налаштуваннях програми, а потім знову торкніться Cast. Відтворення радіо на цьому телефоні залишається доступним.</string>
+    <string name="cast_network_settings">Відкрийте налаштування</string>
+    <string name="cast_network_continue">Продовжити</string>
+
+    <string name="action_later">Пізніше</string>
 </resources>

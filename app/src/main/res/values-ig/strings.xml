@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Domin ci gaba da kunna sauti yayin da allon ke kashe, saita amfani da batir zuwa \'Unrestricted\'.</string>
     <string name="battery_opt_open_settings">Buɗe saituna</string>
     <string name="battery_opt_later">Daga baya</string>
+
+    <string name="cast_network_title">Chọta ngwaọrụ nkedo</string>
+    <string name="cast_network_reason">Nye ohere netwọkụ mpaghara ka ịchọta na jikọọ na igwe okwu Cast na TV na Wi-Fi gị. Mgbe ikwe ka ịnweta, kpatụ nkedo ọzọ ka ịhọrọ ngwaọrụ.</string>
+    <string name="cast_network_denied">Agbanyụrụ ịnweta netwọkụ mpaghara. Hapụ ngwaọrụ dị nso na ntọala ngwa, wee pịa nkedo ọzọ. Ịkpọghachi redio na ekwentị a ka dị.</string>
+    <string name="cast_network_settings">Mepee ntọala</string>
+    <string name="cast_network_continue">Gaa n\'ihu</string>
+
+    <string name="action_later">Emechaa</string>
 </resources>

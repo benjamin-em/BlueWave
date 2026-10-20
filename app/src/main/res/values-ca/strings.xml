@@ -396,4 +396,12 @@
     <string name="settings_disable_battery_optimization_desc">Per mantenir la reproducció amb la pantalla apagada, establiu l\'ús de la bateria a \'Sense restriccions\'.</string>
     <string name="battery_opt_open_settings">Obre la configuració</string>
     <string name="battery_opt_later">Més tard</string>
+
+    <string name="cast_network_title">Cerca dispositius Cast</string>
+    <string name="cast_network_reason">Permet l\'accés a la xarxa local per trobar altaveus i televisors Cast a la teva Wi-Fi i connectar-hi. Després de permetre l\'accés, torna a tocar Emet per triar un dispositiu.</string>
+    <string name="cast_network_denied">L\'accés a la xarxa local està desactivat. Permet els dispositius propers a la configuració de l\'aplicació i, a continuació, torna a tocar Emet. La reproducció de ràdio en aquest telèfon continua disponible.</string>
+    <string name="cast_network_settings">Obre la configuració</string>
+    <string name="cast_network_continue">Continua</string>
+
+    <string name="action_later">Més tard</string>
 </resources>

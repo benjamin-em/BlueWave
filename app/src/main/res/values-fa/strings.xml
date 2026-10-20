@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">برای ادامه پخش هنگام خاموش بودن صفحه، مصرف باتری را روی \'بدون محدودیت\' قرار دهید.</string>
     <string name="battery_opt_open_settings">باز کردن تنظیمات</string>
     <string name="battery_opt_later">بعداً</string>
+
+    <string name="cast_network_title">دستگاه‌های Cast را پیدا کنید</string>
+    <string name="cast_network_reason">به شبکه محلی اجازه دهید تا بلندگوها و تلویزیون‌های Cast را در Wi-Fi خود پیدا کند و به آن‌ها متصل شود. پس از اجازه دسترسی، برای انتخاب دستگاه، دوباره روی Cast ضربه بزنید.</string>
+    <string name="cast_network_denied">دسترسی به شبکه محلی غیرفعال است. به دستگاه‌های Nearby در تنظیمات برنامه اجازه دهید، سپس دوباره روی Cast ضربه بزنید. پخش رادیو در این تلفن همچنان در دسترس است.</string>
+    <string name="cast_network_settings">تنظیمات را باز کنید</string>
+    <string name="cast_network_continue">ادامه دهید</string>
+
+    <string name="action_later">بعدا</string>
 </resources>

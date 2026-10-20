@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">За да продолжи репродукцијата кога екранот е исклучен, поставете ја употребата на батеријата на \'Неограничено\'.</string>
     <string name="battery_opt_open_settings">Отвори поставки</string>
     <string name="battery_opt_later">Подоцна</string>
+
+    <string name="cast_network_title">Најдете уреди за Cast</string>
+    <string name="cast_network_reason">Дозволете пристап до локалната мрежа за наоѓање и поврзување со Cast звучници и телевизори на вашиот Wi-Fi. Откако ќе дозволите пристап, допрете Емитувај повторно за да изберете уред.</string>
+    <string name="cast_network_denied">Пристапот до локалната мрежа е оневозможен. Дозволете ги уредите во близина во поставките за апликацијата, па повторно допрете Емитувај. Репродукцијата на радио на овој телефон останува достапна.</string>
+    <string name="cast_network_settings">Отворете ги поставките</string>
+    <string name="cast_network_continue">Продолжи</string>
+
+    <string name="action_later">Подоцна</string>
 </resources>

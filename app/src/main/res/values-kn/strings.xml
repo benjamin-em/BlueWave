@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">ಸ್ಕ್ರೀನ್ ಆಫ್ ಆಗಿದ್ದಾಗಲೂ ಪ್ಲೇಬ್ಯಾಕ್ ಮುಂದುವರಿಸಲು ಬ್ಯಾಟರಿ ಬಳಕೆಯನ್ನು \'Unrestricted\' ಗೆ ಹೊಂದಿಸಿ.</string>
     <string name="battery_opt_open_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
     <string name="battery_opt_later">ನಂತರ</string>
+
+    <string name="cast_network_title">ಬಿತ್ತರಿಸುವ ಸಾಧನಗಳನ್ನು ಹುಡುಕಿ</string>
+    <string name="cast_network_reason">ನಿಮ್ಮ Wi-Fi ನಲ್ಲಿ ಬಿತ್ತರಿಸುವ ಸ್ಪೀಕರ್‌ಗಳು ಮತ್ತು ಟಿವಿಗಳನ್ನು ಹುಡುಕಲು ಮತ್ತು ಸಂಪರ್ಕಿಸಲು ಸ್ಥಳೀಯ ನೆಟ್‌ವರ್ಕ್ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸಿ. ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸಿದ ನಂತರ, ಸಾಧನವನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಮತ್ತೊಮ್ಮೆ ಬಿತ್ತರಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="cast_network_denied">ಸ್ಥಳೀಯ ನೆಟ್‌ವರ್ಕ್ ಪ್ರವೇಶವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಹತ್ತಿರದ ಸಾಧನಗಳನ್ನು ಅನುಮತಿಸಿ, ನಂತರ ಮತ್ತೆ ಬಿತ್ತರಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ. ಈ ಫೋನ್‌ನಲ್ಲಿ ರೇಡಿಯೋ ಪ್ಲೇಬ್ಯಾಕ್ ಲಭ್ಯವಿರುತ್ತದೆ.</string>
+    <string name="cast_network_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
+    <string name="cast_network_continue">ಮುಂದುವರಿಸಿ</string>
+
+    <string name="action_later">ನಂತರ</string>
 </resources>

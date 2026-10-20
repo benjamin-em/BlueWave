@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">画面がオフの状態でも再生を継続するには、バッテリー使用量を「制限なし」に設定してください。</string>
     <string name="battery_opt_open_settings">設定を開く</string>
     <string name="battery_opt_later">後で</string>
+
+    <string name="cast_network_title">キャスト デバイスを探す</string>
+    <string name="cast_network_reason">Wi-Fi 上のキャスト スピーカーとテレビを検索して接続するためのローカル ネットワーク アクセスを許可します。アクセスを許可した後、もう一度「キャスト」をタップしてデバイスを選択します。</string>
+    <string name="cast_network_denied">ローカルネットワークアクセスが無効になっています。アプリ設定で近くのデバイスを許可し、もう一度「キャスト」をタップします。この電話機でのラジオ再生は引き続き利用できます。</string>
+    <string name="cast_network_settings">設定を開く</string>
+    <string name="cast_network_continue">続行</string>
+
+    <string name="action_later">後で</string>
 </resources>

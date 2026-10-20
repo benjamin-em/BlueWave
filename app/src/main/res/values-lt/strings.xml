@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Norėdami tęsti grojimą išjungtu ekranu, nustatykite baterijos naudojimą į \'Neribojama\'.</string>
     <string name="battery_opt_open_settings">Atidaryti nustatymus</string>
     <string name="battery_opt_later">Vėliau</string>
+
+    <string name="cast_network_title">Raskite perdavimo įrenginius</string>
+    <string name="cast_network_reason">Leiskite pasiekti vietinį tinklą, kad galėtumėte rasti ir prisijungti prie perdavimo garsiakalbių ir televizorių naudodami „Wi-Fi“. Suteikę prieigą, dar kartą palieskite Perduoti, kad pasirinktumėte įrenginį.</string>
+    <string name="cast_network_denied">Prieiga prie vietinio tinklo išjungta. Programos nustatymuose leiskite netoliese esantiems įrenginiams, tada dar kartą palieskite Perduoti. Radijo atkūrimas šiame telefone išlieka pasiekiamas.</string>
+    <string name="cast_network_settings">Atidarykite nustatymus</string>
+    <string name="cast_network_continue">Tęsti</string>
+
+    <string name="action_later">Vėliau</string>
 </resources>

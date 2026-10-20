@@ -394,4 +394,12 @@
     <string name="settings_disable_battery_optimization_desc">Per mantenere la riproduzione con lo schermo spento, imposta l\'uso della batteria su \'Senza restrizioni\'.</string>
     <string name="battery_opt_open_settings">Apri impostazioni</string>
     <string name="battery_opt_later">Più tardi</string>
+
+    <string name="cast_network_title">Trova dispositivi di trasmissione</string>
+    <string name="cast_network_reason">Consenti l\'accesso alla rete locale per trovare e connetterti ad altoparlanti e TV Cast sulla tua rete Wi-Fi. Dopo aver consentito l\'accesso, tocca di nuovo Trasmetti per scegliere un dispositivo.</string>
+    <string name="cast_network_denied">L\'accesso alla rete locale è disabilitato. Consenti i dispositivi nelle vicinanze nelle impostazioni dell\'app, quindi tocca di nuovo Trasmetti. La riproduzione della radio su questo telefono rimane disponibile.</string>
+    <string name="cast_network_settings">Apri le impostazioni</string>
+    <string name="cast_network_continue">Continuare</string>
+
+    <string name="action_later">Dopo</string>
 </resources>
