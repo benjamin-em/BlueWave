@@ -513,6 +513,7 @@ fun BatteryOptimizationDialog(
     AlertDialog(
         onDismissRequest = onDismiss,
         containerColor = MaterialTheme.colorScheme.surface,
+        tonalElevation = 0.dp,
         title = {
             Text(
                 text = stringResource(R.string.settings_disable_battery_optimization),
@@ -524,19 +525,26 @@ fun BatteryOptimizationDialog(
             Text(
                 text = stringResource(R.string.settings_disable_battery_optimization_desc),
                 style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                color = MaterialTheme.colorScheme.onSurface
             )
         },
         confirmButton = {
-            Button(
+            TextButton(
                 onClick = onOpenSettings,
-                colors = ButtonDefaults.buttonColors(containerColor = AmaradioAmber)
+                colors = ButtonDefaults.textButtonColors(contentColor = AmaradioAmber)
             ) {
-                Text(stringResource(R.string.battery_opt_open_settings))
+                Text(
+                    text = stringResource(R.string.battery_opt_open_settings),
+                    color = AmaradioAmber,
+                    fontWeight = FontWeight.Bold
+                )
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) {
+            TextButton(
+                onClick = onDismiss,
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+            ) {
                 Text(
                     text = stringResource(R.string.battery_opt_later),
                     color = MaterialTheme.colorScheme.onSurfaceVariant
