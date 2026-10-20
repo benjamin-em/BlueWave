@@ -1,0 +1,51 @@
+===================================================================
+AMARadio - Zusammenfassung der Änderungen für Google Cast
+===================================================================
+Datum: 18. Oktober 2026
+App-Version: 1.43 (Build 165)
+
+-------------------------------------------------------------------
+1. Lokale Netzwerkberechtigungen (AndroidManifest.xml)
+-------------------------------------------------------------------
+- Ergänzung von:
+  <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+  <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"
+      android:usesPermissionFlags="neverForLocation" tools:targetApi="33" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+- Effekt: Verhindert, dass der Android-Kernel oder One UI 9/Android 13+ mDNS-
+  und SSDP-Multicast-Pakete von Chromecast- und DLNA-Geräten im WLAN unterdrückt.
+
+-------------------------------------------------------------------
+2. Laufzeitberechtigungen & Sofort-Discovery (ActivityMain.kt)
+-------------------------------------------------------------------
+- Integration von `checkAndRequestCastPermissions()` in ActivityMain.onCreate().
+- Fordert auf Android 13+ (API 33+) die Berechtigung "NEARBY_WIFI_DEVICES" an.
+- Startet `CastManager.getInstance()?.ensureInitializedAsync()` sofort beim
+  App-Start, sodass die Gerätesuche im WLAN im Hintergrund sofort aktiv wird.
+
+-------------------------------------------------------------------
+3. Wi-Fi MulticastLock (PlayerService.kt)
+-------------------------------------------------------------------
+- In `acquireWakeLockAndWifiLock()` wird bei aktiver WLAN-Wiedergabe ein
+  `WifiManager.MulticastLock` angefordert.
+- Verhindert das Verwerfen von Discovery-Signalen im Standby/Hintergrund.
+
+-------------------------------------------------------------------
+4. Cast-Button & Dark-/Light-Theme (CastButton.kt)
+-------------------------------------------------------------------
+- Nutzung des nativen AndroidX `MediaRouteButton` via Compose `AndroidView`.
+- Anbindung an `CastButtonFactory.setUpMediaRouteButton()`.
+- Aktivierung von `setAlwaysVisible(true)`.
+- Dynamisches Theme-Wrapping (`ContextThemeWrapper`):
+  * Dark Mode:  Theme_AppCompat_NoActionBar (helles Icon & dunkler Dialog)
+  * Light Mode: Theme_AppCompat_Light_NoActionBar (dunkles Icon & heller Dialog)
+
+-------------------------------------------------------------------
+5. Multi-Flavour Kompatibilität (CastManager.kt)
+-------------------------------------------------------------------
+- Deklaration von `ensureInitializedAsync()` in der FOSS-Dummy-Klasse,
+  sodass sowohl `playDebug` als auch `fossDebug` fehlerfrei kompilieren.
+===================================================================
