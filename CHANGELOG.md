@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.45] - 2026-10-21
+### Added
+- **Android 17 Local Network Permission**: Added `ACCESS_LOCAL_NETWORK` permission declaration and on-demand permission dialog for Google Cast discovery on Android 17 (API 37).
+- **Dynamic Battery Optimization Setting**: Added a dynamic warning entry in Settings when background playback is restricted, featuring a prominent red warning icon that disappears automatically once unrestricted access is granted.
+
+### Changed
+- **7-Day Database Sync Interval**: Configured WorkManager background database update schedule and startup sync threshold to a fixed 7-day interval.
+- **Direct System Battery Settings Navigation**: Updated battery optimization setting clicks to launch Android's system battery settings via a robust three-tier fallback chain without requiring high-risk manifest permissions.
+
+### Fixed
+- **Database Broken Station Filtering**: Fixed Room entity mapping bug in `StationMapper.kt` where `LastCheckOK` was hardcoded to `1`, ensuring offline/broken stations (`LastCheckOK = 0`) are properly filtered out of all lists and search tabs.
+- **Playlist Resolution Memory Safety**: Fixed a potential `OutOfMemoryError` in `PlayStationTask` when parsing large or malformed playlists by enforcing a 128 KB byte limit and catching `Throwable` errors.
+
 ## [1.44] - 2026-10-18
 ### Added
 - **Google Cast & DLNA Discovery (Android 13–17 & One UI 9)**: Full integration with AndroidX Media3 Cast and Google Play Services Cast SDK. Added `CHANGE_WIFI_MULTICAST_STATE` and `NEARBY_WIFI_DEVICES` permissions to discover remote Chromecast, Smart TVs, and DLNA speakers in local Wi-Fi networks.
