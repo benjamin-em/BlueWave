@@ -330,16 +330,20 @@ fun MainScreen(
                                 },
                                 onBatteryOptimize = {
                                     try {
-                                        val intent = Intent(
-                                            android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                                            android.net.Uri.parse("package:${context.packageName}")
-                                        )
+                                        val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
                                         context.startActivity(intent)
                                     } catch (_: Exception) {
                                         try {
-                                            val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
+                                            val intent = Intent(
+                                                android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                                android.net.Uri.fromParts("package", context.packageName, null)
+                                            )
                                             context.startActivity(intent)
-                                        } catch (_: Exception) {}
+                                        } catch (_: Exception) {
+                                            try {
+                                                context.startActivity(Intent(android.provider.Settings.ACTION_SETTINGS))
+                                            } catch (_: Exception) {}
+                                        }
                                     }
                                 },
                                 onRateApp = {
@@ -473,16 +477,20 @@ fun MainScreen(
                     putBoolean("battery_opt_dialog_shown", true)
                 }
                 try {
-                    val intent = Intent(
-                        android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                        android.net.Uri.parse("package:${context.packageName}")
-                    )
+                    val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
                     context.startActivity(intent)
                 } catch (_: Exception) {
                     try {
-                        val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
+                        val intent = Intent(
+                            android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                            android.net.Uri.fromParts("package", context.packageName, null)
+                        )
                         context.startActivity(intent)
-                    } catch (_: Exception) {}
+                    } catch (_: Exception) {
+                        try {
+                            context.startActivity(Intent(android.provider.Settings.ACTION_SETTINGS))
+                        } catch (_: Exception) {}
+                    }
                 }
             }
         )

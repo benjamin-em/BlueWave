@@ -1,6 +1,9 @@
 package com.ounben.amaradio.ui
 
+import android.content.Context
+import android.os.PowerManager
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -12,6 +15,7 @@ import androidx.compose.material.icons.automirrored.filled.Launch
 import androidx.compose.material.icons.automirrored.filled.LiveHelp
 import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.outlined.WarningAmber
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -22,7 +26,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LifecycleEventEffect
 import com.ounben.amaradio.AMARadioApp
 import com.ounben.amaradio.R
 
@@ -43,6 +50,17 @@ fun SettingsScreen(
     val serverInfoUiState by serverInfoViewModel.uiState.collectAsState()
     val scrollState = rememberScrollState()
 
+    val context = LocalContext.current
+    fun checkBatteryIgnoring(): Boolean {
+        val pm = context.applicationContext.getSystemService(Context.POWER_SERVICE) as? PowerManager
+        return pm?.isIgnoringBatteryOptimizations(context.packageName) == true
+    }
+    var isIgnoringBatteryOpt by remember { mutableStateOf(checkBatteryIgnoring()) }
+
+    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
+        isIgnoringBatteryOpt = checkBatteryIgnoring()
+    }
+
     SingleTabContainer(titleRes = R.string.nav_item_settings) {
         Column(
             modifier = Modifier
@@ -58,6 +76,20 @@ fun SettingsScreen(
                     summary = stringResource(app.reviewManager.getSummaryRes()),
                     icon = Icons.Default.Star,
                     onClick = onRateApp
+                )
+                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f))
+            }
+
+            if (!isIgnoringBatteryOpt) {
+                val isDark = isSystemInDarkTheme()
+                val batteryIconTint = if (isDark) SolidRedError else SolidRedErrorLight
+                SettingsClickable(
+                    title = stringResource(R.string.settings_disable_battery_optimization),
+                    summary = stringResource(R.string.settings_disable_battery_optimization_desc),
+                    icon = Icons.Outlined.WarningAmber,
+                    iconTint = batteryIconTint,
+                    iconSize = 32.dp,
+                    onClick = onBatteryOptimize
                 )
                 HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f))
             }
@@ -216,23 +248,7 @@ fun SettingsScreen(
                     icon = Icons.AutoMirrored.Filled.VolumeUp,
                     onCheckedChange = { viewModel.updateBoolean("settings_auto_resume_audio_focus", it) }
                 )
-                /*
-                SettingsClickable(
-                    title = stringResource(R.string.settings_equalizer),
-                    icon = Icons.Default.Tune,
-                    onClick = onOpenEqualizer
-                )
-                */
             }
-
-            // Connectivity
-            // SettingsCategory(title = stringResource(R.string.settings_connectivity)) {
-            //    SettingsClickable(
-            //        title = stringResource(R.string.settings_proxy),
-            //        icon = Icons.Default.Lock,
-            //        onClick = onOpenProxy
-            //    )
-            // }
 
             // Backup & Restore
             SettingsCategory(title = stringResource(R.string.settings_backup_restore)) {
@@ -252,12 +268,6 @@ fun SettingsScreen(
 
             // Other
             SettingsCategory(title = stringResource(R.string.settings_other)) {
-                SettingsClickable(
-                    title = stringResource(R.string.settings_disable_battery_optimization),
-                    summary = stringResource(R.string.settings_disable_battery_optimization_desc),
-                    icon = Icons.Default.BatteryChargingFull,
-                    onClick = onBatteryOptimize
-                )
                 SettingsClickable(
                     title = stringResource(R.string.settings_statistics),
                     icon = Icons.Default.Poll,
@@ -311,7 +321,12 @@ fun SettingsSwitch(
             .padding(vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        Box(
+            modifier = Modifier.size(32.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
         Spacer(modifier = Modifier.width(16.dp))
         Column(modifier = Modifier.weight(1f)) {
             Text(text = title, style = MaterialTheme.typography.bodyLarge)
@@ -328,6 +343,8 @@ fun SettingsClickable(
     title: String,
     summary: String? = null,
     icon: ImageVector,
+    iconTint: Color = MaterialTheme.colorScheme.onSurfaceVariant,
+    iconSize: Dp = 24.dp,
     onClick: () -> Unit
 ) {
     Row(
@@ -337,9 +354,19 @@ fun SettingsClickable(
             .padding(vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        Box(
+            modifier = Modifier.size(32.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                imageVector = icon,
+                contentDescription = null,
+                tint = iconTint,
+                modifier = Modifier.size(iconSize)
+            )
+        }
         Spacer(modifier = Modifier.width(16.dp))
-        Column {
+        Column(modifier = Modifier.weight(1f)) {
             Text(text = title, style = MaterialTheme.typography.bodyLarge)
             if (!summary.isNullOrBlank()) {
                 Text(text = summary, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -368,9 +395,14 @@ fun SettingsListPreference(
             .padding(vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        Box(
+            modifier = Modifier.size(32.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
         Spacer(modifier = Modifier.width(16.dp))
-        Column {
+        Column(modifier = Modifier.weight(1f)) {
             Text(text = title, style = MaterialTheme.typography.bodyLarge)
             if (!currentLabel.isNullOrBlank()) {
                 Text(text = currentLabel, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
