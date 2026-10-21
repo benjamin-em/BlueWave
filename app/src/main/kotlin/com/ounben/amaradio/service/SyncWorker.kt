@@ -76,12 +76,12 @@ class SyncWorker(context: Context, workerParams: WorkerParameters) : CoroutineWo
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build()
 
-            // 1. Check if an immediate startup sync is needed (if last sync > 24 hours ago or never)
+            // 1. Check if an immediate startup sync is needed (if last sync > 7 days ago or never)
             val lastSyncStr = sharedPref.getString("last_db_sync_time", null)
             val needsSyncNow = if (lastSyncStr == null) true else {
                 try {
                     val lastSyncDate = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).parse(lastSyncStr)
-                    System.currentTimeMillis() - (lastSyncDate?.time ?: 0L) > 24 * 60 * 60 * 1000
+                    System.currentTimeMillis() - (lastSyncDate?.time ?: 0L) > 7 * 24 * 60 * 60 * 1000L
                 } catch (e: Exception) { true }
             }
 
@@ -99,10 +99,10 @@ class SyncWorker(context: Context, workerParams: WorkerParameters) : CoroutineWo
                 )
             }
 
-            // 2. Regular 24-hour periodic background sync (Initial delay 24h to prevent WorkManager from running it immediately on launch)
-            val periodicRequest = PeriodicWorkRequestBuilder<SyncWorker>(1, TimeUnit.DAYS)
+            // 2. Regular 7-day periodic background sync (Initial delay 7d to prevent WorkManager from running it immediately on launch)
+            val periodicRequest = PeriodicWorkRequestBuilder<SyncWorker>(7, TimeUnit.DAYS)
                 .setConstraints(baseConstraints)
-                .setInitialDelay(24, TimeUnit.HOURS)
+                .setInitialDelay(7, TimeUnit.DAYS)
                 .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 30, TimeUnit.SECONDS)
                 .build()
 
