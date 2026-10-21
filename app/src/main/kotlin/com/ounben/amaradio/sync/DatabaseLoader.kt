@@ -88,9 +88,11 @@ class DatabaseLoader(private val context: Context) {
             var backoffMs = 1000L
             for (attempt in 1..3) {
                 val url = RadioBrowserServerManager.constructEndpoint(server, relativeEndpoint)
+                val versionName = context.getString(com.ounben.amaradio.R.string.version_name)
+                val userAgent = "AMARadio/$versionName (Android; +https://github.com/ounben/AMARadio)"
                 val request = Request.Builder()
                     .url(url)
-                    .header("User-Agent", "AMARadio/1.41")
+                    .header("User-Agent", userAgent)
                     .build()
 
                 try {
