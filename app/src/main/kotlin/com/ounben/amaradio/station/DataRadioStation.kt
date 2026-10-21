@@ -48,8 +48,10 @@ data class DataRadioStation(
     @SerialName("votes") var Votes: Int = 0,
     @SerialName("bitrate") var Bitrate: Int = 0,
     @SerialName("codec") var Codec: String = "",
+    @SerialName("hls") var Hls: Int = 0,
     @SerialName("lastchangetime") var LastChangeTime: String = "",
     @SerialName("creation") var Creation: String = "",
+    @SerialName("lastcheckok") var LastCheckOK: Int = 1,
     @SerialName("lastcheckoktime") var LastCheckOkTime: String = ""
 ) : Parcelable {
 
