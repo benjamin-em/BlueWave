@@ -688,18 +688,7 @@ fun MultiSearchableSelectionDialog(
     }
 
     val filteredOptions = remember(searchQuery, options) {
-        val q = searchQuery.trim()
-        if (q.isEmpty()) {
-            options
-        } else {
-            options.filter { it.label.contains(q, ignoreCase = true) || it.code.contains(q, ignoreCase = true) }
-                .map { item -> item to SearchUtils.calculateScore(item.label, q) }
-                .sortedWith(
-                    compareByDescending<Pair<FilterViewModel.CategoryItem, Double>> { it.second }
-                        .thenByDescending { it.first.count }
-                )
-                .map { it.first }
-        }
+        SearchUtils.filterAndSortCategories(options, searchQuery)
     }
 
     Dialog(
@@ -860,19 +849,7 @@ fun SearchableSelectionDialog(
     }
 
     val filteredOptions = remember(searchQuery, options) {
-        val q = searchQuery.trim()
-        if (q.isEmpty()) {
-            options
-        } else {
-            // Erst filtern, dann Score genau 1x pro Element berechnen und sortieren (verhindert 150.000x Rechen-Schleife)
-            options.filter { it.label.contains(q, ignoreCase = true) }
-                .map { item -> item to SearchUtils.calculateScore(item.label, q) }
-                .sortedWith(
-                    compareByDescending<Pair<FilterViewModel.CategoryItem, Double>> { it.second }
-                        .thenByDescending { it.first.count }
-                )
-                .map { it.first }
-        }
+        SearchUtils.filterAndSortCategories(options, searchQuery)
     }
 
     Dialog(
