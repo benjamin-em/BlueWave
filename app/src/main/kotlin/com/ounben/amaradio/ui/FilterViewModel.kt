@@ -297,6 +297,20 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
         updateTabAt(index) { it.copy(countryCode = code, countryLabel = label, countryEmoji = EmojiUtils.getFlagEmoji(code) ?: "") }
         saveFilters()
     }
+
+    fun onMultiCountrySelect(index: Int, selectedItems: List<CategoryItem>) {
+        val codes = selectedItems.joinToString(",") { it.code }
+        val labels = selectedItems.joinToString(", ") { it.label }
+        val emojis = selectedItems.mapNotNull { it.emoji.ifEmpty { EmojiUtils.getFlagEmoji(it.code) } }.joinToString(" ")
+        updateTabAt(index) { 
+            it.copy(
+                countryCode = codes,
+                countryLabel = labels,
+                countryEmoji = emojis
+            ) 
+        }
+        saveFilters()
+    }
     
     fun clearCountry(index: Int) {
         updateTabAt(index) { it.copy(countryCode = "", countryLabel = "", countryEmoji = "") }

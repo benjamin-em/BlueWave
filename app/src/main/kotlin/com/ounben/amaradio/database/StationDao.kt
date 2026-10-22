@@ -41,7 +41,7 @@ interface StationDao {
         AND (:w1 IS NULL OR (Name LIKE '%' || :w1 || '%' OR Tags LIKE '%' || :w1 || '%'))
         AND (:w2 IS NULL OR (Name LIKE '%' || :w2 || '%' OR Tags LIKE '%' || :w2 || '%'))
         AND (:w3 IS NULL OR (Name LIKE '%' || :w3 || '%' OR Tags LIKE '%' || :w3 || '%'))
-        AND (:countryCode IS NULL OR CountryCode = :countryCode)
+        AND (:countryCode IS NULL OR instr(',' || :countryCode || ',', ',' || CountryCode || ',') > 0)
         AND (:language IS NULL OR Language LIKE '%' || :language || '%')
         AND (:codec IS NULL OR Codec LIKE '%' || :codec || '%')
         AND (

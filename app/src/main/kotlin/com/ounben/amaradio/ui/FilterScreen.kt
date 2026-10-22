@@ -212,12 +212,12 @@ fun FilterScreen(
                     isReadOnly = true,
                     onClear = { viewModel.clearCountry(tabIndex) },
                     dialogContent = { onDismiss ->
-                        SearchableSelectionDialog(
+                        MultiSearchableSelectionDialog(
                             title = stringResource(R.string.filter_country),
                             options = uiState.countries,
-                            showCount = false,
-                            onSelect = { item -> 
-                                viewModel.onCountrySelect(tabIndex, item.code, item.label)
+                            initialSelectedCodes = currentTab.countryCode.split(",").filter { it.isNotBlank() }.toSet(),
+                            onConfirm = { selectedItems -> 
+                                viewModel.onMultiCountrySelect(tabIndex, selectedItems)
                                 onDismiss()
                             },
                             onDismiss = onDismiss
@@ -661,6 +661,178 @@ fun CustomFilterField(
 
     if (showDialog && dialogContent != null) {
         dialogContent { showDialog = false }
+    }
+}
+
+@Composable
+fun MultiSearchableSelectionDialog(
+    title: String,
+    options: List<FilterViewModel.CategoryItem>,
+    initialSelectedCodes: Set<String>,
+    onConfirm: (List<FilterViewModel.CategoryItem>) -> Unit,
+    onDismiss: () -> Unit
+) {
+    var searchQuery by remember { mutableStateOf("") }
+    val focusRequester = remember { FocusRequester() }
+    val listState = androidx.compose.foundation.lazy.rememberLazyListState()
+    val selectedCodes = remember { mutableStateListOf<String>().apply { addAll(initialSelectedCodes) } }
+
+    LaunchedEffect(Unit) {
+        focusRequester.requestFocus()
+    }
+
+    LaunchedEffect(searchQuery) {
+        if (searchQuery.isNotEmpty()) {
+            listState.scrollToItem(0)
+        }
+    }
+
+    val filteredOptions = remember(searchQuery, options) {
+        val q = searchQuery.trim()
+        if (q.isEmpty()) {
+            options
+        } else {
+            options.filter { it.label.contains(q, ignoreCase = true) || it.code.contains(q, ignoreCase = true) }
+                .map { item -> item to SearchUtils.calculateScore(item.label, q) }
+                .sortedWith(
+                    compareByDescending<Pair<FilterViewModel.CategoryItem, Double>> { it.second }
+                        .thenByDescending { it.first.count }
+                )
+                .map { it.first }
+        }
+    }
+
+    Dialog(
+        onDismissRequest = onDismiss,
+        properties = DialogProperties(usePlatformDefaultWidth = false)
+    ) {
+        Surface(
+            shape = RoundedCornerShape(16.dp),
+            color = MaterialTheme.colorScheme.surface,
+            tonalElevation = 0.dp,
+            modifier = Modifier
+                .fillMaxWidth(0.92f)
+                .fillMaxHeight(0.85f)
+                .imePadding()
+        ) {
+            Column(modifier = Modifier.padding(16.dp)) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 8.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = title, 
+                        style = MaterialTheme.typography.titleLarge, 
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.weight(1f, fill = false)
+                    )
+                    IconButton(
+                        onClick = onDismiss,
+                        modifier = Modifier.size(36.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Close, 
+                            contentDescription = stringResource(R.string.label_button_cancel),
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+
+                OutlinedTextField(
+                    value = searchQuery,
+                    onValueChange = { searchQuery = it },
+                    placeholder = { Text(stringResource(R.string.searchpreference_search)) },
+                    leadingIcon = { Icon(Icons.Default.Search, contentDescription = null, tint = AmaradioAmber) },
+                    trailingIcon = if (searchQuery.isNotEmpty()) {
+                        {
+                            IconButton(onClick = { searchQuery = "" }) {
+                                Icon(Icons.Default.Clear, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                        }
+                    } else null,
+                    modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp).focusRequester(focusRequester),
+                    singleLine = true,
+                    shape = RoundedCornerShape(8.dp),
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = AmaradioAmber,
+                        unfocusedBorderColor = MaterialTheme.colorScheme.outline,
+                        unfocusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                        focusedContainerColor = MaterialTheme.colorScheme.surfaceVariant
+                    )
+                )
+
+                androidx.compose.foundation.lazy.LazyColumn(
+                    state = listState,
+                    modifier = Modifier.weight(1f),
+                    contentPadding = PaddingValues(vertical = 4.dp)
+                ) {
+                    items(
+                        items = filteredOptions, 
+                        key = { item -> item.code },
+                        contentType = { "category_item" }
+                    ) { item ->
+                        val isChecked = selectedCodes.contains(item.code)
+                        ListItem(
+                            headlineContent = { Text(item.label, style = MaterialTheme.typography.bodyLarge) },
+                            leadingContent = if (item.emoji.isNotEmpty()) {
+                                { Text(item.emoji, style = MaterialTheme.typography.titleLarge) }
+                            } else null,
+                            trailingContent = {
+                                Checkbox(
+                                    checked = isChecked,
+                                    onCheckedChange = { checked ->
+                                        if (checked) selectedCodes.add(item.code) else selectedCodes.remove(item.code)
+                                    },
+                                    colors = CheckboxDefaults.colors(checkedColor = AmaradioAmber)
+                                )
+                            },
+                            modifier = Modifier.clickable {
+                                if (isChecked) selectedCodes.remove(item.code) else selectedCodes.add(item.code)
+                            },
+                            colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
+                        )
+                        HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp), color = MaterialTheme.colorScheme.outline)
+                    }
+                }
+
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(top = 8.dp), 
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    TextButton(
+                        onClick = { selectedCodes.clear() },
+                        colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                    ) {
+                        Text(stringResource(R.string.no))
+                    }
+
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        TextButton(
+                            onClick = onDismiss,
+                            colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                        ) {
+                            Text(stringResource(R.string.label_button_cancel))
+                        }
+
+                        Button(
+                            onClick = {
+                                val selectedList = options.filter { selectedCodes.contains(it.code) }
+                                onConfirm(selectedList)
+                            },
+                            colors = ButtonDefaults.buttonColors(containerColor = AmaradioAmber, contentColor = Color.Black),
+                            shape = RoundedCornerShape(8.dp)
+                        ) {
+                            Text(stringResource(R.string.action_ok), fontWeight = FontWeight.Bold)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
