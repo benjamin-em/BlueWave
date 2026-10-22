@@ -142,6 +142,7 @@ fun FilterScreen(
                     .padding(start = 20.dp, end = 20.dp, bottom = 40.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
+                val context = LocalContext.current
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -152,8 +153,34 @@ fun FilterScreen(
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold
                     )
-                    IconButton(onClick = { showFilterSheet = false }) {
-                        Icon(Icons.Default.Close, contentDescription = stringResource(R.string.accessibility_close), tint = AmaradioAmber)
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp)
+                    ) {
+                        Button(
+                            onClick = { 
+                                if (currentTab.label.isBlank()) {
+                                    Toast.makeText(context, R.string.error_filter_name_required, Toast.LENGTH_SHORT).show()
+                                } else {
+                                    showFilterSheet = false
+                                    viewModel.performSearch(tabIndex) 
+                                }
+                            },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = AmaradioAmber,
+                                contentColor = Color.Black
+                            ),
+                            shape = RoundedCornerShape(8.dp),
+                            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp)
+                        ) {
+                            Icon(Icons.Default.Check, contentDescription = null, modifier = Modifier.size(18.dp))
+                            Spacer(Modifier.width(4.dp))
+                            Text(stringResource(R.string.filter_apply), fontWeight = FontWeight.Bold)
+                        }
+
+                        IconButton(onClick = { showFilterSheet = false }) {
+                            Icon(Icons.Default.Close, contentDescription = stringResource(R.string.accessibility_close), tint = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
                     }
                 }
 
@@ -217,24 +244,154 @@ fun FilterScreen(
                     }
                 )
 
-                CustomFilterField(
-                    label = stringResource(R.string.filter_tag),
-                    value = currentTab.tag,
-                    icon = Icons.Default.Tag,
-                    isReadOnly = true,
-                    onClear = { viewModel.clearTag(tabIndex) },
-                    dialogContent = { onDismiss ->
-                        SearchableSelectionDialog(
-                            title = stringResource(R.string.filter_tag),
-                            options = uiState.tags,
-                            onSelect = { item -> 
-                                viewModel.onTagSelect(tabIndex, item.label)
-                                onDismiss()
-                            },
-                            onDismiss = onDismiss
-                        )
+                // TAGS SECTION
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.filter_tag),
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(start = 4.dp)
+                    )
+
+                    // Tag Operator Selector (AND / OR / NOT - strictly English)
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(8.dp))
+                            .border(1.dp, MaterialTheme.colorScheme.outline, RoundedCornerShape(8.dp))
+                            .padding(2.dp),
+                        horizontalArrangement = Arrangement.SpaceEvenly,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        listOf("AND", "OR", "NOT").forEach { op ->
+                            val isSelected = currentTab.tagOperator == op
+                            Box(
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .height(36.dp)
+                                    .background(
+                                        if (isSelected) AmaradioAmber else Color.Transparent,
+                                        RoundedCornerShape(6.dp)
+                                    )
+                                    .clickable { viewModel.onTagOperatorSelect(tabIndex, op) },
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Text(
+                                    text = op,
+                                    style = MaterialTheme.typography.labelMedium,
+                                    fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                    color = if (isSelected) Color.Black else MaterialTheme.colorScheme.onSurface
+                                )
+                            }
+                        }
                     }
-                )
+
+                    // Slot 1
+                    val tag1Label = "${stringResource(R.string.filter_tag)} 1"
+                    CustomFilterField(
+                        label = tag1Label,
+                        value = currentTab.tag,
+                        icon = Icons.Default.Tag,
+                        isReadOnly = true,
+                        onClear = { viewModel.clearTag(tabIndex, 1) },
+                        dialogContent = { onDismiss ->
+                            SearchableSelectionDialog(
+                                title = tag1Label,
+                                options = uiState.tags,
+                                onSelect = { item -> 
+                                    viewModel.onTagSelect(tabIndex, item.label)
+                                    onDismiss()
+                                },
+                                onDismiss = onDismiss
+                            )
+                        }
+                    )
+
+                    // Slot 2
+                    val tag2Label = "${stringResource(R.string.filter_tag)} 2"
+                    CustomFilterField(
+                        label = tag2Label,
+                        value = currentTab.tag2,
+                        icon = Icons.Default.Tag,
+                        isReadOnly = true,
+                        onClear = { viewModel.clearTag(tabIndex, 2) },
+                        dialogContent = { onDismiss ->
+                            SearchableSelectionDialog(
+                                title = tag2Label,
+                                options = uiState.tags,
+                                onSelect = { item -> 
+                                    viewModel.onTag2Select(tabIndex, item.label)
+                                    onDismiss()
+                                },
+                                onDismiss = onDismiss
+                            )
+                        }
+                    )
+
+                    // Slot 3
+                    val tag3Label = "${stringResource(R.string.filter_tag)} 3"
+                    CustomFilterField(
+                        label = tag3Label,
+                        value = currentTab.tag3,
+                        icon = Icons.Default.Tag,
+                        isReadOnly = true,
+                        onClear = { viewModel.clearTag(tabIndex, 3) },
+                        dialogContent = { onDismiss ->
+                            SearchableSelectionDialog(
+                                title = tag3Label,
+                                options = uiState.tags,
+                                onSelect = { item -> 
+                                    viewModel.onTag3Select(tabIndex, item.label)
+                                    onDismiss()
+                                },
+                                onDismiss = onDismiss
+                            )
+                        }
+                    )
+                }
+
+                // CODEC & BITRATE SECTION
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.Bottom
+                ) {
+                    val codecOptions = remember { listOf("MP3", "AAC", "AAC+", "OGG", "FLAC") }
+                    DropdownFilterField(
+                        label = stringResource(R.string.filter_codec),
+                        value = currentTab.codec,
+                        options = codecOptions,
+                        icon = Icons.Default.GraphicEq,
+                        onSelect = { viewModel.onCodecSelect(tabIndex, it) },
+                        onClear = { viewModel.clearCodec(tabIndex) },
+                        modifier = Modifier.weight(1f)
+                    )
+
+                    val bitrateOptions = remember {
+                        listOf(32, 48, 64, 96, 128, 160, 192, 256, 320).map { "\u200E$it kbps" }
+                    }
+                    DropdownFilterField(
+                        label = stringResource(R.string.filter_bitrate),
+                        value = if (currentTab.bitrate > 0) "\u200E${currentTab.bitrate} kbps" else "",
+                        options = bitrateOptions,
+                        icon = Icons.Default.Speed,
+                        onSelect = { selectedStr ->
+                            val bitrateNum = selectedStr.filter { it.isDigit() }.toIntOrNull() ?: 0
+                            viewModel.onBitrateSelect(tabIndex, bitrateNum)
+                        },
+                        onClear = { viewModel.clearBitrate(tabIndex) },
+                        modifier = Modifier.weight(1.3f)
+                    )
+
+                    BitrateOperatorField(
+                        selectedOperator = currentTab.bitrateOperator,
+                        onOperatorChange = { viewModel.onBitrateOperatorSelect(tabIndex, it) },
+                        modifier = Modifier.width(68.dp)
+                    )
+                }
 
                 // SORTING
                 Row(
@@ -642,6 +799,164 @@ fun SearchableSelectionDialog(
                         Text(stringResource(R.string.label_button_cancel), fontWeight = FontWeight.Bold)
                     }
                 }
+            }
+        }
+    }
+}
+
+@Composable
+fun DropdownFilterField(
+    label: String,
+    value: String,
+    options: List<String>,
+    icon: ImageVector,
+    onSelect: (String) -> Unit,
+    onClear: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    var expanded by remember { mutableStateOf(false) }
+
+    Column(modifier = modifier) {
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(start = 4.dp, bottom = 2.dp)
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(44.dp)
+                .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(8.dp))
+                .border(1.dp, MaterialTheme.colorScheme.outline, RoundedCornerShape(8.dp))
+                .clickable { expanded = true }
+                .padding(horizontal = 8.dp)
+                .semantics(mergeDescendants = true) {
+                    role = Role.Button
+                    contentDescription = "$label: ${value.ifEmpty { "None" }}"
+                },
+            contentAlignment = Alignment.CenterStart
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = null,
+                    modifier = Modifier.size(16.dp),
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    text = value.ifEmpty { label },
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = if (value.isNotEmpty()) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(start = 6.dp).weight(1f),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                if (value.isNotEmpty()) {
+                    Icon(
+                        imageVector = Icons.Default.Clear,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(18.dp)
+                            .clickable { onClear() },
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                } else {
+                    Icon(
+                        imageVector = Icons.Default.ArrowDropDown,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+
+            DropdownMenu(
+                expanded = expanded,
+                onDismissRequest = { expanded = false },
+                modifier = Modifier.background(MaterialTheme.colorScheme.surface)
+            ) {
+                options.forEach { option ->
+                    DropdownMenuItem(
+                        text = {
+                            Text(
+                                text = option,
+                                style = MaterialTheme.typography.bodyMedium,
+                                fontWeight = if (option == value) FontWeight.Bold else FontWeight.Normal,
+                                color = if (option == value) AmaradioAmber else MaterialTheme.colorScheme.onSurface
+                            )
+                        },
+                        onClick = {
+                            onSelect(option)
+                            expanded = false
+                        }
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun BitrateOperatorField(
+    selectedOperator: String,
+    onOperatorChange: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val options = listOf(">=", "=", "<=")
+    var expanded by remember { mutableStateOf(false) }
+
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(44.dp)
+            .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(8.dp))
+            .border(1.dp, MaterialTheme.colorScheme.outline, RoundedCornerShape(8.dp))
+            .clickable { expanded = true }
+            .padding(horizontal = 8.dp)
+            .semantics(mergeDescendants = true) {
+                role = Role.Button
+                contentDescription = selectedOperator
+            },
+        contentAlignment = Alignment.CenterStart
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Text(
+                text = selectedOperator,
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(start = 4.dp),
+                color = MaterialTheme.colorScheme.onSurface
+            )
+            Icon(Icons.Default.ArrowDropDown, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        
+        DropdownMenu(
+            expanded = expanded,
+            onDismissRequest = { expanded = false },
+            modifier = Modifier.background(MaterialTheme.colorScheme.surface)
+        ) {
+            options.forEach { op ->
+                DropdownMenuItem(
+                    text = { 
+                        Text(
+                            text = op, 
+                            fontWeight = FontWeight.Bold, 
+                            color = MaterialTheme.colorScheme.onSurface
+                        ) 
+                    },
+                    onClick = {
+                        onOperatorChange(op)
+                        expanded = false
+                    }
+                )
             }
         }
     }

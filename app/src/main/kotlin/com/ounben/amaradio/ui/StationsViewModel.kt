@@ -124,7 +124,7 @@ class StationsViewModel(application: Application) : AndroidViewModel(application
             } else if (url.startsWith("json/stations/bytagexact/")) {
                 val tagQuery = java.net.URLDecoder.decode(url.substringAfter("bytagexact/"), "UTF-8")
                 val localStations = withContext(Dispatchers.IO) {
-                    AMARadioDatabase.getDatabase(app).stationDao().getStationsFiltered(null, null, null, null, null, tagQuery, "Name", 0)
+                    AMARadioDatabase.getDatabase(app).stationDao().getStationsFiltered(null, null, null, null, null, tagQuery, null, null, "AND", null, 0, ">=", "Name", 0)
                 }
                 if (localStations.isNotEmpty()) {
                     val decoded = localStations.map { it.toDataStation() }
@@ -134,7 +134,7 @@ class StationsViewModel(application: Application) : AndroidViewModel(application
             } else if (url.startsWith("json/stations/bylanguageexact/")) {
                 val langQuery = URLDecoder.decode(url.substringAfter("bylanguageexact/"), "UTF-8")
                 val localStations = withContext(Dispatchers.IO) {
-                    AMARadioDatabase.getDatabase(app).stationDao().getStationsFiltered(null, null, null, null, langQuery, null, "Name", 0)
+                    AMARadioDatabase.getDatabase(app).stationDao().getStationsFiltered(null, null, null, null, langQuery, null, null, null, "AND", null, 0, ">=", "Name", 0)
                 }
                 if (localStations.isNotEmpty()) {
                     val decoded = localStations.map { it.toDataStation() }

@@ -48,6 +48,12 @@ data class FilterTabItem(
     val languageCode: String = "",
     val languageLabel: String = "",
     val tag: String = "",
+    val tag2: String = "",
+    val tag3: String = "",
+    val tagOperator: String = "AND",
+    val codec: String = "",
+    val bitrate: Int = 0,
+    val bitrateOperator: String = ">=",
     val sortBy: String = "clickcount",
     val reverse: Boolean = true,
     @Transient val stations: List<DataRadioStation> = emptyList()
@@ -57,14 +63,18 @@ fun FilterTabItem.toEntity(pos: Int) = FilterTabEntity(
     id = id, label = label, name = name, countryCode = countryCode,
     countryLabel = countryLabel, countryEmoji = countryEmoji,
     languageCode = languageCode, languageLabel = languageLabel,
-    tag = tag, sortBy = sortBy, reverse = reverse, position = pos
+    tag = tag, tag2 = tag2, tag3 = tag3, tagOperator = tagOperator,
+    codec = codec, bitrate = bitrate, bitrateOperator = bitrateOperator,
+    sortBy = sortBy, reverse = reverse, position = pos
 )
 
 fun FilterTabEntity.toItem() = FilterTabItem(
     id = id, label = label, name = name, countryCode = countryCode,
     countryLabel = countryLabel, countryEmoji = countryEmoji,
     languageCode = languageCode, languageLabel = languageLabel,
-    tag = tag, sortBy = sortBy, reverse = reverse
+    tag = tag, tag2 = tag2, tag3 = tag3, tagOperator = tagOperator,
+    codec = codec, bitrate = bitrate, bitrateOperator = bitrateOperator,
+    sortBy = sortBy, reverse = reverse
 )
 
 class FilterViewModel(application: Application) : AndroidViewModel(application) {
@@ -307,9 +317,56 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
         updateTabAt(index) { it.copy(tag = selectedTag) }
         saveFilters()
     }
-    
-    fun clearTag(index: Int) {
-        updateTabAt(index) { it.copy(tag = "") }
+
+    fun onTag2Select(index: Int, selectedTag: String) {
+        updateTabAt(index) { it.copy(tag2 = selectedTag) }
+        saveFilters()
+    }
+
+    fun onTag3Select(index: Int, selectedTag: String) {
+        updateTabAt(index) { it.copy(tag3 = selectedTag) }
+        saveFilters()
+    }
+
+    fun onTagOperatorSelect(index: Int, operator: String) {
+        updateTabAt(index) { it.copy(tagOperator = operator) }
+        saveFilters()
+    }
+
+    fun clearTag(index: Int, slot: Int = 1) {
+        updateTabAt(index) {
+            when (slot) {
+                1 -> it.copy(tag = "")
+                2 -> it.copy(tag2 = "")
+                3 -> it.copy(tag3 = "")
+                else -> it.copy(tag = "")
+            }
+        }
+        saveFilters()
+    }
+
+    fun onCodecSelect(index: Int, selectedCodec: String) {
+        updateTabAt(index) { it.copy(codec = selectedCodec) }
+        saveFilters()
+    }
+
+    fun clearCodec(index: Int) {
+        updateTabAt(index) { it.copy(codec = "") }
+        saveFilters()
+    }
+
+    fun onBitrateSelect(index: Int, selectedBitrate: Int) {
+        updateTabAt(index) { it.copy(bitrate = selectedBitrate) }
+        saveFilters()
+    }
+
+    fun onBitrateOperatorSelect(index: Int, operator: String) {
+        updateTabAt(index) { it.copy(bitrateOperator = operator) }
+        saveFilters()
+    }
+
+    fun clearBitrate(index: Int) {
+        updateTabAt(index) { it.copy(bitrate = 0) }
         saveFilters()
     }
     
@@ -403,7 +460,13 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
                     w3 = queryWords.getOrNull(2),
                     countryCode = tab.countryCode.ifEmpty { null },
                     language = tab.languageCode.ifEmpty { null },
-                    tag = tab.tag.ifEmpty { null },
+                    tag1 = tab.tag.ifEmpty { null },
+                    tag2 = tab.tag2.ifEmpty { null },
+                    tag3 = tab.tag3.ifEmpty { null },
+                    tagOperator = tab.tagOperator,
+                    codec = tab.codec.ifEmpty { null },
+                    bitrate = tab.bitrate,
+                    bitrateOperator = tab.bitrateOperator,
                     orderBy = tab.sortBy,
                     reverse = if (tab.reverse) 1 else 0
                 )

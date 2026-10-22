@@ -101,7 +101,13 @@ class AMARadioBrowser(private val app: AMARadioApp) {
                             w3 = words.getOrNull(2),
                             countryCode = null,
                             language = null,
-                            tag = null,
+                            tag1 = null,
+                            tag2 = null,
+                            tag3 = null,
+                            tagOperator = "AND",
+                            codec = null,
+                            bitrate = 0,
+                            bitrateOperator = ">=",
                             orderBy = "Name",
                             reverse = 0
                         ).map { it.toDataStation() }
@@ -146,7 +152,13 @@ class AMARadioBrowser(private val app: AMARadioApp) {
             w3 = words.getOrNull(2),
             countryCode = tab.countryCode.ifEmpty { null },
             language = tab.languageCode.ifEmpty { null },
-            tag = tab.tag.ifEmpty { null },
+            tag1 = tab.tag.ifEmpty { null },
+            tag2 = tab.tag2.ifEmpty { null },
+            tag3 = tab.tag3.ifEmpty { null },
+            tagOperator = tab.tagOperator,
+            codec = tab.codec.ifEmpty { null },
+            bitrate = tab.bitrate,
+            bitrateOperator = tab.bitrateOperator,
             orderBy = tab.sortBy,
             reverse = if (tab.reverse) 1 else 0
         )
@@ -183,7 +195,13 @@ class AMARadioBrowser(private val app: AMARadioApp) {
                 w3 = words.getOrNull(2),
                 countryCode = null,
                 language = null,
-                tag = null,
+                tag1 = null,
+                tag2 = null,
+                tag3 = null,
+                tagOperator = "AND",
+                codec = null,
+                bitrate = 0,
+                bitrateOperator = ">=",
                 orderBy = "Name",
                 reverse = 0
             ).map { it.toDataStation() }
@@ -219,7 +237,13 @@ class AMARadioBrowser(private val app: AMARadioApp) {
             w3 = keywords.getOrNull(2), 
             countryCode = null, 
             language = null, 
-            tag = null, 
+            tag1 = null,
+            tag2 = null,
+            tag3 = null,
+            tagOperator = "AND", 
+            codec = null,
+            bitrate = 0,
+            bitrateOperator = ">=",
             orderBy = "Name", 
             reverse = 0
         )

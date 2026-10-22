@@ -64,6 +64,12 @@ data class FilterTabEntity(
     val languageCode: String,
     val languageLabel: String,
     val tag: String,
+    val tag2: String = "",
+    val tag3: String = "",
+    val tagOperator: String = "AND",
+    val codec: String = "",
+    val bitrate: Int = 0,
+    val bitrateOperator: String = ">=",
     val sortBy: String,
     val reverse: Boolean,
     val position: Int // To maintain user order

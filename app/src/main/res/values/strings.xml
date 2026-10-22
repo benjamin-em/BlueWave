@@ -347,6 +347,8 @@
     <string name="filter_country">Country</string>
     <string name="filter_tag">Tag</string>
     <string name="filter_language">Language</string>
+    <string name="filter_codec" translatable="false">Codec</string>
+    <string name="filter_bitrate" translatable="false">Bitrate</string>
     <string name="filter_sort_by">Sort by</string>
     <string name="filter_reverse">Reverse order</string>
     <string name="filter_apply">Apply Filter</string>

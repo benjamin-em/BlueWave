@@ -19,7 +19,7 @@ import com.ounben.amaradio.history.TrackHistoryEntry
         TrackHistoryEntry::class,
         CustomStationEntity::class
     ], 
-    version = 4,
+    version = 6,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -155,6 +155,22 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
             }
         }
 
+        private val MIGRATION_4_5 = object : Migration(4, 5) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `filter_tab` ADD COLUMN `tag2` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `filter_tab` ADD COLUMN `tag3` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `filter_tab` ADD COLUMN `tagOperator` TEXT NOT NULL DEFAULT 'AND'")
+            }
+        }
+
+        private val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `filter_tab` ADD COLUMN `codec` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `filter_tab` ADD COLUMN `bitrate` INTEGER NOT NULL DEFAULT 0")
+                db.execSQL("ALTER TABLE `filter_tab` ADD COLUMN `bitrateOperator` TEXT NOT NULL DEFAULT '>='")
+            }
+        }
+
         fun getDatabase(context: Context): AMARadioUserDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
@@ -162,8 +178,8 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
                     AMARadioUserDatabase::class.java,
                     "user_data.db"
                 )
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
-                .fallbackToDestructiveMigrationFrom(true, 5) // Nur bei künftigen Fehlern ab v5 zerstörerisch
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
+                .fallbackToDestructiveMigrationFrom(true, 7) // Nur bei künftigen Fehlern ab v7 zerstörerisch
                 .addCallback(CALLBACK)
                 .build()
                 INSTANCE = instance

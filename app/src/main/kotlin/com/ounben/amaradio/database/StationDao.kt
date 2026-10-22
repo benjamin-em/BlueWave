@@ -43,7 +43,35 @@ interface StationDao {
         AND (:w3 IS NULL OR (Name LIKE '%' || :w3 || '%' OR Tags LIKE '%' || :w3 || '%'))
         AND (:countryCode IS NULL OR CountryCode = :countryCode)
         AND (:language IS NULL OR Language LIKE '%' || :language || '%')
-        AND (:tag IS NULL OR Tags LIKE '%' || :tag || '%')
+        AND (:codec IS NULL OR Codec LIKE '%' || :codec || '%')
+        AND (
+            CASE 
+                WHEN :bitrate <= 0 THEN 1
+                WHEN :bitrateOperator = '<=' THEN (Bitrate > 0 AND Bitrate <= :bitrate)
+                WHEN :bitrateOperator = '=' THEN (Bitrate = :bitrate)
+                ELSE (Bitrate >= :bitrate)
+            END
+        )
+        AND (
+            CASE 
+                WHEN :tagOperator = 'OR' THEN (
+                    (:tag1 IS NULL AND :tag2 IS NULL AND :tag3 IS NULL)
+                    OR (:tag1 IS NOT NULL AND Tags LIKE '%' || :tag1 || '%')
+                    OR (:tag2 IS NOT NULL AND Tags LIKE '%' || :tag2 || '%')
+                    OR (:tag3 IS NOT NULL AND Tags LIKE '%' || :tag3 || '%')
+                )
+                WHEN :tagOperator = 'NOT' THEN (
+                    (:tag1 IS NULL OR Tags NOT LIKE '%' || :tag1 || '%')
+                    AND (:tag2 IS NULL OR Tags NOT LIKE '%' || :tag2 || '%')
+                    AND (:tag3 IS NULL OR Tags NOT LIKE '%' || :tag3 || '%')
+                )
+                ELSE (
+                    (:tag1 IS NULL OR Tags LIKE '%' || :tag1 || '%')
+                    AND (:tag2 IS NULL OR Tags LIKE '%' || :tag2 || '%')
+                    AND (:tag3 IS NULL OR Tags LIKE '%' || :tag3 || '%')
+                )
+            END
+        )
         ORDER BY 
             CASE WHEN :orderBy = 'clickcount' AND :reverse = 1 THEN clickcount END DESC,
             CASE WHEN :orderBy = 'clickcount' AND :reverse = 0 THEN clickcount END ASC,
@@ -58,7 +86,9 @@ interface StationDao {
     """)
     suspend fun getStationsFiltered(
         w1: String?, w2: String?, w3: String?, 
-        countryCode: String?, language: String?, tag: String?, 
+        countryCode: String?, language: String?, 
+        tag1: String?, tag2: String?, tag3: String?, tagOperator: String,
+        codec: String?, bitrate: Int, bitrateOperator: String,
         orderBy: String, reverse: Int
     ): List<StationEntity>
 
