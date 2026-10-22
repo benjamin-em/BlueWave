@@ -97,10 +97,12 @@ fun TabsScreen(
                     containerColor = Color.Transparent,
                     contentColor = MaterialTheme.colorScheme.onSecondary,
                     indicator = {
-                        TabRowDefaults.SecondaryIndicator(
-                            Modifier.tabIndicatorOffset(safeSelectedIndex),
-                            color = MaterialTheme.colorScheme.primary
-                        )
+                        if (safeSelectedIndex in 0 until tabs.size) {
+                            TabRowDefaults.SecondaryIndicator(
+                                Modifier.tabIndicatorOffset(safeSelectedIndex),
+                                color = MaterialTheme.colorScheme.primary
+                            )
+                        }
                     },
                     divider = {}
                 ) {

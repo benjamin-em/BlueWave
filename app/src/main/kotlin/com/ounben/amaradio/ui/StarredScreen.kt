@@ -37,24 +37,26 @@ fun StarredScreen(
             containerColor = MaterialTheme.colorScheme.secondary,
             contentColor = MaterialTheme.colorScheme.onSecondary,
             indicator = {
-                TabRowDefaults.SecondaryIndicator(
-                    Modifier.tabIndicatorOffset(safeSelectedIndex, matchContentSize = false),
-                    color = MaterialTheme.colorScheme.primary
-                )
+                if (safeSelectedIndex in 0..1) {
+                    TabRowDefaults.SecondaryIndicator(
+                        Modifier.tabIndicatorOffset(safeSelectedIndex, matchContentSize = false),
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
             },
             divider = {}
         ) {
-            Tab(
-                selected = pagerState.currentPage == 0,
-                onClick = { coroutineScope.launch { pagerState.animateScrollToPage(0) } },
-                text = { Text(text = stringResource(R.string.nav_item_starred)) }
-            )
-            Tab(
-                selected = pagerState.currentPage == 1,
-                onClick = { coroutineScope.launch { pagerState.animateScrollToPage(1) } },
-                text = { Text(text = stringResource(R.string.tab_custom_stations)) }
-            )
-        }
+                Tab(
+                    selected = pagerState.currentPage == 0,
+                    onClick = { coroutineScope.launch { pagerState.animateScrollToPage(0) } },
+                    text = { Text(text = stringResource(R.string.nav_item_starred)) }
+                )
+                Tab(
+                    selected = pagerState.currentPage == 1,
+                    onClick = { coroutineScope.launch { pagerState.animateScrollToPage(1) } },
+                    text = { Text(text = stringResource(R.string.tab_custom_stations)) }
+                )
+            }
 
         HorizontalPager(
             state = pagerState,

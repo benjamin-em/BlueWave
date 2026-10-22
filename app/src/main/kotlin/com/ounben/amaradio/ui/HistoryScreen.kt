@@ -50,10 +50,12 @@ fun HistoryScreen(
             containerColor = MaterialTheme.colorScheme.secondary,
             contentColor = MaterialTheme.colorScheme.onSecondary,
             indicator = {
-                TabRowDefaults.SecondaryIndicator(
-                    Modifier.tabIndicatorOffset(safeSelectedIndex),
-                    color = MaterialTheme.colorScheme.primary
-                )
+                if (safeSelectedIndex in 0..1) {
+                    TabRowDefaults.SecondaryIndicator(
+                        Modifier.tabIndicatorOffset(safeSelectedIndex),
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
             },
             divider = {}
         ) {

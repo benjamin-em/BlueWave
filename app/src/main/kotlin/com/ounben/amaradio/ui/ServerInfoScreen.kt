@@ -46,15 +46,19 @@ fun ServerInfoScreen(
             )
         }
 
+        val safeSelectedIndex = selectedTabIndex.coerceIn(0, 1)
+
         SecondaryTabRow(
-            selectedTabIndex = selectedTabIndex,
+            selectedTabIndex = safeSelectedIndex,
             containerColor = MaterialTheme.colorScheme.surface,
             contentColor = AmaradioAmber,
             indicator = {
-                TabRowDefaults.SecondaryIndicator(
-                    Modifier.tabIndicatorOffset(selectedTabIndex),
-                    color = AmaradioAmber
-                )
+                if (safeSelectedIndex in 0..1) {
+                    TabRowDefaults.SecondaryIndicator(
+                        Modifier.tabIndicatorOffset(safeSelectedIndex),
+                        color = AmaradioAmber
+                    )
+                }
             }
         ) {
             Tab(
