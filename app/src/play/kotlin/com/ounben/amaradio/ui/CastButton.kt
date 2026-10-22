@@ -34,6 +34,8 @@ import com.ounben.amaradio.R
 import com.ounben.amaradio.Utils
 import com.ounben.amaradio.cast.CastManager
 
+private const val TAG = "ama_cast_castbutton"
+
 @Composable
 fun CastButton(modifier: Modifier = Modifier) {
     CastButtonWithPermission(modifier)
@@ -88,7 +90,7 @@ fun CastButtonWithPermission(modifier: Modifier = Modifier) {
                             try {
                                 CastButtonFactory.setUpMediaRouteButton(ctx, this)
                             } catch (e: Exception) {
-                                android.util.Log.e("AMARadioCast", "Cast route button setup failed", e)
+                                android.util.Log.e(TAG, "Cast route button setup failed", e)
                             }
                         }
                     }

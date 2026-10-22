@@ -23,6 +23,7 @@ import kotlinx.coroutines.launch
 @androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)
 class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener {
     private val tag = "RadioPlayer"
+    private val castTag = "ama_cast_radioplayer"
 
     interface PlayerListener {
         fun onStateChanged(status: PlayState, audioSessionId: Int)
@@ -72,7 +73,9 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
 
     private fun prepareNewStream() {
         if (Utils.isDebug) Log.d(tag, "Preparing fresh stream state (instance remains)")
-        currentPlayer.stop()
+        if (currentPlayer.isLocal) {
+            currentPlayer.stop()
+        }
     }
 
     private var lastLiveInfo: StreamLiveInfo? = null
@@ -112,6 +115,7 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
     }
 
     private fun switchToCast() {
+        Log.d(castTag, "switchToCast: switching playback engine to CastPlayer")
         val manager = CastManager.getInstance() ?: return
         val player = manager.castPlayer ?: return
         
@@ -134,6 +138,7 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
     }
 
     private fun switchToLocal() {
+        Log.d(castTag, "switchToLocal: switching playback engine back to Local ExoPlayer")
         if (currentPlayer != localPlayer) {
             val wasPlaying = isPlaying()
             currentPlayer.stop()
@@ -192,6 +197,7 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
 
     private fun executeActualPlayRemote(stationURL: String, streamName: String?, metadata: androidx.media3.common.MediaMetadata?) {
         if (!userWantPlaying || isPausing) return
+        Log.d(castTag, "executeActualPlayRemote: calling playRemote for station '$streamName' ($stationURL)")
         setState(PlayState.PrePlaying, -1)
         this.streamName = streamName
         val app = mainContext.applicationContext as AMARadioApp

@@ -78,7 +78,7 @@ import java.io.FileOutputStream
 @Suppress("DEPRECATION")
 @androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)
 class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
-    private val tag = "PLAY"
+    private val tag = "PlayerService"
     private var sharedPref: SharedPreferences? = null
     private var trackHistoryRepository: TrackHistoryRepository? = null
     private var itsContext: Context? = null
@@ -536,15 +536,16 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
                 
                 // 1. Update Player Playlist Metadata
                 radioPlayer?.player?.let { player ->
-                    player.playlistMetadata = metadata
-                    
-                    val itemIndex = player.currentMediaItemIndex.coerceAtLeast(0)
-                    if (player.mediaItemCount > itemIndex) {
-                        val currentItem = player.getMediaItemAt(itemIndex)
-                        val updatedItem = currentItem.buildUpon()
-                            .setMediaMetadata(metadata)
-                            .build()
-                        player.replaceMediaItem(itemIndex, updatedItem)
+                    if (radioPlayer?.isLocal == true) {
+                        player.playlistMetadata = metadata
+                        val itemIndex = player.currentMediaItemIndex.coerceAtLeast(0)
+                        if (player.mediaItemCount > itemIndex) {
+                            val currentItem = player.getMediaItemAt(itemIndex)
+                            val updatedItem = currentItem.buildUpon()
+                                .setMediaMetadata(metadata)
+                                .build()
+                            player.replaceMediaItem(itemIndex, updatedItem)
+                        }
                     }
                 }
                 
@@ -898,22 +899,24 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             currentStationBitmap = bitmap
             
             radioPlayer?.player?.let { player ->
-                // 1. Update Playlist Metadata (Standard way)
-                if (player.playlistMetadata.title != metadata.title || player.playlistMetadata.artist != metadata.artist) {
-                    player.playlistMetadata = metadata
-                }
+                if (radioPlayer?.isLocal == true) {
+                    // 1. Update Playlist Metadata (Standard way)
+                    if (player.playlistMetadata.title != metadata.title || player.playlistMetadata.artist != metadata.artist) {
+                        player.playlistMetadata = metadata
+                    }
 
-                // 2. Update current MediaItem metadata ONLY if it's a real title change 
-                // and we are not currently trying to pause/stop.
-                if (liveTitle.isNotEmpty() && !stationChanged && player.isPlaying) {
-                    val itemIndex = player.currentMediaItemIndex.coerceAtLeast(0)
-                    if (player.mediaItemCount > itemIndex) {
-                        val currentItem = player.getMediaItemAt(itemIndex)
-                        if (currentItem.mediaMetadata.title != metadata.title) {
-                            val updatedItem = currentItem.buildUpon()
-                                .setMediaMetadata(metadata)
-                                .build()
-                            player.replaceMediaItem(itemIndex, updatedItem)
+                    // 2. Update current MediaItem metadata ONLY if it's a real title change 
+                    // and we are not currently trying to pause/stop.
+                    if (liveTitle.isNotEmpty() && !stationChanged && player.isPlaying) {
+                        val itemIndex = player.currentMediaItemIndex.coerceAtLeast(0)
+                        if (player.mediaItemCount > itemIndex) {
+                            val currentItem = player.getMediaItemAt(itemIndex)
+                            if (currentItem.mediaMetadata.title != metadata.title) {
+                                val updatedItem = currentItem.buildUpon()
+                                    .setMediaMetadata(metadata)
+                                    .build()
+                                player.replaceMediaItem(itemIndex, updatedItem)
+                            }
                         }
                     }
                 }
@@ -1230,25 +1233,33 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             }
 
             override fun getPlaylistMetadata(): MediaMetadata {
+                val station = itsCurrentStation ?: return MediaMetadata.EMPTY
+                if (radioPlayer?.isLocal == false) {
+                    val liveTitle = liveInfo.title.ifEmpty { station.Name }
+                    return Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
+                }
                 val realMetadata = super.getPlaylistMetadata()
-                val station = itsCurrentStation ?: return realMetadata
                 
                 // FORCE: If type is Radio Station (21) or title is missing, sanitize it to MUSIC (1).
                 if (realMetadata.title == null || realMetadata.mediaType == MediaMetadata.MEDIA_TYPE_RADIO_STATION) {
                     val liveTitle = liveInfo.title.ifEmpty { station.Name }
-                    return com.ounben.amaradio.players.exoplayer.Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
+                    return Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
                 }
                 return realMetadata
             }
 
             override fun getMediaMetadata(): MediaMetadata {
+                val station = itsCurrentStation ?: return MediaMetadata.EMPTY
+                if (radioPlayer?.isLocal == false) {
+                    val liveTitle = liveInfo.title.ifEmpty { station.Name }
+                    return Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
+                }
                 val realMetadata = super.getMediaMetadata()
-                val station = itsCurrentStation ?: return realMetadata
 
                 // FORCE: If transition is active or metadata is incomplete, use our verified builder.
                 if (isTransitioning || realMetadata.title == null || realMetadata.artworkUri == null || realMetadata.mediaType == MediaMetadata.MEDIA_TYPE_RADIO_STATION) {
                     val liveTitle = liveInfo.title.ifEmpty { station.Name }
-                    return com.ounben.amaradio.players.exoplayer.Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
+                    return Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
                 }
                 return realMetadata
             }
@@ -1260,15 +1271,25 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             }
 
             override fun getCurrentMediaItem(): androidx.media3.common.MediaItem? {
+                val station = itsCurrentStation
+                if (radioPlayer?.isLocal == false && station != null) {
+                    val streamUrl = (if (!station.playableUrl.isNullOrEmpty()) station.playableUrl else station.StreamUrl) ?: ""
+                    val liveTitle = liveInfo.title.ifEmpty { station.Name }
+                    val metadata = Media3Utils.buildMetadata(station, liveTitle, currentStationBitmap)
+                    return Media3Utils.buildLiveMediaItem(
+                        android.net.Uri.parse(streamUrl), 
+                        metadata,
+                        station.StationUuid
+                    )
+                }
                 val realItem = super.getCurrentMediaItem()
                 // Force a valid item during transitions or if the engine reports null
-                if ((realItem == null || isTransitioning) && itsCurrentStation != null) {
-                    val station = itsCurrentStation!!
+                if ((realItem == null || isTransitioning) && station != null) {
                     val streamUrl = (if (!station.playableUrl.isNullOrEmpty()) station.playableUrl else station.StreamUrl) ?: ""
                     
-                    val metadata = com.ounben.amaradio.players.exoplayer.Media3Utils.buildMetadata(station, station.Name, currentStationBitmap)
+                    val metadata = Media3Utils.buildMetadata(station, station.Name, currentStationBitmap)
                     
-                    return com.ounben.amaradio.players.exoplayer.Media3Utils.buildLiveMediaItem(
+                    return Media3Utils.buildLiveMediaItem(
                         android.net.Uri.parse(streamUrl), 
                         metadata,
                         station.StationUuid
