@@ -40,7 +40,7 @@ fun TabsScreen(
 ) {
     val context = LocalContext.current
     val app = context.applicationContext as AMARadioApp
-    val countryCode = remember { Utils.getCountryCode(context) ?: "US" }
+    val countryCode = Utils.getCountryCode(context) ?: "DE"
     val filterViewModel: FilterViewModel = viewModel()
     val filterState by filterViewModel.uiState.collectAsState()
     val coroutineScope = rememberCoroutineScope()
@@ -115,8 +115,19 @@ fun TabsScreen(
                                 }
                             },
                             text = { 
+                                val manualCountry = remember {
+                                    val sp = androidx.preference.PreferenceManager.getDefaultSharedPreferences(context)
+                                    sp.getString("settings_manual_country_code", "SYSTEM") ?: "SYSTEM"
+                                }
                                 val title = when (tab) {
-                                    is MainTab.Local -> stringResource(R.string.action_local)
+                                    is MainTab.Local -> {
+                                        if (manualCountry.isNotEmpty() && manualCountry != "SYSTEM") {
+                                            val flag = com.ounben.amaradio.utils.EmojiUtils.getFlagEmoji(manualCountry.uppercase()) ?: ""
+                                            if (flag.isNotEmpty()) "$flag ${manualCountry.uppercase()}" else manualCountry.uppercase()
+                                        } else {
+                                            stringResource(R.string.action_local)
+                                        }
+                                    }
                                     is MainTab.Filter -> tab.label.ifBlank { "..." }
                                 }
                                 

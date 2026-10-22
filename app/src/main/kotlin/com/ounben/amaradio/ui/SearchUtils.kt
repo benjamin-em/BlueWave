@@ -23,7 +23,7 @@ object SearchUtils {
         val wordsInQuery = q.split(SPACE_SPLIT_REGEX).filter { it.isNotBlank() }
         if (wordsInQuery.isEmpty()) return options
 
-        val filtered = options.filter { item ->
+        val filtered = options.distinctBy { "${it.code}_${it.label}" }.filter { item ->
             val label = item.label.lowercase()
             val code = item.code.lowercase()
             wordsInQuery.all { w -> label.contains(w) || code.contains(w) }

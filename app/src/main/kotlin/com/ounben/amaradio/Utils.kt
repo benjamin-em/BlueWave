@@ -86,10 +86,41 @@ object Utils {
 
     @JvmStatic
     fun getCountryCode(context: Context): String? {
-        val tm = context.getSystemService(Context.TELEPHONY_SERVICE) as? android.telephony.TelephonyManager
-        return tm?.networkCountryIso?.takeIf { it.length == 2 }
-            ?: tm?.simCountryIso?.takeIf { it.length == 2 }
-            ?: context.resources.configuration.locales[0].country.takeIf { it.length == 2 }
+        val sharedPref = PreferenceManager.getDefaultSharedPreferences(context)
+        val manualCountry = sharedPref.getString("settings_manual_country_code", "SYSTEM")
+        if (!manualCountry.isNullOrEmpty() && manualCountry != "SYSTEM") {
+            return manualCountry.uppercase()
+        }
+
+        val defaultLocale = java.util.Locale.getDefault()
+        if (defaultLocale.country.length == 2) {
+            return defaultLocale.country.uppercase()
+        }
+
+        val locales = context.resources.configuration.locales
+        for (i in 0 until locales.size()) {
+            val country = locales.get(i).country
+            if (country.length == 2) {
+                return country.uppercase()
+            }
+        }
+
+        val systemLocales = android.content.res.Resources.getSystem().configuration.locales
+        for (i in 0 until systemLocales.size()) {
+            val country = systemLocales.get(i).country
+            if (country.length == 2) {
+                return country.uppercase()
+            }
+        }
+
+        return when (defaultLocale.language.lowercase()) {
+            "de" -> "DE"
+            "fr" -> "FR"
+            "it" -> "IT"
+            "es" -> "ES"
+            "nl" -> "NL"
+            else -> "US"
+        }
     }
 
     @JvmStatic

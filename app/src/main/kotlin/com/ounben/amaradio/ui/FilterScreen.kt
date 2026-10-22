@@ -9,6 +9,7 @@ import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
@@ -759,11 +760,11 @@ fun MultiSearchableSelectionDialog(
                     modifier = Modifier.weight(1f),
                     contentPadding = PaddingValues(vertical = 4.dp)
                 ) {
-                    items(
+                    itemsIndexed(
                         items = filteredOptions, 
-                        key = { item -> item.code },
-                        contentType = { "category_item" }
-                    ) { item ->
+                        key = { index, item -> "${item.code}_${item.label}_$index" },
+                        contentType = { _, _ -> "category_item" }
+                    ) { _, item ->
                         val isChecked = selectedCodes.contains(item.code)
                         ListItem(
                             headlineContent = { Text(item.label, style = MaterialTheme.typography.bodyLarge) },
@@ -920,11 +921,11 @@ fun SearchableSelectionDialog(
                     modifier = Modifier.weight(1f),
                     contentPadding = PaddingValues(vertical = 4.dp)
                 ) {
-                    items(
+                    itemsIndexed(
                         items = filteredOptions, 
-                        key = { item -> "${item.code}_${item.label}_${item.count}" },
-                        contentType = { "category_item" }
-                    ) { item ->
+                        key = { index, item -> "${item.code}_${item.label}_$index" },
+                        contentType = { _, _ -> "category_item" }
+                    ) { _, item ->
                         ListItem(
                             headlineContent = { Text(item.label, style = MaterialTheme.typography.bodyLarge) },
                             supportingContent = if (showCount && item.count > 0) {

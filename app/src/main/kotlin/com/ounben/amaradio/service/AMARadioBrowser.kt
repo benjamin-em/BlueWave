@@ -262,6 +262,26 @@ class AMARadioBrowser(private val app: AMARadioApp) {
         val mediaItems = ArrayList<MediaItem>()
         val packageName = app.packageName
 
+        // 1. Lokal (Matches the Local tab in AMARadio station list)
+        val sp = androidx.preference.PreferenceManager.getDefaultSharedPreferences(app)
+        val manualCountry = sp.getString("settings_manual_country_code", "SYSTEM")
+        val localTitle = if (!manualCountry.isNullOrEmpty() && manualCountry != "SYSTEM") {
+            val flag = com.ounben.amaradio.utils.EmojiUtils.getFlagEmoji(manualCountry.uppercase()) ?: ""
+            if (flag.isNotEmpty()) "$flag ${manualCountry.uppercase()}" else manualCountry.uppercase()
+        } else {
+            resources.getString(R.string.action_local)
+        }
+
+        val localIconUri = Uri.parse("android.resource://$packageName/drawable/ic_radio_white_24dp")
+        mediaItems.add(MediaItem.Builder()
+            .setMediaId(MEDIA_ID_FILTER_PREFIX + "local")
+            .setMediaMetadata(com.ounben.amaradio.players.exoplayer.Media3Utils.buildFolderMetadata(
+                localTitle,
+                localIconUri
+            ))
+            .build())
+
+        // 2. Favorit
         val favoriteIconUri = Uri.parse("android.resource://$packageName/drawable/ic_star_white_24")
         mediaItems.add(MediaItem.Builder()
             .setMediaId(MEDIA_ID_MUSICS_FAVORITE)
@@ -271,15 +291,7 @@ class AMARadioBrowser(private val app: AMARadioApp) {
             ))
             .build())
 
-        val customIconUri = Uri.parse("android.resource://$packageName/drawable/ic_list_white_24dp")
-        mediaItems.add(MediaItem.Builder()
-            .setMediaId(MEDIA_ID_MUSICS_CUSTOM)
-            .setMediaMetadata(com.ounben.amaradio.players.exoplayer.Media3Utils.buildFolderMetadata(
-                resources.getString(R.string.tab_custom_stations),
-                customIconUri
-            ))
-            .build())
-            
+        // 3. History
         val historyIconUri = Uri.parse("android.resource://$packageName/drawable/ic_restore_white_24")
         mediaItems.add(MediaItem.Builder()
             .setMediaId(MEDIA_ID_MUSICS_HISTORY)
@@ -289,6 +301,7 @@ class AMARadioBrowser(private val app: AMARadioApp) {
             ))
             .build())
 
+        // 4. Filter
         val filterIconUri = Uri.parse("android.resource://$packageName/drawable/ic_list_white_24dp")
         mediaItems.add(MediaItem.Builder()
             .setMediaId(MEDIA_ID_FILTERS_GROUP)

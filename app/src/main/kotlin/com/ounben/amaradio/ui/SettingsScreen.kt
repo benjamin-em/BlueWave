@@ -32,6 +32,14 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
 import com.ounben.amaradio.AMARadioApp
 import com.ounben.amaradio.R
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
+
+@Serializable
+private data class CountryJson(
+    val name: String? = null,
+    val code: String? = null
+)
 
 @Composable
 fun SettingsScreen(
@@ -214,6 +222,61 @@ fun SettingsScreen(
                     icon = Icons.Default.Language,
                     onValueChange = { viewModel.updateString("settings_language", it) }
                 )
+
+                // Local Country Preference
+                var showCountryDialog by remember { mutableStateOf(false) }
+                val currentCountryCode = uiState.localCountry
+                val currentCountryDisplay = if (currentCountryCode == "SYSTEM") {
+                    stringResource(R.string.theme_system)
+                } else {
+                    val flag = com.ounben.amaradio.utils.EmojiUtils.getFlagEmoji(currentCountryCode) ?: ""
+                    val countryName = com.ounben.amaradio.CountryCodeDictionary.instance.getCountryByCode(currentCountryCode) ?: currentCountryCode
+                    if (flag.isNotEmpty()) "$flag $countryName ($currentCountryCode)" else "$countryName ($currentCountryCode)"
+                }
+
+                SettingsClickable(
+                    title = stringResource(R.string.filter_country),
+                    summary = currentCountryDisplay,
+                    icon = Icons.Default.Public,
+                    onClick = { showCountryDialog = true }
+                )
+
+                if (showCountryDialog) {
+                    val systemLabel = stringResource(R.string.theme_system)
+                    val countryOptions = remember(systemLabel) {
+                        val list = mutableListOf(
+                            FilterViewModel.CategoryItem("SYSTEM", systemLabel, emoji = "🌐", count = 0)
+                        )
+                        val app = context.applicationContext as AMARadioApp
+                        try {
+                            val inputStream = app.resources.openRawResource(R.raw.countries)
+                            val jsonContent = inputStream.bufferedReader().use { it.readText() }
+                            val json = Json { ignoreUnknownKeys = true }
+                            val countries = json.decodeFromString<List<CountryJson>>(jsonContent)
+                            val categories = countries.mapNotNull { item ->
+                                val code = item.code?.uppercase() ?: return@mapNotNull null
+                                val rawName = item.name ?: code
+                                val label = com.ounben.amaradio.CountryCodeDictionary.instance.getCountryByCode(code) ?: rawName
+                                val emoji = com.ounben.amaradio.utils.EmojiUtils.getFlagEmoji(code) ?: ""
+                                FilterViewModel.CategoryItem(code, label, emoji = emoji, count = 0)
+                            }.sortedBy { it.label }
+                            list.addAll(categories)
+                        } catch (e: Exception) {
+                            android.util.Log.e("SettingsScreen", "Error parsing countries", e)
+                        }
+                        list
+                    }
+                    SearchableSelectionDialog(
+                        title = stringResource(R.string.filter_country),
+                        options = countryOptions,
+                        showCount = false,
+                        onSelect = { item ->
+                            viewModel.updateString("settings_manual_country_code", item.code)
+                            showCountryDialog = false
+                        },
+                        onDismiss = { showCountryDialog = false }
+                    )
+                }
             }
 
             // Startup Behaviour
