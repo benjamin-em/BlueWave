@@ -7,10 +7,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -73,29 +71,27 @@ fun SleepTimerDialog(onDismiss: () -> Unit) {
             }
         },
         confirmButton = {
-            Button(
+            TextButton(
                 onClick = {
                     PlayerServiceUtil.clearTimer()
                     PlayerServiceUtil.addTimer(sliderValue.toInt() * 60)
                     sharedPref.edit { putInt("sleep_timer_default_minutes", sliderValue.toInt()) }
                     onDismiss()
                 },
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                shape = RoundedCornerShape(8.dp)
+                colors = ButtonDefaults.textButtonColors(contentColor = AmaradioAmber)
             ) {
-                Text(stringResource(R.string.sleep_timer_apply), fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.sleep_timer_apply), fontWeight = FontWeight.Bold, color = AmaradioAmber)
             }
         },
         dismissButton = {
-            Button(
+            TextButton(
                 onClick = {
                     PlayerServiceUtil.clearTimer()
                     onDismiss()
                 },
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                shape = RoundedCornerShape(8.dp)
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
             ) {
-                Text(stringResource(R.string.sleep_timer_clear), fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.sleep_timer_clear), color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     )
@@ -153,12 +149,11 @@ fun PlayerSelectorDialogCompose(
             }
         },
         confirmButton = {
-            Button(
+            TextButton(
                 onClick = onDismiss,
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                shape = RoundedCornerShape(8.dp)
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
             ) {
-                Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     )
@@ -289,34 +284,31 @@ fun ProxySettingsDialogCompose(onDismiss: () -> Unit) {
             }
         },
         confirmButton = {
-            Button(
+            TextButton(
                 onClick = {
                     viewModel.save()
                     onDismiss()
                 },
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                shape = RoundedCornerShape(8.dp)
+                colors = ButtonDefaults.textButtonColors(contentColor = AmaradioAmber)
             ) {
-                Text(stringResource(R.string.action_ok), fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.action_ok), fontWeight = FontWeight.Bold, color = AmaradioAmber)
             }
         },
         dismissButton = {
             Row {
-                Button(
-                    onClick = { viewModel.testProxy() }, 
+                TextButton(
+                    onClick = { viewModel.testProxy() },
                     enabled = !uiState.isTesting,
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                    shape = RoundedCornerShape(8.dp)
+                    colors = ButtonDefaults.textButtonColors(contentColor = AmaradioAmber)
                 ) {
-                    Text(stringResource(R.string.settings_proxy_action_test), fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.settings_proxy_action_test), fontWeight = FontWeight.Bold, color = AmaradioAmber)
                 }
                 Spacer(modifier = Modifier.width(8.dp))
-                Button(
+                TextButton(
                     onClick = onDismiss,
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                    shape = RoundedCornerShape(8.dp)
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
                 ) {
-                    Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.action_cancel), color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
         }
@@ -441,7 +433,7 @@ fun StationOptionsDialog(
             TextButton(
                 onClick = onDismiss
             ) {
-                Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     )
@@ -494,12 +486,11 @@ fun TrackOptionsDialog(
             }
         },
         confirmButton = {
-            Button(
+            TextButton(
                 onClick = onDismiss,
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
-                shape = RoundedCornerShape(8.dp)
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
             ) {
-                Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.action_cancel), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     )

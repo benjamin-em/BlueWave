@@ -7,6 +7,7 @@ import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.draggable
 import androidx.compose.foundation.gestures.rememberDraggableState
@@ -171,7 +172,9 @@ fun MainScreen(
                     onViewToggleClick = { mainViewModel.toggleGridView() },
                     isGridView = mainUiState.isGridView,
                     isDeleteVisible = currentRoute == Screen.Favourites.route || currentRoute == Screen.History.route,
-                    deleteTitleRes = R.string.action_delete
+                    deleteTitleRes = R.string.action_delete,
+                    onExportBackup = onExportBackup,
+                    onImportBackup = onImportBackup
                 )
             },
             bottomBar = {
@@ -430,35 +433,52 @@ fun MainScreen(
         ) 
     }
     showDeleteConfirmDialog?.let { msgRes ->
+        val isDark = isSystemInDarkTheme()
+        val deleteRedColor = if (isDark) SolidRedError else SolidRedErrorLight
+
         AlertDialog(
             onDismissRequest = { showDeleteConfirmDialog = null },
             containerColor = MaterialTheme.colorScheme.surface,
             tonalElevation = 0.dp,
-            title = { Text(stringResource(R.string.action_delete), fontWeight = FontWeight.Bold) },
-            text = { Text(stringResource(msgRes), color = MaterialTheme.colorScheme.onSurface) },
+            title = {
+                Text(
+                    text = stringResource(R.string.action_delete),
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            },
+            text = {
+                Text(
+                    text = stringResource(msgRes),
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            },
             confirmButton = {
-                Button(
+                TextButton(
                     onClick = {
                         if (msgRes == R.string.alert_delete_favorites) app.favouriteManager.clear()
                         else app.historyManager.clear()
                         showDeleteConfirmDialog = null
                     },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
-                    ),
-                    shape = RoundedCornerShape(8.dp)
-                ) { Text(stringResource(R.string.yes), fontWeight = FontWeight.Bold) }
+                    colors = ButtonDefaults.textButtonColors(contentColor = deleteRedColor)
+                ) {
+                    Text(
+                        text = stringResource(R.string.yes),
+                        fontWeight = FontWeight.Bold,
+                        color = deleteRedColor
+                    )
+                }
             },
-            dismissButton = { 
-                Button(
+            dismissButton = {
+                TextButton(
                     onClick = { showDeleteConfirmDialog = null },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
-                    ),
-                    shape = RoundedCornerShape(8.dp)
-                ) { Text(stringResource(R.string.no), fontWeight = FontWeight.Bold) }
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                ) {
+                    Text(
+                        text = stringResource(R.string.no),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
             }
         )
     }

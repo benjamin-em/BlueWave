@@ -3,15 +3,21 @@ package com.ounben.amaradio.ui
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -94,20 +100,51 @@ fun CustomStationsTab(
     }
 
     stationToDelete?.let { station ->
+        val isDark = isSystemInDarkTheme()
+        val deleteRedColor = if (isDark) SolidRedError else SolidRedErrorLight
+
         AlertDialog(
             onDismissRequest = { stationToDelete = null },
             containerColor = MaterialTheme.colorScheme.surface,
             tonalElevation = 0.dp,
-            title = { Text(stringResource(R.string.action_delete)) },
-            text = { Text(station.Name) },
+            title = {
+                Text(
+                    text = stringResource(R.string.action_delete),
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            },
+            text = {
+                Text(
+                    text = station.Name,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            },
             confirmButton = {
-                TextButton(onClick = {
-                    viewModel.remove(station.StationUuid)
-                    stationToDelete = null
-                }) { Text(stringResource(R.string.yes)) }
+                TextButton(
+                    onClick = {
+                        viewModel.remove(station.StationUuid)
+                        stationToDelete = null
+                    },
+                    colors = ButtonDefaults.textButtonColors(contentColor = deleteRedColor)
+                ) {
+                    Text(
+                        text = stringResource(R.string.yes),
+                        fontWeight = FontWeight.Bold,
+                        color = deleteRedColor
+                    )
+                }
             },
             dismissButton = {
-                TextButton(onClick = { stationToDelete = null }) { Text(stringResource(R.string.no)) }
+                TextButton(
+                    onClick = { stationToDelete = null },
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                ) {
+                    Text(
+                        text = stringResource(R.string.no),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
             }
         )
     }
@@ -206,7 +243,9 @@ fun CustomStationOptionsDialog(
             }
         },
         confirmButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.action_cancel)) }
+            TextButton(onClick = onDismiss) { 
+                Text(stringResource(R.string.action_cancel), color = MaterialTheme.colorScheme.onSurfaceVariant) 
+            }
         }
     )
 }
@@ -231,60 +270,119 @@ fun AddEditCustomStationDialog(
         onDismissRequest = onDismiss,
         containerColor = MaterialTheme.colorScheme.surface,
         tonalElevation = 0.dp,
-        title = { Text(if (station == null) stringResource(R.string.action_add_custom) else stringResource(R.string.action_edit)) },
+        title = {
+            Text(
+                text = if (station == null) stringResource(R.string.action_add_custom) else stringResource(R.string.action_edit),
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+        },
         text = {
-            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
                     label = { Text(stringResource(R.string.station_name)) },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = AmaradioAmber,
+                        unfocusedBorderColor = MaterialTheme.colorScheme.outline,
+                        focusedTextColor = MaterialTheme.colorScheme.onSurface,
+                        unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
+                        focusedLabelColor = AmaradioAmber
+                    )
                 )
                 OutlinedTextField(
                     value = url,
                     onValueChange = { url = it },
                     label = { Text(stringResource(R.string.stream_url)) },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = AmaradioAmber,
+                        unfocusedBorderColor = MaterialTheme.colorScheme.outline,
+                        focusedTextColor = MaterialTheme.colorScheme.onSurface,
+                        unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
+                        focusedLabelColor = AmaradioAmber
+                    )
                 )
                 
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(8.dp),
-                    modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    modifier = Modifier.fillMaxWidth().padding(top = 4.dp)
                 ) {
                     val model = iconUri ?: station?.IconUrl?.ifEmpty { null }
                     if (model != null) {
                         AsyncImage(
                             model = model,
                             contentDescription = null,
-                            modifier = Modifier.size(64.dp),
+                            modifier = Modifier
+                                .size(56.dp)
+                                .clip(RoundedCornerShape(8.dp))
+                                .border(1.dp, MaterialTheme.colorScheme.outline, RoundedCornerShape(8.dp))
+                                .clickable { photoPickerLauncher.launch("image/*") },
                             contentScale = ContentScale.Crop
                         )
                     } else {
-                        Box(modifier = Modifier.size(64.dp), contentAlignment = Alignment.Center) {
-                            Icon(Icons.Default.Image, contentDescription = null, modifier = Modifier.size(32.dp))
+                        Box(
+                            modifier = Modifier
+                                .size(56.dp)
+                                .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(8.dp))
+                                .border(1.dp, MaterialTheme.colorScheme.outline, RoundedCornerShape(8.dp))
+                                .clickable { photoPickerLauncher.launch("image/*") },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Icon(
+                                Icons.Default.Image, 
+                                contentDescription = null, 
+                                modifier = Modifier.size(28.dp),
+                                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
                         }
                     }
                     
                     Spacer(modifier = Modifier.weight(1f))
 
-                    Button(onClick = { photoPickerLauncher.launch("image/*") }) {
-                        Text(stringResource(R.string.select_image))
+                    TextButton(
+                        onClick = { photoPickerLauncher.launch("image/*") },
+                        colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                    ) {
+                        Text(
+                            text = stringResource(R.string.select_image),
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
                 }
             }
         },
         confirmButton = {
+            val isEnabled = name.isNotBlank() && url.isNotBlank()
             TextButton(
-                onClick = { if (name.isNotBlank() && url.isNotBlank()) onConfirm(name, url, iconUri) },
-                enabled = name.isNotBlank() && url.isNotBlank()
+                onClick = { if (isEnabled) onConfirm(name, url, iconUri) },
+                enabled = isEnabled,
+                colors = ButtonDefaults.textButtonColors(
+                    contentColor = AmaradioAmber,
+                    disabledContentColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                )
             ) {
-                Text(stringResource(R.string.action_save))
+                Text(
+                    text = stringResource(R.string.action_save),
+                    fontWeight = FontWeight.Bold,
+                    color = if (isEnabled) AmaradioAmber else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                )
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) {
-                Text(stringResource(R.string.action_cancel))
+            TextButton(
+                onClick = onDismiss,
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+            ) {
+                Text(
+                    text = stringResource(R.string.action_cancel),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
             }
         }
     )

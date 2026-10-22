@@ -46,7 +46,9 @@ fun MainTopBar(
     onViewToggleClick: () -> Unit,
     isGridView: Boolean,
     isDeleteVisible: Boolean,
-    deleteTitleRes: Int
+    deleteTitleRes: Int,
+    onExportBackup: () -> Unit = {},
+    onImportBackup: () -> Unit = {}
 ) {
     val focusManager = LocalFocusManager.current
     val focusRequester = remember { FocusRequester() }
@@ -172,6 +174,23 @@ fun MainTopBar(
                             leadingIcon = { Icon(Icons.Default.FileUpload, contentDescription = null) },
                             onClick = {
                                 onLoadClick()
+                                showMenu = false
+                            }
+                        )
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = MaterialTheme.colorScheme.outline)
+                        DropdownMenuItem(
+                            text = { Text(stringResource(R.string.settings_export_backup)) },
+                            leadingIcon = { Icon(Icons.Default.CloudUpload, contentDescription = null) },
+                            onClick = {
+                                onExportBackup()
+                                showMenu = false
+                            }
+                        )
+                        DropdownMenuItem(
+                            text = { Text(stringResource(R.string.settings_import_backup)) },
+                            leadingIcon = { Icon(Icons.Default.CloudDownload, contentDescription = null) },
+                            onClick = {
+                                onImportBackup()
                                 showMenu = false
                             }
                         )

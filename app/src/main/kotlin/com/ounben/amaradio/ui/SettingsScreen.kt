@@ -67,31 +67,43 @@ fun SettingsScreen(
                 .fillMaxSize()
                 .verticalScroll(scrollState)
                 .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp)
+            verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            if (!uiState.isReviewCompleted) {
-                val app = LocalContext.current.applicationContext as AMARadioApp
-                SettingsClickable(
-                    title = stringResource(app.reviewManager.getLabelRes()),
-                    summary = stringResource(app.reviewManager.getSummaryRes()),
-                    icon = Icons.Default.Star,
-                    onClick = onRateApp
-                )
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f))
-            }
+            if (!uiState.isReviewCompleted || !isIgnoringBatteryOpt) {
+                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    if (!uiState.isReviewCompleted) {
+                        val app = LocalContext.current.applicationContext as AMARadioApp
+                        SettingsClickable(
+                            title = stringResource(app.reviewManager.getLabelRes()),
+                            summary = stringResource(app.reviewManager.getSummaryRes()),
+                            icon = Icons.Default.Star,
+                            verticalPadding = 4.dp,
+                            onClick = onRateApp
+                        )
+                        HorizontalDivider(
+                            modifier = Modifier.padding(vertical = 4.dp),
+                            color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f)
+                        )
+                    }
 
-            if (!isIgnoringBatteryOpt) {
-                val isDark = isSystemInDarkTheme()
-                val batteryIconTint = if (isDark) SolidRedError else SolidRedErrorLight
-                SettingsClickable(
-                    title = stringResource(R.string.settings_disable_battery_optimization),
-                    summary = stringResource(R.string.settings_disable_battery_optimization_desc),
-                    icon = Icons.Outlined.WarningAmber,
-                    iconTint = batteryIconTint,
-                    iconSize = 32.dp,
-                    onClick = onBatteryOptimize
-                )
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f))
+                    if (!isIgnoringBatteryOpt) {
+                        val isDark = isSystemInDarkTheme()
+                        val batteryIconTint = if (isDark) SolidRedError else SolidRedErrorLight
+                        SettingsClickable(
+                            title = stringResource(R.string.settings_disable_battery_optimization),
+                            summary = stringResource(R.string.settings_disable_battery_optimization_desc),
+                            icon = Icons.Outlined.WarningAmber,
+                            iconTint = batteryIconTint,
+                            iconSize = 32.dp,
+                            verticalPadding = 4.dp,
+                            onClick = onBatteryOptimize
+                        )
+                        HorizontalDivider(
+                            modifier = Modifier.padding(vertical = 4.dp),
+                            color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f)
+                        )
+                    }
+                }
             }
 
             // Database info
@@ -345,13 +357,14 @@ fun SettingsClickable(
     icon: ImageVector,
     iconTint: Color = MaterialTheme.colorScheme.onSurfaceVariant,
     iconSize: Dp = 24.dp,
+    verticalPadding: Dp = 12.dp,
     onClick: () -> Unit
 ) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .clickable { onClick() }
-            .padding(vertical = 12.dp),
+            .padding(vertical = verticalPadding),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Box(
@@ -463,17 +476,13 @@ fun SettingsListPreference(
                 }
             },
             confirmButton = {
-                Button(
+                TextButton(
                     onClick = { showDialog = false },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
-                    ),
-                    shape = RoundedCornerShape(8.dp)
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
                 ) {
                     Text(
                         text = stringResource(R.string.action_cancel),
-                        fontWeight = FontWeight.Bold
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
             }

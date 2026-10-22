@@ -1,5 +1,6 @@
 package com.ounben.amaradio.ui
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.pager.HorizontalPager
@@ -11,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.paging.compose.collectAsLazyPagingItems
 import com.ounben.amaradio.R
@@ -35,6 +37,7 @@ fun HistoryScreen(
     val uiState by localStationsViewModel.uiState.collectAsState()
     val tracks = trackHistoryViewModel.allHistoryPaged.collectAsLazyPagingItems()
     var trackWithOptions by remember { mutableStateOf<TrackHistoryEntry?>(null) }
+    var stationToDelete by remember { mutableStateOf<DataRadioStation?>(null) }
 
     Column(modifier = Modifier.fillMaxSize()) {
         val safeSelectedIndex = remember(pagerState.currentPage) {
@@ -86,7 +89,7 @@ fun HistoryScreen(
                         onFavoriteClick = onFavoriteClick,
                         isFavorite = isFavorite,
                         onDeleteClick = { station ->
-                            app.historyManager.remove(station.StationUuid)
+                            stationToDelete = station
                         }
                     )
                 } else {
@@ -100,6 +103,56 @@ fun HistoryScreen(
         }
     }
 
+    stationToDelete?.let { station ->
+        val isDark = isSystemInDarkTheme()
+        val deleteRedColor = if (isDark) SolidRedError else SolidRedErrorLight
+
+        AlertDialog(
+            onDismissRequest = { stationToDelete = null },
+            containerColor = MaterialTheme.colorScheme.surface,
+            tonalElevation = 0.dp,
+            title = {
+                Text(
+                    text = stringResource(R.string.action_delete),
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            },
+            text = {
+                Text(
+                    text = station.Name,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        app.historyManager.remove(station.StationUuid)
+                        stationToDelete = null
+                    },
+                    colors = ButtonDefaults.textButtonColors(contentColor = deleteRedColor)
+                ) {
+                    Text(
+                        text = stringResource(R.string.yes),
+                        fontWeight = FontWeight.Bold,
+                        color = deleteRedColor
+                    )
+                }
+            },
+            dismissButton = {
+                TextButton(
+                    onClick = { stationToDelete = null },
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+                ) {
+                    Text(
+                        text = stringResource(R.string.no),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        )
+    }
+
     trackWithOptions?.let { track ->
         TrackOptionsDialog(
             track = track,
@@ -107,4 +160,3 @@ fun HistoryScreen(
         )
     }
 }
-

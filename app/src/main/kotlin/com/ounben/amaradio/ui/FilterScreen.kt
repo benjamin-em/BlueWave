@@ -6,6 +6,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
@@ -37,6 +38,7 @@ import androidx.compose.ui.text.intl.LocaleList
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
@@ -309,34 +311,33 @@ fun FilterScreen(
     }
 
     if (showDeleteConfirm) {
+        val isDark = isSystemInDarkTheme()
+        val deleteRedColor = if (isDark) SolidRedError else SolidRedErrorLight
+
         AlertDialog(
             onDismissRequest = { showDeleteConfirm = false },
             containerColor = MaterialTheme.colorScheme.surface,
             tonalElevation = 0.dp,
-            title = { Text(stringResource(R.string.action_delete), fontWeight = FontWeight.Bold) },
-            text = { Text(stringResource(R.string.confirm_delete_filter_tab, currentTab.label)) },
+            title = { Text(stringResource(R.string.action_delete), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurface) },
+            text = { Text(stringResource(R.string.confirm_delete_filter_tab, currentTab.label), color = MaterialTheme.colorScheme.onSurface) },
             confirmButton = {
-                Button(
+                TextButton(
                     onClick = {
                         viewModel.removeTab(tabIndex)
                         showDeleteConfirm = false
                         showFilterSheet = false
                     },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
-                    ),
-                    shape = RoundedCornerShape(8.dp)
+                    colors = ButtonDefaults.textButtonColors(contentColor = deleteRedColor)
                 ) {
-                    Text(stringResource(R.string.yes), fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.yes), fontWeight = FontWeight.Bold, color = deleteRedColor)
                 }
             },
             dismissButton = {
                 TextButton(
                     onClick = { showDeleteConfirm = false },
-                    colors = ButtonDefaults.textButtonColors(contentColor = Color.White)
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
                 ) {
-                    Text(stringResource(R.string.no), fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.no), color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
         )
@@ -545,27 +546,58 @@ fun SearchableSelectionDialog(
         }
     }
 
-    Dialog(onDismissRequest = onDismiss) {
+    Dialog(
+        onDismissRequest = onDismiss,
+        properties = DialogProperties(usePlatformDefaultWidth = false)
+    ) {
         Surface(
             shape = RoundedCornerShape(16.dp),
             color = MaterialTheme.colorScheme.surface,
             tonalElevation = 0.dp,
-            modifier = Modifier.fillMaxWidth().fillMaxHeight(0.85f)
+            modifier = Modifier
+                .fillMaxWidth(0.92f)
+                .fillMaxHeight(0.85f)
+                .imePadding()
         ) {
             Column(modifier = Modifier.padding(16.dp)) {
-                Text(
-                    text = title, 
-                    style = MaterialTheme.typography.titleLarge, 
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.onSurface,
-                    modifier = Modifier.padding(bottom = 16.dp)
-                )
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 8.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = title, 
+                        style = MaterialTheme.typography.titleLarge, 
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.weight(1f, fill = false)
+                    )
+                    IconButton(
+                        onClick = onDismiss,
+                        modifier = Modifier.size(36.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Close, 
+                            contentDescription = stringResource(R.string.label_button_cancel),
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
 
                 OutlinedTextField(
                     value = searchQuery,
                     onValueChange = { searchQuery = it },
                     placeholder = { Text(stringResource(R.string.searchpreference_search)) },
                     leadingIcon = { Icon(Icons.Default.Search, contentDescription = null, tint = AmaradioAmber) },
+                    trailingIcon = if (searchQuery.isNotEmpty()) {
+                        {
+                            IconButton(onClick = { searchQuery = "" }) {
+                                Icon(Icons.Default.Clear, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                        }
+                    } else null,
                     modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp).focusRequester(focusRequester),
                     singleLine = true,
                     shape = RoundedCornerShape(8.dp),
@@ -602,12 +634,12 @@ fun SearchableSelectionDialog(
                     }
                 }
 
-                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
+                Row(modifier = Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.End) {
                     TextButton(
                         onClick = onDismiss,
-                        colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurface)
+                        colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
                     ) {
-                        Text(stringResource(R.string.label_button_cancel))
+                        Text(stringResource(R.string.label_button_cancel), fontWeight = FontWeight.Bold)
                     }
                 }
             }
