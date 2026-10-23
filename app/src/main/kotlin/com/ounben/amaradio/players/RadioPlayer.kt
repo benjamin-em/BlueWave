@@ -124,15 +124,18 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
         }
 
         if (currentPlayer != castPlayer) {
-            val wasPlaying = isPlaying()
+            val wasPlaying = isPlaying() || playState == PlayState.Playing || playState == PlayState.PrePlaying
+            val stationToTransfer = currentStation
+            
             currentPlayer.stop()
             currentPlayer = castPlayer!!
             
             // Re-apply state to notify listeners (Service) about the new player instance
             playerListener?.onPlayerCreated(currentPlayer.player!!)
 
-            if (wasPlaying && currentStation != null) {
-                play(currentStation!!)
+            if (wasPlaying && stationToTransfer != null) {
+                currentStationUuid = null
+                play(stationToTransfer)
             }
         }
     }
