@@ -23,7 +23,9 @@ fun ServerInfoScreen(
     viewModel: ServerInfoViewModel, 
     onStationClick: (DataRadioStation) -> Unit,
     onFavoriteClick: (DataRadioStation) -> Unit,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    currentPlayingUuid: String? = null,
+    isPlaying: Boolean = false
 ) {
     val uiState by viewModel.uiState.collectAsState()
     var selectedTabIndex by remember { mutableIntStateOf(0) }
@@ -80,7 +82,9 @@ fun ServerInfoScreen(
                     uiState = uiState, 
                     onSync = { viewModel.triggerManualSync() },
                     onStationClick = onStationClick,
-                    onFavoriteClick = onFavoriteClick
+                    onFavoriteClick = onFavoriteClick,
+                    currentPlayingUuid = currentPlayingUuid,
+                    isPlaying = isPlaying
                 )
             }
         }
@@ -140,8 +144,12 @@ fun LocalDbTab(
     uiState: ServerInfoViewModel.ServerInfoUiState, 
     onSync: () -> Unit,
     onStationClick: (DataRadioStation) -> Unit,
-    onFavoriteClick: (DataRadioStation) -> Unit
+    onFavoriteClick: (DataRadioStation) -> Unit,
+    currentPlayingUuid: String? = null,
+    isPlaying: Boolean = false
 ) {
+    var stationWithOptions by remember { mutableStateOf<DataRadioStation?>(null) }
+
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(bottom = 16.dp)
@@ -184,13 +192,15 @@ fun LocalDbTab(
             }
         } else {
             items(uiState.recentChanges, key = { it.StationUuid }) { station ->
+                val isCurrentPlaying = isPlaying && (station.StationUuid == currentPlayingUuid)
                 Column {
                     StationListItem(
                         station = station,
                         isFavorite = uiState.favoriteIds.contains(station.StationUuid),
                         onClick = { onStationClick(station) },
                         onFavoriteClick = { onFavoriteClick(station) },
-                        onLongClick = { /* No options dialog */ }
+                        onLongClick = { stationWithOptions = station },
+                        isPlaying = isCurrentPlaying
                     )
                     Text(
                         text = "Change Time: ${station.LastChangeTime}",
@@ -202,6 +212,15 @@ fun LocalDbTab(
                 }
             }
         }
+    }
+
+    stationWithOptions?.let { station ->
+        StationOptionsDialog(
+            station = station,
+            isFavorite = uiState.favoriteIds.contains(station.StationUuid),
+            onFavoriteClick = { onFavoriteClick(station) },
+            onDismiss = { stationWithOptions = null }
+        )
     }
 }
 

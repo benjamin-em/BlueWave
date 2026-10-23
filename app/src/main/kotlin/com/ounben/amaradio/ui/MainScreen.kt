@@ -33,6 +33,7 @@ import androidx.navigation.compose.*
 import androidx.preference.PreferenceManager
 import com.ounben.amaradio.AMARadioApp
 import com.ounben.amaradio.R
+import com.ounben.amaradio.players.PlayState
 import com.ounben.amaradio.station.DataRadioStation
 import com.ounben.amaradio.service.PlayerServiceUtil
 import com.ounben.amaradio.history.TrackHistoryViewModel
@@ -348,6 +349,8 @@ fun MainScreen(
                         composable(Screen.Statistics.route) { 
                             ServerInfoScreen(
                                 viewModel = serverInfoViewModel,
+                                currentPlayingUuid = playerUiState.currentStation?.StationUuid,
+                                isPlaying = playerUiState.playState == PlayState.Playing,
                                 onStationClick = { station ->
                                     if (sharedPrefHasExternalPlayer(context)) showPlayerSelectorDialog = station
                                     else playerViewModel.play(station)
