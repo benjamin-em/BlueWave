@@ -798,7 +798,7 @@ fun MultiSearchableSelectionDialog(
                         onClick = { selectedCodes.clear() },
                         colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant)
                     ) {
-                        Text(stringResource(R.string.no))
+                        Text(stringResource(R.string.sleep_timer_clear))
                     }
 
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
