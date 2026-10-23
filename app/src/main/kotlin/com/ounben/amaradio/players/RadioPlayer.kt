@@ -140,16 +140,15 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
     private fun switchToLocal() {
         Log.d(castTag, "switchToLocal: switching playback engine back to Local ExoPlayer")
         if (currentPlayer != localPlayer) {
-            val wasPlaying = isPlaying()
             currentPlayer.stop()
             currentPlayer = localPlayer
             
             // Re-apply state to notify listeners (Service) about the new player instance
             playerListener?.onPlayerCreated(currentPlayer.player!!)
             
-            if (wasPlaying && currentStation != null) {
-                play(currentStation!!)
-            }
+            userWantPlaying = false
+            isPausing = false
+            setState(PlayState.Idle, 0)
         }
     }
 
