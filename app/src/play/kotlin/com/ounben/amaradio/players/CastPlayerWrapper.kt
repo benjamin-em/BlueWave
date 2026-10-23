@@ -74,7 +74,10 @@ class CastPlayerWrapper(private val castPlayer: CastPlayer) : PlayerWrapper {
     }
 
     override fun playRemote(httpClient: OkHttpClient, streamUrl: String, context: Context, metadata: MediaMetadata?) {
-        this.stationName = metadata?.station?.toString() ?: metadata?.title?.toString()
+        val metaName = metadata?.station?.toString() ?: metadata?.title?.toString()
+        if (!metaName.isNullOrEmpty()) {
+            this.stationName = metaName
+        }
 
         CoroutineScope(Dispatchers.IO).launch {
             val resolvedUrl = try {
@@ -98,13 +101,12 @@ class CastPlayerWrapper(private val castPlayer: CastPlayer) : PlayerWrapper {
 
             withContext(Dispatchers.Main) {
                 val remoteMediaClient = CastManager.getInstance()?.remoteMediaClient
-                if (remoteMediaClient != null) {
-                    val stationTitle = metadata?.station?.toString()
-                        .takeIf { !it.isNullOrEmpty() } 
-                        ?: metadata?.title?.toString()
-                        .takeIf { !it.isNullOrEmpty() } 
-                        ?: "AMARadio Live"
+                val stationTitle = metadata?.station?.toString()?.takeIf { it.isNotEmpty() }
+                    ?: metadata?.title?.toString()?.takeIf { it.isNotEmpty() }
+                    ?: this@CastPlayerWrapper.stationName?.takeIf { it.isNotEmpty() }
+                    ?: "AMARadio Live"
 
+                if (remoteMediaClient != null) {
                     val castMetadata = com.google.android.gms.cast.MediaMetadata(
                         com.google.android.gms.cast.MediaMetadata.MEDIA_TYPE_GENERIC
                     ).apply {
@@ -127,7 +129,7 @@ class CastPlayerWrapper(private val castPlayer: CastPlayer) : PlayerWrapper {
                         .setAutoplay(true)
                         .build()
 
-                    Log.d(TAG, "Executing RemoteMediaClient.load for URL: $resolvedUrl")
+                    Log.d(TAG, "Executing RemoteMediaClient.load for URL: $resolvedUrl, Title: $stationTitle")
                     remoteMediaClient.load(requestData)
                 } else {
                     val mediaItem = Media3Utils.buildLiveMediaItem(resolvedUrl.toUri(), metadata)

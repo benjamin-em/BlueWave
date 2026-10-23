@@ -215,6 +215,8 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
         currentStationUuid = uuid
         playerListener?.onStationTransitionStarting()
         
+        val validMetadata = metadata ?: Media3Utils.buildMetadata(station)
+
         playerThreadHandler.post {
             cancelStationLinkRetrieval()
             // CRITICAL: We DON'T call stop() here anymore. 
@@ -222,7 +224,7 @@ class RadioPlayer(private val mainContext: Context) : PlayerWrapper.PlayListener
             reconnectAttempts = 0
             stationLoadAttempts = 0
             currentStation = station
-            executePlayStationTask(station, metadata)
+            executePlayStationTask(station, validMetadata)
         }
     }
 
