@@ -1,6 +1,7 @@
 package com.ounben.amaradio
 
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.ContentResolver
 import android.content.Context
 import android.content.Intent
@@ -14,6 +15,8 @@ import android.graphics.drawable.Icon
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.net.Uri
+import android.provider.Settings
+import android.widget.Toast
 import android.text.TextUtils
 import android.util.Log
 import android.util.TypedValue
@@ -481,6 +484,46 @@ object Utils {
     fun showModernToast(activity: Activity, resId: Int) {
         val view = activity.findViewById<View>(android.R.id.content) ?: activity.window.decorView
         showSnackbar(view, activity.getString(resId))
+    }
+
+    @JvmStatic
+    fun openBatteryOrAppSettings(context: Context) {
+        try {
+            // 1. Primary Intent: Direct to App Details Settings Page
+            val primaryIntent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                data = Uri.fromParts("package", context.packageName, null)
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+            context.startActivity(primaryIntent)
+        } catch (e: ActivityNotFoundException) {
+            try {
+                // 2. First Fallback: General Settings
+                val fallbackIntent = Intent(Settings.ACTION_SETTINGS).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
+                context.startActivity(fallbackIntent)
+            } catch (e2: Exception) {
+                // 3. Second Fallback: Toast notification
+                Toast.makeText(
+                    context, 
+                    context.getString(R.string.notify_open_link_failure), 
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        } catch (e: Exception) {
+            try {
+                val fallbackIntent = Intent(Settings.ACTION_SETTINGS).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
+                context.startActivity(fallbackIntent)
+            } catch (e2: Exception) {
+                Toast.makeText(
+                    context, 
+                    context.getString(R.string.notify_open_link_failure), 
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
     }
 
     @JvmStatic

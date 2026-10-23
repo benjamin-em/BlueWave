@@ -23,6 +23,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.core.content.edit
+import com.ounben.amaradio.Utils
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -332,22 +333,7 @@ fun MainScreen(
                                     try { context.startActivity(intent) } catch (_: Exception) {}
                                 },
                                 onBatteryOptimize = {
-                                    try {
-                                        val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
-                                        context.startActivity(intent)
-                                    } catch (_: Exception) {
-                                        try {
-                                            val intent = Intent(
-                                                android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                                                android.net.Uri.fromParts("package", context.packageName, null)
-                                            )
-                                            context.startActivity(intent)
-                                        } catch (_: Exception) {
-                                            try {
-                                                context.startActivity(Intent(android.provider.Settings.ACTION_SETTINGS))
-                                            } catch (_: Exception) {}
-                                        }
-                                    }
+                                    Utils.openBatteryOrAppSettings(context)
                                 },
                                 onRateApp = {
                                     (context as? android.app.Activity)?.let {
@@ -496,22 +482,7 @@ fun MainScreen(
                 PreferenceManager.getDefaultSharedPreferences(context).edit {
                     putBoolean("battery_opt_dialog_shown", true)
                 }
-                try {
-                    val intent = Intent(android.provider.Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
-                    context.startActivity(intent)
-                } catch (_: Exception) {
-                    try {
-                        val intent = Intent(
-                            android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                            android.net.Uri.fromParts("package", context.packageName, null)
-                        )
-                        context.startActivity(intent)
-                    } catch (_: Exception) {
-                        try {
-                            context.startActivity(Intent(android.provider.Settings.ACTION_SETTINGS))
-                        } catch (_: Exception) {}
-                    }
-                }
+                Utils.openBatteryOrAppSettings(context)
             }
         )
     }
