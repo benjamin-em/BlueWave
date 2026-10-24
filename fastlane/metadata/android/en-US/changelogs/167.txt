@@ -1,0 +1,7 @@
+- Cast: Media3 Cast SDK integration, on-demand permissions, RemoteMediaClient refactoring.
+- Filter: SQLite multi-tag queries (AND/OR/NOT),, codec/bitrate filtering.
+- DB: GZIP snapshot streaming to Room, 5k-item batches, 7-day sync interval (Optional).
+- Storage: ZIP backup/restore for SQLite and icons, full SAF migration..
+- OS: Android 13+ predictive back, Android 17 network permissions, battery settings intent routing.
+- UI: Compose M3 theme alignment.
+- i18n: Synced string resources across 88 locales.

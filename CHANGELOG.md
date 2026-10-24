@@ -5,6 +5,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.46] - 2026-10-23
+### Added
+- **Multi-Tag Filter Engine & Logical Operators**: Added support for up to 3 filter tags with dynamic logical operators (`AND`, `OR`, `NOT`) in the local offline database (`StationDao.kt`), allowing advanced genre filtering (e.g. `pop` AND `80s`, or excluding genres with `NOT`).
+- **Codec & Bitrate Filtering**: Added dedicated Codec selection (`MP3`, `AAC`, `AAC+`, `OGG`, `FLAC`) and Bitrate selection (`32` to `320 kbps`) with flexible operators (`>=`, `=`, `<=`) using compact, instant dropdown fields.
+- **Multi-Country Selection for Filter Tabs**: Implemented `MultiSearchableSelectionDialog` with checkboxes in the Filter Tab sheet, enabling multi-country selection (e.g., `DE`, `CH`, `AT`) with fast local `OR` database queries.
+- **Local Country Preference in Settings**: Added a "Local Country" preference setting allowing users to manually set their preferred local region (e.g. `CH`, `US`, `ZA`, `DZ`) or stick to `System Default`. Updates both app tab labels and Android Auto root folders dynamically.
+- **Seamless Stream Transfer to Cast**: Implemented automatic, seamless stream handoff from local phone speaker to Chromecast when connecting to a Cast device during active playback.
+
+### Changed
+- **Cast Protocol & Metadata Optimization**: Refactored Google Cast loading to use direct `RemoteMediaClient.load()` with `MEDIA_TYPE_GENERIC` (0), `STREAM_TYPE_LIVE`, and exact DB station titles, eliminating `Invalid Request` errors and stale WebSocket buffers.
+- **Unified Cast Logging**: Standardized all Cast logging tags across `CastManager`, `CastPlayerWrapper`, `CastButton`, and `RadioPlayer` to the concise `ama_cast_<filename>` format ($\le 23$ characters).
+- **Standardized UI Dialog Theming**: Uniformed all Compose dialogs (History Delete, Custom Station, Sleep Timer, Filter Delete, Proxy Settings) to the standardized AMARadio theme (`AmaradioAmber` primary actions, `SolidRedError` delete actions, `onSurfaceVariant` cancel buttons).
+- **Search & Selection Dialog Prioritization**: Upgraded search and sorting in category selection dialogs (Tags, Countries, Languages, Codecs) to a 4-tier priority system (Exact $\rightarrow$ Starts With $\rightarrow$ Word Boundary $\rightarrow$ Substring) with station count tie-breaking.
+
+### Fixed
+- **Whole-Word Tag Matching**: Replaced substring `LIKE '%tag%'` matching in `StationDao.kt` with exact word boundary matching (`instr`), preventing partial matches like tag `"rap"` matching `"discography"` or `"trap"`.
+- **Material 3 TabRow Crash Prevention**: Fixed a potential `IndexOutOfBoundsException: Index: 0, Size: 0` in `SecondaryScrollableTabRow` (`TabRow.kt:622`) during page transitions or tab updates by enforcing non-empty guards and safe index bounds in `TabsScreen.kt`, `HistoryScreen.kt`, and `StarredScreen.kt`.
+- **Android 13+ Predictive Back Callback**: Added `android:enableOnBackInvokedCallback="true"` in `AndroidManifest.xml` to support Android 13+ Predictive Back gestures and eliminate system warnings.
+- **Direct App Info Details Navigation**: Updated `openBatteryOrAppSettings` in `Utils.kt` to launch `Settings.ACTION_APPLICATION_DETAILS_SETTINGS` with fallback to general settings and toast notification.
+- **Selection List Key Uniqueness**: Fixed `IllegalArgumentException: Key ... was already used` in `LazyColumn` during language/region changes by enforcing unique indexed keys in selection lists.
+
 ## [1.45] - 2026-10-21
 ### Added
 - **Android 17 Local Network Permission**: Added `ACCESS_LOCAL_NETWORK` permission declaration and on-demand permission dialog for Google Cast discovery on Android 17 (API 37).
