@@ -137,7 +137,7 @@ class AMARadioApp : Application(), ImageLoaderFactory {
         val builder = newHttpClient()
             .connectTimeout(10.seconds)
             .writeTimeout(10.seconds)
-            .readTimeout(10.seconds)
+            .readTimeout(30.seconds)
             .addInterceptor(UserAgentInterceptor(userAgent))
 
         val client = builder.build()

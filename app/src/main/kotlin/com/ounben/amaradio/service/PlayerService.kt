@@ -93,7 +93,6 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
     private var powerManager: PowerManager? = null
     private var wakeLock: PowerManager.WakeLock? = null
     private var wifiLock: WifiManager.WifiLock? = null
-    private var multicastLock: WifiManager.MulticastLock? = null
     private val becomingNoisyReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             if ((AudioManager.ACTION_AUDIO_BECOMING_NOISY == intent.action) && (radioPlayer?.isPlaying() == true)) {
@@ -713,6 +712,7 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
 
     private fun acquireAudioFocus(): Int {
         if (Utils.isDebug) Log.d(tag, "acquiring audio focus.")
+        val am = audioManager ?: return AudioManager.AUDIOFOCUS_REQUEST_FAILED
         val playbackAttributes = android.media.AudioAttributes.Builder()
             .setUsage(android.media.AudioAttributes.USAGE_MEDIA)
             .setContentType(android.media.AudioAttributes.CONTENT_TYPE_MUSIC)
@@ -722,7 +722,7 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             .setAcceptsDelayedFocusGain(true)
             .setOnAudioFocusChangeListener(afChangeListener)
             .build()
-        val result = audioManager!!.requestAudioFocus(audioFocusRequest!!)
+        val result = am.requestAudioFocus(audioFocusRequest!!)
         if (Utils.isDebug) Log.d(tag, "audio focus result: $result")
         if (result == AudioManager.AUDIOFOCUS_REQUEST_FAILED) {
             Log.e(tag, "acquiring audio focus failed!")
@@ -736,11 +736,18 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
         audioFocusRequest?.let { audioManager?.abandonAudioFocusRequest(it) }
     }
 
+    @Suppress("WakelockTimeout")
     fun acquireWakeLockAndWifiLock() {
         if (Utils.isDebug) Log.d(tag, "acquiring wake lock and wifi lock.")
-        if (wakeLock == null) wakeLock = powerManager!!.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "PlayerService:")
-        if (!wakeLock!!.isHeld) wakeLock!!.acquire(10 * 60 * 1000L /*10 minutes*/)
-        val wm = itsContext?.getSystemService(WIFI_SERVICE) as WifiManager?
+        val pm = powerManager ?: return
+        if (wakeLock == null) {
+            wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "PlayerService:")
+        }
+        wakeLock?.let {
+            if (!it.isHeld) it.acquire()
+        }
+
+        val wm = itsContext?.getSystemService(WIFI_SERVICE) as? WifiManager
         wm?.let {
             if (wifiLock == null) {
                 val mode = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -751,17 +758,8 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
                 }
                 wifiLock = it.createWifiLock(mode, "PlayerService")
             }
-            if (!wifiLock!!.isHeld) wifiLock!!.acquire()
-
-            if (multicastLock == null) {
-                multicastLock = it.createMulticastLock("AMARadioMulticastLock").apply {
-                    setReferenceCounted(false)
-                }
-            }
-            try {
-                if (!multicastLock!!.isHeld) multicastLock!!.acquire()
-            } catch (e: Exception) {
-                if (Utils.isDebug) Log.e(tag, "Failed to acquire multicast lock", e)
+            wifiLock?.let { wl ->
+                if (!wl.isHeld) wl.acquire()
             }
         }
     }
@@ -772,10 +770,6 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
         wakeLock = null
         wifiLock?.let { if (it.isHeld) it.release() }
         wifiLock = null
-        try {
-            multicastLock?.let { if (it.isHeld) it.release() }
-        } catch (_: Exception) {}
-        multicastLock = null
     }
 
     private fun sendMessage(theTitle: String, theMessage: String, theTicker: String, playState: PlayState?) {
