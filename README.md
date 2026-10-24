@@ -92,23 +92,23 @@ Special thanks to the [RadioDroid](https://github.com/Segler-Alex/RadioDroid) pr
 ## Screenshots
 
 <p align="left">
-  <img src="screenshots/AMARadio_Playstore_Free_Worldwide_Radio.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Advanced_Filter_Option.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Android_Auto_Integration.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Widget_Support.png" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Free_Worldwide_Radio.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Advanced_Filter_Option.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Android_Auto_Integration.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Widget_Support.webp" width="24%" />
 </p>
 <p align="left">
-  <img src="screenshots/AMARadio_Playstore_Light_Mode_Dark_Mode.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Grid_View_List_View.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Track_History_Station_History.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_UI_Scaling.png" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Light_Mode_Dark_Mode.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Grid_View_List_View.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Track_History_Station_History.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_UI_Scaling.webp" width="24%" />
 </p>
 <p align="left">
 
-  <img src="screenshots/AMARadio_Playstore_Languages.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Auto_Sync_Radio_Browser_Database.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Talkback.png" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Android_17_Updates.png" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Languages.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Auto_Sync_Radio_Browser_Database.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Talkback.webp" width="24%" />
+  <img src="screenshots/AMARadio_Playstore_Android_17_Updates.webp" width="24%" />
 </p>
 
 ## Getting Started
