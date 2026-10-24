@@ -99,11 +99,12 @@ object StationActions {
     @JvmStatic
     fun share(context: Context, station: DataRadioStation) {
         val urlToShare = station.StreamUrl.ifEmpty { station.HomePageUrl }
+        val shareText = if (station.Name.isNotBlank()) "${station.Name}\n$urlToShare" else urlToShare
         if (urlToShare.isNotEmpty()) {
             val share = Intent(Intent.ACTION_SEND)
             share.type = "text/plain"
             share.putExtra(Intent.EXTRA_SUBJECT, station.Name)
-            share.putExtra(Intent.EXTRA_TEXT, urlToShare)
+            share.putExtra(Intent.EXTRA_TEXT, shareText)
             val title = context.resources.getString(R.string.share_action)
             val chooser = Intent.createChooser(share, title)
             context.startActivity(chooser)
@@ -125,10 +126,11 @@ object StationActions {
             AppEventManager.sendEvent(Intent(ActivityMain.ACTION_HIDE_LOADING))
 
             if (!result.isNullOrEmpty()) {
+                val asyncShareText = if (station.Name.isNotBlank()) "${station.Name}\n$result" else result
                 val share = Intent(Intent.ACTION_SEND)
                 share.type = "text/plain"
                 share.putExtra(Intent.EXTRA_SUBJECT, station.Name)
-                share.putExtra(Intent.EXTRA_TEXT, result)
+                share.putExtra(Intent.EXTRA_TEXT, asyncShareText)
                 val title = ctx.resources.getString(R.string.share_action)
                 val chooser = Intent.createChooser(share, title)
                 ctx.startActivity(chooser)
