@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.media3.cast.CastPlayer
 import androidx.mediarouter.app.MediaRouteChooserDialogFragment
+import androidx.mediarouter.media.MediaRouter
 import com.google.android.gms.cast.framework.CastContext
 import com.google.android.gms.cast.framework.CastSession
 import com.google.android.gms.cast.framework.SessionManagerListener
@@ -90,22 +91,58 @@ class CastManager private constructor(context: Context) {
     private var currentSessionId: String? = null
     val activeSessionId: String? get() = currentSessionId ?: castContext?.sessionManager?.currentCastSession?.sessionId
 
+    @Volatile
+    private var discoveryMulticastLock: android.net.wifi.WifiManager.MulticastLock? = null
+
+    fun acquireDiscoveryLock() {
+        try {
+            val wm = appContext.getSystemService(Context.WIFI_SERVICE) as? android.net.wifi.WifiManager
+            if (wm != null) {
+                if (discoveryMulticastLock == null) {
+                    discoveryMulticastLock = wm.createMulticastLock("amaradio_cast_discovery").apply {
+                        setReferenceCounted(true)
+                    }
+                }
+                if (discoveryMulticastLock?.isHeld == false) {
+                    discoveryMulticastLock?.acquire()
+                    Log.d("ama_cast_castmanager", "Discovery MulticastLock acquired")
+                }
+            }
+        } catch (e: Exception) {
+            Log.e("ama_cast_castmanager", "Failed to acquire discovery MulticastLock", e)
+        }
+    }
+
+    fun releaseDiscoveryLock() {
+        try {
+            if (discoveryMulticastLock?.isHeld == true) {
+                discoveryMulticastLock?.release()
+                Log.d("ama_cast_castmanager", "Discovery MulticastLock released")
+            }
+        } catch (e: Exception) {
+            Log.e("ama_cast_castmanager", "Failed to release discovery MulticastLock", e)
+        }
+    }
+
     private val sessionManagerListener = object : SessionManagerListener<CastSession> {
         override fun onSessionStarting(session: CastSession) {}
         override fun onSessionStarted(session: CastSession, sessionId: String) {
             Log.d("ama_cast_castmanager", "Cast session started: $sessionId")
             currentSessionId = sessionId
             _isCasting.value = true
+            releaseDiscoveryLock()
         }
         override fun onSessionStartFailed(session: CastSession, error: Int) {
             currentSessionId = null
             _isCasting.value = false
+            releaseDiscoveryLock()
         }
         override fun onSessionEnding(session: CastSession) {}
         override fun onSessionEnded(session: CastSession, error: Int) {
             Log.d("ama_cast_castmanager", "Cast session ended")
             currentSessionId = null
             _isCasting.value = false
+            releaseDiscoveryLock()
             try {
                 _castPlayer?.stop()
             } catch (e: Exception) {
@@ -182,15 +219,34 @@ class CastManager private constructor(context: Context) {
     }
 
     fun openCastDialog(activity: FragmentActivity) {
+        acquireDiscoveryLock()
         ensureInitializedAsync(activity) { ctx ->
             try {
                 val selector = ctx.mergedSelector
                 if (selector != null) {
-                    val fragment = MediaRouteChooserDialogFragment()
+                    val mediaRouter = MediaRouter.getInstance(activity)
+                    val callback = object : MediaRouter.Callback() {}
+                    val activeDiscoveryFlags = MediaRouter.CALLBACK_FLAG_PERFORM_ACTIVE_SCAN or MediaRouter.CALLBACK_FLAG_REQUEST_DISCOVERY
+                    mediaRouter.addCallback(
+                        selector,
+                        callback,
+                        activeDiscoveryFlags
+                    )
+
+                    val fragment = object : MediaRouteChooserDialogFragment() {
+                        override fun onStop() {
+                            super.onStop()
+                            try {
+                                mediaRouter.removeCallback(callback)
+                            } catch (_: Exception) {}
+                            releaseDiscoveryLock()
+                        }
+                    }
                     fragment.routeSelector = selector
                     fragment.show(activity.supportFragmentManager, "MediaRouteChooserDialogFragment")
                 }
             } catch (e: Exception) {
+                releaseDiscoveryLock()
                 Log.e("ama_cast_castmanager", "Error opening MediaRouteChooserDialogFragment", e)
             }
         }
