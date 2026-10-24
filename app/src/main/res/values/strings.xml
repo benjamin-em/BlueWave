@@ -349,6 +349,9 @@
     <string name="filter_language">Language</string>
     <string name="filter_codec" translatable="false">Codec</string>
     <string name="filter_bitrate" translatable="false">Bitrate</string>
+    <string name="app_website" translatable="false">https://amaradio.org</string>
+    <string name="google_play_store_url" translatable="false">https://play.google.com/store/apps/details?id=com.ounben.amaradio</string>
+    <string name="fdroid_url" translatable="false">https://f-droid.org/packages/com.ounben.amaradio/</string>
     <string name="filter_sort_by">Sort by</string>
     <string name="filter_reverse">Reverse order</string>
     <string name="filter_apply">Apply Filter</string>
