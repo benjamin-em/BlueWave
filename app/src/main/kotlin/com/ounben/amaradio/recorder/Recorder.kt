@@ -24,7 +24,7 @@ class Recorder(
 ) {
     data class RecorderState(
         val isRecording: Boolean = false,
-        val curr entTrackTitle: String = "",
+        val currentTrackTitle: String = "",
         val durationMs: Long = 0L,
         val fileSizeBytes: Long = 0L,
         val error: String? = null

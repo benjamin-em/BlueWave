@@ -47,8 +47,9 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
     private val trackChapters = mutableListOf<Pair<String, Long>>()
 
     private var fallbackJob: Job? = null
+    private var autoStopJob: Job? = null
 
-    fun startRecording(station: DataRadioStation) {
+    fun startRecording(station: DataRadioStation, timerDurationMs: Long = 0L) {
         if (_recordingState.value.isRecording) return
 
         currentStation = station
@@ -64,6 +65,17 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
         )
 
         RecordService.startService(context, station.Name)
+
+        autoStopJob?.cancel()
+        if (timerDurationMs > 0) {
+            autoStopJob = CoroutineScope(Dispatchers.IO).launch {
+                kotlinx.coroutines.delay(timerDurationMs)
+                if (_recordingState.value.isRecording) {
+                    Log.d("RecordManager", "Auto-stop recording timer expired")
+                    stopRecording()
+                }
+            }
+        }
 
         fallbackJob?.cancel()
         fallbackJob = CoroutineScope(Dispatchers.IO).launch {
@@ -113,6 +125,8 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
     }
 
     fun stopRecording() {
+        autoStopJob?.cancel()
+        autoStopJob = null
         fallbackJob?.cancel()
         fallbackJob = null
         if (!_recordingState.value.isRecording) return

@@ -3,6 +3,7 @@ package com.ounben.amaradio.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
+import com.ounben.amaradio.station.DataRadioStation
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -47,6 +48,7 @@ fun MainTopBar(
     isGridView: Boolean,
     isDeleteVisible: Boolean,
     deleteTitleRes: Int,
+    currentStation: DataRadioStation? = null,
     onExportBackup: () -> Unit = {},
     onImportBackup: () -> Unit = {}
 ) {
@@ -126,6 +128,9 @@ fun MainTopBar(
                     }
                 } else {
                     CastButton()
+
+                    // Record Button with Timer
+                    com.ounben.amaradio.recorder.RecordButtonWithTimer(currentStation = currentStation)
 
                     IconButton(onClick = { onSearchToggle(true) }) {
                         Icon(Icons.Default.Search, contentDescription = stringResource(R.string.action_search))

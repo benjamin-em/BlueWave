@@ -175,6 +175,7 @@ fun MainScreen(
                     isGridView = mainUiState.isGridView,
                     isDeleteVisible = currentRoute == Screen.Favourites.route || currentRoute == Screen.History.route,
                     deleteTitleRes = R.string.action_delete,
+                    currentStation = playerUiState.currentStation,
                     onExportBackup = onExportBackup,
                     onImportBackup = onImportBackup
                 )

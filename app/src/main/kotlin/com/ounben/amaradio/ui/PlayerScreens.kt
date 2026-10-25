@@ -365,25 +365,11 @@ fun FullPlayer(
                     )
                 }
 
-                // Record Button (🔴 / 🛑)
-                IconButton(
-                    onClick = {
-                        if (recordState.isRecording) {
-                            recordManager.stopRecording()
-                        } else if (station != null) {
-                            recordManager.startRecording(station)
-                        }
-                    }
-                ) {
-                    val isDark = isSystemInDarkTheme()
-                    val recordRedColor = if (isDark) SolidRedError else SolidRedErrorLight
-                    Icon(
-                        imageVector = if (recordState.isRecording) Icons.Filled.Stop else Icons.Filled.RadioButtonChecked,
-                        contentDescription = "Record",
-                        modifier = Modifier.size(32.dp),
-                        tint = if (recordState.isRecording) recordRedColor else MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
+                // Record Button (🔴 / 🛑) with Timer Selection
+                com.ounben.amaradio.recorder.RecordButtonWithTimer(
+                    currentStation = station,
+                    iconSize = 32.dp
+                )
 
                 IconButton(onClick = { playerViewModel.toggleFavorite() }) {
                     Icon(
