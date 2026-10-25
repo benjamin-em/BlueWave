@@ -1,0 +1,359 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 7,
+    "identityHash": "68d03f0fbff0bfe74defc57be3d46cf3",
+    "entities": [
+      {
+        "tableName": "Station",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`StationID` INTEGER, `Name` TEXT, `Url` TEXT, `Homepage` TEXT, `Favicon` TEXT, `Creation` TEXT NOT NULL, `Country` TEXT, `Language` TEXT, `Tags` TEXT, `Votes` INTEGER, `Subcountry` TEXT, `clickcount` INTEGER NOT NULL, `ClickTrend` INTEGER, `ClickTimestamp` TEXT, `Codec` TEXT, `LastCheckOK` INTEGER NOT NULL, `LastCheckTime` TEXT, `Bitrate` INTEGER NOT NULL, `UrlCache` TEXT NOT NULL, `LastCheckOkTime` TEXT, `Hls` INTEGER NOT NULL, `ChangeUuid` TEXT, `StationUuid` TEXT NOT NULL, `CountryCode` TEXT, `LastLocalCheckTime` TEXT, `CountrySubdivisionCode` TEXT, `GeoLat` REAL, `GeoLong` REAL, `SslError` INTEGER NOT NULL, `LanguageCodes` TEXT, `ExtendedInfo` INTEGER NOT NULL, `ServerUuid` TEXT, `LastChangeTime` TEXT, PRIMARY KEY(`StationUuid`))",
+        "fields": [
+          {
+            "fieldPath": "stationId",
+            "columnName": "StationID",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "Name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "Url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "homepage",
+            "columnName": "Homepage",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "favicon",
+            "columnName": "Favicon",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "creation",
+            "columnName": "Creation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "Country",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "language",
+            "columnName": "Language",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "tags",
+            "columnName": "Tags",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "votes",
+            "columnName": "Votes",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "subcountry",
+            "columnName": "Subcountry",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "clickCount",
+            "columnName": "clickcount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "clickTrend",
+            "columnName": "ClickTrend",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "clickTimestamp",
+            "columnName": "ClickTimestamp",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "codec",
+            "columnName": "Codec",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastCheckOk",
+            "columnName": "LastCheckOK",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastCheckTime",
+            "columnName": "LastCheckTime",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "bitrate",
+            "columnName": "Bitrate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "urlCache",
+            "columnName": "UrlCache",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastCheckOkTime",
+            "columnName": "LastCheckOkTime",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "hls",
+            "columnName": "Hls",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changeUuid",
+            "columnName": "ChangeUuid",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "stationUuid",
+            "columnName": "StationUuid",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "countryCode",
+            "columnName": "CountryCode",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastLocalCheckTime",
+            "columnName": "LastLocalCheckTime",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "countrySubdivisionCode",
+            "columnName": "CountrySubdivisionCode",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "geoLat",
+            "columnName": "GeoLat",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "geoLong",
+            "columnName": "GeoLong",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "sslError",
+            "columnName": "SslError",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languageCodes",
+            "columnName": "LanguageCodes",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "extendedInfo",
+            "columnName": "ExtendedInfo",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "serverUuid",
+            "columnName": "ServerUuid",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastChangeTime",
+            "columnName": "LastChangeTime",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "StationUuid"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_Station_ChangeUuid",
+            "unique": true,
+            "columnNames": [
+              "ChangeUuid"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_Station_ChangeUuid` ON `${TABLE_NAME}` (`ChangeUuid`)"
+          },
+          {
+            "name": "index_Station_CountryCode",
+            "unique": false,
+            "columnNames": [
+              "CountryCode"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_CountryCode` ON `${TABLE_NAME}` (`CountryCode`)"
+          },
+          {
+            "name": "index_Station_Language",
+            "unique": false,
+            "columnNames": [
+              "Language"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_Language` ON `${TABLE_NAME}` (`Language`)"
+          },
+          {
+            "name": "index_Station_Votes",
+            "unique": false,
+            "columnNames": [
+              "Votes"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_Votes` ON `${TABLE_NAME}` (`Votes`)"
+          },
+          {
+            "name": "index_Station_clickcount",
+            "unique": false,
+            "columnNames": [
+              "clickcount"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_clickcount` ON `${TABLE_NAME}` (`clickcount`)"
+          },
+          {
+            "name": "index_Station_LastChangeTime",
+            "unique": false,
+            "columnNames": [
+              "LastChangeTime"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_LastChangeTime` ON `${TABLE_NAME}` (`LastChangeTime`)"
+          },
+          {
+            "name": "index_Station_Bitrate",
+            "unique": false,
+            "columnNames": [
+              "Bitrate"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_Bitrate` ON `${TABLE_NAME}` (`Bitrate`)"
+          },
+          {
+            "name": "index_Station_Hls",
+            "unique": false,
+            "columnNames": [
+              "Hls"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Station_Hls` ON `${TABLE_NAME}` (`Hls`)"
+          }
+        ]
+      },
+      {
+        "tableName": "TagCache",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`TagName` TEXT NOT NULL, `StationCount` INTEGER DEFAULT 0, `StationCountWorking` INTEGER DEFAULT 0, PRIMARY KEY(`TagName`))",
+        "fields": [
+          {
+            "fieldPath": "tagName",
+            "columnName": "TagName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stationCount",
+            "columnName": "StationCount",
+            "affinity": "INTEGER",
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "stationCountWorking",
+            "columnName": "StationCountWorking",
+            "affinity": "INTEGER",
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "TagName"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_TagCache_StationCount",
+            "unique": false,
+            "columnNames": [
+              "StationCount"
+            ],
+            "orders": [
+              "DESC"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_TagCache_StationCount` ON `${TABLE_NAME}` (`StationCount` DESC)"
+          }
+        ]
+      },
+      {
+        "tableName": "LanguageCache",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`LanguageName` TEXT NOT NULL, `StationCount` INTEGER DEFAULT 0, `StationCountWorking` INTEGER DEFAULT 0, PRIMARY KEY(`LanguageName`))",
+        "fields": [
+          {
+            "fieldPath": "languageName",
+            "columnName": "LanguageName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stationCount",
+            "columnName": "StationCount",
+            "affinity": "INTEGER",
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "stationCountWorking",
+            "columnName": "StationCountWorking",
+            "affinity": "INTEGER",
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "LanguageName"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_LanguageCache_StationCount",
+            "unique": false,
+            "columnNames": [
+              "StationCount"
+            ],
+            "orders": [
+              "DESC"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_LanguageCache_StationCount` ON `${TABLE_NAME}` (`StationCount` DESC)"
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '68d03f0fbff0bfe74defc57be3d46cf3')"
+    ]
+  }
+}

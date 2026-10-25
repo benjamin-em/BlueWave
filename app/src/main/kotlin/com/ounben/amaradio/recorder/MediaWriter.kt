@@ -76,7 +76,7 @@ class MediaWriter(
         }
     }
 
-    fun finalizeFile(): RecordingResult? {
+    fun finalizeFile(stationUuid: String): RecordingResult? {
         val uri = fileUri ?: return null
         try {
             outputStream?.flush()
@@ -84,6 +84,9 @@ class MediaWriter(
         } catch (e: Exception) {
             Log.e("MediaWriter", "Error closing output stream", e)
         }
+
+        // Embed local cached station artwork into audio file (ID3v2 APIC - No network download!)
+        TagEmbedder.embedCoverArtIfMp3(context, uri, stationUuid, stationName)
 
         val durationMs = System.currentTimeMillis() - startTimeMs
 

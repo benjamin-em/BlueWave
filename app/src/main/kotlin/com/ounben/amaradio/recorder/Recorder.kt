@@ -24,7 +24,7 @@ class Recorder(
 ) {
     data class RecorderState(
         val isRecording: Boolean = false,
-        val currentTrackTitle: String = "",
+        val curr entTrackTitle: String = "",
         val durationMs: Long = 0L,
         val fileSizeBytes: Long = 0L,
         val error: String? = null
@@ -118,13 +118,13 @@ class Recorder(
 
                     icyFilter?.parseStream()
 
-                    val result = mediaWriter?.finalizeFile()
+                    val result = mediaWriter?.finalizeFile(station.StationUuid)
                     _state.value = _state.value.copy(isRecording = false)
                     onFinished(result, trackChapters)
                 }
             } catch (e: Exception) {
                 Log.e("Recorder", "Recording error", e)
-                val result = mediaWriter?.finalizeFile()
+                val result = mediaWriter?.finalizeFile(station.StationUuid)
                 _state.value = _state.value.copy(isRecording = false, error = e.localizedMessage)
                 onFinished(result, trackChapters)
             }

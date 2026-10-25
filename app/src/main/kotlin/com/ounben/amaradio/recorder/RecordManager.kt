@@ -120,7 +120,7 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
         val station = currentStation
         _recordingState.value = RecordingState(isRecording = false)
 
-        val result = mediaWriter?.finalizeFile()
+        val result = if (station != null) mediaWriter?.finalizeFile(station.StationUuid) else mediaWriter?.finalizeFile("")
         mediaWriter = null
 
         if (result != null && station != null) {
