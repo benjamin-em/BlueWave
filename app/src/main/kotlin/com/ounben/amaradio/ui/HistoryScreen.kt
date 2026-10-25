@@ -21,6 +21,8 @@ import com.ounben.amaradio.history.TrackHistoryViewModel
 import com.ounben.amaradio.station.DataRadioStation
 import kotlinx.coroutines.launch
 
+import com.ounben.amaradio.recorder.RecordingsTab
+
 @Composable
 fun HistoryScreen(
     localStationsViewModel: LocalStationsViewModel,
@@ -32,7 +34,7 @@ fun HistoryScreen(
 ) {
     val context = LocalContext.current
     val app = context.applicationContext as com.ounben.amaradio.AMARadioApp
-    val pagerState = rememberPagerState(pageCount = { 2 })
+    val pagerState = rememberPagerState(pageCount = { 3 })
     val coroutineScope = rememberCoroutineScope()
     val uiState by localStationsViewModel.uiState.collectAsState()
     val tracks = trackHistoryViewModel.allHistoryPaged.collectAsLazyPagingItems()
@@ -41,7 +43,7 @@ fun HistoryScreen(
 
     Column(modifier = Modifier.fillMaxSize()) {
         val safeSelectedIndex = remember(pagerState.currentPage) {
-            pagerState.currentPage.coerceIn(0, 1)
+            pagerState.currentPage.coerceIn(0, 2)
         }
 
         SecondaryScrollableTabRow(
@@ -50,7 +52,7 @@ fun HistoryScreen(
             containerColor = MaterialTheme.colorScheme.secondary,
             contentColor = MaterialTheme.colorScheme.onSecondary,
             indicator = {
-                if (safeSelectedIndex in 0..1) {
+                if (safeSelectedIndex in 0..2) {
                     TabRowDefaults.SecondaryIndicator(
                         Modifier.tabIndicatorOffset(safeSelectedIndex),
                         color = MaterialTheme.colorScheme.primary
@@ -69,6 +71,11 @@ fun HistoryScreen(
                 onClick = { coroutineScope.launch { pagerState.animateScrollToPage(1) } },
                 text = { Text(text = stringResource(R.string.tab_player_history)) }
             )
+            Tab(
+                selected = pagerState.currentPage == 2,
+                onClick = { coroutineScope.launch { pagerState.animateScrollToPage(2) } },
+                text = { Text(text = "Recordings") }
+            )
         }
 
         HorizontalPager(
@@ -79,27 +86,33 @@ fun HistoryScreen(
             key = { page -> page }
         ) { pageIndex ->
             Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                if (pageIndex == 0) {
-                    StationListTemplate(
-                        stations = uiState.filteredStations,
-                        isGrid = uiState.isGrid,
-                        isLoading = false,
-                        error = null,
-                        emptyMessage = stringResource(R.string.searchpreference_no_results),
-                        onRefresh = { /* Local data, already reactive */ },
-                        onStationClick = onStationClick,
-                        onFavoriteClick = onFavoriteClick,
-                        isFavorite = isFavorite,
-                        onDeleteClick = { station ->
-                            stationToDelete = station
-                        }
-                    )
-                } else {
-                    TrackList(
-                        tracks = tracks,
-                        onTrackClick = onTrackClick,
-                        onTrackLongClick = { trackWithOptions = it }
-                    )
+                when (pageIndex) {
+                    0 -> {
+                        StationListTemplate(
+                            stations = uiState.filteredStations,
+                            isGrid = uiState.isGrid,
+                            isLoading = false,
+                            error = null,
+                            emptyMessage = stringResource(R.string.searchpreference_no_results),
+                            onRefresh = { /* Local data, already reactive */ },
+                            onStationClick = onStationClick,
+                            onFavoriteClick = onFavoriteClick,
+                            isFavorite = isFavorite,
+                            onDeleteClick = { station ->
+                                stationToDelete = station
+                            }
+                        )
+                    }
+                    1 -> {
+                        TrackList(
+                            tracks = tracks,
+                            onTrackClick = onTrackClick,
+                            onTrackLongClick = { trackWithOptions = it }
+                        )
+                    }
+                    2 -> {
+                        RecordingsTab()
+                    }
                 }
             }
         }

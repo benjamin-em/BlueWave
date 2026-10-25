@@ -17,9 +17,11 @@ import com.ounben.amaradio.history.TrackHistoryEntry
         HistoryEntity::class, 
         FilterTabEntity::class, 
         TrackHistoryEntry::class,
-        CustomStationEntity::class
+        CustomStationEntity::class,
+        RecordEntity::class,
+        RecordTrackEntity::class
     ], 
-    version = 6,
+    version = 7,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -29,6 +31,7 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
     abstract fun filterTabDao(): FilterTabDao
     abstract fun songHistoryDao(): TrackHistoryDao
     abstract fun customStationDao(): CustomStationDao
+    abstract fun recordDao(): RecordDao
 
     val databaseExecutor: java.util.concurrent.Executor = java.util.concurrent.Executors.newSingleThreadExecutor { runnable -> 
         Thread(runnable, "UserDatabase Executor") 
@@ -171,6 +174,36 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
             }
         }
 
+        private val MIGRATION_6_7 = object : Migration(6, 7) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `recordings` (
+                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+                        `stationUuid` TEXT NOT NULL, 
+                        `stationName` TEXT NOT NULL, 
+                        `fileUri` TEXT NOT NULL, 
+                        `timestamp` INTEGER NOT NULL, 
+                        `durationMs` INTEGER NOT NULL, 
+                        `fileSizeBytes` INTEGER NOT NULL, 
+                        `format` TEXT NOT NULL DEFAULT 'mp3'
+                    )
+                """.trimIndent())
+
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `recording_tracks` (
+                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+                        `recordId` INTEGER NOT NULL, 
+                        `trackTitle` TEXT NOT NULL, 
+                        `offsetMs` INTEGER NOT NULL, 
+                        `timestamp` INTEGER NOT NULL, 
+                        FOREIGN KEY(`recordId`) REFERENCES `recordings`(`id`) ON DELETE CASCADE
+                    )
+                """.trimIndent())
+
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_recording_tracks_recordId` ON `recording_tracks` (`recordId`)")
+            }
+        }
+
         fun getDatabase(context: Context): AMARadioUserDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
@@ -178,8 +211,8 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
                     AMARadioUserDatabase::class.java,
                     "user_data.db"
                 )
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
-                .fallbackToDestructiveMigrationFrom(true, 7) // Nur bei künftigen Fehlern ab v7 zerstörerisch
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
+                .fallbackToDestructiveMigrationFrom(true, 8) // Nur bei künftigen Fehlern ab v8 zerstörerisch
                 .addCallback(CALLBACK)
                 .build()
                 INSTANCE = instance

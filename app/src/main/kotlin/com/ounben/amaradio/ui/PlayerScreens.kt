@@ -5,6 +5,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -322,10 +323,13 @@ fun FullPlayer(
             modifier = Modifier.fillMaxWidth(),
             color = MaterialTheme.colorScheme.surfaceVariant
         ) {
+            val recordManager = remember { com.ounben.amaradio.recorder.RecordManager.getInstance(context) }
+            val recordState by recordManager.recordingState.collectAsState()
+
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 16.dp, horizontal = 24.dp),
+                    .padding(vertical = 16.dp, horizontal = 16.dp),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -333,21 +337,21 @@ fun FullPlayer(
                     Icon(
                         imageVector = Icons.Default.SkipPrevious,
                         contentDescription = null,
-                        modifier = Modifier.size(48.dp),
+                        modifier = Modifier.size(40.dp),
                         tint = MaterialTheme.colorScheme.onSurface
                     )
                 }
 
                 IconButton(
                     onClick = { playerViewModel.togglePlayPause() },
-                    modifier = Modifier.size(84.dp)
+                    modifier = Modifier.size(80.dp)
                 ) {
                     Icon(
                         imageVector = if (uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying) 
                             Icons.Default.PauseCircle 
                         else Icons.Default.PlayCircle,
                         contentDescription = null,
-                        modifier = Modifier.size(76.dp),
+                        modifier = Modifier.size(72.dp),
                         tint = MaterialTheme.colorScheme.primary
                     )
                 }
@@ -356,8 +360,28 @@ fun FullPlayer(
                     Icon(
                         imageVector = Icons.Default.SkipNext,
                         contentDescription = null,
-                        modifier = Modifier.size(48.dp),
+                        modifier = Modifier.size(40.dp),
                         tint = MaterialTheme.colorScheme.onSurface
+                    )
+                }
+
+                // Record Button (🔴 / 🛑)
+                IconButton(
+                    onClick = {
+                        if (recordState.isRecording) {
+                            recordManager.stopRecording()
+                        } else if (station != null) {
+                            recordManager.startRecording(station)
+                        }
+                    }
+                ) {
+                    val isDark = isSystemInDarkTheme()
+                    val recordRedColor = if (isDark) SolidRedError else SolidRedErrorLight
+                    Icon(
+                        imageVector = if (recordState.isRecording) Icons.Filled.Stop else Icons.Filled.RadioButtonChecked,
+                        contentDescription = "Record",
+                        modifier = Modifier.size(32.dp),
+                        tint = if (recordState.isRecording) recordRedColor else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
 

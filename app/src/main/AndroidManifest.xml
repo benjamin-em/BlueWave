@@ -133,6 +133,11 @@
         </service>
 
         <service
+            android:name="com.ounben.amaradio.recorder.RecordService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
             android:enabled="false"
             android:exported="false">
