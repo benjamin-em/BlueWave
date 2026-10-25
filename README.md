@@ -1,6 +1,6 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Exodus Privacy](https://img.shields.io/badge/Exodus%20Privacy-0%20Tracker-brightgreen?logo=android)](https://reports.exodus-privacy.eu.org/de/reports/com.ounben.amaradio/latest/)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F96%20Clean-brightgreen?logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/aa8b0a5d3cdb32e328509858b39baefc0e32b72732a566510e4dfc323b0ee43e/details)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F96%20Clean-brightgreen?logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/c1e58ff9153b301fbd6a3f6e93cdca9f2e206010ebc7f83430322b652cecade7?nocache=1)
 [![Google Play](https://img.shields.io/badge/Google_Play-AMARadio-410099?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.ounben.amaradio)
 [![F-Droid](https://img.shields.io/f-droid/v/com.ounben.amaradio?logo=f-droid&logoColor=white&color=blue)](https://f-droid.org/packages/com.ounben.amaradio/)
 [![GitHub Release](https://img.shields.io/github/v/release/OunBen/AMARadio?logo=github&color=blue)](https://github.com/OunBen/AMARadio/releases/latest)
