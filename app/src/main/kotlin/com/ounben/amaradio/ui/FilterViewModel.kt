@@ -400,8 +400,8 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
         viewModelScope.launch {
             val db = AMARadioDatabase.getDatabase(app)
             
-            // 1. LÄNDER: Immer aus JSON laden (da stabil und bewährt)
-            val countriesData = loadLocalOrRemote("radio_browser_country_cache", "json/countrycodes", "countries")
+            // 1. LÄNDER: Direkt aus R.raw.radio_browser_country_cache laden (100% offline, kein Netzwerkaufruf)
+            val countriesData = withContext(Dispatchers.IO) { loadRawResource(R.raw.radio_browser_country_cache) }
             val processedCountries = withContext(Dispatchers.Default) {
                 countriesData.map { 
                     val label = CountryCodeDictionary.instance.getCountryByCode(it.Name) ?: it.Name
@@ -410,12 +410,12 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
                 }.sortedBy { it.label }
             }
 
-            // 2. TAGS & SPRACHEN: Nur laden, wenn SQL leer ist (Initial-Migration)
+            // 2. TAGS & SPRACHEN: Direkt aus R.raw laden wenn DB leer ist (100% offline, kein Netzwerkaufruf)
             val localTags = withContext(Dispatchers.IO) { db.tagCacheDao().getAllTags() }
             val localLanguages = withContext(Dispatchers.IO) { db.languageCacheDao().getAllLanguages() }
 
             if (localTags.isEmpty()) {
-                val tagsData = loadLocalOrRemote("radio_browser_tag_cache", "json/tags?order=stationcount&reverse=true", "tags")
+                val tagsData = withContext(Dispatchers.IO) { loadRawResource(R.raw.radio_browser_tag_cache) }
                 if (tagsData.isNotEmpty()) {
                     withContext(Dispatchers.IO) {
                         db.tagCacheDao().insertAll(tagsData.map { TagCacheEntity(it.Name, it.UsedCount, it.UsedCount) })
@@ -424,7 +424,7 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
             }
 
             if (localLanguages.isEmpty()) {
-                val languagesData = loadLocalOrRemote("radio_browser_language_cache", "json/languages", "languages")
+                val languagesData = withContext(Dispatchers.IO) { loadRawResource(R.raw.radio_browser_language_cache) }
                 if (languagesData.isNotEmpty()) {
                     withContext(Dispatchers.IO) {
                         db.languageCacheDao().insertAll(languagesData.map { LanguageCacheEntity(it.Name, it.UsedCount, it.UsedCount) })
@@ -437,20 +437,17 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
-    private suspend fun loadLocalOrRemote(resName: String, remoteUrl: String, debugName: String): List<DataCategory> = withContext(Dispatchers.IO) {
-        val resId = app.resources.getIdentifier(resName, "raw", app.packageName)
-        if (resId != 0) {
-            try {
-                val content = app.resources.openRawResource(resId).bufferedReader().use { it.readText() }.trim()
-                val jsonToDecode = if (content.startsWith("{")) {
-                    val root = json.parseToJsonElement(content).jsonObject
-                    if (root.containsKey("rows")) root["rows"]?.jsonArray?.toString() ?: "[]" else "[$content]"
-                } else content
-                DataCategory.DecodeJson(jsonToDecode).toList().ifEmpty { emptyList() }
-            } catch (e: Exception) { emptyList() }
-        } else {
-            val result = Utils.downloadFeedRelative(app.httpClient, app, remoteUrl, false, null)
-            DataCategory.DecodeJson(result).toList()
+    private fun loadRawResource(resId: Int): List<DataCategory> {
+        return try {
+            val content = app.resources.openRawResource(resId).bufferedReader().use { it.readText() }.trim()
+            val jsonToDecode = if (content.startsWith("{")) {
+                val root = json.parseToJsonElement(content).jsonObject
+                if (root.containsKey("rows")) root["rows"]?.jsonArray?.toString() ?: "[]" else "[$content]"
+            } else content
+            DataCategory.DecodeJson(jsonToDecode).toList()
+        } catch (e: Exception) {
+            Log.e("FilterViewModel", "Error loading raw resource $resId", e)
+            emptyList()
         }
     }
 

@@ -190,3 +190,10 @@ class AMARadioApp : Application(), ImageLoaderFactory {
             .build()
     }
 }
+// Verhindert R8-Stripping
+@Suppress("unused")
+private val keepR8Resources = intArrayOf(
+    R.raw.radio_browser_country_cache,
+    R.raw.radio_browser_tag_cache,
+    R.raw.radio_browser_language_cache
+)
