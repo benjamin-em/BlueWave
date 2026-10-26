@@ -147,7 +147,7 @@ class DatabaseSync(private val context: Context) {
         val totalCount = loader.getTotalStationCount() ?: 0
         var currentLoaded = 0
         val chunkSize = 1000 // 1.000 Sender pro Abfrage
-        val parallelBatches = 2 // 2x 1.000 = 2.000 Sender pro Zyklus
+        val parallelBatches = 1 // Sequenziell: Immer genau 1 Anfrage nach der anderen
 
         reportProgress(0, totalCount, mode = "full", onProgress = onProgress)
 
@@ -181,6 +181,9 @@ class DatabaseSync(private val context: Context) {
 
             currentLoaded += batchCount
             reportProgress(currentLoaded, totalCount, mode = "full", onProgress = onProgress)
+
+            // 200 ms Pause zwischen den API-Abfragen: Entlastet den Radio-Browser API-Server
+            delay(200)
         }
 
         saveLastSyncTimestamp()
