@@ -2,6 +2,7 @@ package com.ounben.amaradio.ui
 
 import android.content.Intent
 import android.net.Uri
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.ClickableText
@@ -11,6 +12,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -29,7 +31,18 @@ fun AboutScreen(onBack: () -> Unit) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val version = stringResource(R.string.version_name)
-    val fullVersion = version
+    val versionCode = remember(context) {
+        try {
+            val packageInfo = context.packageManager.getPackageInfo(context.packageName, 0)
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+                packageInfo.longVersionCode
+            } else {
+                @Suppress("DEPRECATION")
+                packageInfo.versionCode.toLong()
+            }
+        } catch (_: Exception) { 169L }
+    }
+    val fullVersion = "$version ($versionCode)"
 
     val aboutText = stringResource(R.string.about_text)
     
@@ -123,6 +136,22 @@ fun AboutScreen(onBack: () -> Unit) {
                 text = stringResource(R.string.about_version, fullVersion),
                 style = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.Bold
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            val websiteUrl = stringResource(R.string.app_website)
+            Text(
+                text = websiteUrl,
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.Bold,
+                color = AmaradioAmber,
+                textDecoration = TextDecoration.Underline,
+                modifier = Modifier.clickable {
+                    try {
+                        uriHandler.openUri(websiteUrl)
+                    } catch (_: Exception) {}
+                }
             )
             
             Spacer(modifier = Modifier.height(24.dp))
