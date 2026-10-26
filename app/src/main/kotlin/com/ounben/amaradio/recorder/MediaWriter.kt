@@ -7,6 +7,7 @@ import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
+import java.io.File
 import java.io.OutputStream
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -28,7 +29,7 @@ class MediaWriter(
     private var startTimeMs: Long = System.currentTimeMillis()
     private var totalBytesWritten: Long = 0L
 
-    fun openStream(): Boolean {
+    fun openStream(stationUuid: String = ""): Boolean {
         val timeStr = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date(startTimeMs))
         val sanitizedStation = sanitizeFileName(stationName)
         
@@ -58,7 +59,18 @@ class MediaWriter(
         return try {
             fileUri = context.contentResolver.insert(collection, contentValues)
             if (fileUri != null) {
-                outputStream = context.contentResolver.openOutputStream(fileUri!!)
+                val rawOs = context.contentResolver.openOutputStream(fileUri!!)
+                outputStream = if (rawOs != null) java.io.BufferedOutputStream(rawOs, 64 * 1024) else null
+
+                // Write ID3v2 Cover Art Tag at offset 0 if format is MP3
+                if (outputStream != null && format == FormatParser.AudioFormat.MP3 && stationUuid.isNotEmpty()) {
+                    val id3Tag = TagEmbedder.createId3v2CoverArtTag(context, stationUuid, stationName)
+                    if (id3Tag != null && id3Tag.isNotEmpty()) {
+                        outputStream?.write(id3Tag)
+                        totalBytesWritten += id3Tag.size
+                    }
+                }
+
                 outputStream != null
             } else false
         } catch (e: Exception) {
@@ -84,9 +96,6 @@ class MediaWriter(
         } catch (e: Exception) {
             Log.e("MediaWriter", "Error closing output stream", e)
         }
-
-        // Embed local cached station artwork into audio file (ID3v2 APIC - No network download!)
-        TagEmbedder.embedCoverArtIfMp3(context, uri, stationUuid, stationName)
 
         val durationMs = System.currentTimeMillis() - startTimeMs
 

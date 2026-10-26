@@ -2,45 +2,24 @@ package com.ounben.amaradio.recorder
 
 import android.content.Context
 import android.graphics.Bitmap
-import android.net.Uri
 import android.util.Log
 import com.ounben.amaradio.utils.StationPlaceholderUtils
 import java.io.ByteArrayOutputStream
 import java.io.File
-import java.io.FileInputStream
-import java.io.FileOutputStream
 
 /**
- * Embeds local cached station artwork (or generated station placeholder) into saved audio files (ID3v2 APIC).
+ * Creates ID3v2.3 APIC Cover Art tags from local cached station artwork (or generated placeholder).
  * Strictly uses local files (station_icons/$stationUuid.jpg) without performing any network downloads.
  */
 object TagEmbedder {
 
-    fun embedCoverArtIfMp3(context: Context, recordFileUri: Uri, stationUuid: String, stationName: String) {
-        val jpegBytes = getStationJpegBytes(context, stationUuid, stationName) ?: return
-
-        try {
-            val pfd = context.contentResolver.openFileDescriptor(recordFileUri, "rw") ?: return
-            pfd.use { descriptor ->
-                val inputStream = FileInputStream(descriptor.fileDescriptor)
-                val audioBytes = inputStream.readBytes()
-                if (audioBytes.isEmpty()) return
-
-                // Check if ID3 tag is already present
-                if (audioBytes.size >= 3 && audioBytes[0] == 'I'.code.toByte() && audioBytes[1] == 'D'.code.toByte() && audioBytes[2] == '3'.code.toByte()) {
-                    return
-                }
-
-                val id3Tag = createId3v2Tag(jpegBytes)
-
-                val outputStream = FileOutputStream(descriptor.fileDescriptor)
-                outputStream.channel.truncate(0)
-                outputStream.write(id3Tag)
-                outputStream.write(audioBytes)
-                outputStream.flush()
-            }
+    fun createId3v2CoverArtTag(context: Context, stationUuid: String, stationName: String): ByteArray? {
+        val jpegBytes = getStationJpegBytes(context, stationUuid, stationName) ?: return null
+        return try {
+            createId3v2Tag(jpegBytes)
         } catch (e: Exception) {
-            Log.e("TagEmbedder", "Error embedding cover art", e)
+            Log.e("TagEmbedder", "Error creating ID3 tag", e)
+            null
         }
     }
 

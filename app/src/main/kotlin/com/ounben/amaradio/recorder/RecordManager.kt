@@ -5,10 +5,7 @@ import android.util.Log
 import com.ounben.amaradio.database.user.AMARadioUserDatabase
 import com.ounben.amaradio.database.user.RecordEntity
 import com.ounben.amaradio.database.user.RecordTrackEntity
-import com.ounben.amaradio.players.exoplayer.IcyDataSource
 import com.ounben.amaradio.station.DataRadioStation
-import com.ounben.amaradio.station.live.ShoutcastInfo
-import com.ounben.amaradio.station.live.StreamLiveInfo
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -16,14 +13,14 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import java.io.ByteArrayOutputStream
+import java.io.InputStream
+import java.util.concurrent.TimeUnit
 
 /**
- * Singleton RecordManager. Registers as listener on IcyDataSource, receiving audio bytes
- * (onDataSourceBytesRead) and live stream metadata (onDataSourceStreamLiveInfo), writing them
- * to MediaWriter in real-time.
+ * Singleton RecordManager. Runs an independent background recording stream via OkHttp + RecordIcyStream + MediaWriter.
+ * Completely decoupled from player playback (e.g. user can play SRF 1 while recording 1.FM).
  */
-class RecordManager private constructor(private val context: Context) : IcyDataSource.IcyDataSourceListener {
+class RecordManager private constructor(private val context: Context) {
 
     data class RecordingState(
         val isRecording: Boolean = false,
@@ -43,11 +40,10 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
     private var mediaWriter: MediaWriter? = null
     private var startTimeMs: Long = 0L
     private var initialFormatDetected = false
-    private val sampleBuffer = ByteArrayOutputStream()
-    private val trackChapters = mutableListOf<Pair<String, Long>>()
-
-    private var fallbackJob: Job? = null
+    private var recordingThread: Thread? = null
     private var autoStopJob: Job? = null
+    private var activeDecoupledRecorder: ThreadDecoupledRecorder? = null
+    private val trackChapters = mutableListOf<Pair<String, Long>>()
 
     fun startRecording(station: DataRadioStation, timerDurationMs: Long = 0L) {
         if (_recordingState.value.isRecording) return
@@ -55,7 +51,6 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
         currentStation = station
         startTimeMs = System.currentTimeMillis()
         initialFormatDetected = false
-        sampleBuffer.reset()
         trackChapters.clear()
 
         _recordingState.value = RecordingState(
@@ -66,6 +61,7 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
 
         RecordService.startService(context, station.Name)
 
+        // Schedule auto-stop timer if duration is specified (> 0)
         autoStopJob?.cancel()
         if (timerDurationMs > 0) {
             autoStopJob = CoroutineScope(Dispatchers.IO).launch {
@@ -77,58 +73,142 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
             }
         }
 
-        fallbackJob?.cancel()
-        fallbackJob = CoroutineScope(Dispatchers.IO).launch {
-            kotlinx.coroutines.delay(1500)
-            if (_recordingState.value.isRecording && !initialFormatDetected) {
-                Log.d("RecordManager", "No bytes received from ExoPlayer, starting fallback stream")
-                startFallbackStream(station)
-            }
+        // Start independent background recording stream on dedicated MAX_PRIORITY thread
+        recordingThread?.interrupt()
+        recordingThread = Thread({
+            startIndependentRecordingStream(station)
+        }, "AMARadio-Recorder-Thread").apply {
+            priority = Thread.MAX_PRIORITY
+            start()
         }
     }
 
-    private fun startFallbackStream(station: DataRadioStation) {
-        val app = context.applicationContext as com.ounben.amaradio.AMARadioApp
-        val httpClient = app.newHttpClientWithoutProxy()
-            .connectTimeout(15, java.util.concurrent.TimeUnit.SECONDS)
-            .readTimeout(0, java.util.concurrent.TimeUnit.MILLISECONDS)
+    private fun startIndependentRecordingStream(station: DataRadioStation) {
+        val isolatedClient = okhttp3.OkHttpClient.Builder()
+            .connectionPool(okhttp3.ConnectionPool(2, 5, TimeUnit.MINUTES))
+            .dispatcher(okhttp3.Dispatcher().apply { maxRequestsPerHost = 2 })
+            .connectTimeout(15, TimeUnit.SECONDS)
+            .readTimeout(0, TimeUnit.MILLISECONDS)
             .build()
 
-        val request = okhttp3.Request.Builder()
-            .url(station.StreamUrl)
-            .header("Icy-MetaData", "1")
-            .header("User-Agent", "AMARadio/1.0")
-            .build()
+        val versionName = context.getString(com.ounben.amaradio.R.string.version_name)
+        val userAgent = "AMARadio/$versionName (Android; +https://github.com/ounben/AMARadio)"
 
-        try {
-            httpClient.newCall(request).execute().use { response ->
-                if (!response.isSuccessful) return@use
-
-                val metaInt = response.header("icy-metaint")?.toIntOrNull() ?: 0
-                val stream = response.body?.byteStream() ?: return@use
-
-                val icyFilter = IcyFilter(
-                    inputStream = stream,
-                    metaInt = metaInt,
-                    onAudioData = { data, len ->
-                        onDataSourceBytesRead(data, 0, len)
-                    },
-                    onMetadata = { trackTitle ->
-                        onDataSourceStreamLiveInfo(StreamLiveInfo(mapOf("title" to trackTitle)))
+        if (station.StreamUrl.lowercase().contains(".m3u8")) {
+            HlsResolver.recordHlsStream(
+                httpClient = isolatedClient,
+                m3u8Url = station.StreamUrl,
+                userAgent = userAgent,
+                isRecording = { _recordingState.value.isRecording },
+                onAudioData = { data, len ->
+                    if (!initialFormatDetected) {
+                        val detectedFormat = FormatParser.detectFormat(station.Codec, "audio/aac", data.copyOf(minOf(len, 16384)))
+                        mediaWriter = MediaWriter(context, station.Name, detectedFormat)
+                        if (mediaWriter?.openStream(station.StationUuid) == true) {
+                            initialFormatDetected = true
+                            _recordingState.value = _recordingState.value.copy(formatExtension = detectedFormat.extension)
+                        }
                     }
-                )
-                icyFilter.parseStream()
+                    mediaWriter?.write(data, len)
+                    val elapsed = System.currentTimeMillis() - startTimeMs
+                    _recordingState.value = _recordingState.value.copy(
+                        durationMs = elapsed,
+                        fileSizeBytes = _recordingState.value.fileSizeBytes + len
+                    )
+                }
+            )
+            return
+        }
+
+        var reconnectAttempts = 0
+
+        while (_recordingState.value.isRecording) {
+            val request = okhttp3.Request.Builder()
+                .url(station.StreamUrl)
+                .header("User-Agent", userAgent)
+                .build()
+
+            try {
+                isolatedClient.newCall(request).execute().use { response ->
+                    if (!response.isSuccessful) {
+                        Log.w("RecordManager", "Recording connection attempt returned HTTP ${response.code}")
+                        reconnectAttempts++
+                        if (reconnectAttempts > 5) {
+                            stopRecording()
+                            return
+                        }
+                        try { Thread.sleep(2000) } catch (_: Exception) {}
+                        return@use
+                    }
+
+                    reconnectAttempts = 0
+                    val contentType = response.header("Content-Type")
+                    val rawStream: InputStream = response.body?.byteStream() ?: return@use
+
+                    if (!initialFormatDetected) {
+                        val peekBuffer = ByteArray(16384)
+                        var bytesRead = 0
+                        while (bytesRead < peekBuffer.size) {
+                            val r = rawStream.read(peekBuffer, bytesRead, peekBuffer.size - bytesRead)
+                            if (r == -1) break
+                            bytesRead += r
+                        }
+
+                        val detectedFormat = FormatParser.detectFormat(station.Codec, contentType, peekBuffer.copyOf(bytesRead))
+                        mediaWriter = MediaWriter(context, station.Name, detectedFormat)
+
+                        if (mediaWriter?.openStream(station.StationUuid) != true) {
+                            Log.e("RecordManager", "Failed to open MediaWriter stream")
+                            stopRecording()
+                            return
+                        }
+
+                        initialFormatDetected = true
+                        _recordingState.value = _recordingState.value.copy(formatExtension = detectedFormat.extension)
+
+                        if (bytesRead > 0) {
+                            mediaWriter?.write(peekBuffer, bytesRead)
+                        }
+                    }
+
+                    val writer = mediaWriter ?: return@use
+                    val decoupledRecorder = ThreadDecoupledRecorder(
+                        inputStream = rawStream,
+                        mediaWriter = writer,
+                        onBytesWritten = { addedBytes ->
+                            val elapsed = System.currentTimeMillis() - startTimeMs
+                            _recordingState.value = _recordingState.value.copy(
+                                durationMs = elapsed,
+                                fileSizeBytes = _recordingState.value.fileSizeBytes + addedBytes
+                            )
+                        }
+                    )
+
+                    activeDecoupledRecorder = decoupledRecorder
+                    decoupledRecorder.start()
+                }
+            } catch (e: Exception) {
+                if (!_recordingState.value.isRecording) break
+                Log.w("RecordManager", "Recording stream disconnected: ${e.message}. Reconnecting in 2s...")
+                reconnectAttempts++
+                if (reconnectAttempts > 5) {
+                    Log.e("RecordManager", "Max reconnect attempts reached")
+                    stopRecording()
+                    break
+                }
+                try { Thread.sleep(2000) } catch (_: Exception) {}
             }
-        } catch (e: Exception) {
-            Log.e("RecordManager", "Fallback stream error", e)
         }
     }
 
     fun stopRecording() {
         autoStopJob?.cancel()
         autoStopJob = null
-        fallbackJob?.cancel()
-        fallbackJob = null
+        activeDecoupledRecorder?.stop()
+        activeDecoupledRecorder = null
+        recordingThread?.interrupt()
+        recordingThread = null
+
         if (!_recordingState.value.isRecording) return
 
         val station = currentStation
@@ -143,55 +223,6 @@ class RecordManager private constructor(private val context: Context) : IcyDataS
 
         RecordService.stopService(context)
     }
-
-    override fun onDataSourceBytesRead(buffer: ByteArray, offset: Int, length: Int) {
-        if (!_recordingState.value.isRecording || length <= 0) return
-
-        if (!initialFormatDetected) {
-            sampleBuffer.write(buffer, offset, length)
-            if (sampleBuffer.size() >= 4096) {
-                val sampleBytes = sampleBuffer.toByteArray()
-                val detectedFormat = FormatParser.detectFormat(null, sampleBytes)
-                
-                mediaWriter = MediaWriter(context, currentStation?.Name ?: "Radio", detectedFormat)
-                if (mediaWriter?.openStream() == true) {
-                    mediaWriter?.write(sampleBytes, sampleBytes.size)
-                    initialFormatDetected = true
-                    _recordingState.value = _recordingState.value.copy(formatExtension = detectedFormat.extension)
-                } else {
-                    Log.e("RecordManager", "Failed to open MediaWriter stream")
-                    stopRecording()
-                    return
-                }
-            }
-            return
-        }
-
-        mediaWriter?.write(buffer.copyOfRange(offset, offset + length), length)
-        
-        val elapsed = System.currentTimeMillis() - startTimeMs
-        _recordingState.value = _recordingState.value.copy(
-            durationMs = elapsed,
-            fileSizeBytes = _recordingState.value.fileSizeBytes + length
-        )
-    }
-
-    override fun onDataSourceStreamLiveInfo(streamLiveInfo: StreamLiveInfo) {
-        if (!_recordingState.value.isRecording) return
-
-        val title = streamLiveInfo.title ?: return
-        if (title.isBlank() || title == _recordingState.value.currentTrackTitle) return
-
-        val offsetMs = System.currentTimeMillis() - startTimeMs
-        trackChapters.add(title to offsetMs)
-
-        _recordingState.value = _recordingState.value.copy(currentTrackTitle = title)
-    }
-
-    override fun onDataSourceConnected() {}
-    override fun onDataSourceConnectionLost() {}
-    override fun onDataSourceConnectionLostIrrecoverably() {}
-    override fun onDataSourceShoutcastInfo(shoutcastInfo: ShoutcastInfo?) {}
 
     private fun saveRecordingToDatabase(
         station: DataRadioStation,

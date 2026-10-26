@@ -276,12 +276,9 @@ class ExoPlayerWrapper(private val context: Context, looper: Looper) : PlayerWra
 
     override fun onDataSourceStreamLiveInfo(streamLiveInfo: StreamLiveInfo) {
         stateListener?.onDataSourceStreamLiveInfo(streamLiveInfo)
-        com.ounben.amaradio.recorder.RecordManager.getInstance(context).onDataSourceStreamLiveInfo(streamLiveInfo)
     }
 
-    override fun onDataSourceBytesRead(buffer: ByteArray, offset: Int, length: Int) {
-        com.ounben.amaradio.recorder.RecordManager.getInstance(context).onDataSourceBytesRead(buffer, offset, length)
-    }
+    override fun onDataSourceBytesRead(buffer: ByteArray, offset: Int, length: Int) {}
 
     private fun resumeWhenNetworkConnected() {
         playerThreadHandler.post {

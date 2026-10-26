@@ -47,3 +47,4 @@ build/*
 *.env
 .env
 
+/docs/UML/Unbenanntes Diagramm.drawio

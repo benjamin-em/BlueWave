@@ -53,11 +53,14 @@ class Recorder(
                 .readTimeout(0, TimeUnit.MILLISECONDS)
                 .build()
 
+            val versionName = context.getString(com.ounben.amaradio.R.string.version_name)
+            val userAgent = "AMARadio/$versionName (Android; +https://github.com/ounben/AMARadio)"
+
             val streamUrl = station.StreamUrl
             val request = Request.Builder()
                 .url(streamUrl)
                 .header("Icy-MetaData", "1")
-                .header("User-Agent", "AMARadio/1.0")
+                .header("User-Agent", userAgent)
                 .build()
 
             try {
@@ -85,7 +88,7 @@ class Recorder(
                         bytesRead += r
                     }
 
-                    val detectedFormat = FormatParser.detectFormat(contentType, peekBuffer.copyOf(bytesRead))
+                    val detectedFormat = FormatParser.detectFormat(station.Codec, contentType, peekBuffer.copyOf(bytesRead))
                     mediaWriter = MediaWriter(context, station.Name, detectedFormat)
 
                     if (mediaWriter?.openStream() != true) {

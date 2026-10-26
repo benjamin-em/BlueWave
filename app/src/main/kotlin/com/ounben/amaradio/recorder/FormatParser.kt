@@ -13,7 +13,26 @@ object FormatParser {
         UNKNOWN("mp3", "audio/mpeg") // Safe default
     }
 
-    fun detectFormat(contentType: String?, sampleBytes: ByteArray): AudioFormat {
+    fun detectFormat(codec: String?, contentType: String?, sampleBytes: ByteArray): AudioFormat {
+        // 1. Check Station Codec from DB first if explicit
+        if (!codec.isNullOrBlank()) {
+            val lowerCodec = codec.lowercase()
+            if (lowerCodec.contains("aac")) return AudioFormat.AAC
+            if (lowerCodec.contains("ogg")) return AudioFormat.OGG
+            if (lowerCodec.contains("flac")) return AudioFormat.FLAC
+            if (lowerCodec.contains("mp3") || lowerCodec.contains("mpeg")) return AudioFormat.MP3
+        }
+
+        // 2. Check Content-Type header
+        if (!contentType.isNullOrBlank()) {
+            val lowerCT = contentType.lowercase()
+            if (lowerCT.contains("aac")) return AudioFormat.AAC
+            if (lowerCT.contains("ogg")) return AudioFormat.OGG
+            if (lowerCT.contains("flac")) return AudioFormat.FLAC
+            if (lowerCT.contains("mpeg") || lowerCT.contains("mp3")) return AudioFormat.MP3
+        }
+
+        // 3. Check Magic Bytes
         if (sampleBytes.size >= 4) {
             val b0 = sampleBytes[0].toInt() and 0xFF
             val b1 = sampleBytes[1].toInt() and 0xFF
@@ -30,29 +49,19 @@ object FormatParser {
                 return AudioFormat.FLAC
             }
 
-            // ADTS AAC: 12 bits set to 1 (0xFF 0xF0 to 0xFF 0xF9)
-            if (b0 == 0xFF && (b1 and 0xF6) == 0xF0) {
+            // ADTS AAC: 12 bits sync (0xFF 0xF0) AND Layer bits = 00
+            if (b0 == 0xFF && (b1 and 0xF0) == 0xF0 && (b1 and 0x06) == 0x00) {
                 return AudioFormat.AAC
             }
 
-            // MP3 Frame Sync: 11 bits set to 1 (0xFF 0xE0 to 0xFF 0xFD)
-            if (b0 == 0xFF && (b1 and 0xE0) == 0xE0) {
+            // MP3: Sync bits AND Layer != 00
+            if (b0 == 0xFF && (b1 and 0xE0) == 0xE0 && (b1 and 0x06) != 0x00) {
                 return AudioFormat.MP3
             }
         }
 
-        return fromContentType(contentType)
+        return AudioFormat.UNKNOWN
     }
 
-    private fun fromContentType(contentType: String?): AudioFormat {
-        if (contentType.isNullOrBlank()) return AudioFormat.UNKNOWN
-        val lower = contentType.lowercase()
-        return when {
-            lower.contains("aac") -> AudioFormat.AAC
-            lower.contains("ogg") -> AudioFormat.OGG
-            lower.contains("flac") -> AudioFormat.FLAC
-            lower.contains("mpeg") || lower.contains("mp3") -> AudioFormat.MP3
-            else -> AudioFormat.UNKNOWN
-        }
-    }
+
 }
