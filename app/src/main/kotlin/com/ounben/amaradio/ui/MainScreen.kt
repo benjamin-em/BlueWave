@@ -82,21 +82,7 @@ fun MainScreen(
     var showProxyDialog by remember { mutableStateOf(false) }
     var showPlayerSelectorDialog by remember { mutableStateOf<DataRadioStation?>(null) }
     var showDeleteConfirmDialog by remember { mutableStateOf<Int?>(null) }
-    var showBatteryOptDialog by remember { mutableStateOf(false) }
     var isPlayerExpanded by remember { mutableStateOf(false) }
-
-    LaunchedEffect(Unit) {
-        try {
-            val powerManager = context.getSystemService(Context.POWER_SERVICE) as? android.os.PowerManager
-            val isIgnoring = powerManager?.isIgnoringBatteryOptimizations(context.packageName) ?: true
-            val sharedPref = PreferenceManager.getDefaultSharedPreferences(context)
-            val alreadyShown = sharedPref.getBoolean("battery_opt_dialog_shown", false)
-
-            if (!isIgnoring && !alreadyShown) {
-                showBatteryOptDialog = true
-            }
-        } catch (_: Exception) {}
-    }
     
     val settingsViewModel: SettingsViewModel = viewModel()
     val settingsUiState by settingsViewModel.uiState.collectAsState()
@@ -469,24 +455,6 @@ fun MainScreen(
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
-            }
-        )
-    }
-
-    if (showBatteryOptDialog) {
-        BatteryOptimizationDialog(
-            onDismiss = {
-                showBatteryOptDialog = false
-                PreferenceManager.getDefaultSharedPreferences(context).edit {
-                    putBoolean("battery_opt_dialog_shown", true)
-                }
-            },
-            onOpenSettings = {
-                showBatteryOptDialog = false
-                PreferenceManager.getDefaultSharedPreferences(context).edit {
-                    putBoolean("battery_opt_dialog_shown", true)
-                }
-                Utils.openBatteryOrAppSettings(context)
             }
         )
     }
