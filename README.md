@@ -1,29 +1,7 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Exodus Privacy](https://img.shields.io/badge/Exodus%20Privacy-0%20Tracker-brightgreen?logo=android)](https://reports.exodus-privacy.eu.org/de/reports/com.ounben.amaradio/latest/)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F96%20Clean-brightgreen?logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/c1e58ff9153b301fbd6a3f6e93cdca9f2e206010ebc7f83430322b652cecade7?nocache=1)
-[![Google Play](https://img.shields.io/badge/Google_Play-AMARadio-410099?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.ounben.amaradio)
-[![F-Droid](https://img.shields.io/f-droid/v/com.ounben.amaradio?logo=f-droid&logoColor=white&color=blue)](https://f-droid.org/packages/com.ounben.amaradio/)
-[![GitHub Release](https://img.shields.io/github/v/release/OunBen/AMARadio?logo=github&color=blue)](https://github.com/OunBen/AMARadio/releases/latest)
-[![Radio-Browser](https://img.shields.io/badge/Data-Radio--Browser.info-1E88E5?logo=radio&logoColor=white)](https://www.radio-browser.info/)
-[![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF.svg?logo=kotlin&logoColor=white)](https://kotlinlang.org/)
-
 # BlueWave Radio
 Ad-Free - No Paywall - Car-Ready Radio
 
-<img width="2212" height="1080" alt="amaradio_wallpaper" src="screenshots/amaradio_wallpaper.jpg" />
-
 **BlueWave** is an open-source Android application for worldwide radio streaming, forked from [AMARadio](https://github.com/ounben/AMARadio) (GPLv3). By leveraging the community-supported [radio-browser.info](https://www.radio-browser.info/) database, BlueWave provides instant access to thousands of stations in a stable, modern, and user-friendly environment.
-
-<div align="left">
-  <a href="https://play.google.com/store/apps/details?id=com.ounben.amaradio"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80" /></a>
-  <a href="https://f-droid.org/packages/com.ounben.amaradio">
-    <img src="https://f-droid.org/badge/get-it-on.png"
-    alt="Get it on F-Droid"
-    height="80" /></a>
-  <a href="obtainium://add/https://github.com/ounben/AMARadio"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" height="80" /></a>
-  <br />
-  <sub>(Obtainium installed? <a href="obtainium://add/https://github.com/ounben/AMARadio">Add directly</a> | No Obtainium? <a href="https://github.com/ImranR98/Obtainium">Download app</a>)</sub>
-</div>
 
 ## About this fork
 
@@ -79,49 +57,17 @@ Special thanks to the original [AMARadio](https://github.com/ounben/AMARadio) pr
 
 - **Robust Data Resilience**: Features a unique **Dual-Database Architecture** that strictly separates the global radio catalog from personal user data (Favorites, History, Filters). This ensures your personal settings are never lost during global database updates.
 
-## Youtube Video
-<p align="left">
-  <a href="https://www.youtube.com/watch?v=JTJLFj8M1XI">
-    <img src="https://img.youtube.com/vi/JTJLFj8M1XI/maxresdefault.jpg" alt="AMARadio Video Demo" width="600" />
-  </a>
-  <br />
-<sub>--> <a href="https://www.youtube.com/watch?v=JTJLFj8M1XI">Watch full video demo on YouTube</a></sub>  </a>
-</p>
-
-
-## Screenshots
-
-<p align="left">
-  <img src="screenshots/AMARadio_Playstore_Free_Worldwide_Radio.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Advanced_Filter_Option.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Android_Auto_Integration.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Widget_Support.webp" width="24%" />
-</p>
-<p align="left">
-  <img src="screenshots/AMARadio_Playstore_Light_Mode_Dark_Mode.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Grid_View_List_View.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Track_History_Station_History.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_UI_Scaling.webp" width="24%" />
-</p>
-<p align="left">
-
-  <img src="screenshots/AMARadio_Playstore_Languages.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Auto_Sync_Radio_Browser_Database.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Talkback.webp" width="24%" />
-  <img src="screenshots/AMARadio_Playstore_Android_17_Updates.webp" width="24%" />
-</p>
-
 ## Getting Started
 
 ### Installation
-You can download the application from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ounben.amaradio), [Obtanium](https://obtainium.imranr.dev/) or the [GitHub releases page](https://github.com/ounben/AMARadio/releases) .
+Download the latest APK from the [GitHub releases page](https://github.com/benjamin-em/BlueWave/releases), or build it from source as described below.
 
 ### Building from Source
 To build the project locally, ensure you have the latest version of Android Studio installed.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ounben/AMARadio.git
+   git clone https://github.com/benjamin-em/BlueWave.git
    ```
 2. Open the project in **Android Studio**.
 3. Build using the Gradle wrapper:
@@ -151,7 +97,7 @@ To build the project locally, ensure you have the latest version of Android Stud
 ## Contributing
 
 Contributions are welcome and appreciated. If you wish to improve the codebase, fix bugs, or update translations, please follow these steps:
-- Report issues via the [GitHub Issue Tracker](https://github.com/ounben/AMARadio/issues).
+- Report issues via the [GitHub Issue Tracker](https://github.com/benjamin-em/BlueWave/issues).
 - Submit improvements via Pull Requests.
 - Translation updates are highly encouraged to improve global accessibility.
 
