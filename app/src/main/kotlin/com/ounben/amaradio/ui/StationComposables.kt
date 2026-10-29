@@ -17,6 +17,7 @@ import androidx.compose.ui.draganddrop.DragAndDropTransferData
 import androidx.compose.ui.draganddrop.mimeTypes
 import androidx.compose.ui.draganddrop.toAndroidDragEvent
 import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.material.icons.filled.DragHandle
 import sh.calvin.reorderable.rememberReorderableLazyListState
 import sh.calvin.reorderable.rememberReorderableLazyGridState
@@ -137,8 +138,19 @@ fun StationNameText(
     name: String,
     style: androidx.compose.ui.text.TextStyle,
     color: Color,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    scroll: Boolean = false
 ) {
+    // Marquee only while this station is the active one; everything else is
+    // static and simply ellipsised, so a list at rest holds still.
+    val marquee: Modifier = if (scroll) {
+        Modifier.basicMarquee(
+            iterations = Int.MAX_VALUE,
+            initialDelayMillis = MARQUEE_START_DELAY_MS
+        )
+    } else Modifier
+    val overflowMode = if (scroll) TextOverflow.Clip else TextOverflow.Ellipsis
+
     val (head, tail) = remember(name) { splitStationName(name) }
     if (tail.isEmpty()) {
         Text(
@@ -148,11 +160,8 @@ fun StationNameText(
             color = color,
             maxLines = 1,
             softWrap = false,
-            overflow = TextOverflow.Clip,
-            modifier = modifier.basicMarquee(
-                iterations = Int.MAX_VALUE,
-                initialDelayMillis = MARQUEE_START_DELAY_MS
-            )
+            overflow = overflowMode,
+            modifier = modifier.then(marquee)
         )
     } else {
         Layout(
@@ -165,11 +174,8 @@ fun StationNameText(
                     color = color,
                     maxLines = 1,
                     softWrap = false,
-                    overflow = TextOverflow.Clip,
-                    modifier = Modifier.basicMarquee(
-                        iterations = Int.MAX_VALUE,
-                        initialDelayMillis = MARQUEE_START_DELAY_MS
-                    )
+                    overflow = overflowMode,
+                    modifier = marquee
                 )
                 Text(
                     text = "·",
@@ -187,11 +193,8 @@ fun StationNameText(
                     color = color.copy(alpha = 0.75f),
                     maxLines = 1,
                     softWrap = false,
-                    overflow = TextOverflow.Clip,
-                    modifier = Modifier.basicMarquee(
-                        iterations = Int.MAX_VALUE,
-                        initialDelayMillis = MARQUEE_START_DELAY_MS
-                    )
+                    overflow = overflowMode,
+                    modifier = marquee
                 )
             }
         ) { measurables, constraints ->
@@ -222,81 +225,192 @@ fun StationIcon(
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
-    val placeholderText = remember(stationName) { StationPlaceholderUtils.extractPlaceholderText(stationName) }
+    val placeholder = remember(stationName) { StationPlaceholderUtils.extractPlaceholder(stationName) }
     val placeholderColor = remember(stationUuid) { Color(StationPlaceholderUtils.getPlaceholderColor(stationUuid)) }
     
+    // Resolve to a real image when one exists, else to null so the Compose
+    // placeholder below draws instead of the provider's generated bitmap.
     val finalIconUri = remember(stationUuid, iconUrl) {
         val iconDir = File(context.filesDir, "station_icons")
         val iconFile = File(iconDir, "$stationUuid.jpg")
-        
+
         if (!iconUrl.isNullOrBlank() && iconUrl.startsWith("file:/")) {
             android.net.Uri.parse(iconUrl)
-        } else if (iconFile.exists()) {
-            StationIconProvider.getIconUri(stationUuid, stationName)
+        } else if (iconFile.exists() && iconFile.length() > 2048) {
+            android.net.Uri.fromFile(iconFile)
         } else if (!iconUrl.isNullOrBlank() && iconUrl != "null" && iconUrl.startsWith("http")) {
             android.net.Uri.parse(iconUrl)
         } else {
-            StationIconProvider.getIconUri(stationUuid, stationName)
+            null
         }
     }
     
-    var isLoading by remember { mutableStateOf(true) }
-    var isError by remember { mutableStateOf(false) }
+    var isLoading by remember(finalIconUri) { mutableStateOf(finalIconUri != null) }
+    var isError by remember(finalIconUri) { mutableStateOf(false) }
 
     val imageRequest = remember(finalIconUri, stationUuid) {
-        ImageRequest.Builder(context)
-            .data(finalIconUri)
-            .size(512, 512) 
-            .allowHardware(false)
-            .crossfade(true)
-            .listener(
-                onSuccess = { _, result ->
-                    val iconDir = File(context.filesDir, "station_icons")
-                    val iconFile = File(iconDir, "$stationUuid.jpg")
-                    if (stationUuid.isNotEmpty()) {
-                        CoroutineScope(Dispatchers.IO).launch {
-                            try {
-                                if (!iconDir.exists()) iconDir.mkdirs()
-                                val sourceBitmap = result.drawable.toBitmap(512, 512, android.graphics.Bitmap.Config.ARGB_8888)
-                                val whiteBitmap = android.graphics.Bitmap.createBitmap(512, 512, android.graphics.Bitmap.Config.ARGB_8888)
-                                val canvas = android.graphics.Canvas(whiteBitmap)
-                                canvas.drawColor(android.graphics.Color.WHITE)
-                                canvas.drawBitmap(sourceBitmap, 0f, 0f, null)
-                                FileOutputStream(iconFile).use { out ->
-                                    whiteBitmap.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, out)
-                                }
-                            } catch (_: Exception) { }
+        if (finalIconUri == null) null else {
+            // Only a real remote artwork may be cached. A generated placeholder must
+            // never be written to station_icons/, or it freezes in place as if it
+            // were the station's own logo.
+            val isRemoteArtwork = finalIconUri.scheme == "http" || finalIconUri.scheme == "https"
+            ImageRequest.Builder(context)
+                .data(finalIconUri)
+                .size(512, 512)
+                .allowHardware(false)
+                .crossfade(true)
+                .listener(
+                    onSuccess = { _, result ->
+                        val iconDir = File(context.filesDir, "station_icons")
+                        val iconFile = File(iconDir, "$stationUuid.jpg")
+                        if (stationUuid.isNotEmpty() && isRemoteArtwork) {
+                            CoroutineScope(Dispatchers.IO).launch {
+                                try {
+                                    if (!iconDir.exists()) iconDir.mkdirs()
+                                    val sourceBitmap = result.drawable.toBitmap(512, 512, android.graphics.Bitmap.Config.ARGB_8888)
+                                    val whiteBitmap = android.graphics.Bitmap.createBitmap(512, 512, android.graphics.Bitmap.Config.ARGB_8888)
+                                    val canvas = android.graphics.Canvas(whiteBitmap)
+                                    canvas.drawColor(android.graphics.Color.WHITE)
+                                    canvas.drawBitmap(sourceBitmap, 0f, 0f, null)
+                                    FileOutputStream(iconFile).use { out ->
+                                        whiteBitmap.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, out)
+                                    }
+                                } catch (_: Exception) { }
+                            }
                         }
                     }
-                }
-            )
-            .build()
+                )
+                .build()
+        }
     }
+
+    val showPlaceholder = imageRequest == null || isLoading || isError
 
     Box(
         modifier = modifier
-            .background(if (isError || isLoading) placeholderColor else Color.White),
+            .background(if (showPlaceholder) placeholderColor else Color.White),
         contentAlignment = Alignment.Center
     ) {
-        if (isLoading || isError) {
-            Text(
-                text = placeholderText,
-                color = Color.White,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold
+        if (showPlaceholder) {
+            StationPlaceholderContent(placeholder)
+        }
+
+        if (imageRequest != null) {
+            AsyncImage(
+                model = imageRequest,
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Fit,
+                onState = { state ->
+                    isLoading = state is AsyncImagePainter.State.Loading
+                    isError = state is AsyncImagePainter.State.Error
+                }
             )
         }
-        
-        AsyncImage(
-            model = imageRequest,
-            contentDescription = null,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Fit,
-            onState = { state ->
-                isLoading = state is AsyncImagePainter.State.Loading
-                isError = state is AsyncImagePainter.State.Error
+    }
+}
+
+/**
+ * Draws the generated station placeholder. Type sizes are derived from the measured
+ * box so the same composable works at 40dp in the mini player and 168dp in the
+ * full player; measuring via onSizeChanged keeps it safe under IntrinsicSize.
+ */
+@Composable
+private fun StationPlaceholderContent(placeholder: StationPlaceholderUtils.Placeholder) {
+    var boxSize by remember { mutableStateOf(0) }
+    val density = LocalDensity.current
+    val sideDp = with(density) { boxSize.toDp() }
+    // The box is sized in dp but text is sized in sp, so car mode's 1.45x fontScale
+    // would overflow it. Dividing it out keeps the glyphs locked to the box.
+    val fontUnit = sideDp.value / density.fontScale
+
+    Box(
+        modifier = Modifier.fillMaxSize().onSizeChanged { boxSize = minOf(it.width, it.height) },
+        contentAlignment = Alignment.Center
+    ) {
+        if (boxSize == 0) return@Box
+        when (placeholder) {
+            is StationPlaceholderUtils.Placeholder.Frequency -> {
+                Column(
+                    modifier = Modifier.fillMaxSize().padding(horizontal = sideDp * 0.08f),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    Text(
+                        text = placeholder.band,
+                        color = Color.White,
+                        fontSize = (fontUnit * 0.24f).sp,
+                        lineHeight = (fontUnit * 0.26f).sp,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1
+                    )
+                    Text(
+                        text = placeholder.value,
+                        color = Color.White,
+                        fontSize = (fontUnit * 0.30f).sp,
+                        lineHeight = (fontUnit * 0.32f).sp,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        softWrap = false,
+                        modifier = Modifier.align(Alignment.End)
+                    )
+                }
             }
-        )
+            is StationPlaceholderUtils.Placeholder.TwoLine -> {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        // The flag badge sits over the bottom-right corner, so the
+                        // lower line is inset to stay clear of it.
+                        .padding(start = sideDp * 0.04f, end = sideDp * 0.16f),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    // Both lines shrink as they get longer, so 4 characters still fit
+                    // inside a 56dp list icon instead of being clipped.
+                    val topSize = when {
+                        placeholder.bottom.isEmpty() -> 0.40f
+                        placeholder.top.length >= 3 -> 0.26f
+                        else -> 0.32f
+                    }
+                    val bottomSize = when (placeholder.bottom.length) {
+                        0, 1, 2 -> 0.22f
+                        3 -> 0.19f
+                        else -> 0.155f
+                    }
+                    Text(
+                        text = placeholder.top,
+                        color = Color.White,
+                        fontSize = (fontUnit * topSize).sp,
+                        lineHeight = (fontUnit * (topSize + 0.02f)).sp,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        softWrap = false
+                    )
+                    if (placeholder.bottom.isNotEmpty()) {
+                        Text(
+                            text = placeholder.bottom,
+                            color = Color.White.copy(alpha = 0.92f),
+                            fontSize = (fontUnit * bottomSize).sp,
+                            lineHeight = (fontUnit * (bottomSize + 0.02f)).sp,
+                            fontWeight = FontWeight.Medium,
+                            maxLines = 1,
+                            softWrap = false
+                        )
+                    }
+                }
+            }
+            is StationPlaceholderUtils.Placeholder.Single -> {
+                Text(
+                    text = placeholder.text,
+                    color = Color.White,
+                    fontSize = (fontUnit * 0.36f).sp,
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1,
+                    softWrap = false
+                )
+            }
+        }
     }
 }
 
@@ -605,39 +719,21 @@ fun StationListItem(
                 }
             }
             Spacer(modifier = Modifier.width(14.dp))
+            // Car mode scales every sp by 1.45x already, so the list steps the style
+            // down a notch — bodyLarge on top of that scale truncated most names.
+            val isCarModeList by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
             StationNameText(
                 name = station.Name,
-                style = if (com.ounben.amaradio.CarModeManager.isCarMode.collectAsState().value)
-                    MaterialTheme.typography.titleMedium else MaterialTheme.typography.titleLarge,
+                style = if (isCarModeList) MaterialTheme.typography.bodyMedium
+                        else MaterialTheme.typography.bodyLarge,
                 color = if (isPlaying) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                scroll = isPlaying
             )
         }
 
         if (dragHandle != null) {
             dragHandle(Modifier.fillMaxHeight())
-        }
-
-        Box(
-            modifier = Modifier
-                .minimumInteractiveComponentSize()
-                .size(48.dp)
-                .combinedClickable(
-                    onClick = {
-                        if (!isFavorite) onFavoriteClick()
-                    },
-                    onLongClick = onLongClick
-                ),
-            contentAlignment = Alignment.Center
-        ) {
-            Icon(
-                imageVector = if (isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
-                contentDescription = stringResource(
-                    if (isFavorite) R.string.accessibility_favorite_selected
-                    else R.string.accessibility_favorite_not_selected
-                ),
-                tint = if (isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
-            )
         }
     }
 }
@@ -714,29 +810,6 @@ fun StationGridItem(
                 Box(modifier = Modifier.align(Alignment.TopStart)) {
                     dragHandle(Modifier)
                 }
-            }
-
-            Box(
-                modifier = Modifier
-                    .align(Alignment.TopEnd)
-                    .minimumInteractiveComponentSize()
-                    .size(48.dp)
-                    .combinedClickable(
-                        onClick = {
-                            if (!isFavorite) onFavoriteClick()
-                        },
-                        onLongClick = onLongClick
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-                Icon(
-                    imageVector = if (isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
-                    contentDescription = stringResource(
-                        if (isFavorite) R.string.accessibility_favorite_selected 
-                        else R.string.accessibility_favorite_not_selected
-                    ),
-                    tint = if (isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurface
-                )
             }
         }
     }

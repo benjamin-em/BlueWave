@@ -126,6 +126,11 @@ fun MainScreen(
 
     BackHandler(enabled = isPlayerExpanded) { isPlayerExpanded = false }
 
+    // Collapse if the station goes away, so the sheet cannot stay open over nothing.
+    LaunchedEffect(playerUiState.currentStation) {
+        if (playerUiState.currentStation == null) isPlayerExpanded = false
+    }
+
     BackHandler(enabled = mainUiState.isSearching) {
         mainViewModel.setSearchActive(false)
         searchViewModel.clearResults()
@@ -217,12 +222,14 @@ fun MainScreen(
             }
         ) { innerPadding ->
             Box(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
-                // Fixed bottom padding to avoid measurement loops during scrolling
-                val contentBottomPadding = 110.dp 
+                // Fixed bottom padding to avoid measurement loops during scrolling.
+                // With no station loaded the mini player is gone, so the list uses the space.
+                val hasStation = playerUiState.currentStation != null
+                val contentBottomPadding = if (hasStation) 68.dp else 0.dp
                 
                 if (mainUiState.isSearching) {
                     Surface(
-                        modifier = Modifier.fillMaxSize().padding(bottom = if (playerUiState.currentStation != null) contentBottomPadding else 0.dp),
+                        modifier = Modifier.fillMaxSize().padding(bottom = contentBottomPadding),
                         color = MaterialTheme.colorScheme.background
                     ) {
                         if (searchUiState.isSearching && searchUiState.results.isEmpty()) {
@@ -358,40 +365,41 @@ fun MainScreen(
                     }
                 }
 
-                // MiniPlayer / FullPlayer Container
+                // MiniPlayer / FullPlayer Container — only once a station is loaded
+                if (hasStation) {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .then(
-                            if (isPlayerExpanded && playerUiState.currentStation != null) 
+                            if (isPlayerExpanded)
                                 Modifier.fillMaxHeight()
-                            else 
+                            else
                                 Modifier.wrapContentHeight()
                         )
                         .align(Alignment.BottomCenter)
                         .then(
-                            if (isPlayerExpanded && playerUiState.currentStation != null) Modifier
+                            if (isPlayerExpanded) Modifier
                             else Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
                         )
                         .clip(
-                            if (isPlayerExpanded && playerUiState.currentStation != null)
+                            if (isPlayerExpanded)
                                 RoundedCornerShape(0.dp)
-                            else RoundedCornerShape(24.dp)
+                            else RoundedCornerShape(20.dp)
                         )
                         .background(
-                            if (isPlayerExpanded && playerUiState.currentStation != null) MaterialTheme.colorScheme.primaryContainer
+                            if (isPlayerExpanded) MaterialTheme.colorScheme.primaryContainer
                             else MaterialTheme.colorScheme.surface
                         )
                         .draggable(
                             orientation = Orientation.Vertical,
                             state = rememberDraggableState { /* ignore delta */ },
                             onDragStopped = { velocity ->
-                                if (velocity < -500f && playerUiState.currentStation != null) isPlayerExpanded = true
+                                if (velocity < -500f) isPlayerExpanded = true
                                 if (velocity > 500f) isPlayerExpanded = false
                             }
                         )
                 ) {
-                    if (isPlayerExpanded && playerUiState.currentStation != null) {
+                    if (isPlayerExpanded) {
                         Column {
                             Box(modifier = Modifier.fillMaxWidth().height(32.dp).clickable { isPlayerExpanded = false }, contentAlignment = Alignment.Center) {
                                 Box(modifier = Modifier.size(40.dp, 4.dp).background(MaterialTheme.colorScheme.onSurfaceVariant, RoundedCornerShape(2.dp)))
@@ -406,12 +414,11 @@ fun MainScreen(
                         MiniPlayer(
                             viewModel = playerViewModel,
                             isHeaderRole = false,
-                            onToggleBottomSheet = { 
-                                if (playerUiState.currentStation != null) isPlayerExpanded = true 
-                            },
+                            onToggleBottomSheet = { isPlayerExpanded = true },
                             onMoreClick = { }
                         )
                     }
+                }
                 }
             }
         }

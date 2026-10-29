@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.47] - 2026-10-29
+### Added
+- **Station Placeholder Icons**: Stations without a logo now get a generated placeholder. A dial frequency in the name (`FM97.1`, `97.1 FM`, `106.1MHz`, `AM 1080`) renders as a small band tag with the number beside it; otherwise up to 6 CJK characters are split over two lines (`武汉` / `新闻广播`). Digits only count as a frequency when tied to a band marker. Covered by `StationPlaceholderUtilsTest`.
+
+### Changed
+- **Mini Player**: Slimmer bar (smaller icon and button, tighter padding, no permanent bandwidth row) and hidden entirely until a station is loaded, so the list uses the full height.
+- **Station Lists**: Smaller station names that stay static; only the playing station scrolls. The favourite star is removed from list and grid items — favouriting is done from the player screen.
+- **Car Mode Player**: Record button and favourite star move into the "Track history" row in place of the bandwidth readout (hidden in car mode); the control bar keeps only previous / play / next. Station names in lists step down one size, since car mode already scales all text by 1.45x.
+
+### Fixed
+- **Placeholder Poisoning the Icon Cache**: A generated placeholder bitmap was written into `station_icons/` (by `StationIcon` and by `PlayerService.fetchStationBitmap`), where the UI treats any file over 2 KB as the station's real logo. This froze the placeholder in place and blocked genuine logos. Only real http(s) artwork is cached now; notification/Android Auto fallbacks are generated in memory. Existing installs need their app data cleared once to drop already-poisoned files.
+- **Placeholder Overflow in Car Mode**: Placeholder text is sized against the measured box with the font scale divided out, and inset to clear the flag badge.
+
 ## [1.46] - 2026-10-23
 ### Added
 - **Multi-Tag Filter Engine & Logical Operators**: Added support for up to 3 filter tags with dynamic logical operators (`AND`, `OR`, `NOT`) in the local offline database (`StationDao.kt`), allowing advanced genre filtering (e.g. `pop` AND `80s`, or excluding genres with `NOT`).

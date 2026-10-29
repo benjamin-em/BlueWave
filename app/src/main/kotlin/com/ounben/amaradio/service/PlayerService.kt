@@ -995,10 +995,11 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             } catch (_: Exception) {}
         }
 
-        // 4. FALLBACK: Platzhalter generieren und speichern (Wichtig für Android Auto/Notifications)
-        val placeholder = StationPlaceholderUtils.createPlaceholderBitmap(station.Name, station.StationUuid)
-        saveBitmapToFile(placeholder, iconFile)
-        return placeholder
+        // 4. FALLBACK: Platzhalter nur für Notification/Android Auto erzeugen.
+        // NICHT speichern: station_icons/ gilt der UI als echtes Logo, ein dort
+        // abgelegter Platzhalter verdeckt dauerhaft das Compose-Placeholder und
+        // ein später gefundenes echtes Icon.
+        return StationPlaceholderUtils.createPlaceholderBitmap(station.Name, station.StationUuid)
     }
 
     private fun saveBitmapToFile(bitmap: Bitmap, file: File) {
