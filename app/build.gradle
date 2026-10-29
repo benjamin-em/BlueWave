@@ -158,7 +158,7 @@ android {
 androidComponents {
     onVariants(selector().all()) { variant ->
         variant.outputs.forEach { output ->
-            output.outputFileName.set("AMARadio_${appVersion}_${variant.flavorName}.apk")
+            output.outputFileName.set("BlueWave_${appVersion}_${variant.flavorName}.apk")
         }
     }
 }
