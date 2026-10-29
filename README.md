@@ -101,6 +101,10 @@ Contributions are welcome and appreciated. If you wish to improve the codebase, 
 - Submit improvements via Pull Requests.
 - Translation updates are highly encouraged to improve global accessibility.
 
+## Third-Party Software & Notices
+
+BlueWave incorporates components and open-source libraries under various licenses (including Apache 2.0, MIT, and CC0). For a comprehensive list of all third-party dependencies, copyright notices, and license texts, please see [NOTICES.md](NOTICES.md).
+
 ## License
 
 This project is licensed under the **GNU General Public License v3.0**. Detailed information can be found in the [LICENCE](LICENCE) file.

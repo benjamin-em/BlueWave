@@ -93,7 +93,7 @@ class SplashActivity : ComponentActivity() {
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(
-                            text = "AMARadio",
+                            text = stringResource(R.string.app_name),
                             color = Color.White,
                             style = MaterialTheme.typography.headlineLarge
                         )
