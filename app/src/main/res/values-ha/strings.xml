@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">Mabuɗin shahara yana ƙaruwa</string>
     <string name="icon_click_trend_stable">Mabuɗin shahara yana da kyau</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Kyauta daga Tallace-tallace &amp; Sirri</string>
 
     <string name="action_play_in_external">Kunna da na\'urar waje</string>
@@ -354,8 +354,8 @@
     <string name="select_image">Zaɓi hoto</string>
     <string name="error_invalid_url">Da fatan za ku shigar da hanyar sadarwa mai kyau</string>
     <string name="action_save">Adana</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Mafi saurin sarrafa na\'urar kunne</string>
     <string name="widget_description_full">Na\'urar kunne da jerin gidajen rediyo</string>
 

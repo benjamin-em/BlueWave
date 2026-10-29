@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Populariti meningkat</string>
     <string name="icon_click_trend_stable">Populariti stabil</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Bebas Iklan &amp; Peribadi</string>
 
     <string name="action_play_in_external">Main dalam pemain luaran</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Pilih Imej</string>
     <string name="error_invalid_url">Sila masukkan URL yang sah</string>
     <string name="action_save">Simpan</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Kawalan pemain pantas</string>
     <string name="widget_description_full">Pemain dan senarai stesen radio</string>
 

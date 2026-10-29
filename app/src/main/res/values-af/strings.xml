@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">Gewildheid neem toe</string>
     <string name="icon_click_trend_stable">Gewildheid stabiel</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Advertensievry &amp; Privaat</string>
 
     <string name="action_play_in_external">Speel in eksterne speler</string>
@@ -354,8 +354,8 @@
     <string name="select_image">Kies Beeld</string>
     <string name="error_invalid_url">Voer asseblief \'n geldige URL in</string>
     <string name="action_save">Stoor</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Vinnige spelerkontroles</string>
     <string name="widget_description_full">Speler en stasielys</string>
 

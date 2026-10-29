@@ -5,6 +5,8 @@ import android.os.PowerManager
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.background
+import androidx.compose.ui.draw.clip
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
@@ -78,7 +80,14 @@ fun SettingsScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             if (!uiState.isReviewCompleted || !isIgnoringBatteryOpt) {
-                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(20.dp))
+                        .background(MaterialTheme.colorScheme.surface)
+                        .padding(horizontal = 16.dp, vertical = 4.dp),
+                    verticalArrangement = Arrangement.spacedBy(2.dp)
+                ) {
                     if (!uiState.isReviewCompleted) {
                         val app = LocalContext.current.applicationContext as AMARadioApp
                         SettingsClickable(
@@ -87,10 +96,6 @@ fun SettingsScreen(
                             icon = Icons.Default.Star,
                             verticalPadding = 4.dp,
                             onClick = onRateApp
-                        )
-                        HorizontalDivider(
-                            modifier = Modifier.padding(vertical = 4.dp),
-                            color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f)
                         )
                     }
 
@@ -105,10 +110,6 @@ fun SettingsScreen(
                             iconSize = 32.dp,
                             verticalPadding = 4.dp,
                             onClick = onBatteryOptimize
-                        )
-                        HorizontalDivider(
-                            modifier = Modifier.padding(vertical = 4.dp),
-                            color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f)
                         )
                     }
                 }
@@ -277,6 +278,19 @@ fun SettingsScreen(
                         onDismiss = { showCountryDialog = false }
                     )
                 }
+
+                // Car mode (auto when BT connected / force on / off)
+                SettingsListPreference(
+                    title = stringResource(R.string.car_mode),
+                    currentValue = uiState.carMode,
+                    entries = stringArrayResource(R.array.car_mode_entries),
+                    entryValues = stringArrayResource(R.array.car_mode_values),
+                    icon = Icons.Default.DirectionsCar,
+                    onValueChange = { viewModel.updateString("car_mode", it) }
+                )
+
+                // Home location for the home-screen geo groups
+                HomeLocationSettings(viewModel = viewModel, uiState = uiState)
             }
 
             // Startup Behaviour
@@ -371,13 +385,19 @@ fun SettingsCategory(title: String, content: @Composable ColumnScope.() -> Unit)
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(
             text = title,
-            style = MaterialTheme.typography.titleSmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 4.dp)
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier.padding(start = 8.dp, top = 6.dp)
         )
-        content()
-        HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = 0.1f))
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(20.dp))
+                .background(MaterialTheme.colorScheme.surface)
+                .padding(horizontal = 16.dp, vertical = 4.dp),
+            content = content
+        )
     }
 }
 

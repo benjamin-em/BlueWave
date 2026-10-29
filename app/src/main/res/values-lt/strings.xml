@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Populiarumas didėja</string>
     <string name="icon_click_trend_stable">Populiarumas stabilus</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100 % be reklamų ir privatumas</string>
 
     <string name="action_play_in_external">Groti išoriniame grotuve</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Pasirinkite Vaizdas</string>
     <string name="error_invalid_url">Įveskite tinkamą URL</string>
     <string name="action_save">Išsaugoti</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Greitas grotuvo valdymas</string>
     <string name="widget_description_full">Grotuvas ir radijo stočių sąrašas</string>
 

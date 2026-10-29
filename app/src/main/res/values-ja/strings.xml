@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">人気上昇中</string>
     <string name="icon_click_trend_stable">人気安定</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% 広告なし ＆ プライバシー重視</string>
 
     <string name="action_play_in_external">外部プレイヤーで再生</string>
@@ -352,8 +352,8 @@
     <string name="select_image">画像の選択</string>
     <string name="error_invalid_url">有効な URL を入力してください</string>
     <string name="action_save">保存</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">プレーヤーのクイックコントロール</string>
     <string name="widget_description_full">ラジオプレーヤーとラジオ局リスト</string>
 

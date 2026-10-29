@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">জনপ্রিয়তা বাড়ছে</string>
     <string name="icon_click_trend_stable">জনপ্রিয়তা স্থিতিশীল</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">১০০% বিজ্ঞাপন-মুক্ত এবং ব্যক্তিগত</string>
 
     <string name="action_play_in_external">এক্সটার্নাল প্লেয়ারে বাজান</string>
@@ -350,8 +350,8 @@
     <string name="select_image">ছবি নির্বাচন করুন</string>
     <string name="error_invalid_url">একটি বৈধ URL লিখুন</string>
     <string name="action_save">সংরক্ষণ করুন</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">দ্রুত প্লেয়ার নিয়ন্ত্রণ</string>
     <string name="widget_description_full">প্লেয়ার এবং রেডিও স্টেশন তালিকা</string>
 

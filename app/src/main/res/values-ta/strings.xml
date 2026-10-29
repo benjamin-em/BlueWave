@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">பிரபலம் அதிகரிக்கிறது</string>
     <string name="icon_click_trend_stable">பிரபலம் நிலையானது</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% விளம்பரம் இல்லாதது &amp; தனிப்பட்டது</string>
 
     <string name="action_play_in_external">வெளிப்புற பிளேயரில் இயக்கு</string>
@@ -352,8 +352,8 @@
     <string name="select_image">படத்தைத் தேர்ந்தெடுக்கவும்</string>
     <string name="error_invalid_url">சரியான URL ஐ உள்ளிடவும்</string>
     <string name="action_save">சேமிக்கவும்</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">விரைவான பிளேயர் கட்டுப்பாடுகள்</string>
     <string name="widget_description_full">பிளேயர் மற்றும் வானொலி நிலையப் பட்டியல்</string>
 

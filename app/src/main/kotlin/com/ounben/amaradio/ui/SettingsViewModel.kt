@@ -35,7 +35,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         val stationClickCounter: Boolean = true,
         val removeNotificationOnStop: Boolean = false,
         val autoResumeAudioFocus: Boolean = true,
-        val isReviewCompleted: Boolean = false
+        val isReviewCompleted: Boolean = false,
+        val carMode: String = "auto",
+        val homeProvince: String = "",
+        val homeCity: String = ""
     )
 
     private val _uiState = MutableStateFlow(SettingsUiState())
@@ -94,7 +97,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
                 stationClickCounter = sharedPref.getBoolean("settings_station_click_counter", app.resources.getBoolean(R.bool.default_station_click_counter)),
                 removeNotificationOnStop = sharedPref.getBoolean("settings_remove_notification_on_stop", false),
                 autoResumeAudioFocus = sharedPref.getBoolean("settings_auto_resume_audio_focus", true),
-                isReviewCompleted = sharedPref.getBoolean("review_completed", false)
+                isReviewCompleted = sharedPref.getBoolean("review_completed", false),
+                carMode = sharedPref.getString("car_mode", "auto") ?: "auto",
+                homeProvince = sharedPref.getString("settings_home_province", "") ?: "",
+                homeCity = sharedPref.getString("settings_home_city", "") ?: ""
             )
         }
     }
@@ -105,6 +111,9 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
             LocaleUtils.applyLocale(value)
         } else {
             sharedPref.edit { putString(key, value) }
+        }
+        if (key == "car_mode") {
+            com.ounben.amaradio.CarModeManager.update(getApplication())
         }
     }
 

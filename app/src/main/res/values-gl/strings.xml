@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Aumento da popularidade</string>
     <string name="icon_click_trend_stable">Popularidade estable</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% libre de publicidade &amp; privado</string>
 
     <string name="action_play_in_external">Reproducir en reprodutor externo</string>
@@ -350,8 +350,8 @@
     <string name="select_image">Seleccione Imaxe</string>
     <string name="error_invalid_url">Introduce un URL válido</string>
     <string name="action_save">Gardar</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Controis rápidos do reprodutor</string>
     <string name="widget_description_full">Reprodutor e lista de emisoras de radio</string>
 

@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">Ipopulariti iyenyuka</string>
     <string name="icon_click_trend_stable">Ipopulariti ayitshintshi</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">Simahla 100% kwizibhengezo kwaye ingeyakho</string>
 
     <string name="action_play_in_external">Dlalisa ngomdlali wangaphandle</string>
@@ -354,8 +354,8 @@
     <string name="select_image">Khetha umfanekiso</string>
     <string name="error_invalid_url">Nceda ufake i-URL echanekileyo</string>
     <string name="action_save">Gcina</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Iminxeba yokudlala elula</string>
     <string name="widget_description_full">Umdlali kunye noluhlu lwezikhululo ze-radiyo</string>
 

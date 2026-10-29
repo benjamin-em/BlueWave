@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Popularitāte palielinās</string>
     <string name="icon_click_trend_stable">Popularitāte ir stabila</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% bez reklāmām un privāti</string>
 
     <string name="action_play_in_external">Atskaņot ārējā atskaņotājā</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Izvēlieties Attēls</string>
     <string name="error_invalid_url">Lūdzu, ievadiet derīgu URL</string>
     <string name="action_save">Saglabāt</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Ātrās atskaņotāja vadīklas</string>
     <string name="widget_description_full">Atskaņotājs un radio staciju saraksts</string>
 

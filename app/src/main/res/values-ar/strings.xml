@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">الشهرة تزداد</string>
     <string name="icon_click_trend_stable">الشهرة مستقرة</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% خالٍ من الإعلانات وخاص</string>
 
     <string name="action_play_in_external">التشغيل في مشغل خارجي</string>
@@ -351,8 +351,8 @@
     <string name="select_image">حدد الصورة</string>
     <string name="error_invalid_url">الرجاء إدخال عنوان URL صالح</string>
     <string name="action_save">حفظ</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">عناصر تحكم المشغل السريعة</string>
     <string name="widget_description_full">المشغل وقائمة محطات الراديو</string>
 

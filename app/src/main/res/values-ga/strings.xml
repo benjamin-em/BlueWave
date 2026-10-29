@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Clú ag méadú</string>
     <string name="icon_click_trend_stable">Clú seasmhach</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Saor ó Fhógraí &amp; Príobháideach</string>
 
     <string name="action_play_in_external">Seinn i seinnteoir seachtrach</string>
@@ -350,8 +350,8 @@
     <string name="select_image">Roghnaigh Íomhá</string>
     <string name="error_invalid_url">Cuir isteach URL bailí</string>
     <string name="action_save">Sábháil</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Rialuithe tapa an tseinnteora</string>
     <string name="widget_description_full">Seinnteoir agus liosta stáisiún raidió</string>
 

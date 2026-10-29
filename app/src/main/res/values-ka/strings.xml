@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">პოპულარობა იმატებს</string>
     <string name="icon_click_trend_stable">პოპულარობა სტაბილურია</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100%-ით რეკლამის გარეშე</string>
 
     <string name="action_play_in_external">დაკვრა გარე ფლეიერში</string>
@@ -352,8 +352,8 @@
     <string name="select_image">აირჩიეთ სურათი</string>
     <string name="error_invalid_url">გთხოვთ, შეიყვანოთ სწორი URL</string>
     <string name="action_save">შენახვა</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">დაკვრის სწრაფი მართვა</string>
     <string name="widget_description_full">ფლეიერი და რადიოსადგურების სია</string>
 

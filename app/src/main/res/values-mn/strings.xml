@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">Нэр хүнд өсч байна</string>
     <string name="icon_click_trend_stable">Нэр хүнд тогтвортой</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% сурталчилгаагүй ба хувийн нууц</string>
 
     <string name="action_play_in_external">Гадаад тоглуулагчаар тоглуулах</string>
@@ -354,8 +354,8 @@
     <string name="select_image">Зураг сонгох</string>
     <string name="error_invalid_url">Зөв URL оруулна уу</string>
     <string name="action_save">Хадгалах</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Түргэн тоглуулагчийн удирдлага</string>
     <string name="widget_description_full">Тоглуулагч болон радио станцын жагсаалт</string>
 

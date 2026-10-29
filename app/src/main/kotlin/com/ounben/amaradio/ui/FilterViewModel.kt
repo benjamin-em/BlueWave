@@ -97,6 +97,12 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
     private val _uiState = MutableStateFlow(FilterUiState())
     val uiState: StateFlow<FilterUiState> = _uiState.asStateFlow()
 
+    /** One-shot request to scroll the pager to a newly added tab (user action only). */
+    private val _scrollToTab = MutableStateFlow(-1)
+    val scrollToTab: StateFlow<Int> = _scrollToTab.asStateFlow()
+
+    fun consumeScrollRequest() { _scrollToTab.value = -1 }
+
     private val sharedPref = PreferenceManager.getDefaultSharedPreferences(application)
     private val app = application as AMARadioApp
     private val json = Json { ignoreUnknownKeys = true; encodeDefaults = true }
@@ -249,10 +255,11 @@ class FilterViewModel(application: Application) : AndroidViewModel(application) 
 
     fun addTab() {
         if (_uiState.value.tabs.size >= 5) return
-        _uiState.update { 
+        _uiState.update {
             val newTabs = it.tabs + FilterTabItem(label = "")
             it.copy(tabs = newTabs, selectedTabIndex = newTabs.size - 1)
         }
+        _scrollToTab.value = _uiState.value.tabs.size - 1
         saveFilters()
     }
 

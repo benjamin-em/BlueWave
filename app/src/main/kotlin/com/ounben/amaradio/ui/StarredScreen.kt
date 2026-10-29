@@ -27,36 +27,14 @@ fun StarredScreen(
     val pagerState = rememberPagerState(pageCount = { 2 })
 
     Column(modifier = Modifier.fillMaxSize()) {
-        val safeSelectedIndex = remember(pagerState.currentPage) {
-            pagerState.currentPage.coerceIn(0, 1)
-        }
-
-        SecondaryScrollableTabRow(
-            selectedTabIndex = safeSelectedIndex,
-            edgePadding = 16.dp,
-            containerColor = MaterialTheme.colorScheme.secondary,
-            contentColor = MaterialTheme.colorScheme.onSecondary,
-            indicator = {
-                if (safeSelectedIndex in 0..1) {
-                    TabRowDefaults.SecondaryIndicator(
-                        Modifier.tabIndicatorOffset(safeSelectedIndex, matchContentSize = false),
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                }
-            },
-            divider = {}
-        ) {
-                Tab(
-                    selected = pagerState.currentPage == 0,
-                    onClick = { coroutineScope.launch { pagerState.animateScrollToPage(0) } },
-                    text = { Text(text = stringResource(R.string.nav_item_starred)) }
-                )
-                Tab(
-                    selected = pagerState.currentPage == 1,
-                    onClick = { coroutineScope.launch { pagerState.animateScrollToPage(1) } },
-                    text = { Text(text = stringResource(R.string.tab_custom_stations)) }
-                )
-            }
+        PillTabRow(
+            selectedIndex = pagerState.currentPage,
+            titles = listOf(
+                stringResource(R.string.nav_item_starred),
+                stringResource(R.string.tab_custom_stations)
+            ),
+            onSelect = { coroutineScope.launch { pagerState.animateScrollToPage(it) } }
+        )
 
         HorizontalPager(
             state = pagerState,

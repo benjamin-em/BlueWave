@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Tumataas ang katanyagan</string>
     <string name="icon_click_trend_stable">Stable ang katanyagan</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Ad-Free &amp; Pribado</string>
 
     <string name="action_play_in_external">I-play sa external player</string>
@@ -350,8 +350,8 @@
     <string name="select_image">Piliin ang Imahe</string>
     <string name="error_invalid_url">Mangyaring magpasok ng wastong URL</string>
     <string name="action_save">I-save</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Mabilis na kontrol ng player</string>
     <string name="widget_description_full">Player at listahan ng mga istasyon ng radyo</string>
 

@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">熱度上升中</string>
     <string name="icon_click_trend_stable">熱度穩定</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% 無廣告且重視隱私</string>
 
     <string name="action_play_in_external">使用外部播放器播放</string>
@@ -352,8 +352,8 @@
     <string name="select_image">選擇影像</string>
     <string name="error_invalid_url">請輸入有效的網址</string>
     <string name="action_save">儲存</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">快速播放器控制</string>
     <string name="widget_description_full">播放器與電台清單</string>
 

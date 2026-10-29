@@ -1,4 +1,4 @@
-<b>AMARadio</b> was developed to enable an honest and distraction-free radio listening experience. The radio app is completely ad-free, contains no tracking, and no unnecessary bloatware. Originally started as a personal project to create a simple and accessible interface for global radio, the app remains consistently transparent and easy to use – for everyone.
+<b>BlueWave</b> is an ad-free, tracking-free, paywall-free car radio app. It is a personal fork of AMARadio with a blue redesign, location-based Home groups (city / province / national / English stations), automatic car mode over Bluetooth, and steering-wheel station switching.
 
 <b>Key Features</b>
 - 60,000 stations via Radio-Browser API
@@ -15,4 +15,4 @@
 - Sleep timer, favorites management, custom station management, and M3U export/import.
 
 <b>Acknowledgments</b>
-Special thanks to the RadioDroid project for the inspiration and ground-breaking work in open-source radio streaming.
+Special thanks to the AMARadio and RadioDroid projects for the inspiration and ground-breaking work in open-source radio streaming.

@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">פּאָפּולאַריטעט שטייגט</string>
     <string name="icon_click_trend_stable">פּאָפּולאַריטעט סטאביל</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% פֿרײַ פֿון אַדס &amp; פּריוואַט</string>
 
     <string name="action_play_in_external">שפּילן אין פרעמדן שפּילער</string>
@@ -354,8 +354,8 @@
     <string name="select_image">קלייבט אויס בילד</string>
     <string name="error_invalid_url">ביטע שרייבט אַ גילטיקן URL</string>
     <string name="action_save">ראַטעווען</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">גיכע שפּילער קאָנטראָלס</string>
     <string name="widget_description_full">שפּילער און ראַדיאָ סטאנציעס ליסטע</string>
 

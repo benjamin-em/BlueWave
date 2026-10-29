@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Популярность растёт</string>
     <string name="icon_click_trend_stable">Стабильная популярность</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% без рекламы и приватно</string>
 
     <string name="action_play_in_external">Играть во внешнем плеере</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Выберите изображение</string>
     <string name="error_invalid_url">Пожалуйста, введите действительный URL</string>
     <string name="action_save">Сохранить</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Быстрое управление плеером</string>
     <string name="widget_description_full">Плеер и список радиостанций</string>
 

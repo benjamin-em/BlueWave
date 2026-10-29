@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Ommabopligi ortmoqda</string>
     <string name="icon_click_trend_stable">Ommabopligi barqaror</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Reklamasiz va Maxfiy</string>
 
     <string name="action_play_in_external">Tashqi pleyerda tinglash</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Rasmni tanlang</string>
     <string name="error_invalid_url">Yaroqli URL manzilini kiriting</string>
     <string name="action_save">Saqlash</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Pleyerni tezkor boshqarish</string>
     <string name="widget_description_full">Pleyer va radio stansiyalar roʻyxati</string>
 

@@ -30,6 +30,7 @@ import com.ounben.amaradio.players.selector.PlayerType
 import com.ounben.amaradio.service.PlayerServiceUtil
 import com.ounben.amaradio.station.DataRadioStation
 import com.ounben.amaradio.station.StationActions
+import kotlinx.coroutines.flow.MutableStateFlow
 import java.net.Proxy
 
 @Composable
@@ -324,7 +325,13 @@ fun StationOptionsDialog(
     onDismiss: () -> Unit
 ) {
     val context = LocalContext.current
-    
+    val app = context.applicationContext as? com.ounben.amaradio.AMARadioApp
+    val pinFlow = remember(app) {
+        app?.homePinManager?.stationsFlow ?: MutableStateFlow<List<DataRadioStation>>(emptyList())
+    }
+    val pinnedStations by pinFlow.collectAsState()
+    val pinned = pinnedStations.any { it.StationUuid == station.StationUuid }
+
     AlertDialog(
         onDismissRequest = onDismiss,
         containerColor = MaterialTheme.colorScheme.surface,
@@ -383,11 +390,33 @@ fun StationOptionsDialog(
                     colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
                 )
                 ListItem(
-                    headlineContent = { 
+                    headlineContent = {
+                        Text(
+                            text = stringResource(if (pinned) R.string.action_home_pin_remove else R.string.action_home_pin_add),
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                    },
+                    leadingContent = {
+                        Icon(
+                            imageVector = if (pinned) Icons.Default.Home else Icons.Default.AddToHomeScreen,
+                            contentDescription = null,
+                            tint = if (pinned) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    },
+                    modifier = Modifier.clickable {
+                        app?.homePinManager?.let { mgr ->
+                            if (pinned) mgr.remove(station.StationUuid) else mgr.add(station)
+                        }
+                        onDismiss()
+                    },
+                    colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surface)
+                )
+                ListItem(
+                    headlineContent = {
                         Text(
                             text = stringResource(R.string.action_station_visit_website),
                             color = MaterialTheme.colorScheme.onSurface
-                        ) 
+                        )
                     },
                     leadingContent = { Icon(Icons.Default.Language, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant) },
                     modifier = Modifier.clickable {

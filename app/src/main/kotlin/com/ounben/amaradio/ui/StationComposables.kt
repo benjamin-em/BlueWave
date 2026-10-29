@@ -3,6 +3,7 @@ package com.ounben.amaradio.ui
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
@@ -36,6 +37,8 @@ import androidx.compose.foundation.lazy.grid.itemsIndexed
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.unit.sp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material.icons.filled.Radio
@@ -94,10 +97,122 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.positionInWindow
 import androidx.compose.ui.layout.boundsInWindow
+import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.layout.boundsInParent
 import androidx.compose.ui.unit.toSize
 import kotlinx.coroutines.delay
 import kotlin.time.Duration.Companion.milliseconds
+
+private const val MARQUEE_START_DELAY_MS = 3500
+
+/** Splits "name·slogan" / "name slogan" into a fixed head and a scrolling tail. */
+private fun splitStationName(name: String): Pair<String, String> {
+    val trimmed = name.trim()
+    val dot = trimmed.indexOfFirst { it == '·' || it == '｜' || it == '|' }
+    val idx = when {
+        dot > 0 -> dot
+        else -> {
+            val sp = trimmed.indexOf(' ')
+            // Space split only when the head is a real name (>=4 chars, not a code like "CNR-1")
+            if (sp >= 4 && trimmed.substring(0, sp).none { it.isDigit() }) sp else -1
+        }
+    }
+    if (idx <= 0 || idx >= trimmed.length - 1) return trimmed to ""
+    val head = trimmed.substring(0, idx).trimEnd()
+    val tail = trimmed.substring(idx + 1).trim()
+    if (head.isEmpty() || tail.isEmpty()) return trimmed to ""
+    return head to tail
+}
+
+/**
+ * Station name where the name part stays fixed and only the slogan after
+ * "·" / space scrolls. The head keeps its natural width (it only scrolls when it
+ * cannot fit while leaving a sliver for the slogan); a name without a separator scrolls as a whole.
+ * Uses a plain Layout (no subcomposition) so it is safe under IntrinsicSize.
+ */
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+fun StationNameText(
+    name: String,
+    style: androidx.compose.ui.text.TextStyle,
+    color: Color,
+    modifier: Modifier = Modifier
+) {
+    val (head, tail) = remember(name) { splitStationName(name) }
+    if (tail.isEmpty()) {
+        Text(
+            text = head.ifEmpty { " " },
+            style = style,
+            fontWeight = FontWeight.SemiBold,
+            color = color,
+            maxLines = 1,
+            softWrap = false,
+            overflow = TextOverflow.Clip,
+            modifier = modifier.basicMarquee(
+                iterations = Int.MAX_VALUE,
+                initialDelayMillis = MARQUEE_START_DELAY_MS
+            )
+        )
+    } else {
+        Layout(
+            modifier = modifier.clipToBounds(),
+            content = {
+                Text(
+                    text = head,
+                    style = style,
+                    fontWeight = FontWeight.SemiBold,
+                    color = color,
+                    maxLines = 1,
+                    softWrap = false,
+                    overflow = TextOverflow.Clip,
+                    modifier = Modifier.basicMarquee(
+                        iterations = Int.MAX_VALUE,
+                        initialDelayMillis = MARQUEE_START_DELAY_MS
+                    )
+                )
+                Text(
+                    text = "·",
+                    style = style,
+                    fontWeight = FontWeight.SemiBold,
+                    color = color.copy(alpha = 0.55f),
+                    maxLines = 1,
+                    softWrap = false,
+                    modifier = Modifier.padding(horizontal = 4.dp)
+                )
+                Text(
+                    text = tail,
+                    style = style,
+                    fontWeight = FontWeight.Normal,
+                    color = color.copy(alpha = 0.75f),
+                    maxLines = 1,
+                    softWrap = false,
+                    overflow = TextOverflow.Clip,
+                    modifier = Modifier.basicMarquee(
+                        iterations = Int.MAX_VALUE,
+                        initialDelayMillis = MARQUEE_START_DELAY_MS
+                    )
+                )
+            }
+        ) { measurables, constraints ->
+            val maxW = if (constraints.hasBoundedWidth) constraints.maxWidth else Int.MAX_VALUE / 2
+            val loose = constraints.copy(minWidth = 0, minHeight = 0)
+            val dotP = measurables[1].measure(loose)
+            val headNatural = measurables[0].maxIntrinsicWidth(Int.MAX_VALUE)
+            val minTail = (maxW * 0.18f).toInt()
+            val headW = minOf(headNatural, maxW - dotP.width - minTail).coerceAtLeast(0)
+            val headP = measurables[0].measure(loose.copy(minWidth = headW, maxWidth = headW))
+            val tailW = (maxW - headP.width - dotP.width).coerceAtLeast(0)
+            val tailP = measurables[2].measure(loose.copy(minWidth = tailW, maxWidth = tailW))
+            val h = maxOf(headP.height, dotP.height, tailP.height)
+            layout(maxW.coerceAtMost(headP.width + dotP.width + tailP.width), h) {
+                headP.placeRelative(0, (h - headP.height) / 2)
+                dotP.placeRelative(headP.width, (h - dotP.height) / 2)
+                tailP.placeRelative(headP.width + dotP.width, (h - tailP.height) / 2)
+            }
+        }
+    }
+}
 
 @Composable
 fun StationIcon(
@@ -206,6 +321,11 @@ fun StationListTemplate(
         onRefresh = { onRefresh?.invoke() },
         modifier = modifier.fillMaxSize()
     ) {
+        // Steering-wheel next/prev context: the list being browsed right now
+        val handleStationClick: (DataRadioStation) -> Unit = { station ->
+            com.ounben.amaradio.playback.PlaybackQueueHolder.setStations(stations)
+            onStationClick(station)
+        }
         if (isLoading && stations.isEmpty()) {
             Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(color = AmaradioAmber)
@@ -233,7 +353,7 @@ fun StationListTemplate(
             StationList(
                 stations = stations,
                 isGrid = isGrid,
-                onStationClick = onStationClick,
+                onStationClick = handleStationClick,
                 onFavoriteClick = onFavoriteClick,
                 isFavorite = isFavorite,
                 onDeleteClick = onDeleteClick
@@ -293,7 +413,6 @@ fun StationList(
                     onFavoriteClick = { onFavoriteClick(station) },
                     onLongClick = { stationWithOptions = station }
                 )
-                HorizontalDivider(modifier = Modifier.padding(horizontal = 12.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline)
             }
         }
     }
@@ -322,7 +441,7 @@ fun TrackList(
     PullToRefreshBox(
         isRefreshing = isRefreshing,
         onRefresh = { tracks.refresh() },
-        modifier = modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)
+        modifier = modifier.fillMaxSize()
     ) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(
@@ -339,7 +458,6 @@ fun TrackList(
                         onClick = { onTrackClick(track) },
                         onLongClick = { onTrackLongClick(track) }
                     )
-                    HorizontalDivider(modifier = Modifier.padding(horizontal = 12.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.outline)
                 }
             }
         }
@@ -357,11 +475,14 @@ fun TrackListItem(
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .padding(vertical = 3.dp)
+            .clip(RoundedCornerShape(16.dp))
+            .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.85f))
             .combinedClickable(
                 onClick = onClick,
                 onLongClick = onLongClick
             )
-            .padding(vertical = 8.dp, horizontal = 12.dp),
+            .padding(vertical = 8.dp, horizontal = 10.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Box(modifier = Modifier.size(48.dp), contentAlignment = Alignment.Center) {
@@ -369,7 +490,7 @@ fun TrackListItem(
                 stationName = track.stationName.ifEmpty { track.stationUuid },
                 stationUuid = track.stationUuid,
                 iconUrl = track.stationIconUrl,
-                modifier = Modifier.fillMaxSize()
+                modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(12.dp))
             )
         }
         Spacer(modifier = Modifier.width(12.dp))
@@ -416,11 +537,7 @@ fun StationListItem(
     dragHandle: (@Composable (Modifier) -> Unit)? = null,
     isPlaying: Boolean = false
 ) {
-    val context = LocalContext.current
     val flagEmoji = remember(station.CountryCode) { EmojiUtils.getFlagEmoji(station.CountryCode) ?: "" }
-    val details = remember(station.ClickCount, station.Votes, station.Language, station.Bitrate, station.Codec) { 
-        station.getShortDetails(context) 
-    }
 
     val accessibilityDesc = stringResource(
         R.string.accessibility_station_description,
@@ -436,7 +553,13 @@ fun StationListItem(
             .semantics(mergeDescendants = true) {
                 contentDescription = accessibilityDesc
             }
-            .padding(vertical = 8.dp, horizontal = 12.dp),
+            .padding(horizontal = 12.dp, vertical = 3.dp)
+            .clip(RoundedCornerShape(18.dp))
+            .background(
+                if (isPlaying) MaterialTheme.colorScheme.primaryContainer
+                else MaterialTheme.colorScheme.surface
+            )
+            .padding(vertical = 8.dp, horizontal = 10.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Row(
@@ -453,42 +576,44 @@ fun StationListItem(
                 ),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(modifier = Modifier.size(52.dp), contentAlignment = Alignment.Center) {
+            Box(modifier = Modifier.size(56.dp)) {
                 StationIcon(
                     stationName = station.Name,
                     stationUuid = station.StationUuid,
                     iconUrl = station.IconUrl,
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(14.dp))
                 )
-            }
-            Spacer(modifier = Modifier.width(12.dp))
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = station.Name,
-                    style = MaterialTheme.typography.bodyLarge,
-                    fontWeight = FontWeight.Bold,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    color = if (isPlaying) AmaradioAmber else MaterialTheme.colorScheme.onSurface
-                )
-                Text(
-                    text = if (flagEmoji.isNotEmpty()) "$flagEmoji $details" else details,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurface,
-                    maxLines = 1
-                )
-                if (station.TagsAll.isNotEmpty()) {
-                    Text(
-                        text = station.TagsAll,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurface,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
+                if (flagEmoji.isNotEmpty()) {
+                    Box(
+                        modifier = Modifier
+                            .align(Alignment.BottomEnd)
+                            .offset(x = 4.dp, y = 4.dp)
+                            .size(24.dp)
+                            .clip(CircleShape)
+                            .background(
+                                if (isPlaying) MaterialTheme.colorScheme.primaryContainer
+                                else MaterialTheme.colorScheme.surface
+                            ),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = flagEmoji,
+                            fontSize = 15.sp,
+                            maxLines = 1
+                        )
+                    }
                 }
             }
+            Spacer(modifier = Modifier.width(14.dp))
+            StationNameText(
+                name = station.Name,
+                style = if (com.ounben.amaradio.CarModeManager.isCarMode.collectAsState().value)
+                    MaterialTheme.typography.titleMedium else MaterialTheme.typography.titleLarge,
+                color = if (isPlaying) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier.weight(1f)
+            )
         }
-        
+
         if (dragHandle != null) {
             dragHandle(Modifier.fillMaxHeight())
         }
@@ -498,8 +623,8 @@ fun StationListItem(
                 .minimumInteractiveComponentSize()
                 .size(48.dp)
                 .combinedClickable(
-                    onClick = { 
-                        if (!isFavorite) onFavoriteClick() 
+                    onClick = {
+                        if (!isFavorite) onFavoriteClick()
                     },
                     onLongClick = onLongClick
                 ),
@@ -508,10 +633,10 @@ fun StationListItem(
             Icon(
                 imageVector = if (isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
                 contentDescription = stringResource(
-                    if (isFavorite) R.string.accessibility_favorite_selected 
+                    if (isFavorite) R.string.accessibility_favorite_selected
                     else R.string.accessibility_favorite_not_selected
                 ),
-                tint = if (isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurface
+                tint = if (isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
     }
@@ -544,9 +669,11 @@ fun StationGridItem(
             .semantics(mergeDescendants = true) {
                 contentDescription = accessibilityDesc
             },
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        colors = CardDefaults.cardColors(
+            containerColor = if (isPlaying) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface
+        ),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
-        shape = RoundedCornerShape(12.dp)
+        shape = RoundedCornerShape(20.dp)
     ) {
         Box(modifier = Modifier.fillMaxWidth()) {
             Column(
@@ -567,7 +694,7 @@ fun StationGridItem(
                     stationName = station.Name,
                     stationUuid = station.StationUuid,
                     iconUrl = station.IconUrl,
-                    modifier = Modifier.size(80.dp)
+                    modifier = Modifier.size(80.dp).clip(RoundedCornerShape(18.dp))
                 )
                 Text(
                     text = station.Name,
@@ -579,7 +706,7 @@ fun StationGridItem(
                     modifier = Modifier
                         .fillMaxWidth()
                         .heightIn(min = 32.dp),
-                    color = if (isPlaying) AmaradioAmber else MaterialTheme.colorScheme.onSurface
+                    color = if (isPlaying) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
                 )
             }
 
@@ -757,11 +884,6 @@ fun ReorderableStationList(
                                         }
                                     }
                                 }
-                            )
-                            HorizontalDivider(
-                                modifier = Modifier.padding(horizontal = 12.dp),
-                                thickness = 0.5.dp,
-                                color = MaterialTheme.colorScheme.outline
                             )
                         }
                     }

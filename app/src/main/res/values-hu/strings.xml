@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Növekvő népszerűség</string>
     <string name="icon_click_trend_stable">Stabil népszerűség</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% reklámmentes &amp; privát</string>
 
     <string name="action_play_in_external">Lejátszás külső lejátszóval</string>
@@ -350,8 +350,8 @@
     <string name="select_image">Kép kiválasztása</string>
     <string name="error_invalid_url">Adjon meg egy érvényes URL-t</string>
     <string name="action_save">Mentés</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Gyors lejátszó vezérlők</string>
     <string name="widget_description_full">Lejátszó és rádióállomások listája</string>
 

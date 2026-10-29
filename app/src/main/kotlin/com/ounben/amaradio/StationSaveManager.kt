@@ -5,6 +5,7 @@ import android.util.Log
 import com.ounben.amaradio.database.AMARadioDatabase
 import com.ounben.amaradio.database.toCustomEntity
 import com.ounben.amaradio.database.toDataStation
+import com.ounben.amaradio.database.toHomePinEntity
 import com.ounben.amaradio.database.user.AMARadioUserDatabase
 import com.ounben.amaradio.database.user.FavoriteEntity
 import com.ounben.amaradio.database.user.HistoryEntity
@@ -56,6 +57,11 @@ open class StationSaveManager(protected val context: Context) {
                     val stations = entities.map { it.toDataStation() }
                     updateInMem(stations)
                 }
+            } else if (getSaveId() == "homepin") {
+                userDb.homePinDao().getAllPinsFlow().collect { entities ->
+                    val stations = entities.map { it.toDataStation() }
+                    updateInMem(stations)
+                }
             }
         }
     }
@@ -96,6 +102,9 @@ open class StationSaveManager(protected val context: Context) {
             } else if (getSaveId() == "custom") {
                 val maxOrder = userDb.customStationDao().getMaxOrder() ?: -1
                 userDb.customStationDao().insert(station.toCustomEntity(maxOrder + 1))
+            } else if (getSaveId() == "homepin") {
+                val maxOrder = userDb.homePinDao().getMaxOrder() ?: -1
+                userDb.homePinDao().insert(station.toHomePinEntity(maxOrder + 1))
             }
             withContext(Dispatchers.Main) {
                 stationStatusListener?.onStationStatusChanged(station, favourite = true)
@@ -118,6 +127,9 @@ open class StationSaveManager(protected val context: Context) {
                 } else if (getSaveId() == "custom") {
                     maxCustomOrder++
                     userDb.customStationDao().insert(station.toCustomEntity(maxCustomOrder))
+                } else if (getSaveId() == "homepin") {
+                    val maxPinOrder = userDb.homePinDao().getMaxOrder() ?: -1
+                    userDb.homePinDao().insert(station.toHomePinEntity(maxPinOrder + 1))
                 }
             }
         }
@@ -157,6 +169,8 @@ open class StationSaveManager(protected val context: Context) {
                     userDb.historyDao().deleteByUuid(id)
                 } else if (getSaveId() == "custom") {
                     userDb.customStationDao().deleteByUuid(id)
+                } else if (getSaveId() == "homepin") {
+                    userDb.homePinDao().deleteByUuid(id)
                 }
                 withContext(Dispatchers.Main) {
                     stationStatusListener?.onStationStatusChanged(station, favourite = false)
@@ -188,6 +202,8 @@ open class StationSaveManager(protected val context: Context) {
                 userDb.historyDao().clearAll()
             } else if (getSaveId() == "custom") {
                 userDb.customStationDao().deleteAll()
+            } else if (getSaveId() == "homepin") {
+                userDb.homePinDao().deleteAll()
             }
         }
     }

@@ -144,3 +144,36 @@ interface CustomStationDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(stations: List<CustomStationEntity>)
 }
+
+@Dao
+interface HomePinDao {
+    @Query("SELECT * FROM station_home_pin ORDER BY displayOrder ASC")
+    fun getAllPinsFlow(): Flow<List<HomePinEntity>>
+
+    @Query("SELECT * FROM station_home_pin ORDER BY displayOrder ASC")
+    suspend fun getAllPins(): List<HomePinEntity>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(pin: HomePinEntity)
+
+    @Query("DELETE FROM station_home_pin WHERE StationUuid = :uuid")
+    suspend fun deleteByUuid(uuid: String)
+
+    @Query("SELECT EXISTS(SELECT 1 FROM station_home_pin WHERE StationUuid = :uuid)")
+    suspend fun isPinned(uuid: String): Boolean
+
+    @Query("SELECT MAX(displayOrder) FROM station_home_pin")
+    suspend fun getMaxOrder(): Int?
+
+    @Transaction
+    suspend fun updateAll(pins: List<HomePinEntity>) {
+        deleteAll()
+        insertAll(pins)
+    }
+
+    @Query("DELETE FROM station_home_pin")
+    suspend fun deleteAll()
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(pins: List<HomePinEntity>)
+}

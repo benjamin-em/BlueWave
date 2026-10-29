@@ -61,7 +61,7 @@ fun MainTopBar(
         }
     }
 
-    Box(modifier = Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
+    Box(modifier = Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.background)) {
         TopAppBar(
             title = {
                 if (isSearching) {
@@ -72,8 +72,8 @@ fun MainTopBar(
                         placeholder = { Text(stringResource(R.string.searchpreference_search), color = MaterialTheme.colorScheme.onSurfaceVariant) },
                         singleLine = true,
                         colors = TextFieldDefaults.colors(
-                            focusedContainerColor = MaterialTheme.colorScheme.surface,
-                            unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+                            focusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                            unfocusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
                             focusedIndicatorColor = Color.Transparent,
                             unfocusedIndicatorColor = Color.Transparent,
                             cursorColor = AmaradioAmber
@@ -82,7 +82,8 @@ fun MainTopBar(
                             imeAction = ImeAction.Search,
                             hintLocales = LocaleUtils.getLatinHintLocales()
                         ),
-                        keyboardActions = KeyboardActions(onSearch = { focusManager.clearFocus() })
+                        keyboardActions = KeyboardActions(onSearch = { focusManager.clearFocus() }),
+                        shape = RoundedCornerShape(16.dp)
                     )
                 } else {
                     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -90,17 +91,22 @@ fun MainTopBar(
                             painter = painterResource(R.drawable.ic_cat_face),
                             contentDescription = null,
                             modifier = Modifier
-                                .size(32.dp)
-                                .clip(RoundedCornerShape(8.dp)),
+                                .size(30.dp)
+                                .clip(RoundedCornerShape(9.dp)),
                             tint = Color.Unspecified
                         )
-                        Spacer(modifier = Modifier.width(12.dp))
-                        Text(
-                            text = stringResource(R.string.app_name),
-                            color = AmaradioAmber,
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 18.sp
-                        )
+                        val isCarModeTitle by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
+                        if (!isCarModeTitle) {
+                            Spacer(modifier = Modifier.width(10.dp))
+                            Text(
+                                text = stringResource(R.string.app_name),
+                                color = MaterialTheme.colorScheme.onBackground,
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 20.sp,
+                                maxLines = 1,
+                                softWrap = false
+                            )
+                        }
                         if (isLoading) {
                             Spacer(modifier = Modifier.width(12.dp))
                             CircularProgressIndicator(
@@ -131,6 +137,17 @@ fun MainTopBar(
 
                     // Record Button with Timer
                     com.ounben.amaradio.recorder.RecordButtonWithTimer(currentStation = currentStation)
+
+                    // Car mode toggle — obvious on/off switch for the driver
+                    val context = androidx.compose.ui.platform.LocalContext.current
+                    val isCarMode by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
+                    IconButton(onClick = { com.ounben.amaradio.CarModeManager.toggle(context) }) {
+                        Icon(
+                            imageVector = if (isCarMode) Icons.Default.DirectionsCarFilled else Icons.Default.DirectionsCar,
+                            contentDescription = stringResource(R.string.car_mode_toggle),
+                            tint = if (isCarMode) AmaradioAmber else MaterialTheme.colorScheme.onSurface
+                        )
+                    }
 
                     IconButton(onClick = { onSearchToggle(true) }) {
                         Icon(Icons.Default.Search, contentDescription = stringResource(R.string.action_search))
@@ -214,7 +231,7 @@ fun MainTopBar(
                 }
             },
             colors = TopAppBarDefaults.topAppBarColors(
-                containerColor = MaterialTheme.colorScheme.surface,
+                containerColor = MaterialTheme.colorScheme.background,
                 titleContentColor = MaterialTheme.colorScheme.onSurface,
                 actionIconContentColor = MaterialTheme.colorScheme.onSurface,
                 navigationIconContentColor = MaterialTheme.colorScheme.onSurface
@@ -225,7 +242,7 @@ fun MainTopBar(
             LinearProgressIndicator(
                 modifier = Modifier.fillMaxWidth().align(Alignment.BottomCenter).height(2.dp),
                 color = AmaradioAmber,
-                trackColor = MaterialTheme.colorScheme.surface
+                trackColor = MaterialTheme.colorScheme.background
             )
         }
     }

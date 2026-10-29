@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">ຄວາມນິຍົມເພີ່ມຂຶ້ນ</string>
     <string name="icon_click_trend_stable">ຄວາມນິຍົມຄົງທີ່</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">ບໍ່ມີໂຄສະນາ 100% &amp; ເປັນສ່ວນຕົວ</string>
 
     <string name="action_play_in_external">ຫຼິ້ນໃນເຄື່ອງຫຼິ້ນພາຍນອກ</string>
@@ -354,8 +354,8 @@
     <string name="select_image">ເລືອກຮູບພາບ</string>
     <string name="error_invalid_url">ກະລຸນາປ້ອນ URL ທີ່ຖືກຕ້ອງ</string>
     <string name="action_save">ບັນທຶກ</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">ປຸ່ມຄວບຄຸມເຄື່ອງຫຼິ້ນແບບໄວ</string>
     <string name="widget_description_full">ເຄື່ອງຫຼິ້ນ ແລະ ລາຍການສະຖານີວິທະຍຸ</string>
 

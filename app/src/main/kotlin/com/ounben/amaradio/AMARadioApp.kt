@@ -35,6 +35,8 @@ class AMARadioApp : Application(), ImageLoaderFactory {
     lateinit var favouriteManager: FavouriteManager
         private set
     lateinit var customStationManager: CustomStationManager
+
+    lateinit var homePinManager: HomePinManager
         private set
     lateinit var reviewManager: com.ounben.amaradio.utils.ReviewManager
         private set
@@ -104,6 +106,8 @@ class AMARadioApp : Application(), ImageLoaderFactory {
             historyManager = HistoryManager(this)
             favouriteManager = FavouriteManager(this)
             customStationManager = CustomStationManager(this)
+            homePinManager = HomePinManager(this)
+            CarModeManager.init(this)
             reviewManager = com.ounben.amaradio.utils.ReviewManager(this)
 
             val uiModeManager = getSystemService(UI_MODE_SERVICE) as? UiModeManager

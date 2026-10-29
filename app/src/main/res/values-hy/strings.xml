@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Պոպուլյարությունը աճում է</string>
     <string name="icon_click_trend_stable">Պոպուլյարությունը կայուն է</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% առանց գովազդի և անձնական</string>
 
     <string name="action_play_in_external">Նվագարկել արտաքին նվագարկիչով</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Ընտրեք Պատկեր</string>
     <string name="error_invalid_url">Խնդրում ենք մուտքագրել վավեր URL</string>
     <string name="action_save">Պահպանել</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Արագ նվագարկչի վերահսկում</string>
     <string name="widget_description_full">Նվագարկիչ և ռադիոկայանների ցանկ</string>
 

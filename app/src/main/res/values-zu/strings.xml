@@ -259,7 +259,7 @@
     <string name="icon_click_trend_increasing">Ukuduma kuyakhula</string>
     <string name="icon_click_trend_stable">Ukuduma kuzinzile</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Ayinazo Izikhangiso &amp; Inobumfihlo</string>
 
     <string name="action_play_in_external">Dlala kusidlali sangaphandle</string>
@@ -353,8 +353,8 @@
     <string name="select_image">Khetha Isithombe</string>
     <string name="error_invalid_url">Sicela ufake i-URL evumelekile</string>
     <string name="action_save">Londoloza</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Izilawuli zesidlali ezisheshayo</string>
     <string name="widget_description_full">Isidlali kanye nohlu lweziteshi zomsakazo</string>
 

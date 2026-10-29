@@ -19,9 +19,10 @@ import com.ounben.amaradio.history.TrackHistoryEntry
         TrackHistoryEntry::class,
         CustomStationEntity::class,
         RecordEntity::class,
-        RecordTrackEntity::class
-    ], 
-    version = 7,
+        RecordTrackEntity::class,
+        HomePinEntity::class
+    ],
+    version = 8,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -32,6 +33,7 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
     abstract fun songHistoryDao(): TrackHistoryDao
     abstract fun customStationDao(): CustomStationDao
     abstract fun recordDao(): RecordDao
+    abstract fun homePinDao(): HomePinDao
 
     val databaseExecutor: java.util.concurrent.Executor = java.util.concurrent.Executors.newSingleThreadExecutor { runnable -> 
         Thread(runnable, "UserDatabase Executor") 
@@ -204,6 +206,26 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
             }
         }
 
+        private val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `station_home_pin` (
+                        `StationUuid` TEXT NOT NULL, `Name` TEXT NOT NULL, `Url` TEXT NOT NULL,
+                        `Homepage` TEXT NOT NULL DEFAULT '', `Favicon` TEXT NOT NULL DEFAULT '',
+                        `Country` TEXT NOT NULL DEFAULT '', `CountryCode` TEXT NOT NULL DEFAULT '',
+                        `Tags` TEXT NOT NULL DEFAULT '', `Language` TEXT NOT NULL DEFAULT '',
+                        `Votes` INTEGER NOT NULL DEFAULT 0, `Subcountry` TEXT NOT NULL DEFAULT '',
+                        `clickcount` INTEGER NOT NULL DEFAULT 0, `ClickTrend` INTEGER NOT NULL DEFAULT 0,
+                        `Codec` TEXT NOT NULL DEFAULT '', `Bitrate` INTEGER NOT NULL DEFAULT 0,
+                        `LastChangeTime` TEXT NOT NULL DEFAULT '', `Creation` TEXT NOT NULL DEFAULT '',
+                        `ChangeUuid` TEXT NOT NULL DEFAULT '', `LastCheckOkTime` TEXT NOT NULL DEFAULT '',
+                        `addedAt` INTEGER NOT NULL, `displayOrder` INTEGER NOT NULL DEFAULT 0,
+                        PRIMARY KEY(`StationUuid`)
+                    )
+                """.trimIndent())
+            }
+        }
+
         fun getDatabase(context: Context): AMARadioUserDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
@@ -211,8 +233,8 @@ abstract class AMARadioUserDatabase : RoomDatabase() {
                     AMARadioUserDatabase::class.java,
                     "user_data.db"
                 )
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7)
-                .fallbackToDestructiveMigrationFrom(true, 8) // Nur bei künftigen Fehlern ab v8 zerstörerisch
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8)
+                .fallbackToDestructiveMigrationFrom(true, 9) // Nur bei künftigen Fehlern ab v9 zerstörerisch
                 .addCallback(CALLBACK)
                 .build()
                 INSTANCE = instance

@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Ospea igotzen</string>
     <string name="icon_click_trend_stable">Ospe egonkorra</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">%100 iragarkirik gabea eta pribatua</string>
 
     <string name="action_play_in_external">Erreproduzitu kanpoko erreproduzigailuan</string>
@@ -350,8 +350,8 @@
     <string name="select_image">Hautatu Irudia</string>
     <string name="error_invalid_url">Mesedez, sartu baliozko URL bat</string>
     <string name="action_save">Gorde</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Erreproduzitzailearen kontrol azkarrak</string>
     <string name="widget_description_full">Erreproduzitzailea eta irrati-etxeen zerrenda</string>
 

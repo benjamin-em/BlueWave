@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">ජනප්‍රියත්වය වැඩුවේ</string>
     <string name="icon_click_trend_stable">ජනප්‍රියත්වය ස්ථාවරයි</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% වෙළඳ දැන්වීම් රහිත සහ පෞද්ගලික</string>
 
     <string name="action_play_in_external">බාහිර ධාවකයකින් ධාවනය කරන්න</string>
@@ -352,8 +352,8 @@
     <string name="select_image">රූපය තෝරන්න</string>
     <string name="error_invalid_url">කරුණාකර වලංගු URL එකක් ඇතුළු කරන්න</string>
     <string name="action_save">සුරකින්න</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">ඉක්මන් ධාවක පාලනය</string>
     <string name="widget_description_full">ධාවකය සහ ගුවන් විදුලි නාලිකා ලැයිස්තුව</string>
 

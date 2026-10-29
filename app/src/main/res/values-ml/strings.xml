@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">ജനപ്രീതി കൂടുന്നു</string>
     <string name="icon_click_trend_stable">ജനപ്രീതി സ്ഥിരമാണ്</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% പരസ്യരഹിതവും സ്വകാര്യവും</string>
 
     <string name="action_play_in_external">എക്‌സ്‌റ്റേണൽ പ്ലെയറിൽ പ്ലേ ചെയ്യുക</string>
@@ -352,8 +352,8 @@
     <string name="select_image">ചിത്രം തിരഞ്ഞെടുക്കുക</string>
     <string name="error_invalid_url">ദയവായി സാധുവായ ഒരു URL നൽകുക</string>
     <string name="action_save">സംരക്ഷിക്കുക</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">ദ്രുത പ്ലെയർ നിയന്ത്രണങ്ങൾ</string>
     <string name="widget_description_full">റേഡിയോ പ്ലെയറും റേഡിയോ സ്റ്റേഷൻ ലിസ്റ്റും</string>
 

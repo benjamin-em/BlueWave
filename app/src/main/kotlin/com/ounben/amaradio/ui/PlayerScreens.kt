@@ -2,11 +2,15 @@ package com.ounben.amaradio.ui
 
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
+import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.StarOutline
@@ -17,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.graphicsLayer
@@ -39,6 +44,7 @@ import com.ounben.amaradio.players.PlayState
 import com.ounben.amaradio.utils.EmojiUtils
 import kotlinx.coroutines.flow.StateFlow
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun MiniPlayer(
     viewModel: PlayerViewModel,
@@ -61,108 +67,64 @@ fun MiniPlayer(
             .fillMaxWidth()
             .wrapContentHeight()
             .clickable { onToggleBottomSheet() }
-            .background(MaterialTheme.colorScheme.surfaceVariant)
+            .background(MaterialTheme.colorScheme.surface)
     ) {
-        HorizontalDivider(
-            modifier = Modifier.align(Alignment.TopStart),
-            thickness = 1.dp,
-            color = MaterialTheme.colorScheme.outline
-        )
-
-        Column(
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .wrapContentHeight(),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .wrapContentHeight()
+                .padding(start = 12.dp, end = 10.dp, top = 10.dp, bottom = 10.dp),
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            // Drag Handle
-            Box(
-                modifier = Modifier
-                    .padding(top = 8.dp)
-                    .size(40.dp, 4.dp)
-                    .background(MaterialTheme.colorScheme.onSurfaceVariant, shape = MaterialTheme.shapes.small)
+            StationIcon(
+                stationName = stationName,
+                stationUuid = station?.StationUuid ?: "",
+                iconUrl = station?.IconUrl,
+                modifier = Modifier.size(56.dp).clip(RoundedCornerShape(14.dp))
             )
 
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .wrapContentHeight()
-                    .padding(horizontal = 12.dp, vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically
+            Spacer(modifier = Modifier.width(12.dp))
+
+            // Always 3 text rows so the height stays constant whatever metadata exists.
+            Column(
+                modifier = Modifier.weight(1f).wrapContentHeight(),
+                verticalArrangement = Arrangement.Center
             ) {
-                // Left: Station Icon
-                Box(modifier = Modifier.size(60.dp), contentAlignment = Alignment.Center) {
-                    StationIcon(
-                        stationName = stationName,
-                        stationUuid = station?.StationUuid ?: "",
-                        iconUrl = station?.IconUrl,
-                        modifier = Modifier.fillMaxSize()
+                StationNameText(
+                    name = stationName.ifEmpty { " " },
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+                Text(
+                    text = listOf(songTitle, artistName).filter { it.isNotEmpty() }.joinToString(" · ").ifEmpty { " " },
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Box(modifier = Modifier.wrapContentHeight().padding(top = 2.dp), contentAlignment = Alignment.CenterStart) {
+                    PlayerStatusRow(
+                        playState = uiState.playState,
+                        bandwidthFlow = viewModel.bandwidth
                     )
                 }
+            }
 
-                Spacer(modifier = Modifier.width(16.dp))
-
-                // Middle: Text Info (STRICT 4-ROW LAYOUT)
-                // IMPORTANT: We always render exactly 4 lines to ensure constant height regardless of metadata availability.
-                // If a value is missing, we use " " as a placeholder so the line still takes up space in the system font.
-                Column(
-                    modifier = Modifier
-                        .weight(1f)
-                        .wrapContentHeight(),
-                    verticalArrangement = Arrangement.Center
-                ) {
-                    // Row 1: Station Name
-                    Text(
-                        text = stationName.ifEmpty { " " },
-                        style = MaterialTheme.typography.bodyLarge,
-                        fontWeight = FontWeight.Bold,
-                        color = AmaradioAmber,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                    
-                    // Row 2: Song Title
-                    Text(
-                        text = songTitle.ifEmpty { " " },
-                        style = MaterialTheme.typography.bodySmall,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.onSurface,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                    
-                    // Row 3: Artist
-                    Text(
-                        text = artistName.ifEmpty { " " },
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                    
-                    // Row 4: Status Indicator
-                    Box(modifier = Modifier.wrapContentHeight().padding(top = 2.dp), contentAlignment = Alignment.CenterStart) {
-                        PlayerStatusRow(
-                            playState = uiState.playState,
-                            bandwidthFlow = viewModel.bandwidth
-                        )
-                    }
-                }
-
-                // Right: Play/Pause
-                IconButton(
-                    onClick = { viewModel.togglePlayPause() },
-                    modifier = Modifier.size(64.dp)
-                ) {
-                    Icon(
-                        imageVector = if (uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying) 
-                            Icons.Default.PauseCircle 
-                        else Icons.Default.PlayCircle,
-                        contentDescription = null,
-                        modifier = Modifier.size(56.dp),
-                        tint = MaterialTheme.colorScheme.primary
-                    )
-                }
+            val isActive = uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying
+            Box(
+                modifier = Modifier
+                    .size(52.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.primary)
+                    .clickable { viewModel.togglePlayPause() },
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = if (isActive) Icons.Default.Pause else Icons.Default.PlayArrow,
+                    contentDescription = null,
+                    modifier = Modifier.size(30.dp),
+                    tint = MaterialTheme.colorScheme.onPrimary
+                )
             }
         }
     }
@@ -186,129 +148,86 @@ fun FullPlayer(
     val songTitle = if (liveInfo.track.isNotEmpty()) liveInfo.track else if (liveInfo.title.isNotEmpty()) liveInfo.title else ""
     val artistName = if (liveInfo.track.isNotEmpty()) liveInfo.artist else ""
 
-    Column(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surfaceVariant)) {
-        HorizontalDivider(thickness = 1.dp, color = MaterialTheme.colorScheme.outline)
-        
+    val isActive = uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying
+    val isCompactPlayer by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    listOf(
+                        MaterialTheme.colorScheme.primaryContainer,
+                        MaterialTheme.colorScheme.background
+                    ),
+                    endY = 1400f
+                )
+            )
+    ) {
         Column(
             modifier = Modifier
                 .weight(1f)
-                .padding(16.dp),
-            horizontalAlignment = Alignment.Start
+                .padding(horizontal = 20.dp, vertical = 8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Header Layout: Row with Icon Left and Text Right
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                // Large Station Icon
-                Box(modifier = Modifier.size(100.dp), contentAlignment = Alignment.Center) {
-                    StationIcon(
-                        stationName = station?.Name ?: "",
-                        stationUuid = station?.StationUuid ?: "",
-                        iconUrl = station?.IconUrl,
-                        modifier = Modifier.fillMaxSize()
+            StationIcon(
+                stationName = station?.Name ?: "",
+                stationUuid = station?.StationUuid ?: "",
+                iconUrl = station?.IconUrl,
+                modifier = Modifier
+                    .size(if (isCompactPlayer) 96.dp else 168.dp)
+                    .clip(RoundedCornerShape(if (isCompactPlayer) 22.dp else 32.dp))
+            )
+
+            Spacer(modifier = Modifier.height(if (isCompactPlayer) 8.dp else 18.dp))
+
+            Text(
+                text = (station?.Name ?: "").ifEmpty { " " },
+                style = MaterialTheme.typography.headlineSmall,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onBackground,
+                textAlign = TextAlign.Center,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
+            Text(
+                text = listOf(songTitle, artistName).filter { it.isNotEmpty() }.joinToString(" · ").ifEmpty { " " },
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = TextAlign.Center,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.padding(top = 4.dp)
+            )
+
+            Box(modifier = Modifier.padding(top = 6.dp), contentAlignment = Alignment.Center) {
+                if (isActive || uiState.playState == PlayState.Error) {
+                    PlayerStatusRow(
+                        playState = uiState.playState,
+                        bandwidthFlow = playerViewModel.bandwidth,
+                        showText = true
                     )
-                }
-
-                Spacer(modifier = Modifier.width(16.dp))
-
-                // Left-aligned Text Info (STRICT 4-ROW LAYOUT)
-                // IMPORTANT: We always render exactly 4 lines to ensure constant height regardless of metadata availability.
-                // If a value is missing, we use " " as a placeholder so the line still takes up space in the system font.
-                Column(modifier = Modifier.weight(1f)) {
-                    // Row 1: Station Name
-                    Text(
-                        text = (station?.Name ?: "").ifEmpty { " " },
-                        style = MaterialTheme.typography.bodyLarge,
-                        fontWeight = FontWeight.Bold,
-                        color = AmaradioAmber,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
-                        modifier = Modifier.heightIn(min = 22.dp)
-                    )
-
-                    // Row 2: Song Title
-                    Text(
-                        text = songTitle.ifEmpty { " " },
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurface,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
-                        modifier = Modifier.heightIn(min = 18.dp)
-                    )
-
-                    // Row 3: Artist
-                    Text(
-                        text = artistName.ifEmpty { " " },
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
-                        modifier = Modifier.heightIn(min = 16.dp)
-                    )
-
-                    // Row 4: Status / Metadata
-                    Box(modifier = Modifier.wrapContentHeight().padding(top = 2.dp), contentAlignment = Alignment.CenterStart) {
-                        if (uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying) {
-                            PlayerStatusRow(
-                                playState = uiState.playState,
-                                bandwidthFlow = playerViewModel.bandwidth,
-                                showText = true
-                            )
-                        } else if (station != null) {
-                            val flagEmoji = remember(station.CountryCode) { EmojiUtils.getFlagEmoji(station.CountryCode) ?: "" }
-                            val details = remember(station) { station.getShortDetails(context) }
-                            Text(
-                                text = if (flagEmoji.isNotEmpty()) "$flagEmoji $details" else details,
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                maxLines = 1,
-                                overflow = TextOverflow.Ellipsis
-                            )
-                        }
+                } else if (station != null) {
+                    val flagEmoji = remember(station.CountryCode) { EmojiUtils.getFlagEmoji(station.CountryCode) ?: "" }
+                    if (flagEmoji.isNotEmpty()) {
+                        Text(
+                            text = flagEmoji,
+                            style = MaterialTheme.typography.titleMedium,
+                            maxLines = 1
+                        )
                     }
                 }
             }
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Tags
-            if (station != null && station.TagsAll.isNotEmpty()) {
-                val tags = remember(station.TagsAll) { 
-                    station.TagsAll.split(",").map { it.trim() }.filter { it.isNotEmpty() } 
-                }
-                
-                FlowRow(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.Start
-                ) {
-                    tags.take(8).forEach { tag ->
-                        Surface(
-                            modifier = Modifier.padding(end = 6.dp, bottom = 6.dp),
-                            shape = MaterialTheme.shapes.small,
-                            color = MaterialTheme.colorScheme.surface,
-                            border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
-                        ) {
-                            Text(
-                                text = tag,
-                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                        }
-                    }
-                }
-            }
-
-            Spacer(modifier = Modifier.height(16.dp))
-            
             Text(
                 text = stringResource(R.string.tab_player_history),
                 style = MaterialTheme.typography.titleSmall,
-                modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
-                color = MaterialTheme.colorScheme.onSurface
+                modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
+                color = MaterialTheme.colorScheme.onSurfaceVariant
             )
-            
+
             TrackList(
                 tracks = tracks,
                 onTrackClick = onTrackClick,
@@ -317,42 +236,47 @@ fun FullPlayer(
             )
         }
 
-        // Control Bar
+        // Control bar
         Surface(
             tonalElevation = 0.dp,
-            modifier = Modifier.fillMaxWidth(),
-            color = MaterialTheme.colorScheme.surfaceVariant
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
+            shape = RoundedCornerShape(28.dp),
+            color = MaterialTheme.colorScheme.surface
         ) {
-            val recordManager = remember { com.ounben.amaradio.recorder.RecordManager.getInstance(context) }
-            val recordState by recordManager.recordingState.collectAsState()
-
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 16.dp, horizontal = 16.dp),
+                    .padding(vertical = 12.dp, horizontal = 12.dp),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
+                com.ounben.amaradio.recorder.RecordButtonWithTimer(
+                    currentStation = station,
+                    iconSize = 28.dp
+                )
+
                 IconButton(onClick = { playerViewModel.skipToPrevious() }) {
                     Icon(
                         imageVector = Icons.Default.SkipPrevious,
                         contentDescription = null,
-                        modifier = Modifier.size(40.dp),
+                        modifier = Modifier.size(38.dp),
                         tint = MaterialTheme.colorScheme.onSurface
                     )
                 }
 
-                IconButton(
-                    onClick = { playerViewModel.togglePlayPause() },
-                    modifier = Modifier.size(80.dp)
+                Box(
+                    modifier = Modifier
+                        .size(72.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.primary)
+                        .clickable { playerViewModel.togglePlayPause() },
+                    contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = if (uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying) 
-                            Icons.Default.PauseCircle 
-                        else Icons.Default.PlayCircle,
+                        imageVector = if (isActive) Icons.Default.Pause else Icons.Default.PlayArrow,
                         contentDescription = null,
-                        modifier = Modifier.size(72.dp),
-                        tint = MaterialTheme.colorScheme.primary
+                        modifier = Modifier.size(42.dp),
+                        tint = MaterialTheme.colorScheme.onPrimary
                     )
                 }
 
@@ -360,22 +284,16 @@ fun FullPlayer(
                     Icon(
                         imageVector = Icons.Default.SkipNext,
                         contentDescription = null,
-                        modifier = Modifier.size(40.dp),
+                        modifier = Modifier.size(38.dp),
                         tint = MaterialTheme.colorScheme.onSurface
                     )
                 }
-
-                // Record Button (🔴 / 🛑) with Timer Selection
-                com.ounben.amaradio.recorder.RecordButtonWithTimer(
-                    currentStation = station,
-                    iconSize = 32.dp
-                )
 
                 IconButton(onClick = { playerViewModel.toggleFavorite() }) {
                     Icon(
                         imageVector = if (uiState.isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
                         contentDescription = null,
-                        modifier = Modifier.size(32.dp),
+                        modifier = Modifier.size(30.dp),
                         tint = if (uiState.isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
@@ -400,7 +318,7 @@ fun PlayerStatusRow(
 ) {
     val color = when (playState) {
         PlayState.PrePlaying -> AmaradioAmber
-        PlayState.Playing -> Color(0xFF4CAF50) // Green
+        PlayState.Playing -> Color(0xFF2FBF71)
         PlayState.Error -> Color(0xFFF44336) // Red
         else -> Color.Transparent
     }

@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Популарноста расте</string>
     <string name="icon_click_trend_stable">Популарноста е стабилна</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% без реклами и приватно</string>
 
     <string name="action_play_in_external">Пушти во надворешен плеер</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Изберете Слика</string>
     <string name="error_invalid_url">Ве молиме внесете важечка URL-адреса</string>
     <string name="action_save">Зачувај</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Брзи контроли на плеерот</string>
     <string name="widget_description_full">Плеер и листа на радио станици</string>
 

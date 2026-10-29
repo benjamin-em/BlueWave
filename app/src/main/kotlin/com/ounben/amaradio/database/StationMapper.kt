@@ -3,6 +3,7 @@ package com.ounben.amaradio.database
 import com.ounben.amaradio.database.user.CustomStationEntity
 import com.ounben.amaradio.database.user.FavoriteEntity
 import com.ounben.amaradio.database.user.HistoryEntity
+import com.ounben.amaradio.database.user.HomePinEntity
 import com.ounben.amaradio.station.DataRadioStation
 
 fun DataRadioStation.toEntity(): StationEntity {
@@ -99,6 +100,42 @@ fun CustomStationEntity.toDataStation(): DataRadioStation {
         Votes = this.Votes, State = this.Subcountry, ClickCount = this.clickcount, 
         ClickTrend = this.ClickTrend, LastChangeTime = this.LastChangeTime, 
         Creation = this.Creation, ChangeUuid = this.ChangeUuid, LastCheckOkTime = this.LastCheckOkTime
+    )
+}
+
+fun HomePinEntity.toDataStation(): DataRadioStation {
+    return DataRadioStation(
+        Name = this.Name, StationUuid = this.StationUuid, StreamUrl = this.Url, IconUrl = this.Favicon,
+        HomePageUrl = this.Homepage, Country = this.Country, CountryCode = this.CountryCode,
+        TagsAll = this.Tags, Language = this.Language, Codec = this.Codec, Bitrate = this.Bitrate,
+        Votes = this.Votes, State = this.Subcountry, ClickCount = this.clickcount,
+        ClickTrend = this.ClickTrend, LastChangeTime = this.LastChangeTime,
+        Creation = this.Creation, ChangeUuid = this.ChangeUuid, LastCheckOkTime = this.LastCheckOkTime
+    )
+}
+
+fun DataRadioStation.toHomePinEntity(displayOrder: Int = 0): HomePinEntity {
+    return HomePinEntity(
+        StationUuid = this.StationUuid,
+        Name = this.Name,
+        Url = this.StreamUrl,
+        Homepage = this.HomePageUrl,
+        Favicon = this.IconUrl,
+        Country = this.Country,
+        CountryCode = this.CountryCode,
+        Tags = this.TagsAll,
+        Language = this.Language,
+        Codec = this.Codec,
+        Bitrate = this.Bitrate,
+        Votes = this.Votes,
+        Subcountry = this.State,
+        clickcount = this.ClickCount,
+        ClickTrend = this.ClickTrend,
+        LastChangeTime = this.LastChangeTime,
+        Creation = this.Creation,
+        ChangeUuid = this.ChangeUuid,
+        LastCheckOkTime = this.LastCheckOkTime,
+        displayOrder = displayOrder
     )
 }
 

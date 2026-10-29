@@ -16,6 +16,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
@@ -28,6 +31,7 @@ import com.ounben.amaradio.station.DataRadioStation
 import kotlinx.coroutines.launch
 
 private sealed class MainTab {
+    object Home : MainTab()
     object Local : MainTab()
     data class Filter(val index: Int, val id: String, val label: String) : MainTab()
 }
@@ -36,6 +40,7 @@ private sealed class MainTab {
 fun TabsScreen(
     initialTab: Int = 0,
     onStationClick: (DataRadioStation) -> Unit,
+    onFavoriteClick: (DataRadioStation) -> Unit,
     onCategoryClick: (String) -> Unit
 ) {
     val context = LocalContext.current
@@ -43,11 +48,14 @@ fun TabsScreen(
     val countryCode = Utils.getCountryCode(context) ?: "DE"
     val filterViewModel: FilterViewModel = viewModel()
     val filterState by filterViewModel.uiState.collectAsState()
+    val playerViewModel: PlayerViewModel = viewModel()
+    val homeViewModel: HomeViewModel = viewModel()
     val coroutineScope = rememberCoroutineScope()
 
-    // Build Dynamic Tab List (Guaranteed non-empty: at least Local tab exists)
+    // Build Dynamic Tab List (Guaranteed non-empty: Home tab always exists)
     val tabs = remember(countryCode, filterState.tabs) {
         mutableListOf<MainTab>().apply {
+            add(MainTab.Home)
             add(MainTab.Local)
             filterState.tabs.forEachIndexed { index, tab ->
                 add(MainTab.Filter(index, tab.id, tab.label))
@@ -68,13 +76,26 @@ fun TabsScreen(
         }
     }
 
-    // Auto-scroll to new tab when added
-    var lastTabCount by remember { mutableIntStateOf(tabs.size) }
-    LaunchedEffect(tabs.size) {
-        if (tabs.size > lastTabCount) {
-            pagerState.animateScrollToPage(tabs.size - 1)
+    // Scroll to a newly added filter tab ONLY on explicit user request.
+    // (Previously any tabs.size change auto-scrolled to the last page — that
+    // fired during startup when tabs loaded from DB, dropping users on the
+    // empty Filter page instead of Home.)
+    val scrollToTab by filterViewModel.scrollToTab.collectAsState()
+    LaunchedEffect(scrollToTab, tabs) {
+        if (scrollToTab >= 0 && scrollToTab < filterState.tabs.size) {
+            // +2 offset: Home and Local occupy pages 0 and 1
+            pagerState.animateScrollToPage(scrollToTab + 2)
+            filterViewModel.consumeScrollRequest()
         }
-        lastTabCount = tabs.size
+    }
+
+    // Honor external navigation (e.g. top-bar filter button -> tab index 2+)
+    var lastInitialTab by remember { mutableIntStateOf(initialTab) }
+    LaunchedEffect(initialTab, tabs.size) {
+        if (initialTab != lastInitialTab && tabs.isNotEmpty()) {
+            pagerState.animateScrollToPage(initialTab.coerceIn(0, tabs.size - 1))
+            lastInitialTab = initialTab
+        }
     }
 
     Column(modifier = Modifier.fillMaxSize()) {
@@ -82,7 +103,7 @@ fun TabsScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(48.dp)
-                .background(MaterialTheme.colorScheme.secondary),
+                .background(MaterialTheme.colorScheme.background),
             verticalAlignment = Alignment.CenterVertically
         ) {
             if (tabs.isNotEmpty()) {
@@ -93,22 +114,25 @@ fun TabsScreen(
                 SecondaryScrollableTabRow(
                     selectedTabIndex = safeSelectedIndex,
                     modifier = Modifier.weight(1f).height(48.dp),
-                    edgePadding = 16.dp,
+                    edgePadding = 12.dp,
                     containerColor = Color.Transparent,
-                    contentColor = MaterialTheme.colorScheme.onSecondary,
-                    indicator = {
-                        if (safeSelectedIndex in 0 until tabs.size) {
-                            TabRowDefaults.SecondaryIndicator(
-                                Modifier.tabIndicatorOffset(safeSelectedIndex),
-                                color = MaterialTheme.colorScheme.primary
-                            )
-                        }
-                    },
+                    contentColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                    indicator = {},
                     divider = {}
                 ) {
                     tabs.forEachIndexed { index, tab ->
+                        val selected = pagerState.currentPage == index
                         Tab(
-                            selected = pagerState.currentPage == index,
+                            selected = selected,
+                            modifier = Modifier
+                                .padding(horizontal = 3.dp, vertical = 6.dp)
+                                .clip(RoundedCornerShape(50))
+                                .background(
+                                    if (selected) MaterialTheme.colorScheme.primary
+                                    else MaterialTheme.colorScheme.surface
+                                ),
+                            selectedContentColor = MaterialTheme.colorScheme.onPrimary,
+                            unselectedContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                             onClick = {
                                 coroutineScope.launch {
                                     pagerState.animateScrollToPage(index)
@@ -120,6 +144,7 @@ fun TabsScreen(
                                     sp.getString("settings_manual_country_code", "SYSTEM") ?: "SYSTEM"
                                 }
                                 val title = when (tab) {
+                                    is MainTab.Home -> stringResource(R.string.home_tab)
                                     is MainTab.Local -> {
                                         if (manualCountry.isNotEmpty() && manualCountry != "SYSTEM") {
                                             val flag = com.ounben.amaradio.utils.EmojiUtils.getFlagEmoji(manualCountry.uppercase()) ?: ""
@@ -135,7 +160,8 @@ fun TabsScreen(
                                     text = title,
                                     maxLines = 1,
                                     overflow = TextOverflow.Ellipsis,
-                                    style = MaterialTheme.typography.labelLarge
+                                    style = MaterialTheme.typography.labelLarge,
+                                    fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Medium
                                 )
                             }
                         )
@@ -164,9 +190,10 @@ fun TabsScreen(
             modifier = Modifier.fillMaxSize(),
             beyondViewportPageCount = 0,
             verticalAlignment = Alignment.Top,
-            key = { index -> 
+            key = { index ->
                 val tab = tabs.getOrNull(index)
                 when (tab) {
+                    is MainTab.Home -> "home"
                     is MainTab.Local -> "local"
                     is MainTab.Filter -> "filter_${tab.id}"
                     null -> "empty_$index"
@@ -174,9 +201,17 @@ fun TabsScreen(
             }
         ) { pageIndex ->
             if (pageIndex >= tabs.size) return@HorizontalPager
-            
+
             Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                 when (val tab = tabs[pageIndex]) {
+                    is MainTab.Home -> {
+                        HomeScreen(
+                            viewModel = homeViewModel,
+                            playerViewModel = playerViewModel,
+                            onStationClick = onStationClick,
+                            onFavoriteClick = onFavoriteClick
+                        )
+                    }
                     is MainTab.Local -> {
                         val stationsViewModel: StationsViewModel = viewModel(key = "local_stations")
                         StationsScreen(

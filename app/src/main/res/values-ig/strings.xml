@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">Mmasị na-arị elu</string>
     <string name="icon_click_trend_stable">Mmasị dị jụụ</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% N\'efu site na Mgbasa ozi &amp; Nzuzo</string>
 
     <string name="action_play_in_external">Kpọọ na igwe mpụga</string>
@@ -354,8 +354,8 @@
     <string name="select_image">Họrọ foto</string>
     <string name="error_invalid_url">Biko tinye URL ziri ezi</string>
     <string name="action_save">Chekwaa</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Mpempe aka kachasị ngwa ngwa</string>
     <string name="widget_description_full">Igwe akpọ egwu na ndepụta ụlọ redio</string>
 

@@ -110,6 +110,28 @@ interface StationDao {
     """)
     suspend fun searchStations(query: String): List<StationEntity>
 
+    // Home-screen group queries
+    @Query("""
+        SELECT * FROM Station
+        WHERE LastCheckOK = 1
+        AND lower(Subcountry) IN (:aliases)
+        ORDER BY clickcount DESC LIMIT :limit
+    """)
+    suspend fun getStationsBySubcountryAliases(aliases: List<String>, limit: Int = 100): List<StationEntity>
+
+    // CN stations of a province: Subcountry match OR (Subcountry unknown AND name hints at the province)
+    @Query("""
+        SELECT * FROM Station
+        WHERE LastCheckOK = 1 AND CountryCode = 'CN'
+        AND (lower(Subcountry) IN (:aliases)
+             OR ((Subcountry IS NULL OR Subcountry = '') AND (Name LIKE '%' || :nameKey || '%')))
+        ORDER BY clickcount DESC LIMIT :limit
+    """)
+    suspend fun getCnStationsForProvince(aliases: List<String>, nameKey: String, limit: Int = 300): List<StationEntity>
+
+    @Query("SELECT * FROM Station WHERE StationUuid IN (:uuids) AND LastCheckOK = 1")
+    suspend fun getStationsByUuids(uuids: List<String>): List<StationEntity>
+
     @Query("DELETE FROM Station")
     suspend fun deleteAll()
 

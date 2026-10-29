@@ -18,6 +18,29 @@
     <string name="action_favorite">收藏</string>
     <string name="action_starred_add">添加到收藏</string>
     <string name="action_starred_remove">从收藏删除</string>
+    <string name="action_home_pin_add">添加到首页</string>
+    <string name="action_home_pin_remove">从首页移除</string>
+
+    <string name="home_tab">首页</string>
+    <string name="home_group_pinned">我的置顶</string>
+    <string name="home_group_central">中央台</string>
+    <string name="home_group_english">英语精选</string>
+    <string name="home_group_more">更多</string>
+    <string name="action_collapse">收起</string>
+
+    <string name="settings_home_location">所在地区</string>
+    <string name="settings_home_location_desc">用于在首页展示本地电台</string>
+    <string name="settings_home_province">省份</string>
+    <string name="settings_home_city">城市</string>
+    <string name="settings_home_location_auto">自动定位（粗略位置）</string>
+    <string name="settings_home_location_manual">手动选择</string>
+    <string name="settings_home_location_system">跟随系统</string>
+
+    <string name="car_mode">车载模式</string>
+    <string name="car_mode_auto">自动（连接蓝牙时）</string>
+    <string name="car_mode_on">开</string>
+    <string name="car_mode_off">关</string>
+    <string name="car_mode_toggle">切换车载模式</string>
 
     <string name="action_station_visit_website">访问网站</string>
     <string name="action_station_copy_stream_url">复制流媒体地址</string>
@@ -258,7 +281,7 @@
     <string name="icon_click_trend_increasing">热度正在上升</string>
     <string name="icon_click_trend_stable">热度稳定</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% 无广告且隐私</string>
 
     <string name="action_play_in_external">使用外部播放器播放</string>
@@ -352,8 +375,8 @@
     <string name="select_image">选择图像</string>
     <string name="error_invalid_url">请输入有效的 URL</string>
     <string name="action_save">保存</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">快速播放器控制</string>
     <string name="widget_description_full">播放器和电台列表</string>
 

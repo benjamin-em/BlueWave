@@ -7,12 +7,12 @@
 [![Radio-Browser](https://img.shields.io/badge/Data-Radio--Browser.info-1E88E5?logo=radio&logoColor=white)](https://www.radio-browser.info/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF.svg?logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 
-# AMARadio Open Source Radio
-Ad-Free - No Paywall - Just Radio
+# BlueWave Radio
+Ad-Free - No Paywall - Car-Ready Radio
 
 <img width="2212" height="1080" alt="amaradio_wallpaper" src="screenshots/amaradio_wallpaper.jpg" />
 
-**AMARadio** is an open-source Android application for worldwide radio streaming. By leveraging the community-supported [radio-browser.info](https://www.radio-browser.info/) database, AMARadio provides instant access to thousands of stations in a stable, modern, and user-friendly environment.
+**BlueWave** is an open-source Android application for worldwide radio streaming, forked from [AMARadio](https://github.com/ounben/AMARadio) (GPLv3). By leveraging the community-supported [radio-browser.info](https://www.radio-browser.info/) database, BlueWave provides instant access to thousands of stations in a stable, modern, and user-friendly environment.
 
 <div align="left">
   <a href="https://play.google.com/store/apps/details?id=com.ounben.amaradio"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80" /></a>
@@ -25,13 +25,13 @@ Ad-Free - No Paywall - Just Radio
   <sub>(Obtainium installed? <a href="obtainium://add/https://github.com/ounben/AMARadio">Add directly</a> | No Obtainium? <a href="https://github.com/ImranR98/Obtainium">Download app</a>)</sub>
 </div>
 
-## Core Philosophy
+## About this fork
 
-AMARadio was developed to enable an honest and distraction-free listening experience. The app is **completely ad-free, contains no tracking, and no unnecessary bloatware**. Originally started as a personal project to create a simple and accessible interface for global radio, the app remains consistently transparent and easy to use – for everyone.
+**BlueWave** is an ad-free, tracking-free, paywall-free car radio app for Android. It is a personal fork of [AMARadio](https://github.com/ounben/AMARadio) with a blue redesign, location-based Home groups (city / province / national / English stations), automatic car mode over Bluetooth, and steering-wheel station switching.
 
 ## Acknowledgments
 
-Special thanks to the [RadioDroid](https://github.com/Segler-Alex/RadioDroid) project for the inspiration and ground-breaking work in open-source radio streaming.
+Special thanks to the original [AMARadio](https://github.com/ounben/AMARadio) project by ounben, and to the [RadioDroid](https://github.com/Segler-Alex/RadioDroid) project for the inspiration and ground-breaking work in open-source radio streaming.
 
 ## Key Features
 

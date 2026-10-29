@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Popülerlik artıyor</string>
     <string name="icon_click_trend_stable">Popülerlik kararlı</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% reklamsız ve gizli</string>
 
     <string name="action_play_in_external">Harici oynatıcıda oynat</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Resim Seç</string>
     <string name="error_invalid_url">Lütfen geçerli bir URL girin</string>
     <string name="action_save">Kaydet</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Hızlı oynatıcı kontrolleri</string>
     <string name="widget_description_full">Oynatıcı ve radyo istasyonu listesi</string>
 

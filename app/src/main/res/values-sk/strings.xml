@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Popularita stúpa</string>
     <string name="icon_click_trend_stable">Stabilná popularita</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% bez reklám &amp; súkromné</string>
 
     <string name="action_play_in_external">Prehrať v externom prehrávači</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Vyberte Obrázok</string>
     <string name="error_invalid_url">Zadajte platnú webovú adresu</string>
     <string name="action_save">Uložiť</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Rýchle ovládanie prehrávača</string>
     <string name="widget_description_full">Prehrávač a zoznam rádiostaníc</string>
 

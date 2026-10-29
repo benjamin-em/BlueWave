@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Popularitate în creștere</string>
     <string name="icon_click_trend_stable">Popularitate stabilă</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% fără reclame și privat</string>
 
     <string name="action_play_in_external">Redare în player extern</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Selectați Imagine</string>
     <string name="error_invalid_url">Vă rugăm să introduceți o adresă URL validă</string>
     <string name="action_save">Salvează</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Comenzi rapide ale playerului</string>
     <string name="widget_description_full">Player și listă de posturi radio</string>
 

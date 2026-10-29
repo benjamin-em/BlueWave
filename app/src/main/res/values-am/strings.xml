@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">ተወዳጅነት እየጨመረ ነው</string>
     <string name="icon_click_trend_stable">ተወዳጅነት የተረጋጋ ነው</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% ከማስታወቂያ ነጻ እና ግላዊ</string>
 
     <string name="action_play_in_external">በውጫዊ ማጫወቻ አጫውት</string>
@@ -352,8 +352,8 @@
     <string name="select_image">ምስል ይምረጡ</string>
     <string name="error_invalid_url">እባክህ የሚሰራ URL አስገባ</string>
     <string name="action_save">አስቀምጥ</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">ፈጣን የተጫዋች መቆጣጠሪያዎች</string>
     <string name="widget_description_full">የተጫዋች እና የጣቢያ ዝርዝር</string>
 

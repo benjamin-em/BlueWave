@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Umaarufu unaongezeka</string>
     <string name="icon_click_trend_stable">Umaarufu uko thabiti</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Bila Matangazo &amp; Ya Faragha</string>
 
     <string name="action_play_in_external">Cheza katika mchezaji wa nje</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Chagua Picha</string>
     <string name="error_invalid_url">Tafadhali weka URL halali</string>
     <string name="action_save">Hifadhi</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Vidhibiti vya haraka vya kicheza sauti</string>
     <string name="widget_description_full">Kicheza sauti na orodha ya vituo vya redio</string>
 

@@ -627,7 +627,13 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             Log.d(tag, "next() called")
         }
         val station = itsCurrentStation ?: return
-        
+
+        // Priority 1: the list the UI is currently browsing (steering-wheel friendly)
+        com.ounben.amaradio.playback.PlaybackQueueHolder.getNextById(station.StationUuid)?.let { nextStation ->
+            if (radioPlayer?.isPlaying() == true) playWithoutWarnings(nextStation) else playAndWarnIfMetered(nextStation)
+            return
+        }
+
         // Fallback: If station has no queue (e.g. from search), try to use history or favorites
         val queue = station.queue ?: run {
             val app = application as AMARadioApp
@@ -640,7 +646,7 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             }
             return
         }
-        
+
         if (radioPlayer?.isPlaying() == true) playWithoutWarnings(nextStation) else playAndWarnIfMetered(nextStation)
     }
 
@@ -649,7 +655,13 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             Log.d(tag, "previous() called")
         }
         val station = itsCurrentStation ?: return
-        
+
+        // Priority 1: the list the UI is currently browsing (steering-wheel friendly)
+        com.ounben.amaradio.playback.PlaybackQueueHolder.getPreviousById(station.StationUuid)?.let { prevStation ->
+            if (radioPlayer?.isPlaying() == true) playWithoutWarnings(prevStation) else playAndWarnIfMetered(prevStation)
+            return
+        }
+
         // Fallback: If station has no queue, try to use history or favorites
         val queue = station.queue ?: run {
             val app = application as AMARadioApp
@@ -662,7 +674,7 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
             }
             return
         }
-        
+
         if (radioPlayer?.isPlaying() == true) playWithoutWarnings(prevStation) else playAndWarnIfMetered(prevStation)
     }
 

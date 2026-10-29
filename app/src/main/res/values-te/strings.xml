@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">ప్రజాదరణ పెరుగుతోంది</string>
     <string name="icon_click_trend_stable">ప్రజాదరణ స్థిరంగా ఉంది</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% ప్రకటనలు లేనిది &amp; ప్రైవేట్</string>
 
     <string name="action_play_in_external">బాహ్య ప్లేయర్‌లో ప్లే చేయి</string>
@@ -352,8 +352,8 @@
     <string name="select_image">చిత్రాన్ని ఎంచుకోండి</string>
     <string name="error_invalid_url">దయచేసి చెల్లుబాటు అయ్యే URLని నమోదు చేయండి</string>
     <string name="action_save">సేవ్ చేయండి</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">త్వరిత ప్లేయర్ నియంత్రణలు</string>
     <string name="widget_description_full">ప్లేయర్ మరియు రేడియో స్టేషన్ల జాబితా</string>
 

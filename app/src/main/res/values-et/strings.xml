@@ -264,7 +264,7 @@
     <string name="icon_click_trend_increasing">Populaarsus kasvab</string>
     <string name="icon_click_trend_stable">Populaarsus on stabiilne</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% reklaamivaba ja privaatne</string>
 
     <string name="action_play_in_external">Mängi välises mängijas</string>
@@ -361,8 +361,8 @@
     <string name="select_image">Valige Pilt</string>
     <string name="error_invalid_url">Sisestage kehtiv URL</string>
     <string name="action_save">Salvesta</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Kiire mängija juhtnupud</string>
     <string name="widget_description_full">Mängija ja raadiojaamade loend</string>
 

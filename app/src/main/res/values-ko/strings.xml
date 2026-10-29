@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">인기 상승 중</string>
     <string name="icon_click_trend_stable">인기 유지 중</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% 광고 없음 및 개인 정보 보호</string>
 
     <string name="action_play_in_external">외부 플레이어에서 재생</string>
@@ -352,8 +352,8 @@
     <string name="select_image">이미지 선택</string>
     <string name="error_invalid_url">유효한 URL을 입력하세요.</string>
     <string name="action_save">저장</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">빠른 플레이어 컨트롤</string>
     <string name="widget_description_full">플레이어 및 라디오 방송국 목록</string>
 

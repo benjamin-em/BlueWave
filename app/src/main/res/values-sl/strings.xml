@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Priljubljenost raste</string>
     <string name="icon_click_trend_stable">Priljubljenost je stabilna</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100 % brez oglasov in zasebno</string>
 
     <string name="action_play_in_external">Predvajaj v zunanjem predvajalniku</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Izberite Slika</string>
     <string name="error_invalid_url">Vnesite veljaven URL</string>
     <string name="action_save">Shrani</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Hitro upravljanje predvajalnika</string>
     <string name="widget_description_full">Predvajalnik in seznam radijskih postaj</string>
 

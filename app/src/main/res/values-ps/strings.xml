@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">محبوبیت زیاتېږي</string>
     <string name="icon_click_trend_stable">محبوبیت ثابت دی</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% له اعلاناتو پاک او محرم</string>
 
     <string name="action_play_in_external">په بهرني پلیر کې ږغول</string>
@@ -354,8 +354,8 @@
     <string name="select_image">انځور وټاکئ</string>
     <string name="error_invalid_url">مهرباني وکړئ سم URL داخل کړئ</string>
     <string name="action_save">خوندي کول</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">د چټک پلیر کنټرول</string>
     <string name="widget_description_full">پلیر او د راډیو سټېشنونو لېست</string>
 

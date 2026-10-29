@@ -257,7 +257,7 @@
   <string name="icon_click_trend_increasing">Aukande popularitet</string>
   <string name="icon_click_trend_stable">Stabil popularitet</string>
 
-  <string name="app_name">AMARadio</string>
+  <string name="app_name">BlueWave</string>
   <string name="ad_free_promise">100% reklamefri &amp; privat</string>
 
   <string name="action_play_in_external">Spel av i ekstern spelar</string>
@@ -351,8 +351,8 @@
     <string name="select_image">Vel bilete</string>
     <string name="error_invalid_url">Ver venleg og skriv inn ein gyldig URL</string>
     <string name="action_save">Lagra</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Raske avspelarkontrollar</string>
     <string name="widget_description_full">Radioavspelar og kanalliste</string>
 

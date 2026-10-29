@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Suosio kasvaa</string>
     <string name="icon_click_trend_stable">Suosio vakaa</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% mainosvapaa &amp; yksityinen</string>
 
     <string name="action_play_in_external">Toista ulkoisella soittimella</string>
@@ -350,8 +350,8 @@
     <string name="select_image">Valitse Kuva</string>
     <string name="error_invalid_url">Anna kelvollinen URL-osoite</string>
     <string name="action_save">Tallenna</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Soittimen nopeat ohjaimet</string>
     <string name="widget_description_full">Soitin ja radioasemaluettelo</string>
 

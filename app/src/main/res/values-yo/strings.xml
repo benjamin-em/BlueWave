@@ -260,7 +260,7 @@
     <string name="icon_click_trend_increasing">Agbára ayọ̀ ń pọ̀ sí i</string>
     <string name="icon_click_trend_stable">Agbára ayọ̀ wà déédéé</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Láláìsí Ìpolówó &amp; Ti Ara Ẹni</string>
 
     <string name="action_play_in_external">Gbé jáde nínú mọ̀ṣín ode</string>
@@ -354,8 +354,8 @@
     <string name="select_image">Yàn àwòrán</string>
     <string name="error_invalid_url">Jọ̀wọ́ fi URL gidi kọ́</string>
     <string name="action_save">Tọ́jú</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Àwọn àtúnṣe gbéjáde lọ́gán</string>
     <string name="widget_description_full">Mọ̀ṣín gbéjáde ati àtòjọ ilé-iṣẹ́ rédíò</string>
 

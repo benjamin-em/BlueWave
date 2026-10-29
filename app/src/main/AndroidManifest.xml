@@ -29,9 +29,9 @@
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
         tools:node="remove" />
-    <uses-permission
-        android:name="android.permission.ACCESS_COARSE_LOCATION"
-        tools:node="remove" />
+    <!-- Coarse location: home-screen province/city grouping (car fork feature).
+         Upstream AMARadio removes this; we re-enable COARSE only, never FINE. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.BLUETOOTH" />

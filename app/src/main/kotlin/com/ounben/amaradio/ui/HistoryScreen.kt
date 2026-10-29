@@ -42,41 +42,15 @@ fun HistoryScreen(
     var stationToDelete by remember { mutableStateOf<DataRadioStation?>(null) }
 
     Column(modifier = Modifier.fillMaxSize()) {
-        val safeSelectedIndex = remember(pagerState.currentPage) {
-            pagerState.currentPage.coerceIn(0, 2)
-        }
-
-        SecondaryScrollableTabRow(
-            selectedTabIndex = safeSelectedIndex,
-            edgePadding = 16.dp,
-            containerColor = MaterialTheme.colorScheme.secondary,
-            contentColor = MaterialTheme.colorScheme.onSecondary,
-            indicator = {
-                if (safeSelectedIndex in 0..2) {
-                    TabRowDefaults.SecondaryIndicator(
-                        Modifier.tabIndicatorOffset(safeSelectedIndex),
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                }
-            },
-            divider = {}
-        ) {
-            Tab(
-                selected = pagerState.currentPage == 0,
-                onClick = { coroutineScope.launch { pagerState.animateScrollToPage(0) } },
-                text = { Text(text = stringResource(R.string.nav_item_history)) }
-            )
-            Tab(
-                selected = pagerState.currentPage == 1,
-                onClick = { coroutineScope.launch { pagerState.animateScrollToPage(1) } },
-                text = { Text(text = stringResource(R.string.tab_player_history)) }
-            )
-            Tab(
-                selected = pagerState.currentPage == 2,
-                onClick = { coroutineScope.launch { pagerState.animateScrollToPage(2) } },
-                text = { Text(text = "Recordings") }
-            )
-        }
+        PillTabRow(
+            selectedIndex = pagerState.currentPage,
+            titles = listOf(
+                stringResource(R.string.nav_item_history),
+                stringResource(R.string.tab_player_history),
+                "Recordings"
+            ),
+            onSelect = { coroutineScope.launch { pagerState.animateScrollToPage(it) } }
+        )
 
         HorizontalPager(
             state = pagerState,

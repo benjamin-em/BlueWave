@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Popolarità qed tiżdied</string>
     <string name="icon_click_trend_stable">Popolarità stabbli</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% Ħieles mir-reklami u Privat</string>
 
     <string name="action_play_in_external">Iddoqq f\'player estern</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Agħżel Image</string>
     <string name="error_invalid_url">Jekk jogħġbok daħħal URL validu</string>
     <string name="action_save">Insalva</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Kontrolli mgħaġġla tal-player</string>
     <string name="widget_description_full">Player u lista tal-istazzjonijiet tar-radju</string>
 

@@ -19,6 +19,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -160,9 +161,10 @@ fun MainScreen(
                         mainViewModel.setSearchActive(active)
                         if (!active) searchViewModel.clearResults()
                     },
-                    onFilterClick = { 
+                    onFilterClick = {
                         isPlayerExpanded = false
-                        mainViewModel.setStationsInitialTab(1)
+                        // Tab layout: 0=Home, 1=Local, 2+=Filters
+                        mainViewModel.setStationsInitialTab(2)
                         navController.navigate(Screen.Stations.route)
                     },
                     onSleepTimerClick = { showSleepTimerDialog = true },
@@ -217,10 +219,10 @@ fun MainScreen(
                                     }
                                 },
                                 colors = NavigationBarItemDefaults.colors(
-                                    selectedIconColor = AmaradioAmber,
-                                    selectedTextColor = AmaradioAmber,
-                                    indicatorColor = Color.Transparent,
-                                    unselectedIconColor = MaterialTheme.colorScheme.onSurface
+                                    selectedIconColor = MaterialTheme.colorScheme.onPrimary,
+                                    selectedTextColor = MaterialTheme.colorScheme.primary,
+                                    indicatorColor = MaterialTheme.colorScheme.primary,
+                                    unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
                             )
                         }
@@ -275,9 +277,13 @@ fun MainScreen(
                         composable(Screen.Stations.route) {
                             TabsScreen(
                                 initialTab = mainUiState.stationsInitialTab,
-                                onStationClick = { station -> 
+                                onStationClick = { station ->
                                     if (sharedPrefHasExternalPlayer(context)) showPlayerSelectorDialog = station
                                     else playerViewModel.play(station)
+                                },
+                                onFavoriteClick = { station ->
+                                    if (app.favouriteManager.has(station.StationUuid)) app.favouriteManager.remove(station.StationUuid)
+                                    else app.favouriteManager.add(station)
                                 },
                                 onCategoryClick = { }
                             )
@@ -377,7 +383,19 @@ fun MainScreen(
                                 Modifier.wrapContentHeight()
                         )
                         .align(Alignment.BottomCenter)
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
+                        .then(
+                            if (isPlayerExpanded && playerUiState.currentStation != null) Modifier
+                            else Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                        )
+                        .clip(
+                            if (isPlayerExpanded && playerUiState.currentStation != null)
+                                RoundedCornerShape(0.dp)
+                            else RoundedCornerShape(24.dp)
+                        )
+                        .background(
+                            if (isPlayerExpanded && playerUiState.currentStation != null) MaterialTheme.colorScheme.primaryContainer
+                            else MaterialTheme.colorScheme.surface
+                        )
                         .draggable(
                             orientation = Orientation.Vertical,
                             state = rememberDraggableState { /* ignore delta */ },

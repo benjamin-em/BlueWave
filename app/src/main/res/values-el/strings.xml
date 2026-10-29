@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Η δημοτικότητα αυξάνεται</string>
     <string name="icon_click_trend_stable">Σταθερή δημοτικότητα</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% χωρίς διαφημίσεις &amp; Ιδιωτικό</string>
 
     <string name="action_play_in_external">Αναπαραγωγή σε εξωτερικό αναπαραγωγό</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Επιλέξτε Εικόνα</string>
     <string name="error_invalid_url">Εισαγάγετε μια έγκυρη διεύθυνση URL</string>
     <string name="action_save">Αποθήκευση</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Γρήγορα χειριστήρια αναπαραγωγής</string>
     <string name="widget_description_full">Λίστα αναπαραγωγής και ραδιοφωνικών σταθμών</string>
 

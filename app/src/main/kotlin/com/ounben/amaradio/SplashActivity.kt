@@ -30,7 +30,6 @@ import androidx.lifecycle.lifecycleScope
 import com.ounben.amaradio.database.AMARadioDatabase
 import com.ounben.amaradio.database.user.AMARadioUserDatabase
 import com.ounben.amaradio.ui.AMARadioTheme
-import com.ounben.amaradio.ui.AmaradioAmber
 import com.ounben.amaradio.utils.LocaleUtils
 import com.ounben.amaradio.utils.UiScaler
 import kotlinx.coroutines.Dispatchers
@@ -77,7 +76,11 @@ class SplashActivity : ComponentActivity() {
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(Color.Black),
+                        .background(
+                            androidx.compose.ui.graphics.Brush.verticalGradient(
+                                listOf(Color(0xFF58BEFF), Color(0xFF0A5CDC))
+                            )
+                        ),
                     contentAlignment = Alignment.Center
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -91,13 +94,13 @@ class SplashActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(
                             text = "AMARadio",
-                            color = AmaradioAmber,
+                            color = Color.White,
                             style = MaterialTheme.typography.headlineLarge
                         )
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
                             text = "v${stringResource(R.string.version_name)}",
-                            color = Color.White,
+                            color = Color.White.copy(alpha = 0.8f),
                             style = MaterialTheme.typography.bodyMedium
                         )
                     }

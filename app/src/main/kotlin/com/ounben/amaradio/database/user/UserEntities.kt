@@ -53,6 +53,35 @@ data class HistoryEntity(
     val lastPlayedAt: Date = Date()
 )
 
+/**
+ * Stations pinned by the user to the home screen "我的置顶" group.
+ * Independent of favorites — pinning does not pollute the favourite list.
+ */
+@Entity(tableName = "station_home_pin")
+data class HomePinEntity(
+    @PrimaryKey val StationUuid: String,
+    val Name: String,
+    val Url: String,
+    val Homepage: String = "",
+    val Favicon: String = "",
+    val Country: String = "",
+    val CountryCode: String = "",
+    val Tags: String = "",
+    val Language: String = "",
+    val Votes: Int = 0,
+    val Subcountry: String = "",
+    val clickcount: Int = 0,
+    val ClickTrend: Int = 0,
+    val Codec: String = "",
+    val Bitrate: Int = 0,
+    val LastChangeTime: String = "",
+    val Creation: String = "",
+    val ChangeUuid: String = "",
+    val LastCheckOkTime: String = "",
+    val addedAt: Date = Date(),
+    val displayOrder: Int = 0
+)
+
 @Entity(tableName = "filter_tab")
 data class FilterTabEntity(
     @PrimaryKey val id: String,

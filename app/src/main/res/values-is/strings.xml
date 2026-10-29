@@ -258,7 +258,7 @@
     <string name="icon_click_trend_increasing">Vinsældir aukast</string>
     <string name="icon_click_trend_stable">Vinsældir stöðugar</string>
 
-    <string name="app_name">AMARadio</string>
+    <string name="app_name">BlueWave</string>
     <string name="ad_free_promise">100% án auglýsinga &amp; einkalíf</string>
 
     <string name="action_play_in_external">Spila í ytri spilara</string>
@@ -352,8 +352,8 @@
     <string name="select_image">Veldu Mynd</string>
     <string name="error_invalid_url">Vinsamlegast sláðu inn gilda vefslóð</string>
     <string name="action_save">Vista</string>
-    <string name="widget_name_small">AMARadio Compact</string>
-    <string name="widget_name_full">AMARadio Player</string>
+    <string name="widget_name_small">BlueWave Compact</string>
+    <string name="widget_name_full">BlueWave Player</string>
     <string name="widget_description_small">Fljótlegar spilarastýringar</string>
     <string name="widget_description_full">Spilari og listi yfir útvarpsstöðvar</string>
 
