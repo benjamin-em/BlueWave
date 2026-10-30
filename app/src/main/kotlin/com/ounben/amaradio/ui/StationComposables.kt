@@ -108,7 +108,7 @@ import kotlin.time.Duration.Companion.milliseconds
 private const val MARQUEE_START_DELAY_MS = 3500
 
 /** Splits "name·slogan" / "name slogan" into a fixed head and a scrolling tail. */
-private fun splitStationName(name: String): Pair<String, String> {
+internal fun splitStationName(name: String): Pair<String, String> {
     val trimmed = name.trim()
     val dot = trimmed.indexOfFirst { it == '·' || it == '｜' || it == '|' }
     val idx = when {
@@ -320,7 +320,7 @@ private fun StationPlaceholderContent(placeholder: StationPlaceholderUtils.Place
     var boxSize by remember { mutableStateOf(0) }
     val density = LocalDensity.current
     val sideDp = with(density) { boxSize.toDp() }
-    // The box is sized in dp but text is sized in sp, so car mode's 1.45x fontScale
+    // The box is sized in dp but text is sized in sp, so a large font-scale setting
     // would overflow it. Dividing it out keeps the glyphs locked to the box.
     val fontUnit = sideDp.value / density.fontScale
 
@@ -719,13 +719,9 @@ fun StationListItem(
                 }
             }
             Spacer(modifier = Modifier.width(14.dp))
-            // Car mode scales every sp by 1.45x already, so the list steps the style
-            // down a notch — bodyLarge on top of that scale truncated most names.
-            val isCarModeList by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
             StationNameText(
                 name = station.Name,
-                style = if (isCarModeList) MaterialTheme.typography.bodyMedium
-                        else MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.bodyLarge,
                 color = if (isPlaying) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.weight(1f),
                 scroll = isPlaying

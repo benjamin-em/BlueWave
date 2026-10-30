@@ -11,13 +11,7 @@ object UiScaler {
     const val SCALE_STANDARD = 1.0f
     const val SCALE_LARGE = 1.25f
 
-    const val SCALE_CAR = 1.45f
-
-    fun getScaleFactor(context: Context): Float {
-        // Car mode forces the big UI regardless of the scale preference
-        if (com.ounben.amaradio.CarModeManager.isCarMode.value) return SCALE_CAR
-        return getPreferenceScaleFactor(context)
-    }
+    fun getScaleFactor(context: Context): Float = getPreferenceScaleFactor(context)
 
     fun getPreferenceScaleFactor(context: Context): Float {
         return try {

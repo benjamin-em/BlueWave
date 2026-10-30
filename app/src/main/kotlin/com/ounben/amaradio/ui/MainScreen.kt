@@ -136,6 +136,12 @@ fun MainScreen(
         searchViewModel.clearResults()
     }
 
+    val isCarMode by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
+    if (isCarMode) {
+        CarModeScreen(playerViewModel = playerViewModel)
+        return
+    }
+
     Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
         Scaffold(
             topBar = {

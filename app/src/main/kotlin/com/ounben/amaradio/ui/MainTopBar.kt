@@ -95,18 +95,15 @@ fun MainTopBar(
                                 .clip(RoundedCornerShape(9.dp)),
                             tint = Color.Unspecified
                         )
-                        val isCarModeTitle by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
-                        if (!isCarModeTitle) {
-                            Spacer(modifier = Modifier.width(10.dp))
-                            Text(
-                                text = stringResource(R.string.app_name),
-                                color = MaterialTheme.colorScheme.onBackground,
-                                fontWeight = FontWeight.Bold,
-                                fontSize = 20.sp,
-                                maxLines = 1,
-                                softWrap = false
-                            )
-                        }
+                        Spacer(modifier = Modifier.width(10.dp))
+                        Text(
+                            text = stringResource(R.string.app_name),
+                            color = MaterialTheme.colorScheme.onBackground,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 20.sp,
+                            maxLines = 1,
+                            softWrap = false
+                        )
                         if (isLoading) {
                             Spacer(modifier = Modifier.width(12.dp))
                             CircularProgressIndicator(

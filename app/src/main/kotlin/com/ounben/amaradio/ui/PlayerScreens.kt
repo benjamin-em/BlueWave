@@ -148,7 +148,6 @@ fun FullPlayer(
     val artistName = if (liveInfo.track.isNotEmpty()) liveInfo.artist else ""
 
     val isActive = uiState.playState == PlayState.Playing || uiState.playState == PlayState.PrePlaying
-    val isCompactPlayer by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
 
     Column(
         modifier = Modifier
@@ -174,11 +173,11 @@ fun FullPlayer(
                 stationUuid = station?.StationUuid ?: "",
                 iconUrl = station?.IconUrl,
                 modifier = Modifier
-                    .size(if (isCompactPlayer) 96.dp else 168.dp)
-                    .clip(RoundedCornerShape(if (isCompactPlayer) 22.dp else 32.dp))
+                    .size(168.dp)
+                    .clip(RoundedCornerShape(32.dp))
             )
 
-            Spacer(modifier = Modifier.height(if (isCompactPlayer) 8.dp else 18.dp))
+            Spacer(modifier = Modifier.height(18.dp))
 
             Text(
                 text = (station?.Name ?: "").ifEmpty { " " },
@@ -199,61 +198,35 @@ fun FullPlayer(
                 modifier = Modifier.padding(top = 4.dp)
             )
 
-            // Car mode drops the bandwidth readout and pulls the secondary controls
-            // up into its place, so the control bar below keeps only the big targets.
-            if (!isCompactPlayer) {
-                Box(modifier = Modifier.padding(top = 6.dp), contentAlignment = Alignment.Center) {
-                    if (isActive || uiState.playState == PlayState.Error) {
-                        PlayerStatusRow(
-                            playState = uiState.playState,
-                            bandwidthFlow = playerViewModel.bandwidth,
-                            showText = true
-                        )
-                    } else if (station != null) {
-                        val flagEmoji = remember(station.CountryCode) { EmojiUtils.getFlagEmoji(station.CountryCode) ?: "" }
-                        if (flagEmoji.isNotEmpty()) {
-                            Text(
-                                text = flagEmoji,
-                                style = MaterialTheme.typography.titleMedium,
-                                maxLines = 1
-                            )
-                        }
-                    }
-                }
-
-                Spacer(modifier = Modifier.height(12.dp))
-
-                Text(
-                    text = stringResource(R.string.tab_player_history),
-                    style = MaterialTheme.typography.titleSmall,
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            } else {
-                Row(
-                    modifier = Modifier.fillMaxWidth().padding(top = 10.dp, bottom = 4.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    com.ounben.amaradio.recorder.RecordButtonWithTimer(
-                        currentStation = station,
-                        iconSize = 30.dp
+            // Secondary controls (flag, status, recorder) live in the normal player only;
+            // car mode has its own screen.
+            Box(modifier = Modifier.padding(top = 6.dp), contentAlignment = Alignment.Center) {
+                if (isActive || uiState.playState == PlayState.Error) {
+                    PlayerStatusRow(
+                        playState = uiState.playState,
+                        bandwidthFlow = playerViewModel.bandwidth,
+                        showText = true
                     )
-                    Text(
-                        text = stringResource(R.string.tab_player_history),
-                        style = MaterialTheme.typography.titleSmall,
-                        modifier = Modifier.weight(1f).padding(horizontal = 8.dp),
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    IconButton(onClick = { playerViewModel.toggleFavorite() }) {
-                        Icon(
-                            imageVector = if (uiState.isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
-                            contentDescription = null,
-                            modifier = Modifier.size(30.dp),
-                            tint = if (uiState.isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
+                } else if (station != null) {
+                    val flagEmoji = remember(station.CountryCode) { EmojiUtils.getFlagEmoji(station.CountryCode) ?: "" }
+                    if (flagEmoji.isNotEmpty()) {
+                        Text(
+                            text = flagEmoji,
+                            style = MaterialTheme.typography.titleMedium,
+                            maxLines = 1
                         )
                     }
                 }
             }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Text(
+                text = stringResource(R.string.tab_player_history),
+                style = MaterialTheme.typography.titleSmall,
+                modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
 
             TrackList(
                 tracks = tracks,
@@ -274,15 +247,13 @@ fun FullPlayer(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 12.dp, horizontal = 12.dp),
-                horizontalArrangement = if (isCompactPlayer) Arrangement.SpaceEvenly else Arrangement.SpaceBetween,
+                horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                if (!isCompactPlayer) {
-                    com.ounben.amaradio.recorder.RecordButtonWithTimer(
-                        currentStation = station,
-                        iconSize = 28.dp
-                    )
-                }
+                com.ounben.amaradio.recorder.RecordButtonWithTimer(
+                    currentStation = station,
+                    iconSize = 28.dp
+                )
 
                 IconButton(onClick = { playerViewModel.skipToPrevious() }) {
                     Icon(
@@ -318,15 +289,13 @@ fun FullPlayer(
                     )
                 }
 
-                if (!isCompactPlayer) {
-                    IconButton(onClick = { playerViewModel.toggleFavorite() }) {
-                        Icon(
-                            imageVector = if (uiState.isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
-                            contentDescription = null,
-                            modifier = Modifier.size(30.dp),
-                            tint = if (uiState.isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
+                IconButton(onClick = { playerViewModel.toggleFavorite() }) {
+                    Icon(
+                        imageVector = if (uiState.isFavorite) Icons.Filled.Star else Icons.Outlined.StarOutline,
+                        contentDescription = null,
+                        modifier = Modifier.size(30.dp),
+                        tint = if (uiState.isFavorite) AmaradioAmber else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                 }
             }
         }

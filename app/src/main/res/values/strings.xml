@@ -42,6 +42,15 @@
     <string name="car_mode_on">On</string>
     <string name="car_mode_off">Off</string>
     <string name="car_mode_toggle">Toggle car mode</string>
+    <string name="car_exit">Exit car mode</string>
+    <string name="car_no_station">Pick a station</string>
+    <string name="car_empty_hint">Star stations on your phone to pin them here</string>
+    <string name="car_connecting">Connecting…</string>
+    <string name="car_error">Can\'t play — tap to retry</string>
+    <string name="car_prev">Previous station</string>
+    <string name="car_next">Next station</string>
+    <string name="car_play">Play</string>
+    <string name="car_pause">Pause</string>
 
     <string name="action_station_visit_website">Visit Website</string>
     <string name="action_station_copy_stream_url">Copy Stream URL</string>

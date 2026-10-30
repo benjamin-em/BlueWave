@@ -174,12 +174,10 @@ fun AMARadioTheme(
         }
     }
 
-    // Observe car-mode so the whole UI rescales live when Bluetooth connects
-    val isCarMode by com.ounben.amaradio.CarModeManager.isCarMode.collectAsState()
-    val scale = if (isCarMode) UiScaler.SCALE_CAR else UiScaler.getScaleFactor(context)
+    val scale = UiScaler.getScaleFactor(context)
     val currentDensity = LocalDensity.current
-    // The context wrapper already applied the user-preference scale to fontScale, so for
-    // the preference path only density needs scaling; car mode is applied here exclusively.
+    // The context wrapper already applied the user-preference scale to fontScale, so
+    // only density needs scaling here.
     val prefScale = UiScaler.getPreferenceScaleFactor(context)
     val scaledDensity = Density(
         density = currentDensity.density * scale,

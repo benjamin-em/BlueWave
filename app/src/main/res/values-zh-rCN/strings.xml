@@ -41,6 +41,15 @@
     <string name="car_mode_on">开</string>
     <string name="car_mode_off">关</string>
     <string name="car_mode_toggle">切换车载模式</string>
+    <string name="car_exit">退出车载模式</string>
+    <string name="car_no_station">选一个电台</string>
+    <string name="car_empty_hint">在手机上收藏电台，这里就会显示快捷按钮</string>
+    <string name="car_connecting">连接中…</string>
+    <string name="car_error">无法播放，点击重试</string>
+    <string name="car_prev">上一台</string>
+    <string name="car_next">下一台</string>
+    <string name="car_play">播放</string>
+    <string name="car_pause">暂停</string>
 
     <string name="action_station_visit_website">访问网站</string>
     <string name="action_station_copy_stream_url">复制流媒体地址</string>
