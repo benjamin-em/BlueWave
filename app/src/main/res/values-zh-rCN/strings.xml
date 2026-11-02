@@ -43,7 +43,7 @@
     <string name="car_mode_toggle">切换车载模式</string>
     <string name="car_exit">退出车载模式</string>
     <string name="car_no_station">选一个电台</string>
-    <string name="car_empty_hint">在手机上收藏电台，这里就会显示快捷按钮</string>
+    <string name="car_empty_hint">这里还没有电台</string>
     <string name="car_connecting">连接中…</string>
     <string name="car_error">无法播放，点击重试</string>
     <string name="car_prev">上一台</string>

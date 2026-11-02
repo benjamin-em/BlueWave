@@ -44,7 +44,7 @@
     <string name="car_mode_toggle">Toggle car mode</string>
     <string name="car_exit">Exit car mode</string>
     <string name="car_no_station">Pick a station</string>
-    <string name="car_empty_hint">Star stations on your phone to pin them here</string>
+    <string name="car_empty_hint">No stations here yet</string>
     <string name="car_connecting">Connecting…</string>
     <string name="car_error">Can\'t play — tap to retry</string>
     <string name="car_prev">Previous station</string>

@@ -7,20 +7,28 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.History
+import androidx.compose.material.icons.filled.Radio
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.SkipNext
 import androidx.compose.material.icons.filled.SkipPrevious
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -29,6 +37,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.ounben.amaradio.AMARadioApp
 import com.ounben.amaradio.CarModeManager
 import com.ounben.amaradio.R
@@ -38,7 +47,7 @@ import com.ounben.amaradio.station.DataRadioStation
 import kotlinx.coroutines.delay
 import java.util.Date
 
-private const val PRESET_COUNT = 6
+private const val HOME_GROUP_LIMIT = 20
 private const val DIM_BRIGHTNESS = 0.3f
 
 // Fixed palette: the car screen is always dark so it never glares at night
@@ -62,17 +71,17 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
     val uiState by playerViewModel.uiState.collectAsState()
     val favourites by app.favouriteManager.stationsFlow.collectAsState()
     val history by app.historyManager.stationsFlow.collectAsState()
+    val homeViewModel: HomeViewModel = viewModel()
+    val homeState by homeViewModel.uiState.collectAsState()
+    var tab by rememberSaveable { mutableStateOf(CarTab.Home) }
 
     KeepScreenOnDimmed()
     BackHandler { CarModeManager.setMode(context, CarModeManager.MODE_OFF) }
 
-    // Favourites first, topped up with recent stations, no duplicates. Stable order
-    // so a given button always means the same station (muscle memory).
-    val presets = remember(favourites, history) {
-        (favourites + history)
-            .distinctBy { it.StationUuid }
-            .distinctBy { carName(it.Name) }
-            .take(PRESET_COUNT)
+    val homeGroups = remember(homeState.groups) {
+        homeState.groups
+            .filter { it.stations.isNotEmpty() }
+            .map { it.title to it.stations.take(HOME_GROUP_LIMIT) }
     }
 
     val station = uiState.currentStation
@@ -80,8 +89,8 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
     val isActive = playState == PlayState.Playing || playState == PlayState.PrePlaying
 
     val exit = { CarModeManager.setMode(context, CarModeManager.MODE_OFF) }
-    val onPick: (DataRadioStation) -> Unit = { picked ->
-        PlaybackQueueHolder.setStations(presets)
+    val onPick: (DataRadioStation, List<DataRadioStation>) -> Unit = { picked, queue ->
+        PlaybackQueueHolder.setStations(queue)
         playerViewModel.play(picked)
     }
     val playingUuid = station?.StationUuid.takeIf { isActive }
@@ -115,8 +124,13 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
                     modifier = Modifier.height(96.dp).fillMaxWidth()
                 )
             }
-            PresetGrid(
-                presets = presets,
+            StationBrowser(
+                tab = tab,
+                onTab = { tab = it },
+                homeGroups = homeGroups,
+                homeLoading = homeState.isLoading,
+                favourites = favourites,
+                history = history,
                 playingUuid = playingUuid,
                 onPick = onPick,
                 modifier = Modifier.weight(1f).fillMaxHeight()
@@ -145,11 +159,16 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
                 onNext = { playerViewModel.skipToNext() },
                 modifier = Modifier.weight(0.9f).fillMaxWidth()
             )
-            PresetGrid(
-                presets = presets,
+            StationBrowser(
+                tab = tab,
+                onTab = { tab = it },
+                homeGroups = homeGroups,
+                homeLoading = homeState.isLoading,
+                favourites = favourites,
+                history = history,
                 playingUuid = playingUuid,
                 onPick = onPick,
-                modifier = Modifier.weight(1.3f).fillMaxWidth()
+                modifier = Modifier.weight(1.5f).fillMaxWidth()
             )
         }
     }
@@ -315,43 +334,95 @@ private fun TransportButton(
     }
 }
 
+private enum class CarTab(val icon: ImageVector, val labelRes: Int) {
+    Home(Icons.Default.Radio, R.string.nav_item_stations),
+    Favourites(Icons.Default.Star, R.string.nav_item_starred),
+    History(Icons.Default.History, R.string.nav_item_history)
+}
+
+/** Same three sources as the phone's bottom bar, as an icon tab row over one big-row list. */
 @Composable
-private fun PresetGrid(
-    presets: List<DataRadioStation>,
+private fun StationBrowser(
+    tab: CarTab,
+    onTab: (CarTab) -> Unit,
+    homeGroups: List<Pair<String, List<DataRadioStation>>>,
+    homeLoading: Boolean,
+    favourites: List<DataRadioStation>,
+    history: List<DataRadioStation>,
     playingUuid: String?,
-    onPick: (DataRadioStation) -> Unit,
+    onPick: (DataRadioStation, List<DataRadioStation>) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    if (presets.isEmpty()) {
-        Box(modifier = modifier, contentAlignment = Alignment.Center) {
-            Text(
-                text = stringResource(R.string.car_empty_hint),
-                color = CarTextDim,
-                fontSize = 18.sp,
-                textAlign = TextAlign.Center
-            )
-        }
-        return
-    }
-
-    // Always lay out PRESET_COUNT slots (2 columns x 3 rows) so positions never shift.
     Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(10.dp)) {
-        for (row in 0 until PRESET_COUNT / 2) {
-            Row(
+        Row(horizontalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.fillMaxWidth()) {
+            CarTab.values().forEach { t ->
+                val selected = t == tab
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .height(56.dp)
+                        .clip(RoundedCornerShape(18.dp))
+                        .background(if (selected) CarAccent else CarSurface)
+                        .clickable { onTab(t) },
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = t.icon,
+                        contentDescription = stringResource(t.labelRes),
+                        tint = if (selected) CarBg else CarTextDim,
+                        modifier = Modifier.size(30.dp)
+                    )
+                }
+            }
+        }
+
+        val listState = rememberLazyListState()
+        LaunchedEffect(tab) { listState.scrollToItem(0) }
+
+        val flat: List<DataRadioStation> = when (tab) {
+            CarTab.Home -> emptyList()
+            CarTab.Favourites -> favourites
+            CarTab.History -> history
+        }
+        val empty = if (tab == CarTab.Home) homeGroups.isEmpty() else flat.isEmpty()
+
+        if (empty && tab == CarTab.Home && homeLoading) {
+            Box(Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
+                CircularProgressIndicator(color = CarAccent)
+            }
+        } else if (empty) {
+            Box(Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
+                Text(
+                    text = stringResource(R.string.car_empty_hint),
+                    color = CarTextDim,
+                    fontSize = 18.sp,
+                    textAlign = TextAlign.Center
+                )
+            }
+        } else {
+            LazyColumn(
+                state = listState,
                 modifier = Modifier.weight(1f).fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(10.dp)
+                verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                for (col in 0 until 2) {
-                    val station = presets.getOrNull(row * 2 + col)
-                    if (station == null) {
-                        Spacer(Modifier.weight(1f).fillMaxHeight())
-                    } else {
-                        PresetTile(
-                            station = station,
-                            selected = station.StationUuid == playingUuid,
-                            onClick = { onPick(station) },
-                            modifier = Modifier.weight(1f).fillMaxHeight()
-                        )
+                if (tab == CarTab.Home) {
+                    homeGroups.forEach { (title, stations) ->
+                        item(key = "h_$title") {
+                            Text(
+                                text = title,
+                                color = CarTextDim,
+                                fontSize = 16.sp,
+                                fontWeight = FontWeight.Medium,
+                                modifier = Modifier.padding(start = 6.dp, top = 6.dp)
+                            )
+                        }
+                        items(stations, key = { "${title}_${it.StationUuid}" }) { st ->
+                            StationRow(st, st.StationUuid == playingUuid) { onPick(st, stations) }
+                        }
+                    }
+                } else {
+                    items(flat, key = { it.StationUuid }) { st ->
+                        StationRow(st, st.StationUuid == playingUuid) { onPick(st, flat) }
                     }
                 }
             }
@@ -360,27 +431,23 @@ private fun PresetGrid(
 }
 
 @Composable
-private fun PresetTile(
-    station: DataRadioStation,
-    selected: Boolean,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier
-) {
+private fun StationRow(station: DataRadioStation, selected: Boolean, onClick: () -> Unit) {
     Box(
-        modifier = modifier
-            .clip(RoundedCornerShape(20.dp))
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 64.dp)
+            .clip(RoundedCornerShape(18.dp))
             .background(if (selected) CarSurfaceActive else CarSurface)
             .clickable(onClick = onClick)
-            .padding(horizontal = 14.dp),
-        contentAlignment = Alignment.Center
+            .padding(horizontal = 18.dp, vertical = 10.dp),
+        contentAlignment = Alignment.CenterStart
     ) {
         Text(
             text = carName(station.Name),
-            color = if (selected) CarText else CarText.copy(alpha = 0.92f),
+            color = CarText,
             fontSize = 22.sp,
             lineHeight = 26.sp,
             fontWeight = if (selected) FontWeight.Bold else FontWeight.SemiBold,
-            textAlign = TextAlign.Center,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis
         )
