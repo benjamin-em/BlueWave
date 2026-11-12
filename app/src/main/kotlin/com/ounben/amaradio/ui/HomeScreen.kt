@@ -66,8 +66,8 @@ fun HomeScreen(
                 modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background),
                 contentPadding = PaddingValues(bottom = 8.dp)
             ) {
-                uiState.groups.forEach { group ->
-                    if (group.stations.isEmpty()) return@forEach
+                uiState.groups.forEachIndexed { groupIndex, group ->
+                    if (group.stations.isEmpty()) return@forEachIndexed
                     val expanded = group.title in uiState.expandedGroups
                     val visible = if (expanded) group.stations else group.stations.take(HomeViewModel.GROUP_PREVIEW_SIZE)
                     val canExpand = group.stations.size > HomeViewModel.GROUP_PREVIEW_SIZE
@@ -87,8 +87,12 @@ fun HomeScreen(
                             isFavorite = uiState.favoriteIds.contains(station.StationUuid),
                             isPlaying = station.StationUuid == playingUuid,
                             onClick = {
-                                // Steering-wheel next/prev cycles this group
-                                com.ounben.amaradio.playback.PlaybackQueueHolder.setStations(group.stations)
+                                // Steering-wheel next/prev walks every home group in order
+                                com.ounben.amaradio.playback.PlaybackQueueHolder.setGroupedStations(
+                                    uiState.groups.map { it.stations },
+                                    station.StationUuid,
+                                    groupIndex
+                                )
                                 onStationClick(station)
                             },
                             onFavoriteClick = { onFavoriteClick(station) },

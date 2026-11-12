@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.48] - 2026-11-12
+### Changed
+- **Steering-Wheel Next Across Home Groups**: Bluetooth AVRCP next/previous, and the in-app skip buttons, now walk the home lists in display order (pinned, city, province, national, English) instead of looping inside the current group. The last station of 武汉 continues into 湖北, then 中央台. The sequence wraps from the last group back to the first. Favourites, history, and search results still cycle inside their own list.
+
 ## [1.47] - 2026-10-29
 ### Added
 - **Station Placeholder Icons**: Stations without a logo now get a generated placeholder. A dial frequency in the name (`FM97.1`, `97.1 FM`, `106.1MHz`, `AM 1080`) renders as a small band tag with the number beside it; otherwise up to 6 CJK characters are split over two lines (`武汉` / `新闻广播`). Digits only count as a frequency when tied to a band marker. Covered by `StationPlaceholderUtilsTest`.

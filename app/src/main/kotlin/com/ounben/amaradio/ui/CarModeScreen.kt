@@ -79,9 +79,10 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
     BackHandler { CarModeManager.setMode(context, CarModeManager.MODE_OFF) }
 
     val homeGroups = remember(homeState.groups) {
-        homeState.groups
-            .filter { it.stations.isNotEmpty() }
-            .map { it.title to it.stations.take(HOME_GROUP_LIMIT) }
+        homeState.groups.mapIndexedNotNull { index, group ->
+            if (group.stations.isEmpty()) null
+            else CarHomeSection(index, group.title, group.stations.take(HOME_GROUP_LIMIT))
+        }
     }
 
     val station = uiState.currentStation
@@ -89,8 +90,16 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
     val isActive = playState == PlayState.Playing || playState == PlayState.PrePlaying
 
     val exit = { CarModeManager.setMode(context, CarModeManager.MODE_OFF) }
-    val onPick: (DataRadioStation, List<DataRadioStation>) -> Unit = { picked, queue ->
+    val onPickList: (DataRadioStation, List<DataRadioStation>) -> Unit = { picked, queue ->
         PlaybackQueueHolder.setStations(queue)
+        playerViewModel.play(picked)
+    }
+    val onPickHome: (DataRadioStation, Int) -> Unit = { picked, groupIndex ->
+        PlaybackQueueHolder.setGroupedStations(
+            homeState.groups.map { it.stations },
+            picked.StationUuid,
+            groupIndex
+        )
         playerViewModel.play(picked)
     }
     val playingUuid = station?.StationUuid.takeIf { isActive }
@@ -132,7 +141,8 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
                 favourites = favourites,
                 history = history,
                 playingUuid = playingUuid,
-                onPick = onPick,
+                onPickHome = onPickHome,
+                onPickList = onPickList,
                 modifier = Modifier.weight(1f).fillMaxHeight()
             )
         }
@@ -167,7 +177,8 @@ fun CarModeScreen(playerViewModel: PlayerViewModel) {
                 favourites = favourites,
                 history = history,
                 playingUuid = playingUuid,
-                onPick = onPick,
+                onPickHome = onPickHome,
+                onPickList = onPickList,
                 modifier = Modifier.weight(1.5f).fillMaxWidth()
             )
         }
@@ -334,6 +345,12 @@ private fun TransportButton(
     }
 }
 
+private data class CarHomeSection(
+    val groupIndex: Int,
+    val title: String,
+    val stations: List<DataRadioStation>
+)
+
 private enum class CarTab(val icon: ImageVector, val labelRes: Int) {
     Home(Icons.Default.Radio, R.string.nav_item_stations),
     Favourites(Icons.Default.Star, R.string.nav_item_starred),
@@ -345,12 +362,13 @@ private enum class CarTab(val icon: ImageVector, val labelRes: Int) {
 private fun StationBrowser(
     tab: CarTab,
     onTab: (CarTab) -> Unit,
-    homeGroups: List<Pair<String, List<DataRadioStation>>>,
+    homeGroups: List<CarHomeSection>,
     homeLoading: Boolean,
     favourites: List<DataRadioStation>,
     history: List<DataRadioStation>,
     playingUuid: String?,
-    onPick: (DataRadioStation, List<DataRadioStation>) -> Unit,
+    onPickHome: (DataRadioStation, Int) -> Unit,
+    onPickList: (DataRadioStation, List<DataRadioStation>) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -406,23 +424,25 @@ private fun StationBrowser(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 if (tab == CarTab.Home) {
-                    homeGroups.forEach { (title, stations) ->
-                        item(key = "h_$title") {
+                    homeGroups.forEach { section ->
+                        item(key = "h_${section.title}") {
                             Text(
-                                text = title,
+                                text = section.title,
                                 color = CarTextDim,
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.Medium,
                                 modifier = Modifier.padding(start = 6.dp, top = 6.dp)
                             )
                         }
-                        items(stations, key = { "${title}_${it.StationUuid}" }) { st ->
-                            StationRow(st, st.StationUuid == playingUuid) { onPick(st, stations) }
+                        items(section.stations, key = { "${section.title}_${it.StationUuid}" }) { st ->
+                            StationRow(st, st.StationUuid == playingUuid) {
+                                onPickHome(st, section.groupIndex)
+                            }
                         }
                     }
                 } else {
                     items(flat, key = { it.StationUuid }) { st ->
-                        StationRow(st, st.StationUuid == playingUuid) { onPick(st, flat) }
+                        StationRow(st, st.StationUuid == playingUuid) { onPickList(st, flat) }
                     }
                 }
             }
