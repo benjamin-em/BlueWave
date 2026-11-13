@@ -14,6 +14,7 @@ import com.ounben.amaradio.geo.ChinaProvinces
 import com.ounben.amaradio.geo.CuratedStations
 import com.ounben.amaradio.geo.HomeLocation
 import com.ounben.amaradio.geo.HomeLocationResolver
+import com.ounben.amaradio.playback.PlaybackQueueHolder
 import com.ounben.amaradio.station.DataRadioStation
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -120,6 +121,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             try {
                 val groups = buildGroups(loc)
+                PlaybackQueueHolder.setHomeCatalog(groups.map { it.stations })
                 _uiState.update { it.copy(groups = groups, isLoading = false) }
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to build home groups", e)

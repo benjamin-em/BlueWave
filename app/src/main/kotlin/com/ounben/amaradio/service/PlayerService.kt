@@ -628,24 +628,16 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
         }
         val station = itsCurrentStation ?: return
 
-        // Priority 1: the list the UI is currently browsing (steering-wheel friendly)
-        com.ounben.amaradio.playback.PlaybackQueueHolder.getNextById(station.StationUuid)?.let { nextStation ->
-            if (radioPlayer?.isPlaying() == true) playWithoutWarnings(nextStation) else playAndWarnIfMetered(nextStation)
-            return
-        }
-
-        // Fallback: If station has no queue (e.g. from search), try to use history or favorites
-        val queue = station.queue ?: run {
-            val app = application as AMARadioApp
-            if (!app.historyManager.isEmpty()) app.historyManager else app.favouriteManager
-        }
-
-        val nextStation = queue.getNextById(station.StationUuid) ?: run {
+        // Home groups, or the list the user actually picked. Never the live
+        // history: that list moves the current station to index 0 on every
+        // play, so next would swap the same two stations forever.
+        val nextStation = com.ounben.amaradio.playback.PlaybackQueueHolder.getNextById(station.StationUuid) ?: run {
             if (Utils.isDebug) {
                 Log.w(tag, "next() - no station found in queue")
             }
             return
         }
+        Log.i(tag, "next: ${station.Name} -> ${nextStation.Name}")
 
         if (radioPlayer?.isPlaying() == true) playWithoutWarnings(nextStation) else playAndWarnIfMetered(nextStation)
     }
@@ -656,24 +648,13 @@ class PlayerService : MediaLibraryService(), RadioPlayer.PlayerListener {
         }
         val station = itsCurrentStation ?: return
 
-        // Priority 1: the list the UI is currently browsing (steering-wheel friendly)
-        com.ounben.amaradio.playback.PlaybackQueueHolder.getPreviousById(station.StationUuid)?.let { prevStation ->
-            if (radioPlayer?.isPlaying() == true) playWithoutWarnings(prevStation) else playAndWarnIfMetered(prevStation)
-            return
-        }
-
-        // Fallback: If station has no queue, try to use history or favorites
-        val queue = station.queue ?: run {
-            val app = application as AMARadioApp
-            if (!app.historyManager.isEmpty()) app.historyManager else app.favouriteManager
-        }
-
-        val prevStation = queue.getPreviousById(station.StationUuid) ?: run {
+        val prevStation = com.ounben.amaradio.playback.PlaybackQueueHolder.getPreviousById(station.StationUuid) ?: run {
             if (Utils.isDebug) {
                 Log.w(tag, "previous() - no station found in queue")
             }
             return
         }
+        Log.i(tag, "previous: ${station.Name} -> ${prevStation.Name}")
 
         if (radioPlayer?.isPlaying() == true) playWithoutWarnings(prevStation) else playAndWarnIfMetered(prevStation)
     }

@@ -3,9 +3,15 @@ package com.ounben.amaradio.playback
 import com.ounben.amaradio.station.DataRadioStation
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 class PlaybackQueueHolderTest {
+
+    @BeforeEach
+    fun clearQueue() {
+        PlaybackQueueHolder.clear()
+    }
 
     private fun station(id: String) = DataRadioStation(Name = id, StationUuid = id)
 
@@ -59,5 +65,32 @@ class PlaybackQueueHolderTest {
 
         assertEquals("a", PlaybackQueueHolder.getNextById("b")?.StationUuid)
         assertNull(PlaybackQueueHolder.getNextById("missing"))
+    }
+
+    @Test
+    fun homeCatalogIsUsedWhenNothingWasPicked() {
+        PlaybackQueueHolder.setHomeCatalog(groups())
+
+        assertEquals("hb-1", PlaybackQueueHolder.getNextById("wh-2")?.StationUuid)
+        assertEquals("cn-1", PlaybackQueueHolder.getNextById("hb-2")?.StationUuid)
+    }
+
+    @Test
+    fun stationOutsideTheCatalogEntersTheHomeSequence() {
+        PlaybackQueueHolder.setHomeCatalog(groups())
+
+        assertEquals("pin", PlaybackQueueHolder.getNextById("not-in-list")?.StationUuid)
+    }
+
+    @Test
+    fun copiedListDoesNotFollowLaterMutations() {
+        val live = mutableListOf(station("a"), station("b"), station("c"))
+        PlaybackQueueHolder.setStations(live)
+        live.clear()
+        live.add(station("b"))
+        live.add(station("a"))
+
+        assertEquals("b", PlaybackQueueHolder.getNextById("a")?.StationUuid)
+        assertEquals("c", PlaybackQueueHolder.getNextById("b")?.StationUuid)
     }
 }

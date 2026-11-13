@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.49] - 2026-11-13
+### Fixed
+- **Next/Previous Stuck on Two Stations**: Skipping no longer uses the live play history. That list moves the station just played to the front, so the next press always returned the station just left and the two swapped forever. Next and previous now walk the home groups in a fixed order (pinned, city, province, national, English), including when the skip button is pressed without tapping a row first.
+
 ## [1.48] - 2026-11-12
 ### Changed
 - **Steering-Wheel Next Across Home Groups**: Bluetooth AVRCP next/previous, and the in-app skip buttons, now walk the home lists in display order (pinned, city, province, national, English) instead of looping inside the current group. The last station of 武汉 continues into 湖北, then 中央台. The sequence wraps from the last group back to the first. Favourites, history, and search results still cycle inside their own list.
